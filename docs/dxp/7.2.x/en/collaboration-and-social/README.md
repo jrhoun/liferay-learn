@@ -8,6 +8,7 @@
   * Notifications and Requests
   * Invitations
   * Knowledge Base
+  * Personal Sites
 * Dev Guide (weird division of asset content here and in Web Content above)
   * Enabling Assets
   * Creating an Asset Renderer
