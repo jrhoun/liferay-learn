@@ -31,7 +31,7 @@ User Guide
    :maxdepth: 1
    :hidden:
 
-   getting-started/introduction-to-liferay-commerce.md
+   user-guide/getting-started/introduction-to-liferay-commerce.md
 
    user-guide/getting-started/accelerators.md
    user-guide/getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md
@@ -142,11 +142,18 @@ User Guide
    user-guide/operations/setting-tax-rate-by-fixed-rate.md
 
 
+Developer Guide
+===============
+
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    user-guide/getting-started/accelerators.md
+
+
+Get Help
+========
 
 .. toctree::
    :maxdepth: 1
