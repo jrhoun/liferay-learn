@@ -2,8 +2,9 @@ Getting Started
 ===============
 
 .. toctree::
-   :maxdepth: 1
    :hidden:
+   :maxdepth: 1
+
    installation-and-upgrades/quick-start-guide/quick-start-guide.md
 
 
@@ -11,8 +12,8 @@ Installation and Upgrades
 =========================
 
 .. toctree::
-   :maxdepth: 1
    :hidden:
+   :maxdepth: 1
 
    quick-start-guide/quick-start-guide.md
    installation-guide/installation-overview.md
@@ -28,8 +29,8 @@ User Guide
 ==========
 
 .. toctree::
-   :maxdepth: 1
    :hidden:
+   :maxdepth: 1
 
    user-guide/getting-started/introduction-to-liferay-commerce.md
 
@@ -146,17 +147,42 @@ Developer Guide
 ===============
 
 .. toctree::
-   :maxdepth: 1
    :hidden:
+   :maxdepth: 1
 
-   user-guide/getting-started/accelerators.md
+   developer-guide/introduction/introduction-to-the-liferay-commerce-developer-guide.md
+
+   developer-guide/tutorial/adding-a-new-product-type.md
+   developer-guide/tutorial/implementing-a-sample-file-download-to-product-details.md
+   developer-guide/tutorial/implementing-a-custom-product-content-renderer.md
+   developer-guide/tutorial/using-a-custom-inventory-engine.md
+   developer-guide/tutorial/implementing-a-custom-low-stock-activity.md
+   developer-guide/tutorial/customizing-warehouse-sourcing-logic-for-order-shipments.md
+   developer-guide/tutorial/adding-a-new-notification-template-type.md
+   developer-guide/tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget.md
+   developer-guide/tutorial/adding-a-new-discount-rule-type.md
+   developer-guide/tutorial/implementing-a-custom-order-validator.md
+   developer-guide/tutorial/implementing-a-custom-checkout-step.md
+   developer-guide/tutorial/implementing-a-new-payment-engine.md
+   developer-guide/tutorial/implementing-a-new-tax-engine.md
+   developer-guide/tutorial/implementing-a-new-shipping-engine.md
+   developer-guide/tutorial/implementing-a-new-tax-engine.md
+   developer-guide/tutorial/implementing-an-exchange-rate-provider.md
+   developer-guide/tutorial/implementing-a-new-payment-method.md
+   developer-guide/tutorial/adding-regions-programmatically.md
+
+   Admin APIs<https://app.swaggerhub.com/search?owner=liferayinc&query=%20commerce>
 
 
 Get Help
 ========
 
 .. toctree::
-   :maxdepth: 1
    :hidden:
+   :maxdepth: 1
 
-   user-guide/getting-started/accelerators.md
+   Liferay Commerce 2.0 Compatibility Matrix<https://help.liferay.com/hc/en-us/articles/360029167132>
+   get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md
+   Service Life<https://help.liferay.com/hc/en-us/articles/360022154012-Liferay-Commerce-End-of-Life-Policy>
+   Support Coverage<https://help.liferay.com/hc/en-us/articles/360015977711-Other-Liferay-Products>
+   Open a Ticket<https://liferay-support.zendesk.com/agent/>
