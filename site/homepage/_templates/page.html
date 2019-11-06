@@ -3,32 +3,38 @@
 {% block content %}
 <div class="container-fluid documentations main-content">
     <div class="row">
-        <div class="col-md-2 product-version-selector">
-            <div class="info-bar">
+        <div class="col-md-2">
+            <div class="doc-nav-wrapper">
+                <div class="info-bar">
 
-            </div>
+                </div>
 
-            <div class="doc-nav">
-                {% block sidebar1 %}
-                {{ toctree() }}
+                <div class="doc-nav">
+                    {% block sidebar1 %}
+                    {{ toctree() }}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
             </div>
         </div>
 
         <div class="col-md-10 doc-body">
             <div class="col-md-12 general-info info-bar">
-                {% include "breadcrumb.html" %}
+                <div class="breadcrumb-wrapper col-md-7 offset-md-1">
+                    {% include "breadcrumb.html" %}
+                </div>
 
-                <div class="actions">
-                    <svg>
-                        <use xlink:href="#github"></use>
-                    </svg>
+                <div class="actions col-md-2 offset-md-1">
+                    <a href="https://github.com/liferay/liferay-learn">
+                        <svg>
+                            <use xlink:href="#github-logo"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-12 doc-content row">
-                <div class="col-md-6 article-body offset-md-1">
+                <div class="col-md-7 article-body offset-md-1">
                     {% block document %}
                     {{ body }}
                     {% endblock %}
@@ -80,7 +86,9 @@
             }
         });
 
-        toggleActiveClass(targets[activeIndex].id);
+        if (targets[activeIndex]) {
+            toggleActiveClass(targets[activeIndex].id);
+        }
     };
 
     // rootMargin of 157px is header height + info bar height + 24px gutter offset 

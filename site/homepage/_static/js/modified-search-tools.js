@@ -31,8 +31,8 @@ if (!Scorer) {
 		objPrio: {
 			0: 15, // used to be importantResults
 			1: 5, // used to be objectResults
-			2: -5
-		}, // used to be unimportantResults
+			2: -5 // used to be unimportantResults
+		},
 		//  Used when the priority is not in the mapping.
 		objPrioDefault: 0,
 
@@ -61,19 +61,25 @@ var Search = {
 
 	htmlToText: function(htmlString) {
 		var htmlElement = document.createElement('span');
+
 		htmlElement.innerHTML = htmlString;
+
 		$(htmlElement)
 			.find('.headerlink')
 			.remove();
 		docContent = $(htmlElement).find('[role=main]')[0];
+
 		return docContent.textContent || docContent.innerText;
 	},
 
 	init: function() {
 		var params = $.getQueryParameters();
+
 		if (params.q) {
 			var query = params.q[0];
+
 			$('input[name="q"]')[0].value = query;
+
 			this.performSearch(query);
 		}
 	},
@@ -95,9 +101,12 @@ var Search = {
 
 	setIndex: function(index) {
 		var q;
+
 		this._index = index;
+
 		if ((q = this._queued_query) !== null) {
 			this._queued_query = null;
+
 			Search.query(q);
 		}
 	},
@@ -157,6 +166,7 @@ var Search = {
 		var hlterms = [];
 		var tmp = splitQuery(query);
 		var objectterms = [];
+
 		for (i = 0; i < tmp.length; i++) {
 			if (tmp[i] !== '') {
 				objectterms.push(tmp[i].toLowerCase());
@@ -176,6 +186,7 @@ var Search = {
 			if (word.length < 3 && tmp[i].length >= 3) {
 				word = tmp[i];
 			}
+
 			var toAppend;
 			// select the correct list
 			if (word[0] == '-') {
@@ -230,6 +241,7 @@ var Search = {
 		results.sort(function(a, b) {
 			var left = a[4];
 			var right = b[4];
+
 			if (left > right) {
 				return 1;
 			} else if (left < right) {
@@ -248,11 +260,13 @@ var Search = {
 
 		// print the results
 		var resultCount = results.length;
+
 		function displayNextItem(query) {
 			// results left, load the summary and display it
 			if (results.length) {
 				var item = results.pop();
 				var listItem = $('<li style="display:none"></li>');
+
 				if (DOCUMENTATION_OPTIONS.FILE_SUFFIX === '') {
 					// dirhtml builder
 					var dirname = item[0] + '/';
@@ -319,6 +333,7 @@ var Search = {
 				} else {
 					// no source available, just display title
 					Search.output.append(listItem);
+
 					listItem.slideDown(5, function() {
 						displayNextItem(query);
 					});
@@ -335,6 +350,8 @@ var Search = {
 						)
 					);
 					document.querySelector('.no-results').classList.add('show');
+
+					Search.title.text('');
 				} else
 					Search.title.text(
 						_(`${resultCount} results for "${query}"`)
@@ -362,6 +379,7 @@ var Search = {
 			for (var name in objects[prefix]) {
 				var fullname = (prefix ? prefix + '.' : '') + name;
 				var fullnameLower = fullname.toLowerCase();
+
 				if (fullnameLower.indexOf(object) > -1) {
 					var score = 0;
 					var parts = fullnameLower.split('.');
@@ -376,6 +394,7 @@ var Search = {
 					} else if (parts[parts.length - 1].indexOf(object) > -1) {
 						score += Scorer.objPartialMatch;
 					}
+
 					var match = objects[prefix][name];
 					var objname = objnames[match[1]][2];
 					var title = titles[match[0]];
@@ -391,7 +410,9 @@ var Search = {
 							' ' +
 							title
 						).toLowerCase();
+
 						var allfound = true;
+
 						for (i = 0; i < otherterms.length; i++) {
 							if (haystack.indexOf(otherterms[i]) == -1) {
 								allfound = false;
@@ -405,6 +426,7 @@ var Search = {
 					var descr = objname + _(', in ') + title;
 
 					var anchor = match[3];
+
 					if (anchor === '') anchor = fullname;
 					else if (anchor == '-')
 						anchor = objnames[match[1]][1] + '-' + fullname;
@@ -414,6 +436,7 @@ var Search = {
 					} else {
 						score += Scorer.objPrioDefault;
 					}
+
 					results.push([
 						docnames[match[0]],
 						fullname,
@@ -478,14 +501,17 @@ var Search = {
 			// found search word in contents
 			$u.each(_o, function(o) {
 				var _files = o.files;
+
 				if (_files === undefined) return;
 
 				if (_files.length === undefined) _files = [_files];
+
 				files = files.concat(_files);
 
 				// set score for the word in each file to Scorer.term
 				for (j = 0; j < _files.length; j++) {
 					file = _files[j];
+
 					if (!(file in scoreMap)) scoreMap[file] = {};
 					scoreMap[file][word] = o.score;
 				}
@@ -494,6 +520,7 @@ var Search = {
 			// create the mapping
 			for (j = 0; j < files.length; j++) {
 				file = files[j];
+
 				if (file in fileMap) fileMap[file].push(word);
 				else fileMap[file] = [word];
 			}
@@ -560,19 +587,24 @@ var Search = {
 		var text = Search.htmlToText(htmlText);
 		var textLower = text.toLowerCase();
 		var start = 0;
+
 		$.each(keywords, function() {
 			var i = textLower.indexOf(this.toLowerCase());
 			if (i > -1) start = i;
 		});
+
 		start = Math.max(start - 120, 0);
+
 		var excerpt =
 			(start > 0 ? '...' : '') +
 			$.trim(text.substr(start, 240)) +
 			(start + 240 - text.length ? '...' : '');
 		var rv = $('<div class="context"></div>').text(excerpt);
+
 		$.each(hlwords, function() {
 			rv = rv.highlightText(this, 'highlighted');
 		});
+
 		return rv;
 	}
 };
