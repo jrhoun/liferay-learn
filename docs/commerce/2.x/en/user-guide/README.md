@@ -162,7 +162,7 @@
 * [Account Roles](./customers/account-roles.md)
 * [Assigning Account Roles](../assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
-* Organizations and Accounts
+* [Organizations and Commerce Accounts](./customers/organizations-and-commerce-accounts.md)
 
 ## Sales
 
