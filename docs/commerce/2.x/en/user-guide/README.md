@@ -164,6 +164,8 @@
 * [Assigning Account Roles](../assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
+* [Commerce Roles Permissions Reference](./customers/commerce-roles-permissions-reference.md)
+* [Creating a Custom Role](./customers/creating-a-custom-account-role.md)
 
 ## Sales
 
