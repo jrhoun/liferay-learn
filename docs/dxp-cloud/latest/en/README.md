@@ -19,7 +19,7 @@
 
 * [Applying Patches](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#hotfixes)
 * [Activating Products](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#licenses)
-* Upgrading From Previous Versions of Liferay DXP
+* [Upgrading From Previous Versions of Liferay DXP](./using-the-liferay-dxp-service/upgrading-from-previous-versions-of-liferay-dxp.md)
 
 ### Configuration
 
