@@ -14,8 +14,8 @@
 ### Installing Liferay on an Application Server
 
 * Installing Liferay on Tomcat
-* Installing Liferay on Wildfly
-* Installing Liferay on JBoss
+* [Installing Liferay DXP on Wildfly](./installing-liferay-dxp-on-wildfly.md)
+* [Installing Liferay DXP on JBoss EAP](./installing-liferay-dxp-on-jboss-eap.md)
 * Installing Liferay on Weblogic
 * Installing Liferay on WebSphere
 
