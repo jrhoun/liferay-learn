@@ -7,8 +7,8 @@
 * Preparing for Install
 * Installing and Configuring a Bundle
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
-* Activating Liferay DXP
-* Installing Trial Plugins
+* [Activating Liferay DXP](./activating-liferay-dxp.md)
+* [Installing Trial Plugins](./trial-plugin-installation.md)
 * Setting Up Marketplace
 
 ### Installing Liferay on an Application Server
