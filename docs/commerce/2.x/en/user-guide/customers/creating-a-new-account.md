@@ -27,7 +27,7 @@ Users who have administrative permissions for the store or installation may crea
 1. Click the (+) button to add a new account.
 1. Enter the following:
     * **Name**: _your company name_ (Acme International)
-    * **Email**: _your company email_ (Acme1@acme.org)
+    * **Email**: _your company email_ (<Acme1@acme.org>)
     * **Type**: _Business_
     * **VAT Number**: _your VAT number*_
 

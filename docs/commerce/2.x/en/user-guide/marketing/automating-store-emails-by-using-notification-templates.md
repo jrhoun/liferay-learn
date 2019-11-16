@@ -14,7 +14,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **Name**: New Orders
     * **Description**: New orders template
     * **Account Groups**: (leave blank or designate an **optional** account group)
-    * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
+    * **From Address**: Your store's email address (for example: <orders@yourstore.com>)
     * **From Name**: Name of the store or a customer service representative
     * **Type**: Order Placed
     * **Enabled**: Switch the Toggle to _YES_
