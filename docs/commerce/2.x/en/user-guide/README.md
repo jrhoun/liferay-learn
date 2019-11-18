@@ -3,7 +3,6 @@
 ## Getting Started
 
 * [Introduction to Liferay Commerce](../README.md)
-* What's New in Liferay Commerce 2.0.5
 
 ### Basic Configuration
 
@@ -19,7 +18,6 @@
 * [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview.md)
 * [Locale Options](./getting-started/locale-options.md)
 * [Automating Store Emails by Using Notification Templates](./marketing/automating-store-emails-by-using-notification-templates.md)
-* Store Email Addresses
 * [Introduction to Payments](./getting-started/payments.md)
 * [Managing Payment Methods](./getting-started/managing-payment-methods.md)
 * [Adding Regions](./getting-started/adding-regions.md)
@@ -27,11 +25,6 @@
 * [Deactivating a Country for Billing or Shipping](./getting-started/deactivating-a-country-for-billing-or-shipping.md)
 * [Managing Exchange Rates](./getting-started/managing-exchange-rates.md)
 * [Shipping Methods](./getting-started/shipping-methods.md)
-
-#### Store Branding Basics
-
-* Logo
-* Favicon
 
 #### Site Management Basics
 
@@ -62,7 +55,6 @@
 * [Product Specifications](./catalog/specifications.md)
 * [Creating a New Product Category](./catalog/creating-a-new-product-category.md)
 * [Organizing Your Catalog With Product Categories](./catalog/organizing-your-catalog-with-product-categories.md)
-* Subscriptions
 * [Related Products, Up-sells, and Cross-sells](./catalog/related-products-up-sells-and-cross-sells.md)
 
 ### Managing Inventory
@@ -83,10 +75,6 @@
 * [Adding Products to a Price List](./catalog/adding-products-to-a-price-list.md)
 * [Adding Tiered Pricing](./catalog/adding-tiered-pricing.md)
 
-#### Other Settings
-
-* Suggested Product Groups
-
 ## Marketing
 
 ### Communications
@@ -98,25 +86,6 @@
 * [Adding Discounts by Product](./marketing/adding-discounts-by-product.md)
 * [Adding Discounts to the Subtotal](./marketing/adding-discounts-to-the-subtotal.md)
 
-### SEO
-
-* Catalog Navigation
-* Catalog Search
-* SEO Best Practices
-
-### Reporting and Analytics
-
-* Forecasts
-* Loyalty Score Alerts
-
-### Shopping Tools
-
-#### Product Recommendations
-
-* Also Bought Product Recommendations
-* User Based Product Recommendations
-* Content Based Product Recommendations
-
 ## Content
 
 ### Pages
@@ -127,7 +96,6 @@
 #### Commerce Storefront Pages
 
 * [Account Management](./content/account-management.md)
-* BOM / Spare Parts Finder
 * [Catalog](./content/catalog.md)
 * [Cart](./content/cart.md)
 * [Checkout](./content/checkout.md)
@@ -152,8 +120,6 @@
 
 ## Customers
 
-* Creating Order Workflows
-
 ### Account Management
 
 * [Introduction to Accounts](./customers/introduction-to-accounts.md)
@@ -163,7 +129,6 @@
 * [Account Roles](./customers/account-roles.md)
 * [Assigning Account Roles](./customers/assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
-* Organizations and Accounts
 
 ## Sales
 
@@ -193,13 +158,10 @@
 * [Order Workflows](./sales/order-workflows.md)
 * [Enabling or Disabling Order Workflows](./sales/enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./sales/approving-or-rejecting-orders-in-order-workflows.md)
-* Order Status
-* Processing an Order
-* Subscription Management
+* [Order Management Statuses](./sales/order-management-statuses.md)
 
 #### Managing Shipments
 
-* Shipment Workflow
 * [Introduction to Shipments](./sales/introduction-to-shipments.md)
 * [Creating a Shipment](./sales/creating-a-shipment.md)
 * [Cancelling a Shipment](./sales/cancelling-a-shipment.md)
