@@ -2,7 +2,7 @@
 
 Liferay Commerce has the option to enable sellers to accept money orders as a form of payment. Once this payment method is activated, buyers will be able to use money orders to complete the purchasing process. Sellers are encouraged to define and publish their store's policy on whether to accept money orders.
 
-Besides activating Money Orders in the site settings, sellers can also create an article that documents their policies on accepting money orders on the _Payment Methods_ > _Configuration_ screen. The editor allows flexibility in displaying content including the use of tables, images, and videos inside the article.
+Besides activating Money Orders in the site settings, sellers can also create an article that documents their policies on accepting money orders on the _Payment Methods_ → _Configuration_ screen. The editor allows flexibility in displaying content including the use of tables, images, and videos inside the article.
 
 To start creating an article:
 

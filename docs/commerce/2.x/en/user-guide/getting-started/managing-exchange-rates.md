@@ -1,6 +1,8 @@
 # Managing Exchange Rates
 
-By default, Liferay Commerce relies on the European Central Bank for foreign exchange rates. The ECB updates its exchange rates approximately every 24 hours; for more timely updates, a solution may be customized to use a different source.
+Exchange rates can be manually managed or automatically updated by an online service. [...]
+
+By default, Liferay Commerce can connect to the European Central Bank (ECB) to update foreign exchange rates. 
 
 To enable automatic currency conversion:
 
@@ -29,3 +31,7 @@ To change the update interval:
 1. Click _Save_.
 
 The Exchange Rate Auto-Update is now enabled and will update currency exchange rates every two hours.
+
+## Notes
+
+* The ECB updates its exchange rates approximately every 24 hours.
