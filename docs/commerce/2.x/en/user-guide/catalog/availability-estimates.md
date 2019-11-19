@@ -1,6 +1,6 @@
 # Availability Estimates
 
-This article documents how to configure Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked. There are three default time periods in Liferay Commerce.
+This article documents how to configure Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked.
 
 ![Managing Availability Estimates](./availability-estimates/images/01.png)
 
