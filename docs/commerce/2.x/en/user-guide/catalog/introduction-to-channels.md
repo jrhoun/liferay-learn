@@ -1,8 +1,8 @@
 # Introduction to Channels
 
-Liferay Commerce provides tools designed to meet the needs of complex B2B, multi-region, and multi-market stores and simpler B2C use cases. One way that Commerce enables a wide variety of use cases is through the _Channels_ feature.
+Liferay Commerce provides tools designed to meet the needs of both complex B2B, multi-region, and multi-market stores and simple B2C use cases. One way that Commerce enables a wide variety of use cases is through the _Channels_ feature.
 
-In Liferay Commerce, Channels connect Catalogs and Products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales. Using Channels, store administrators are able to manage product availability, sales, and fulfillment by Site and eventually by Country, Region, or Account Group.
+In Liferay Commerce, Channels connect Catalogs and Products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales. Using Channels, store administrators are able to manage product availability, sales, and fulfillment by Site.
 
 In a simple store example, all of a company's products are managed in one catalog and those products are distributed through a single channel: the company store site.
 

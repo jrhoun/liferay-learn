@@ -14,7 +14,7 @@ To learn more about the using Channels in Liferay Commerce, see: [Introduction t
 1. Each site has an associated channel.
 1. Products have been added to a catalog.
 
-## Configuring Product Filter Channels
+## Configuring a Product's Channel Filter
 
 To configure a product to be available in a specific channel, follow these steps:
 
@@ -29,7 +29,7 @@ To configure a product to be available in a specific channel, follow these steps
 
 1. Click _Save_.
 
-The product will be visible only in the selected Channels.
+The product will now be visible only in the selected Channels.
 
 ## Additional Information
 
