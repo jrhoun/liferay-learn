@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Follow these steps to download the latest release of Liferay Commerce and get started.
+Follow these steps to download the latest Docker image release of Liferay Commerce and get started.
 
 ## Let's Go
 
