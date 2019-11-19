@@ -1,6 +1,6 @@
 # Maintenance Versions
 
-Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major version of Liferay Commerce.
+Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major or minor version of Liferay Commerce.
 
 To update to a new maintenance version:
 
@@ -25,6 +25,7 @@ To update to a new maintenance version:
 ## Clear Stale Data and Restart the Server
 
 1. Delete the `${liferay.home}/osgi/state` folder.
+    
     > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
@@ -58,7 +59,7 @@ The Liferay Commerce instance has been updated. There is no need to reindex and 
 
 ## Additional Information
 
-Liferay Commerce is built on Liferay DXP 7.1. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest maintenance version. Fixes to Liferay Commerce are independent from Liferay.
+Liferay Commerce is built on Liferay DXP. Occasionally, updating the core Liferay DXP platform is a requirement for updating to the latest version of Liferay Commerce. Fixes to Liferay Commerce are independent from Liferay DXP.
 
 * [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Upgrading from Liferay Commerce 1.1.x](./upgrading-from-liferay-commerce-1.1.x.md)

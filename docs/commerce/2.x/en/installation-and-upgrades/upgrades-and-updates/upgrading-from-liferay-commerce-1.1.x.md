@@ -1,6 +1,6 @@
 # Upgrading from Liferay Commerce 1.1.x
 
-This article documents how to upgrade Liferay Commerce to the latest maintenance version. Store administrators should consider regularly updating to the latest available maintenance version to receive bug fixes and new features.
+This article documents how to upgrade Liferay Commerce from Liferay Commerce 1.1.x to 2.0.x.
 
 ## Roadmap
 
@@ -11,9 +11,11 @@ This article documents how to upgrade Liferay Commerce to the latest maintenance
 ## Download and Deploy
 
 1. Download the latest Liferay Commerce `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-    >The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://commerce.liferay.dev/download).
-
+    
+>The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://commerce.liferay.dev/download).
+    
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
+    
     > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
 1. Verify that that the following message appears in the application server console:
 
@@ -28,6 +30,7 @@ This article documents how to upgrade Liferay Commerce to the latest maintenance
 ## Clear Stale Data and Verify the Upgrade Process
 
 1. Delete the `${liferay.home}/osgi/state` folder.
+    
     > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:

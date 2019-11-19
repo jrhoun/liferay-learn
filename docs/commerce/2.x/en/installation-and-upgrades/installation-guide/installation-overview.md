@@ -2,11 +2,11 @@
 
 The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce. For a guide to getting started with installation, see [Quick Start Guide](../quick-start-guide/quick-start-guide.md).
 
-Liferay Commerce is built on Liferay DXP 7.1. Therefore, it is necessary to install Liferay Digital Experience Platform first before installing Liferay Commerce.
+Liferay Commerce is built on Liferay Digital Experience Platform (DXP). Therefore, it is necessary to install Liferay DXP first before installing Liferay Commerce.
 
 ## Prerequisites
 
-Before installing, consult the systems requirements and the Liferay DXP deployment documentation.
+Before installing, consult the system requirements and the Liferay DXP deployment documentation.
 
 ### System Requirements
 
@@ -22,15 +22,15 @@ Liferay offers several methods of installing Liferay Commerce.
 
 ### Using a Bundle
 
-The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md) for more information.
+The latest version of Liferay Commerce is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md) for more information.
 
 ### Using an Existing Liferay DXP Installation
 
 If using an existing Liferay DXP installation, users may deploy Liferay Commerce using the `LPKG`. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
-### Activating Commerce Enterprise
+### Installing and Activating Liferay Commerce Enterprise
 
-Subscribers who have purchased Liferay Commerce are required to activate the product. See [Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md)
+Subscribers who have purchased Liferay Commerce are required to activate the product. See [Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md).
 
 ## Maintaining Liferay Commerce
 
