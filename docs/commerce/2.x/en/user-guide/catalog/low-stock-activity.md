@@ -1,6 +1,6 @@
-# Low Stock Activity
+# Low Stock Action
 
-This article documents how to set up automated actions for when product inventory falls below a specified threshold. Out-of-the-box, Liferay Commerce allows users to automatically set products as unpublished when they reach the defined inventory threshold. Store owners may also  configure the catalog to display remaining product quantity in inventory.
+This article documents how to set up automated actions for when product inventory falls below a specified threshold. Out-of-the-box, Liferay Commerce allows users to automatically set products as unpublished when they reach the defined inventory threshold.
 
 To configure a Low Stock Activity:
 
@@ -29,4 +29,4 @@ The Low Stock Activity for this product has been configured. In the future, shou
 ## Additional Information
 
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
-* [Implementing a Custom Low Stock Activity](../../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md)
+* [Implementing a Custom Low Stock Action](../../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md)

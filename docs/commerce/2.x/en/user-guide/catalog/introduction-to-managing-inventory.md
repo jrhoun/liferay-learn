@@ -2,7 +2,7 @@
 
 Liferay Commerce provides the tools to manage product inventory for merchants with a single store, to organizations with multiple warehouses and stores. Store administrators can use these features to maintain quantities for sales and handle shipments to complete orders.
 
-There are several key features used in managing inventory: Warehouses, Availability Estimates, Low Stock Activity, and the ability to set inventory by warehouse.
+There are several key features used in managing inventory: Warehouses, Availability Estimates, Low Stock Actions, and the ability to set inventory by warehouse.
 
 ## Warehouses
 

@@ -34,7 +34,7 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Latitude | Warehouse's Latitude |
 | Longitude | Warehouse's Longitude |
 
-If there are more than one warehouse, repeat these steps to add the others.
+If there is more than one warehouse, repeat these steps to add the others.
 
 ## Additional Information
 
