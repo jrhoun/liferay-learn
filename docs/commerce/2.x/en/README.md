@@ -1,13 +1,13 @@
 # Commerce
 
-Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. To learn more about Liferay DXP see this [article](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction).
+Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities.
 
 ## Overview
 
 * [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
 * [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
 * [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
-* [Order Management and Sales](#order-management-and-sales)
+* [Order Management](#order-management-and-sales)
 * [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
 * [APIs and Integrations](#apis-and-integrations)
 * [Next Steps](#next-steps)
@@ -36,13 +36,13 @@ Liferay Commerce contains a catalog management system that supports a variety of
 
 Managing product pricing is flexible through the use of [Price Lists](./user-guide/catalog/creating-a-price-list.md) and [Tiered Pricing](./user-guide/catalog/adding-tiered-pricing.md) - all of which can be tailored to meet unique customer needs.
 
-## B2B Focused Account Management and Purchasing Workflow
+## B2B Focused Account Management and Purchasing Workflows
 
 Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](./user-guide/customers/introduction-to-accounts.md), [Account Groups](./user-guide/customers/creating-a-new-account-group.md), and [Account Roles](./user-guide/customers/account-roles.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
 
 ![User role selection](./introduction-to-liferay-commerce/images/05.png)
 
-## Order Management and Sales
+## Order Management
 
 Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and fulfill orders.
 
