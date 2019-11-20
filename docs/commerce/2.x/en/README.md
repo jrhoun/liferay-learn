@@ -63,5 +63,4 @@ Integrate with other business systems through a Mulesoft connector, Talend compo
 
 ## Next Steps
 
-* [Quick Start Guide](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)
 * [Setup a Complete B2B Site Using the Minium Accelerator](./user-guide/getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
