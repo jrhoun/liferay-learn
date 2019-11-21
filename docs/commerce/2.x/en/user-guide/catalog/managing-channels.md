@@ -1,6 +1,6 @@
 # Managing Channels
 
-This article describes how to manage Channels in Liferay Commerce. Out-of-the-box, Channels are assigned in a 1:1 relationship with sites. To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../catalog/introduction-to-channels.md).
+This article describes how to manage Channels in Liferay Commerce. Channels have a 1:1 relationship with sites. To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../catalog/introduction-to-channels.md).
 
 ## Adding a New Channel
 
