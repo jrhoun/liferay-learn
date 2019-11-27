@@ -102,7 +102,7 @@
 
 * Liferay Home
 * Configuration Files
-* Portal Properties
+* [Configuring and Overriding Portal Properties](./reference/configuring-and-overriding-portal-properties.md)
 * System Properties
 * Database Templates
 * Comparing Patch Levels
