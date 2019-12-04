@@ -16,7 +16,7 @@ To illustrate what an Organization is, consider a potential Intranet Organizatio
         - Retail Group: Maintain relationships with retailers so products are available everywhere. 
     - Human Resources Department: Department of Users that hire, fire and regulate intra-company relationships.
 
-Each department is a sub-Organization of the resort, and each division is a sub-Organization of the department.
+Each department is a sub-Organization, and each division is a sub-Organization of the department.
 
 ### What can Organization Administrators Do?
 
