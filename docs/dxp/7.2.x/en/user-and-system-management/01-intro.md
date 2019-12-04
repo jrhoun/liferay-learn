@@ -7,10 +7,15 @@ Ever heard a retailer advertise as a "one stop shop" for anything you want? The 
 The Control Panel is divided into six main areas: 
 
 - Users 
+
 - Sites
+
 - Apps
+
 - Configuration
+
 - Workflow
+
 - [DXP Only] Search Tuning
 
 The Users section lets you create and manage Users, Organizations, User Groups, Roles, and Password Policies. If monitoring has been enabled, you can also view all the live sessions of your Users.
