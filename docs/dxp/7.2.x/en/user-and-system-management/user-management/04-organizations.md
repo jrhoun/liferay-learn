@@ -13,18 +13,31 @@ To decide whether your portal design should include Organizations, think about i
 To illustrate what an Organization is, consider a potential Organization of the Lunar Resort's Intranet. The company hierarchy has three tiers: The Lunar Resort, its departments, and divisions within each department.
 
 - Lunar Resort--The top-level Organization.
+
 	- Physical Plant Department--Department of users that keep the place running.
+
 		- Grounds Crew--Users that maintain the grounds.
+
 		- Janitorial Crew--Users who keep the resort clean.
+
 		- Mechanical Crew--Users who fix stuff, like lunar rovers.
+
 	- Recreation Department--A department that makes sure much fun is had by guests of the Lunar Resort.
+
         - Golf Instructors--Teach guests how to golf on the moon.
+
         - Rover Race Instructors--Teach guests how to drive the lunar rovers.
+
         - Lunar Sherpas--Lead guests on moon hikes.
+
     - Sales Department--A department of users who sell things to Lunar Resort guests.
+
         - Up-sale Group--Make sure guests know how easy it is to improve their stay by spending more money.
+
         - Souvenir and Memorabilia Group--Peddle souvenirs to Lunar Resort guests.
+
         - Retail Group--Maintain the Lunar Resort store, which contains basic necessities, since guests are coming all the way from Earth.
+
     - Human Resources Department--Department of Users that hire, fire and regulate intra-company relationships.
 
 Each department is a sub-Organization of the resort, and each division is a sub-Organization of the department.
