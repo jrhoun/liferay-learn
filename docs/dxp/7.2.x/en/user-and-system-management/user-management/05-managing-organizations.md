@@ -19,7 +19,9 @@ As when creating a new user, once you submit the form a success message appears 
 **Tip:** After creating an Organization, assign the desired user to the Organization Owner Role. The Organization Owner can do everything that an organization Administrator can. In addition to their full administrative rights within the Organization, they can do these things:
 
 - Appoint other Users to be Organization Administrators
+
 - Appoint other Users to be Organization Owners
+
 - Remove the memberships of other Organization Administrators or Owners
 
 Organization Administrators can't make these Role assignments and can't manage the memberships of other Organization Administrators or Owners.

@@ -3,9 +3,13 @@
 Beyond adding and editing Users, there are additional important user management topics. 
 
 - Password Resets
+
 - Administrative Users
+
 - Gender
+
 - User Profile Pictures
+
 - Numeric Screen Names
 
 ## Password Resets

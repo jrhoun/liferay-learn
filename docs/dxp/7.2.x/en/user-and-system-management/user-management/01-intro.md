@@ -7,10 +7,15 @@ Users and Organizations are managed in the Control Panel's *Users and Organizati
 These are just a few examples of activities executed from the Users and Organizations section of the Control Panel: 
 
 - An employee leaves the company, requiring account deletion
+
 - An employee joins the company and must be added to the portal, and to a specific department.
+
 - An employee is promoted to a new role and needs additional permissions within the portal.
+
 - Organize the Users by department with Organizations.
+
 - Add new departments (as Organizations, most likely) and give the department's employees their own internal website.
+
 - An employee gets married, and their name changes.
 
 ## What are Users?
