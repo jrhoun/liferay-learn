@@ -1,6 +1,6 @@
 # Managing Organizations
 
-If you're not entirely sure what Organizations are or whether you need them, start [here](/docs/7-2/user/-/knowledge_base/u/organizations). This article gets right to the practical stuff: how to manage Organizations.
+If you're not entirely sure what Organizations are or whether you need them, start [here](./04-organizations.md). This article gets right to the practical stuff: how to manage Organizations.
 
 ## Adding Organizations
 

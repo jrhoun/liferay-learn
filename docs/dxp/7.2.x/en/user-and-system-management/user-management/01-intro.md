@@ -22,6 +22,6 @@ These are just a few examples of activities executed from the Users and Organiza
 
 In case there's any confusion over the term, a User is an entity that can sign into the portal and do something. Generally a User has more privileges, called Permissions, than a Guest of your site, who does not sign in. Users are assigned Roles, and Roles define the User's privileges.
 
-Now that you understand Users in the portal environment, read about Organizations [here](/docs/7-2/user/-/knowledge_base/u/organizations).
+Now that you understand Users in the portal environment, read about Organizations [here](./04-organizations.md).
 
 The remaining articles in this section give you guidance on managing (creating, deleting, editing, and more) Users and Organizations.

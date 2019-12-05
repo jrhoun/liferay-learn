@@ -1,6 +1,6 @@
 # Organizations
 
-An *Organization* groups [*Users*](/docs/7-2/user/-/knowledge_base/u/adding-editing-and-deleting-users) hierarchically. For example, you can model a company's departments (i.e., Human Resources and Customer Support) with Organizations. Organizations often have their own Sites. The *how-to* portion of managing Organizations is in the next article, [Managing Organizations](/docs/7-2/user/-/knowledge_base/u/managing-organizations). This article contains important conceptual information on what Organizations are and when they're needed.
+An *Organization* groups [*Users*](./02-managing-users.md) hierarchically. For example, you can model a company's departments (i.e., Human Resources and Customer Support) with Organizations. Organizations often have their own Sites. The *how-to* portion of managing Organizations is in the next article, [Managing Organizations](./05-managing-organizations.md). This article contains important conceptual information on what Organizations are and when they're needed.
 
 Many simple portal designs don't use Organizations at all; they only use sites. The main purpose of Organizations is to enable distributed User management. Portal administrators can delegate some user management responsibilities to Organization administrators. If you don't anticipate needing to delegate User management responsibilities, your portal design probably doesn't need to include Organizations. 
 
