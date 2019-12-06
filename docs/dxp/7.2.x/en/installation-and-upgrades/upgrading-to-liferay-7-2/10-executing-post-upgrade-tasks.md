@@ -26,8 +26,6 @@ Prior to DXP 7.1, all users could view web content articles by default. Now view
 
 Option 1: Open view permissions for all web content articles by navigating to _Control Panel_ → _Configuration_ → _System Settings_ → _Web Content_ → _Virtual Instance Scope_ → _Web Content_ and de-selecting _Article view permissions check enabled_. 
 
-System Settings → Web Content → Virtual Instance Scope → Web Content
-
 Option 2: If not many web content articles exist, then edit view permissions per web content article per role.
 
 ## Check Web Content Images
