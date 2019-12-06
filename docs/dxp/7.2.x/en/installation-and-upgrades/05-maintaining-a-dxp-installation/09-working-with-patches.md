@@ -2,11 +2,11 @@
 
 Here are some things you might need to do with patches:
 
-- Get Patch Information
-- Report Patch Levels to Liferay Support
-- Uninstall Patches
-- Handling collisions between patches and deployed plugins
-- Patch Cleanup
+- [Get Patch Information](#getting-patch-information)
+- [Include support-info in Support Tickets](#including-support-info-in-support tickets)
+- [Uninstall Patches](#uninstalling-patches)
+- [Handle collisions between patches and deployed plugins](#handling collisions-between-patches-and-deployed-plugins)
+- [Patch Cleanup](#patch-cleanup)
 
 ## Getting Patch Information 
 

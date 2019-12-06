@@ -35,26 +35,6 @@ If you [installed DXP manually](https://help.liferay.com/hc/en-us/articles/36002
     - Fix packs and service packs are on the [Customer Portal](https://customer.liferay.com/downloads) 
     - Hotfixes are in [Help Center](https://help.liferay.com/hc) tickets
 
-1.  Verify the patch you're installing by executing the `patching-tool info` command:
-
-    ```bash
-    /patching-home/patching-tool> patching-tool info
-    Loading product and patch information...
-    Product information:
-      * installation type: binary
-      * build number: 7210
-      * service pack version:
-        - available SP version: Not available
-        - installable SP version: Not available
-      * patching-tool version: 2.0.12
-      * time: 2019-06-03 18:30Z
-      * host: 91WRQ72 (8 cores)
-      * plugins: no plugins detected
-
-    Currently installed patches: -
-    ...
-    ```
-
 1.  Install the patch. 
 
     ```bash
@@ -63,6 +43,26 @@ If you [installed DXP manually](https://help.liferay.com/hc/en-us/articles/36002
     Cleaning up: [1%..10%..20%..30%..40%..50%..60%..70%..80%..90%..100%]
     Installing patches: [1%..10%..20%..30%..40%..50%..60%..70%..80%..90%...100%]
     The installation was successful. One patch is installed on the system.
+    ```
+
+1.  Use the `info` command to verify that the patch is currently installed:
+
+    ```
+    patching-tool>patching-tool info
+    Loading product and patch information...
+    Product information:
+      * installation type: binary
+      * build number: 7210
+      * service pack version:
+        - available SP version: 1
+        - installable SP version: 1
+      * patching-tool version: 2.0.13
+      * time: 2019-12-06 20:26Z
+      * host: 91WRQ72 (8 cores)
+      * plugins: no plugins detected
+    
+    Currently installed patches: 
+    ...
     ```
 
 1.  If you're installing a Service Pack, check for [micro or minor schema/data changes](https://help.liferay.com/hc/en-us/articles/360030959231-Meaningful-Schema-Versioning) in the service pack release notes. Use the [upgrade tool](https://help.liferay.com/hc/en-us/articles/360028711612-Introduction-to-Upgrading-to-Liferay-DXP-7-2) to apply minor changes (required) and any micro changes you want. 

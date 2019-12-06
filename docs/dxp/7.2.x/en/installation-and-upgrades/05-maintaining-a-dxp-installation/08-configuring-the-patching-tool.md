@@ -31,8 +31,8 @@ patching-tool auto-discovery /path/to/liferay-dxp
 
 When the Patching Tool is configured, running `patching-tool info` reports product information and patch information like this: 
 
-```bash 
->patching-tool info
+``` 
+/patching-tool>patching-tool info
 Loading product and patch information...
 Product information:
   * installation type: binary
@@ -44,13 +44,7 @@ Product information:
   * time: 2019-12-05 14:02Z
   * host: 91WRQ72 (8 cores)
   * plugins: no plugins detected
-
-Currently installed patches: dxp-2-7210
-
-Available patches: dxp-2-7210
-
-Detailed patch list:
-  [*I] dxp-2-7210 :: Installed; Will be installed. :: Built for LIFERAY
+  ...
 ```
 
 The Patching Tool is ready to install patches! 
