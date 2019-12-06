@@ -2,9 +2,6 @@
 
 Once you have Liferay DXP deployed, you can add to it, update it, and apply fixes. In preparation any failure or unwanted side affects from modifying your DXP installation, you should implement a plan for backing up your system and restoring it. The articles here start with identifying the system components you should back up and then continue demonstrating how to update your DXP system with the latest fixes. 
 
-
-The backup copies are also valuable for testing updates (e.g., DXP upgrades, new plugins, and more). In this way, DXP backups and updates work hand in hand. 
-
 ## Backing Up Your System
 
 Storing copies of your DXP files, databases, and customization source code allows you to restore your system. [Backing Up](./02-backing-up.md) provides guidance for persisting and restoring your system components. 
