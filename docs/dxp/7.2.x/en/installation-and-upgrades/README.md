@@ -24,7 +24,11 @@
 
 * Configuration Overview
 * Installing a Search Engine
-* Configuring Your Document Repository
+* [Document Repository Reference](./setting-up-liferay-dxp/document-repository-reference.md)
+* [Using the Simple File System Store](./setting-up-liferay-dxp/using-the-simple-file-system-store.md)
+* [Using the Advanced File System Store](./setting-up-liferay-dxp/using-the-advanced-file-system-store.md)
+* [Using Amazon Simple Store Service](./setting-up-liferay-dxp/using-amazon-s3-store.md)
+* [Using the DBStore](./setting-up-liferay-dxp/using-the-dbstore.md)
 * Connecting to a Mail Server
 * Selecting Your Locale and Encoding
 
