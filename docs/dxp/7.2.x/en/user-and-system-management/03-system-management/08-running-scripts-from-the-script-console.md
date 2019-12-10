@@ -1,27 +1,26 @@
 # Running Scripts From the Script Console
 
-The script console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate printing output and working with portlets and users. Here you'll learn these things:
+The Script Console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate with portlets and users. Here you'll learn these things:
 
-- [How to execute a script in the script console](#running-the-sample-script) 
+- [Running a script in the Script Console](#running-the-sample-script) 
 
-- [The predefined variables available in the script console](#predefined-variables)
+- [Predefined variables available in the Script Console](#predefined-variables)
 
-- [Tips for running scripts in the script console](#tips)
+- [Tips for running scripts in the Script Console](#tips)
 
-| **Important:** The script console is for system operations and maintenance and
-| not for end users. Limit script console access to portal administrators.
+> **Important:** The Script Console is for system operations and maintenance---it's not for end users. Limit Script Console access to portal administrators.
 
-Start with running the script console's sample script. 
+Start with running the Script Console's sample script. 
 
 ## Running the Sample Script
 
-Here's how to run the sample script in the script console:
+Here's how to run the sample script in the Script Console:
 
 1.  Sign in as an administrator.
 
 2.  In the Product Menu, navigate to *Control Panel* &rarr; *Configuration* &rarr; *Server Administration*. 
 
-3.  Click on *Script*. This is the script console. The default sample script prints the User count to the console output. 
+3.  Click on *Script*. This is the Script Console. The default sample script prints the User count to the console output.
 
     ```groovy
     // ### Groovy Sample ###
@@ -31,23 +30,29 @@ Here's how to run the sample script in the script console:
     out.println(number);
     ```
 
-4.  Click *Execute* and check the script console *Output* for the User count.
+4.  Click *Execute* and check the Script Console *Output* for the User count.
 
-![Figure 1: The script console's sample Groovy script prints the User count to the console's *Output* section.](./images/groovy-script-sample.png)
+![Figure 1: The Script Console's sample Groovy script prints the User count to Script Console output.](./images/groovy-script-sample.png)
 
-The Groovy sample invokes the Liferay service utility `UserLocalServiceUtil` to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the script console. Note that if you use `System.out.println` instead of `out.println`, your output is printed to Liferay's log file rather than to the script console.
+The Groovy sample invokes the Liferay service utility [`UserLocalServiceUtil`](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the Script Console.
+
+> **Note:** If you use `System.out.println` instead of `out.println`, your output is printed to Liferay's log file rather than to the Script Console.
 
 ## Predefined Variables
 
-Here are the predefined variables available to scripts executed in the script console:
+Here are the predefined variables available to scripts in the Script Console
 
-- `out` (`java.io.PrintWriter`)
-- `actionRequest` (`javax.portlet.ActionRequest`)
-- `actionResponse` (`javax.portlet.ActionReponse`)
-- `portletConfig` (`javax.portlet.PortletConfig`)
-- `portletContext` (`javax.portlet.PortletContext`)
-- `preferences` (`javax.portlet.PortletPreferences`)
-- `userInfo` (`java.util.Map<String, String>`)
+**Script Console Variables**
+
+| Variable | Class |
+| :------- | :---- |
+| `out` | `java.io.PrintWriter` |
+| `actionRequest` | `javax.portlet.ActionRequest` |
+| `actionResponse` | `javax.portlet.ActionReponse` |
+| `portletConfig` | `javax.portlet.PortletConfig` |
+| `portletContext` | `javax.portlet.PortletContext` |
+| `preferences` | `javax.portlet.PortletPreferences` |
+| `userInfo` | `java.util.Map<String, String>` |
 
 This script demonstrates using the `actionRequest` variable to get the portal instance's `Company`:
 
@@ -59,21 +64,29 @@ out.println("Current Company:${company.getName()}\n")
 
 out.println("User Info:")
 userInfo.each { 
-        k,v -> out.println("${k}:${v}") 
+        k,v -> out.println("${k}:${v}")
 }
 ```
 
-![Figure 2: Here's an example of invoking a Groovy script that uses the predefined `out`, `actionRequest`, and `userInfo` variables to print information about the company and current user.](./images/groovy-script-current-user-info.png)
+![Figure 2: Here's an example of invoking a Groovy script that uses the predefined out, actionRequest, and userInfo variables to print information about the Company and User.](./images/groovy-script-current-user-info.png)
 
 ## Tips
 
-Keep these things in mind when using the script console: 
+Keep these things in mind when using the Script Console: 
 
 - There is no undo.
 - There is no preview.
 - Permissions checking is not enforced for local services.
 - Scripts are executed synchronously. Avoid executing scripts that might take a long time. 
 
-For these reasons, use the script console cautiously. Test your scripts on non-production systems before running them on production. 
+Use the Script Console cautiously and test your scripts on non-production systems before running them on production. 
 
-Of course, Liferay's script engine can be used outside of the script console. Next, you'll learn how workflows leverage Liferay's script engine.
+The script engine can be used outside of the Script Console, such as in a Kaleo Workflow. Using the script engine in workflows is next.
+
+## Additional Information
+
+[Invoking Liferay services](./07-invoking-liferay-services-from-scripts.md)
+
+[Using the Script Engine in Workflow](./09-using-the-script-engine-in-workflow.md)
+
+[Script Examples](./10-script-examples.md)

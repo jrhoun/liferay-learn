@@ -1,25 +1,20 @@
 # Script Examples
 
-
-Here are some examples to help you use Liferay's script console. Note: Most of these originated from a [Liferay blog post](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console).
-
-The following scripts are Groovy scripts but they can be adapted to other languages.
+Here are some examples to help you use scripts in DXP. Most of the examples originated from the Liferay blog post [5 Tips to Improve Usage of the Liferay Script Console](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console). 
 
 - [Example 1: Presenting New Terms of Use to Users](#example-1-presenting-new-terms-of-use-to-users)
 
-- [Example 2: Embedding HTML Markup in Script Outputs](#example-2-embedding-html-markup-in-script-outputs)
+- [Example 2: Embedding HTML Markup in Script Output](#example-2-embedding-html-markup-in-script-output)
 
-- [Example 3: Show Exceptions in the Script Console](#example-3-show-exceptions-in-the-script-console)
+- [Example 3: Showing Exceptions in the Script Console](#example-3-showing-exceptions-in-the-script-console)
 
-- [Example 4: Implement a Preview Mode](#example-4-implement-a-preview-mode)
-
-- [Example 5: Plan a File Output for Long-Running Scripts](#example-5-plan-a-file-output-for-long-running-scripts)
+- [Example 4: Logging Output to a File Scripts](#example-5-logging-output-to-a-file)
 
 ## Example 1: Presenting New Terms of Use to Users
 
-This example retrieves user information from the database, makes changes, and then saves the changes in the database. Suppose that your company has updated the [terms of use](/docs/7-2/user/-/knowledge_base/u/instance-configuration-instance-settings#terms-of-use) and wants present users with the updated terms of use whenever they sign in next. When they agree to the terms of use, a boolean attribute called `agreedToTermsOfUse` is set in their user records. As long as the value of this variable is `true`, users aren't presented with the terms of use when they sign in. If you set this flag to `false` for each user, each user must agree to the terms of use again before they can sign in. 
+This example retrieves user information from the database, modifies Users, and then saves the changes to the database. Suppose that your company updates its [terms of use](https://help.liferay.com/hc/en-us/articles/360031899692-Instance-Configuration-Instance-Settings#terms-of-use) and wants present them to the users. When a user agrees to the terms of use, a Boolean field called `agreedToTermsOfUse` is set in the User record associated with that user. As long as the field value is `true`, the user isn't presented with the terms of use. If you set the field `false` for all users, they must agree to the terms of use again before they can sign in.
 
-1.  Enter and execute the following code in the script console:
+1.  Enter and execute this script in the Script Console:
 
     ```groovy
     import com.liferay.portal.kernel.service.UserLocalServiceUtil
@@ -31,10 +26,10 @@ This example retrieves user information from the database, makes changes, and th
     user.getAgreedToTermsOfUse()) }
     ```
 
-    This code prints each user's `agreedToTermsOfUse` attribute value. 
+    This script prints each User's `agreedToTermsOfUse` field value.
 
-2.  Replace that with this script:
-    
+2.  Replace the script with this:
+
     ```groovy
     import com.liferay.portal.kernel.service.UserLocalServiceUtil
 
@@ -55,19 +50,17 @@ This example retrieves user information from the database, makes changes, and th
     }
     ```
 
-    This sets each user's `agreedToTermsOfUse` attribute to `false`. It skips the default user as well as the default admin user that's currently signed in and running the script.
+    The script sets each User's `agreedToTermsOfUse` field to `false`. It skips the default User as well as the default admin User that's currently signed in and running the script.
 
 3.  Click *Execute*.
  
-4.  Verify the script updated the records by running the first script again. 
+4.  Verify the script updated the records by running the first script again.
 
-    All users (except the default user and your user) have been updated. 
+All Users (except the default User and your User) are updated. You've enabled the new terms of use agreement for all users to accept.
 
-You've enabled the new terms of use agreement for all users to accept. 
+## Example 2: Embedding HTML Markup in Script Output
 
-## Example 2: Embedding HTML Markup in Script Outputs
-
-The output of the script console is rendered as HTML content. Thus, you can embed HTML markup in your output to change its look and feel. Here's an example:
+The Script Console renders output as HTML content. Thus, you can embed HTML markup in script output to change its look and feel. Here's an example:
 
 ```groovy
 import com.liferay.portal.kernel.service.*
@@ -81,17 +74,17 @@ out.println(
         """);
 ```
 
-![Figure 1: Here's an example of invoking a Groovy script that embeds HTML markup in the output of the script.](./images/groovy-script-embed-html-markup.png)
+![Figure 1: This script styles its output using HTML.](./images/groovy-script-embed-html-markup.png)
 
-## Example 3: Show Exceptions in the Script Console
+## Example 3: Showing Exceptions in the Script Console
 
-When any exception occurs during script execution, the error message is always the same:
+The Script Console's standard error message is this:
 
-    Your request failed to complete.
+```
+Your request failed to complete.
+```
 
-This message gives no detail about the error. To find information about the error and what caused it, you must usually examine the server logs.
-
-You can, however, use the following technique to make exception details appear in the script console. Wrap your code with a try / catch block and print the stacktrace to the console output from the catch clause. Note that even this technique does not catch script syntax errors. Here's an example:
+The message doesn't describe the error or provide any details. Getting error information requires examining the logs. You can, however, use a try / catch block to capture exceptions and print the exception information in the console.
 
 ```groovy
 try {
@@ -103,60 +96,11 @@ try {
 }
 ```
 
-![Figure 2: Here's an example of a Groovy script that catches exceptions and prints exception information to the script console.](./images/groovy-script-show-exception.png)
+![Figure 2: Here's an example of a Groovy script that catches exceptions and prints exception information to the Script Console.](./images/groovy-script-show-exception.png)
 
-## Example 4: Implement a Preview Mode
+## Example 4: Logging Output to a Files
 
-Since Liferay's script console does not provide an undo feature, it can be convenient to set up a kind of preview mode. The purpose of a preview mode is to determine any permanent effects of a script before any information is actually saved to the Liferay database. The preview mode consists in using a `previewMode` flag which determines whether the operations with permanent effects should be executed or not. If `previewMode` is `true`, all the data that would be permanently affected by the script is printed instead. Then you can see an outline of the data impacted by the script. If everything is okay, switch the flag so the script can make permanent updates to the database.
-
-Here's an example Groovy script that sets users to inactive. Clearly, you'd want to test this with preview mode before running it: 
-
-```groovy
-import java.util.Calendar
-import com.liferay.portal.kernel.service.*
-import com.liferay.portal.kernel.model.*
-import com.liferay.portal.kernel.dao.orm.*
-import static com.liferay.portal.kernel.workflow.WorkflowConstants.*
-
-//
-// Deactivate users never logged and created since more than 2 years
-//
-
-previewMode = true // Update this flag to false to really make changes
-
-Calendar twoYearsAgo = Calendar.getInstance()
-twoYearsAgo.setTime(new Date())
-twoYearsAgo.add(Calendar.YEAR, -2)
-
-DynamicQuery query = DynamicQueryFactoryUtil.forClass(User.class)
-        .add(PropertyFactoryUtil.forName("lastLoginDate").isNull())
-        .add(PropertyFactoryUtil.forName("createDate").lt(twoYearsAgo.getTime()))
-
-users = UserLocalServiceUtil.dynamicQuery(query)
-
-users.each { u ->
-         if(!u.isDefaultUser() && u.getStatus() != STATUS_INACTIVE) {
-                out.println(u.getEmailAddress())
-                if(!previewMode) {
-                        UserLocalServiceUtil.updateStatus(u.getUserId(), STATUS_INACTIVE)
-                }
-         }
-}
-
-if(previewMode) {
-        out.println('Preview mode is on: switch off the flag and execute '
-                + 'again this script to make changes to the database') 
-}
-```
-
-## Example 5: Plan a File Output for Long-Running Scripts
-
-| **Important:** The script console is for system operations and maintenance and
-| not for end users. Limit script console access to portal administrators.
-
-When a script has been running for a long time, the console could return an error even though the script can continue running and potentially conclude successfully. But it's impossible to know the outcome without the corresponding output!
-
-To bypass this limitation, you can send the output of the script console to a file instead of to the console itself or to the Liferay log. For example, consider this script:
+A script's output only shows in the Script Console when the script completes. If you want to see a script's progress, you can log messages to a file.
 
 ```groovy
 import com.liferay.portal.kernel.service.*
@@ -181,7 +125,9 @@ users.each { u ->
 } 
 ```
 
-The script above creates a subfolder of [Liferay Home](/docs/7-2/deploy/-/knowledge_base/d/liferay-home) called `scripting` and saves the script output to a file in this folder. After running the script above, you can read the generated file without direct access to the file system. Here's a second script that demonstrates this:
+This script creates a subfolder in [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) called `scripting` and saves the script output to a file in this folder. 
+
+If you don't have direct access to the file system, you can use this code to print the file content to the Script Console:
 
 ```groovy
 final def SCRIPT_ID = "MYSCRIPT"
@@ -189,12 +135,12 @@ outputFile = new File("""${System.getProperty("liferay.home")}/scripting/out-${S
 out.println(outputFile.text)
 ```
 
-One advantage of using a dedicated output file instead of using a classic logger is that it's easier to get the script output data back. Getting the script output data would be more difficult to obtain from the portal log, for example, because of all the other information there.
+Congratulations! You've executed various scripts in the Script Console.
 
-## Related Topics
+## Additional Information
 
-[Running Scripts From the Script Console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console)
+[Running Scripts From the Script Console](./08-running-scripts-from-the-script-console.md)
 
-[Leveraging the Script Engine in Workflow](/docs/7-2/user/-/knowledge_base/u/leveraging-the-script-engine-in-workflow)
+[Using the Script Engine in Workflow](./09-using-the-script-engine-in-workflow.md)
 
-[Using Liferay's Script Engine](/docs/7-2/user/-/knowledge_base/u/using-liferays-script-engine)
+[Using thes Script Engine](./06-using-the-script-engine.md)

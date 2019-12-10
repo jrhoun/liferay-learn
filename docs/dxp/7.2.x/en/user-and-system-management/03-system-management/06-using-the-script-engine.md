@@ -1,15 +1,17 @@
 # Using the Script Engine
 
-@product@ provides a robust script engine for executing [Groovy](http://groovy-lang.org/) scripts. You can execute scripts to perform maintenance tasks like data cleanup, user maintenance operations, bulk invocations of Liferay's API, or even system level operations in the scripting console.
+DXP provides a robust script engine for executing [Groovy](http://groovy-lang.org/) scripts. You can execute scripts to perform maintenance tasks like data cleanup, user maintenance operations, bulk Liferay API invocations, or even system level operations in the Script Console.
 
-These tutorials cover the following scripting topics: 
+![Figure 1: The Script Console provides context variables, such as the current actionRequest and lets you invoke Liferay services using Groovy. ](./images/groovy-script-current-user-info.png)
 
-- [Invoking Liferay services](/docs/7-2/user/-/knowledge_base/u/invoking-liferay-services-from-scripts)
+Here are the scripting topics: 
 
-- [Running scripts from the script console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console)
+- [Invoking Liferay services](./07-invoking-liferay-services-from-scripts.md)
 
-- [Using the script engine with workflow](/docs/7-2/user/-/knowledge_base/u/leveraging-the-script-engine-in-workflow)
+- [Running scripts from the Script Console](./08-running-scripts-from-the-script-console.md)
 
-- [Script examples](/docs/7-2/user/-/knowledge_base/u/script-examples)
+- [Using the script engine with workflow](./09-using-the-script-engine-in-workflow.md)
 
-The most common use of the scripting console is to invoke Liferay's services, so that's covered first. Familiarity with Liferay's API makes the scripting console a useful tool. 
+- [Script examples](./10-script-examples.md)
+
+The scripting console is most commonly used to invoke Liferay's services, so that's covered first.  

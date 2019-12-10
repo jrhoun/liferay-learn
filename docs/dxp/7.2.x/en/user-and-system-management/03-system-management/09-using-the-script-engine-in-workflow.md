@@ -1,90 +1,91 @@
-# Leveraging the Script Engine in Workflow
+# Using the Script Engine in Workflow
 
+Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./08-running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during the execution of the workflow.
 
-Liferay's Kaleo workflow engine provides a robust system for reviewing and approving content in an enterprise environment. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the script console, but are embedded in [XML workflow definitions](/docs/7-2/reference/-/knowledge_base/r/crafting-xml-workflow-definitions) and run during the execution of the workflow.
+Here are the workflow scripting topics:
 
-## Injected Variables
+- [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
+- [Predefined Variables](#predefined-variables)
+- [Script Example](#script-examples)
+- [Calling OSGi Services](#calling-osgi-services)
 
-Usually when you're scripting in Groovy, you must define your variables.
+## Adding Scripts to Workflow Nodes
 
-```groovy
-KaleoInstanceToken kaleoInstanceToken=new KaleoInstanceToken();
+Workflow scripts can be invoked from actions in these workflow node types:
+
+- `<fork>`
+- `<join>`
+- `<state>`
+- `<task>`
+
+Here's the format for an action that invokes a script:
+
+```xml
+<actions>
+<action>
+    <script>
+        <![CDATA[script code goes here]]>
+    </script>
+    <script-language>scripting language name goes here</script-language>
+</action>
+...
+</actions>
 ```
 
-In workflow scripts, there are several [pre-defined variables](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-scripting-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/scripting/internal/util/ScriptingContextBuilderImpl.java) injected into your script context, to be called without defining them first.
+This snippet from the default workflow definition's state node, for example, defines a script that sets the workflow status to *approved*.
+
+```xml
+<script>
+<![CDATA[
+    import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
+    import com.liferay.portal.kernel.workflow.WorkflowConstants;
+
+    WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approved"), workflowContext);
+]]>
+</script>
+<script-language>groovy</script-language>
+```
+
+## Predefined Variables
+
+Some variables are available to the node types mentioned above while others are exclusively available to task nodes.
 
 ### Variables that are Always Available
 
 These variables are available from anywhere that you can run a workflow script:
 
 `kaleoInstanceToken` ([`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/7.2.0-ga1/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java))
-: A workflow instance and corresponding instance token (the
-`KaleoInstanceToken`) are created each time a User clicks _Submit for
-Publication_. Use the injected token to retrieve its ID, by calling `kaleoInstanceToken.getKaleoInstanceTokenId()`. This is often passed as a method parameter in a script.
+: A workflow instance and corresponding instance token (the `KaleoInstanceToken`) are created each time a User clicks _Submit for Publication_. Use the injected token to retrieve its ID, by calling `kaleoInstanceToken.getKaleoInstanceTokenId()`. This is often passed as a method parameter in a script.
 
 `userId`
-: The `userId` returned is context dependent. Technically, the logic works like
-this: if the `KaleoTaskInstanceToke.getcompletionUserId()` is null, check `KaloeTaskInstanceToken.getUserId()`. If that's null too, call `KaleoInstanceToken.getUserId()`. It's the ID of the last User to intervene in the workflow at the time the script is run. In the `created` node, this would be the User that clicked _Submit for Publication_, whereas it's the ID of the reviewer upon exit of the `review` node of the Single Approver definition.
+: The `userId` returned is context dependent. Technically, the logic works like this: if the `KaleoTaskInstanceToke.getcompletionUserId()` is null, check `KaloeTaskInstanceToken.getUserId()`. If that's null too, call `KaleoInstanceToken.getUserId()`. It's the ID of the last User to intervene in the workflow at the time the script is run. In the `created` node, this would be the User that clicked _Submit for Publication_, whereas it's the ID of the reviewer upon exit of the `review` node of the Single Approver definition.
 
 `workflowContext` (`Map<String, Serializable>`)
-: The workflow context is full of useful information you can
-use in your scripts. Usually you'll pass this as a parameter to a method that requires a `WorkflowContext` object, but all of the `WorkflowContext`'s attributes are available in the script as well. The workflow context in the script is context dependent. If a call to `ExecutionContext.getWorkflowContext()` comes back null, then the workflow context is obtained by `KaleoInstanceModel.getWorkflowContext()`.
+: The workflow context contains information you can use in your scripts. The context is typically passed as a parameter, but all of the `WorkflowContext`'s attributes are available in the script as well. The workflow context in the script is context dependent. If a call to `ExecutionContext.getWorkflowContext()` comes back null, then the workflow context is obtained by `KaleoInstanceModel.getWorkflowContext()`.
 
 ### Variables Injected into Task Nodes
 
-If a `kaleoTaskInstanceToken` has been created:
-
 `kaleoTaskInstanceToken` ([`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/7.2.0-ga1/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java))
-: The task's token itself is available in the workflow script. Use it to get its
-ID, to use in other useful programmatic workflow activities, like programmatic assignment.
+: The task's token itself is available in the workflow script. Use it to get its ID, to use in other useful programmatic workflow activities, like programmatic assignment.
 
 `taskName` (`String`)
 : The task's own name is accessible (returns the same as `KaleoTak.getName()`).
 
 `workflowTaskAssignees` (`List<`[`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/7.2.0-ga1/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowTaskAssignee.java)`>`)
-: If the script is inside a task node, get a `List` of its assignees.
+: Lists the task's assignees.
 
 `kaleoTimerInstanceToken` ([`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/7.2.0-ga1/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java))
-: If a [task timer](/docs/7-2/reference/-/knowledge_base/r/workflow-task-nodes#task-timers)
-exists, use the `kaleoTimerInstanceToken` to get its ID, by calling `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`.
+: If a [task timer](https://help.liferay.com/hc/en-us/articles/360028834732-Workflow-Task-Nodes#task-timers) exists, get its ID by calling `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`.
 
-## Scripting Examples
+## Script Example
 
-The final step in a workflow runs a script that makes content available for use. The snippet below accesses the Java class associated with the workflow to set content's status to *approved*.
+At virtually any point in a workflow, you can use Liferay's script engine to access workflow APIs or other Liferay APIs. Here are a few practical ways you can use workflow scripts:
 
-```xml
-<script>
-    <![CDATA[
-        import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
-        import com.liferay.portal.kernel.workflow.WorkflowConstants;
+- Getting a list of users with a specific workflow-related role
+- Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
+- Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
 
-        WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approved"), workflowContext);
-    ]]>
-</script>
-<script-language>groovy</script-language>
-```
-
-At virtually any point in a workflow, you can use Liferay's script engine to access workflow APIs or other Liferay APIs. There are a lot of different ways you could use this. Here are a few practical examples:
-
--  Getting a list of users with a specific workflow-related role
--  Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
--  Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
-
-Of course, before you try any of this, you need to know the appropriate syntax for inserting a script into a workflow. In an XML workflow definition, a script can be used in any XML type that can contain an `actions` tag: those types are `<state>`, `<task>`, `<fork>` and `<join>`. Inside of one of those types, format your script like this:
-
-```xml
-<actions>
-    <action>
-        <script>
-            <![CDATA[*the contents of your script*]]>
-        </script>
-        <script-language>*your scripting language of choice*</script-language>
-    </action>
-    ...
-</actions>
-```
-
-Here's an example of a workflow script created in Groovy. This one is used with a `Condition` statement in Kaleo. It accesses Liferay's asset framework to determine the category of an asset. The script uses the category to determine the correct approval process automatically.  If the category `legal` has been applied to the asset, the asset is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
+The following workflow script is written using Groovy and is used with a `Condition` statement. The script uses Liferay's asset framework to determine an asset's category and uses the category to determine the correct approval process automatically.  If the asset is in the `legal` category , it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
 
 ```xml
 <script>
@@ -138,11 +139,15 @@ Here's an example of a workflow script created in Groovy. This one is used with 
 <script-language>groovy</script-language>
 ```
 
-Within a workflow, the next task or state is chosen based on the return value. See some examples of workflow scripts by accessing the [embedded workflows](/docs/7-2/user/-/knowledge_base/u/workflow#embedded-workflows) and inspecting the XML.
+> **Note:** A script's return value determines the next task or state.
+
+See [Embedded Workflows](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow#embedded-workflows) for more workflow script examples.
 
 ## Calling OSGi Services
 
-How do you call OSGi services from a workflow script, accounting for the dynamic environment of the OSGi runtime, where services your script depends on can disappear without notice? [Use a service tracker](/docs/7-2/frameworks/-/knowledge_base/f/service-trackers-for-osgi-services). That way you can make sure your code has access to the service it needs, and if not, do something appropriate in response. Here's a little example code to show you how this might look in Groovy:
+[Service Trackers](https://help.liferay.com/hc/en-us/articles/360028846472-Service-Trackers-for-OSGi-Services) retrieve OSGi services that are available. If the Service Tracker returns null for the service, that service is unavailable and you can do something appropriate in response. 
+
+Here's a workflow script written in Groovy that uses a `JournalArticleLocalService` to get an article count:
 
 ```groovy
 import com.liferay.journal.model.JournalArticle;
@@ -185,12 +190,18 @@ finally {
 }
 ```
 
-If you read the article on [service trackers](/docs/7-2/frameworks/-/knowledge_base/f/service-trackers-for-osgi-services), the only odd looking piece of the above code is the `getBundle` call: why is `GroovyExecutor.class` passed as a parameter? The parameter passed to the `FrameworkUtil.getBundle` call must be a class from the OSGi bundle executing the workflow script. This is different from the context of a plugin project, where you'd want to get the bundle hosting the class where you're making the call (using `this.getClass()`, for example). Note that for another scripting engine, you must pass in a concrete class from the particular bundle executing your script.
+The script tracks the service using the OSGi bundle of the class that executes the script. Since a `com.liferay.portal.scripting.groovy.internal.GroovyExecutor` instance executes the script, the instance's bundle is used to track the service.
 
-The combination of Liferay's script and workflow engines is incredibly powerful. Since, however, it enables users to execute code, it can be dangerous. When configuring your permissions, be aware of the potential consequences of poorly or maliciously written scripts inside a workflow definition. For more information on creating workflow definitions, see the [workflow documentation](/docs/7-2/user/-/knowledge_base/u/workflow).
+```groovy
+Bundle bundle = FrameworkUtil.getBundle(GroovyExecutor.class);
+```
 
-## Related Topics
+Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful combination. When configuring your permissions, be aware of the potential consequences of poorly or maliciously written scripts inside a workflow definition.
 
-[Running Scripts From the Script Console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console)
+## Additional Information
 
-[Script Examples](/docs/7-2/user/-/knowledge_base/u/script-examples)
+[Introduction to Workflow](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow)
+
+[Running Scripts From the Script Console](./08-running-scripts-from-the-script-console)
+
+[Script Examples](./10-script-examples.md)
