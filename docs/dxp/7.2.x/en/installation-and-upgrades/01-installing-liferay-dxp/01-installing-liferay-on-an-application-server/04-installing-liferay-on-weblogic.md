@@ -107,7 +107,7 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
 
 ## Declaring the Liferay Home Folder
 
-Before installing DXP, administrator must set the [*Liferay Home*](https://help.liferay.com/hc/articles/360028712272-Liferay-Home) folder's location via the `liferay.home` property in a [`portal-ext.properties`](https://help.liferay.com/hc/articles/360028712292-Portal-Properties) file. (Use this file to override [other DXP properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) as needed.)
+Before installing DXP, administrator must set the [*Liferay Home*](../../14-reference/01-liferay-home.md) folder's location via the `liferay.home` property in a [`portal-ext.properties`](https://help.liferay.com/hc/articles/360028712292-Portal-Properties) file. (Use this file to override [other DXP properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) as needed.)
 
 > 1. Designate a folder that serves as Liferay Home. In WebLogic, the user domain's folder is generally Liferay Home, but administrators can choose any other folder on the machine.
 > 1. Create the `portal-ext.properties` file and add the `liferay.home` property:
@@ -158,7 +158,6 @@ The `[Liferay Home]/osgi` folder has these subfolders:
 * `Configs`
 * `Core`
 * `Marketplace`
-* `War`
 
 ### Database Configuration
 
