@@ -155,10 +155,10 @@ A JDBC driver for the database has been added to the user domain's `lib` folder.
 
 The `[Liferay Home]/osgi` folder has these subfolders:
 
-* `Configs`
-* `Core`
-* `Marketplace`
-* `Modules`
+* `configs`
+* `core`
+* `marketplace`
+* `modules`
 * `portal`
 * `state`
 * `static`
