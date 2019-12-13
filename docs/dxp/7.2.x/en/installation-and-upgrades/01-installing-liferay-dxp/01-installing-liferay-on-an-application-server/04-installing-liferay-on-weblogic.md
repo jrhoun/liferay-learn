@@ -158,6 +158,11 @@ The `[Liferay Home]/osgi` folder has these subfolders:
 * `Configs`
 * `Core`
 * `Marketplace`
+* `Modules`
+* `portal`
+* `state`
+* `static`
+* `war`
 
 ### Database Configuration
 
