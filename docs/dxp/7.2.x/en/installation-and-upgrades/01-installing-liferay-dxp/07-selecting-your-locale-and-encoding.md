@@ -39,7 +39,7 @@ If you set the time zone in the JVM to other than GMT, it causes issues such as 
 
 1. Click _Save_.
 
-Alternately, set these as properties in your `portal-ext.properties` file in your [Liferay Home](https://help.liferay.com/hc/articles/360028712272-Liferay-Home) folder. The `portal.properties` reference document's [Company](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) section defines the default locale. The [Languages and Time Zones](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) section defines the available and current locales.
+Alternately, set these as properties in your `portal-ext.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md) folder. The `portal.properties` reference document's [Company](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) section defines the default locale. The [Languages and Time Zones](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) section defines the available and current locales.
 
 ```
 company.default.locale=en_GB
@@ -101,6 +101,6 @@ For more information, see [Using Liferay Localization Settings](https://help.lif
 
 ## Related Topics
 
-* [Using Liferay Language Settings](/docs/7-2/frameworks/-/knowledge_base/f/using-liferays-localization-settings)
-* [Overriding Global Language Keys](/docs/7-2/customization/-/knowledge_base/c/overriding-global-language-keys)
-* [Overriding a Module's Language Keys](/docs/7-2/customization/-/knowledge_base/c/overriding-a-modules-language-keys)
+* [Using Liferay Language Settings](https://help.liferay.com/hc/articles/360029526832-Using-Liferay-s-Localization-Settings)
+* [Overriding Global Language Keys](https://help.liferay.com/hc/articles/360029122551-Overriding-Global-Language-Keys)
+* [Overriding a Module's Language Keys](https://help.liferay.com/hc/articles/360028808452-Overriding-a-Module-s-Language-Keys)
