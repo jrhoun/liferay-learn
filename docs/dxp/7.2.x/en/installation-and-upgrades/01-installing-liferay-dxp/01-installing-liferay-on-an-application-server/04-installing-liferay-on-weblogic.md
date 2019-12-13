@@ -27,7 +27,7 @@ Here are the basic steps for installing DXP on WebLogic:
 
 WebLogic requires a Node Manager to start and stop managed servers. Before installing DXP, configure the Node Manager included with the WebLogic installation. This is set in the `domains/your_domain_name/nodemanager/nodemanager.properties` file. Open this file and set the `SecureListener` property to `false`:
 
-```
+```properties
 SecureListener=false
 ```
 
@@ -41,7 +41,7 @@ This setting disables the encryption (SSL) requirement for the Node Manager, all
 
 If running WebLogic on Mac or Linux, administrators may also need to set the `NativeVersionEnabled` property to `false`:
 
-```
+```properties
 NativeVersionEnabled=false
 ```
 
@@ -59,7 +59,7 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
 
     Add the following variables to both `startWebLogic.[cmd|sh]` scripts:
 
-    ```
+    ```bash
     export DERBY_FLAG="false"
     export JAVA_OPTIONS="${JAVA_OPTIONS} -Dfile.encoding=UTF-8 -Duser.timezone=GMT -da:org.apache.lucene... -da:org.aspectj..."
     export MW_HOME="/your/weblogic/directory"
@@ -70,20 +70,20 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
 
     The `DERBY_FLAG` setting disables the Derby server built in to WebLogic, as DXP does not require this server. The remaining settings support DXP's memory requirements, UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ. Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example:
 
-    ```
+    ```bash
     export MW_HOME="/Users/ray/Oracle/wls12210"
     ```
 
 1. Some of the settings are also found in the `your-domain/bin/SetDomainEnv.[cmd|sh]` . Add the following variables (Windows):
 
-    ```
+    ```bat
     set WLS_MEM_ARGS_64BIT=-Xms2560m -Xmx2560m
     set WLS_MEM_ARGS_32BIT=-Xms2560m -Xmx2560m
     ```
 
     or on Mac or Linux:
 
-    ```
+    ```bash
     WLS_MEM_ARGS_64BIT="-Xms2560m -Xmx2560m"
     export WLS_MEM_ARGS_64BIT
 
@@ -93,13 +93,13 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
 
 1. Set the Java file encoding to UTF-8 in `your-domain/bin/SetDomainEnv.[cmd|sh]` by appending `-Dfile.encoding=UTF-8` ahead of the other Java properties:  
 
-    ```
+    ```bash
     JAVA_PROPERTIES="-Dfile.encoding=UTF-8 ${JAVA_PROPERTIES} ${CLUSTER_PROPERTIES}"
     ```
 
 1. Ensure that the Node Manager sets DXP's memory requirements when starting the Managed Server. In the Admin Server's console UI, navigate to the Managed Server where DXP is to be deployed and select the *Server Start* tab. Enter the following parameters into the *Arguments* field:
 
-    ```
+    ```bash
     -Xmx2560m -Xms2560m -XX:MaxMetaspaceSize=512m
     ```
 
@@ -112,7 +112,7 @@ Before installing DXP, administrator must set the [*Liferay Home*](../../14-refe
 > 1. Designate a folder that serves as Liferay Home. In WebLogic, the user domain's folder is generally Liferay Home, but administrators can choose any other folder on the machine.
 > 1. Create the `portal-ext.properties` file and add the `liferay.home` property:
 
-```
+```properties
 liferay.home=/full/path/to/your/liferay/home/folder
 ```
 
@@ -170,7 +170,7 @@ Use the following procedure if using WebLogic to manage the [database](../04-con
 
 1. Log in to the AdminServer console.
 1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
-1. To create a new data source, click *New*. 
+1. To create a new data source, click *New*.
 1. Enter the *Name* field with `Liferay Data Source` and the *JNDI Name* field with `jdbc/LiferayPool`.
 1. Select the database type and driver. For example, MySQL is *MySQL's Driver (Type 4) Versions:using com.mysql.jdbc.Driver*.
 1. Click *Next* to continue.
@@ -180,13 +180,13 @@ Use the following procedure if using WebLogic to manage the [database](../04-con
 1. Select the target for the data source and click *Finish*.
 1. Connect DXP to the JDBC data source: in the `portal-ext.properties` file (see above) in the Liferay Home directory, enter the following line:
 
-    ```
+    ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
 
 Alternatively, administrators can make the above configuration strictly via properties in the `portal-ext.properties` file. To do so, place the following properties and values in the file. Be sure to change the `your*` values with the values appropriate for the database's configuration (if using MySQL):
 
-```
+```properties
 jdbc.default.driverClassName=com.mysql.jdbc.Driver
 jdbc.default.url=jdbc:mysql://your.db.ip.address/yourdbname?useUnicode?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 jdbc.default.username=yourdbuser
@@ -203,11 +203,11 @@ If using WebLogic to manage the [mail session](https://help.liferay.com/hc/artic
 1. Name the session *LiferayMail* and give it the JNDI name `mail/MailSession`.
 1. Enter the *Session Username*, *Session Password*, *Confirm Session Password*, and *JavaMail Properties* fields as necessary for the mail server. See the [WebLogic documentation](http://docs.oracle.com/middleware/1221/wls/FMWCH/pagehelp/Mailcreatemailsessiontitle.html) for more information on these fields.
 1. Click *Next*.
-1. Choose the Managed Server where DXP is to be installed on, and click *Finish*. 
+1. Choose the Managed Server where DXP is to be installed on, and click *Finish*.
 1. Shut down the Managed and Admin Servers.
 1. With the Managed and Admin servers shut down, add the following property to the `portal-ext.properties` file in Liferay Home:
 
-    ```
+    ```properties
     mail.session.jndi.name=mail/MailSession
     ```
 
