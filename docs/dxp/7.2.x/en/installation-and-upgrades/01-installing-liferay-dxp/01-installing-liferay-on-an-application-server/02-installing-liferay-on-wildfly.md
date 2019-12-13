@@ -103,11 +103,9 @@ Here are the basic steps:
     * `configs`
     * `core`
     * `marketplace`
-
-1. Note that DXP creates these `osgi` subfolders the first time it starts:
-
     * `modules`
     * `portal`
+    * `state`
     * `static`
     * `war`
 
