@@ -26,7 +26,7 @@
 * Installing a Search Engine
 * Configuring Your Document Repository
 * Connecting to a Mail Server
-* Selecting Your Locale and Encoding
+* [Selecting Your Locale and Encoding](./01-installing-liferay-dxp/07-selecting-your-locale-and-encoding.md)
 
 ### Performance and Scalability
 
