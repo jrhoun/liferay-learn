@@ -122,3 +122,4 @@
 * [Liferay Upgrade Planner Steps](./14-reference/06-liferay-upgrade-planner-steps.md)
 * [Comparing Patch Levels](./14-reference/07-comparing-patch-levels.md)
 * [Patching Tool Configuration](./14-reference/08-patching-tool-configuration-properties.md)
+* [Mail Server Reference](./14-reference/10-mail-server-reference.md)
