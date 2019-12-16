@@ -29,7 +29,7 @@ Setting Up Liferay DXP
 * Configuration Overview
 * Installing a Search Engine
 * Configuring Your Document Repository
-* Connecting to a Mail Server
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/07-connecting-to-a-mail-server`
 * Selecting Your Locale and Encoding
 
 Performance and Scalability
@@ -138,3 +138,4 @@ Reference
 -  :doc:`/installation-and-upgrades/14-reference/06-liferay-upgrade-planner-steps`
 -  :doc:`/installation-and-upgrades/14-reference/07-comparing-patch-levels`
 -  :doc:`/installation-and-upgrades/14-reference/08-patching-tool-configuration-properties`
+-  :doc:`/installation-and-upgrades/14-reference/10-mail-server-reference`
