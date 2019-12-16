@@ -1,10 +1,4 @@
----
-header-id: migrating-user-segments
----
-
 # Migrating User Segments
-
-[TOC levels=1-4]
 
 In Audience Targeting, a user segment represents a subset of users. A user
 segment is defined by one or more rules that users must match to belong to that

@@ -1,10 +1,4 @@
----
-header-id: manually-migrating-from-audience-targeting
----
-
 # Manually Migrating from Audience Targeting
-
-[TOC levels=1-4]
 
 As explained in the previous article, some Audience Targeting rules do not have 
 a direct equivalent in @product@ 7.2 and, therefore, they cannot be 
