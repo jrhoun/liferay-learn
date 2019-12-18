@@ -1,4 +1,4 @@
-# Migrating From Audience Targeting
+# Introduction to Migrating From Audience Targeting
 
 While the Audience Targeting app has been removed from Liferay DXP as of 7.2, the same features are integrated into Liferay's core as Segmentation and Personalization. This enables better integration with other applications and provides developers with easier access to Segmentation and Personalization features.
 

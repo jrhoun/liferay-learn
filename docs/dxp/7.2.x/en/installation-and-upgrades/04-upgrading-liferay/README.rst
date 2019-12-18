@@ -14,3 +14,10 @@ Upgrading Liferay
 -  :doc:`/installation-and-upgrades/04-upgrading-liferay/97-upgrading-a-sharded-environment`
 -  :doc:`/installation-and-upgrades/04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2`
 -  :doc:`/installation-and-upgrades/04-upgrading-liferay/99-features-in-maintenance-mode`
+
+Migrating from Audience Targeting
+---------------------------------
+
+-  :doc:`/installation-and-upgrades/01-migrating-from-audience-targeting/01-introduction-to-migrating-from-audience-targeting`
+-  :doc:`/installation-and-upgrades/01-migrating-from-audience-targeting/02-migrating-user-segments`
+-  :doc:`/installation-and-upgrades/01-migrating-from-audience-targeting/03-manually-migrating-from-audience-targeting`

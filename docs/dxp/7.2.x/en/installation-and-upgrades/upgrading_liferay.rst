@@ -2,7 +2,7 @@ Upgrading Liferay
 =================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    04-upgrading-liferay/01-introduction-to-upgrading-to-liferay-dxp-7-2.md
    04-upgrading-liferay/02-upgrading-the-database.md
@@ -17,6 +17,8 @@ Upgrading Liferay
    04-upgrading-liferay/97-upgrading-a-sharded-environment.md
    04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2.md
    04-upgrading-liferay/99-features-in-maintenance-mode.md
+
+   04-upgrading-liferay/migrating_from_audience_targeting.rst
 
 .. include:: /installation-and-upgrades/04-upgrading-liferay/README.rst
    :start-line: 2
