@@ -1,30 +1,13 @@
 # Migrating From Audience Targeting
 
-While the Audience Targeting app has been removed from Liferay DXP as of 7.2, the same features are integrated into Liferay's core as Segmentation and Personalization. This enables better integration with other applications and provides developers with easier access to Segmentation and Personalization features. Audience Targeting users must migrate their user segments into the new Segments application. There are three
-steps to the migration process:
+While the Audience Targeting app has been removed from Liferay DXP as of 7.2, the same features are integrated into Liferay's core as Segmentation and Personalization. This enables better integration with other applications and provides developers with easier access to Segmentation and Personalization features.
 
-1.  Upgrade to @product-ver@.
+Audience Targeting Users must migrate their user segments into the new Segments application. There are three steps to the migration process:
 
-2.  Migrate custom rules.
+1.  **Upgrade to DXP 7.2.** Follow the steps in the [upgrade guide](../01-introduction-to-upgrading-to-liferay-dxp-7-2.md). Most prior Audience Targeting configuration is automatically transferred with the upgrade.
 
-3.  Migrate behavior-based features.
+2.  **Evaluate Audience Targeting rules.** Any custom rules that were created in Audience Targeting must be re-evaluated after the upgrade. Some rules have a direct equivalent in Segmentation and Personalization and may be migrated automatically with the upgrade. See [Migrating User Segments](./02-migrating-user-segments.md) for a list of which features are migrated automatically.
 
-First, to upgrade to the latest version of @product@, follow the
-[upgrade guide](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-code-to-product-ver).
-Most of your Audience Targeting configuration is automatically transferred
-into the new engine.
+3.  **Manually migrate rules and widgets.** See the [overview on manually migrating from Audience Targeting](./03-manually-migrating-from-audience-targeting.md) for help with evaluating rules or widgets that are not automatically migrated. If a rule must be re-implemented, see the [Segmentation and Personalization development guide](https://help.liferay.com/hc/en-us/articles/360028721372-Introduction-to-Segmentation-and-Personalization).
 
-Next, any custom rules that were created in Audience Targeting must be
-re-evaluated. Some custom rules may have an out-of-the-box equivalent now, while
-others must be migrated. If a rule must be re-implemented, follow the
-[Segmentation and Personalization development guide](/docs/7-2/frameworks/-/knowledge_base/f/segmentation-personalization).
-You can check
-[the list of rules that are automatically migrated](/docs/7-2/deploy/-/knowledge_base/d/migrating-user-segments)
-to see how much additional work you have in store. You must also
-[migrate display widgets](/docs/7-2/deploy/-/knowledge_base/d/manually-migrating-from-audience-targeting)
-since the new Personalization features use different tools.
-
-Finally, you must migrate behavior-based features, but since Audience
-Targeting's analytics features are now part of Analytics Cloud, there isn't a
-direct path to upgrade. See the 
-[Analytics Cloud documentation](https://help.liferay.com/hc/en-us/articles/360006947671-Creating-Segments).
+4.  **Migrate behavior-based features.** Since Audience Targeting's analytics features are now part of Analytics Cloud, there is no direct path to upgrade like other features. See the [Analytics Cloud documentation](https://help.liferay.com/hc/en-us/articles/360006947671-Creating-Segments) for more information.
