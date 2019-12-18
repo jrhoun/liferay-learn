@@ -16,11 +16,11 @@ If you're installing an app or a component configuration on a production system 
 
 1. Stop your server.
 
-1. Copy your app (`.lpkg`, module `.jar`, or plugin `.war`) to your `[Liferay Home]/deploy` folder, or copy your component configuration (`.config` file) to the `[Liferay Home]/osgi/configs` folder. The [Liferay Home](/docs/7-2/deploy/-/knowledge_base/d/liferay-home) folder is typically the app server's parent folder. 
+1. Copy your app (`.lpkg`, module `.jar`, or plugin `.war`) to your `[Liferay Home]/deploy` folder, or copy your component configuration (`.config` file) to the `[Liferay Home]/osgi/configs` folder. The [Liferay Home](../../../installation-and-upgrades/14-reference/01-liferay-home.md) folder is typically the app server's parent folder. 
 
 1. Start your server. 
 
-If you're running in cluster, follow the instructions for [updating a cluster](/docs/7-2/deploy/-/knowledge_base/d/updating-a-cluster).
+If you're running in cluster, follow the instructions for [updating a cluster](../../../installation-and-upgrades/10-maintaining-clusters/01-maintaining-clustered-installations.md).
 
 **Warning:** Avoid repeatedly "auto deploying" new versions of apps that aren't designed for "auto deployment".
 
@@ -43,7 +43,7 @@ Clicking each item's Actions button (![Actions](./managing-and-configuring-apps/
 
 To view an item's contents, click its name in the table. If you click an app, the app's modules are listed. If you click a module, the module's components and portlets appear. The component level is as far down as you can go without getting into the source code. At any level in the App Manager, a link trail appears that lets you navigate back in the hierarchy. 
 
-For information on using the App Manager to install an app, see  [Installing Apps Manually](/docs/7-2/user/-/knowledge_base/u/installing-apps-manually). 
+For information on using the App Manager to install an app, see  [Installing Apps Manually](./04-installing-apps-manually.md). 
 
 Next, you'll learn how to use the Components listing. 
 

@@ -36,7 +36,7 @@ If you've used an app store before, Marketplace should be familiar. You'll see a
 
 - Weekly Stats: The newest apps, latest apps updated, and trend chart for app downloads and views. 
 
-Each section's *See All* link shows more section info. At the top of the page, you can search Marketplace by category, @product@ version, and price. To browse by category, click the *Categories* menu at the top of the page. 
+Each section's *See All* link shows more section info. At the top of the page, you can search Marketplace by category, DXP version, and price. To browse by category, click the *Categories* menu at the top of the page. 
 
 ![Figure 1: The Liferay Marketplace home page lets you browse and search for apps.](./using-the-liferay-marketplace/marketplace-homepage.png)
 
@@ -48,15 +48,15 @@ The purchase button prompts you to choose a purchase type. You can purchase an a
 
 Once you purchase an app, you can download and install it.
 
-**Warning:** Not all apps are designed to be "auto deployed"---deployed while the server is running. Deploying that way can cause instabilities, such as class loading leaks and memory leaks. On production systems, avoid "auto deploying" apps whenever possible. See the [best practices for managing apps in production](/docs/7-2/user/-/knowledge_base/u/managing-and-configuring-apps#managing-apps-in-production).
+**Warning:** Not all apps are designed to be "auto deployed"---deployed while the server is running. Deploying that way can cause instabilities, such as class loading leaks and memory leaks. On production systems, avoid "auto deploying" apps whenever possible. See the [best practices for managing apps in production](./02-managing-and-configuring-apps.md#managing-apps-in-production).
 
-An app downloads and installs immediately if you purchase it from the Control Panel. If you purchase the app on the Marketplace website, however, your receipt is displayed immediately after purchase. To download the app, click the *See Purchased* button on the bottom of the receipt, and then click the *App* button to start the download. You must then [install the app manually](/docs/7-2/user/-/knowledge_base/u/installing-apps-manually). Alternatively, you can use Marketplace from the Control Panel to download and install the app after purchase on the Marketplace website. The next section shows you how to do this. 
+An app downloads and installs immediately if you purchase it from the Control Panel. If you purchase the app on the Marketplace website, however, your receipt is displayed immediately after purchase. To download the app, click the *See Purchased* button on the bottom of the receipt, and then click the *App* button to start the download. You must then [install the app manually](./04-installing-apps-manually.md). Alternatively, you can use Marketplace from the Control Panel to download and install the app after purchase on the Marketplace website. The next section shows you how to do this. 
 
-Note that sometimes administrators disable automatic app installations so they can manage installations manually. In this case, Marketplace apps downloaded from the Control Panel are placed in the `deploy` folder in [Liferay Home](/docs/7-2/deploy/-/knowledge_base/d/liferay-home). Administrators must then manually install the app from this folder. Manual install is also required if the server is behind a corporate firewall or otherwise lacks direct Marketplace access. Regardless of how the app is downloaded, the manual install process is the same. For details, see the article [Installing Apps Manually](/docs/7-2/user/-/knowledge_base/u/installing-apps-manually). 
+Note that sometimes administrators disable automatic app installations so they can manage installations manually. In this case, Marketplace apps downloaded from the Control Panel are placed in the `deploy` folder in [Liferay Home](../../../installation-and-upgrades/14-reference/01-liferay-home.md). Administrators must then manually install the app from this folder. Manual install is also required if the server is behind a corporate firewall or otherwise lacks direct Marketplace access. Regardless of how the app is downloaded, the manual install process is the same. For details, see the article [Installing Apps Manually](./04-installing-apps-manually.md). 
 
 ## Managing Purchased Apps
 
-**Important**: When uninstalling an app or module, make sure to use the same agent you used to install the app. For example, if you installed it with Marketplace, uninstall it with Marketplace. If you installed it with the file system, use the [file system](/docs/7-2/user/-/knowledge_base/u/installing-apps-manually) to uninstall it. If you installed it with the App Manager, however, use [Blacklisting](/docs/7-2/user/-/knowledge_base/u/blacklisting-osgi-bundles-and-components) to uninstall it.
+**Important**: When uninstalling an app or module, make sure to use the same agent you used to install the app. For example, if you installed it with Marketplace, uninstall it with Marketplace. If you installed it with the file system, use the [file system](./04-installing-apps-manually.md) to uninstall it. If you installed it with the App Manager, however, use [Blacklisting](./06-blacklisting-osgi-bundles-and-components.md) to uninstall it.
 
 There are two places to manage your purchased apps:
 
@@ -64,7 +64,7 @@ There are two places to manage your purchased apps:
 
     ![Figure 3: You can manage your purchased apps from your liferay.com account's home page.](./using-the-liferay-marketplace/marketplace-project-apps.png)
 
-1.  From the Control Panel. Navigate to *Apps* &rarr; *Purchased* to see your purchased apps. A button next to each app lets you install or uninstall the app. If the app isn't compatible with your @product@ version, *Not Compatible* is displayed in place of the button. Additional compatibility notes are also shown, such as whether a newer version of the app is available. You can also search for an app here by project, category, and title. Clicking the app takes you to its Marketplace entry. 
+1.  From the Control Panel. Navigate to *Apps* &rarr; *Purchased* to see your purchased apps. A button next to each app lets you install or uninstall the app. If the app isn't compatible with your DXP version, *Not Compatible* is displayed in place of the button. Additional compatibility notes are also shown, such as whether a newer version of the app is available. You can also search for an app here by project, category, and title. Clicking the app takes you to its Marketplace entry. 
 
     ![Figure 4: You can also manage your purchased apps from within a running Liferay instance.](./using-the-liferay-marketplace/marketplace-purchased.png)
 
@@ -90,6 +90,6 @@ To continue using a purchased app whose license terms are non-perpetual, you mus
 
 1. Click *Download*. The new app activation key to use on your server downloads.
 
-1. Copy the activation key file to your `deploy/` folder in your [`[Liferay Home]`](/docs/7-2/deploy/-/knowledge_base/d/liferay-home). 
+1. Copy the activation key file to your `deploy/` folder in your [`[Liferay Home]`](../../../installation-and-upgrades/14-reference/01-liferay-home.md). 
 
 You can continue using the application on your server. 

@@ -1,10 +1,10 @@
 # Blacklisting OSGi Bundles and Components
 
-Blacklists are used for good and evil. An evil blacklist penalizes unfairly; a good blacklist protects. @product@'s OSGi bundle and component blacklists are files that prevent particular bundles from installing and particular components from enabling. This saves you the trouble of uninstalling and disabling them individually with the Application Manager, Components list, or Gogo shell. 
+Blacklists are used for good and evil. An evil blacklist penalizes unfairly; a good blacklist protects. DXP's OSGi bundle and component blacklists are files that prevent particular bundles from installing and particular components from enabling. This saves you the trouble of uninstalling and disabling them individually with the Application Manager, Components list, or Gogo shell. 
 
 ## Blacklisting Bundles
 
-@product@ removes any installed OSGi bundles on the blacklist. Blacklisted bundles therefore can't be installed. The log reports each bundle uninstallation. 
+DXP removes any installed OSGi bundles on the blacklist. Blacklisted bundles therefore can't be installed. The log reports each bundle uninstallation. 
 
 Follow these steps to blacklist bundles:
 
@@ -24,7 +24,7 @@ Follow these steps to blacklist bundles:
 
     **Important**: Configuration values can't contain extra spaces. Extra spaces can short-circuit lists or invalidate the configuration entry. 
 
-1.  To deploy the configuration file, copy it into the folder `[Liferay_Home]/osgi/configs`. The [Liferay Home](/docs/7-2/deploy/-/knowledge_base/d/liferay-home) folder is typically the app server's parent folder. 
+1.  To deploy the configuration file, copy it into the folder `[Liferay_Home]/osgi/configs`. The [Liferay Home](../../../installation-and-upgrades/14-reference/01-liferay-home.md) folder is typically the app server's parent folder. 
 
 **Note**: Blacklisting an LPKG uninstalls all of its internal bundles.
 
@@ -47,7 +47,7 @@ To reinstall and permit installation of blacklisted OSGi bundles, follow these s
 To reinstall *all* the blacklisted bundles execute one of these options:
 
 - Remove the configuration file.
-- Uninstall the bundle `com.liferay.portal.bundle.blacklist` using the [Application Manager](/docs/7-2/user/-/knowledge_base/u/managing-and-configuring-apps#using-the-app-manager) or [Felix Gogo Shell](/docs/7-2/customization/-/knowledge_base/c/using-the-felix-gogo-shell).
+- Uninstall the bundle `com.liferay.portal.bundle.blacklist` using the [Application Manager](./02-managing-and-configuring-apps.md#using-the-app-manager) or [Felix Gogo Shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
 **Note**: To temporarily reinstall a bundle that's been blacklisted, you can remove its symbolic name from the Bundle Blacklist module in *System Settings* and click the *Update* button. If you want the bundle to install on subsequent server startup, make sure to remove the bundle's symbolic name from any existing blacklist configuration file in the `[Liferay_Home]/osgi/configs` folder.
 
