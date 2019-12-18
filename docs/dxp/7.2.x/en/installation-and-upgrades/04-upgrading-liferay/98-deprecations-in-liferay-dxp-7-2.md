@@ -27,7 +27,7 @@ The deprecations in DXP 7.2 are as follows:
 
 | Feature |  Availability |  Notes |
 | --- | ------------- | ------ |
-| Audience Targeting | Archived | Replaced by [Personalization](https://help.liferay.com/hc/en-us/articles/360028721372-Introduction-to-Segmentation-and-Personalization) (see [Migrating from Audience Targeting](./96-migrating-from-audience-targeting/01-migrating-from-audience-targeting.md)). |
+| Audience Targeting | Archived | Replaced by [Personalization](https://help.liferay.com/hc/en-us/articles/360028721372-Introduction-to-Segmentation-and-Personalization) (see [Migrating from Audience Targeting](./01-migrating-from-audience-targeting/introduction-to-migrating-from-audience-targeting.md)). |
 
 ## Web Experience
 
