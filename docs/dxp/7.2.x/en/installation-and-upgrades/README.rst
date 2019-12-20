@@ -27,7 +27,7 @@ Setting Up Liferay DXP
 ----------------------
 
 * Configuration Overview
-* Installing a Search Engine
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/02-installing-a-search-engine`
 * Configuring Your Document Repository
 * Connecting to a Mail Server
 * Selecting Your Locale and Encoding
