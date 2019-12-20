@@ -1,7 +1,6 @@
-
 # Selecting Your Locale and Encoding
 
-There are several ways of optimizing a Liferay DXP instance to display content differently for users in various locales by configuring any of the following:
+Choosing the right locale and encoding is important especially when building the platform for all users, especially international ones. By default, Liferay DXP is configured with English (US) as the default language and set to GMT time zone. Administrators can modify their Liferay DXP instance to display content differently for users in various locales by configuring any of the following:
 
 * Setting a different time zone
 * Displaying content "right to left" (that is, languages such as Hebrew, Arabic, and Persian)
@@ -24,7 +23,7 @@ Administrators can set time zones in the Control Panel (and theoretically in the
 
 ### Setting the JVM Time Zone to GMT
 
-If you set the time zone in the JVM to other than GMT, it causes issues such as Calendar Events and Web Content articles displaying the wrong dates. This happens because the system assumes each date stored in the database is stored in GMT time. When the system needs to display one stored date to the end users, the display date is calculated by the application server's current date. This date is affected by the configured JVM level time zone and the stored GMT format date. To make sure the display date is calculated correctly, the time zone must be configured to GMT at the JVM level. Otherwise, an incorrect time zone offset at the JVM level causes the display date to be wrongly calculated and displayed. See [JVM Configurations](../08-reference/05-jvm-configurations.md)
+If the time zone in the JVM is set to other than GMT, it causes issues such as Calendar Events and Web Content articles displaying the wrong dates. This happens because the system assumes each date stored in the database is stored in GMT time. When the system needs to display one stored date to the end users, the display date is calculated by the application server's current date. This date is affected by the configured JVM level time zone and the stored GMT format date. To make sure the display date is calculated correctly, the time zone must be configured to GMT at the JVM level. Otherwise, an incorrect time zone offset at the JVM level causes the display date to be wrongly calculated and displayed. See [JVM Configurations](../08-reference/05-jvm-configurations.md)
 
 ## Modifying the Default and Available Languages
 
@@ -41,7 +40,7 @@ If you set the time zone in the JVM to other than GMT, it causes issues such as 
 
 Alternately, set these as properties in your `portal-ext.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md) folder. The `portal.properties` reference document's [Company](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) section defines the default locale. The [Languages and Time Zones](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) section defines the available and current locales.
 
-```
+```properties
 company.default.locale=en_GB
 ```
 
@@ -53,17 +52,17 @@ As an example, the above property changes the locale to English, Great Britain.
 
 In addition to configuring instance settings, administrators can also define unique URLs for specific languages using the `I18nServlet` by editing the instance's `web.xml` file (located inside the `ROOT/WEB-INF` folder):
 
-```
+```xml
 <servlet-mapping>
-	<servlet-name>I18n Servlet</servlet-name>
-	<url-pattern>/ar/*</url-pattern>
+    <servlet-name>I18n Servlet</servlet-name>
+    <url-pattern>/ar/*</url-pattern>
 </servlet-mapping>
   .
   .
-.
+  .
 <servlet-mapping>
-	<servlet-name>I18n Servlet</servlet-name>
-	<url-pattern>/de/*</url-pattern>
+    <servlet-name>I18n Servlet</servlet-name>
+    <url-pattern>/de/*</url-pattern>
 </servlet-mapping>
 ```
 
@@ -77,7 +76,7 @@ Developers can add or modify certain core UI messages (e.g. *Your request comple
 
 For languages that are displayed right to left, use the following language properties settings:
 
-```
+```properties
 lang.dir=rtl
 lang.line.begin=right
 lang.line.end=left
@@ -91,7 +90,7 @@ All the global language properties are found inside the `portal-impl.jar`'s `/co
 
 Administrators can change the prefix and suffix values for a locale. For example, for Spanish, the `language_es.properties` file contains these values:
 
-```
+```properties
 lang.user.name.field.names=prefix,first-name,last-name
 lang.user.name.prefix.values=Sr,Sra,Sta,Dr,Dra
 lang.user.name.required.field.names=last-name
