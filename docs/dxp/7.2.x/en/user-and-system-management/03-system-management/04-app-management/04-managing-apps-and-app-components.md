@@ -24,8 +24,7 @@ If you're running in cluster, follow the instructions for [updating a cluster](.
 
 **Warning:** Avoid repeatedly "auto deploying" new versions of apps that aren't designed for "auto deployment".
 
-If it's not feasible to stop your server or you're app *is* designed for "auto deployment", DXP provides several "auto deployment" conveniences. Except where stopping/starting the server is explicitly mentioned, the practices described in the rest of this article and in the following articles involve
-"auto deployment". 
+If it's not feasible to stop your server or you're app *is* designed for "auto deployment", DXP provides several "auto deployment" conveniences. Except where stopping/starting the server is explicitly mentioned, the practices described in the rest of this article and in the following articles involve "auto deployment". 
 
 ## Using the App Manager
 
