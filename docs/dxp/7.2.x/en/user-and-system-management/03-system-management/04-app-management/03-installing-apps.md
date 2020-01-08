@@ -67,6 +67,8 @@ The Control Panel provides a purchased apps page for installing apps.
 
 1. Click *Install* to install the app to DXP.
 
+> **Note:** Using Marketplace in the Control Panel requires the Marketplace plugin. It is built-in to DXP bundles (e.g., the DXP Tomcat bundle). If you installed DXP on to an existing app server, you must [set up the Marketplace plugin](..\..\..\installation-and-upgrades\01-installing-liferay-dxp\09-setting-up-marketplace.md).
+
 If you downloaded an app from the Marketplace website, you can install it via the App Manager (discussed next).
 
 ### Installing Apps via the App Manager

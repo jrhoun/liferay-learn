@@ -10,6 +10,8 @@ There are two ways to access the Marketplace.
 
 2. **Control Panel:** In the Control Panel, navigate to *Apps* &rarr; *Store*. Sign in with your liferay.com account to view Marketplace.
 
+    > **Note:** Using Marketplace in the Control Panel requires the Marketplace plugin. It is built-in to DXP bundles (e.g., the DXP Tomcat bundle). If you installed DXP on to an existing app server, you must [set up the Marketplace plugin](..\..\..\installation-and-upgrades\01-installing-liferay-dxp\09-setting-up-marketplace.md).
+
     > **Warning:** In production environments, purchase apps via the Marketplace website only---do not use Liferay Marketplace from the Control Panel. Clicking an app's *Purchase* button downloads and installs it immediately, which can cause problems if the app does not support auto-deploy.
 
 No matter how you access Marketplace, you'll see the same app store content. Here are the Marketplace app topics:
