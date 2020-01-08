@@ -1,57 +1,65 @@
-# Managing and Configuring Apps
+# Managing Apps and App Components
 
-Liferay DXP is a platform for deploying apps that comprise modules and components. It has conveniences for managing apps and app management best practices for maximizing stability. Best practices in production environments involve stopping the server before applying changes, but in cases where this isn't feasible, you can "auto deploy" changes several different ways.
+The Control Panel provides screens for managing apps and app UI components: [portlets](https://help.liferay.com/hc/en-us/articles/360029046351-Introduction-to-Portlets), [themes](https://help.liferay.com/hc/en-us/articles/360035581011-UI-Architecture#themes), and [layout templates](https://help.liferay.com/hc/en-us/articles/360028726612-Layout-Templates). The screens let you enable and disable app UI components, and examine installed apps, modules, OSGi components, and app UI components. For casual DXP environments (e.g., DXP deployed on your workstation), you can also install and uninstall apps.
 
-There are two places in the Control Panel where you can manage and configure apps: the *App Manager* and the *Components* listing. The App Manager manages apps in the OSGi framework. You can use the App Manager to install, activate, deactivate, and delete apps. You can manage apps at the app and module levels. 
+The Control Panel has these app and app component management interfaces:
 
-The Components listing views and manages apps at the OSGi component level. It differs from the App Manager by showing apps by type (portlet, theme, and layout template), and setting app permissions. You can use the Components listing to activate and deactivate apps, but it can't install or delete apps.
+- [*App Manager*](#using-the-app-manager): Here you can install, activate, deactivate, and delete apps and modules and inspect module OSGi components.
 
-Start with learning app management best practices in production, or wherever you want to maximize stability. 
+- [*Components*](#managing-app-components): Accesses app UI components by type (portlet, theme, and layout template). You can activate and deactivate app components and change their permissions.
 
-## Managing Apps in Production
+> **Important:** For installing and uninstalling apps in production environments and clusters, follow [the applicable steps](./03-installing-apps.md#installing-apps-in-production) instead of using the App Manager.
 
-Not all apps are designed to be "auto deployed"---deployed while the server is running. Deploying that way can cause instabilities, such as class loading leaks and memory leaks. On production systems, avoid "auto deploying" apps and configurations whenever possible.
+> **Important**: When uninstalling an app or module, make sure to use the same agent you used to [install](./03-installing-apps.md) it. For example, if you installed an app with Marketplace in the Control Panel, uninstall it with Marketplace in the Control Panel. If you installed it with the file system, use the file system to uninstall it. If you installed it with the App Manager, however, use [Blacklisting](./05-blacklisting-osgi-bundles-and-components.md) to uninstall it.
 
-If you're installing an app or a component configuration on a production system and stopping the server is feasible, follow these steps: 
-
-1. Stop your server.
-
-1. Copy your app (`.lpkg`, module `.jar`, or plugin `.war`) to your `[Liferay Home]/deploy` folder, or copy your component configuration (`.config` file) to the `[Liferay Home]/osgi/configs` folder. The [Liferay Home](../../../installation-and-upgrades/14-reference/01-liferay-home.md) folder is typically the app server's parent folder. 
-
-1. Start your server. 
-
-If you're running in cluster, follow the instructions for [updating a cluster](../../../installation-and-upgrades/10-maintaining-clusters/01-maintaining-clustered-installations.md).
-
-**Warning:** Avoid repeatedly "auto deploying" new versions of apps that aren't designed for "auto deployment".
-
-If it's not feasible to stop your server or you're app *is* designed for "auto deployment", DXP provides several "auto deployment" conveniences. Except where stopping/starting the server is explicitly mentioned, the practices described in the rest of this article and in the following articles involve "auto deployment". 
+Since apps are the top of the deployment hierarchy, learn to use the App Manager.
 
 ## Using the App Manager
 
-Access the App Manager by selecting *Control Panel* &rarr; *Apps* &rarr; *App Manager*. The App Manager lists your apps. The *Filter and Order* menu lets you filter and order by category, status, or title. Click the up or down arrows to perform an ascending or descending sort, respectively. To search for an app or module, use the search bar. This is often the quickest way to find something. 
+Access the App Manager by selecting *Control Panel* &rarr; *Apps* &rarr; *App Manager*. The App Manager lists installed apps and modules. The *Filter and Order* menu filters items and orders them by category, status, or title. Click the up or down arrows to sort items in ascending or descending order, respectively. To search for an app or module, use the search bar. This is often the quickest way to find items.
 
-![Figure 1: The App Manager lets you manage the apps, modules, and components installed in your DXP instance.](./managing-and-configuring-apps/app-manager.png)
+![Figure 1: The App Manager manages apps, modules, and components installed in your DXP instance.](./managing-apps-and-app-components/app-manager.png)
 
 Each item listed in the table contains a description (if available), version, and status. Here are the statuses:
 
-- **Installed:** The item is installed to DXP. 
-- **Resolved:** The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services). 
-- **Active:** The item is running on DXP. 
+- **Installed:** The item is installed to DXP.
+- **Resolved:** The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
+- **Active:** The item is running on DXP.
 
-Clicking each item's Actions button (![Actions](./managing-and-configuring-apps/icon-actions.png)) brings up a menu that lets you activate, deactivate, or uninstall that item. 
+Clicking each item's Actions button (![Actions](./managing-apps-and-app-components/icon-actions.png)) brings up a menu that lets you activate, deactivate, or uninstall that item.
 
-To view an item's contents, click its name in the table. If you click an app, the app's modules are listed. If you click a module, the module's components and portlets appear. The component level is as far down as you can go without getting into the source code. At any level in the App Manager, a link trail appears that lets you navigate back in the hierarchy. 
+> **Note:** If you installed an app with the App Manager, use [Blacklisting](./05-blacklisting-osgi-bundles-and-components.md) to uninstall it.
 
-For information on using the App Manager to install an app, see  [Installing Apps Manually](./04-installing-apps-manually.md). 
+To view an item's contents, click its name in the table. If you click an app, the app's modules are listed. If you click a module, the module's OSGi components and portlets appear. The component/portlet level is the farthest you can go without getting into the source code. At any level in the App Manager, a link trail above the listing lets you navigate back in the hierarchy.
 
-Next, you'll learn how to use the Components listing. 
+For instructions on installing apps via the App Manager, see  [Installing Apps](./02-using-the-liferay-marketplace.md#installing-apps).
 
-## Using the Components Listing
+Next, you'll learn how to configure app UI components (app components).
 
-Access the components listing by selecting *Control Panel* &rarr; *Configuration* &rarr; *Components*. The components listing first shows a table containing a list of installed portlets. Select the type of component to view---portlets, themes, or layout templates---by clicking the matching tab on top of the table. To configure a component, select its name in the table or select *Edit* from its Actions button (![Actions](./managing-and-configuring-apps/icon-actions.png)). Doing either opens the same configuration screen. 
+## Managing App Components
 
-![Figure 2: The components listing lets you manage the portlets, themes, and layout templates installed to your DXP instance.](./managing-and-configuring-apps/components-list.png)
+The Components listing is the easiest way to manage installed app components: portlets, themes, and layout templates. It lets you enable/disable components and configure permissions on them.
 
-The configuration screen lets you view a component's module ID and plugin ID, activate or deactivate the component, and change the component's Add to Page permission. The component's module ID and plugin ID appear at the top of the screen. You can activate or deactivate a component by checking or unchecking the *Active* checkbox, respectively. To change a component's Add to Page permission for a role, select the role's *Change* button in the permissions table. This takes you to *Control Panel* &rarr; *Users* &rarr; *Roles*, where you can change the component's permissions for the selected role. 
+1. Access the components listing by selecting *Control Panel* &rarr; *Configuration* &rarr; *Components*. A table of installed portlets appears.
 
-![Figure 3: You can activate or deactivate a component, and change its permissions.](./managing-and-configuring-apps/components-configuration.png)
+    ![Figure 2: The components listing lets you manage the portlets, themes, and layout templates installed to your DXP instance.](./managing-apps-and-app-components/components-list.png)
+
+1. Select the tab of the component type to view: *Portlets*, *Themes*, or *Layout Templates*.
+
+1. To configure a component, select its name or select *Edit* from its Actions button (![Actions](./managing-apps-and-app-components/icon-actions.png)). The component's configuration screen appears and displays the component's module ID and plugin ID, a checkbox for activating/deactivating the component, and user roles that can be configured for the component.
+
+    ![Figure 3: You can activate or deactivate a component, and change its permissions.](./managing-apps-and-app-components/components-configuration.png)
+
+1. Activate or deactivate the component by checking or unchecking the *Active* checkbox, respectively.
+
+1. To change a role's permission for the component (e.g., a role's *Add to Page* permission for the portlet), select the role's *Change* button in the permissions table. This takes you to *Control Panel* &rarr; *Users* &rarr; *Roles*, where you can change the role's permissions for the component.
+
+Congratulations! You can use the App Manager and Components listing to examine and manage application deployments.
+
+## Additional Items
+
+- [Installing Apps](./03-installing-apps.md)
+
+- [Maintaining a Clustered Installation](../../../installation-and-upgrades/10-maintaining-clusters/01-maintaining-clustered-installations.md)
+
+- [Blacklisting OSGi Bundles and Components](./05-blacklisting-osgi-bundles-and-components.md)
