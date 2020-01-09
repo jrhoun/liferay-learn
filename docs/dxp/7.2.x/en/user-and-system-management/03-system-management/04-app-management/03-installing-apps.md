@@ -34,9 +34,9 @@ If it's not feasible to stop your server or you're app *is* designed for auto de
 
 There are several convenient ways to deploy apps and configurations in informal, non-production environments.
 
-- [Marketplace via the Control Panel](#using-marketplace-in-the-control-panel)
-- [App Manager](#using-the-app-manager)
-- [File system](#using-the-file-system)
+- [Marketplace via the Control Panel](#installing-apps-via-marketplace-in-the-control-panel)
+- [App Manager](#installing-apps-via-the-app-manager)
+- [File system](#installing-apps-via-the-file-system)
 
 They use auto deployment, copies the app or configuration file to the appropriate subfolder in `[Liferay Home]/osgi`, converts it to an OSGi bundle (LPKGs and WARs need converting), and deploys the bundle to the OSGi container. By default, the following `[Liferay Home]/osgi` subfolders are used per type:
 
@@ -53,7 +53,7 @@ They use auto deployment, copies the app or configuration file to the appropriat
 
 The Control Panel's Marketplace interface immediately installs apps on purchase.
 
-### Installing Apps via the Marketplace in the Control Panel
+### Installing Apps via Marketplace in the Control Panel
 
 The Control Panel provides a purchased apps page for installing apps.
 

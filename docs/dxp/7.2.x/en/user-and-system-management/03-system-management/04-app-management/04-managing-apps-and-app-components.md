@@ -32,7 +32,7 @@ Clicking each item's Actions button (![Actions](./managing-apps-and-app-componen
 
 To view an item's contents, click its name in the table. If you click an app, the app's modules are listed. If you click a module, the module's OSGi components and portlets appear. The component/portlet level is the farthest you can go without getting into the source code. At any level in the App Manager, a link trail above the listing lets you navigate back in the hierarchy.
 
-For instructions on installing apps via the App Manager, see  [Installing Apps](./02-using-the-liferay-marketplace.md#installing-apps).
+For instructions on installing apps via the App Manager, see  [Installing Apps](./03-installing-apps.md#installing-apps-via-the-app-manager).
 
 Next, you'll learn how to configure app UI components (app components).
 

@@ -168,4 +168,4 @@ Congratulations! You know how to find, purchase, download, and renew Liferay Mar
 
 - [Managing Apps and App Components](./04-managing-apps-and-app-components.md)
 
-- [Liferay Marketplace Developer Portal]((https://marketplace.liferay.dev/))
+- [Liferay Marketplace Developer Portal](https://marketplace.liferay.dev/)
