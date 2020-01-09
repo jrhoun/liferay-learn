@@ -62,4 +62,4 @@ Congratulations! You can use the App Manager and Components listing to examine a
 
 - [Maintaining a Clustered Installation](../../../installation-and-upgrades/10-maintaining-clusters/01-maintaining-clustered-installations.md)
 
-- [Blacklisting OSGi Bundles and Components](./05-blacklisting-osgi-bundles-and-components.md)
+- [Blacklisting Modules and OSGi Components](./05-blacklisting-osgi-bundles-and-components.md)

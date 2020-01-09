@@ -101,6 +101,6 @@ Now you know how to install apps for formal environments and informal environmen
 
 - [Managing Apps and App Components](./04-managing-apps-and-app-components.md)
 
-- [Blacklisting OSGi Bundles and Components](./05-blacklisting-osgi-bundles-and-components.md)
+- [Blacklisting Modules and OSGi Components](./05-blacklisting-osgi-bundles-and-components.md)
 
 - [OSGi component configurations](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations)
