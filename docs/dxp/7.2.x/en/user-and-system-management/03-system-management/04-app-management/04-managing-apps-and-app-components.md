@@ -10,7 +10,7 @@ The Control Panel has these app and app component management interfaces:
 
 > **Important:** For installing and uninstalling apps in production environments and clusters, follow [the applicable steps](./03-installing-apps.md#installing-apps-in-production) instead of using the App Manager.
 
-> **Important**: When uninstalling an app or module, make sure to use the same agent you used to [install](./03-installing-apps.md) it. For example, if you installed an app with Marketplace in the Control Panel, uninstall it with Marketplace in the Control Panel. If you installed it with the file system, use the file system to uninstall it. If you installed it with the App Manager, however, use [Blacklisting](./05-blacklisting-osgi-bundles-and-components.md) to uninstall it.
+> **Important**: When uninstalling an app or module, make sure to use the same agent you used to [install](./03-installing-apps.md) it. For example, if you installed an app with Marketplace in the Control Panel, uninstall it with Marketplace in the Control Panel. If you installed it with the file system, use the file system to uninstall it. If you installed it with the App Manager, however, use [Blacklisting](./05-blacklisting-modules-and-osgi-components.md) to uninstall it.
 
 Since apps are the top of the deployment hierarchy, learn to use the App Manager.
 
@@ -28,7 +28,7 @@ Each item listed in the table contains a description (if available), version, an
 
 Clicking each item's Actions button (![Actions](./managing-apps-and-app-components/icon-actions.png)) brings up a menu that lets you activate, deactivate, or uninstall that item.
 
-> **Note:** If you installed an app with the App Manager, use [Blacklisting](./05-blacklisting-osgi-bundles-and-components.md) to uninstall it.
+> **Note:** If you installed an app with the App Manager, use [Blacklisting](./05-blacklisting-modules-and-osgi-components.md) to uninstall it.
 
 To view an item's contents, click its name in the table. If you click an app, the app's modules are listed. If you click a module, the module's OSGi components and portlets appear. The component/portlet level is the farthest you can go without getting into the source code. At any level in the App Manager, a link trail above the listing lets you navigate back in the hierarchy.
 
@@ -62,4 +62,4 @@ Congratulations! You can use the App Manager and Components listing to examine a
 
 - [Maintaining a Clustered Installation](../../../installation-and-upgrades/10-maintaining-clusters/01-maintaining-clustered-installations.md)
 
-- [Blacklisting Modules and OSGi Components](./05-blacklisting-osgi-bundles-and-components.md)
+- [Blacklisting Modules and OSGi Components](./05-blacklisting-modules-and-osgi-components.md)

@@ -83,7 +83,7 @@ The App Manager is a convenient way to install an app from your local machine to
 
 The app installs via auto deploy. When the install completes, close the dialog and you're ready to roll!
 
-> **Note:** To uninstall an app installed with the App Manager, use [Blacklisting](./05-blacklisting-osgi-bundles-and-components.md).
+> **Note:** To uninstall an app installed with the App Manager, use [Blacklisting](./05-blacklisting-modules-and-osgi-components.md).
 
 ### Installing Apps via the File System
 
@@ -101,6 +101,6 @@ Now you know how to install apps for formal environments and informal environmen
 
 - [Managing Apps and App Components](./04-managing-apps-and-app-components.md)
 
-- [Blacklisting Modules and OSGi Components](./05-blacklisting-osgi-bundles-and-components.md)
+- [Blacklisting Modules and OSGi Components](./05-blacklisting-modules-and-osgi-components.md)
 
 - [OSGi component configurations](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations)
