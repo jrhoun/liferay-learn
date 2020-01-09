@@ -1,10 +1,10 @@
 # Managing Users
 
-Ever heard a retailer advertise as a "one stop shop" for anything you want? The idea is they have so much stuff that whatever you want is probably there. Liferay's Control Panel is a "one stop shop" where you create Users, Organizations, and Sites, where you configure permissions, plugins, and pretty much anything else.
+Liferay's Control Panel is a "one stop shop" where you create Users, Organizations, and Sites, configure permissions, manage plugins, and pretty much anything else.
 
-![Figure 1: Administrators can access the Control Panel from the Product Menu.](./images/usrmgmt-control-panel.png)
+![Administrators can access the Control Panel from the Product Menu.](./images/usrmgmt-control-panel.png)
 
-The Control Panel is divided into six main areas: 
+The Control Panel contains six main areas: 
 
 - Users 
 
