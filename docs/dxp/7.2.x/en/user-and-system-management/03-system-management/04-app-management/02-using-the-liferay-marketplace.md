@@ -100,6 +100,8 @@ The next section explains how to download purchased apps.
 
 You can download a purchased app via its receipt or via your account on Marketplace and liferay.com. 
 
+Each Marketplace app is distributed as an LPKG package. The LPKG package contains Marketplace metadata and the files the app needs to run. Note that it's possible for an LPKG package to contain multiple app components (e.g., portlets, layout templates, and APIs). For example, a single LPKG package can contain several [portlets](https://help.liferay.com/hc/en-us/articles/360029046351-Introduction-to-Portlets). This is common in cases where an app requires a Control Panel portlet for administrators, and another portlet for end users.
+
 ### Downloading via the Purchase Receipt
 
 The receipt displayed immediately on an app purchase links to a page for downloading that app.
