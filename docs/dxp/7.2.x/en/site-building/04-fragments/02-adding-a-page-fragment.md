@@ -8,11 +8,11 @@ Page Fragments are organized in *Collections*. Collections can be used to differ
 
 2.  Open the Product Menu and go to *Site Builder* &rarr; *Page Fragments* under the Site Menu. From the main Page Fragments page you can manage your Page Fragments and Collections. See [Managing Page Fragments](./03-managing-page-fragments.md) for more information on the available actions for Page Fragments.
 
-3.  Click the (![add](../../../icon-add.png)) button next to *Collections* heading to add a new Collection if one doesn't already exist, or select an existing custom Collection.
+3.  Click the (![add](../../icon-add.png)) button next to *Collections* heading to add a new Collection if one doesn't already exist, or select an existing custom Collection.
 
-    ![Figure 1: Here is the Page Fragments page with no custom Page Fragments or Collections created.](./images/01.png)
+    ![Figure 1: Here is the Page Fragments page with no custom Page Fragments or Collections created.](./adding-a-page-fragment/images/01.png)
 
-4.  With the Collection selected, click the (![add button](../../../icon-add.png)) under the new Collection's window to create a new Page Fragment and choose [Section](../02-creating-pages/03-content-page-elements.md#sections) or [Component](../02-creating-pages/03-content-page-elements.md#components).
+4.  With the Collection selected, click the (![add button](../../icon-add.png)) under the new Collection's window to create a new Page Fragment and choose [Section](../02-creating-pages/03-content-page-elements.md#sections) or [Component](../02-creating-pages/03-content-page-elements.md#components).
 
 4.  Give the Page Fragment a name and click *Save*.
 

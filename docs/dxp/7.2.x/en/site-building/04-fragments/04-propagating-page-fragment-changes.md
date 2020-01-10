@@ -10,15 +10,15 @@ Follow these steps to manually propagate your Page Fragment changes:
 
 2.  Select the Collection containing the changed Page Fragment.
 
-3.  Open the *Actions* menu (![Actions](../../../images/icon-actions.png)) for the Page Fragment and select *View Usages*.
+3.  Open the *Actions* menu (![Actions](../../images/icon-actions.png)) for the Page Fragment and select *View Usages*.
 
     >**Note:** You can propagate changes from global Page Fragments to their usages on child Sites. Select *View Site Usages* from the Page Fragment's Actions Menu in the Global Site. 
 
 4.  From the *Usages and Propagation* page, check the box for the Content Page(s), Content Page Template(s), and Display Page(s) that you want to propagate Page Fragment changes to. You can use the various filters and selection options to apply updates to pages quickly.
 
-    ![Figure 1: Viewing the Usages and Propagation page.](./images/01.png)
+    ![Figure 1: Viewing the Usages and Propagation page.](./propagating-page-fragment-changes/images/01.png)
 
-5.  Click the *Propagate* icon ( ![Propagate](../../../images/icon-propagate.png)) to propagate your changes.
+5.  Click the *Propagate* icon ( ![Propagate](../../images/icon-propagate.png)) to propagate your changes.
 
 >**Note:** Changes to existing `editable` fields are not propagated since this overwrites content currently in content pages. To force propagation to content in an `editable` field, you must change the field ID. Any content created in that field no longer appears in the Content Page when the changes are propagated, but it remains in the database and can be retrieved using the old ID.
 
@@ -40,4 +40,4 @@ Follow these steps to enable automatic Page Fragment propagation:
 
 Your Page Fragment updates are now automatically propagated! The Page Fragment Editor displays a notification that automatic Page Fragment propagation is enabled.
 
-![Figure 3: You're notified when automatic propagation is enabled.](../../../images/03.png)
+![Figure 3: You're notified when automatic propagation is enabled.](../../images/03.png)

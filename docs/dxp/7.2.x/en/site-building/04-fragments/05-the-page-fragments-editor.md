@@ -19,7 +19,7 @@ The code editor is split into four panes:
 
 - **Preview:** provides a live preview of the component that updates as you write code. You can switch between desktop, mobile, tablet, and expanded views.
 
-![Figure 1: The Fragments editor provides an environment for creating all the parts of a Fragment.](./images/01.png)
+![Figure 1: The Fragments editor provides an environment for creating all the parts of a Fragment.](./the-page-fragments-editor/images/01.png)
 
 ## The Configuration
 
