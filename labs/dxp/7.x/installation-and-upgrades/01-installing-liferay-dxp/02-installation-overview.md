@@ -27,11 +27,11 @@ The best starting point for people new to installing Liferay, is the Liferay DXP
 
 Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. Follow these steps to download and unzip the Tomcat bundle:
 
-  ```bash
-    curl -L -O https://github.com/liferay/liferay-portal/releases/download/7.2.1-ga2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
-    tar -xzf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
-    cd liferay-ce-portal-7.2.1-ga2/
-  ```
+```bash
+curl -L -O https://github.com/liferay/liferay-portal/releases/download/7.2.1-ga2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
+tar -xzf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
+cd liferay-ce-portal-7.2.1-ga2/
+```
 
 > **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](../14-reference/01-liferay-home.md) directory.
 
@@ -54,7 +54,7 @@ Liferay DXP has some defaults configured out of the box to enable faster demonst
 Once the JVM, application server, and database have been configured, Liferay DXP can be started for the first time. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
 
 ```bash
-  ./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
+./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
 ```
 
 > **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`.
@@ -76,8 +76,8 @@ Enterprise Subscribers to Liferay DXP will need to [activate Liferay DXP](./08-a
 There are many ways to further configure and customize a Liferay DXP installation, depending on your needs. See the following topics for more information:
 
 * [Setting up Marketplace](./10-setting-up-marketplace.md)
-* [Setting up Liferay DXP](../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md)
+* Configuration Overview
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
-* [Introduction to Clustering Liferay DXP](../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Configuring Clustering for High Availability](../02-setting-up-liferay-dxp/01-performance-and-scalability/01-configuring-clustering/01-introduction-to-clustering-liferay-dxp.md)
 * Maintaining Liferay DXP
