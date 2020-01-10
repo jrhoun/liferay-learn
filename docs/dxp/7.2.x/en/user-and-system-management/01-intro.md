@@ -61,4 +61,3 @@ Setting up a virtual instance:
 - Configuration &rarr; Custom Fields is where additional database fields are added to existing virtual instance entities.
 
 The Users section is for creating and managing Users, Organizations, User Groups, Roles, and Password Policies. If monitoring has been enabled, you can also view all the live sessions of your Users. This is where you'll start.
-
