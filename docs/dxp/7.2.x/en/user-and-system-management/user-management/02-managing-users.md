@@ -71,3 +71,5 @@ To guard against accidental deletion of Users, a two-step process must be follow
 Users are reactivated when an administrator finds them in the Users table (be sure you're filtering the table results by Deactivated users), clicks the Actions menu, and selects Activate. There's no confirmation window for activation: they're automatically restored to their former status once Activate is clicked.
 
 Now you understand the basic principles of User administration. The additional topics covered in the next article should be considered mandatory information for all portal administrators, so do continue reading.
+
+> **Anonymous User:** *Anonymous Anonymous* is used for the [Managing User Data](/docs/7-2/user/-/knowledge_base/u/managing-user-data) functionality. Created the first time an administrator clicks *Delete Personal Data* for a User, *Anonymous Anonymous* is a deactivated User assigned [anonymized assets](/docs/7-2/user/-/knowledge_base/u/managing-user-data#anonymizing-data). The Anonymous User is configurable, so the name and configuration details might be different in your virtual instance.
