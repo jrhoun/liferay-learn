@@ -17,7 +17,7 @@ Liferay Digital Experience Platform requires **JAVA JDK 8 or 11** in order to ru
 
 ### Hosting
 
-Liferay DXP is built with flexibility and interoperability in mind and can be run locally, in a Docker Container, or on the cloud. We recommend [DXP Cloud](https://learn.liferay.com/dxp-cloud-latest/index.html) as the best way to get a secure, performant, and scalable Liferay DXP solution up and running quickly.
+Liferay DXP is built with flexibility and interoperability in mind and can be run locally, in a Docker Container, or on the cloud. We recommend [DXP Cloud](https://learn.liferay.com/dxp-cloud-latest/index.html) as the best way to get a secure, performant, and scalable Liferay DXP solutions up and running quickly. To tour DXP, you can configure it locally on an application server.
 
 ## Configuring an Application Server
 
