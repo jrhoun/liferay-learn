@@ -21,11 +21,11 @@ Liferay DXP is built with flexibility and interoperability in mind and can be ru
 
 ## Configuring an Application Server
 
-The best starting point for people new to installing Liferay, is the Liferay DXP Tomcat Bundle. Liferay DXP can also be manually deployed to a variety of application servers.
+The best starting point for people new to installing DXP, is the Liferay DXP Tomcat Bundle. Liferay DXP can also be manually deployed to a variety of application servers.
 
 ### Using the Tomcat Bundle
 
-Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. Follow these steps to download and unzip the Tomcat bundle:
+The Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Tomcat bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. Follow these steps to download and unzip the Tomcat bundle:
 
 ```bash
 curl -L -O https://github.com/liferay/liferay-portal/releases/download/7.2.1-ga2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
@@ -33,25 +33,25 @@ tar -xzf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
 cd liferay-ce-portal-7.2.1-ga2/
 ```
 
-> **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](../14-reference/01-liferay-home.md) directory.
+> **Note:** The `liferay-ce-portal-7.2.1-ga2/` folder represents your [*Liferay Home*](../14-reference/01-liferay-home.md).
 
 See [Obtaining Liferay](./03-obtaining-liferay.md) for more information about Liferay Downloads.
 
-Once your application server is ready, see [Connecting a Database](#connecting-a-database) for next steps.
+Once your Tomcat bundle is installed, [Connecting a Database](#connecting-a-database) is your next step.
 
 ### Manually Deploying to an Application Server
 
 Liferay DXP can be manually deployed to [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) application servers.
 
-Manual deployments require the use of the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./03-obtaining-liferay.md).
+Manual deployments require using the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./03-obtaining-liferay.md).
 
 ## Connecting a Database
 
-Liferay DXP has some defaults configured out of the box to enable faster demonstration - this includes using HSQL as a database. Connecting Liferay DXP to a database is a required step for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
+Liferay DXP's pre-configured defaults (including an HSQL database) enable faster demonstration.  A full-featured supported RDBMS is required for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
 
 ## Running Liferay DXP for the First Time
 
-Once the JVM, application server, and database have been configured, Liferay DXP can be started for the first time. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
+Once the JVM, application server, and database have been configured, you can start Liferay DXP. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
 
 ```bash
 ./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
@@ -59,21 +59,21 @@ Once the JVM, application server, and database have been configured, Liferay DXP
 
 > **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`.
 
-The first time DXP starts, it creates all of its database tables. On completing startup, a web browser is launched that displays the Basic Configuration page (the Setup Wizard). If the Basic Configuration page does not appear automatically, open a browser and navigate to the application server's address and port (for example, `http://localhost:8080`).
+The first time DXP starts, it creates all of its database tables. On completing startup, DXP launches a web browser that displays the Basic Configuration page (the Setup Wizard). If the Basic Configuration page does not appear automatically, open a browser and navigate to the application server's address and port (for example, `http://localhost:8080`).
 
 See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
 
-> **Note:** Experienced users may bypass the Setup Wizard entirely by configuring `setup.wizard.enabled=false` in a portal properties file (`[LIFERAY_HOME]/portal-ext.properties`).
+> **Note:** Experienced users may bypass the Setup Wizard entirely by configuring `setup.wizard.enabled=false` in a [portal properties file](../14-referene/03-portal-properties.md) (`[LIFERAY_HOME]/portal-ext.properties`).
 
 ## Activating Liferay DXP
 
 > Subscription Required
 
-Enterprise Subscribers to Liferay DXP will need to [activate Liferay DXP](./08-activating-liferay-dxp.md) in order to use the product beyond the initial trial period.
+Liferay DXP Enterprise Subscribers must [Activate Liferay DXP](./08-activating-liferay-dxp.md) in order to use DXP beyond the initial trial period.
 
 ## Next Steps
 
-There are many ways to further configure and customize a Liferay DXP installation, depending on your needs. See the following topics for more information:
+There are many ways to configure and customize a Liferay DXP installation further, to meet your needs. See the following topics for more information:
 
 * [Setting up Marketplace](./10-setting-up-marketplace.md)
 * Configuration Overview
