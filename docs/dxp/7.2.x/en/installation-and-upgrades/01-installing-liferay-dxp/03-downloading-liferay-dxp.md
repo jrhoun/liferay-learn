@@ -20,22 +20,22 @@ A `.war` file is also provided that can be deployed to any [supported applicatio
 
 ## Downloads
 
-Users may visit the [Community Downloads page](https://www.liferay.com/downloads-community) to review available Liferay DXP downloads. Liferay Enterprise Subscribers can download Liferay DXP and related resources from [Help Center](https://help.liferay.com/hc).
+Liferay DXP and related resources can be downloaded from the [Help Center](https://help.liferay.com/hc) (subscribers only) and the [Community Downloads page](https://www.liferay.com/downloads-community).
 
-The following downloads are available:
+The following files are available to download:
 
-|File|Description|
-|---|---|
-| Client | Contains third party dependencies  |
-| Dependencies | Contains portal dependency `.jar` files |
-| Docs | Contains available Javadocs, DTDs, Taglib docs, and Properties documentation  |
-| OSGi (`zip`) | Contains all Liferay DXP OSGi modules required for a complete installation |
-| Source | Contains the Liferay DXP source code |
-| SQL | Contains Liferay DXP SQL scripts that can be used to prepare a supported database for use with Liferay DXP |
+| File | Description |
+| --- | --- |
+| Client | Client dependencies for invoking DXP APIs  |
+| Dependencies | DXP dependency libraries |
+| OSGi Dependencies | DXP dependency OSGi modules |
+| Reference Docs | DXP Javadocs, DTDs, Taglib docs, and Properties documentation  |
+| Source | Liferay DXP source code |
+| SQL | SQL scripts for preparing supported databases for DXP |
+| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
+| Tomcat Bundle (`.7z`) | 7-Zipped bundle archive that installs on any OS |
 | Tools | Contains the Liferay Upgrade Client tool |
-| Tomcat Bundle (`tar.gz`) | `tar.gz` archive format suitable for installation on any OS |
-| Tomcat Bundle (`7zip`) | `.7ip` archive format suitable for installation on any OS |
-| Liferay `.war` | Used to deploy Liferay DXP to any supported application server |
+| WAR (Liferay DXP) | The Liferay DXP application for installing to any supported application server |
 
 ## Next Steps
 
