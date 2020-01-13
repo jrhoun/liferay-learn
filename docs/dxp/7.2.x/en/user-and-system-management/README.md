@@ -9,6 +9,9 @@
   * Roles and Permissions
     * Defining Roles
     * Setting Permissions
+  * Managing User Data
+    * Sanitizing User Data
+    * Exporting User Data
   * Accounts
   * System Management
     * System Settings
