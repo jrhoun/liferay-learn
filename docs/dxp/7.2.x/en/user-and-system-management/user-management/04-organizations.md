@@ -1,14 +1,5 @@
 # Organizations
 
-An *Organization* groups [*Users*](./02-managing-users.md) hierarchically. For example, you can model a company's departments (i.e., Human Resources and Customer Support) with Organizations. Organizations often have their own Sites. The *how-to* portion of managing Organizations is in the next article, [Managing Organizations](./05-managing-organizations.md). This article contains important conceptual information on what Organizations are and when they're needed.
-
-Many simple portal designs don't use Organizations at all; they only use sites. The main purpose of Organizations is to enable distributed User management. Portal administrators can delegate some user management responsibilities to Organization administrators. If you don't anticipate needing to delegate User management responsibilities, your portal design probably doesn't need to include Organizations. 
-
-**User Groups and Organizations:** It's easy to confuse User Groups (covered in a separate article) with Organizations since they both group Users. User Groups are an ad hoc collection of Users, organized for a specific function. In the Lunar Resort, if you wanted a group of bloggers, for example, it wouldn't make sense to assign the Sales Department the role of blogging (see the article on Roles if you're not sure what they are). The Sales Department users could blog whenever a new T-shirt design became available in the Lunar Resort store, but they probably wouldn't be as diligent about announcing the new Rover Racing schedule. Instead, creating a User Group containing one individual from each department who is responsible for blogging would make more sense. Read the article on User Groups to learn more about how to use them in your portal.
-
-### When to Use Organizations
-
-To decide whether your portal design should include Organizations, think about its function. A photo-sharing web site could be powered by Sites only. On the other hand, Organizations are useful for corporations or educational institutions since their users can be placed into a hierarchical structure. Don't think that Organizations are only for large enterprises, though. Any group hierarchy, from large government agencies all the way down to small clubs, can be modeled with Organizations. Also, don't think that you must decide between an Organization-based structure or a Site-based structure for assembling your portal's Users. Users can belong both to Organizations and to independent Sites. For example, a corporation or educational institution could create a social networking site open to all Users, even ones from separate Organizations. 
 
 To illustrate what an Organization is, consider a potential Organization of the Lunar Resort's Intranet. The company hierarchy has three tiers: The Lunar Resort, its departments, and divisions within each department.
 

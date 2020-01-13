@@ -7,22 +7,21 @@ At the root of managing Users is adding, editing, and deleting them. As long as 
 Here's how to add Users: 
 
 1.  From the Product Menu, click *Control Panel* &rarr; *Users* &rarr; *Users and Organizations*. 
-
-2.  In the Users tab, click the *Add* button [Add](./images/icon-add.png).
-
-    ![Figure 1: Add Users from the Users and Organizations section of the Control Panel.](./images/usrmgmt-add-user.png)
-
-3.  Fill out the Add User form and click *Save*. At a minimum, provide a Screen Name, First Name, Last Name, and Email Address for the User.
+1.  In the Users tab, click the *Add* button [Add](./images/icon-add.png).
+    ![Add Users from the Users and Organizations section of the Control Panel.](./managing-users/images/01.png)
+1.  Fill out the Add User form and click *Save*. At a minimum, provide a Screen Name, First Name, Last Name, and Email Address for the User.
 
     **Note:** Screen names and email addresses are not interchangeable. A screen name cannot contain an `@` symbol because it is used in the URL to a User's private page.
 
     The Add User functionality is split over several independent forms. Save the first form to create the User, and then you'll see a success message saying
 
-        Success. Your request completed successfully. 
+    ```
+    Success. Your request completed successfully. 
+    ```
 
-After submission of the first form, you see a larger form with many sections. The first is the Information section. To the left is a navigation pane where you can continue configuring the user you're adding by clicking through the available sections. The options in the left menu change as you click through the tabs at the top. Peruse the sections for the three tabs (General, Contact, Preferences) and fill in all the applicable information.
+After submission of the first form a larger form with many sections appears. The first is the Information section. To the left is a navigation pane where you can continue configuring the user you're adding by clicking through the available sections. The options in the left menu change as you click through the tabs at the top. Peruse the sections for the three tabs (General, Contact, Preferences) and fill in all the applicable information.
 
-![Figure 2: At a minimum, enter a screen name, email address, and first name to create a new user account. Then you'll be taken to the Information form and can continue configuring the user.](./images/add-user-forms-menu.png)
+![At a minimum, enter a screen name, email address, and first name to create a new user account. Then you'll be taken to the Information form and can continue configuring the user.](./managing-users/images/02.png)
 
 You don't have to fill anything else out right now. Just note that when the user account was created, a password was automatically generated. If Liferay was correctly installed and a [mail server was set up](/docs/7-2/user/-/knowledge_base/u/server-administration), an email message with the User's new password was sent to the User's email address.
 
