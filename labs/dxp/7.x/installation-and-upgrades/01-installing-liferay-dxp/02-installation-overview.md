@@ -73,10 +73,8 @@ Liferay DXP Enterprise Subscribers must [Activate Liferay DXP](./08-activating-l
 
 ## Next Steps
 
-There are many ways to configure and customize a Liferay DXP installation further, to meet your needs. See the following topics for more information:
+Congratulations! You understand the fundamentals for installing Liferay DXP. To dive deeper into those topics, visit the articles mentioned in the sections above. There are also many ways to configure and customize an installation to meet your needs. To learn more, continue with [Setting up Liferay DXP](../02-setting-up-liferay-dxp/01-config-overview.md) or explore the following topics:
 
-* [Setting up Marketplace](./10-setting-up-marketplace.md)
-* Configuration Overview
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
 * [Configuring Clustering for High Availability](../02-setting-up-liferay-dxp/01-performance-and-scalability/01-configuring-clustering/01-introduction-to-clustering-liferay-dxp.md)
