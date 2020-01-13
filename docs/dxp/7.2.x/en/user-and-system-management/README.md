@@ -6,6 +6,7 @@
       * Using LDAP
     * User Groups
     * User Privacy and GDPR Compliance
+    * Password Policies
   * Roles and Permissions
     * Defining Roles
     * Setting Permissions
@@ -17,6 +18,9 @@
     * System Settings
     * Security Settings
     * Virtual Instances
+    * App Management
+    * Server Administration
+    * Custom Fields
 
 ## Dev Guide
   * User Associated Data
