@@ -6,6 +6,7 @@
       * Using LDAP
     * User Groups
     * User Privacy and GDPR Compliance
+    * Password Policies
   * Roles and Permissions
     * Defining Roles
     * Setting Permissions
@@ -19,6 +20,7 @@
     * Virtual Instances
     * App Management
     * Server Administration
+    * Custom Fields
 * Dev Guide
   * User Associated Data
     * Adding the UAD Framework to a Service Builder Application

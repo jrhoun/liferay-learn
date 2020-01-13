@@ -1,17 +1,16 @@
 # Organizations
 
+To illustrate what an Organization is, consider a potential Intranet Organization. The company hierarchy has three tiers: the top level organizations, departments, and divisions within each department.
 
-To illustrate what an Organization is, consider a potential Organization of the Lunar Resort's Intranet. The company hierarchy has three tiers: The Lunar Resort, its departments, and divisions within each department.
+- Company: The top-level Organization.
 
-- Lunar Resort--The top-level Organization.
+	- Physical Plant Department: Department of users that keep the place running.
 
-	- Physical Plant Department--Department of users that keep the place running.
+		- Grounds Crew: Users that maintain the grounds.
 
-		- Grounds Crew--Users that maintain the grounds.
+		- Janitorial Crew: Users who keep the facility clean.
 
-		- Janitorial Crew--Users who keep the resort clean.
-
-		- Mechanical Crew--Users who fix stuff, like lunar rovers.
+		- Mechanical Crew: Users who fix company equipment.
 
 	- Recreation Department--A department that makes sure much fun is had by guests of the Lunar Resort.
 
