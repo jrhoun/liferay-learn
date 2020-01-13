@@ -16,7 +16,7 @@ The following files are required to install Liferay on the WebSphere application
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-See [Obtaining Liferay](../03-obtaining-liferay.md) to learn more about available Liferay DXP downloads.
+See [Downloading Liferay DXP](../03-downloading-liferay-dxp.md) to learn more about available Liferay DXP downloads.
 
 The [`LIFERAY_HOME` directory](../../14-reference/01-liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 

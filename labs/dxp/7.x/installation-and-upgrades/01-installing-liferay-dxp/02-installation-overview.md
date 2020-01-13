@@ -35,7 +35,7 @@ cd liferay-ce-portal-7.2.1-ga2/
 
 > **Note:** The `liferay-ce-portal-7.2.1-ga2/` folder represents your [*Liferay Home*](../14-reference/01-liferay-home.md).
 
-See [Obtaining Liferay](./03-obtaining-liferay.md) for more information about Liferay Downloads.
+See [Downloading Liferay DXP](./03-downloading-liferay-dxp.md) for more information about Liferay Downloads.
 
 Once your Tomcat bundle is installed, [Connecting a Database](#connecting-a-database) is your next step.
 
@@ -43,7 +43,7 @@ Once your Tomcat bundle is installed, [Connecting a Database](#connecting-a-data
 
 Liferay DXP can be manually deployed to [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) application servers.
 
-Manual deployments require using the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./03-obtaining-liferay.md).
+Manual deployments require using the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Downloading Liferay DXP](./03-downloading-liferay-dxp.md).
 
 ## Connecting a Database
 

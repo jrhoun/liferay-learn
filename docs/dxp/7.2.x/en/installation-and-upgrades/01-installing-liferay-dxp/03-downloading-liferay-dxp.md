@@ -1,4 +1,4 @@
-# Obtaining Liferay DXP
+# Downloading Liferay DXP
 
 There are several options for downloading and installing Liferay DXP.
 

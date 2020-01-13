@@ -2,7 +2,7 @@
 
 Installing Liferay DXP on Tomcat requires deploying dependencies, modifying scripts, modifying config `xml`s file, and deploying the DXP WAR file.
 
-For most administrators, the simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../03-obtaining-liferay.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. Administrators may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
+For most administrators, the simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../03-downloading-liferay-dxp.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. Administrators may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
 
 In addition to copying dependencies, scripts, and configurations from the Liferay Tomcat bundle files (or manually downloading and configuring), administrators must also download:
 
