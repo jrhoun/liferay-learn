@@ -1,4 +1,4 @@
-# User Management: Additional Topics
+# Configuring Users
 
 Beyond adding and editing Users, there are additional important user management topics. 
 
