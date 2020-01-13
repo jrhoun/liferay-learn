@@ -37,8 +37,16 @@ The following files are available to download:
 | Tools | Contains the Liferay Upgrade Client tool |
 | WAR (Liferay DXP) | The Liferay DXP application for installing to any supported application server |
 
+## Installing
+
+Here are the installation instructions.
+
+| Installation | Instructions |
+| --- | --- |
+| Tomcat Bundle | Extract the bundle to a location on your DXP host. This location is called your [Liferay Home](../14-reference/01-liferay-home.md). |
+| WAR and Dependencies | Follow instructions for your app server: [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) |
+
 ## Next Steps
 
-* [Installation Overview](./02-installation-overview.md)
 * [Connecting a Database](./04-connecting-a-database.md)
 * [Using the Setup Wizard](./05-using-the-setup-wizard.md)
