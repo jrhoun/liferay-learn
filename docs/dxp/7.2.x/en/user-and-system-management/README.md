@@ -9,12 +9,16 @@
   * Roles and Permissions
     * Defining Roles
     * Setting Permissions
+  * Managing User Data
+    * Sanitizing User Data
+    * Exporting User Data
   * Accounts
   * System Management
     * System Settings
     * Security Settings
     * Virtual Instances
     * App Management
+    * Server Administration
 * Dev Guide
   * User Associated Data
     * Adding the UAD Framework to a Service Builder Application
