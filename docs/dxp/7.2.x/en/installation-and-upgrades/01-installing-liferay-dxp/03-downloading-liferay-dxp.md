@@ -4,17 +4,17 @@ Downloading Liferay DXP is the first fundamental step for [installing Liferay DX
 
 ## Tomcat Bundle
 
-The best starting point for _most_ people is the Liferay DXP Tomcat Bundle. Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with DXP pre-deployed.
+The best starting point for _most_ people is the Liferay DXP Tomcat bundle. Using the Liferay Tomcat bundle is the simplest, fastest way to get started with Liferay DXP. The Tomcat bundle includes the Apache Tomcat application server with DXP pre-deployed.
 
 ## Docker Image
 
 A Docker image may also be used to get started quickly on Liferay DXP. Docker images may be obtained from [Docker Hub](https://hub.docker.com/u/liferay).
 
-## WAR and Dependency JARs
+## WAR and Dependencies
 
-A `.war` file is also provided that can be deployed to any [supported application server](https://help.liferay.com/hc/categories/360000894391-Product-Support) along with the supporting dependency JARs. This method of installation requires a user to install DXP by deploying the Liferay DXP `.war` and dependencies to an application server.
+Liferay provides DXP as a `.war` file (WAR) that can be deployed to any [supported application server](https://help.liferay.com/hc/categories/360000894391-Product-Support) along with the dependency `.zip` files.
 
-* DXP 7.2 WAR file
+* Liferay DXP WAR file
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
