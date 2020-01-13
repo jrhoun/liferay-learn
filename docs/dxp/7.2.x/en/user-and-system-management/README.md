@@ -20,13 +20,9 @@
     * Virtual Instances
     * App Management
     * Server Administration
-<<<<<<< HEAD
     * Custom Fields
 
 ## Dev Guide
-=======
-* Dev Guide
->>>>>>> Wordsmithing/renaming.
   * User Associated Data
     * Adding the UAD Framework to a Service Builder Application
     * Enhancing the Data Erasure UI
