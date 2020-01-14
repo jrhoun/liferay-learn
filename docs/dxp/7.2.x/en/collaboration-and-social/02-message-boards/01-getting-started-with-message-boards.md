@@ -1,10 +1,10 @@
 # Getting Started with Message Boards
 
-Liferay DXP's Message Boards app is a state of the art forum application which can be added to a DXP instance, a site, or page. An instance's message board can be used on any of its pages. A message board can be [scoped to a site](https://help.liferay.com/hc/articles/360028819992-Widget-Scope), including a regular site, an organization’s site, or a user's profile site or dashboard site.
+Liferay DXP's Message Boards app is a state of the art forum application which can be added to any DXP site page. A message board on DXP can be [scoped to a site](https://help.liferay.com/hc/articles/360028819992-Widget-Scope), including a regular site, an organization’s site, or a user's profile site or dashboard site.
 
 ## Deploying the Message Boards App
 
-The fastest way to begin using the _Message Boards_ app is by deploying the app to a site page. See the [Creating Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages) article on how to create page.
+The fastest way to begin using the _Message Boards_ app is to deploy the MB widget to a site page. See the [Creating Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages) article on how to create page.
 
 1. Navigate to the site where the forum is to be created (in this example, the default Liferay DXP Guest site).
 1. Go to the site page (e.g. _Forum Page_)
@@ -13,15 +13,19 @@ The fastest way to begin using the _Message Boards_ app is by deploying the app 
 
 1. Click the _Add_ button.
 1. Click _Widgets_ then _Collaboration_ to expand the menu.
-1. Drag and drop the _Message Boards_ app to the desired location on the page.
+1. Drag and drop the _Message Boards_ widget to the desired location on the page.
 
-Site members are able to create forum posts using the _Message Boards_ app. Note that there can be only one _Message Boards_ app per page, not per site.
+![Deploying the Message Boards app to the forum page.](./getting-started-with-message-boards/images/04.png)
+
+Site members are able to create forum posts using the _Message Boards_ widget. Note that there can be only one _Message Boards_ widget per page; you can have multiple Message Boards widgets deployed across multiple site pages.
 
 ## Message Boards Features
 
 ### Categories
 
-Site administrators can use _Message Boards Categories_ to organize multiple threads about a similar topic (for example, discussions about Star Wars). _Categories_ can also be moved and merged. To learn how to create and manage _Categories_, see the [Creating and Managing Message Boards Categories](./02-creating-message-boards-categories.md) article.
+Site administrators can use _Message Boards Categories_ to organize multiple threads about a similar topic (for example, discussions about Star Wars or MCU). _Categories_ can also be moved and merged. To learn how to create and manage _Categories_, see the [Creating and Managing Message Boards Categories](./02-creating-message-boards-categories.md) article.
+
+![Categories organize threads.](./getting-started-with-message-boards/images/05.png)
 
 ### Creating Threads
 
@@ -35,7 +39,7 @@ There are multiple features in _Threads_ to create lively discussions:
 
 ![Figure 2: A thread's view displays author information and thread content, for the thread and all replies to the thread.](./getting-started-with-message-boards/images/02.png)
 
-To start posting a thread, see the [Threads](./03-creating-threads.md) article.
+To start posting a thread, see the [Threads](./03-creating-message-boards-threads.md) article.
 
 ### Managing Threads
 
