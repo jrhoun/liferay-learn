@@ -23,7 +23,7 @@ Site members are able to create forum posts using the _Message Boards_ widget. N
 
 ### Categories
 
-Site administrators can use _Message Boards Categories_ to organize multiple threads about a similar topic (for example, discussions about Star Wars or MCU). _Categories_ can also be moved and merged. To learn how to create and manage _Categories_, see the [Creating and Managing Message Boards Categories](./02-creating-message-boards-categories.md) article.
+Site administrators can use _Message Boards Categories_ to organize multiple threads about a similar topic (for example, discussions about Star Wars or MCU). _Categories_ can also be moved and merged. To learn how to create and manage _Categories_, see the [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md) article.
 
 ![Categories organize threads.](./getting-started-with-message-boards/images/05.png)
 
@@ -39,7 +39,7 @@ There are multiple features in _Threads_ to create lively discussions:
 
 ![Figure 2: A thread's view displays author information and thread content, for the thread and all replies to the thread.](./getting-started-with-message-boards/images/02.png)
 
-To start posting a thread, see the [Threads](./03-creating-message-boards-threads.md) article.
+To start posting a thread, see the [Threads](./creating-message-boards-threads.md) article.
 
 ### Managing Threads
 
@@ -54,7 +54,7 @@ The _Message Boards_ app has several functions for users to stay updated on the 
 
 ### Content Scope
 
-As mentioned above, message boards can be scoped to a page, a site, or the entire portal. See [Scoping your Message Boards](./06-scoping-your-message-boards.md)
+As mentioned above, message boards can be scoped to a page, a site, or the entire portal. See [Scoping your Message Boards](./scoping-your-message-boards.md)
 
 ### Managing Users
 
@@ -68,4 +68,4 @@ See the [Managing Users]() article for more information.
 ### Reference
 
 * [Configuration Reference]()
-* [Permissions Reference](./08-message-boards-permissions-reference.md)
+* [Permissions Reference](./message-boards-permissions-reference.md)

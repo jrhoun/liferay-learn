@@ -1,12 +1,12 @@
 # Creating Message Boards Threads
 
-This article documents how to create Message Boards threads in Liferay DXP. Each message in a thread can be created inside a Message Boards Category; to learn more about Categories, see [Creating Message Boards Categories](./02-creating-message-boards-categories.md).
+This article documents how to create Message Boards threads in Liferay DXP. Each message in a thread can be created inside a Message Boards Category; to learn more about Categories, see [Creating Message Boards Categories](./creating-message-boards-categories.md).
 
  Note that only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 Like Message Boards Categories, there are two ways to add a thread:
 
-* Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel](../02-adding-content-in-the-control-panel.md).
+* Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel]().
 * On the _Message Boards_ widget on a site page
 
 ## Posting a New Thread

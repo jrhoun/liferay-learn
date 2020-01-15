@@ -2,13 +2,13 @@
 
 Message Boards Categories organize threads by topic. This makes it easier to find the right topic for discussion and can also help discussions stay on topic. For example, a message board about raising tropical fish may have separate categories for freshwater and saltwater topics.
 
-This article describes how to create and manage message board categories. Note that only authenticated users with the requisite permissions (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+This article describes how to create and manage message board categories. Note that only authenticated users with the requisite permissions (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Adding Categories
 
 There are two ways to add categories:
 
-* Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel](../02-adding-content-in-the-control-panel.md).
+* Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel]().
 * On the _Message Boards_ widget deployed on a site page
 
 ### Using the _Message Boards_ Widget
@@ -32,7 +32,7 @@ On the _Message Boards_ widget, click the _Add Category_ button.
     * Site Members
     * Owner
 
-    > To show more permissions options, click *More Options*. A table appears with the rest of the category's permissions, which you can assign to the Guest and Site Member roles. For more information about the different permissions, see the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md)
+    > To show more permissions options, click *More Options*. A table appears with the rest of the category's permissions, which you can assign to the Guest and Site Member roles. For more information about the different permissions, see the [Message Boards Permissions Reference](./message-boards-permissions-reference.md)
 
     ![Figure 1: You have several options to create a message board category for your needs.](./creating-message-boards-categories/images/02.png)
 
@@ -70,7 +70,7 @@ Follow these steps to move a category or merge it with another:
 
 ![Figure 3: The Move Category form lets you move and merge categories.](./creating-message-boards-categories/images/03.png)
 
-Regardless of how many categories (and subcategories) there are, a category is just a container to organize a message board's threads. To start creating threads, see the [Creating Threads](./03-creating-message-boards-threads.md) article.
+Regardless of how many categories (and subcategories) there are, a category is just a container to organize a message board's threads. To start creating threads, see the [Creating Threads](./creating-message-boards-threads.md) article.
 
 ## Additional Information
 

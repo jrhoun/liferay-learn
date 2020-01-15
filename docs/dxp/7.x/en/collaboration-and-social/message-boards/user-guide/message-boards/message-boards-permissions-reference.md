@@ -30,7 +30,7 @@ Configure the Roles with the permissions you want and *Save* your changes.
 
 ## Widget Permissions
 
-After adding a Message Boards widget to a page, administrators can access that widget instance's general permissions. To do so, select the widget's *Options* menu (![Options](./message-boards-permissions-reference/images/02.png)) and select *Permissions*. 
+After adding a Message Boards widget to a page, administrators can access that widget instance's general permissions. To do so, select the widget's *Options* menu (![Options](./message-boards-permissions-reference/images/02.png)) and select *Permissions*.
 
 ![Assigning Widget Permissions](./message-boards-permissions-reference/images/04.png)
 
@@ -73,4 +73,4 @@ This set of permissions determine what changes Guests and Site Members can make 
 | **Permissions:** | Grant/revoke thread permissions. |
 | **Update:** | Edit the thread. |
 | **Subscribe:** | Receive notifications for thread activity. |
-| *View:** | View the thread. |
+| **View:** | View the thread. |
