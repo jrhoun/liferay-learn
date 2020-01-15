@@ -1,6 +1,6 @@
 # Connecting to a Mail Server
 
-Liferay DXP 7.2 uses a mail server and SMTP to email notifications. To enable the DXP 7.2 instance to send notifications, it is highly recommended to use DXP 7.2's built-in mail session to configure mail. Administrators can configure the built-in mail session before or after deploying DXP 7.2. Alternatively, administrators can configure DXP 7.2 to use a mail session on the application server.
+Liferay DXP uses a mail server and SMTP to email notifications. To enable the DXP 7.2 instance to send notifications, it is highly recommended to use DXP 7.2's built-in mail session to configure mail. Administrators can configure the built-in mail session before or after deploying DXP 7.2. Alternatively, administrators can configure DXP 7.2 to use a mail session on the application server.
 
 Creating a mail session in DXP 7.2 or on the application server requires the following information:
 
