@@ -125,7 +125,7 @@ To connect Liferay DXP to a database using the built-in data source follow these
 
 Liferay DXP is set to connect to the data source when you start your DXP server.
 
-An alternative to configuring the built-in data source *before* starting DXP is configuring the built-in data source [using the Setup Wizard](./05-using-the-setup-wizard.md) when you start DXP for the first time. The Setup Wizard stores the data source settings (and the other settings entered) in a `[LIFERAY_HOME]/portal-setup-wizard.properties` file.
+An alternative to configuring the built-in data source *before* starting DXP is configuring the built-in data source [using the Setup Wizard](./06-using-the-setup-wizard.md) when you start DXP for the first time. The Setup Wizard stores the data source settings (and the other settings entered) in a `[LIFERAY_HOME]/portal-setup-wizard.properties` file.
 
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./connecting-a-database/images/01.png)
 
@@ -141,4 +141,4 @@ If you want to use your application server to manage the DXP data source, follow
 
 ## Next steps
 
-Once you have configured the database connection, or decided to configure it [using the Setup Wizard](./05-using-the-setup-wizard.md) you can start the application server. See [Running Liferay DXP for the First Time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time).
+Once you have configured the database connection, or decided to configure it [using the Setup Wizard](./06-using-the-setup-wizard.md) you can start the application server. See [Running Liferay DXP for the First Time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time).

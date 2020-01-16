@@ -51,7 +51,7 @@ Liferay DXP's pre-configured defaults (including an HSQL database) enable faster
 
 ## Running Liferay DXP for the First Time
 
-Once the JVM, application server, and database have been configured, you can [start Liferay DXP](./05-running-liferay-dxp-for-the-first-time.md). On completing startup, DXP launches a web browser that displays the Basic Configuration page (the Setup Wizard). The page lets you set the DXP instance's name, administrative user, time zone, and more. See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
+Once the JVM, application server, and database have been configured, you can [start Liferay DXP](./05-running-liferay-dxp-for-the-first-time.md). On completing startup, DXP launches a web browser that displays the Basic Configuration page (the Setup Wizard). The page lets you set the DXP instance's name, administrative user, time zone, and more. See [Using the Setup Wizard](./06-using-the-setup-wizard.md) to learn more.
 
 ## Activating Liferay DXP
 
