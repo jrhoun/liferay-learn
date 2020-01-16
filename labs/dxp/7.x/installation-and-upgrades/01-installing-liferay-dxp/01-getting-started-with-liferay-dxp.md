@@ -34,9 +34,9 @@ Follow these steps to quickly take Liferay DXP for a test drive and tour its fea
 
     `./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh`
 
-1. Sign in and get started!
+The Liferay DXP home page appears at `http://localhost:8080/`. Sign in and get started!
 
-    ![Liferay DXP is ready to explore!](./getting-started-with-liferay-dxp/images/02.png)
+![Liferay DXP is ready to explore!](./getting-started-with-liferay-dxp/images/02.png)
 
 ## Next Steps
 
