@@ -2,6 +2,8 @@
 
 Follow these steps to quickly take Liferay DXP for a test drive and tour its features on your own Linux, macOS, or Windows machine.
 
+> For Liferay DXP CE 7.3 GA1, visit [Community Downloads page](https://www.liferay.com/downloads-community) and see the [Installation Overview](./02-installation-overview.md).
+
 ## Run Liferay DXP locally on Linux, macOS, or Windows
 
 > JAVA JDK 8 or 11 are required to run Liferay DXP. Learn more by visiting [www.java.com](https://www.java.com/).
