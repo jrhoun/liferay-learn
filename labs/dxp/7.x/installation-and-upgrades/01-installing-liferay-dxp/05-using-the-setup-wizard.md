@@ -1,12 +1,18 @@
 # Using the Setup Wizard
 
-The entry point for many users starting Liferay DXP for the first time is the Setup Wizard. The Setup Wizard provides a convenient way to configure the following:
 
-* Locale and Timezone
-* Configuring the Admin User
-* Connecting a Database
 
-> **Note**: Experienced users who have already configured Liferay by creating `.properties` files can disable and skip using the Setup Wizard by appending `setup.wizard.enabled=false` to an already created `.properties` file.
+If you've [configured the a database connection](./04-connecting-a-database.md) already using a `portal-ext.properties` file, the Basic Configuration page shows your configured database settings. Otherwise, use the Setup Wizard to configure the DXP database.
+
+
+On [running Liferay DXP for the first time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time), the Setup Wizard appears. It provides a convenient way to configure the following:
+
+* Portal name
+* Locale and time zone
+* Admin user
+* Database connection
+
+> **Note**: If you have already configured Liferay DXP and its [database connection](../04-connecting-a-database.md) using a [`portal-ext.properties` file](../14-reference/03-portal-properties.md), you can disable the Setup Wizard by appending `setup.wizard.enabled=false` to that properties file.
 
 ![Supply the information for the portal and the portal's default administrator user on the Basic Configuration page.](./using-the-setup-wizard/images/01.png)
 
@@ -26,13 +32,13 @@ The entry point for many users starting Liferay DXP for the first time is the Se
 | **Last Name** | The administrator user's last name |
 | **Email** | The administrator user's email address |
 
-> **Note:** the administrator user's email domain is used as the DXP 7.2 instance's default domain (i.e., the [`company.default.web.id`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) [portal property](../14-reference/03-portal-properties.md)).
+> **Note:** the administrator user's email domain is used as the DXP instance's default domain (i.e., the [`company.default.web.id`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) [portal property](../14-reference/03-portal-properties.md)).
 
 ## Database Configuration Reference
 
-> **Important:** If a database has not been created yet, create one now following [database preparation instructions](./04-connecting-a-database.md) article.
+> **Important:** If you have not yet created a database, create one now following [database preparation instructions](./04-connecting-a-database.md).
 
-Click the *Change* link if using DXP 7.2's built-in data source and configuring it to use the [database you created earlier](./04-connecting-a-database.md).
+Click the *Change* link if you're using DXP's built-in data source and configuring it to use the [database you created earlier](./04-connecting-a-database.md).
 
 | Field | Description |
 | --- | --- |
@@ -42,7 +48,7 @@ Click the *Change* link if using DXP 7.2's built-in data source and configuring 
 | **Password** | Database user password |
 | **Sample Data** | Flagging this value will result in Users, Sites, and Organizations being created for demonstration purposes |
 
-> **Warning:** HSQL should not be used in production instances of Liferay DXP.
+> **Warning:** HSQL must not be used in production instances of Liferay DXP.
 
 ## Completing the Setup Wizard
 
@@ -52,14 +58,14 @@ The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file 
 
 > **Note:** Property values in `portal-setup-wizard.properties` (the file the setup wizards creates in [Liferay Home](../14-reference/01-liferay-home.md)) override property values in `portal-ext.properties`.
 
-On finishing basic configuration, DXP prompts you to restart the server. DXP 7.2 initializes the database during the second startup process.
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. [Activating Liferay DXP](.08-activating-liferay-dxp.md) is discussed next.
+
+Lastly DXP prompts you to restart the server. DXP initializes the database the next time you start the server.
 
 ## Next Steps
 
 * [Installation Overview](./02-installation-overview.md)
-* Activating Liferay DXP
-* Configuration Overview
-* Installing and Configuring a Search Engine
-* Securing Liferay DXP
-* Configuring Clustering for High Availability
+* [Activating Liferay DXP](.08-activating-liferay-dxp.md)
+* [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
+* [Configuring Clustering for High Availability](../02-setting-up-liferay-dxp/01-performance-and-scalability/01-configuring-clustering/01-introduction-to-clustering-liferay-dxp.md)
 * Maintaining Liferay DXP
