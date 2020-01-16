@@ -5,7 +5,7 @@
 If you've [configured the a database connection](./04-connecting-a-database.md) already using a `portal-ext.properties` file, the Basic Configuration page shows your configured database settings. Otherwise, use the Setup Wizard to configure the DXP database.
 
 
-On [running Liferay DXP for the first time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time), the Setup Wizard appears. It provides a convenient way to configure the following:
+On [running Liferay DXP for the first time](./05-running-liferay-dxp-for-the-first-time.md), the Setup Wizard appears. It provides a convenient way to configure the following:
 
 * Portal name
 * Locale and time zone
@@ -58,14 +58,14 @@ The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file 
 
 > **Note:** Property values in `portal-setup-wizard.properties` (the file the setup wizards creates in [Liferay Home](../14-reference/01-liferay-home.md)) override property values in `portal-ext.properties`.
 
-If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. [Activating Liferay DXP](.08-activating-liferay-dxp.md) is discussed next.
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. [Activating Liferay DXP](./08-activating-liferay-dxp.md) is discussed next.
 
 Lastly DXP prompts you to restart the server. DXP initializes the database the next time you start the server.
 
 ## Next Steps
 
 * [Installation Overview](./02-installation-overview.md)
-* [Activating Liferay DXP](.08-activating-liferay-dxp.md)
+* [Activating Liferay DXP](./08-activating-liferay-dxp.md)
 * [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
 * [Configuring Clustering for High Availability](../02-setting-up-liferay-dxp/01-performance-and-scalability/01-configuring-clustering/01-introduction-to-clustering-liferay-dxp.md)
 * Maintaining Liferay DXP

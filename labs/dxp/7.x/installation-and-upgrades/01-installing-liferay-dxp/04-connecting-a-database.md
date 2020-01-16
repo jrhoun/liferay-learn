@@ -141,4 +141,4 @@ If you want to use your application server to manage the DXP data source, follow
 
 ## Next steps
 
-Once you have configured the database connection, or decided to configure it [using the Setup Wizard](./06-using-the-setup-wizard.md) you can start the application server. See [Running Liferay DXP for the First Time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time).
+Once you have configured the database connection, or decided to configure it [using the Setup Wizard](./06-using-the-setup-wizard.md) you can start the application server. See [Running Liferay DXP for the First Time](./05-running-liferay-dxp-for-the-first-time.md).
