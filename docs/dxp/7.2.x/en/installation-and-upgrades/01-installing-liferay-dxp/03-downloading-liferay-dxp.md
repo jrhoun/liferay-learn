@@ -49,5 +49,4 @@ Here are the installation instructions.
 ## Next Steps
 
 * [Connecting a Database](./04-connecting-a-database.md)
-* [Using the Setup Wizard](./05-using-the-setup-wizard.md)
-* [Running Liferay DXP for the First Time](./02-installation-overview.md#running-liferay-dxp-for-the-first-time)
+* [Running Liferay DXP for the First Time](./05-running-liferay-dxp-for-the-first-time.md)

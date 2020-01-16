@@ -51,25 +51,13 @@ Liferay DXP's pre-configured defaults (including an HSQL database) enable faster
 
 ## Running Liferay DXP for the First Time
 
-Once the JVM, application server, and database have been configured, you can start Liferay DXP. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
-
-```bash
-./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
-```
-
-> **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`.
-
-The first time DXP starts, it creates all of its database tables. On completing startup, DXP launches a web browser that displays the Basic Configuration page (the Setup Wizard). If the Basic Configuration page does not appear automatically, open a browser and navigate to the application server's address and port (for example, `http://localhost:8080`).
-
-See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
-
-> **Note:** Experienced users may bypass the Setup Wizard entirely by configuring `setup.wizard.enabled=false` in a [portal properties file](../14-referene/03-portal-properties.md) (`[LIFERAY_HOME]/portal-ext.properties`).
+Once the JVM, application server, and database have been configured, you can [start Liferay DXP](./05-running-liferay-dxp-for-the-first-time.md). On completing startup, DXP launches a web browser that displays the Basic Configuration page (the Setup Wizard). The page lets you set the DXP instance's name, administrative user, time zone, and more. See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
 
 ## Activating Liferay DXP
 
 > Subscription Required
 
-Liferay DXP Enterprise Subscribers must [Activate Liferay DXP](./08-activating-liferay-dxp.md) in order to use DXP beyond the initial trial period.
+Liferay DXP Enterprise Subscribers must [Activate Liferay DXP](./08-activating-liferay-dxp.md) to continue using all that the subscription offers beyond the initial trial period.
 
 ## Next Steps
 
