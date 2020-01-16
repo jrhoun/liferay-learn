@@ -8,7 +8,7 @@ The best starting point for _most_ people is the Liferay DXP Tomcat bundle. Usin
 
 ## Docker Image
 
-A Docker image may also be used to get started quickly on Liferay DXP. Docker images may be obtained from [Docker Hub](https://hub.docker.com/u/liferay).
+A Docker image may also be used to tour Liferay DXP Community Edition. Docker images and instructions are on [Docker Hub](https://hub.docker.com/r/liferay/portal).
 
 ## WAR and Dependencies
 
