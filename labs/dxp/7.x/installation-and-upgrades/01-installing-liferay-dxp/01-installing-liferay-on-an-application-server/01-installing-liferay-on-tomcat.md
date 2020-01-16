@@ -203,7 +203,7 @@ Administrators have the option to use either DXP's built-in data source and mail
     ,"${catalina.home}/lib/ext/global","${catalina.home}/lib/ext/global/*.jar","${catalina.home}/lib/ext","${catalina.home}/lib/ext/*.jar"
     ```
 
-1. Make sure to use UTF-8 URI encoding consistently. Copy the `$CATALINA_BASE/conf/server.xml` file from a 7.2 bundle to the server. If not, open the `$CATALINA_BASE/conf/server.xml` file and add the attribute `URIEncoding="UTF-8"` to HTTP and AJP connectors that use `redirectPort=8443`. Here are examples:
+1. Make sure to use UTF-8 URI encoding consistently. Copy the `$CATALINA_BASE/conf/server.xml` file from a DXP bundle to the server. If not, open the `$CATALINA_BASE/conf/server.xml` file and add the attribute `URIEncoding="UTF-8"` to HTTP and AJP connectors that use `redirectPort=8443`. Here are examples:
 
     Old:
 
@@ -378,6 +378,6 @@ The mail session for Tomcat has been configured.
 * [Installation Overview](../02-installation-overview.md)
 * Configuration Overview
 * Installing and Configuring a Search Engine
-* Securing Liferay DXP
-* Configuring Clustering for High Availability
+* [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
+* [Configuring Clustering for High Availability](../02-setting-up-liferay-dxp/01-performance-and-scalability/01-configuring-clustering/01-introduction-to-clustering-liferay-dxp.md)
 * Maintaining Liferay DXP
