@@ -18,11 +18,23 @@ Follow these steps to quickly take Liferay DXP for a test drive and tour its fea
 
     `./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh`
 
-    > `INFO: Server startup in x ms` indicates server startup completion.
+    > `INFO: Server startup in x milliseconds` indicates server startup completion.
 
-1. Go to `http://localhost:8080/`. Follow the prompts to complete [basic configuration](./06-using-the-setup-wizard.md) and get started!
+1. Go to `http://localhost:8080/`. Follow the prompts to complete [basic configuration](./06-using-the-setup-wizard.md)!
 
     ![Follow the Setup Wizard Prompts to Log In](./getting-started-with-liferay-dxp/images/01.png)
+
+1. Stop DXP
+
+    `Ctrl + c`
+    
+    Rerun
+
+    `./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh`
+
+1. Sign in and get started!
+
+    ![Liferay DXP is ready to explore!](./getting-started-with-liferay-dxp/images/02.png)
 
 ## Next Steps
 
