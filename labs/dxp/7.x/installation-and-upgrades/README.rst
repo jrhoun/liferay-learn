@@ -6,9 +6,10 @@ Installing Liferay DXP
 
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/01-getting-started-with-liferay-dxp`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview`
--  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/03-obtaining-liferay`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/03-downloading-liferay-dxp`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
--  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/05-running-liferay-dxp-for-the-first-time`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/06-using-the-setup-wizard`
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/08-activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-trial-plugin-installation`
