@@ -1,7 +1,6 @@
 Installing Liferay DXP
 ======================
 
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/01-getting-started-with-liferay-dxp`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/03-obtaining-liferay`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
