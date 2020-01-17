@@ -46,6 +46,12 @@ Message Boards threads can be linked to other existing assets in DXP.
 
 ![Figure 4. Adding a Tag and Related Asset](./creating-message-boards-threads/images/04.png)
 
+### Set the Thread's Priority
+
+A Message Boards thread can be prioritized as _Urgent_, _Sticky_, or _Announcement_. By default, it is set to "None".
+
+![Figure 5. Setting a thread priority](./creating-message-boards-threads/images/07.png)
+
 1. Click _Publish_.
 
 The new post has been created. Site administrators have the ability to move this post to another category at a later time.
