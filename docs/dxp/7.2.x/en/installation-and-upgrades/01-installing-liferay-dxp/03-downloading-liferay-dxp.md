@@ -1,16 +1,22 @@
 # Downloading Liferay DXP
 
-Downloading Liferay DXP is the first fundamental step for [installing Liferay DXP](./01-installation-overview.md). The following sections describe the installer types and the [Downloads](#downloads) section lists the installer-related files.
+Getting Liferay DXP is the first fundamental step for [installing Liferay DXP](./01-installation-overview.md). The following sections describe: 
 
-## Tomcat Bundle
+* [Installation Types](#installation-types)
+* [Downloads](#downloads)
+* [Installation Instructions](#installation-instructions)
+
+## Installation Types
+
+### Tomcat Bundle
 
 The best starting point for _most_ people is the Liferay DXP Tomcat bundle. Using the Liferay Tomcat bundle is the simplest, fastest way to get started with Liferay DXP. The Tomcat bundle includes the Apache Tomcat application server with DXP pre-deployed.
 
-## Docker Image
+### Docker Image
 
 A Docker image may also be used to tour Liferay DXP Community Edition. Docker images and instructions are on [Docker Hub](https://hub.docker.com/r/liferay/portal).
 
-## WAR and Dependencies
+### WAR and Dependencies
 
 Liferay provides DXP as a `.war` file (WAR) that can be deployed to any [supported application server](https://help.liferay.com/hc/categories/360000894391-Product-Support) along with the dependency `.zip` files.
 
@@ -37,12 +43,13 @@ The following files are available to download:
 | Tools | Contains the Liferay Upgrade Client tool |
 | WAR (Liferay DXP) | The Liferay DXP application for installing to any supported application server |
 
-## Installing
+## Installation Instructions
 
 Here are the installation instructions.
 
 | Installation | Instructions |
 | --- | --- |
+| Docker Image | Portal CE: `docker pull liferay/portal:7.2.1-ga2`<br><br>For latest images, see [Liferay Portal CE tags](https://hub.docker.com/r/liferay/portal/tags). To run it, see the [Docker Hub Overview](https://hub.docker.com/r/liferay/portal). |
 | Tomcat Bundle | Extract the bundle to a location on your DXP host. This location is called your [Liferay Home](../14-reference/01-liferay-home.md). |
 | WAR and Dependencies | Follow instructions for your app server: [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) |
 
