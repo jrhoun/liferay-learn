@@ -6,7 +6,7 @@ Installing Liferay DXP
 
    01-installing-liferay-dxp-on-premise/01-getting-started-with-liferay-dxp.md
    01-installing-liferay-dxp-on-premise/02-installation-overview.md
-   01-installing-liferay-dxp-on-premise/03-obtaining-liferay.md
+   01-installing-liferay-dxp-on-premise/03-downloading-liferay-dxp.md
    01-installing-liferay-dxp-on-premise/04-connecting-a-database.md
    01-installing-liferay-dxp-on-premise/05-running-liferay-dxp-for-the-first-time.md
    01-installing-liferay-dxp-on-premise/06-using-the-setup-wizard.md
