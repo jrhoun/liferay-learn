@@ -4,12 +4,13 @@ Advanced Installation and Upgrades
 Installing Liferay DXP
 ----------------------
 
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/03-downloading-liferay`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/01-installation-overview`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/02-downloading-liferay`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/03-connecting-a-database`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/04-running-liferay-dxp-for-the-first-time`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/08-activating-liferay-dxp`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/06-activating-liferay-dxp`
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
