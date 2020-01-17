@@ -11,10 +11,6 @@ Installing Liferay DXP
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/08-activating-liferay-dxp`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/09-trial-plugin-installation`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp/10-setting-up-marketplace`
-* Using the Liferay Marketplace
-* Installing Apps Manually
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,6 +29,10 @@ Setting Up Liferay DXP
 -  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
+-  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/trial-plugin-installation`
+-  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-marketplace`
+* Using the Liferay Marketplace
+* Installing Apps Manually
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
