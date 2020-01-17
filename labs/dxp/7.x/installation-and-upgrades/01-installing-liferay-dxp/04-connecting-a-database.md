@@ -1,17 +1,17 @@
 # Connecting a Database
 
-By default, Liferay DXP uses an embedded HSQL database for demonstration purposes. For purposes beyond Liferay DXP demonstrations and tours, we recommend using a full-featured, supported RDBMS. This includes but is not limited to the following databases:
+By default, Liferay DXP uses an embedded HSQL database for demonstration purposes. For purposes beyond touring and demonstrating DXP, we recommend using a full-featured, supported RDBMS, such as:
 
 * MySQL
 * MariaDB
 * Oracle
 * PostgreSQL
 
-For a complete listing of databases and versions supported, see the [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7).
+> **Note:** the [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7) lists the supported databases and versions.
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
-Here's what's required to connect Liferay DXP to a database:
+Connecting Liferay DXP to a database requires:
 
 * [Configuring the Database](#configuring-the-database)
 * [Installing a JDBC Connector](#installing-a-jdbc-connector)
@@ -23,7 +23,7 @@ Once you've selected a database, follow these steps to configure it:
 
 * [Use the GMT Time Zone](#use-the-gmt-time-zone)
 * [Create a Blank Database With UTF-8 Support](#creatre-a-blank-database-with-utf-8-support)
-* [Configure the Query Result Sort Order](#configure-the-query-result-sort-order)
+* [Configure the Query Result Sort Order (Optional)](#configure-the-query-result-sort-order-optional)
 * [Configure Database User Access](#configure-user-database-access)
 
 > **Note:** Always consult the database vendor's documentation before modifying the database.
@@ -40,7 +40,7 @@ Multilingual character sets require using UTF-8. This MySQL command, for example
 create database lportal character set utf8;
 ```
 
-### Configure the Query Result Sort Order
+### Configure the Query Result Sort Order (Optional)
 
 Every database has a default order for sorting results (see [this article](https://help.liferay.com/hc/en-us/articles/360029315971-Sort-Order-Changed-with-a-Different-Database)). Consult the database vendor documentation to learn your database's sort order and if necessary, configure the database to use a default query result order you expect for entities Liferay DXP lists.
 
@@ -62,27 +62,26 @@ Your organization may have more stringent security policies that require limitin
 
 > **Warning:** There are some caveats to running Liferay DXP with these constraints. Many plugins create new tables when they’re deployed. Additionally, you must manually run the database upgrade function to upgrade Liferay DXP. If the Liferay DXP database user does not have adequate rights to create/modify/drop tables in the database, you must grant those rights to that user before deploying one of these plugins or starting the Liferay DXP upgrade. Once the tables are created or the upgrade completes, you can remove those rights until the next deploy or upgrade. If your team creates plugins that create their own tables, you must similarly grant temporary rights to the Liferay DXP database user before deploying the plugin.
 
+You've configured your database. You're ready to install a JDBC connecter for it. 
+
 ## Installing a JDBC Connector
 
-Liferay DXP requires a JDBC connector for communicating with your database.
+Liferay DXP requires a JDBC connector for communicating with your database. 
 
 ### Open Source Databases
 
-The Liferay DXP bundle includes several open source JDBC connectors that connect DXP to a variety of databases. The connector files are normally located in a global `/lib/ext` folder (e.g., Tomcat) or a `module` folder (e.g., for JBoss EAP and WildFly 10). JDBC connectors for proprietary databases like Oracle and DB2 require must be downloaded from the database vendor.
+The Liferay DXP bundle includes several open source JDBC connectors that connect DXP to a variety of databases. The connector files are normally located in a global `/lib/ext` folder (e.g., Tomcat) or a `/module` folder (e.g., for JBoss EAP and WildFly 10).
 
 ### Proprietary Databases
 
 Liferay DXP does not include JDBC connectors for proprietary databases like Oracle and DB2. Such connectors must be obtained from the database vendor and deployed to the application server.
 
-If you're using an Oracle database, download the `ojdbc8.jar` driver library from [Oracle](https://www.oracle.com/index.html).
+| Database | Connector | Vendor Site | Notes |
+| :------- | :-------- | :---------- | :---- |
+| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
+| DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
 
-> **Note:** The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns.
-
-If you're using an IBM database, download  the `db2jcc4.jar` file from [IBM](https://www.ibm.com/).
-
-> **Note:** The `dbc2jcc` connector has been deprecated after 3.72.
-
-Add your database connector JAR file to the application server’s designated location for connector files, such as a global `/lib/ext` folder (e.g., Tomcat) or a `module` folder (e.g., for JBoss EAP and WildFly 10).
+Add the connector JAR file to the application server’s designated location for connector files, such as a global `/lib/ext` folder (e.g., Tomcat) or a `module` folder (e.g., for JBoss EAP and WildFly 10).
 
 ## Configuring a Data Source
 
@@ -93,17 +92,13 @@ There are two methods for connecting Liferay DXP to a database:
 
 The best option for most people is to use the built-in data source.
 
-### Using the Built-In Data Source
+### Built-In Data Source
 
 To connect Liferay DXP to a database using the built-in data source follow these steps:
 
-1. Create a `portal-ext.properties` file if one does not already exist.
+1. Create a [`portal-ext.properties`](../14-reference/03-portal-properties.md) file in your [`LIFERAY_HOME`](../14-reference/01-liferay-home.md) folder.
 
-    > **Note:** Many Liferay DXP configurations are done by writing them to a [`portal-ext.properties`](../14-reference/03-portal-properties.md) file and placing that file in the [`LIFERAY_HOME`](../14-reference/01-liferay-home.md) directory.
-
-1. Copy a set of `jdbc.*` properties from one of the [JDBC templates](../14-reference/05-database-templates.md) into your `portal-ext.properties` file.
-
-    Here is a properties template for connecting to a MySQL database:
+1. Copy a set of `jdbc.*` properties from one of the [JDBC templates](../14-reference/05-database-templates.md) into your `portal-ext.properties` file. For example, MySQL:
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
@@ -112,7 +107,7 @@ To connect Liferay DXP to a database using the built-in data source follow these
     jdbc.default.password=
     ```
 
-1. Modify the `jdbc.*` property values to specify your database and database user credentials.
+1. Modify the properties to specify your database and database user credentials.
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
@@ -121,17 +116,15 @@ To connect Liferay DXP to a database using the built-in data source follow these
     jdbc.default.password=password
     ```
 
-1. Copy the `portal-ext.properties` file into your [`LIFERAY_HOME`](../14-reference/01-liferay-home.md) folder.
-
 Liferay DXP is set to connect to the data source when you start your DXP server.
 
-An alternative to configuring the built-in data source *before* starting DXP is configuring the built-in data source [using the Setup Wizard](./06-using-the-setup-wizard.md) when you start DXP for the first time. The Setup Wizard stores the data source settings (and the other settings entered) in a `[LIFERAY_HOME]/portal-setup-wizard.properties` file.
+An alternative to configuring the built-in data source *before* starting DXP is configuring it after DXP startup [using the Setup Wizard](./06-using-the-setup-wizard.md).
 
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./connecting-a-database/images/01.png)
 
-### Using a Data Source on Your Application Server
+### Data Source on Your Application Server
 
-If you want to use your application server to manage the DXP data source, follow the database configuration instructions applicable for your application server:
+If you want to use your application server to manage your DXP data source, follow the database configuration instructions applicable for your application server:
 
 * [Installing Liferay DXP on Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md#database-configuration)
 * [Installing Liferay DXP on WildFly](https://help.liferay.com/hc/en-us/articles/360029123751-Installing-Liferay-DXP-on-Wildfly#database-configuration)
