@@ -4,22 +4,21 @@ Advanced Installation and Upgrades
 Installing Liferay DXP on Premise
 ---------------------------------
 
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/01-installation-overview`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/02-downloading-liferay`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/03-connecting-a-database`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/04-running-liferay-dxp-for-the-first-time`
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/05-using-the-setup-wizard`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/configuring-a-database`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/using-the-setup-wizard`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/06-activating-liferay-dxp`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/activating-liferay-dxp`
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat`
 * Installing Liferay on WildFly
 * Installing Liferay on JBoss
 * Installing Liferay on WebLogic
--  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premise/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere`
+-  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere`
 
 Setting Up Liferay DXP
 ----------------------
