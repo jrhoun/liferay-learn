@@ -54,6 +54,8 @@ The Setup Wizard stores your configuration values in a `portal-setup-wizard.prop
 
 If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](./activating-liferay-dxp.md).
 
+## Restart the Server
+
 Lastly DXP prompts you to restart your server. You can stop your server using the shutdown script bundled with your application server. Tomcat bundle example:
 
 ```bash
