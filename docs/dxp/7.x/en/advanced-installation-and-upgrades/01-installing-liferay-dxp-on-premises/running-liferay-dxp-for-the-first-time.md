@@ -1,23 +1,76 @@
 # Running Liferay DXP for the First Time
 
-Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#installing) and [configured a database](configuring-a-database.md) for it, Liferay DXP is ready to run using the startup script bundled with the application server.
+Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#installing) and [configured a database](configuring-a-database.md) for it, Liferay DXP is ready to run.
 
-Run the startup script. Tomcat bundle example:
+1. Run the startup script bundled with your application server. Tomcat bundle example:
+
+    ```bash
+    ./liferay-dxp-version/tomcat-version/bin/startup.sh
+    ```
+
+    > **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`
+
+    The Setup Wizard appears in your web browser at `http://localhost:8080`.
+
+    ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-dxp-for-the-first-time/images/01.png)
+
+2. Set your portal's *Name*, *Default Language* and *Time Zone*.
+
+5. Set the *Administrator User* first name, last name, and email address.
+
+6. In the *Database* section, click *Change* to display the database form.
+
+    > **Warning:** DO NOT use HSQL in production-grade Liferay DXP instances.
+
+    ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
+
+7. Specify your database.
+
+    | Field | Description |
+    | --- | --- |
+    | *Database Type* | Select the database type to connect to |
+    | *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
+    | *User Name* | Database user name |
+    | *Password* | Database user password |
+
+8. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
+
+9. Click *Finish Configuration*.
+
+The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md).
+
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](./activating-liferay-dxp.md).
+
+Lastly DXP prompts you to restart your server.
+
+## Restart the Server
+
+Stop your server using the shutdown script bundled with your application server. Tomcat commands:
+
+Shutdown
+
+```bash
+./liferay-dxp-version/tomcat-version/bin/shutdown.sh
+```
+
+Startup
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/startup.sh
 ```
 
-> **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`.
+DXP initializes using the database and portal configuration values you specified in the Setup Wizard. The DXP home page appears at `http://localhost:8080`.
 
-The [Setup Wizard](./using-the-setup-wizard.md) appears in your web browser at `http://localhost:8080`.
+![Once you've configured DXP and restarted the server, the DXP home page appears and is ready for you to sign in!](./running-liferay-dxp-for-the-first-time/images/03.png)
 
-![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-dxp-for-the-first-time/images/01.png)
+Congratulations! You have launched your on premises Liferay DXP instance.
 
-You've launched Liferay DXP. Complete basic configuration next [using the Setup Wizard](./using-the-setup-wizard.md).
+## Next Steps
 
-> **Note:** You'll want to continue with using the Setup Wizard. But whenever you want to stop your server, you can use the shutdown script bundled with your application server. Tomcat bundle example: `./liferay-dxp-version/tomcat-version/bin/shutdown.sh`
+You can sign in as your administrator user and start [building a solution on DXP](TODO). Or you can explore [additional Liferay DXP setup](../02-setting-up-liferay-dxp/01-config-overview.md) topics:
 
-## Next Steps 
-
-[Use the Setup Wizard](./using-the-setup-wizard.md).
+* [Setting up Marketplace](../02-setting-up-liferay-dxp/setting-up-marketplace.md)
+* [Trial Plugin Installation](../02-setting-up-liferay-dxp/trial-plugin-installation.md)
+* Installing and Configuring a Search Engine
+* [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
+* [Introduction to Clustering Liferay DXP](../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
