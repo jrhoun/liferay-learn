@@ -1,8 +1,8 @@
 Advanced Installation and Upgrades
 ==================================
 
-Installing Liferay DXP on Premise
----------------------------------
+Installing Liferay DXP on Premises
+----------------------------------
 
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/configuring-a-database`

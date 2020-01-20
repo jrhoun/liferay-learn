@@ -4,7 +4,7 @@ Advanced Installation and Upgrades
 .. toctree::
    :maxdepth: 3
 
-   advanced-installation-and-upgrades/installing_liferay_dxp.rst
+   advanced-installation-and-upgrades/installing_liferay_dxp_on_premises.rst
    advanced-installation-and-upgrades/setting_up_liferay_dxp.rst
    advanced-installation-and-upgrades/upgrading_liferay.rst
    advanced-installation-and-upgrades/maintaining_a_liferay_dxp_installation.rst
