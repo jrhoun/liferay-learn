@@ -2,7 +2,7 @@
 
 As you get the itch for new [themes](https://help.liferay.com/hc/en-us/articles/360029045971-Themes), [widgets/portlets](https://help.liferay.com/hc/en-us/articles/360029046351-Introduction-to-Portlets), [layout templates](https://help.liferay.com/hc/en-us/articles/360017887812-Layout-Templates), and APIs, you can [develop and deploy your own](https://marketplace.liferay.dev/) or purchase them as apps from the [Liferay Marketplace](./02-using-the-liferay-marketplace.md).
 
-![Figure 1: The Liferay Marketplace is a store for browsing and purchasing apps (and yes, many apps are free!).](./app-management/marketplace-homepage.png)
+![Figure 1: The Liferay Marketplace is a store for browsing and purchasing apps (and yes, many apps are free!).](./app-management/images/marketplace-homepage.png)
 
 From Marketplace, you can download and install apps automatically on purchase or anytime after purchase. You can use the Control Panel to install apps or copy the app files to your DXP installation for auto deployment. DXP facilitates managing your apps, their UI components, and modules. 
 

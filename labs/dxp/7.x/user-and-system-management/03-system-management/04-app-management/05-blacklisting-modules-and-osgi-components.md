@@ -22,9 +22,9 @@ Follow these steps to blacklist modules:
 
 1.  In the Bundle Blacklist screen, add the bundle symbolic names (see the table below) for the [module](https://help.liferay.com/hc/en-us/articles/360035467532-OSGi-and-Modularity#modules) JARs, LPKG files, or WARs to uninstall. Click the *Save* button when you're finished. DXP uninstalls the blacklisted modules immediately.
  
-    ![Figure 1: This blacklist uninstalls the `com.liferay.docs.greeting.api` module, Liferay Marketplace LPKG, and `classic-theme` WAR.](./blacklisting-modules-and-osgi-components/bundle-blacklist-configuration.png)
+    ![Figure 1: This blacklist uninstalls the `com.liferay.docs.greeting.api` module, Liferay Marketplace LPKG, and `classic-theme` WAR.](./blacklisting-modules-and-osgi-components/images/bundle-blacklist-configuration.png)
 
-1.  To export the blacklist, click its Actions button (![Actions](./blacklisting-modules-and-osgi-components/icon-actions.png)) and then click *Export*. The blacklist config file then downloads (`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`). Here are contents from an example file:
+1.  To export the blacklist, click its Actions button (![Actions](./blacklisting-modules-and-osgi-components/images/icon-actions.png)) and then click *Export*. The blacklist config file then downloads (`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`). Here are contents from an example file:
 
     ```properties
     blacklistBundleSymbolicNames=["com.liferay.docs.greeting.api","Liferay\ Marketplace","classic-theme"]
@@ -71,9 +71,9 @@ Follow these steps to disable OSGi components:
 
 1.  In the Component Blacklist screen, add the names of components to disable, and click the *Save* button. The components disable immediately.
 
-    ![Figure 2: This blacklist disables the components `com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth` and `com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet`.](./blacklisting-modules-and-osgi-components/component-blacklist-configuration.png)
+    ![Figure 2: This blacklist disables the components `com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth` and `com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet`.](./blacklisting-modules-and-osgi-components/images/component-blacklist-configuration.png)
 
-1.  To export the blacklist, click on the Component Blacklist module's Actions button (![Actions](./blacklisting-modules-and-osgi-components/icon-actions.png)) and then click *Export*. The blacklist configuration file then downloads (`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). Here are contents from an example file:
+1.  To export the blacklist, click on the Component Blacklist module's Actions button (![Actions](./blacklisting-modules-and-osgi-components/images/icon-actions.png)) and then click *Export*. The blacklist configuration file then downloads (`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). Here are contents from an example file:
 
     ```properties
     blacklistComponentNames=["com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth","com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet "]

@@ -63,7 +63,7 @@ The Control Panel provides a purchased apps page for installing apps.
 
 1. An button (install or uninstall) next to each app lets you install or uninstall the app. If the app isn't compatible with your DXP version, *Not Compatible* is displayed in place of the button. Additional compatibility notes are also shown, such as whether a newer version of the app is available. You can also search for an app here by project, category, and title. Clicking the app takes you to its Marketplace entry.
 
-    ![Figure 1: The Control Panel's purchased apps lets you manage your purchased apps from within a running Liferay instance.](./installing-apps/marketplace-purchased-apps.png)
+    ![Figure 1: The Control Panel's purchased apps lets you manage your purchased apps from within a running Liferay instance.](./installing-apps/images/marketplace-purchased-apps.png)
 
 1. Click *Install* to install the app to DXP.
 
@@ -77,7 +77,7 @@ The App Manager is a convenient way to install an app from your local machine to
 
 1. Navigate to *Control Panel* &rarr; *Apps* &rarr; *App Manager*.
 
-1. Select *Upload* from the options button (![Options](./installing-apps/icon-options.png)). The Upload dialog appears.
+1. Select *Upload* from the options button (![Options](./installing-apps/images/icon-options.png)). The Upload dialog appears.
 
 1. Browse for the app on your machine and then click *Install*.
 

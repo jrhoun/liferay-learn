@@ -18,7 +18,7 @@ Since apps are the top of the deployment hierarchy, learn to use the App Manager
 
 Access the App Manager by selecting *Control Panel* &rarr; *Apps* &rarr; *App Manager*. The App Manager lists installed apps and modules. The *Filter and Order* menu filters items and orders them by category, status, or title. Click the up or down arrows to sort items in ascending or descending order, respectively. To search for an app or module, use the search bar. This is often the quickest way to find items.
 
-![Figure 1: The App Manager manages apps, modules, and components installed in your DXP instance.](./managing-apps-and-app-components/app-manager.png)
+![Figure 1: The App Manager manages apps, modules, and components installed in your DXP instance.](./managing-apps-and-app-components/images/app-manager.png)
 
 Each item listed in the table contains a description (if available), version, and status. Here are the statuses:
 
@@ -26,7 +26,7 @@ Each item listed in the table contains a description (if available), version, an
 - **Resolved:** The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
 - **Active:** The item is running on DXP.
 
-Clicking each item's Actions button (![Actions](./managing-apps-and-app-components/icon-actions.png)) brings up a menu that lets you activate, deactivate, or uninstall that item.
+Clicking each item's Actions button (![Actions](./managing-apps-and-app-components/images/icon-actions.png)) brings up a menu that lets you activate, deactivate, or uninstall that item.
 
 > **Note:** If you installed an app with the App Manager, use [Blacklisting](./05-blacklisting-modules-and-osgi-components.md) to uninstall it.
 
@@ -42,13 +42,13 @@ The Components listing is the easiest way to manage installed app components: po
 
 1. Access the components listing by selecting *Control Panel* &rarr; *Configuration* &rarr; *Components*. A table of installed portlets appears.
 
-    ![Figure 2: The components listing lets you manage the portlets, themes, and layout templates installed to your DXP instance.](./managing-apps-and-app-components/components-list.png)
+    ![Figure 2: The components listing lets you manage the portlets, themes, and layout templates installed to your DXP instance.](./managing-apps-and-app-components/images/components-list.png)
 
 1. Select the tab of the component type to view: *Portlets*, *Themes*, or *Layout Templates*.
 
-1. To configure a component, select its name or select *Edit* from its Actions button (![Actions](./managing-apps-and-app-components/icon-actions.png)). The component's configuration screen appears and displays the component's module ID and plugin ID, a checkbox for activating/deactivating the component, and user roles that can be configured for the component.
+1. To configure a component, select its name or select *Edit* from its Actions button (![Actions](./managing-apps-and-app-components/images/icon-actions.png)). The component's configuration screen appears and displays the component's module ID and plugin ID, a checkbox for activating/deactivating the component, and user roles that can be configured for the component.
 
-    ![Figure 3: You can activate or deactivate a component, and change its permissions.](./managing-apps-and-app-components/components-configuration.png)
+    ![Figure 3: You can activate or deactivate a component, and change its permissions.](./managing-apps-and-app-components/images/components-configuration.png)
 
 1. Activate or deactivate the component by checking or unchecking the *Active* checkbox, respectively.
 

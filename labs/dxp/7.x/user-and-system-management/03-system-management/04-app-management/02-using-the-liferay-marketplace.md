@@ -2,7 +2,7 @@
 
 Liferay Marketplace is a hub for sharing, browsing, and downloading apps. Marketplace leverages the entire Liferay ecosystem to release and share apps in a user-friendly, one-stop shop.
 
-![Figure 1: The Liferay Marketplace home page lets you browse and search for apps.](./using-the-liferay-marketplace/marketplace-homepage.png)
+![Figure 1: The Liferay Marketplace home page lets you browse and search for apps.](./using-the-liferay-marketplace/images/marketplace-homepage.png)
 
 There are two ways to access the Marketplace.
 
@@ -42,7 +42,7 @@ Marketplace provides a familiar app store experience. Apps are in the center of 
 
 Each section's *See All* link lists all the apps for that section.
 
-![Figure 2: Each app category page, such as the Communication app page, lists the apps published to that category.](./using-the-liferay-marketplace/marketplace-category-see-all.png)
+![Figure 2: Each app category page, such as the Communication app page, lists the apps published to that category.](./using-the-liferay-marketplace/images/marketplace-category-see-all.png)
 
 At the top of the page, you can search Marketplace in these ways:
 
@@ -72,7 +72,7 @@ Click an app to view its details page. Each app's page includes these details:
 - Access control 
 - Installation instructions
 
-![Figure 3: Click an app to see screenshots and app details.](./using-the-liferay-marketplace/marketplace-app-details.png)
+![Figure 3: Click an app to see screenshots and app details.](./using-the-liferay-marketplace/images/marketplace-app-details.png)
 
 > **Important:** Purchasing apps requires that you have a [liferay.com](https://www.liferay.com) account and agree to the Marketplace Terms of Use.
 
@@ -114,7 +114,7 @@ The receipt displayed immediately on an app purchase links to a page for downloa
 
 The *Purchased Apps* page lets you download your purchased apps any time. It shows the apps you purchased, organized by project.
 
-![Figure 4: You can manage your purchased apps from your Marketplace and liferay.com account home page.](./using-the-liferay-marketplace/marketplace-purchased-apps.png)
+![Figure 4: You can manage your purchased apps from your Marketplace and liferay.com account home page.](./using-the-liferay-marketplace/images/marketplace-purchased-apps.png)
 
 Here are the steps:
 
