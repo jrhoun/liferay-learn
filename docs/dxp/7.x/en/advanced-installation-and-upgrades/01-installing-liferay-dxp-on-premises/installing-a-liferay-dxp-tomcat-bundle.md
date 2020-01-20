@@ -3,9 +3,9 @@
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. It's the easiest, fastest way to install Liferay DXP on-premises.
 
 > **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./01-installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./01-installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./01-installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
- 
- > **Note:** To start a Liferay DXP instance fast for touring or demonstration purposes, see [Starting with the DXP Docker Image](../../getting-started/starting-with-the-dxp-docker-image.md).
- 
+
+> **Note:** To start a Liferay DXP instance fast for touring or demonstration purposes, see [Starting with the DXP Docker Image](../../getting-started/starting-with-the-dxp-docker-image.md).
+
 ## Prerequisites
 
 Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
@@ -27,7 +27,7 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 
 Extract the bundle to a location on your DXP host. This location is called your [Liferay Home](../14-reference/01-liferay-home.md).
 
-Congratulations! You've installed Liferay DXP. It's time to create a database for it.
+Congratulations! You've installed Liferay DXP. It's time to configure a database for it.
 
 ## Next Steps
 
