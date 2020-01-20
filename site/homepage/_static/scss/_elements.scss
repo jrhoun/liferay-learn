@@ -76,6 +76,15 @@ h6 {
 	text-transform: uppercase;
 }
 
+blockquote {
+	border-left: 2px solid $brand-primary;
+	color: $blockquote-color;
+	font-weight: $blockquote-font-weight;
+	line-height: $blockquote-line-height;
+	margin: $spacing-default 0;
+	padding-left: $spacing-default;
+}
+
 code,
 pre {
 	border-radius: $border-radius;
@@ -130,7 +139,6 @@ pre {
 	text-align: left;
 	top: 0px;
 	transform: translate3d(0, 3.125rem, 0);
-	width: 120%;
 	z-index: 1;
 
 	&.show {

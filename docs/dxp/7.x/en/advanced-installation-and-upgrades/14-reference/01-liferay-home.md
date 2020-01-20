@@ -1,0 +1,3 @@
+# Liferay Home
+
+Coming soon!
