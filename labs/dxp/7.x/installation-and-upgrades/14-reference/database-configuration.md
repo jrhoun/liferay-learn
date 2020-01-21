@@ -1,4 +1,4 @@
-# Configuring a Database
+# Database Configuration
 
 By default for demonstration purposes, Liferay DXP is configured to use an embedded HSQL database. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS, such as:
 
@@ -11,7 +11,6 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
-<<<<<<< HEAD
 Connecting Liferay DXP to a database requires:
 
 * [Database Configuration](#database-configuration)
@@ -72,41 +71,8 @@ If you're connecting to a proprietary database, like Oracle or DB2, download the
 
 ## Configuring a Data Source
 
-The best option for most people is to set up a built-in data source connection during [DXP startup](./running-liferay-dxp-for-the-first-time.md) using the Setup Wizard (next).
+The best option for most people is to set up a built-in data source connection during [DXP startup](./running-liferay-dxp-for-the-first-time.md) using the Setup Wizard.
 
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./configuring-a-database/images/01.png)
 
 > **Note:** If you're using a data source managed on your application server. See the instructions for your application server: [Tomcat](./installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
-
-Congratulations! You configured a database for Liferay DXP.
-
-=======
-Configure the database:
-
-1. Use the GMT time zone on your database server.
-
-1. Create a database that uses UTF-8. Here is a MySQL command example:
-
-    ```sql
-    create database lportal character set utf8;
-    ```
-
-1. Set up a database user with full database permissions. If your organization requires the DXP database user to have limited database access, see [High Security Database User Practices](../14-reference/database-configuration.md#high-security-database-user-practices).
-
-1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `/lib/ext` folder. Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
-
-    **Proprietary Databases:**
-
-    | Database | Connector | Vendor Site | Notes |
-    | :------- | :-------- | :---------- | :---- |
-    | Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
-    | DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
-
-Congratulations! You configured a database for Liferay DXP.
-
-> **Note:** For database configuration details, see the [Database Configuration Reference](../14-reference/database-configuration.md)
-
->>>>>>> 88d417eff6458d7965cecb005b702d5d5f7b7cf9
-## Next steps
-
-* [Running Liferay DXP for the First Time](./running-liferay-dxp-for-the-first-time.md)
