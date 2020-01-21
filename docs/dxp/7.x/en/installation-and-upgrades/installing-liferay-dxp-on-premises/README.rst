@@ -8,5 +8,5 @@ Installing Liferay DXP
 
 Installing Liferay on an Application Server
 
--  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat`
--  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/05-installing-liferay-on-websphere`
+-  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-tomcat`
+-  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-websphere`
