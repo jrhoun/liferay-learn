@@ -75,7 +75,7 @@ The best option for most people is to set up a built-in data source connection d
 
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./configuring-a-database/images/01.png)
 
-> **Note:** If you're using a data source managed on your application server. See the instructions for your application server: [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./01-installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./01-installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./01-installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
+> **Note:** If you're using a data source managed on your application server. See the instructions for your application server: [Tomcat](./installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
 
 Congratulations! You configured a database for Liferay DXP.
 
