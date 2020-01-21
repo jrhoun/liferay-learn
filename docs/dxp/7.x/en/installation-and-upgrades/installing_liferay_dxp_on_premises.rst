@@ -9,5 +9,5 @@ Installing Liferay DXP on Premises
    installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md
    installing-liferay-dxp-on-premises/activating-liferay-dxp.md
 
-.. include:: /installation-and-upgrades/installing-liferay-dxp-on-premises/README.rst
+.. include:: /installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/README.rst
    :start-line: 2
