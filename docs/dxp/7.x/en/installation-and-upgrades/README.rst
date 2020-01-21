@@ -12,7 +12,7 @@ Installing Liferay DXP on Premises
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/activating-liferay-dxp`
 
 Installing Liferay on an Application Server
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  :doc:`/installation-and-upgrades/installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat`
 * Installing Liferay on WildFly
