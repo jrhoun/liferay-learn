@@ -9,16 +9,16 @@ Installing Liferay DXP on Premises
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle`
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/configuring-a-database`
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time`
--  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/activating-liferay-dxp`
+* Activating Liferay DXP
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/installation-and-upgrades/installing-liferay-on-an-application-server/installing-liferay-on-tomcat`
+-  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-tomcat`
 * Installing Liferay on WildFly
 * Installing Liferay on JBoss
 * Installing Liferay on WebLogic
--  :doc:`/installation-and-upgrades/installing-liferay-on-an-application-server/installing-liferay-on-websphere`
+-  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-websphere`
 
 Setting Up Liferay DXP
 ----------------------
