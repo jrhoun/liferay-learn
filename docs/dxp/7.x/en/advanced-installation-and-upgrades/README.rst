@@ -1,13 +1,14 @@
 Advanced Installation and Upgrades
 ==================================
 
+-  :doc:`/advanced-installation-and-upgrades/hosting-liferay-dxp`
+
 Installing Liferay DXP on Premises
 ----------------------------------
 
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/configuring-a-database`
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time`
--  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
 -  :doc:`/advanced-installation-and-upgrades/01-installing-liferay-dxp-on-premises/activating-liferay-dxp`
 
 Installing Liferay on an Application Server
