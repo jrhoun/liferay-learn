@@ -14,17 +14,17 @@ Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#inst
 
     ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-dxp-for-the-first-time/images/01.png)
 
-2. Set your portal's *Name*, *Default Language* and *Time Zone*.
+1. Set your portal's *Name*, *Default Language* and *Time Zone*.
 
-5. Set the *Administrator User* first name, last name, and email address.
+1. Set the *Administrator User* first name, last name, and email address.
 
-6. In the *Database* section, click *Change* to display the database form.
+1. In the *Database* section, click *Change* to display the database form.
 
     > **Warning:** DO NOT use HSQL in production-grade Liferay DXP instances.
 
     ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
 
-7. Specify your database.
+1. Specify your database.
 
     | Field | Description |
     | --- | --- |
@@ -33,9 +33,9 @@ Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#inst
     | *User Name* | Database user name |
     | *Password* | Database user password |
 
-8. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
+1. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
 
-9. Click *Finish Configuration*.
+1. Click *Finish Configuration*.
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md).
 
@@ -45,15 +45,15 @@ Lastly DXP prompts you to restart your server.
 
 ## Restart the Server
 
-Stop your server using the shutdown script bundled with your application server. Tomcat commands:
+Stop your server using the shutdown script bundled with your application server. Tomcat example commands:
 
-Shutdown
+### Shutdown
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/shutdown.sh
 ```
 
-Startup
+### Startup
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/startup.sh

@@ -31,4 +31,4 @@ Congratulations! You've installed Liferay DXP. It's time to configure a database
 
 ## Next Steps
 
-[Configuring a Database](./configuring-a-database.md)
+* [Configuring a Database](./configuring-a-database.md)
