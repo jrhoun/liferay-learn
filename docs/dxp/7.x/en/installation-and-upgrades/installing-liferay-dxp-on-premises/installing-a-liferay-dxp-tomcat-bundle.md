@@ -17,7 +17,6 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 2. Navigate to the Liferay DXP version you want.
 
 3. Download a Tomcat Bundle:
-
     | File | Description |
     | :--- | :---------- |
     | Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
