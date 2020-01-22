@@ -1,23 +1,25 @@
 # Getting Started with Message Boards
 
-Liferay DXP's Message Boards app is a state of the art forum application which can be added to any DXP site page. A message board on DXP can be [scoped to a site](https://help.liferay.com/hc/articles/360028819992-Widget-Scope), including a regular site, an organization’s site, or a user's profile site or dashboard site.
+Liferay DXP's Message Boards app is a forum application which can be added to any DXP site page. A Message Board on DXP can be [scoped to a site](https://help.liferay.com/hc/articles/360028819992-Widget-Scope), including a regular site, an organization’s site, or a user's profile site or dashboard site.
 
-## Deploying the Message Boards App
+## Adding Message Boards to a Site
 
-The fastest way to begin using the _Message Boards_ app is to deploy the MB widget to a site page. See the [Creating Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages) article on how to create page.
+The fastest way to begin using the _Message Boards_ app is to deploy the MB widget to a [Site Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages).
 
-1. Navigate to the site where the forum is to be created (in this example, the default Liferay DXP Guest site).
-1. Go to the site page (e.g. _Forum Page_)
+1. Navigate to the site and page desired (e.g. _Forum Page_).
 
     ![New Forum Page](./getting-started-with-message-boards/images/03.png)
 
 1. Click the _Add_ button.
 1. Click _Widgets_ then _Collaboration_ to expand the menu.
+
+    <!-- Screenshot -->
+
 1. Drag and drop the _Message Boards_ widget to the desired location on the page.
 
-![Deploying the Message Boards app to the forum page.](./getting-started-with-message-boards/images/04.png)
+    ![Deploying the Message Boards app to the forum page.](./getting-started-with-message-boards/images/04.png)
 
-Site members are able to create forum posts using the _Message Boards_ widget. Note that there can be only one _Message Boards_ widget per page; you can have multiple Message Boards widgets deployed across multiple site pages.
+Site members are able to create forum posts using the _Message Boards_ widget. Note that there can be only one _Message Boards_ widget per page.
 
 ## Message Boards Features
 
