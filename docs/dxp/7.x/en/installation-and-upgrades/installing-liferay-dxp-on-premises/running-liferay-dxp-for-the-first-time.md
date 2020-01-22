@@ -14,28 +14,28 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
     ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-dxp-for-the-first-time/images/01.png)
 
-1. Set your portal's *Name*, *Default Language* and *Time Zone*.
+2. Set your portal's *Name*, *Default Language* and *Time Zone*.
 
-1. Set the *Administrator User* first name, last name, and email address.
+3. Set the *Administrator User* first name, last name, and email address.
 
-1. In the *Database* section, click *Change* to display the database form.
+4. In the *Database* section, click *Change* to display the database form.
 
     > **Warning:** DO NOT use HSQL in production-grade Liferay DXP instances.
 
     ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
 
-1. Specify your database.
+5. Specify your database.
 
-    | Field | Description |
-    | --- | --- |
-    | *Database Type* | Select the database type to connect to |
-    | *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
-    | *User Name* | Database user name |
-    | *Password* | Database user password |
+| Field | Description |
+| --- | --- |
+| *Database Type* | Select the database type to connect to |
+| *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
+| *User Name* | Database user name |
+| *Password* | Database user password |
 
-1. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
+6. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
 
-1. Click *Finish Configuration*.
+7. Click *Finish Configuration*.
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md).
 
