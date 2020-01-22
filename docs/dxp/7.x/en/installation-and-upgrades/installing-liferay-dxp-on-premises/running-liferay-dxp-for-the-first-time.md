@@ -39,7 +39,7 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md).
 
-If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](./activating-liferay-dxp.md).
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See Activating Liferay DXP.
 
 Lastly DXP prompts you to restart your server.
 
