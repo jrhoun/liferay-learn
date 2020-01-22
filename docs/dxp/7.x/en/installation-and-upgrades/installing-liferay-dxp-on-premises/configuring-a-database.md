@@ -25,7 +25,7 @@ Configure the database:
 
 1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `/lib/ext` folder. Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
 
-    **Proprietary Databases:**
+**Proprietary Databases:**
 
 | Database | Connector | Vendor Site | Notes |
 | :------- | :-------- | :---------- | :---- |
