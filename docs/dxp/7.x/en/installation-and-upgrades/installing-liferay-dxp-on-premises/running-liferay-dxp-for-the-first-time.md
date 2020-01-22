@@ -26,12 +26,12 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
 5. Specify your database.
 
-| Field | Description |
-| --- | --- |
-| *Database Type* | Select the database type to connect to |
-| *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
-| *User Name* | Database user name |
-| *Password* | Database user password |
+ | Field | Description |
+ | --- | --- |
+ | *Database Type* | Select the database type to connect to |
+ | *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
+ | *User Name* | Database user name |
+ | *Password* | Database user password |
 
 6. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
 
