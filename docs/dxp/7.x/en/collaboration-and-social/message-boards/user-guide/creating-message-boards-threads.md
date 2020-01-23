@@ -1,24 +1,27 @@
 # Creating Message Boards Threads
 
-This article documents how to create Message Boards threads in Liferay DXP. Each message in a thread can be created inside a Message Boards Category; to learn more about Categories, see [Creating Message Boards Categories](./creating-message-boards-categories.md).
+<!-- Introductory paragraph is too long. Needs to introduce threads and who can create a thread by default - with links out to the appropriate related topics. What's here is too verbose. -->
 
- Note that only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+<!-- This article documents how to create Message Boards threads in Liferay DXP. Each message in a thread can be created inside a Message Boards Category; to learn more about Categories, see [Creating Message Boards Categories](./creating-message-boards-categories.md).
+
+Note that only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 Like Message Boards Categories, there are two ways to add a thread:
 
 * Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel]().
-* On the _Message Boards_ widget on a site page
+* On the _Message Boards_ widget on a site page -->
 
 ## Posting a New Thread
 
-By default, all threads are created in the Root level folder. To create a thread inside a category, click on the respective Category first.
+Threads can be created at the root level of the Message Board itself and within [categories that have been created](./creating-message-boards-categories.md).
 
-To add a new message on the Message Boards widget:
+To create a new thread:
 
-1. Click the Message Boards widget's _New Thread_ button. The _Add Message_ form appears.
+1. Click the Message Boards _New Thread_ button. The _Add Message_ form appears.
 1. Enter a title in the **Subject** field.
 1. Create your thread's content in the **Body** field.
-   > This field uses the same editor as the Blogs app, except that it uses BBCode instead of HTML. For further instructions, see the documentation on [using the editor](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-).
+
+   > **Note:** This field uses the same editor as the Blogs app, except that it uses BBCode instead of HTML. For further instructions, see the documentation on [using the editor](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-).
 
     ![Figure 1. Creating the first post](./creating-message-boards-threads/images/01.png)
 

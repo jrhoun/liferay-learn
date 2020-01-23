@@ -21,53 +21,18 @@ The fastest way to begin using the _Message Boards_ app is to deploy the MB widg
 
 Site members are able to create forum posts using the _Message Boards_ widget. Note that there can be only one _Message Boards_ widget per page.
 
-## Message Boards Features
+## What's Next
 
-### Categories
+Learn how to use the features of the Message Boards application:
 
-Site administrators can use _Message Boards Categories_ to organize multiple threads about a similar topic (for example, discussions about Star Wars or MCU). _Categories_ can also be moved and merged. To learn how to create and manage _Categories_, see the [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md) article.
-
-![Categories organize threads.](./getting-started-with-message-boards/images/05.png)
-
-### Creating Threads
-
-There are multiple features in _Threads_ to create lively discussions:
-
-* Write posts in BBCode or with the standard WYSIWYG editor
-* Mark a thread as a question and select an answer from the replies.
-* Assign thread priority (e.g., sticky, announcement, etc.)
-* Attach files to a thread
-* Reply to threads
-
-![Figure 2: A thread's view displays author information and thread content, for the thread and all replies to the thread.](./getting-started-with-message-boards/images/02.png)
-
-To start posting a thread, see the [Threads](./creating-message-boards-threads.md) article.
-
-### Managing Threads
-
-The _Message Boards_ app contains features to facilitate day to day administration. For example, threads can be flagged for possible abuse, or locked to prevent further activity. Threads can also be split into two separate threads. To learn more, see the [Managing Threads](./04-managing-message-boards.md) article.
-
-### Subscriptions and Notifications
-
-The _Message Boards_ app has several functions for users to stay updated on the threads they are following or contributing to. Users can also respond to threads via email. Here, you can learn how to:
-
-* Configuring Email Lists
-* Publishing through RSS
-
-### Content Scope
-
-As mentioned above, message boards can be scoped to a page, a site, or the entire portal. See [Scoping your Message Boards](./scoping-your-message-boards.md)
-
-### Managing Users
-
-Site administrators have the ability to track user activity:
-
-* Banning and reinstating users
-* Rank users by the number of messages they post and assign labels to these rankings (e.g., novice, legend, etc.)
-
-See the [Managing Users]() article for more information.
+* [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md)
+* [Creating Threads](./creating-message-boards-threads.md)
+* Subscribing to a Message Board
+* Moderating Message Boards
+* Configuring a Message Boards Mailing List
+* Advanced Topics: Understanding Message Boards Scope
 
 ### Reference
 
-* [Configuration Reference]()
+* [Configuration Reference]() <!-- What is the intended article this should point to? -->
 * [Permissions Reference](./message-boards-permissions-reference.md)
