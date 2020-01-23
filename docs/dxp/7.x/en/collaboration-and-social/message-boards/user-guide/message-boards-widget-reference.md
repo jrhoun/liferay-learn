@@ -1,4 +1,4 @@
-# Message Boards Widget Reference
+# Message Boards Widget UI Reference
 
 ## Categories
 
