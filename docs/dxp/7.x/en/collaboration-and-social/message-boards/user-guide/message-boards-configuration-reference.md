@@ -1,6 +1,6 @@
 # Message Boards Configuration Reference
 
-This article documents all the possible configuration settings available in the _Message Boards_ app. To view the _Message Boards_ app's Configuration screen:
+This article documents configuration settings available in the _Message Boards_ app. To view the _Message Boards_ app's Configuration screen:
 
 1. Navigate to _Site Administration_ &rarr; _Content & Data_ &rarr; _Message Boards_.
 1. Click the _Options_ menu &rarr; _Configuration_.
@@ -11,10 +11,10 @@ This article documents all the possible configuration settings available in the 
 
 | Name | Description |
 | --- | --- |
-| Allow Anonymous Posting | Allows guest users (non-authenticated) to post threads. |
+| Allow Anonymous Posting | Allows guest (non-authenticated) users to post threads. |
 | Subscribe by Default | Subscribe users by default to threads they participate in. |
 | Message Format | Dropdown menu to select BBCode or HTML as the editor |
-| Enable Report Inappropriate Content | Enables users to report threads for terms of use violations |
+| Enable Report Inappropriate Content | Enables users to report threads for Terms of Use <!-- It'd be nice if we made a link to an article on how to define the ToS for a site here --> violations |
 | Enable Ratings | Enables users to rate threads |
 | Thread as Question by Default | If enabled, the first threads are always questions and subsequent threads can be marked as answers; disabled by default |
 | Show Recent Posts from Last | Dropdown menu to select how many previous posts are displayed based on time: _24 Hours_, _7 Days_, _30 Days_, or _365 Days_ |
@@ -39,7 +39,7 @@ The _Message Added Email_ tab contains the template for emails that are sent whe
 
 ![Message Added Email](./message-boards-configuration-reference/images/03.png)
 
-Expand the _Definition of Terms_ menu to learn more about how to create an automated email that import data and metadata from each thread.
+Expand the _Definition of Terms_ menu to learn more about how the variables used to create an automated email that import data and metadata from each thread.
 
 ![Message Added Email Definition of Terms](./message-boards-configuration-reference/images/09.png)
 
@@ -62,14 +62,14 @@ Expand the _Definition of Terms_ menu to learn more about how to create an autom
 | Default Language | The instance's default language is set to English and cannot be modified here. |
 | Localized Language | Dropdown menu for all supported languages; allows administrators to input different ranks in different languages. |
 | Name | Name of the priority level |
-| Image | Name of the icon associated with the priority level |
+| Image | Name of the icon associated with the priority level <!-- how do I change the icon? --> |
 | Priority | Priority level of the thread; threads with a higher number are more important; enter them in the descending order. |
 
 ## User Ranks
 
 ![User Ranks](./message-boards-configuration-reference/images/06.png)
 
-Forum members who are active can be rewarded with a rank based on the number of posts.
+Message Boards users can configured to have a visible rank based on the number of posts they contribute.
 
 | Name | Description |
 | --- | --- |

@@ -1,32 +1,25 @@
 # Creating Message Boards Categories
-
-Message Boards Categories organize threads by topic. This makes it easier to find the right topic for discussion and can also help discussions stay on topic. For example, a message board about raising tropical fish may have separate categories for freshwater and saltwater topics.
-
-This article describes how to create and manage message board categories. Note that only authenticated users with the requisite permissions (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+<!-- General feedback: I think we should not explain all the configurations int his article, just reference that the user will see configurations at a certain point, and refer to the appropriate header in the Message Boards configuration reference -->
+Message Boards Categories organize threads by topic. Only authenticated users with the [requisite permissions](./message-boards-permissions-reference.md) (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Adding Categories
 
-There are two ways to add categories:
+The most common way to add a new category is by directly using the the _Message Boards_ widget.
 
-* Through the _Site Administration_; note that using the _Control Panel_ and _Site Administration_ to generate content is for only those with access rights. See the [Adding Content in the Control Panel]().
-* On the _Message Boards_ widget deployed on a site page
+1. On the Message Boards widget, click the _Add Category_ button.
 
-### Using the _Message Boards_ Widget
-
-On the _Message Boards_ widget, click the _Add Category_ button.
-
-![Using the app to create a category](./creating-message-boards-categories/images/04.png)
+    ![Using the app to create a category](./creating-message-boards-categories/images/04.png)
 
 1. Enter a name for the category (for example, Lunar Resort).
 1. Enter a description.
-1. Select the category's _Display Style_. This controls how threads in the category appear. By default, you can choose these display styles:
+1. Select the category's _Display Style_. This controls how threads in the category appear. By default, you can choose these display styles:<!-- Screenshot -->
 
     * **Default:** Classic display style for general purpose discussions.
     * **Question:** Threads appear in a question and answer style.
 
-1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to enable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail]() article.
-1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous emails.
-1. Open the _Permissions_ section and set the category's permissions. The _Viewable by_ selector lets you pick who can view the category:
+1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to enable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail]() article. <!-- This step reads counter-intuitively. -->
+1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous emails. <!-- What does it mean to have anonymous emails? -->
+1. Open the _Permissions_ section and set the category's permissions. The _Viewable by_ selector lets you pick who can view the category: <!-- Why? Maybe configuring category permissions can be a header that's lower as opposed to part of the main work of creating a category? -->
 
     * Anyone (Guest Role)
     * Site Members
@@ -44,11 +37,11 @@ New categories appear on the message board's home screen. The list displays the 
 
 ## Adding Subcategories
 
-Categories can contain as many subcategories as you like. If, however, you nest categories too deep, users can have trouble finding them.
+Categories can contain as many subcategories as you like.
 
 Follow these steps to add a subcategory to a category:
 
-1. Click the category's name in the list (continuing the example above- **Lunar Resort**).
+1. Click the category's name in the list (continuing the example above: **Lunar Resort**).
 1. Click the _Add_ icon (![Add](./creating-message-boards-categories/images/01.png)) and select _Category_.
 1. Enter a name for the subcategory.
 1. Enter a description for the subcategory.
@@ -59,7 +52,7 @@ The subcategory now appears in the table.
 
 ## Moving and Merging Categories
 
-Each category can have any number of threads and just as many subcategories. To manage categories, administrators can also move and merge categories.
+Administrators can also move and merge categories.
 
 Follow these steps to move a category or merge it with another:
 
@@ -68,11 +61,12 @@ Follow these steps to move a category or merge it with another:
 1. If you want to merge the category with the selected parent category, select _Merge with Parent Category_.
 1. Click _Move_.
 
-![Figure 3: The Move Category form lets you move and merge categories.](./creating-message-boards-categories/images/03.png)
+    ![Figure 3: The Move Category form lets you move and merge categories.](./creating-message-boards-categories/images/03.png)
 
 Regardless of how many categories (and subcategories) there are, a category is just a container to organize a message board's threads. To start creating threads, see the [Creating Threads](./creating-message-boards-threads.md) article.
 
 ## Additional Information
 
-* Developers can create custom display styles and make them available for selection in this form. Set the available display styles via the [portal property](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Message%20Boards%20Portlet) `message.boards.category.display.styles`. Similarly, set the default display style in `message.boards.category.display.styles.default`.
-* The default for both toggles in the _Mailing List_ is **NO**. For an explanation of these features, see [the documentation on mailing lists for Message Boards](https://help.liferay.com/hc/en-us/articles/360028720852-User-Subscriptions-and-Mailing-Lists).
+* Getting Started With Message Boards
+* Creating Message Board Threads
+* Message Boards Configuration Reference
