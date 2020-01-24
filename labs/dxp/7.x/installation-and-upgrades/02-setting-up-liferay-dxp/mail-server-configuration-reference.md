@@ -1,6 +1,6 @@
 # Mail Server Configuration Reference
 
-Liferay DXP uses a mail server and SMTP to send email notifications. This article serves as a reference for all the values required to connect successfully a DXP instance to a mail server.
+Liferay DXP uses a mail server and SMTP to send email notifications. This article serves as a reference for all the values required to successfully connect a DXP instance to a mail server.
 
 To manage DXP's mail settings, navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 
