@@ -7,7 +7,6 @@ Out-of-the-box features include:
 * [Message Boards](#message-boards)
 * [Wiki](#wiki)
 * [Social Tools](#social-tools)
-* [Alerts, Announcements, and Notifications](#alerts-announcements-and-notifications)
 * [Invitations](#invitations)
 * [Knowledge Base](#knowledge-base)
 
@@ -38,28 +37,18 @@ These tools are building blocks for building an integrated, social experience fo
 
 ![Figure 3: The Activities widget tracks user activities.](./collaboration-overview/images/03.png)
 
-## Notifications, Alerts, and Announcements
-
-Notifications are integrated into Liferay DXP; users can receive notifications for new message boards posts, comments, requests to join sites, event reminders, and mentions.
-
-![Figure 5: Users received notifications when they are mentioned in a post.](./collaboration-overview/images/05.png)
-
-The Alerts and Announcements widgets can be used to broadcast information to users. The Alerts widget is designed for displaying high-priority information (e.g. planned downtime alerts, security alerts, etc.). The Announcements widget displays all other information you want to broadcast on your site.
-
-![Figure 4: The Alerts widget displays an alert on a Site page.](./collaboration-overview/images/04.png)
-
-To start creating alerts and announcements, see the Alerts and Announcements article.
-
 ## Invitations
 
 The _Invite Members_ widget lets Site Administrators send invitations to join the Site. When Users confirm such invitations, they become Site members assigned to the Roles defined by the site administrator. Click to learn more about [Site Membership](../site-building/01-building-sites/05-adding-members-to-sites.md).
 
-![Figure 6: Inviting members to a site.](./collaboration-overview/images/06.png)
+![Figure 4: Inviting members to a site.](./collaboration-overview/images/04.png)
 
-![Figure 7: Confirming a request to join a site.](./collaboration-overview/images/07.png)
+Once the user has been invited, they can confirm or ignore the request.
+
+![Figure 5: Confirming a request to join a site.](./collaboration-overview/images/05.png)
 
 ## Knowledge Base
 
 The _Knowledge Base_ app can be used to display professional product documentation or form complete books or guides. Content writers can use multiple formats, including markdown. Furthermore, Knowledge Base are integrated with the [workflow engine](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) so content editors can review and approve articles before publication.
 
-![Figure 8: Users received notifications when they are mentioned in a post.](./collaboration-overview/images/08.png)
+![Figure 6: The Knowledge Base widget can also be used to publish articles.](./collaboration-overview/images/06.png)
