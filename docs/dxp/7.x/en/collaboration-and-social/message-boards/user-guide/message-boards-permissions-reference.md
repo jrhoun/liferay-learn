@@ -1,16 +1,18 @@
 # Message Boards Permissions Reference
 
+This article documents all the permissions in the _Message Boards_ widget and serves as a reference for site administrators when assigning permissions custom roles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+
 ## Home Category Permissions
 
-The _Message Boards_ permissions screen is for granting and revoking access to message board functions.
+The _Message Boards_ permissions screen is for granting and revoking access to _Message Boards_ functions.
 
 1. Navigate to the _Site Administration_ for the host site (for example, Liferay DXP's guest site).
 1. Click _Content & Data_ &rarr; _Message Boards_.
 1. Click the *Options* icon (![Options](./message-boards-permissions-reference/images/01.png)) then *Home Category Permissions*.
 
-![Assigning Permissions to Site Roles](./message-boards-permissions-reference/images/03.png)
+    ![Assigning Permissions to Site Roles](./message-boards-permissions-reference/images/03.png)
 
-The permissions enable a Role to perform the following actions:
+The permissions enable users who have a particular Role to perform the following actions:
 
 | Permission Name | Description |
 | --- | --- |
@@ -26,8 +28,6 @@ The permissions enable a Role to perform the following actions:
 | **Move Thread:** | Move a thread to a different category or subcategory. |
 | **Update Thread Priority:** | Modify a thread's priority. |
 
-Configure the Roles with the permissions you want and *Save* your changes.
-
 ## Widget Permissions
 
 After adding a Message Boards widget to a page, administrators can access that widget instance's general permissions. To do so, select the widget's *Options* menu (![Options](./message-boards-permissions-reference/images/02.png)) and select *Permissions*.
@@ -39,7 +39,7 @@ After adding a Message Boards widget to a page, administrators can access that w
 | **Permissions:** | Grants the ability to view and modify the widget's permissions. |
 | **Preferences:** | Grants the ability to view and modify widget's preferences. |
 | **Configuration:** | Grants the ability to view and modify the widget's configurations. |
-| **View:* | Grants the ability to view the widget. |
+| **View:** | Grants the ability to view the widget. |
 | **Add to Page:** | Grants the ability to add the widget to a site page. |
 
 ## General Category Permissions
