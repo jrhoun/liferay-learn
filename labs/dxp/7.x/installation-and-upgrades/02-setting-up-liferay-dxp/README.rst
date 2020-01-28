@@ -4,11 +4,24 @@ Setting Up Liferay DXP
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-liferay-dxp`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-the-liferay-marketplace`
+* Installing Apps Manually
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
+
+Installing Apps Manually
+------------------------
+-  :doc:`/installation-and-upgrades/installing-apps-manually/app-installation-strategies`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/downloading-apps`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/installing-apps-in-production`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/managing-apps`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/managing-components`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/blacklisting-apps`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/blacklisting-osgi-components`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/renewing-apps`
 
 Installing a Search Engine
 --------------------------

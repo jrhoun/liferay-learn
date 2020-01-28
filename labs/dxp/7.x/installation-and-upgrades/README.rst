@@ -11,9 +11,6 @@ Installing Liferay DXP
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/trial-plugin-installation`
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-marketplace`
-* Using the Liferay Marketplace
-* Installing Apps Manually
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,6 +27,7 @@ Setting Up Liferay DXP
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-liferay-dxp`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-the-liferay-marketplace`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
 * Using a Content Delivery Network
