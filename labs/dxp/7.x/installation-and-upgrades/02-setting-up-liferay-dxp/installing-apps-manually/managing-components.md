@@ -1,3 +1,0 @@
-# Managing Components
-
-Coming soon!
