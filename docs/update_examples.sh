@@ -11,7 +11,7 @@ do
 	#popd
 done
 
-for file_name in `find commerce/2.x/en/developer-guide/tutorial -name gradle-wrapper.properties -type f`
+for file_name in `find commerce/2.x/en/developer-guide/tutorials -name gradle-wrapper.properties -type f`
 do
 	input=$file_name
 	echo "$input"
