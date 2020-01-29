@@ -56,13 +56,58 @@ class WithRootSiteHTMLBuilder(StandaloneHTMLBuilder):
 
 		return doc_context
 
+# def setup(app):
+# 	app.add_builder(WithRootSiteHTMLBuilder, True)
+
+# 	app.add_config_value('recommonmark_config', {
+# 		'enable_auto_toc_tree': False,
+# 		'enable_math': False,
+# 		'enable_inline_math': False
+# 	}, True)
+
+# 	app.add_transform(AutoStructify)
+
+# for MarkdownParser
+from sphinx_markdown_parser.parser import MarkdownParser
+from sphinx_markdown_parser.transform import AutoStructify
+
 def setup(app):
-	app.add_builder(WithRootSiteHTMLBuilder, True)
+    app.add_source_suffix('.md', 'markdown')
+    app.add_source_parser(MarkdownParser)
+    app.add_config_value('markdown_parser_config', {
+        'auto_toc_tree_section': 'Content',
+        'enable_auto_doc_ref': False,
+        'enable_auto_toc_tree': False,
+        'enable_eval_rst': True,
+        'extensions': [
+            'extra',
+            'nl2br',
+            'sane_lists',
+            'smarty',
+            'toc',
+            'wikilinks',
+            'pymdownx.arithmatex',
+        ],
+    }, True)
 
-	app.add_config_value('recommonmark_config', {
-		'enable_auto_toc_tree': False,
-		'enable_math': False,
-		'enable_inline_math': False
-	}, True)
+# for CommonMarkParser
+from recommonmark.parser import CommonMarkParser
 
-	app.add_transform(AutoStructify)
+def setup(app):
+    app.add_source_suffix('.md', 'markdown')
+    app.add_source_parser(CommonMarkParser)
+    app.add_config_value('markdown_parser_config', {
+        'auto_toc_tree_section': 'Content',
+        'enable_auto_doc_ref': False,
+        'enable_auto_toc_tree': False,
+        'enable_eval_rst': True,
+        'enable_inline_math': True,
+        'enable_math': True,
+    }, True)
+
+def setup(app):
+    app.add_config_value('markdown_parser_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)

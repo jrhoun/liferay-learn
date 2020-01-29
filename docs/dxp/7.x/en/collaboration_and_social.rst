@@ -12,5 +12,5 @@ Collaboration and Social
    collaboration-and-social/invitations.rst
    collaboration-and-social/knowledge_base.rst
 
-.. include:: /collaboration-and-social/README.rst
+.. include:: /collaboration-and-social/README.md
    :start-line: 2

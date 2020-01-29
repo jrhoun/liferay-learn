@@ -124,7 +124,7 @@ function main {
 
 	check_utils pip3 sphinx-build zip
 
-	pip_install recommonmark sphinx-intl sphinx-markdown-tables sphinx-notfound-page
+	pip_install recommonmark sphinx-intl sphinx-markdown-tables sphinx-notfound-page sphinx-markdown-parser
 
 	generate_sphinx_input
 
