@@ -8,7 +8,7 @@ Installing Apps Manually
    installing-apps-manually/downloading-apps.md
    installing-apps-manually/installing-apps-in-production.md
    installing-apps-manually/managing-apps.md
-   installing-apps-manually/managing-components.md
+   installing-apps-manually/configuring-portlets-themes-and-layout-templates.md
    installing-apps-manually/blacklisting-apps.md
    installing-apps-manually/blacklisting-osgi-components.md
    installing-apps-manually/renewing-apps.md

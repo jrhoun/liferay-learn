@@ -18,7 +18,7 @@ Installing Apps Manually
 -  :doc:`/installation-and-upgrades/installing-apps-manually/downloading-apps`
 -  :doc:`/installation-and-upgrades/installing-apps-manually/installing-apps-in-production`
 -  :doc:`/installation-and-upgrades/installing-apps-manually/managing-apps`
--  :doc:`/installation-and-upgrades/installing-apps-manually/managing-components`
+-  :doc:`/installation-and-upgrades/installing-apps-manually/configuring-portlets-themes-and-layout-templates`
 -  :doc:`/installation-and-upgrades/installing-apps-manually/blacklisting-apps`
 -  :doc:`/installation-and-upgrades/installing-apps-manually/blacklisting-osgi-components`
 -  :doc:`/installation-and-upgrades/installing-apps-manually/renewing-apps`
