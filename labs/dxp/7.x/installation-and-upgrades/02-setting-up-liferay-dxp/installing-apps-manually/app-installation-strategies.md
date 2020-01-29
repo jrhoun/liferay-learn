@@ -75,7 +75,7 @@ Now that you have a basic understanding of the app installation strategies, you 
 ## Related Topics
 
 * [Downloading Apps](./downloading-apps.md)
-* [Managing Components](./managing-components.md)
+* [Configuring Portlets, Themes, and Layout Templates](./configuring-portlets-themes-and-layout-templates.md)
 * [Maintaining a Clustered Installation](../../10-maintaining-a-liferay-dxp-installation/10-maintaining-clusters/01-maintaining-clustered-installations.md)
 * [Blacklisting Apps](./blacklisting-apps.md)
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
