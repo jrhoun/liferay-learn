@@ -37,7 +37,11 @@ Auto deployment is a convenient way to deploy apps and is used by these installa
 
 #### Marketplace via the Control Panel
 
-The DXP Control Panel lets you browse the Marketplace the same way you would from the Marketplace website. Purchasing an app downloads it and installs it to the DXP instance automatically. See [Using the Liferay Marketplace]((../using-the-liferay-marketplace.md)) for more information.
+The DXP Control Panel lets you browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Using the Liferay Marketplace]((../using-the-liferay-marketplace.md)) for more information.
+
+#### Purchased Apps Screen
+
+The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps that you've previously purchased. Apps that aren't installed have an *Install* button for installing the app on the DXP instance.
 
 #### Application Manager
 
@@ -53,10 +57,11 @@ The following table compares all of the installation strategies by listing their
 
 | Installation Strategy | Benefits | Requirements / Limitations | Uninstallation |
 | :-------------------- | :------- | :------------------------- | :--------------- |
-| [Marketplace via the Control Panel](../using-the-liferay-marketplace.md) | * Convenience<br/>* Automatic installation on app purchase<br/> | * Uses auto deploy (1)<br/>* You must be ready for install on app purchase | Marketplace via the Control Panel |
+| [Server startup](#deployment-at-server-startup) |* Maximum stability<br/>* No UI needed | * Server shutdown required<br/>* File system access required | Remove the app from the `[Liferay Home]/osgi` subfolder |
+| [Marketplace via the Control Panel](../using-the-liferay-marketplace.md) | * Convenience<br/>* Automatic installation on app purchase<br/> | * Uses auto deploy (1)<br/>* You must be ready for install on app purchase | Purchased Apps screen |
+| [Purchased Apps Screen](#purchased-apps-screen) | * User interface<br/>* Install purchased apps when you want | Uses auto deploy (1) | Purchased Apps screen |
 | [App Manager](./managing-apps.md) | * User interface<br/>* Install purchased apps when you want | Uses auto deploy (1) | [Blacklisting the app](./blacklisting-apps.md) |
 | [File system](#file-system) | * No UI needed | * Uses auto deploy (1)<br/>* File system access required | Remove the app from the `[Liferay Home]/osgi` subfolder |
-| [Server startup](#deployment-at-server-startup) |* Maximum stability<br/>* No UI needed | * Server shutdown required<br/>* File system access required | Remove the app from the `[Liferay Home]/osgi` subfolder |
 
 (1) Auto deploying apps that aren't designed for auto deploy may cause class loading issues or memory leaks.
 
