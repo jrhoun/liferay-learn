@@ -1,38 +1,30 @@
 # Activating Liferay DXP
 
-> Subscription Required
+Liferay DXP must be activated using a DXP activation key or Liferay Connected Services.
 
-There are two ways to activate a Liferay DXP instance:
+![Figure 1: DXP displays this page on startup.](./activating-liferay-dxp/images/01.png)
 
-* Using an XML activation key from [Liferay Support](https://help.liferay.com/hc/en-us).
-* Online activation through Liferay Connected Services (LCS).
+## Activation Keys
 
-## Using an XML Key
+An activation key is an XML file that enables Liferay DXP based on your subscription or DXP trial agreement.
 
-To activate Liferay DXP using an XML activation key follow these steps:
+### Applying a Key 
 
-1. Request a Liferay DXP acivation key by opening a [Help Center](https://liferay-support.zendesk.com/agent/) ticket.
-1. The Liferay Provisioning Team will provide instructions on how to download the activation key.
-    > **Note:** that the activation key is tied to a particular server. To migrate an existing key to a different server, please contact the Liferay Support Team by opening a [Help Center](https://liferay-support.zendesk.com/agent/) ticket.
-1. Deploy the activation key in the `{liferay.home}\deploy` folder.
-1. Verify that the success message appears in the console.
+If you have a DXP activation key already,
 
-    <!-- ```
-    success message example
-    ``` -->
+Copy the key to the `deploy` folder in your [Liferay Home](../14-reference/01-liferay-home.md).
 
-1. Once the activation key has been applied, this instance has been registered.
+The a message in your console confirms the registration. DXP is ready to use at [ https://localhost:8080]( https://localhost:8080).
 
-Liferay DXP is now ready to be used.
+### Need a Key?
 
-## Using LCS
+If you have an enterprise subscription, visit the
+[Activation Keys](https://customer.liferay.com/activation-key) page to download an activation key or to request one.
 
-Liferay DXP 7.0 introduced LCS as a way to activate Liferay DXP instances. LCS can also install fix packs, monitor each instance's performance, and help administrators automatically manage Liferay DXP subscriptions. See the [LCS documentation](https://help.liferay.com/hc/articles/360029032071-Introduction-to-Managing-Liferay-DXP-with-Liferay-Connected-Services) for instructions on activating the instances with LCS.
+Trying out DXP? Contact [Liferay Provisioning](https://help.liferay.com/hc/en-us/articles/360017784212) to request an activation key.
 
-> **Note:** Administrators must use LCS for activation of Elastic subscriptions. Otherwise, LCS for activation is optional. Instead request an XML activation key from Liferay Support.
+## Liferay Connected Services
 
-To learn how to activate Liferay DXP using LCS see [this article](https://help.liferay.com/hc/articles/360029032071-Introduction-to-Managing-Liferay-DXP-with-Liferay-Connected-Services).
+If you're using Liferay Connected Services (LCS), see the [LCS documentation]() for instructions on activating your DXP instance with LCS.
 
-<!-- ## Additional Information
-
-* Helpful Links to additional or related information -->
+If you have an enterprise subscription and need further assistance, contact [Account Support](https://help.liferay.com/hc/en-us/articles/360018414031) or create a [support ticket](https://help.liferay.com/hc/requests/new).
