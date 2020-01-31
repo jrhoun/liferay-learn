@@ -28,3 +28,7 @@ If you're using Liferay Connected Services (LCS) with Liferay DXP 7.2 or earlier
 ```
 
 If you have an enterprise subscription and need further assistance, contact [Account Support](https://help.liferay.com/hc/en-us/articles/360018414031) or create a [support ticket](https://help.liferay.com/hc/requests/new).
+
+## Additional Information 
+
+[Reactivating Liferay DXP](./reactivating-liferay-dxp.md)
