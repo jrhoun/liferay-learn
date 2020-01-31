@@ -6,7 +6,7 @@ Liferay DXP is activated using an XML file (`.xml`) called an activation key.  I
 
 ### Deploying a Key 
 
-If you have a DXP activation key file, copy it to the `deploy` folder in your [Liferay Home](../14-reference/01-liferay-home.md).
+If you have an activation key, copy it to the `deploy` folder in your [Liferay Home](../14-reference/01-liferay-home.md).
 
 A message in the DXP console confirms the registration.
 

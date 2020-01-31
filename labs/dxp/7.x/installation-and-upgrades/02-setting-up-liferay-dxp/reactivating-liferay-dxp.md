@@ -6,7 +6,7 @@ Here are the steps for reactivating DXP with your new key:
 
 1. Stop the application server.
 
-1. If you've been using LCS to activate DXP, remove the Liferay Connected Services Client LPKG file (`.lpkg`) from your `osgi/marketplace` folder in your [Liferay Home](../14-reference/01-liferay-home.md) (i.e., the `[Liferay Home]/osgi/marketplace` folder).
+1. If you've been using LCS to activate DXP, remove the Liferay Connected Services Client LPKG file (`.lpkg`) from your `osgi/marketplace` folder in your [Liferay Home](../14-reference/01-liferay-home.md).
 
 1. Delete the _contents_ of your `[Liferay Home]/data/license` folder but preserve the folder.
 
