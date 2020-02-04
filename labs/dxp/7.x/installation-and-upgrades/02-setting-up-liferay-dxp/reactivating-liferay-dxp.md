@@ -1,6 +1,6 @@
 ## Reactivating Liferay DXP
 
-If you have a new DXP activation key and your DXP instance is currently activated by an activation key or by Liferay Connected Services (LCS), it's best to remove remnants of the former activation method before deploying your new activation key.
+If you have a new DXP activation key and your DXP instance is currently activated by an activation key or by Liferay Connected Services (LCS), it's best to remove remnants of the former activation method before deploying your new activation key. This removes any ambiguity as to which activation key you're using.
 
 Here are the steps for reactivating DXP with your new key:
 
