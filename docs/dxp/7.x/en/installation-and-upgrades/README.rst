@@ -11,11 +11,6 @@ Installing Liferay on Premises
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/configuring-a-database`
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/activating-liferay-dxp`
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/trial-plugin-installation`
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-marketplace`
-* Using the Liferay Marketplace
-* Installing Apps Manually
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,6 +25,8 @@ Setting Up Liferay DXP
 ----------------------
 
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-liferay-dxp`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/activating-liferay-dxp`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/reactivating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
 * Installing a Search Engine
