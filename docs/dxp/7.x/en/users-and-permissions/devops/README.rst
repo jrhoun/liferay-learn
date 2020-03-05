@@ -2,9 +2,11 @@ DevOps
 ======
 
 * Configuring a Password Policy
-
 * Adding Custom Fields to Users
 
-* Using a New Default User Profile Image
+Connecting to a User Directory
+------------------------------
 
-* Changing the Order of Initials for the Default Profile Image
+-  :doc:`/users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory`
+-  :doc:`/users-and-permissions/devops/connecting-to-a-user-directory/ldap-configuration-reference`
+-  :doc:`/users-and-permissions/devops/connecting-to-a-user-directory/configuring-user-import-and-export`

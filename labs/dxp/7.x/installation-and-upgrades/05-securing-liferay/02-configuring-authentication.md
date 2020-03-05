@@ -8,14 +8,14 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 
 You can configure other ways of authenticating users and/or applications:
 
-* [LDAP](../06-sso/06-ldap.md)
+* [LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
 * [SAML](../06-sso/08-saml.md)
 * [Kerberos](../06-sso/05-kerberos.md)
 * [OpenID Connect](../06-sso/02-openid-connect.md)
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-[Authentication Verifiers](./securing-web-services/using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
+[Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
 
 ## Authentication Types
 
@@ -89,5 +89,5 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 ## Additional Information
 
-* [Securing Liferay](./securing-liferay.md)
+* [Securing Liferay](./introduction-to-securing-liferay.md)
 * [Securing Web Services](./securing-web-services/securing-web-services)

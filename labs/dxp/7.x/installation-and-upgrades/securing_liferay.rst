@@ -4,8 +4,8 @@ Securing Liferay
 .. toctree::
    :maxdepth: 3
 
-   securing-liferay/securing-liferay.md
-   securing-liferay/configuring-authentication.md
+   securing-liferay/introduction-to-securing-liferay.md
+   securing-liferay/authentication-basics.md
 
    securing-liferay/securing_web_services.rst
 

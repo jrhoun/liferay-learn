@@ -1,3 +1,0 @@
-# Securing Liferay
-
-Coming soon!
