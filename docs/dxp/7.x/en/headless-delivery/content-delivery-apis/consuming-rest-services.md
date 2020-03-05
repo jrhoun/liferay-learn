@@ -10,7 +10,21 @@ This example uses Docker image with a fresh install of Liferay DXP.
 
 ## Identify the Service to Consume
 
-Liferay DXP's REST services are published on [Swagger Hub](https://app.swaggerhub.com/apis/liferayinc/headless-delivery). This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the services listed on Swagger Hub. The documentation there shows all the parameters necessary for performing the call and includes example JSON or XML that the service returns.
+Liferay DXP's REST services are published at this URL: 
+
+```
+http[s]://[hostname]:[port]/o/headless-delivery/v1.0/openapi.yaml
+```
+
+On the local developer instance you'll install below, you can find them here: 
+
+```
+http://localhost:8080/o/headless-delivery/v1.0/openapi.yaml
+```
+
+They're also available on [Swagger Hub](https://app.swaggerhub.com/apis/liferayinc/headless-delivery). 
+
+This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the services listed on Swagger Hub. The documentation there shows all the parameters necessary for performing the call and includes example JSON or XML that the service returns.
 
 ## Identify the Site Containing the Data
 
