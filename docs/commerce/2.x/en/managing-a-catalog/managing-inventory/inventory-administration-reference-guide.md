@@ -1,9 +1,5 @@
 # Inventory Administration Reference Guide
 
-```important::
-   Liferay Commerce 2.1 and above
-   ```
-
 Liferay Commerce 2.1 introduces a dedicated and clear Inventory administration section managing product availability in the _Control Panel_. This article serves as a guide for all the features in the _Inventory_ section.
 
 To access the dedicated Inventory management section, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Inventory_.
