@@ -34,10 +34,6 @@ The next instance contains a unique *subname* (something other than *default*). 
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-league.config
 ```
 
-```warning::
-   Providing a configuration file with a subname forces a factory configuration scenario, even if the service isn't designed to accept multiple configuration entries. Use the System Settings UI as described above to determine if using factory configurations is supported for a configuration entry. 
-```
-
 Some System Settings entries that support factory configuration don't ship with a configuration file for the default instance (e.g., the Anonymous User entry). If you export a factory configuration file to obtain the `.config` file, it doesn't use the `-default.config` naming convention. Instead, whether it's the first occurrence or an additional one, it's given a guaranteed unique identifier for its subname:
 
 ```bash
