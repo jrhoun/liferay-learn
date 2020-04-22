@@ -19,7 +19,7 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 ## Enabling Cluster Link
 
-To enable Cluster Link, add this [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) to a `portal-ext.properties` file:
+To enable Cluster Link, add this [portal property](../../reference/portal-properties.md) to a `portal-ext.properties` file:
 
 ```properties
 cluster.link.enabled=true

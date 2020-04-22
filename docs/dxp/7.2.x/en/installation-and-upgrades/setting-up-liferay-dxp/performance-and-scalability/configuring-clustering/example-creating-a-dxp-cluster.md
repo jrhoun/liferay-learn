@@ -122,9 +122,9 @@ Here's a summary of the items to configure:
 
 | Item | Configuration Method |
 | :--- | :---------- |
-| Search engine connection | System configuration file |
+| Search engine connection | Configuration file |
 | Data source connection | `portal-ext.properties` file | See [Database Templates](../../reference/database-templates.md) |
-| File Store connection | `portal-ext.properties` file. Some File Store types require a System Configuration file too. | See [Configuring a File Store](../../..//system-administration/file-storage/configuring-file-storage.md) |
+| File Store connection | `portal-ext.properties` file. Some File Store types require a configuration file too. | See [Configuring a File Store](../../..//system-administration/file-storage/configuring-file-storage.md) |
 | Cluster Link | `portal-ext.properties` file | See [Configuring Cluster Link](./configuring-cluster-link.md) |
 
 The portal properties can be specified using Docker environment variables or a `portal-ext.properties` file. Since this example uses several properties, properties files are used.
@@ -161,7 +161,7 @@ You're ready to configure the DXP server nodes.
     cp dxp-1/files/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.config dxp-2/files/osgi/configs/
     ```
 
-See [Understanding System Configuration Files](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files) for more information. 
+See [Using Configuration Files](../../../system-administration/system-settings/using-configuration-files.md) for more information. 
 
 ### Configure Cluster Link and the Other Server Connections
 
