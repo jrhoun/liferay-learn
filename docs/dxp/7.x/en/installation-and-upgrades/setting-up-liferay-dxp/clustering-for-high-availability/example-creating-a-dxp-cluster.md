@@ -314,6 +314,11 @@ See [Cluster Link](./cluster-link.md) for more information on cluster configurat
     INFO  [default-2][ClusterExecutorImpl:544] Updated cluster node {bindInetAddress=/172.18.0.5, clusterNodeId=e6ee6b63-4625-1996-0bd6-dd2edf106d95, portalInetSocketAddress=/127.0.0.1:8080, portalProtocol=http}
     ```
 
+The cluster nodes are available:
+
+* `dxp-1` is at `http://localhost:8080`
+* `dxp-2` is at `http://localhost:9080`
+
 ### Test the Cluster
 
 Test the cluster by adding content (e.g., the Language Selector widget) via one node and verifying the content shows in the other node (refresh the browser).
