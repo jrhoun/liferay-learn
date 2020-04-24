@@ -295,7 +295,7 @@ This example fronts the application server cluster with an [Apache Web Server](h
     LoadModule lbmethod_bytraffic_module modules/mod_lbmethod_bytraffic.so
     ```
 
-1. In the `httpd.conf` file, configure the request proxy to the application servers and load balancing (using Apache's [`byrequests` method](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_byrequests.html)), by adding this `VirtualHost` element to the end of the file:
+1. In the `httpd.conf` file, configure the request proxy and load balancing (using Apache's [`byrequests` method](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_byrequests.html)), by adding this [`VirtualHost` element](https://httpd.apache.org/docs/2.4/vhosts/) to the end of the file:
 
     ```xml
     <VirtualHost *:80>
@@ -340,6 +340,31 @@ This example fronts the application server cluster with an [Apache Web Server](h
 Your web server is ready to proxy requests and balance request load between the DXP application servers. It's time to see the DXP cluster in action.
 
 ## Start the DXP Cluster Nodes
+
+The DXP cluster node containers will have this configuration:
+
+| Configuration | dxp-1 | dxp-2 |
+| :------------ | :---- | :---- |
+| AJP port mapping | `8009:8009` | `9009:8009` |
+| HTTP port mapping | `8080:8080` | `9080:8080` |
+| OSGi container port mapping | ``11311:11311`` | `11312:11311` |
+| Volume bind mount | `${PWD}/dxp-1/files:/mnt/liferay` | `${PWD}/dxp-2/files:/mnt/liferay` |
+
+The port mappings are from the host port to the container port. The host ports are unique to avoid collisions between them on the host. The container ports need only be unique within each container, and can therefore be the same on each node (e.g., each container uses the `8080` as its web server HTTP port). Remember that the example proxy server and load balancer directs requests to each container via each container's HTTP port. Here's an excerpt from the proxy configuration:
+
+```xml
+  ...
+  <Proxy balancer://liferaycluster>
+    BalancerMember "http://dxp-1:8080" route=liferay1
+    BalancerMember "http://dxp-2:8080" route=liferay2
+    ...
+  </Proxy>
+  ...
+```
+
+The OSGi container mapping is for using Gogo shell on each container. The volume bind mount, leverages the DXP container's configuration phase to copy the `portal-ext.properties` files to the DXP server's [Liferay Home](../../reference/liferay-home.md).
+
+It's time to start the DXP cluster nodes:
 
 1. Start `dxp-1`:
 
@@ -391,17 +416,19 @@ Your web server is ready to proxy requests and balance request load between the 
 
     These messages state `dxp-2`'s IP address (`172.18.0.5`) and that JGroups created `dxp-2`'s control channel and transport channel, and accepted the channels into the JGroups view.
 
-DXP is available at <http://localhost>. The web server directs your requests to the DXP server cluster.
+DXP is available at <http://localhost>. The web server directs your request to the DXP server cluster.
 
 ### Test the Cluster
 
 Test your cluster to make sure they show the same content changes and that DXP stays available when there is at least one cluster node running.
 
-Add content (e.g., the Language Selector widget) to DXP at<http://localhost>. Note the server address and port near the bottom of the page, as shown in the figure below.
+Start by adding content (e.g., the Language Selector widget) to your site at <http://localhost>. 
 
-![Content synchronization between cluster nodes.](./example-creating-a-dxp-cluster/images/02.png)
+Note the node's address and port (`Node: [address]:[port]`). Since the node is running in a Docker container the container ID is displayed instead of an IP address. See the figure below as an example.
 
-You can match the server address with the DXP container ID using the `docker container ls -a`:
+![Your DXP cluster node has a Language Selector widget at the top and displays the container ID and port at the bottom.](./example-creating-a-dxp-cluster/images/02.png)
+
+You can match the container ID with the DXP container using the `docker container ls -a` command:
 
 ```bash
 $ docker container ls -a | grep dxp-1
@@ -410,29 +437,25 @@ $ docker container ls -a | grep dxp-2
 aa547271b4d3        liferay/portal:7.3.1-ga2       "/bin/sh -c /usr/loc…"   43 minutes ago      Up 43 minutes (healthy)      8000/tcp, 8009/tcp, 11311/tcp, 0.0.0.0:9080->8080/tcp   dxp-2
 ```
 
-Test server failover by stopping that DXP container. For example, if the server address in your browser matches the `dxp-1` container address, stop that container.
+Test server failover by stopping that DXP container. For example, if the browser is using the `dxp-1` container, stop that container.
 
 ```bash
 docker stop dxp-1
 ```
 
-Refresh your browser to verify that the remaining DXP server handles your request and shows the content you added earlier. Congratulations on creating a working DXP cluster!
+Refresh your browser to verify that the remaining DXP server handles your request and shows the content you added earlier.
 
-When you're ready to stop the containers, use the `docker container stop [container ID]` command. For example,
+![Content is synchronized between the cluster nodes.](./example-creating-a-dxp-cluster/images/03.png)
 
-```bash
-docker stop dxp-2
-```
+Congratulations on creating a working DXP cluster!
 
-Similarly, use the `docker container start -i [container ID]` command to restart each container. For example,
-
-```bash
-docker start -i dxp-2
+```tip::
+   When you're ready to stop containers, use the `docker container stop [container ID]` command like you did to stop the DXP container above. Similarly, use the `docker container start -i [container ID]` command to restart the containers.
 ```
 
 ## What's Next 
 
-Tune your [database](./database-configuration-for-cluster-nodes.md) and [search engine](./clustering-search.md) for your cluster.
+Tune your [database](./database-configuration-for-cluster-nodes.md) for your DXP cluster.
 
 ## Additional Information
 
