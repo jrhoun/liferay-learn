@@ -48,4 +48,4 @@ The following variables are available for Subscription-type email notification t
 
 ## Additional Information
 
-* [Automating Store Emails by Using Notification Templates](automating-store-emails-by-using-notification-templates.md)
+* [Using Notification Templates](./using-notification-templates.md)

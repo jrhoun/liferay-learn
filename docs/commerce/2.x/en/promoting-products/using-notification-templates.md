@@ -1,4 +1,4 @@
-# Automating Store Emails by Using Notification Templates
+# Using Notification Templates
 
 Notifications are automated emails sent to users. To send email notifications, first create a _Notification Template_. Notification Templates define the notification sender, trigger, and content of an email notification.
 
@@ -10,7 +10,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 
-    ![Commerce 2.1 Channels](./automating-store-emails-by-using-notification-templates/images/05.png)
+    ![Commerce 2.1 Channels](./using-notification-templates/images/03.png)
 
 1. Click on the desired channel (for example, _Sahara.com_). (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created automatically.)
 1. Click the _Notifications_ tab.
@@ -26,7 +26,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **Subject**: Email subject (for example: _Your order has been received._)
     * **Body**: Enter a message. You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
-    ![Adding a Notification Template in 2.1](./automating-store-emails-by-using-notification-templates/images/03.png)
+    ![Adding a Notification Template in 2.1](./using-notification-templates/images/02.png)
 
 1. Click _Save_.
 
@@ -54,7 +54,7 @@ To create email notifications in Commerce 2.0 and below:
 
 1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 
-    ![Commerce 2.0 Site Settings](./automating-store-emails-by-using-notification-templates/images/06.png)
+    ![Commerce 2.0 Site Settings](./using-notification-templates/images/04.png)
 
 1. Click the _Notifications_ tab.
 1. Click the _Notification Templates_ sub-tab.
@@ -70,23 +70,12 @@ To create email notifications in Commerce 2.0 and below:
     * **Subject**: Email subject (for example: _Your order has been received._)
     * **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
-    ![Adding a Notification Template](./automating-store-emails-by-using-notification-templates/images/01.png)
+    ![Adding a Notification Template](./using-notification-templates/images/01.png)
 
 1. Click _Save_.
 
 The new Notification Template has been saved and your store will send an automated email to buyers after the store has received their order. Once the template is created, a new notification is added to the notification queue whenever an order is placed. Check the _Notifications Queue_ sub-tab when an order has been placed. Liferay Commerce checks the queue at specified intervals to send any unsent notifications.
 
-## Configuring Templates Check Interval
-
-To change the interval for when Liferay Commerce checks for unsent notifications:
-
-1. Navigate to the _Control Panel_ → _Configuration_ → _System Settings_.
-1. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
-
-    ![Changing Intervals](./automating-store-emails-by-using-notification-templates/images/02.png)
-
-1. Click _Update_ when finished.
-
-## Additional Notifications
+## Additional Information
 
 * [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
