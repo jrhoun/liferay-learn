@@ -1,6 +1,6 @@
 # Using Notification Templates
 
-Notifications are automated emails sent to users. To send email notifications, first create a _Notification Template_. Notification Templates define the notification sender, trigger, and content of an email notification.
+Notifications are automated emails sent to users. To send email notifications, first create a _Notification Template_. Notification Templates define the notification sender, trigger, and content of an email notification. See the [Store Emails](./store-emails.md#notification-templates) article for a complete list of available Notification Templates.
 
 ```note::
    To use Liferay Commerce's Notifications feature, system administrators first have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
@@ -32,21 +32,40 @@ Once the Mail settings have been configured, follow these steps to create a noti
 
 The new Notification Template has been saved and your store will send an automated email to buyers after the store has received their order. Once the template is created, a new notification is added to the notification queue whenever an order is placed.
 
-## Available Notification Templates
+![Check the Notification Queue for all outgoing emails.](./using-notification-templates/images/05.png)
 
-There are several Notification Templates available out of the box.
+## Using the Placeholder Values
 
-| Template Type | Description |
-| --- | --- |
-| Order Placed | Customer is notified that the order has been placed. |
-| Order Processing | Customer is notified that the order is being processed. |
-| Order Partially Shipped | Customer is notified if an order has more than one item and the items are to be shipped separately. |
-| Order Shipped | Customer is notified that the order has been shipped. |
-| Order Completed | Customer is notified that the order is completed. |
-| Subscription Renewed | Customer is notified that his subscription is renewed. |
-| Subscription Activated | Customer is notified that a subscription has been activated. |
-| Subscription Suspended | Customer is notified that his subscription has been suspended. |
-| Subscription Cancelled| Customer is notified that his subscription is canceled. |  
+When creating an Email Notification Template, you can insert a variable as a substitute for key values in the Email Content's _Email Settings_ and _Body_ fields. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
+
+You can use placeholder variables in the _Email Settings_ and in the _Email Body_.
+
+### Email Settings
+
+1. Enter the following:
+
+    * **to**: `[%ORDER_CREATOR%]`
+    * **From Address**: orders@sahara.com
+    * **From Name**: `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
+
+    ![Using placeholder values in the emails.](./using-notification-templates/images/06.png)
+
+### Email Body
+
+1. Enter the following:
+
+    * **Subject**: Order Received
+    * **Body**:
+
+    Dear `[%ORDER_CREATOR%]` ,
+
+    Your Order `[%ORDER_ID%]` has been received.
+
+    Regards,
+
+    `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
+
+1. Click _Save_.
 
 ## Commerce 2.0 and Below
 
