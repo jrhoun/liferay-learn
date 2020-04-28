@@ -1,6 +1,6 @@
 # Store Emails
 
-Liferay Commerce includes a series of email notification templates which sends notifications when triggered by a variety of events. These notification templates can be used and reused for multiple events and multiple audiences. For example, when a order is placed, you can use the _Order Placed_ notification template three times, once to send one email to the buyer, a second email to the order administrator, and a third email to the sales agent who manages the account.
+Liferay Commerce can be configured to send email notifications that are triggered by a variety of store events. Email notifications are comprised of templates that define the content of the email. Notifications can be flexibly configured. A single event trigger (store order) can send emails to different target audiences (a customer, a sales agent, an administrator) and use templates specific to each party.
 
 ```note::
    To use Liferay Commerce's Notifications feature, system administrators first have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
@@ -8,12 +8,12 @@ Liferay Commerce includes a series of email notification templates which sends n
 
 ## Configuring Store Emails
 
-Email notifications are configured per [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md). (If you had used an [accelerator like Minium](../starting-a-store/accelerators.md) to create your store, a corresponding channel has already been created.)
+Email notifications are configured per [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md).<!-- is this supposed to tell me where I should go to configure store emails? --> Using an [accelerator](../starting-a-store/accelerators.md) creates a store, catalog, and channel for you to start with.
 
 ![Available Notification Templates](./store-emails/images/02.png)
 
 ## Using Notification Templates When Events are Triggered
-
+<!-- This header implies that it will tell people how to use notification templates, but really it is just a reference. -->
 The following Notification Templates are available out of the box.
 
 | Notification Type | Event |
@@ -31,23 +31,22 @@ The following Notification Templates are available out of the box.
 
 ![Available Notification Templates](./store-emails/images/01.png)
 
-## Viewing Message Notifications Queues
+## Viewing the Notification Queue
 
-When an event triggers an notification (for example, an order is placed), the notification is logged in the _Notification Queue_ tab. The Liferay Commerce instance checks every 15 minutes whether a notification has been sent. See the [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md) article to learn more about changing the Check Interval.
+All notification events are logged in the *Notification Queue* tab <!-- which is located where? -->. <!-- what events trigger a notification? this seems like it should be its own section, UNLESS the notification templates ALSO are the event triggers as well - in which case we need to make that fact clearer. --> By default, the system checks the queue at 15 minute intervals for unsent notifications. See [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md) article to learn more about changing the Check Interval.
 
 ![Message Queues](./store-emails/images/03.png)
 
 ## Using Placeholder Values in an Email Notification Template
-
+<!-- What's more important to someone to know here than jumping right into the placeholder value/variables? I think it would be to be sure we present the idea that the email templates are configurable/customizable - meaning - you can write your own content for them. AND THEN - Oh by the way you can use these variables/tokens/whatever to make it easier and more personalized to customize these email notifications. In other words - the way this is written makes the placeholder variables sound like the main feature - when I think the main feature is, You can customize the email templates, and a sub-feature of that is you can use placeholder values to make that easier/faster. -->
 Liferay Commerce includes placeholder values that you can insert as a substitute for key values in the Notification Template's _Email Settings_ and _Body_ fields when creating an Email Notification Template. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
 
-For example, the Email Body field might contain:
+For example, the Email Body field can contain:
 
 ```note::
    Dear [%ORDER_CREATOR%],
 
    Your [%ORDER_ID%] has been shipped to [%ORDER_SHIPPING_ADDRESS%].
-
 ```
 
 The Notification Template then parses those variables when sending the email.
@@ -56,7 +55,7 @@ See the [Notification Template Variables Reference Guide](./notification-templat
 
 ## Viewing Order Communications History
 
-Every order logs all the related email notifications. To view all the emails, navigate to an Order’s Email tab. See [Orders Information](../orders-and-fulfillment/orders/order-information.md) to learn more.
+Every order logs all related email notifications.<!-- needs more detail on how to get to this tab --> To view all the emails, navigate to an Order’s Email tab. See [Orders Information](../orders-and-fulfillment/orders/order-information.md) to learn more.
 
 ![Message Logs are in the Orders information.](./store-emails/images/04.png)
 
