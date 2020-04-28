@@ -6,15 +6,19 @@ Liferay Commerce can be configured to send email notifications that are triggere
    To use Liferay Commerce's Notifications feature, system administrators first have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
 ```
 
-## Configuring Store Emails
+## Configuring Store Email Notifications
 
-Email notifications are configured per [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md).<!-- is this supposed to tell me where I should go to configure store emails? --> Using an [accelerator](../starting-a-store/accelerators.md) creates a store, catalog, and channel for you to start with.
+Once the Liferay Commerce's mail settings have been configured, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_ to begin creating store email notifications.
+
+Email notifications are configured per [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md).
+
+Using an [accelerator](../starting-a-store/accelerators.md) creates a store, catalog, and channel for you to start with.
 
 ![Available Notification Templates](./store-emails/images/02.png)
 
-## Using Notification Templates When Events are Triggered
-<!-- This header implies that it will tell people how to use notification templates, but really it is just a reference. -->
-The following Notification Templates are available out of the box.
+## Event Triggers
+
+There are ten events which triggers email notifications. Use one of the corresponding out-of-the-box Notification Templates to create a standardized email notification.
 
 | Notification Type | Event |
 | --- | ---|
@@ -33,15 +37,17 @@ The following Notification Templates are available out of the box.
 
 ## Viewing the Notification Queue
 
-All notification events are logged in the *Notification Queue* tab <!-- which is located where? -->. <!-- what events trigger a notification? this seems like it should be its own section, UNLESS the notification templates ALSO are the event triggers as well - in which case we need to make that fact clearer. --> By default, the system checks the queue at 15 minute intervals for unsent notifications. See [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md) article to learn more about changing the Check Interval.
+If you have used Notification Templates for specific events, you can view all the email notifications in the channel's _Notification Queue_.
 
 ![Message Queues](./store-emails/images/03.png)
 
-## Using Placeholder Values in an Email Notification Template
-<!-- What's more important to someone to know here than jumping right into the placeholder value/variables? I think it would be to be sure we present the idea that the email templates are configurable/customizable - meaning - you can write your own content for them. AND THEN - Oh by the way you can use these variables/tokens/whatever to make it easier and more personalized to customize these email notifications. In other words - the way this is written makes the placeholder variables sound like the main feature - when I think the main feature is, You can customize the email templates, and a sub-feature of that is you can use placeholder values to make that easier/faster. -->
-Liferay Commerce includes placeholder values that you can insert as a substitute for key values in the Notification Template's _Email Settings_ and _Body_ fields when creating an Email Notification Template. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
+By default, the system checks the queue at 15 minute intervals for unsent notifications. See [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md) article to learn more about changing the Check Interval.
 
-For example, the Email Body field can contain:
+## Using Placeholder Values in an Email Notification Template
+
+You can personalize the Notification Templates with placeholder values as a substitute for key values in the Notification Template's _Email Settings_ and _Body_ fields. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
+
+For example, the _Email Body_ field can contain:
 
 ```note::
    Dear [%ORDER_CREATOR%],
@@ -55,7 +61,7 @@ See the [Notification Template Variables Reference Guide](./notification-templat
 
 ## Viewing Order Communications History
 
-Every order logs all related email notifications.<!-- needs more detail on how to get to this tab --> To view all the emails, navigate to an Order’s Email tab. See [Orders Information](../orders-and-fulfillment/orders/order-information.md) to learn more.
+Every order logs all related email notifications. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_. Click on the Order ID then the _Email_ tab. See [Orders Information](../orders-and-fulfillment/orders/order-information.md) to learn more.
 
 ![Message Logs are in the Orders information.](./store-emails/images/04.png)
 
