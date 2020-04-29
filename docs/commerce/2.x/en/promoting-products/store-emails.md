@@ -37,7 +37,7 @@ There are ten events which triggers email notifications. Use one of the correspo
 
 ## Viewing the Notification Queue
 
-If you have used Notification Templates for specific events, you can view all the email notifications in the channel's _Notification Queue_.
+You can view all email notifications in the channel's _Notification Queue_. Here, you can verify that an email has been sent upon the event trigger (for example, an order is placed, shipped, or a subscription is cancelled).
 
 ![Message Queues](./store-emails/images/03.png)
 
@@ -45,7 +45,7 @@ By default, the system checks the queue at 15 minute intervals for unsent notifi
 
 ## Using Placeholder Values in an Email Notification Template
 
-You can personalize the Notification Templates with placeholder values as a substitute for key values in the Notification Template's _Email Settings_ and _Body_ fields. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
+You can personalize the Notification Templates with placeholder values as a substitute for key values in the _Email Settings_ and _Body_ fields. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
 
 For example, the _Email Body_ field can contain:
 
