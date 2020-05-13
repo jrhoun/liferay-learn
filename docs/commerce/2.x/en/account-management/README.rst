@@ -10,3 +10,4 @@ Account Management
 -  :doc:`/account-management/creating-a-custom-account-role`
 -  :doc:`/account-management/creating-a-new-account-group`
 -  :doc:`/account-management/commerce-roles-permissions-reference`
+-  :doc:`/account-management/using-organizations-to-create-a-sales-network`

@@ -13,6 +13,7 @@ Account Management
    account-management/creating-a-custom-account-role.md
    account-management/creating-a-new-account-group.md
    account-management/commerce-roles-permissions-reference.md
+   account-management/using-organizations-to-create-a-sales-network.md
 
 .. include:: /account-management/README.rst
    :start-line: 2
