@@ -1,8 +1,6 @@
 # Introduction to Order Workflows
 
-This article explains _Order Workflows_ and gives an overview of the order workflow options available.
-
-_Order Workflows_ are a site-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
+_Order Workflows_ are a store-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
 
 ![Order Workflows](./introduction-to-order-workflows/images/01.png)
 
