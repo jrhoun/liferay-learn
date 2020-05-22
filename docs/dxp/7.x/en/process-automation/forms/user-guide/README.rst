@@ -22,7 +22,13 @@ Advanced Forms Usage
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/using-data-providers-to-populate-form-options`
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/using-forms-with-a-workflow`
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/validating-text-and-numeric-field-entries`
--  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/form-rules/README.rst`
+
+Form Rules
+~~~~~~~~~~
+
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/form-rules/introduction-to-form-rules`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/form-rules/using-the-show-hide-rule`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/form-rules/using-the-show-hide-rule`
 
 Kaleo Forms
 ~~~~~~~~~~~
