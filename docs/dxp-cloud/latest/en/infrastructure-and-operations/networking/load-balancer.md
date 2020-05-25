@@ -70,7 +70,7 @@ Note that you must manage your custom certificate. This includes updating it whe
 ```
 
 ```warning::
-   DXP Cloud accepts only properly formatted PEM certificates and keys which must include the encapsulation boundaries. See the `spec <https://tools.ietf.org/html/rfc4648#section-4>`_ to learn more.
+   DXP Cloud accepts only properly formatted PEM certificates and keys which must include the encapsulation boundaries. See the `spec <https://tools.ietf.org/html/rfc7468#section-2>`_ to learn more.
 ```
 
 ```xml
