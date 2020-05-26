@@ -1,6 +1,6 @@
 # Using the Show-Hide Rule
 
-Using _Show_ action allows users to determine whether to show a field if the condition is met. This article demonstrates the "Show" action using the following example: If you're under 18 years old, you need the approval of a legal guardian to to participate in a camp. If you enter a number less than 18, the Legal Guardian Email Address field appears. Otherwise, this field is hidden.
+Using _Show_ action allows users to determine whether to show a field if the condition is met. This article demonstrates the "Show" action using the following example: If you're under 18 years old, you need the approval of a legal guardian to to participate in a camp. If you enter "No" on the form, the Legal Guardian Email Address field appears. Otherwise, this field is hidden.
 
 ## Prerequisites
 
@@ -15,10 +15,8 @@ To configure a Show-Hide action rule:
 
 1. Click the _Rules_ tab.
 1. Click the Add (![Add](../../../../../images/icon-add.png)) button.
-1. Select _I am 18 Years Old or Older_ from the _If_ dropdown menu.
-1. Select _Is equal to_ from the next dropdown menu.
-1. Select _Value_ from the third dropdown menu.
-1. Select _No_ from the final dropdown menu.
+1. Select _I am 18 Years Old or Older_ from the Condition dropdown menu.
+1. Create the condition: _Is equal to_ &rarr; _Value_ &rarr; _No_.
 
     ![Build form rules quickly by defining your conditions and actions.](./using-the-show-hide-rule/images/01.png)
 
@@ -28,14 +26,14 @@ To configure a Show-Hide action rule:
 
      ![Once a rule is saved, it is displayed so that you can easily understand what it does.](./using-the-show-hide-rule/images/02.png)
 
-Now the *Legal Guardian Email Address* field is only displayed in the form if the user selects *No* in the *I am 18 years old or older* field.
+The _Legal Guardian Email Address_ field is only displayed in the form if the user selects _No_ in the _I am 18 years old or older_ field.
 
 ## Additional Information
 
 * [Creating Forms](../../creating-forms.md)
 * [Introduction to Form Rules](./introduction-to-form-rules.md)
 * [Using the Require Rule](./using-the-require-rule.md)
-* [Using the Enable Rule]()
+* [Using the Enable Rule](./using-the-enable-disable-rule.md)
 * [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
 * [Using the Autofill Rule]()
 * [Using the Calculate Rule]()
