@@ -4,7 +4,7 @@ Using _Show_ action allows users to determine whether to show a field if the con
 
 ## Prerequisites
 
-[Create a form](../../creating-forms.md) that has two text fields:
+[Create a form](../../creating-forms.md) that includes these two text fields:
 
 * _I am 18 Years Old or Older_: a required single selection field with two options: _Yes_ and _No_.
 * _Legal Guardian Email Address_: a text field that accepts valid email addresses.
@@ -34,7 +34,7 @@ Now the *Legal Guardian Email Address* field is only displayed in the form if th
 
 * [Creating Forms](../../creating-forms.md)
 * [Introduction to Form Rules](./introduction-to-form-rules.md)
-* [Using the Require Rule]()
+* [Using the Require Rule](./using-the-require-rule.md)
 * [Using the Enable Rule]()
 * [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
 * [Using the Autofill Rule]()
