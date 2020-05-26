@@ -440,7 +440,7 @@ It's time to start the DXP cluster nodes:
 1. Start `dxp-1`:
 
     ```bash
-    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -v ${PWD}/dxp-1/files:/mnt/liferay liferay/portal:7.3.1-ga2
+    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -v ${PWD}/dxp-1/files:/mnt/liferay liferay/portal:7.3.2-ga3
     ```
 
     As DXP finishes stating up, it prints JGroups cluster messages like these to the console:
@@ -474,7 +474,7 @@ It's time to start the DXP cluster nodes:
 1. Start `dxp-2`:
 
     ```bash
-    docker run -it --name dxp-2 --network my-bridge -p 9009:8009 -p 9080:8080 -p 11312:11311 -v ${PWD}/dxp-2/files:/mnt/liferay liferay/portal:7.3.1-ga2
+    docker run -it --name dxp-2 --network my-bridge -p 9009:8009 -p 9080:8080 -p 11312:11311 -v ${PWD}/dxp-2/files:/mnt/liferay liferay/portal:7.3.2-ga3
     ```
 
     As the `dxp-2` node starts, the `dxp-1` prints cluster messages like these to the console:
@@ -503,9 +503,9 @@ You can match the container ID with the DXP container using the `docker containe
 
 ```bash
 $ docker container ls -a | grep dxp-1
-0335b3568fa1        liferay/portal:7.3.1-ga2       "/bin/sh -c /usr/loc…"   About an hour ago   Up About an hour (healthy)   8000/tcp, 8009/tcp, 11311/tcp, 0.0.0.0:8080->8080/tcp   dxp-1
+0335b3568fa1        liferay/portal:7.3.2-ga3       "/bin/sh -c /usr/loc…"   About an hour ago   Up About an hour (healthy)   8000/tcp, 8009/tcp, 11311/tcp, 0.0.0.0:8080->8080/tcp   dxp-1
 $ docker container ls -a | grep dxp-2
-aa547271b4d3        liferay/portal:7.3.1-ga2       "/bin/sh -c /usr/loc…"   43 minutes ago      Up 43 minutes (healthy)      8000/tcp, 8009/tcp, 11311/tcp, 0.0.0.0:9080->8080/tcp   dxp-2
+aa547271b4d3        liferay/portal:7.3.2-ga3       "/bin/sh -c /usr/loc…"   43 minutes ago      Up 43 minutes (healthy)      8000/tcp, 8009/tcp, 11311/tcp, 0.0.0.0:9080->8080/tcp   dxp-2
 ```
 
 Test server failover by stopping that DXP container. For example, if the browser is using the `dxp-1` container, stop that container.
