@@ -21,9 +21,7 @@ To configure the Jump to Page Rule:
 1. Click the _Rules_ tab.
 1. Click the Add (![Add](../../../../../images/icon-add.png)) button.
 1. Select _First Camper?_ from the _If_ dropdown menu.
-1. Select _Is equal to_ from the second dropdown menu.
-1. Select _Value_ from the third dropdown menu.
-1. Select _No_ from the last dropdown menu.
+1. Create the condition: _Is equal to_ &rarr; _Value_ &rarr; _No_.
 1. Select _Jump to Page_ from the _Do_ dropdown menu.
 1. Select the _Success_ page to bypass the _New Camper Information_ page.
 

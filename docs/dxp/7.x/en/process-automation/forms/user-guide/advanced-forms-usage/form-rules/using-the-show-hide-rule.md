@@ -35,5 +35,5 @@ The _Legal Guardian Email Address_ field is only displayed in the form if the us
 * [Using the Require Rule](./using-the-require-rule.md)
 * [Using the Enable Rule](./using-the-enable-disable-rule.md)
 * [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
-* [Using the Autofill Rule]()
-* [Using the Calculate Rule]()
+* [Using the Autofill Rule](./using-the-autofill-rule.md)
+* [Using the Calculate Rule](./using-the-calculate-rule.md)

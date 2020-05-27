@@ -63,3 +63,9 @@ The following Actions are available:
 ## Additional Information
 
 * [Creating Forms](../../creating-forms.md)
+* [Using the Show-Hide Rule](./using-the-show-hide-rule.md)
+* [Using the Require Rule](./using-the-require-rule.md)
+* [Using the Enable Rule](./using-the-enable-disable-rule.md)
+* [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
+* [Using the Autofill Rule](./using-the-autofill-rule.md)
+* [Using the Calculate Rule](./using-the-calculate-rule.md)
