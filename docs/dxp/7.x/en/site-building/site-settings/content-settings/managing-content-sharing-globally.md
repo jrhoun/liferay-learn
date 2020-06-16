@@ -1,6 +1,6 @@
-# Managing Content Sharing Globally
+# Managing Content Sharing Across Sites
 
-You can enable content sharing for a Site through the [configuration settings](./advanced-site-settings.md#content-sharing). You can control this globally as well. Follow these steps:
+You can enable content sharing for a Site through the [configuration settings](../site-settings-ui-reference.md#advanced). You can control this globally as well. Follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* 
 1. Select *Sharing* under the Content and Data heading 

@@ -14,4 +14,4 @@ Follow these steps to modify a localizable field:
 
 ![Enter the new value for the selected language.](./modifying-localizable-site-fields/images/03.png)
 
-Liferay Portal automatically saves the translation for each language and displays the translated value when that specific language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field is displayed.
+Liferay DXP automatically saves the translation for each language and displays the translated value when that specific language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field is displayed.
