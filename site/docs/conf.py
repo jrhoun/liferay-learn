@@ -22,13 +22,7 @@ html_show_sphinx = False
 html_static_path = ["_static"]
 html_theme = "basic"
 html_title = "Liferay Learn"
-
-# Set the language by using the last 2 characters of the project directory
-
-parent_dir_path, parent_dir_name = os.path.split(os.path.dirname(__file__))
-
-language = parent_dir_name
-
+language = "en"
 locale_dirs = ["_locale"]
 master_doc = "contents"
 notfound_no_urls_prefix = True
