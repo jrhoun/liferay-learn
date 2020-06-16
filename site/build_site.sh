@@ -26,8 +26,6 @@ function parse_args_generate_sphinx_input {
     dxp_default_version="7.x"
     dxp_cloud_default_version="latest"
 
-	  language="en"
-
     # These 4 lines stolen from the function I replaced: clean the build folder, call some other scripts, come back to the site folder
 
     rm -fr build
