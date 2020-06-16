@@ -34,9 +34,9 @@
 
 {% macro getLanguageLabel(language_code) -%}
 	{% if language_code == 'ja' %}
-		{% trans %}Japanese{% endtrans %}
+		日本語
 	{% else %}
-		{% trans %}English{% endtrans %}
+		English
 	{% endif %}
 {%- endmacro %}
 
@@ -87,9 +87,16 @@
 
 				<div class="doc-nav-footer">
 					<div class="dropdown dropdown-action">
-						<button aria-expanded="false" aria-haspopup="true" class="btn btn-unstyled" data-toggle="dropdown"
-							id="languageSelector" type="button">
-							<svg class="lexicon-icon" focusable="false" role="presentation" viewBox="0 0 512 512">
+						<button
+							aria-expanded="false"
+							aria-haspopup="true"
+							class="btn btn-unstyled"
+							data-toggle="dropdown"
+							id="languageSelector"
+							type="button"
+						>
+							<svg class="lexicon-icon" focusable="false" role="presentation"
+							viewBox="0 0 512 512">
 								<use xlink:href="#language" />
 							</svg>
 
@@ -97,13 +104,11 @@
 						</button>
 
 						<ul aria-labelledby="languageSelector" class="dropdown-menu">
-							{% for language_code in available_languages %}
 							<li>
-								<a class="dropdown-item" href="/{{ product_name }}/{{ product_version }}/{{ language_code }}/index.html">
-									{{ getLanguageLabel(language_code) }}
+								<a class="dropdown-item" href="/{{ product_name }}/{{ product_version }}/en/index.html">
+									{{ getLanguageLabel('en') }}
 								</a>
 							</li>
-							{% endfor %}
 						</ul>
 					</div>
 				</div>
