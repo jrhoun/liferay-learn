@@ -24,21 +24,19 @@ Users can enable a workflow for [buyers and sellers](../../../orders-and-fulfill
 
 Users can set the [Shipping Tax Category](../../../store-administration/configuring-taxes/creating-tax-categories.md), the Price Type, and the Discount Target Price Type.
 
-For _Price Type_, users can determine whether a price list or promotion is calculated using the gross price or the net price.
-
-For _Discounts Target_, users can determine whether applicable discounts are calculated based on the product's gross price or net price.
+For _Price Type_, users can determine whether product prices are displayed with either tax included (gross price) or tax excluded (net price).
 
 ![The Prices tab is where the tax categories and prices are set.](./channels-reference-guide/images/03.png)
 
 ### Health Checks
 
-Health checks allow users to quickly fix any issues with their store sites, such as missing widgets.
+Health checks allow users to quickly fix any common setup issues with their store sites, such as missing widgets that are required to have a functioning store.
 
 ![Health checks allow you to quickly add Commerce portlets or fix issues if you had built the site manually.](./channels-reference-guide/images/04.png)
 
 ### Payment Methods
 
-Users can configure which [payment methods](../../../store-administration/configuring-payment-methods/managing-payment-methods.md) to use for the store. In addition, users can use a [custom payment engine](../../../developer-guide/tutorials/implementing-a-new-payment-method.md).
+Users can configure which [payment methods](../../../store-administration/configuring-payment-methods/managing-payment-methods.md) to use for the channel. In addition, users can use a [custom payment engine](../../../developer-guide/tutorials/implementing-a-new-payment-method.md).
 
 ![The Payment Methods section allows you to choose which payment method to use.](./channels-reference-guide/images/05.png)
 
@@ -46,13 +44,15 @@ Users can configure which [payment methods](../../../store-administration/config
 
 Users can configure the channel's shipment methods. By default, the [flat rate](../../../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) is enabled. Users can also enable a [variable rate](../../../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) shipping method. Subscribers can also enable [FedEx](../../../store-administration/configuring-shipping-methods/using-the-fedex-shipping-method.md).
 
+[//]: # (NOTE: by default the flat rate shipping method is not enabled and FedEx is not only available for subscribers. The above paragraph needs to be revised.)
+
 Lastly, users can use a [custom shipping engine](../../../developer-guide/tutorials/implementing-a-new-shipping-engine.md).
 
 ![The Shipment Methods section allows you to choose which shipment method to use.](./channels-reference-guide/images/06.png)
 
 ### Tax Calculations
 
-Users can configure the channel's tax calculations. Upon creation, Tax Calculations are inactive. To learn more activating them, see [Setting Tax Rate by Address](../../../store-administration/configuring-taxes/setting-tax-rate-by-address.md) or [Setting Tax Rate by Fixed Rate](../../../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+Users can configure the channel's tax calculations. To learn more activating them, see [Setting Tax Rate by Address](../../../store-administration/configuring-taxes/setting-tax-rate-by-address.md) or [Setting Tax Rate by Fixed Rate](../../../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
 
 ![Users can configure the channel's tax calculation.](./channels-reference-guide/images/07.png)
 
@@ -64,7 +64,7 @@ A channel can be connected to a DXP site. Alternately, a channel can be connecte
 
 ## Notification Queue
 
-Liferay Commerce can be configured to send email notifications that are triggered by a variety of store events. When an event triggers a notification (for example, an order is placed), the notification is logged in the channel's _Notification Queue_ tab. By default, the Liferay Commerce instance checks whether a notification has been sent every 15 minutes and deletes any unsent notifications after 43200 minutes (30 days).
+Liferay Commerce can be configured to send email notifications that are triggered by a variety of events. When an event triggers a notification (for example, an order is placed), the notification is logged in the channel's _Notification Queue_ tab. By default, the Liferay Commerce instance checks whether a notification has been sent every 15 minutes and deletes any unsent notifications after 43200 minutes (30 days).
 
 See the [Configuring the Commerce Notification Queue](../../../store-administration/sending-emails/configuring-the-commerce-notification-queue.md) article for more information.
 
@@ -72,7 +72,7 @@ See the [Configuring the Commerce Notification Queue](../../../store-administrat
 
 Notification Templates allow users to customize their email notifications and define the triggering events.
 
-To learn more about sending store emails notifications, see [Store emails](../../../store-administration/sending-emails/store-emails.md).
+To learn more about sending emails notifications, see [Store emails](../../../store-administration/sending-emails/store-emails.md).
 
 To learn more about creating and using notification templates, see [Using Notification Templates](../../../store-administration/sending-emails/using-notification-templates.md).
 
@@ -80,13 +80,14 @@ To learn more about creating and using notification templates, see [Using Notifi
 
 ## Category Display Pages
 
-The Category Display Pages tab displays the list of all Category Display pages created on the store site. A _Category Display Page_ allow users to substitute a specific DXP site page that displays all products tagged with a certain Category. Users should first create [product categories](../products/organizing-your-catalog-with-product-categories.md), associate them with the desired products, and then create the pages.
+The Category Display Pages tab displays the list of all Category Display pages created on the store site. A _Category Display Page_ allow users to substitute a specific DXP site page that displays all products in a given Category. Users should first create [product categories](../products/organizing-your-catalog-with-product-categories.md), associate them with the desired products, and then create the pages.
 
 To learn more about creating DXP site pages, see [Creating Pages](https://learn.liferay.com/dxp/7.x/en/site-building/creating_pages.html). To learn more about creating Tags and Categories in general, see [Tags and Categories](https://learn.liferay.com/dxp/7.x/en/content-authoring-and-management/tags_and_categories.html).
 
 ```note::
    The Minium accelerator generates this tab. If creating the channel manually, this tab appears once there are Category Display Pages.
 ```
+[//]: # (NOTE: 1. Minium doesn't "generate" the tab -- it exists because there is already a page with the category content widget on it. 2. our docs feel very specific to Minium when we call these "Minium-specific" behaviors out and it feels oddly specific.)
 
 ## Product Display Pages
 
@@ -95,16 +96,21 @@ Product Display Pages operate on a similar premise to Category Display Pages; us
 ```note::
    The Minium accelerator generates this tab. If creating the channel manually, this tab appears once there are Product Display Pages.
 ```
+[//]: # (NOTE: Same note here as above about category display pages and oddly-specific notes)
 
 ## Payment Restrictions
 
 Users can configure which payment methods are _excluded_ for a specific country. To do so, at least one [payment methods](../../../store-administration/configuring-payment-methods/managing-payment-methods.md) must be activated. Check the boxes for each country so that accounts from that country cannot use that payment method.
+
+[//]: # (NOTE: The logic for restrictions is to restrict based on the buyer's billing country. If no billing country exists, then it checks the shipping country.)
 
 ![Payment Restrictions](./channels-reference-guide/images/08.png)
 
 ## Shipping Restrictions
 
 Users can configure which shipment methods are _excluded_ for a specific country.
+
+[//]: # (NOTE: The logic for restrictions is to restrict based on the buyer's shipping country)
 
 ![Shipment Restrictions](./channels-reference-guide/images/09.png)
 
