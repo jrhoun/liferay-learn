@@ -24,7 +24,7 @@ With these tools and resources, you can track project activities, configure serv
 
 With Liferay DXP Cloud’s built-in monitoring, you can track resources used by each environment service. These application metrics include memory and CPU usage, as well as network data transfer.
 
-Metrics are available for the default DXP Cloud stack services: Webserver, Liferay, Search, Database, and Backup. Ci metrics are also available in the infra environment.
+Metrics are available for the default DXP Cloud stack services: Webserver, Liferay, Search, Database, and Backup. CI metrics are also available in the `infra` environment.
 
 ![Figure 1: View application metrics via the Monitoring page in the DXP Cloud console](./tracking-dxp-cloud-status-and-getting-help/images/01.png)
 
@@ -46,9 +46,9 @@ See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more info
 
 Within each environment, activities are organized into two sections: *Builds and Deployments* and *General Activities*.
 
-**Builds and Deployments**: This section lists all build, deployment, and ci related activities in a project environment. Each entry includes a Build ID, start time, duration, and status (e.g., in process, successful, failed, interrupted).
+**Builds and Deployments**: This section lists all build, deployment, and CI related activities in a project environment. Each entry includes a Build ID, start time, duration, and status (e.g., in process, successful, failed, interrupted).
 
-**General Activities**: This section lists automated service events and manual team member activities other than build, deployment, and ci activities. General activities include the following categories: Services, Settings, Backup, Scaling, and Membership.
+**General Activities**: This section lists automated service events and manual team member activities other than build, deployment, and CI activities. General activities include the following categories: Services, Settings, Backup, Scaling, and Membership.
 
 ![Figure 3: View environment activities from the DXP Cloud console](./tracking-dxp-cloud-status-and-getting-help/images/03.png)
 
@@ -60,9 +60,9 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Application, status, and build logs are provided for each DXP Cloud Service:
 
-* Application Logs: These logs list runtime information generated after the application is running and accessed by users.
-* Status Logs: These logs list orchestration layer information from the Kubernetes cluster.
-* Build Logs: These logs list build information generated as the application boots up.
+* **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+* Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
+* **Build Logs**: These logs list build information generated as the application boots up.
 
 ![Figure 4: View logs via the Logs page in the DXP Cloud console](./tracking-dxp-cloud-status-and-getting-help/images/04.png)
 
