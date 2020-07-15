@@ -2,7 +2,7 @@
 
 > Commerce 2.1+
 
-This article provides an overview to the Channels management inferface. To create a channel, see [Managing Channels](./managing-channels.md).
+This article provides an overview to the Channels management interface. To create a channel, see [Managing Channels](./managing-channels.md).
 
 ## General
 
@@ -42,9 +42,7 @@ Users can configure which [payment methods](../../../store-administration/config
 
 ### Shipping Methods
 
-Users can configure the channel's shipment methods. By default, the [flat rate](../../../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) is enabled. Users can also enable a [variable rate](../../../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) shipping method. Subscribers can also enable [FedEx](../../../store-administration/configuring-shipping-methods/using-the-fedex-shipping-method.md).
-
-[//]: # (NOTE: by default the flat rate shipping method is not enabled and FedEx is not only available for subscribers. The above paragraph needs to be revised.)
+Users can configure the channel's shipment methods. There are three methods available: using a [flat rate](../../../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md), a [variable rate](../../../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) or [FedEx](../../../store-administration/configuring-shipping-methods/using-the-fedex-shipping-method.md).
 
 Lastly, users can use a [custom shipping engine](../../../developer-guide/tutorials/implementing-a-new-shipping-engine.md).
 
@@ -84,33 +82,19 @@ The Category Display Pages tab displays the list of all Category Display pages c
 
 To learn more about creating DXP site pages, see [Creating Pages](https://learn.liferay.com/dxp/7.x/en/site-building/creating_pages.html). To learn more about creating Tags and Categories in general, see [Tags and Categories](https://learn.liferay.com/dxp/7.x/en/content-authoring-and-management/tags_and_categories.html).
 
-```note::
-   The Minium accelerator generates this tab. If creating the channel manually, this tab appears once there are Category Display Pages.
-```
-[//]: # (NOTE: 1. Minium doesn't "generate" the tab -- it exists because there is already a page with the category content widget on it. 2. our docs feel very specific to Minium when we call these "Minium-specific" behaviors out and it feels oddly specific.)
-
 ## Product Display Pages
 
 Product Display Pages operate on a similar premise to Category Display Pages; users can create a specific site page to highlight a specific product instead of the default Catalog page. On the _Product Display Pages_ tab, users can view the list of all Product Display Pages created on the site.
 
-```note::
-   The Minium accelerator generates this tab. If creating the channel manually, this tab appears once there are Product Display Pages.
-```
-[//]: # (NOTE: Same note here as above about category display pages and oddly-specific notes)
-
 ## Payment Restrictions
 
-Users can configure which payment methods are _excluded_ for a specific country. To do so, at least one [payment methods](../../../store-administration/configuring-payment-methods/managing-payment-methods.md) must be activated. Check the boxes for each country so that accounts from that country cannot use that payment method.
-
-[//]: # (NOTE: The logic for restrictions is to restrict based on the buyer's billing country. If no billing country exists, then it checks the shipping country.)
+Users can configure which payment methods are _excluded_ based on the buyer's billing country. (If no billing country is listed, then Liferay Commerce checks for the shipping country.) To do so, at least one [payment methods](../../../store-administration/configuring-payment-methods/managing-payment-methods.md) must be activated. Check the boxes for each country so that accounts from that country cannot use that payment method.
 
 ![Payment Restrictions](./channels-reference-guide/images/08.png)
 
 ## Shipping Restrictions
 
-Users can configure which shipment methods are _excluded_ for a specific country.
-
-[//]: # (NOTE: The logic for restrictions is to restrict based on the buyer's shipping country)
+Users can configure which shipment methods are _restricted_ based on the buyer's shipping country.
 
 ![Shipment Restrictions](./channels-reference-guide/images/09.png)
 
