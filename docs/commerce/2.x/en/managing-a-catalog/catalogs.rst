@@ -6,8 +6,8 @@ Catalogs
 
    catalogs/creating-a-new-catalog.md
    catalogs/configuring-a-product-placeholder-image.md
-   catalogs/setting-catalog-permissions.md
-   
+   catalogs/configuring-catalog-permissions.md
+
 
 .. include:: /managing-a-catalog/catalogs/README.rst
    :start-line: 2
