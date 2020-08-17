@@ -1,12 +1,12 @@
-# Setting Catalog Permissions
+# Configuring Catalog Permissions
 
-Users can set permissions for the entire catalog. Although users cannot set permissions for individual products, they can instead [use channels](../creating-and-managing-products/channels/introduction-to-channels.md) to display specific products to specific customers.
+Users with the administrator role can configure a Catalog's permissions.
 
-Setting a Catalog's permissions require access to the Control Panel. A user's role must have the necessary permissions to do so; to define a user's permission, see [Defining Role Permissions](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html).
+Although users cannot configure permissions for individual products, they can instead [use channels](../creating-and-managing-products/channels/introduction-to-channels.md) to display specific products to specific customers.
 
-## Assigning the Necessary Permissions
+## Creating a Catalog Manager Role
 
-Users can [create a custom role](../../account-management) or modify an existing Role.
+Instead of having multiple users with administrator-level permissions, you can create [create a custom account role](../../account-management/creating-a-custom-account-role.md) or modify an existing Role to manage only Catalogs and Products. This Role will have at minium access to the _Control Panel_ and _Commerce_-related permissions. To learn more about defining a user's permission, see [Defining Role Permissions](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html).
 
 To define Permissions for a new Catalog Manager Role:
 
@@ -22,17 +22,17 @@ To define Permissions for a new Catalog Manager Role:
 1. Click _Define Permissions_.
 1. Click the _Control Panel_ &rarr; _Commerce_ to expand the dropdown menu.
 
-    ![Navigate to Commerce Catalogs Permissions.](./setting-catalog-permissions/images/03.png)
+    ![Navigate to Commerce Catalogs Permissions.](./configuring-catalog-permissions/images/03.png)
 
 1. Click _Catalogs_.
 1. Select the desired Permissions; at the very least, all _General Permissions_ and _Resource Permissions_.
 
-    ![Select Catalogs Permissions.](./setting-catalog-permissions/images/04.png)
+    ![Select Catalogs Permissions.](./configuring-catalog-permissions/images/04.png)
 
 1. Click _Save_.
 1. Click the _Products_ dropdown menu.
 
-    ![Navigate to Commerce Products Permissions.](./setting-catalog-permissions/images/05.png)
+    ![Navigate to Commerce Products Permissions.](./configuring-catalog-permissions/images/05.png)
 
 1. Select the desired Permissions; at the very least, all _General Permissions_ and _Resource Permissions_.
 1. Click _Save_ when finished.
@@ -41,16 +41,16 @@ The new Catalog Manager role received the minimum connections to view the Catalo
 
 ## Configuring a Catalog's Permissions
 
-Follow the steps below to set a catalog's permissions:
+Follow the steps below to configure a catalog's permissions:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Catalogs_.
 1. Click the (![3-dot icon](../../images/icon-actions.png)) then _Permissions_.
 
-    ![Users can edit Permissions.](./setting-catalog-permissions/images/01.png)
+    ![Users can edit Permissions.](./configuring-catalog-permissions/images/01.png)
 
-1. Click the desired permissions for the applicable roles.
+1. Check the boxes next the desired permissions for the applicable roles.
 
-    ![Select the desired permissions.](./setting-catalog-permissions/images/02.png)
+    ![Select the desired permissions.](./configuring-catalog-permissions/images/02.png)
 
 1. Click _Save_ when finished.
 
