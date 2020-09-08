@@ -1,6 +1,14 @@
 # API Parameters Reference
 
-This article documents the available parameters you can use when making Headless API requests.
+This article documents the available parameters you can use when making Headless API requests:
+
+* [`fields`](#fields)
+* [`filter`](#filter)
+* [`flatten`](#flatten)
+* [`page`](#page)
+* [`pageSize`](#pageSize)
+* [`search`](#search)
+* [`sort`](#sort)
 
 ## `fields`
 
