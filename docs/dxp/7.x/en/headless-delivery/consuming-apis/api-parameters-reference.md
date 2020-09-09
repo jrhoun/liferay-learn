@@ -6,7 +6,7 @@ This article documents the available parameters you can use when making Headless
 * [`filter`](#filter)
 * [`flatten`](#flatten)
 * [`page`](#page)
-* [`pageSize`](#pageSize)
+* [`pageSize`](#pagesize)
 * [`search`](#search)
 * [`sort`](#sort)
 
@@ -17,43 +17,43 @@ Reduces the amount of information included in each returned item – only the in
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name,organizationContactInformation.emailAddresses'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name,organizationContactInformation.emailAddresses'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations {
-      actions
-      items {
-        id
-        name
-        organizationContactInformation {
-          emailAddresses {
-            emailAddress
-            id
-            primary
-            type
-          }
+```
+query {
+  organizations {
+    actions
+    items {
+      id
+      name
+      organizationContactInformation {
+        emailAddresses {
+          emailAddress
+          id
+          primary
+          type
         }
       }
-      lastPage
-      page
-      pageSize
-      totalCount
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 
-  ```note::
-  The desired fields are always specified in GraphQL, so there's no specific "fields" parameter to pass.
-  ```
+```note::
+The desired fields are always specified in GraphQL, so there's no specific "fields" parameter to pass.
+```
 </div>
 
 ### Example Response
@@ -84,31 +84,31 @@ Reduces the number of items returned, by faceted search.
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&filter=contains(name,%27America%27)'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&filter=contains(name,%27America%27)'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations (flatten: true, filter: "contains(name, 'America')") {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```
+query {
+  organizations (flatten: true, filter: "contains(name, 'America')") {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
@@ -139,31 +139,31 @@ Allows retrieving items outside of their hierarchical structure.
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+  <a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations (flatten: true) {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```
+query {
+  organizations (flatten: true) {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
@@ -209,31 +209,31 @@ Selects which subset of items should be returned, by page number (i.e. selects i
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&page=2&pageSize=5'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&page=2&pageSize=5'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations (flatten: true, page: 2, pageSize: 5) {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```
+query {
+  organizations (flatten: true, page: 2, pageSize: 5) {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
@@ -264,31 +264,31 @@ Selects how many items should be returned in a single response.
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&pageSize=5'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&pageSize=5'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
 
-  ```query {
-    organizations (flatten: true, pageSize: 5) {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```query {
+  organizations (flatten: true, pageSize: 5) {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
@@ -328,31 +328,31 @@ Reduces the number of items returned, by simple keyword search.
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&search=America'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&search=America'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations (flatten: true, search: "America") {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```
+query {
+  organizations (flatten: true, search: "America") {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
@@ -383,31 +383,31 @@ Modifies the order in which items are returned (and, if more than `pageSize` ite
 ### Example Request
 
 <div class="toggle headless">
-  OpenAPI Example | <a href="#" onclick="toggleVisible('graphql')">GraphQL Example</a>
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
 
-  ```
-  curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&sort=name:asc'
-  ```
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?fields=id,name&flatten=true&sort=name:asc'
+```
 </div>
 
 <div class="toggle graphql d-none">
-  <a href="#" onclick="toggleVisible('headless')">OpenAPI Example</a> | GraphQL Example
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
-  ```
-  query {
-    organizations (flatten: true, sort: "name:asc") {
-      actions
-      items {
-        id
-        name
-      }
-      lastPage
-      page
-      pageSize
-      totalCount
+```
+query {
+  organizations (flatten: true, sort: "name:asc") {
+    actions
+    items {
+      id
+      name
     }
+    lastPage
+    page
+    pageSize
+    totalCount
   }
-  ```
+}
+```
 </div>
 
 ### Example Response
