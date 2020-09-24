@@ -205,7 +205,7 @@ query {
 
 ## `page`
 
-Selects which subset of items should be returned, by page number (i.e. selects items pageSize * page + 1 to pageSize * page + page).
+Selects which subset of items should be returned, by page number. For example, for 20 total elements and `pageSize=5`, passing `page=3` would yield the 11th through 15th elements.
 
 ### Example Request
 
@@ -260,7 +260,7 @@ query {
 
 ## `pageSize`
 
-Selects how many items should be returned in a single response.
+Selects how many items should be returned in a single response, that is, the number of elements in each page.
 
 ### Example Request
 
