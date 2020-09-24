@@ -276,7 +276,8 @@ curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organi
 <a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
 
 
-```query {
+```
+query {
   organizations (flatten: true, pageSize: 5) {
     actions
     items {
