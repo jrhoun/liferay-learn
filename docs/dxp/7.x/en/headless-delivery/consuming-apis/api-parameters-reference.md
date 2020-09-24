@@ -378,7 +378,7 @@ query {
 
 ## `sort`
 
-Modifies the order in which items are returned (and, if more than `pageSize` items exist, determines which items are returned in a given page).
+Modifies the order in which items are returned (and, if more than [`pageSize`](#pagesize) items exist, determines which items are returned in a given page).
 
 ### Example Request
 
