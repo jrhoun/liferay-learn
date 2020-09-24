@@ -7,12 +7,13 @@ This article documents the available parameters you can use when making Headless
 * [`flatten`](#flatten)
 * [`page`](#page)
 * [`pageSize`](#pagesize)
+* [`restrictFields`](#restrictfields)
 * [`search`](#search)
 * [`sort`](#sort)
 
 ## `fields`
 
-Reduces the amount of information included in each returned item – only the indicated fields are included.
+Reduces the amount of information included in each returned item – only the indicated fields are included. (See also [`restrictFields`](#restrictfields) for the opposite functionality.)
 
 ### Example Request
 
@@ -52,7 +53,7 @@ query {
 ```
 
 ```note::
-The desired fields are always specified in GraphQL, so there's no specific "fields" parameter to pass.
+The desired fields are always specified in GraphQL, so there's no specific "fields" or "restrictFields" parameter to pass.
 ```
 </div>
 
@@ -318,6 +319,92 @@ curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organi
   "page" : 1,
   "pageSize" : 5,
   "totalCount" : 7
+}
+```
+
+## `restrictFields`
+
+Reduces the amount of information included in each returned item – the indicated fields are excluded. (See also [`fields`](#fields) for the opposite functionality.)
+
+### Example Request
+
+<div class="toggle headless">
+OpenAPI Example | <a href="#" onclick="return toggleVisible('graphql');">GraphQL Example</a>
+
+```
+curl --user test@liferay.com:test 'example.com/o/headless-admin-user/v1.0/organizations?restrictFields=actions,comment,customFields,dateCreated,dateModified,keywords,location,numberOfOrganizations,organizationContactInformation.telephones,services'
+```
+</div>
+
+<div class="toggle graphql d-none">
+<a href="#" onclick="return toggleVisible('headless');">OpenAPI Example</a> | GraphQL Example
+
+```
+query {
+  organizations {
+    actions
+    items {
+      id
+      name
+      organizationContactInformation {
+        emailAddresses {
+          emailAddress
+          id
+          primary
+          type
+        }
+        postalAddresses {
+          addressCountry
+          addressLocality
+          addressRegion
+          addressType
+          id
+          postalCode
+          primary
+          streetAddressLine1
+          streetAddressLine2
+          streetAddressLine3
+        }
+        webUrls {
+          id
+          url
+          urlType
+        }
+      }
+    }
+    lastPage
+    page
+    pageSize
+    totalCount
+  }
+}
+```
+
+```note::
+The desired fields are always specified in GraphQL, so there's no specific "fields" or "restrictFields" parameter to pass.
+```
+</div>
+
+### Example Response
+
+```
+{
+  "actions" : {
+    ...
+  },
+  "items" : [ {
+    "id" : "35920",
+    "name" : "The Earth",
+    "organizationContactInformation" : {
+      "emailAddresses" : [ ],
+      "postalAddresses" : [ ],
+      "webUrls" : [ ]
+    }
+  } ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 1
 }
 ```
 
