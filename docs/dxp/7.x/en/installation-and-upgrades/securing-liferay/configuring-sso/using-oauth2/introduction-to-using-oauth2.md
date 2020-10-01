@@ -18,7 +18,7 @@ Here's how OAuth 2.0 works:
 
 1. A user accesses a third-party application that supports authorization via credentials from a Liferay-based website. In the application (web or mobile), the user requests authorization via OAuth, sending the browser or app to the Liferay-based website. When using _PKCE_ (explained below), the application also generates a code verifier and sends a code challenge that is created by applying a transformation to it.
 
-1. The user authenticates and is shown the resources the application wants permission to access. When the user gives permission by clicking *Allow*, Liferay generates an authorization code that's sent to the application over HTTPS.
+1. The user authenticates and is shown the resources the application wants permission to access. When the user gives permission by clicking _Allow_, Liferay generates an authorization code that's sent to the application over HTTPS.
 
 1. The application then requests a more permanent authorization token and sends the code with the request (along with the _PKCE_ code verifier).
 
@@ -38,7 +38,7 @@ That description throws around a lot of terms. Definitions provided below.
 
 **Application:** Any client (web, mobile, etc.) that must be authorized to have access to resources. Applications must be registered by administrators before users can authorize access to their resources.
 
-**Client:** Almost synonymous with *application*, except that applications can have variants, such as web and mobile. These variants are clients.
+**Client:** Almost synonymous with _application_, except that applications can have variants, such as web and mobile. These variants are clients.
 
 **Client ID:** An identifier given to a client so it can be recognized.
 
@@ -46,7 +46,7 @@ That description throws around a lot of terms. Definitions provided below.
 
 **Access Token:** A cryptographically generated text string that identifies a user/client combination for access to that User's resources.
 
-**Response Type:** OAuth 2.0 supports several response types. Pictured and described above is the most common: the authorization code. Other response types are *password* (logging in with a user name and password), and *client credentials* (headless predefined application access).
+**Response Type:** OAuth 2.0 supports several response types. Pictured and described above is the most common: the authorization code. Other response types are _password_ (logging in with a user name and password), and _client credentials_ (headless predefined application access).
 
 **Scope:** A list of items that define what the application wants to access. This list is sent during the initial authorization request (or otherwise defaults to scopes selected in the application registration) so users can grant or deny access to their resources.
 

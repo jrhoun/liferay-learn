@@ -13,7 +13,7 @@ To create a new Site, follow these steps:
 1. Click the Add icon (![Add Icon](../images/icon-add.png)) at the top right of the page.
 1. Select a _Site Template_.
 
-   ![Select a Site Template](./creating-your-first-site/images/02.png)
+    ![Select a Site Template](./creating-your-first-site/images/02.png)
 
 1. Click _Community Site_.
 1. Enter a name for the site.

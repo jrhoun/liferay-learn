@@ -35,8 +35,8 @@ Follow these steps to reactivate Liferay Commerce Enterprise:
 
 1. Navigate to the folders below:
 
-    * `${liferay.home}/data/license`
-    * `${liferay.home}/osgi/modules`
+    - `${liferay.home}/data/license`
+    - `${liferay.home}/osgi/modules`
 
 1. Remove any expired Commerce Enterprise activation keys from the directories mentioned above. To know which keys have expired, open any existing `xml` keys `activation-key-commerce-1.xml` and look for the `<expiration-date>` element that has already passed. For example,
 
@@ -56,4 +56,4 @@ Follow these steps to reactivate Liferay Commerce Enterprise:
 
 ## Additional Information
 
-* [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
+-   [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)

@@ -12,7 +12,7 @@ To configure the Recycle Bin:
 1. Select the site.
 1. Click _Configuration_ &rarr; _Settings_.
 
-   ![Site Configuration Settings](./configuring-the-recycle-bin/images/01.png)
+    ![Site Configuration Settings](./configuring-the-recycle-bin/images/01.png)
 
 1. Click the _Advanced_ tab.
 1. Expand the _Recycle Bin_ dropdown menu.
@@ -27,4 +27,4 @@ The Trash Entries Max Age value must be expressed in minutes. By default, items 
 
 ## What's Next
 
-* [Using the Recycle Bin](./using-the-recycle-bin.md)
+-   [Using the Recycle Bin](./using-the-recycle-bin.md)

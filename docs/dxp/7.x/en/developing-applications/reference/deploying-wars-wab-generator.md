@@ -2,7 +2,7 @@
 
 You can create applications as Java EE-style Web Application ARchive (WAR) artifacts or as Java ARchive (JAR) OSGi bundle artifacts. Bean Portlets, PortletMVC4Spring Portlets, and JSF Portlets must be packaged as WARs because their frameworks expect a WAR layout and require Java EE resources such as the `WEB-INF/web.xml` descriptor.
 
-Liferay provides a way for these WAR-styled plugins to be deployed and treated like OSGi modules by Liferay's OSGi runtime. They can be converted to *WABs*.
+Liferay provides a way for these WAR-styled plugins to be deployed and treated like OSGi modules by Liferay's OSGi runtime. They can be converted to _WABs_.
 
 Liferay DXP supports the OSGi Web Application Bundle (WAB) standard for deployment of Java EE style WARs. A WAB is an archive that has a WAR layout and contains a `META-INF/MANIFEST.MF` file with the `Bundle-SymbolicName` OSGi directive. A WAB is an OSGi bundle. Although the project source has a WAR layout, the artifact filename may end with either the `.jar` or `.war` extension.
 
@@ -14,10 +14,10 @@ The WAB Generator detects packages referenced in the plugin WAR's JSPs, descript
 
 To import a package that is referenced only in the following types of locations, you must add an `Import-Package` OSGi header to the plugin's `WEB-INF/liferay-plugin-package.properties` file and add the package to that header's list of values:
 
-* Unrecognized descriptor file
-* Custom or unrecognized descriptor element or attribute
-* Reflection code
-* Class loader code
+-   Unrecognized descriptor file
+-   Custom or unrecognized descriptor element or attribute
+-   Reflection code
+-   Class loader code
 
 ## WAR versus WAB Structure
 
@@ -25,39 +25,39 @@ The WAB folder structure and WAR folder structure differ. Consider the following
 
 **WAR**
 
-* `my-war-portlet`
-    * `src`
-        * `main`
-            * `java`
-            * `webapp`
-                * `WEB-INF`
-                    * `classes`
-                    * `lib`
-                    * `resources`
-                    * `views`
-                    * `liferay-display.xml`
-                    * `liferay-plugin-package.properties`
-                    * `liferay-portlet.xml`
-                    * `portlet.xml`
-                    * `web.xml`
+-   `my-war-portlet`
+    -   `src`
+        -   `main`
+            -   `java`
+            -   `webapp`
+                -   `WEB-INF`
+                    -   `classes`
+                    -   `lib`
+                    -   `resources`
+                    -   `views`
+                    -   `liferay-display.xml`
+                    -   `liferay-plugin-package.properties`
+                    -   `liferay-portlet.xml`
+                    -   `portlet.xml`
+                    -   `web.xml`
 
 When a WAR-style portlet is deployed to Liferay and processed by the WAB Generator, the portlet's folder structure is transformed.
 
 **WAB**
 
-* `my-war-portlet-that-is-now-a-wab`
-    * `META-INF`
-        * `MANIFEST.MF`
-    * `WEB-INF`
-        * `classes`
-        * `lib`
-        * `resources`
-        * `views`
-        * `liferay-display.xml`
-        * `liferay-plugin-package.properties`
-        * `liferay-portlet.xml`
-        * `portlet.xml`
-        * `web.xml`
+-   `my-war-portlet-that-is-now-a-wab`
+    -   `META-INF`
+        -   `MANIFEST.MF`
+    -   `WEB-INF`
+        -   `classes`
+        -   `lib`
+        -   `resources`
+        -   `views`
+        -   `liferay-display.xml`
+        -   `liferay-plugin-package.properties`
+        -   `liferay-portlet.xml`
+        -   `portlet.xml`
+        -   `web.xml`
 
 The major difference is the addition of the `META-INF/MANIFEST.MF` file. The WAB Generator automatically generates an OSGi-ready manifest file. If you want to affect the content of the manifest file, you can place Bnd directives and OSGi headers directly into your plugin's `liferay-plugin-package.properties` file.
 
@@ -67,7 +67,7 @@ The major difference is the addition of the `META-INF/MANIFEST.MF` file. The WAB
 
 ## Deploying a WAR
 
-To deploy a WAB based on your WAR plugin, copy your WAR plugin to your Liferay instance's `deploy/` folder in your  [`[Liferay Home]`](../../installation-and-upgrades/reference/liferay-home.md).
+To deploy a WAB based on your WAR plugin, copy your WAR plugin to your Liferay instance's `deploy/` folder in your [`[Liferay Home]`](../../installation-and-upgrades/reference/liferay-home.md).
 
 ## Saving a Copy of the WAB
 
@@ -84,5 +84,5 @@ Awesome! You can deploy your WAR plugin as a WAB and you know how to save a copy
 
 ## Additional Information
 
-* [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
-* [Resolving Third Party Library Package Dependencies](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
+-   [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
+-   [Resolving Third Party Library Package Dependencies](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)

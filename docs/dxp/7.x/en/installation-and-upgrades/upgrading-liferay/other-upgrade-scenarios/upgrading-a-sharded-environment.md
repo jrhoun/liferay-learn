@@ -33,7 +33,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
 1. Set the JDBC _default_ connection properties in each server's `portal-upgrade-database.properties` to specify the associated shard.
 
-    * Add the original JDBC properties for the respective non-default shard database. For example, shard `one`'s original properties might start with `jdbc.one`:
+    - Add the original JDBC properties for the respective non-default shard database. For example, shard `one`'s original properties might start with `jdbc.one`:
 
     ```properties
     jdbc.one.driverClassName=[the database driver class name]
@@ -42,7 +42,7 @@ Here is how to configure the upgrade to migrate from sharding:
     jdbc.one.password=[the password]
     ```
 
-    * Rename the properties to start with `jdbc.default`. For example:
+    - Rename the properties to start with `jdbc.default`. For example:
 
     ```properties
     jdbc.default.driverClassName=[the database driver class name]

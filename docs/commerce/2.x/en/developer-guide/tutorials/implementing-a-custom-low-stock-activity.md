@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom low stock activity by implementi
 
 Low stock activities are actions that are automatically taken if products fall below their configured Minimum Stock Quantities. Liferay Commerce provides one [default low stock activity](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java), which is to unpublish the product.
 
-![Out-of-the-box low stock activity](./implementing-a-custom-low-stock-activity/images/01.png "Out-of-the-box low stock activity")
+![Out-of-the-box low stock activity](./implementing-a-custom-low-stock-activity/images/01.png 'Out-of-the-box low stock activity')
 
 ## Overview
 
@@ -50,9 +50,9 @@ In this section, we will get an example low stock activity up and running on you
 
 1. Verify that the example low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, click _Edit_ within the menu for any product. If necessary, you can add a [product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md).
 
-   From there, navigate to _Configuration_. The new activity ("Log a warning message") will be present under the _Low Stock Action_ dropdown.
+    From there, navigate to _Configuration_. The new activity ("Log a warning message") will be present under the _Low Stock Action_ dropdown.
 
-![New low stock activity](./implementing-a-custom-low-stock-activity/images/02.png "New low stock activity")
+![New low stock activity](./implementing-a-custom-low-stock-activity/images/02.png 'New low stock activity')
 
 Congratulations, you've successfully built and deployed a new low stock activity that implements `CommerceLowStockActivity`.
 
@@ -108,8 +108,8 @@ public String getLabel(Locale locale);
 
 The low stock activity is comprised of backend logic to perform the activity itself. Do the following:
 
-* [Add business logic to `execute`.](#add-business-logic-to-execute)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
+-   [Add business logic to `execute`.](#add-business-logic-to-execute)
+-   [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Add Business Logic to `execute`
 
@@ -142,6 +142,6 @@ Congratulations! You now know the basics for implementing the `CommerceLowStockA
 
 ## Additional Information
 
-* [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Low Stock Action](../../managing-a-catalog/managing-inventory/low-stock-action.md)
+-   [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Low Stock Action](../../managing-a-catalog/managing-inventory/low-stock-action.md)

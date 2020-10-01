@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom checkout step by implementing th
 
 A checkout step represents one screen of the checkout process for a customer. Liferay Commerce provides several checkout steps out-of-the-box, including essential steps like [the payment method step](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) and the [order confirmation step](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java).
 
-![Out-of-the-box checkout steps](./implementing-a-custom-checkout-step/images/01.png "Out-of-the-box checkout steps")
+![Out-of-the-box checkout steps](./implementing-a-custom-checkout-step/images/01.png 'Out-of-the-box checkout steps')
 
 ## Overview
 
@@ -50,7 +50,7 @@ In this section, we will get an example checkout step up and running on your ins
 
 1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add an item to the cart, view the cart, and then click "Checkout". The new "Example Step" will be present in the list of checkout steps.
 
-![New checkout step](./implementing-a-custom-checkout-step/images/02.png "New checkout step")
+![New checkout step](./implementing-a-custom-checkout-step/images/02.png 'New checkout step')
 
 Congratulations, you've successfully built and deployed a new checkout step that implements `CommerceCheckoutStep`.
 
@@ -115,11 +115,11 @@ public void render(
 
 The checkout step is comprised of a custom screen and backend logic to process any input. Do the following:
 
-* [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
-* [Implement the `render` method.](#implement-the-render-method)
-* [Add business logic to `processAction`.](#add-business-logic-to-processaction)
-* [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
+-   [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
+-   [Implement the `render` method.](#implement-the-render-method)
+-   [Add business logic to `processAction`.](#add-business-logic-to-processaction)
+-   [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
+-   [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
@@ -175,5 +175,5 @@ Congratulations! You now know the basics for implementing the `CommerceCheckoutS
 
 ## Additional Information
 
-* [Checkout](../../creating-store-content/commerce-storefront-pages/checkout.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Checkout](../../creating-store-content/commerce-storefront-pages/checkout.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

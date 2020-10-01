@@ -10,11 +10,11 @@ Once users begin submitting form entries, you can access the form entry data thr
 
     ![You can view the entries right in the Forms application. ](./managing-form-entries/images/01.png)
 
-1. If the form has multiple fields that do not fit into the window, click the *Actions* (![Actions](../../../images/icon-actions.png)) button next to the entry and select *View*.
+1. If the form has multiple fields that do not fit into the window, click the _Actions_ (![Actions](../../../images/icon-actions.png)) button next to the entry and select _View_.
 
     ![You can view a single entry right in the Forms application.](./managing-form-entries/images/02.png)
 
-1. The _View Form_ page shows the responses from each form page. Click *Next* to advance.
+1. The _View Form_ page shows the responses from each form page. Click _Next_ to advance.
 
     ![Viewing individual responses in the Forms application.](./managing-form-entries/images/03.png)
 
@@ -25,7 +25,7 @@ Once users begin submitting form entries, you can access the form entry data thr
 To export the form entries:
 
 1. Navigate to the Forms application in your site's _Content & Data_ section.
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) button next to the form and select *Export*.
+1. Click the _Actions_ (![Actions](../../../images/icon-actions.png)) button next to the form and select _Export_.
 
     ![Exporting the form entries](./managing-form-entries/images/04.png)
 
@@ -33,7 +33,7 @@ To export the form entries:
 
     ![Select the file type](./managing-form-entries/images/05.png)
 
-1. Click *OK* then open the file or save it locally.
+1. Click _OK_ then open the file or save it locally.
 
 ### Disabling CSV Export
 
@@ -44,14 +44,14 @@ There is a system level setting to determine whether administrators can export e
 1. Click the _Forms_ entry under the _SITE SCOPE_ menu.
 1. The CSV Export property has three options:
 
-    * **Enabled** to enable CSV Export without a warning
-    * **Enabled (Show Warning)** to enable CSV Export with the following warning to administrators:
+    - **Enabled** to enable CSV Export without a warning
+    - **Enabled (Show Warning)** to enable CSV Export with the following warning to administrators:
 
         `This CSV file contains user supplied inputs. Opening a CSV file in a spreadsheet program may be dangerous.`
 
-    * **Disabled** to turn off CSV Export.
+    - **Disabled** to turn off CSV Export.
 
-   ![Configuring the export function](./managing-form-entries/images/06.png)
+    ![Configuring the export function](./managing-form-entries/images/06.png)
 
 1. Select the option to enable or disable the ability to export entries.
 1. Click _Save_ when finished.

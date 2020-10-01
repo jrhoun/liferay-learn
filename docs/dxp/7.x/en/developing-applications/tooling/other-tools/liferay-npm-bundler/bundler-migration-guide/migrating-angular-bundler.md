@@ -32,7 +32,7 @@ Follow these steps to migrate your Angular project to use liferay-npm-bundler 2.
 1. Delete the `.babelrc` file to remove the Babel configuration.
 1. Remove Babel from your `package.json` build process so it matches the configuration below:
 
-    ```json    
+    ```json
     {
       "scripts": {
         "build": "tsc && liferay-npm-bundler"
@@ -41,7 +41,7 @@ Follow these steps to migrate your Angular project to use liferay-npm-bundler 2.
     }
     ```
 
-1. Remove the following Babel dependencies from your `package.json` *devDependencies*:
+1. Remove the following Babel dependencies from your `package.json` _devDependencies_:
 
     ```json
     "babel-cli": "6.26.0",
@@ -52,5 +52,5 @@ Great! Your project is migrated to use liferay-npm-bundler 2.x.
 
 ## Related Information
 
-* [Formatting Your npm Modules for AMD](../how-the-bundler-formats-js-modules.md)
-* [What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1.x-and-2.x.md)
+-   [Formatting Your npm Modules for AMD](../how-the-bundler-formats-js-modules.md)
+-   [What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1.x-and-2.x.md)

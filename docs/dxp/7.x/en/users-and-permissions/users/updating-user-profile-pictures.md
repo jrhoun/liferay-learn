@@ -6,9 +6,9 @@ Users have profile pictures. Administrative Users can upload images in the Edit 
 
 To update a User profile picture follow these steps:
 
-1. Click *My Profile* in the User menu or if you're an administrator, go to *Control Panel* &rarr; *Users and Organizations* and find the User that needs a profile picture.
-1. Click the *Change* button under the generic profile picture.
-1. Select an image from your computer, crop it (if necessary), and then click *Done*.
+1. Click _My Profile_ in the User menu or if you're an administrator, go to _Control Panel_ &rarr; _Users and Organizations_ and find the User that needs a profile picture.
+1. Click the _Change_ button under the generic profile picture.
+1. Select an image from your computer, crop it (if necessary), and then click _Done_.
 
 ![Upload images for user avatars in the Edit User form.](./updating-user-profile-pictures/images/01.png)
 
@@ -22,9 +22,9 @@ If no image is explicitly uploaded for a User's profile picture, a default User 
 
 ### Disable the Use of Initials for the Default User Profile Image
 
-1. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
-1. In the Platform section, click *Users* &rarr; *User Images*.
-1. De-select *Use Initials for Default User Portrait*.
+1. Navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_.
+1. In the Platform section, click _Users_ &rarr; _User Images_.
+1. De-select _Use Initials for Default User Portrait_.
 
 ![If you disable the default initials-based profile picture, this icon is used instead.](./updating-user-profile-pictures/images/03.png)
 
@@ -34,9 +34,9 @@ Now, instead of the default icon, the icon is a generic silhouette.
 
 The default user icon (with the user initials) can be configured to work for your locale. These settings are configured in a [Language Settings module](../../liferay-internals/extending-liferay/adding-a-language.md).
 
-`lang.user.default.portrait=initials` sets the type of icon to use for avatars. The default value is *initials*. If set to initials, the next property configures which initials to display, and in what order. Alternatively, specify *image*, which gives you the same non-initials default image shown above.
+`lang.user.default.portrait=initials` sets the type of icon to use for avatars. The default value is _initials_. If set to initials, the next property configures which initials to display, and in what order. Alternatively, specify _image_, which gives you the same non-initials default image shown above.
 
-`lang.user.initials.fields=first-name,last-name` determines which initials appear in the user portrait and in what order. The setting here only matters if `lang.user.default.portrait` is set to *initials*.  Valid values are `first-name`, `middle-name`, `last-name`, with first and last name as the defaults.
+`lang.user.initials.fields=first-name,last-name` determines which initials appear in the user portrait and in what order. The setting here only matters if `lang.user.default.portrait` is set to _initials_. Valid values are `first-name`, `middle-name`, `last-name`, with first and last name as the defaults.
 
 ### Using a Custom Default Profile Image
 

@@ -68,6 +68,6 @@ You are now including the version of the JAR your WAB requires.
 
 ## Additional Information
 
-* [Exported Third Party Packages](../../liferay-internals/reference/exported-third-party-packages.md)
-* [Configuring Dependencies](../../liferay-internals/fundamentals/configuring-dependencies.md)
-* [Deploying WARs \(WAB Generator\)](./deploying-wars-wab-generator.md)
+-   [Exported Third Party Packages](../../liferay-internals/reference/exported-third-party-packages.md)
+-   [Configuring Dependencies](../../liferay-internals/fundamentals/configuring-dependencies.md)
+-   [Deploying WARs \(WAB Generator\)](./deploying-wars-wab-generator.md)

@@ -15,7 +15,7 @@ There are built-in `AuthVerifier` implementations for the most common situations
 
 ## Authentication Verification Process
 
-To configure Authentication Verifiers, go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security* &rarr; *API Authentication*.
+To configure Authentication Verifiers, go to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Security_ &rarr; _API Authentication_.
 
 ![The Authentication Verifier Configuration Screen](./using-authentication-verifiers/images/01.png)
 
@@ -37,21 +37,21 @@ The resolved user can be the user returned by one of the `AuthVerifier` instance
 
 `AuthVerifier`s are created by developers, and are processed automatically as long as they're registered in the OSGi runtime. This layer and surrounding processes are provided by the `AuthVerifierFilter` class that implements the `javax.servlet.Filter` interface. Configuration for Auth Verifiers that ship with the product include:
 
-* [Basic Auth Header](#basic-auth-header)*
-* [Digest Authentication](#digest-auth-header)
-* [HTTP Tunnel Extender](#http-tunnel-extender)
-* [Image Request](#image-request-authentication-verifier)
-* [Portal Sessions](#portal-sessions-auth-verifiers)*
-* [Request Parameter](#request-parameter)
-* [Tunnel Auth](#tunnel-auth)
+-   [Basic Auth Header](#basic-auth-header)\*
+-   [Digest Authentication](#digest-auth-header)
+-   [HTTP Tunnel Extender](#http-tunnel-extender)
+-   [Image Request](#image-request-authentication-verifier)
+-   [Portal Sessions](#portal-sessions-auth-verifiers)\*
+-   [Request Parameter](#request-parameter)
+-   [Tunnel Auth](#tunnel-auth)
 
-> *Enabled by default and can be used to access remote APIs out-of-the-box.
+> \*Enabled by default and can be used to access remote APIs out-of-the-box.
 
 ### Basic Auth Header
 
 This Auth Verifier allows the remote client to authenticate using [HTTP Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). Configure it by providing URL paths that should be authenticated this way. When _Force Basic Authentication_ field is checked then HTTP Basic Authentication is required.
 
-The default URLs are `/api/*,/xmlrpc*` for web services. The mapping excludes `/api/liferay*` to prevent accessing `TunnelServlet`. For more information please see  Tunnel Authentication Verifiers.
+The default URLs are `/api/*,/xmlrpc*` for web services. The mapping excludes `/api/liferay*` to prevent accessing `TunnelServlet`. For more information please see Tunnel Authentication Verifiers.
 
 ### Digest Auth Header
 

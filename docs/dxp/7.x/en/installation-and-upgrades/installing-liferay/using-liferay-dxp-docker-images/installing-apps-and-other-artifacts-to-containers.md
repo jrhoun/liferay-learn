@@ -4,8 +4,8 @@ Applications and other artifacts (such as [DXP activation keys](../../setting-up
 
 Here are two ways to install artifacts:
 
-* [Installing Artifacts Using a Bind Mount](#installing-artifacts-using-a-bind-mount)
-* [Installing Artifacts Using `docker cp`](#installing-artifacts-using-docker-cp)
+-   [Installing Artifacts Using a Bind Mount](#installing-artifacts-using-a-bind-mount)
+-   [Installing Artifacts Using `docker cp`](#installing-artifacts-using-docker-cp)
 
 ```note::
    A `Docker volume <https://docs.docker.com/storage/volumes/>`_ can also be used to install artifacts to a container.
@@ -55,8 +55,8 @@ Now you know how to install apps and other artifacts to DXP.
 
 ## Additional Information
 
-* [DXP Docker Container Basics](./dxp-docker-container-basics.md)
-* [Providing Files to the Container](./providing-files-to-the-container.md)
-* [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
-* [Configuring DXP Containers](./configuring-dxp-containers.md)
-* [Patching DXP in Docker](./patching-dxp-in-docker.md)
+-   [DXP Docker Container Basics](./dxp-docker-container-basics.md)
+-   [Providing Files to the Container](./providing-files-to-the-container.md)
+-   [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
+-   [Configuring DXP Containers](./configuring-dxp-containers.md)
+-   [Patching DXP in Docker](./patching-dxp-in-docker.md)

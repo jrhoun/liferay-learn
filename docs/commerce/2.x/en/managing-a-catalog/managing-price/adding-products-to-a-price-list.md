@@ -16,8 +16,9 @@ When adding a large number of existing products to a new price list, populate th
 1. Click _Add_.
 1. Click on a product (_Premium Brake Fluid_ in this example).
 1. Enter the following fields:
-    * **Price**: 100
-    * **Promo Price**: 95
+
+    - **Price**: 100
+    - **Promo Price**: 95
 
         ![Adding a product to a price list](./adding-products-to-a-price-list/images/01.png)
 
@@ -49,5 +50,5 @@ The product (_Premium Brake Fluid_) is now added to the price list (_VIP Custome
 
 ## Additional Information
 
-* [Creating a Price List](./creating-a-price-list.md)
-* [Adding Tiered Pricing](./adding-tiered-pricing.md)
+-   [Creating a Price List](./creating-a-price-list.md)
+-   [Adding Tiered Pricing](./adding-tiered-pricing.md)

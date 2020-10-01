@@ -4,9 +4,9 @@ Analytics Cloud can map contact profile fields into a unified customer data mode
 
 Analytics Cloud provides several contact data mapping options:
 
-* Choose the most appropriate data model field—Analytics Cloud suggests possible matches.
-* Add a new custom data model field and map source data to it.
-* Map source fields from multiple data sources to the same data model field.
+-   Choose the most appropriate data model field—Analytics Cloud suggests possible matches.
+-   Add a new custom data model field and map source data to it.
+-   Map source fields from multiple data sources to the same data model field.
 
 ```note::
    If you map source fields from multiple data sources to the same model field, the latest modified value is used.
@@ -20,11 +20,11 @@ Here’s how to create custom contact data model fields:
 
 1. Click on the data model field’s selector.
 
-1. Click *New Field*. A dialog appears for you to create the new field.
+1. Click _New Field_. A dialog appears for you to create the new field.
 
 1. In the dialog, name the new field and select its type.
 
-1. Click *Create*.
+1. Click _Create_.
 
 Your custom model field is ready to match with source fields.
 

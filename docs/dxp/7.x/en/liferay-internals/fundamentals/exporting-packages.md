@@ -28,8 +28,8 @@ Now you can share your module's terrific packages!
 
 ## Additional Information
 
-* [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)
-* [Semantic Versioning](./semantic-versioning.md)
-* [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md)
-* [Blade CLI](../../developing-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
-* [Liferay Developer Studio](../../developing-applications/tooling/developer-studio.md)
+-   [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)
+-   [Semantic Versioning](./semantic-versioning.md)
+-   [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md)
+-   [Blade CLI](../../developing-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
+-   [Liferay Developer Studio](../../developing-applications/tooling/developer-studio.md)

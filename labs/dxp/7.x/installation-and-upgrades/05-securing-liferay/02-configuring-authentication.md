@@ -1,6 +1,6 @@
 # Configuring Authentication
 
-By default, Liferay DXP uses the *Sign In* widget to authenticate users.
+By default, Liferay DXP uses the _Sign In_ widget to authenticate users.
 
 > **Note:** The Sign In widget appears on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
 
@@ -8,12 +8,12 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 
 You can configure other ways of authenticating users and/or applications:
 
-* [LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
-* [SAML](../06-sso/08-saml.md)
-* [Kerberos](../06-sso/05-kerberos.md)
-* [OpenID Connect](../06-sso/02-openid-connect.md)
-* [Token-Based solutions](../06-sso/01-token-based-authentication.md)
-* [OAuth 2.0](../06-sso/07-oauth-2.md)
+-   [LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
+-   [SAML](../06-sso/08-saml.md)
+-   [Kerberos](../06-sso/05-kerberos.md)
+-   [OpenID Connect](../06-sso/02-openid-connect.md)
+-   [Token-Based solutions](../06-sso/01-token-based-authentication.md)
+-   [OAuth 2.0](../06-sso/07-oauth-2.md)
 
 [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
 
@@ -21,11 +21,11 @@ You can configure other ways of authenticating users and/or applications:
 
 Users can be configured to log in using one of three authentication types:
 
-| Authentication Type | Description | Used by Default? |
-| --- | --- | --- |
-| Screen Name | Determined by administrator or user at account creation | No |
-| Email Address | Determined by administrator or user at account creation  | Yes |
-| User ID | Automatically generated when the account is created | No |
+| Authentication Type | Description                                             | Used by Default? |
+| ------------------- | ------------------------------------------------------- | ---------------- |
+| Screen Name         | Determined by administrator or user at account creation | No               |
+| Email Address       | Determined by administrator or user at account creation | Yes              |
+| User ID             | Automatically generated when the account is created     | No               |
 
 > **Note:** Only one authentication type can be used at a time.
 
@@ -36,8 +36,8 @@ _Authentication Type_ can be configured through the Control Panel or a propertie
 ### Configuring Authentication Type Through the Control Panel
 
 1. Navigate to the Control Panel
-1. Click on *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*
-1. Choose an option under the *How do users authenticate?* selector.
+1. Click on _Configuration_ &rarr; _Instance Settings_ &rarr; _Platform_ &rarr; _User Authentication_
+1. Choose an option under the _How do users authenticate?_ selector.
 
     ![Figure 1: You can select from three types of authentication.](./configuring-authentication/images/03.png)
 
@@ -59,9 +59,9 @@ The Sign In widget calls the various mechanisms (the portal database, an LDAP se
 
 To prevent guest users from creating new user accounts:
 
-1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*.
-1. Un-check *Allow strangers to create accounts?*.
-1. Click *Save*.
+1. Navigate to the Control Panel &rarr; _Configuration_ &rarr; _Instance Settings_ &rarr; _Platform_ &rarr; _User Authentication_.
+1. Un-check _Allow strangers to create accounts?_.
+1. Click _Save_.
 
     ![Figure 2: Guests can't create accounts if this box is unchecked.](./configuring-authentication/images/04.png)
 
@@ -69,15 +69,15 @@ To prevent guest users from creating new user accounts:
 
 If users should not be able to reset their own passwords, you can configure this from the same screen:
 
-1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*.
-1. Uncheck *Allow users to request password reset links?*.
-1. Click *Save*.
+1. Navigate to the Control Panel &rarr; _Configuration_ &rarr; _Instance Settings_ &rarr; _Platform_ &rarr; _User Authentication_.
+1. Uncheck _Allow users to request password reset links?_.
+1. Click _Save_.
 
 ### Configuring CAPTCHA or reCAPTCHA
 
 Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCAPTCHA:
 
-1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security Tools* &rarr; *CAPTCHA*.
+1. Navigate to the Control Panel &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Security Tools_ &rarr; _CAPTCHA_.
 
     ![The CAPTCHA configuration screen.](./configuring-authentication/images/02.png)
 
@@ -85,9 +85,9 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 1. Choose a CAPTCHA engine. By default, Simple CAPTCHA is enabled. You can also select Google's reCAPTCHA, which requires you configure the external service separately. If you select reCAPTCHA, supply your public and private key from Google.
 1. The other options allow developers to customize the Simple CAPTCHA engine.
-1. Click *Save* when finished.
+1. Click _Save_ when finished.
 
 ## Additional Information
 
-* [Securing Liferay](./introduction-to-securing-liferay.md)
-* [Securing Web Services](./securing-web-services/securing-web-services)
+-   [Securing Liferay](./introduction-to-securing-liferay.md)
+-   [Securing Web Services](./securing-web-services/securing-web-services)

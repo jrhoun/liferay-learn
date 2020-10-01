@@ -10,20 +10,20 @@ You can quickly see a service's current resource usage from several pages in you
 
 ## Extended Application Metrics
 
-Users can view extended service metrics from the *Monitoring* page:
+Users can view extended service metrics from the _Monitoring_ page:
 
-1. Click *Monitoring* in the environment menu.
+1. Click _Monitoring_ in the environment menu.
 1. Use the drop-down menus to select the service and time frame you want to monitor.
 
 ![You can use DXP Cloud to monitor your services.](./application-metrics/images/02.png)
 
-Users can also view extended service metrics from the *Services* page:
+Users can also view extended service metrics from the _Services_ page:
 
-1. Click *Services* in the environment menu.
+1. Click _Services_ in the environment menu.
 
-1. Click on the *Service* you want to monitor.
+1. Click on the _Service_ you want to monitor.
 
-1. Click on the *Metrics* tab.
+1. Click on the _Metrics_ tab.
 
 ![View metrics from the service's page.](./application-metrics/images/03.png)
 
@@ -61,20 +61,20 @@ Follow these steps to integrate Dynatrace:
 ```json
 {
 	"environments": {
-	  "prd": {
-	    "env": {
-	      "LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
-	      "LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
-	    }
-	  }
+		"prd": {
+			"env": {
+				"LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
+				"LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
+			}
+		}
 	}
 }
 ```
 
-| Name | Description |
-| --- | --- |
-`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` | A string with eight characters. It is part of the URL (prefix) of your Dynatrace SaaS account. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
+| Name                                   | Description                                                                                                                                                                            |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` | A string with eight characters. It is part of the URL (prefix) of your Dynatrace SaaS account.                                                                                         |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`  | A string with 22 characters that you can find in your Dynatrace account at _Deploy Dynatrace_ &rarr; _Start installation_ &rarr; _Set up PaaS monitoring_ &rarr; _Installer Download_. |
 
 ### Accessing Dynatrace
 
@@ -82,19 +82,19 @@ Now you can access Dynatrace's advanced performance monitoring from the DXP Clou
 
 1. Navigate to a production environment.
 
-1. Click *Monitoring* in the environment menu.
+1. Click _Monitoring_ in the environment menu.
 
-1. Click the *Advanced* tab.
+1. Click the _Advanced_ tab.
 
-1. Click the *Go to Dynatrace Dashboard* button to access your Dynatrace dashboard.
+1. Click the _Go to Dynatrace Dashboard_ button to access your Dynatrace dashboard.
 
-	![Access the Dynatrace dashboard from the DXP Cloud Console](./application-metrics/images/05.png)
+    ![Access the Dynatrace dashboard from the DXP Cloud Console](./application-metrics/images/05.png)
 
 Log in with your Dynatrace credentials to check log trails and create custom dashboards.
 
 ## Additional Information
 
-* [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
-* [Real-Time Alerts](./real-time-alerts.md)
-* [Quotas](./quotas.md)
-* [Advanced Monitoring: APM Tools - Dynatrace](https://help.liferay.com/hc/en-us/articles/360017896452-Advanced-Monitoring-APM-Tools-Dynatrace)
+-   [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
+-   [Real-Time Alerts](./real-time-alerts.md)
+-   [Quotas](./quotas.md)
+-   [Advanced Monitoring: APM Tools - Dynatrace](https://help.liferay.com/hc/en-us/articles/360017896452-Advanced-Monitoring-APM-Tools-Dynatrace)

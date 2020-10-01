@@ -23,9 +23,10 @@ Updating to a new maintenance version is very similar to upgrading to a new majo
 ### Download and Deploy
 
 1. Download the latest Liferay Commerce `LPKG`.
-    * Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-      * Subscribers also need an order number or activation key for Liferay Commerce. See [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391).
-    * The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Site](https://commerce.liferay.dev/download).
+
+    - Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
+        - Subscribers also need an order number or activation key for Liferay Commerce. See [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391).
+    - The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Site](https://commerce.liferay.dev/download).
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
 1. Verify that that the following message appears in the application server console:
@@ -77,6 +78,6 @@ The Liferay Commerce instance has been updated. There is no need to reindex and 
 
 Liferay Commerce is built on Liferay Digital Experience Platform. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest major, minor, or maintenance version. Fixes to Liferay Commerce are independent from Liferay.
 
-* [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
-* [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
-* [End of Life](https://www.liferay.com/subscription-services/end-of-life/commerce)
+-   [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
+-   [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
+-   [End of Life](https://www.liferay.com/subscription-services/end-of-life/commerce)

@@ -8,12 +8,12 @@ Liferay DXP requires a Java JDK 8 or 11 and requires specific JVM option setting
 
 ## Recommended JVM Settings
 
-| Type | Setting | Required | Description |
-| :---------- | :------ | :------- | :---------- |
-| File Encoding | `-Dfile.encoding=UTF8` | Yes | DXP requires UTF-8 file encoding to support internationalization. |
-| Timezone | `-Dfile.encoding=UTF8` | Yes | DXP uses the GMT timezone for all dates. |
-| Four-digit Years | `-Djava.locale.providers=JRE,COMPAT,CLDR` | No | On JDK 11, this setting displays four-digit years. Since JDK 9, the Unicode Common Locale Data Repository (CLDR) is the default locales provider. CLDR does not provide years in a four-digit format (see [LPS-87191](https://issues.liferay.com/browse/LPS-87191)). This setting works around the issue by using JDK 8's default locales provider. |
-| Heap Size | `-Xms2560m -Xmx2560m` | No | The recommended maximum heap size is 2GB. Setting the minimum heap size to the maximum heap size value minimizes garbage collections. |
+| Type             | Setting                                   | Required | Description                                                                                                                                                                                                                                                                                                                                         |
+| :--------------- | :---------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File Encoding    | `-Dfile.encoding=UTF8`                    | Yes      | DXP requires UTF-8 file encoding to support internationalization.                                                                                                                                                                                                                                                                                   |
+| Timezone         | `-Dfile.encoding=UTF8`                    | Yes      | DXP uses the GMT timezone for all dates.                                                                                                                                                                                                                                                                                                            |
+| Four-digit Years | `-Djava.locale.providers=JRE,COMPAT,CLDR` | No       | On JDK 11, this setting displays four-digit years. Since JDK 9, the Unicode Common Locale Data Repository (CLDR) is the default locales provider. CLDR does not provide years in a four-digit format (see [LPS-87191](https://issues.liferay.com/browse/LPS-87191)). This setting works around the issue by using JDK 8's default locales provider. |
+| Heap Size        | `-Xms2560m -Xmx2560m`                     | No       | The recommended maximum heap size is 2GB. Setting the minimum heap size to the maximum heap size value minimizes garbage collections.                                                                                                                                                                                                               |
 
 ## Known Issue Workarounds
 
@@ -75,4 +75,4 @@ CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
 CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
 ```
 
-Note that Liferay supports many application servers, and all of them can be configured with the JVM options of your choosing. 
+Note that Liferay supports many application servers, and all of them can be configured with the JVM options of your choosing.

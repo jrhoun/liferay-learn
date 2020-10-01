@@ -24,8 +24,8 @@ Note that if a new shipment is [created](./creating-a-shipment.md) from the same
 
 ## Additional Information
 
-* [Introduction to Shipments](./introduction-to-shipments.md)
-* [Processing an Order](../orders/processing-an-order.md)
-* [Creating a Shipment](./creating-a-shipment.md)
-* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
-* [Order Information](../orders/order-information.md)
+-   [Introduction to Shipments](./introduction-to-shipments.md)
+-   [Processing an Order](../orders/processing-an-order.md)
+-   [Creating a Shipment](./creating-a-shipment.md)
+-   [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
+-   [Order Information](../orders/order-information.md)

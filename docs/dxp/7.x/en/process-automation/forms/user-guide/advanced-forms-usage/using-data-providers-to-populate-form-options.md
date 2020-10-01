@@ -53,18 +53,18 @@ To add a _Countries of the World_ Data Provider,
 
 1. Fill out the form:
 
-    * **Name**: Countries of the World
-    * **URL**: `http://localhost:8080/api/jsonws/country/get-countries/`
-    * **User Name**: `adminuser@liferay.com`
-    * **Password**: `adminuserpass`
-    * **Timeout**: 1000
-    * **Outputs Label**: Country Name
-    * **Outputs Path**: `$..nameCurrentValue`
-    * **Outputs Type**: List
+    - **Name**: Countries of the World
+    - **URL**: `http://localhost:8080/api/jsonws/country/get-countries/`
+    - **User Name**: `adminuser@liferay.com`
+    - **Password**: `adminuserpass`
+    - **Timeout**: 1000
+    - **Outputs Label**: Country Name
+    - **Outputs Path**: `$..nameCurrentValue`
+    - **Outputs Type**: List
 
     ![Enter the values.](./using-a-data-provider-to-populate-form-options/images/04.png)
 
-    Substitute your administrative user and password for the User Name and Password fields above. 
+    Substitute your administrative user and password for the User Name and Password fields above.
 
 1. Click _Save_ when finished.
 
@@ -78,14 +78,14 @@ The above example uses one Output to populate a Select from List field. Often th
 
 For example, to apply a region (for example, Americas, Europe, or Oceania) filter for the countries of the world, configure the provider like this:
 
-* **Name**: `restcountries`
-* **URL**: `https://restcountries.eu/rest/v2/region/{region}?fields=name`
-* **Input Label**: Region
-* **Parameter**: Region
-* **Input Type**: Text
-* **Outputs Label**: Countries of the World with Regions
-* **Outputs Path**: `*$..name*`
-* **Output Type**: List
+-   **Name**: `restcountries`
+-   **URL**: `https://restcountries.eu/rest/v2/region/{region}?fields=name`
+-   **Input Label**: Region
+-   **Parameter**: Region
+-   **Input Type**: Text
+-   **Outputs Label**: Countries of the World with Regions
+-   **Outputs Path**: `*$..name*`
+-   **Output Type**: List
 
 To understand more about these values, see the [Data Providers Overview](../data-providers-overview.md).
 
@@ -97,7 +97,7 @@ To configure the data provider's permissions,
 
 1. Navigate to the _Site Administration_ &rarr; _Content & Data_ &rarr; _Forms_.
 
-1. Click the *Data Providers* tab.
+1. Click the _Data Providers_ tab.
 
 1. Click the Actions button (![Actions](../../../../images/icon-actions.png)), then _Permissions_ next to the data provider.
 
@@ -147,5 +147,5 @@ The console now sends warning messages whenever there are errors in the Data Pro
 
 ## Additional Information
 
-* [Data Providers Overview](./data-providers-overview.md)
-* [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)
+-   [Data Providers Overview](./data-providers-overview.md)
+-   [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)

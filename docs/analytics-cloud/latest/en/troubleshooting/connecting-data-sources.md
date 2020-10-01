@@ -6,10 +6,10 @@ Misconfigured environments or data sources can prevent or disrupt access to Life
 
 Ensure that the DXP installation has internet access to our Analytic Cloud server by adding the following URLs to an allow list:
 
-* `https://analytics.liferay.com`
-* `https://osbasahpublisher-{weDeployKey}.lfr.cloud`
-* `https://osbasahbackend-{weDeployKey}.lfr.cloud`
-* `https://analytics-js-cdn.liferay.com`
+-   `https://analytics.liferay.com`
+-   `https://osbasahpublisher-{weDeployKey}.lfr.cloud`
+-   `https://osbasahbackend-{weDeployKey}.lfr.cloud`
+-   `https://analytics-js-cdn.liferay.com`
 
 ```note::
    Please contact Liferay Analytics Cloud Support at help.liferay.com to obtain your ``{weDeployKey}`` value.

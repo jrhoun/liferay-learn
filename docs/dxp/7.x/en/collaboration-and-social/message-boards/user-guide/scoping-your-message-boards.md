@@ -1,6 +1,6 @@
 # Scoping Your Message Boards
 
- Multiple message boards can be created and managed on the same DXP instance at the same time. This can be accomplished by scoping each message board to a particular scope. The [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope) are available. The following sections show administrators how to setup _Message Boards_ in each of these scopes.
+Multiple message boards can be created and managed on the same DXP instance at the same time. This can be accomplished by scoping each message board to a particular scope. The [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope) are available. The following sections show administrators how to setup _Message Boards_ in each of these scopes.
 
 ## Global
 
@@ -57,7 +57,7 @@ To create a page scoped message board, follow these steps:
 1. Click the _Scope_ tab.
 1. Select the page's name or _[YOUR-PAGE] (Create New)_ if the page scope doesn't exist yet.
 
-   ![Figure 6. page scoped content](./scoping-your-message-boards/images/04.png)
+    ![Figure 6. page scoped content](./scoping-your-message-boards/images/04.png)
 
 1. Click _Save_ then close the dialog window.
 
@@ -75,8 +75,8 @@ Note that administrators must still use the _Site Administration_ menu to admini
 
     ![Figure 8: Select the page's scope under the Content & Data menu in Site Administration.](./scoping-your-message-boards/images/06.png)
 
-1. Select *Message Boards* from the _Content & Data_ menu. Any changes you make here apply to the scope that you selected in the previous step.
+1. Select _Message Boards_ from the _Content & Data_ menu. Any changes you make here apply to the scope that you selected in the previous step.
 
 ## Related Information
 
-* [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)
+-   [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)

@@ -6,9 +6,9 @@ The Liferay Cloud Platform is comprised of multiple systems. Users can view the 
 
 Users can access the Liferay Cloud Platform status page via the DXP Cloud console:
 
-1. Click on the *Help* icon at the top right of the console page.
+1. Click on the _Help_ icon at the top right of the console page.
 
-1. Click on *Uptime status*.
+1. Click on _Uptime status_.
 
 ![Figure 1: Click Uptime status to view the Liferay Cloud Platform Status page.](./liferay-cloud-platform-status/images/01.png)
 
@@ -16,13 +16,13 @@ Users can access the Liferay Cloud Platform status page via the DXP Cloud consol
 
 The Liferay Cloud Platform status page lists the current status of the following systems:
 
-* Infrastructure Services
-* Database Services
-* Storage Services
-* Monitoring and Logging Services
-* Networking Services
-* Liferay Cloud Console
-* Liferay Cloud API
+-   Infrastructure Services
+-   Database Services
+-   Storage Services
+-   Monitoring and Logging Services
+-   Networking Services
+-   Liferay Cloud Console
+-   Liferay Cloud API
 
 ![Figure 2: View the current status of Liferay Cloud Platform systems.](./liferay-cloud-platform-status/images/02.png)
 
@@ -32,19 +32,19 @@ Users can view past incidents and scheduled maintenance windows from the Liferay
 
 Scroll down the Liferay Cloud Platform status page to see recent incidents.
 
-Click *Incident History* at the bottom of the page to see extended records.
+Click _Incident History_ at the bottom of the page to see extended records.
 
 ![Figure 3: View past incidents and planned maintenance windows.](./liferay-cloud-platform-status/images/03.png)
 
 ## Subscribe to Updates
 
-Users can *Subscribe to Updates* to receive real-time notifications of any platform status changes.
+Users can _Subscribe to Updates_ to receive real-time notifications of any platform status changes.
 
-Click on *Subscribe to Updates*, and select the method of notification that is most convenient for you.
+Click on _Subscribe to Updates_, and select the method of notification that is most convenient for you.
 
 ![Figure 4: Subscribe to receive updates regarding the status of the Liferay Cloud Platform.](./liferay-cloud-platform-status/images/04.png)
 
 ## Additional Information
 
-* [DXP Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)
+-   [DXP Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
+-   [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)

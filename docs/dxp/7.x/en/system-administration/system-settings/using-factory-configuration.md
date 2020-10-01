@@ -1,6 +1,6 @@
 # Using Factory Configuration
 
-Most Liferay DXP System Settings allow just one set of configurations for an entry. To change the configuration, you update the single configuration form, and it applies throughout the [affected configuration scope](./understanding-configuration-scope.md). Less commonly, a configuration supports multiple entries that simultaneously coexist: these are called *factory configurations*. For factory configurations, each configuration set provides a unique configuration. A common usage is for configuring system-scoped connections to third party servers (e.g., LDAP and Elasticsearch). Since each connection to these servers requires unique configuration values, a factory configuration is used to make it possible.
+Most Liferay DXP System Settings allow just one set of configurations for an entry. To change the configuration, you update the single configuration form, and it applies throughout the [affected configuration scope](./understanding-configuration-scope.md). Less commonly, a configuration supports multiple entries that simultaneously coexist: these are called _factory configurations_. For factory configurations, each configuration set provides a unique configuration. A common usage is for configuring system-scoped connections to third party servers (e.g., LDAP and Elasticsearch). Since each connection to these servers requires unique configuration values, a factory configuration is used to make it possible.
 
 ```tip::
     Factory Configuration Example: `Adding Organization types <../../users-and-permissions/organizations/adding-a-new-organization-type.md>`_ is supported, and is useful if you need to model real-life hierarchies or enforce hierarchical rules. In Liferay DXP, each Organization type is created via a factory configuration entry in System Settings.
@@ -8,7 +8,7 @@ Most Liferay DXP System Settings allow just one set of configurations for an ent
 
 ## Identifying Factory Configurations
 
-If a service supports factory configurations, its System Settings entry has an Add button. 
+If a service supports factory configurations, its System Settings entry has an Add button.
 
 ![If a System Settings entry has an ADD button, it supports factory configuration.](./using-configuration-files/images/01.png)
 
@@ -16,26 +16,26 @@ Click the Add button ![Add](../../images/icon-add.png) to add a new set of confi
 
 ## Factory Configuration Files
 
-As with single-instance configurations, you can set factory configurations in the System Settings interface (using the Add button described above) or via [configuration files](./using-configuration-files.md). A standard single-instance configuration file uses the fully qualified class name of the configuration object, appended by `.config`: 
+As with single-instance configurations, you can set factory configurations in the System Settings interface (using the Add button described above) or via [configuration files](./using-configuration-files.md). A standard single-instance configuration file uses the fully qualified class name of the configuration object, appended by `.config`:
 
 ```bash
 my.service.ServiceConfiguration.config
 ```
 
-If your service supports factory configurations, use the convention of calling the configuration's first instance `-default.config`. The default Organization type is named in this way: 
+If your service supports factory configurations, use the convention of calling the configuration's first instance `-default.config`. The default Organization type is named in this way:
 
 ```bash
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-default.config
 ```
 
-The next instance contains a unique *subname* (something other than *default*). It's good practice to use a descriptive name that sheds light on when this instance should be used. Following the example from [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md), you could add the _League_ type with a configuration file named 
+The next instance contains a unique _subname_ (something other than _default_). It's good practice to use a descriptive name that sheds light on when this instance should be used. Following the example from [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md), you could add the _League_ type with a configuration file named
 
 ```bash
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-league.config
 ```
 
 ```warning::
-   Providing a configuration file with a subname forces a factory configuration scenario, even if the service isn't designed to accept multiple configuration entries. Use the System Settings UI as described above to determine if using factory configurations is supported for a configuration entry. 
+   Providing a configuration file with a subname forces a factory configuration scenario, even if the service isn't designed to accept multiple configuration entries. Use the System Settings UI as described above to determine if using factory configurations is supported for a configuration entry.
 ```
 
 Some System Settings entries that support factory configuration don't ship with a configuration file for the default instance (e.g., the Anonymous User entry). If you export a factory configuration file to obtain the `.config` file, it doesn't use the `-default.config` naming convention. Instead, whether it's the first occurrence or an additional one, it's given a guaranteed unique identifier for its subname:

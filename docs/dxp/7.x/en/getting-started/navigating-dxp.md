@@ -10,11 +10,11 @@ The Personal Menu is the hub for information and activities for a user that is l
 
 Users can use the personal menu to:
 
-* [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
-* [See what sites they are members of](../site-building/building-sites/adding-members-to-sites.md)
-* [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
-* [Sign out](./introduction-to-the-admin-account.md#signing-out)
-* And more...
+-   [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
+-   [See what sites they are members of](../site-building/building-sites/adding-members-to-sites.md)
+-   [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+-   [Sign out](./introduction-to-the-admin-account.md#signing-out)
+-   And more...
 
 ## Product Menu
 
@@ -32,11 +32,11 @@ The _Control Panel_ contains general administrative actions and configurations t
 
 The following common administrative activities can be done in the Control Panel:
 
-* [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
-* [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
-* [Create new Sites](../site-building/building-sites/adding-a-site.md)
-* Add new Custom Fields to applications on the site
-* And more...
+-   [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
+-   [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
+-   [Create new Sites](../site-building/building-sites/adding-a-site.md)
+-   Add new Custom Fields to applications on the site
+-   And more...
 
 ### Site Menu
 
@@ -50,11 +50,11 @@ The DXP _Site Menu_ drop down contains actions, content, and configurations that
 
 The following common site building and management activities can be done in the _Site Menu_:
 
-* [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
-* [Creating Content](../content-authoring-and-management/README.md)
-* [Managing Site Memberships](../site-building/building-sites/adding-members-to-sites.md)
-* [Configuring and Optimizing Site Behavior and Functionality](../site-building/optimizing-sites/README.md)
-* And more...
+-   [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
+-   [Creating Content](../content-authoring-and-management/README.md)
+-   [Managing Site Memberships](../site-building/building-sites/adding-members-to-sites.md)
+-   [Configuring and Optimizing Site Behavior and Functionality](../site-building/optimizing-sites/README.md)
+-   And more...
 
 ## What's Next
 

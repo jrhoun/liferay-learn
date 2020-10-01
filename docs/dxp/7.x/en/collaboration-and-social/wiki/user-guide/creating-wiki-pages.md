@@ -57,7 +57,7 @@ As noted above in the _Creating Child Pages_, future wiki pages are created as c
 1. Click the _All Pages_ tab.
 1. Mouse over the _Wiki_ widget's menu and click _Add Page_.
 
-   ![Add another wiki top level page](./creating-wiki-pages/images/04.png)
+    ![Add another wiki top level page](./creating-wiki-pages/images/04.png)
 
 This opens the same _Wiki_ page editor.
 
@@ -67,5 +67,5 @@ A _Wiki_ widget can have multiple top-level pages; while the main _Wiki_ widget 
 
 ## What's Next
 
-* [Creating a Node](./creating-a-node.md)
-* [Using the Wiki Display Widget](./using-the-wiki-display-widget.md)
+-   [Creating a Node](./creating-a-node.md)
+-   [Using the Wiki Display Widget](./using-the-wiki-display-widget.md)

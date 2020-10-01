@@ -4,11 +4,11 @@ Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags
 
 Page Fragments have access to these types of liferay-specific tags and attributes that add these features:
 
-* Editable Text
-* Editable Images
-* Editable Links
-* Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)
-* Embedded Widgets
+-   Editable Text
+-   Editable Images
+-   Editable Links
+-   Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)
+-   Embedded Widgets
 
 ```note::
   When you start typing the name of a tag, the `HTML editor <../../developing-page-fragments/using-the-fragments-editor.md>`_ provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -38,7 +38,7 @@ You can make Fragment text editable by including the `data-lfr-editable-type="te
 
 ```html
 <p data-lfr-editable-id="text1" data-lfr-editable-type="text">
-  Placeholder
+	Placeholder
 </p>
 ```
 
@@ -50,7 +50,7 @@ For Liferay Portal CE 7.3 GA2 and below, use the syntax below. A unique ID is re
 
 ```html
 <lfr-editable id="unique-id" type="text">
-   This is editable text!
+	This is editable text!
 </lfr-editable>
 ```
 
@@ -58,7 +58,7 @@ If you need formatting options like text or color styles, use `rich-text`:
 
 ```html
 <p data-lfr-editable-id="text1" data-lfr-editable-type="rich-text">
-  Placeholder
+	Placeholder
 </p>
 ```
 
@@ -70,7 +70,7 @@ For Liferay Portal CE 7.3 GA2 and below, use the syntax below:
 
 ```html
 <lfr-editable id="unique-id" type="rich-text">
-   This is editable text that I can make bold or italic!
+	This is editable text that I can make bold or italic!
 </lfr-editable>
 ```
 
@@ -84,18 +84,18 @@ Images use the same `data-lfr-editable-type` attribute as text, but with the `im
 
 ```html
 <img
-  src="placeholder.jpg"
-  alt="Placeholder"
-  data-lfr-editable-id="img1"
-  data-lfr-editable-type="image"
->
+	src="placeholder.jpg"
+	alt="Placeholder"
+	data-lfr-editable-id="img1"
+	data-lfr-editable-type="image"
+/>
 ```
 
 For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 
 ```html
 <lfr-editable id="unique-id" type="image">
-   <img src="...">
+	<img src="..." />
 </lfr-editable>
 ```
 
@@ -107,9 +107,9 @@ Most images can be handled like this, but to add an editable background image yo
 
 ```html
 <div data-lfr-background-image-id="unique-id">
-   <lfr-editable id="unique-id" type="image">
-      <img src="...">
-   </lfr-editable>
+	<lfr-editable id="unique-id" type="image">
+		<img src="..." />
+	</lfr-editable>
 </div>
 ```
 
@@ -121,12 +121,12 @@ There is also a specific syntax for creating editable link elements:
 
 ```html
 <a
-  href="#placeholder"
-  target="_blank"
-  data-lfr-editable-id="link1"
-  data-lfr-editable-type="link"
+	href="#placeholder"
+	target="_blank"
+	data-lfr-editable-id="link1"
+	data-lfr-editable-type="link"
 >
-  Go to placeholder
+	Go to placeholder
 </a>
 ```
 
@@ -134,7 +134,7 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 
 ```html
 <lfr-editable id="unique-id" type="link">
-    <a href="default-target-url-goes-here">Link text goes here</a>
+	<a href="default-target-url-goes-here">Link text goes here</a>
 </lfr-editable>
 ```
 
@@ -150,7 +150,7 @@ You can make general HTML elements editable as well by setting the `data-lfr-edi
 
 ```html
 <article data-lfr-editable-id="text1" data-lfr-editable-type="html">
-  <h1>Placeholder</h1>
+	<h1>Placeholder</h1>
 </article>
 ```
 
@@ -158,7 +158,7 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 
 ```html
 <lfr-editable type="html" id="text1">
-  <h1>Placeholder</h1>
+	<h1>Placeholder</h1>
 </lfr-editable>
 ```
 
@@ -172,31 +172,30 @@ To include a widget, you must know its registered name. For example, the Site Na
 
 ```html
 <div class="nav-widget">
-    <lfr-widget-nav>
-    </lfr-widget-nav>
+	<lfr-widget-nav> </lfr-widget-nav>
 </div>
 ```
 
 These are the widgets that can be embedded and their accompanying tags:
 
-| Widget Name    | Tag |
-| -------- | --- |
-|DDL Display	|`<lfr-widget-dynamic-data-list>`|
-|Form           |`<lfr-widget-form>`|
-|Asset Publisher|`<lfr-widget-asset-list>`|
-|Breadcrumb	    |`<lfr-widget-breadcrumb>`|
-|Categories Navigation |`<lfr-widget-categories-nav>`|
-|Flash	|`<lfr-widget-flash>`|
-|Media Gallery	|`<lfr-widget-media-gallery>`|
-|Navigation Menu	|`<lfr-widget-nav>`|
-|Polls Display	|`<lfr-widget-polls>`|
-|Related Assets	|`<lfr-widget-related-assets>`|
-|Site Map	|`<lfr-widget-site-map>`|
-|Tag Cloud	|`<lfr-widget-tag-cloud>`|
-|Tags Navigation	|`<lfr-widget-tags-nav>`|
-|Web Content Display	|`<lfr-widget-web-content>`|
-|RSS Publisher (Deprecated)	|`<lfr-widget-rss>`|
-|Iframe	|`<lfr-widget-iframe>`|
+| Widget Name                | Tag                              |
+| -------------------------- | -------------------------------- |
+| DDL Display                | `<lfr-widget-dynamic-data-list>` |
+| Form                       | `<lfr-widget-form>`              |
+| Asset Publisher            | `<lfr-widget-asset-list>`        |
+| Breadcrumb                 | `<lfr-widget-breadcrumb>`        |
+| Categories Navigation      | `<lfr-widget-categories-nav>`    |
+| Flash                      | `<lfr-widget-flash>`             |
+| Media Gallery              | `<lfr-widget-media-gallery>`     |
+| Navigation Menu            | `<lfr-widget-nav>`               |
+| Polls Display              | `<lfr-widget-polls>`             |
+| Related Assets             | `<lfr-widget-related-assets>`    |
+| Site Map                   | `<lfr-widget-site-map>`          |
+| Tag Cloud                  | `<lfr-widget-tag-cloud>`         |
+| Tags Navigation            | `<lfr-widget-tags-nav>`          |
+| Web Content Display        | `<lfr-widget-web-content>`       |
+| RSS Publisher (Deprecated) | `<lfr-widget-rss>`               |
+| Iframe                     | `<lfr-widget-iframe>`            |
 
 ### Enabling Embedding for Your Widget
 

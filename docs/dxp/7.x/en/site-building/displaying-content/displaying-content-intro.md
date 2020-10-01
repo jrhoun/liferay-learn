@@ -2,15 +2,15 @@
 
 You can display [content](../../content_authoring_and_management.md) in various ways. The option you choose depends on the type of asset you want to display, how many assets you want to display at once, and how you want your content to be viewed. Three key options are available: The Web Content Display widget, the Asset Publisher widget, and Display Page Templates. The table below compares the key behaviors of these display options:
 
-| Behavior | Web Content Display | Asset Publisher | Display Pages |
-| --- | --- | --- | --- |
-| Display individual content | &#10004; | | &#10004; |
-| Supports multiple content types | | &#10004; | &#10004; |
-| Supports Manual content selection | &#10004; | &#10004; | &#10004; |
-| Display multiple pieces of content | | &#10004; |  |
-| Supports Dynamic content selection | | &#10004; | |
-| Displays content on its own page | | | &#10004; |
-| Provides a unique friendly URL for web content | | | &#10004; |
+| Behavior                                       | Web Content Display | Asset Publisher | Display Pages |
+| ---------------------------------------------- | ------------------- | --------------- | ------------- |
+| Display individual content                     | &#10004;            |                 | &#10004;      |
+| Supports multiple content types                |                     | &#10004;        | &#10004;      |
+| Supports Manual content selection              | &#10004;            | &#10004;        | &#10004;      |
+| Display multiple pieces of content             |                     | &#10004;        |               |
+| Supports Dynamic content selection             |                     | &#10004;        |               |
+| Displays content on its own page               |                     |                 | &#10004;      |
+| Provides a unique friendly URL for web content |                     |                 | &#10004;      |
 
 ## Web Content Display Widget
 

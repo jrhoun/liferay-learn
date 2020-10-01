@@ -6,10 +6,10 @@ Running a Liferay Docker image with auto-upgrade enabled upgrades your database 
    Don't have Docker? Go here first: `Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_ | `Windows <https://docs.docker.com/docker-for-windows/install/>`_ | `OSX <https://docs.docker.com/docker-for-mac/install/>`_
 ```
 
-| DXP Edition | Image | Tags |
-| :---------- | :---- | :--- |
-| Liferay DXP (Subscription)| [`dxp`](https://hub.docker.com/r/liferay/dxp) | [here](https://hub.docker.com/r/liferay/dxp/tags) |
-| Liferay Portal CE | [`portal`](https://hub.docker.com/r/liferay/portal) | [here](https://hub.docker.com/r/liferay/portal/tags) |
+| DXP Edition                | Image                                               | Tags                                                 |
+| :------------------------- | :-------------------------------------------------- | :--------------------------------------------------- |
+| Liferay DXP (Subscription) | [`dxp`](https://hub.docker.com/r/liferay/dxp)       | [here](https://hub.docker.com/r/liferay/dxp/tags)    |
+| Liferay Portal CE          | [`portal`](https://hub.docker.com/r/liferay/portal) | [here](https://hub.docker.com/r/liferay/portal/tags) |
 
 ```important::
    Upgrades to enterprise subscriber installations and critical installations should be done using the Database Upgrade Tool. See `Using the Database Upgrade Tool <./using-the-database-upgrade-tool.md>`_ for more information.
@@ -33,25 +33,25 @@ Here are the steps for upgrading with a Docker image:
     mkdir -p new-version/deploy
     ```
 
-    * `files`: The Docker container copies files from this folder to the container's [Liferay Home](../../reference/liferay-home.md) folder.
+    - `files`: The Docker container copies files from this folder to the container's [Liferay Home](../../reference/liferay-home.md) folder.
 
-    * `deploy`: The Docker container copies artifacts from this folder to the container's auto-deploy folder.
+    - `deploy`: The Docker container copies artifacts from this folder to the container's auto-deploy folder.
 
 1. If you're using an embedded [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md) engine or a local [File Store \(Document Library\)](../../../system-administration/file-storage/configuring-file-storage.md), copy the `[Liferay Home]/data` folder from your [backup](../../maintaining-a-liferay-dxp-installation/backing-up.md) to the `files` folder (e.g., creating `new-version/files/data`).
 
 1. Copy and merge the [Liferay Home files](../../maintaining-a-liferay-dxp-installation/backing-up.md#liferay-home) and [application server files](../../maintaining-a-liferay-dxp-installation/backing-up.md#application-server) from your backup to their corresponding locations in the `files` folder (your new `[Liferay Home]`). For example, copy your activation key from `[Liferay Home backup]/license/` to `new-version/files/license/`. The files may include but are not limited to these:
 
-    * `/license/*`: Activation keys. (Subscription)
+    - `/license/*`: Activation keys. (Subscription)
 
-    * `/log/*`: Log files.
+    - `/log/*`: Log files.
 
-    * `/osgi/*.config`: OSGi configuration files.
+    - `/osgi/*.config`: OSGi configuration files.
 
-    * `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
+    - `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
 
-    * `setenv.sh`, `startup.sh`, and more: Application server configuration scripts.
+    - `setenv.sh`, `startup.sh`, and more: Application server configuration scripts.
 
-    * `web.xml`: Portal web application descriptor.
+    - `web.xml`: Portal web application descriptor.
 
 1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in [`new-version/files/portal-ext.properties`](../../reference/portal-properties.md) and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
 
@@ -86,7 +86,7 @@ Here are the steps for upgrading with a Docker image:
 
 Your database upgrade is now complete!
 
-If you want to continue using the new Liferay version via Docker, leave off the ``-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true`` environment setting from the ``docker run ...`` command you use to create the new container.
+If you want to continue using the new Liferay version via Docker, leave off the `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` environment setting from the `docker run ...` command you use to create the new container.
 
 ```note::
    `Docker Container Basics <../../../installation-and-upgrades/installing-liferay/using-liferay-dxp-docker-images/dxp-docker-container-basics.md>`_ demonstrates creating, stopping, and restarting Docker containers.
@@ -96,10 +96,10 @@ If you want to continue using the new Liferay version via Docker, leave off the 
 
 If the upgraded database is all you need, then enjoy using your new Liferay instance! If there's more to completing your upgrade, these articles can help you finish:
 
-* [Upgrade Overview](./upgrade-overview.md) describes all of the upgrade topics. Maybe there's a topic you still need to address.
+-   [Upgrade Overview](./upgrade-overview.md) describes all of the upgrade topics. Maybe there's a topic you still need to address.
 
-* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the Liferay server is offline. If the upgrade took too long, consider [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [pruning unneeded data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), and [using Database Upgrade Tool](./using-the-database-upgrade-tool.md).
+-   [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the Liferay server is offline. If the upgrade took too long, consider [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [pruning unneeded data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), and [using Database Upgrade Tool](./using-the-database-upgrade-tool.md).
 
-* [Custom Code Upgrade](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) demonstrates adapting custom plugin code to a new Liferay version.
+-   [Custom Code Upgrade](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) demonstrates adapting custom plugin code to a new Liferay version.
 
-* [Maintaining Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md) describes how to upgrade in a clustered environment.
+-   [Maintaining Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md) describes how to upgrade in a clustered environment.

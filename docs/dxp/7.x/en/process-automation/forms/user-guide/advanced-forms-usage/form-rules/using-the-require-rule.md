@@ -1,12 +1,12 @@
 # Using the Require Rule
 
-Use a _Require_ rule to make a field required based on one or more conditions. Require Rules work in association with other Rules, such as the _Show_ Rule. 
+Use a _Require_ rule to make a field required based on one or more conditions. Require Rules work in association with other Rules, such as the _Show_ Rule.
 
-To demonstrate, assume the camp registration form includes these items: 
+To demonstrate, assume the camp registration form includes these items:
 
-* _I am 18 Years Old or Older_: a required single selection field with two options: _Yes_ and _No_.
-* _Legal Guardian Email Address_: a text field that accepts valid email addresses.
-* A [Show Rule](./using-the-show-hide-rule.md) that displays the _Legal Guardian Address_ field if the value for _I am 18 Years Old or Older_ is NO.
+-   _I am 18 Years Old or Older_: a required single selection field with two options: _Yes_ and _No_.
+-   _Legal Guardian Email Address_: a text field that accepts valid email addresses.
+-   A [Show Rule](./using-the-show-hide-rule.md) that displays the _Legal Guardian Address_ field if the value for _I am 18 Years Old or Older_ is NO.
 
 If the respondent answers _No_, the _Legal Guardian Email Address_ appears and the respondent must enter a valid email address.
 
@@ -30,5 +30,5 @@ Follow the steps below:
 
 ## Additional Information
 
-* [Creating Forms](../../creating-forms.md)
-* [Using the Show-Hide Rule](./using-the-show-hide-rule.md)
+-   [Creating Forms](../../creating-forms.md)
+-   [Using the Show-Hide Rule](./using-the-show-hide-rule.md)

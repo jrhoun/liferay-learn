@@ -2,12 +2,12 @@
 
 If there's more that you want to do in the DXP container beyond setting up Tomcat and DXP files, deploying arifacts, and applying patches, you can use scripts. The container scans for scripts in specific folders at several points in its [lifecycle](./dxp-container-lifecycle-and-api.md). The following table describes the script insertion points.
 
-| Lifecycle Phase | Description | Target Container Folder |
-| :-------------- | :---------- | :---------------------- |
-| Pre-Configure | Execute scripts before the Configure Phase | `/usr/local/liferay/scripts/pre-configure` |
-| Configure | Execute after copying files to `[Liferay Home]` | `/mnt/liferay/scripts` |
-| Pre-Startup | Execute scripts before starting up Tomcat | `/usr/local/liferay/scripts/pre-startup` |
-| Post-Shutdown | Execute scripts after shutting down Tomcat | `/usr/local/liferay/scripts/post-shutdown` |
+| Lifecycle Phase | Description                                     | Target Container Folder                    |
+| :-------------- | :---------------------------------------------- | :----------------------------------------- |
+| Pre-Configure   | Execute scripts before the Configure Phase      | `/usr/local/liferay/scripts/pre-configure` |
+| Configure       | Execute after copying files to `[Liferay Home]` | `/mnt/liferay/scripts`                     |
+| Pre-Startup     | Execute scripts before starting up Tomcat       | `/usr/local/liferay/scripts/pre-startup`   |
+| Post-Shutdown   | Execute scripts after shutting down Tomcat      | `/usr/local/liferay/scripts/post-shutdown` |
 
 The following sections demonstrate creating and running scripts in the above-mentioned phases.
 
@@ -52,11 +52,11 @@ in configure-phase-script.sh
 
 The container provides ways to execute scripts outside of the Configure Phase too.
 
-| Lifecycle Phase | Description | Target Container Folder |
-| :-------------- | :---------- | :---------------------- |
-| Pre-Configure | Execute scripts before the Configure Phase | `/usr/local/liferay/scripts/pre-configure` |
-| Pre-Startup | Execute scripts before starting up Tomcat | `/usr/local/liferay/scripts/pre-startup` |
-| Post-Shutdown | Execute scripts after shutting down Tomcat | `/usr/local/liferay/scripts/post-shutdown` |
+| Lifecycle Phase | Description                                | Target Container Folder                    |
+| :-------------- | :----------------------------------------- | :----------------------------------------- |
+| Pre-Configure   | Execute scripts before the Configure Phase | `/usr/local/liferay/scripts/pre-configure` |
+| Pre-Startup     | Execute scripts before starting up Tomcat  | `/usr/local/liferay/scripts/pre-startup`   |
+| Post-Shutdown   | Execute scripts after shutting down Tomcat | `/usr/local/liferay/scripts/post-shutdown` |
 
 Notice that the container's `/usr/local/liferay/scripts` folder has this structure:
 
@@ -126,6 +126,6 @@ Now you know how to execute scripts in all parts of the container's lifecycle.
 
 ## Additional Information
 
-* [DXP Docker Container Basics](./dxp-docker-container-basics.md)
-* [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
-* [Providing Files to the Container](./providing-files-to-the-container.md)
+-   [DXP Docker Container Basics](./dxp-docker-container-basics.md)
+-   [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
+-   [Providing Files to the Container](./providing-files-to-the-container.md)

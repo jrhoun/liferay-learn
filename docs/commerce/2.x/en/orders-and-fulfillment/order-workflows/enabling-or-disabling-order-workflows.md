@@ -18,7 +18,7 @@ To enable an approval workflow:
 
     ![Approval Workflow](./enabling-or-disabling-order-workflows/images/03.png)
 
-1. If you want to enable the Seller Order Acceptance Workflow, select  _Single Approver (Version 1)_ from the dropdown menu.
+1. If you want to enable the Seller Order Acceptance Workflow, select _Single Approver (Version 1)_ from the dropdown menu.
 1. Click _Save_.
 
 The Workflow process has been activated for this this channel. Both workflows can work concurrently.
@@ -35,11 +35,11 @@ To enable an approval workflow:
 1. Click on the _Order Workflows_ tab.
 1. Click on _Approval Workflow_ field and select from the available options in the drop down.
 
-   ![Approval Workflow](./enabling-or-disabling-order-workflows/images/01.png)
+    ![Approval Workflow](./enabling-or-disabling-order-workflows/images/01.png)
 
 1. To enable the _Transmission Workflow_, click on the _Transmission Workflow_ field and select from the available options in the drop down.
 
-   ![Transmission Workflow](./enabling-or-disabling-order-workflows/images/02.png)
+    ![Transmission Workflow](./enabling-or-disabling-order-workflows/images/02.png)
 
 1. Click _Save_.
 
@@ -51,8 +51,8 @@ To disable an order workflow, select the _No Workflow_ option, and click _Save_.
 
 Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://learn.liferay.com/dxp/7.x/en/process-automation/workflow/user-guide/introduction-to-workflow.html) can be created and may then be selected in the _Order Workflows_ tab.
 
-* [Introduction to Order Workflows](./introduction-to-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](approving-or-rejecting-orders-in-order-workflows.md)
-* [Processing an Order](../orders/processing-an-order.md)
-* [Order Life Cycle](../orders/order-life-cycle.md)
-* [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)
+-   [Introduction to Order Workflows](./introduction-to-order-workflows.md)
+-   [Approving or Rejecting Orders in Order Workflows](approving-or-rejecting-orders-in-order-workflows.md)
+-   [Processing an Order](../orders/processing-an-order.md)
+-   [Order Life Cycle](../orders/order-life-cycle.md)
+-   [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)

@@ -12,4 +12,4 @@ Otherwise, the page without any sample data but using the same layout might look
 
 ## Additional Information
 
-* [Widget Reference](../widget-reference.md)
+-   [Widget Reference](../widget-reference.md)

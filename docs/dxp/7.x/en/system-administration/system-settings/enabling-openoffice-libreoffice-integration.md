@@ -11,5 +11,5 @@ Coming soon!
 1. Check the *Server Enabled* box and click *Save* to apply the changes.
 
     ![Checking the Server Enabled setting enabled Open Office integration for your Web Content Display widget.](./enabling-openoffice-libreoffice-integration/images/02.png)
- 
+
  -->

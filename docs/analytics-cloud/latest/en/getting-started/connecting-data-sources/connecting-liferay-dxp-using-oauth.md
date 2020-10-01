@@ -42,11 +42,11 @@ Congratulations on authorizing Analytics Cloud to connect to your Liferay DXP in
 
 Adding a Liferay DXP data source connects your Analytics Cloud project with a Liferay DXP instance.
 
-1. Select *Settings* → *Data Sources*. A listing of your data sources appears.
+1. Select _Settings_ → _Data Sources_. A listing of your data sources appears.
 
-1. Click *Add Data Source*. The Add Data Source page appears.
+1. Click _Add Data Source_. The Add Data Source page appears.
 
-1. Select the Liferay DXP icon. The *Configure Liferay DXP* page appears.
+1. Select the Liferay DXP icon. The _Configure Liferay DXP_ page appears.
 
 The Authorization tab is selected by default.
 
@@ -56,23 +56,23 @@ To authorize your DXP instance as a data source, follow these steps:
 
 1. Fill in the data source and client credentials fields:
 
-    * *Description*
+    - _Description_
 
-         * **Name:** A name for your data source.
-         * **URL:** The Liferay DXP instance URL.
+        - **Name:** A name for your data source.
+        - **URL:** The Liferay DXP instance URL.
 
-    * *Client Credentials*
+    - _Client Credentials_
 
-         * **Consumer Key/Client ID:** Key/ID for Analytics Cloud to access your Liferay DXP instance.
-         * **Consumer Secret/Client Secret:** Secret for Analytics Cloud to access your Liferay DXP instance.
+        - **Consumer Key/Client ID:** Key/ID for Analytics Cloud to access your Liferay DXP instance.
+        - **Consumer Secret/Client Secret:** Secret for Analytics Cloud to access your Liferay DXP instance.
 
-    In Liferay DXP 7.1, the Client ID and Secret are found at *Control Panel* → *Configuration* → *OAuth 2 Admin*.
+    In Liferay DXP 7.1, the Client ID and Secret are found at _Control Panel_ → _Configuration_ → _OAuth 2 Admin_.
 
-    In Liferay DXP 7.0, the Consumer Key and Secret are found at *Control Panel* → *OAuth Admin*.
+    In Liferay DXP 7.0, the Consumer Key and Secret are found at _Control Panel_ → _OAuth Admin_.
 
-1. Click *Authorize*. A window appears and prompts you to sign in to the DXP instance.
+1. Click _Authorize_. A window appears and prompts you to sign in to the DXP instance.
 
-1. Sign in by entering your DXP admin (user that has the Admin role) credentials and clicking *Authorize*.
+1. Sign in by entering your DXP admin (user that has the Admin role) credentials and clicking _Authorize_.
 
 1. Click Save to save the authorization options. Analytics Cloud advances you to the Configure Data Source tab's Data Configuration page. The data source's Current Status is **AUTHENTICATED**.
 
@@ -88,9 +88,9 @@ Start with configuring Analytics.
 
 Configuring analytics enables your website to send visitor browsing events to Analytics Cloud. The events are sent via the client browser with the `analytics.js`.
 
-1. Click *Configure* for *Configure Analytics*. The Liferay DXP site analytics registration page appears.
+1. Click _Configure_ for _Configure Analytics_. The Liferay DXP site analytics registration page appears.
 
-1. Select the Liferay DXP Sites to register for analytics and click *Configure*.
+1. Select the Liferay DXP Sites to register for analytics and click _Configure_.
 
 1. Click the Done button.
 
@@ -114,7 +114,7 @@ window['ac_client_disable_tracking'] = true
 
 Configuring contacts imports DXP user data. To sync contacts from your Liferay DXP instance to Analytics Cloud, perform the following steps:
 
-1. Select the *Configure* button for *Configure Contacts*. The Contacts configuration options appear.
+1. Select the _Configure_ button for _Configure Contacts_. The Contacts configuration options appear.
 
 1. Select contacts to sync from the Liferay DXP instance. Select all users or select by User Group or Organization. Contacts belonging to multiple User Groups and Organizations are only counted once.
 
@@ -126,11 +126,11 @@ Configuring contacts imports DXP user data. To sync contacts from your Liferay D
 
     ![Analytics Cloud lets you select and import contacts from a Liferay DXP instance and its Organizations and User Groups.](connecting-liferay-dxp-using-oauth/images/01.png)
 
-1. Click *Save* and *Continue* to import the selected contacts. Analytics Cloud imports the contact data and maps it to your Analytics Cloud contact data model. The initial contact data import can take 5 1/2 minutes per 1,000 contacts.
+1. Click _Save_ and _Continue_ to import the selected contacts. Analytics Cloud imports the contact data and maps it to your Analytics Cloud contact data model. The initial contact data import can take 5 1/2 minutes per 1,000 contacts.
 
-1. Follow instructions for [Mapping Contact Data](../../individuals-and-segments/individual-profiles/mapping-contact-data.md) to map contact data from your Liferay DXP instance to your Analytics Cloud contact data model. Once you've mapped the data, click *Save*.
+1. Follow instructions for [Mapping Contact Data](../../individuals-and-segments/individual-profiles/mapping-contact-data.md) to map contact data from your Liferay DXP instance to your Analytics Cloud contact data model. Once you've mapped the data, click _Save_.
 
-1. The *Data Configuration* page appears again; the button for Configure Contacts is labeled Edit.
+1. The _Data Configuration_ page appears again; the button for Configure Contacts is labeled Edit.
 
 You've configured Analytics Cloud to use your Liferay DXP contacts.
 
@@ -138,6 +138,6 @@ The Contacts data will start syncing into Analytics Cloud. After the initial syn
 
 ## Next Steps
 
-* [Mapping Contact Data](../../individuals-and-segments/individual-profiles/mapping-contact-data.md)
-* [Adding a CSV Data Source](../../individuals-and-segments/individual-profiles/adding-a-csv-data-source.md)
-* [Adding a Salesforce Data Source](../../individuals-and-segments/individual-profiles/adding-a-salesforce-data-source.md)
+-   [Mapping Contact Data](../../individuals-and-segments/individual-profiles/mapping-contact-data.md)
+-   [Adding a CSV Data Source](../../individuals-and-segments/individual-profiles/adding-a-csv-data-source.md)
+-   [Adding a Salesforce Data Source](../../individuals-and-segments/individual-profiles/adding-a-salesforce-data-source.md)

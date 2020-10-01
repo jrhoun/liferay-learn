@@ -3,7 +3,9 @@
 > **Subscribers**
 
 > **Availability:** [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/172465398)
+
 <!-- please use a more generic example for screenshots (instead of lunar resort) -->
+
 The Similar Results widget shows search results similar to the _main asset_ that's selected on the page.
 
 The concept of the main asset is important. Certain widgets in DXP display lists of assets: Asset Publisher, Blogs, Wiki, and more. If a user clicks one of the displayed assets and the widget shows its full content on the page, it's now the page's _main asset_. The Similar Results widget, if placed on the same page, shows a list of assets that are similar enough to be returned by a [_More Like This_ query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). The concept of a main asset is synonymous with Elasticsearch's [_input document_](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works).
@@ -35,7 +37,9 @@ Learn more by considering two use cases.
 Similar Results (those that would be returned as matching search hits) of the same asset type are displayed when an asset is selected in the Asset Publisher.
 
 To configure this example,
+
 <!-- One or two screenshots here would be beneficial. -->
+
 1. Create a widget page. Add an Asset Publisher widget and a Similar Results widget.
 
 1. Go to the Asset Publisher's configuration Display Settings and set Asset Link Behavior to _Show Full Content_.
@@ -44,17 +48,17 @@ To configure this example,
 
 1. Create multiple similar assets of the types listed below. Make sure they're similar enough that the Similar Results widget would populate results.
 
-    To create assets that will be returned by the More Like This Query, pay attention to the content of the assets you create and to the [Similar Results widget configuration](#similar-results-configurations).  For testing, it's advisable to set the _Minimum Term Frequency_ and the _Minimum Document Frequency_ values both to `1`.
+    To create assets that will be returned by the More Like This Query, pay attention to the content of the assets you create and to the [Similar Results widget configuration](#similar-results-configurations). For testing, it's advisable to set the _Minimum Term Frequency_ and the _Minimum Document Frequency_ values both to `1`.
 
-    * Blogs Entries
-    * Documents and Media files
-    * Documents and Media folders
-    * Web Content Articles
-    * Web Content Folders
-    * Wiki Pages
-    * Message Boards threads
-    * Message Boards messages
-    * Message Boards categories
+    - Blogs Entries
+    - Documents and Media files
+    - Documents and Media folders
+    - Web Content Articles
+    - Web Content Folders
+    - Wiki Pages
+    - Message Boards threads
+    - Message Boards messages
+    - Message Boards categories
 
 Click on an asset displayed by the Asset Publisher widget, and similar results appear in the Similar Results widget.
 
@@ -66,8 +70,8 @@ Click on one of the similar results. The Asset Publisher updates its main asset,
 
 These widgets and accompanying assets can display a list of their assets and select one to be used as a Main Asset for the Similar Results widget:
 
-| Widget Name | Asset Type(s) |
-|---------------------|--------------------------------------------------|
+| Widget Name         | Asset Type(s)                                    |
+| ------------------- | ------------------------------------------------ |
 | Blogs               | Blogs Entries                                    |
 | Documents and Media | Documents and Media Files, Folders               |
 | Wiki                | Wiki Pages                                       |
@@ -79,7 +83,7 @@ To configure an example for using Similar Results with Blogs,
 
 1. Create multiple similar Blogs entries. Make sure they're similar enough that the Similar Results widget returns them as results.
 
-    To create assets that will be returned by the More Like This Query, pay attention to the content of the assets you create and to the [Similar Results widget configuration](#similar-results-configurations).  For testing, it's advisable to set the _Minimum Term Frequency_ and the _Minimum Document Frequency_ values both to `1`.
+    To create assets that will be returned by the More Like This Query, pay attention to the content of the assets you create and to the [Similar Results widget configuration](#similar-results-configurations). For testing, it's advisable to set the _Minimum Term Frequency_ and the _Minimum Document Frequency_ values both to `1`.
 
 1. Click on a Blogs post in the Blogs widget. The Blogs entry is displayed, and the Similar Results widget displays links to similar entries.
 
@@ -121,7 +125,9 @@ The same template editor is accessible from the Widget Templates entry in the Si
 ## Similar Results Configurations
 
 The first configuration options appear in a section called _Display Settings_.
+
 <!-- Please consider reworking this list of configurations into a table for a better skimming experience along with a screenshot or two for a visual reference. -->
+
 **Display Template:** Choose the widget template to configure how similar results are displayed.
 
 **Maximum Item Display:** Set the maximum number of results to display in the widget.
@@ -153,4 +159,4 @@ used to determine whether another asset matches the Main Asset.
 
 **Term Boost:** Set the boost factor to use if boosting terms by their [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) score is desired. If left blank, this defaults to deactivated (`0`). Any other positive value activates terms boosting with the given boost factor.
 
-**Federated Search Key:**  Enter the key of an alternate Search where this widget is participating.
+**Federated Search Key:** Enter the key of an alternate Search where this widget is participating.

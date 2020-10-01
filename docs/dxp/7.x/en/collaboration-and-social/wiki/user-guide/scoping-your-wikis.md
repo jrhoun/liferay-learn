@@ -16,7 +16,7 @@ Wiki pages created at the global site scope level are available on all other sit
 1. Click _Scope_.
 1. Select **Global** from the _Scope_ dropdown menu.
 
-   ![Selecting the Global scope](./scoping-your-wikis/images/01.png)
+    ![Selecting the Global scope](./scoping-your-wikis/images/01.png)
 
 1. Click _Save_ and close the window.
 
@@ -80,4 +80,4 @@ Any changes you make here apply to the scope that you selected in the previous s
 
 ## Additional Information
 
-* [Widget Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)
+-   [Widget Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)

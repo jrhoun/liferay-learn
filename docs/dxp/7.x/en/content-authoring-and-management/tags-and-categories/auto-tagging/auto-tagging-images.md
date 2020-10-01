@@ -8,11 +8,11 @@ Once [asset auto tagging has been enabled](./configuring-asset-auto-tagging.md),
 
 By default, Image Auto Tagging is disabled by default. In addition to enabling Auto Tagging in DXP, you must also configure an image tagging provider. Three providers are available:
 
-* [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
+-   [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
 
-* [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
+-   [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
 
-* [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
+-   [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
 
 ![The tags freight car and electric locomotive were automatically applied to this image.](./auto-tagging-images/images/01.png)
 
@@ -67,7 +67,7 @@ The TensorFlow provider has been configured.
 1. Enter your Google Cloud Vision API Key. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
 1. Check the _Enabled_ box to enable Google Cloud Vision.
 
-   ![The Google Cloud Vision provider requires an API key.](./auto-tagging-images/images/06.png)
+    ![The Google Cloud Vision provider requires an API key.](./auto-tagging-images/images/06.png)
 
 1. Click _Save_ when finished.
 
@@ -96,5 +96,5 @@ If you have more than one virtual instance, you can configure each instance indi
 
 ## Additional Information
 
-* [Configuring Asset Auto Tagging](./configuring-asset-auto-tagging.md)
-* [Auto Tagging Assets](./auto-tagging-assets.md)
+-   [Configuring Asset Auto Tagging](./configuring-asset-auto-tagging.md)
+-   [Auto Tagging Assets](./auto-tagging-assets.md)

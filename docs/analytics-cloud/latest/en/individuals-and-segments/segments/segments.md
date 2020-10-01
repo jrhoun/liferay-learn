@@ -18,10 +18,10 @@ Here’s how to view Segment profiles:
 
 1. Select a Segment to learn these things about it:
 
-    * Membership: Population fluctuation over time.
-    * Topics of interest: Topics mentioned in the pages and assets the Segment visits most.
-    * Distribution: Demographics based on Individual properties
-    * The Segment’s profile appears, showing its Overview panel.
+    - Membership: Population fluctuation over time.
+    - Topics of interest: Topics mentioned in the pages and assets the Segment visits most.
+    - Distribution: Demographics based on Individual properties
+    - The Segment’s profile appears, showing its Overview panel.
 
 ### Overview
 

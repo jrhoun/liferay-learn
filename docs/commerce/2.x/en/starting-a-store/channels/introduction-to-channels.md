@@ -8,19 +8,19 @@ With multiple channels, you can create more than one Liferay site each with a un
 
 Products and discounts can be configured to be available in all channels or specific channels. Similarly, many configurations can be set on the channel level. This includes:
 
-* Category Display Pages
-* Notifications
-* Order Workflows
-* Order Fields
-* Payment Methods
-* Product Display Pages
-* Shipping Methods
-* Taxes
-* Countries
-* Warehouses
+-   Category Display Pages
+-   Notifications
+-   Order Workflows
+-   Order Fields
+-   Payment Methods
+-   Product Display Pages
+-   Shipping Methods
+-   Taxes
+-   Countries
+-   Warehouses
 
 ## Additional Information
 
-* [Managing Channels](./managing-channels.md)
-* [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
-* [Channels Reference Guide](./channels-reference-guide.md)
+-   [Managing Channels](./managing-channels.md)
+-   [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
+-   [Channels Reference Guide](./channels-reference-guide.md)

@@ -27,7 +27,7 @@ When using Mercanet, your store must use Euros as the primary currency. To chang
 
 _Euro_ is now set as the primary currency.
 
-![Set Primary Currency](./mercanet/images/01.png)  
+![Set Primary Currency](./mercanet/images/01.png)
 
 ## Activate Mercanet as a payment method
 
@@ -36,11 +36,11 @@ _Euro_ is now set as the primary currency.
 1. Click _Mercanet_.
 1. Click _Configuration_.
 1. Enter the following:
-    * Your _Merchant ID_
-    * Your _Secret Key_
-    * Your _Key Version_
+    - Your _Merchant ID_
+    - Your _Secret Key_
+    - Your _Key Version_
 1. Select _Production_ if it is a live site or _Test_ or _Simulation_ if it is a test environment.
-    ![Mercanet settings](./mercanet/images/02.png)
+   ![Mercanet settings](./mercanet/images/02.png)
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Mercanet_ then _Activate_.
 
@@ -48,6 +48,6 @@ Mercanet is now enabled for your store.
 
 ## Additional Information
 
-* [Adding a New Currency](../currencies/adding-a-new-currency.md)
-* [Authorize.Net](./authorize.net.md)
-* [PayPal](./paypal.md)
+-   [Adding a New Currency](../currencies/adding-a-new-currency.md)
+-   [Authorize.Net](./authorize.net.md)
+-   [PayPal](./paypal.md)

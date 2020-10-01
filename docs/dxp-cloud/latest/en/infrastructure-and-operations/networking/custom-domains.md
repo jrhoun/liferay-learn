@@ -4,15 +4,15 @@ With Liferay DXP Cloud, you can connect custom domains to environment services w
 
 To do this, first register your custom domain with your environment's Load Balancer IP address. Then add the domain to the desired service via the DXP Cloud console or the service's LCP.json file.
 
-* [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
-* [Adding a Custom Domain to a DXP Cloud Service](#adding-a-custom-domain-to-a-dxp-cloud-service)
-* [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
+-   [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
+-   [Adding a Custom Domain to a DXP Cloud Service](#adding-a-custom-domain-to-a-dxp-cloud-service)
+-   [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
 
 ## Registering a Custom Domain with an Environment IP
 
 Each project environment has its own Ingress Load Balancer IP that can be used to connect custom domains to environment services.
 
-This IP is listed in each environment's *Network* page, as well as in each service's dedicated page under *Custom Domains*.
+This IP is listed in each environment's _Network_ page, as well as in each service's dedicated page under _Custom Domains_.
 
 ![Figure 1: You can find the environment's Ingress Load Balancer IP in the environment's Network page.](./custom-domains/images/01.png)
 
@@ -38,22 +38,22 @@ Follow these steps to add custom domains to environment services via the DXP Clo
 
 1. Select the service to which you want to add a custom domain.
 
-1. Click on the *Custom Domains* tab.
+1. Click on the _Custom Domains_ tab.
 
-1. Enter any custom domains registered with your environment into the *Domain Names* field.
+1. Enter any custom domains registered with your environment into the _Domain Names_ field.
 
     ![Figure 3: Use the service's Custom Domains tab to add the domains.](./custom-domains/images/03.png)
 
-1. Click *Update Custom Domains* to finalize the addition.
+1. Click _Update Custom Domains_ to finalize the addition.
 
 Alternatively, you can add custom domains to an environment service by adding the `customDomains` property to its `LCP.json` file:
 
 ```json
 {
-  "id": "webserver",
-  "loadBalancer": {
-    "customDomains": ["acme.com", "www.acme.com"]
-  }
+	"id": "webserver",
+	"loadBalancer": {
+		"customDomains": ["acme.com", "www.acme.com"]
+	}
 }
 ```
 
@@ -67,8 +67,8 @@ Once a custom domain is added to your service and your changes are deployed, DXP
 
 You can verify the status of your custom domain in two ways:
 
-* Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
-* Check the status of the service's domain via the DXP Cloud console by navigating to the environment's *Network* page.
+-   Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
+-   Check the status of the service's domain via the DXP Cloud console by navigating to the environment's _Network_ page.
 
 ![Figure 4: View all your endpoints and custom domains on the Network page.](./custom-domains/images/04.png)
 
@@ -84,5 +84,5 @@ See [Load Balancer](./load-balancer.md) to learn more about SSL certificates in 
 
 ## Additional Information
 
-* [Load Balancer](./load-balancer.md)
-* [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)
+-   [Load Balancer](./load-balancer.md)
+-   [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)

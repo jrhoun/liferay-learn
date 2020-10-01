@@ -1,6 +1,6 @@
 # LDAP Configuration Reference
 
-To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are four categories on the left: Export, General, Import, and Servers.
+To access LDAP configuration settings, navigate to _Control Panel &rarr; Configuration_ &rarr; _Instance Settings_ &rarr; _Security_ &rarr; _LDAP_. There are four categories on the left: Export, General, Import, and Servers.
 
 ## Export
 
@@ -20,9 +20,9 @@ users.update.last.login=false
 
 **Required:** Check this box if LDAP authentication is required. Users can't log in unless they can bind to the LDAP directory successfully. Uncheck this box if users with Liferay accounts but no LDAP accounts can log in.
 
-**Use LDAP Password Policy:** Liferay uses its own password policy by default. This can be configured on the Control Panel's Password Policies page. Check the *Use LDAP Password Policy* box if you want to use the password policies defined by your LDAP directory. Once this is enabled, the Password Policies tab states that you are not using a local password policy. You must now use your LDAP directory's mechanism for setting password policies. Liferay cannot enforce these policies; the best it can do is pass through the messages returned by your LDAP server. It does this by parsing the messages in the LDAP controls the server returns. Liferay's default configuration parses messages returned by the Fedora Directory Server. If you use a different LDAP server, you must customize the messages in *System Settings* &rarr; *Security* &rarr; *LDAP* &rarr; *Connection*.
+**Use LDAP Password Policy:** Liferay uses its own password policy by default. This can be configured on the Control Panel's Password Policies page. Check the _Use LDAP Password Policy_ box if you want to use the password policies defined by your LDAP directory. Once this is enabled, the Password Policies tab states that you are not using a local password policy. You must now use your LDAP directory's mechanism for setting password policies. Liferay cannot enforce these policies; the best it can do is pass through the messages returned by your LDAP server. It does this by parsing the messages in the LDAP controls the server returns. Liferay's default configuration parses messages returned by the Fedora Directory Server. If you use a different LDAP server, you must customize the messages in _System Settings_ &rarr; _Security_ &rarr; _LDAP_ &rarr; _Connection_.
 
-**Method:** Choose *Bind* (the default) or *Password Compare*. Bind does a standard LDAP bind; Password Compare attempts to compare Liferay and LDAP passwords using the encryption algorithm specified in the field below. Password Compare is rarely used.
+**Method:** Choose _Bind_ (the default) or _Password Compare_. Bind does a standard LDAP bind; Password Compare attempts to compare Liferay and LDAP passwords using the encryption algorithm specified in the field below. Password Compare is rarely used.
 
 **Password Encryption Algorithm:** Choose the password encryption algorithm your LDAP server uses to encrypt passwords so they can be compared if using the Password Compare bind method. This is rarely used.
 
@@ -60,7 +60,7 @@ You can import user data from LDAP directories using the following options:
 
 ## Servers
 
-**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the *Add* button to add LDAP servers.
+**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the _Add_ button to add LDAP servers.
 
 **Server Name:** Enter a name for your LDAP server.
 
@@ -78,16 +78,16 @@ These settings cover the connection to LDAP.
 
 ![Adding a new LDAP server.](./ldap-configuration-reference/images/05.png)
 
-Once you've finished configuring LDAP, click the *Save* button.
+Once you've finished configuring LDAP, click the _Save_ button.
 
 ### LDAP Options Available in System Settings
 
-Although most LDAP configuration can be done from Instance Settings, there are several parameters only available in System Settings. There are also settings duplicated from the ones in Instance Settings. These change the *default* settings for new virtual instances (see note below).
+Although most LDAP configuration can be done from Instance Settings, there are several parameters only available in System Settings. There are also settings duplicated from the ones in Instance Settings. These change the _default_ settings for new virtual instances (see note below).
 
 ```note::
    When you make a change in System Settings, it affects the current virtual instance. If after changing a setting you create a new virtual instance, that virtual instance inherits the settings of the one it was created from as defaults. For example, say you have virtual instances named A, B, and C. From A, you modify *Error password history keywords*. This change appears only in A, not in B or C. Then from A, you create virtual instance D. The change to *Error password history keywords* appears in D (not B or C), since D defaults to A's settings because you created it from A.
 ```
 
-If you must change any of these options, navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*. Go to the *Security* section and find the entries with LDAP in the title. The only new settings here are in the *Connection* entry.
+If you must change any of these options, navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_. Go to the _Security_ section and find the entries with LDAP in the title. The only new settings here are in the _Connection_ entry.
 
-Use the *Connection* entry to manage error properties like *Error password age keywords* where you can set a list of phrases from error messages which can possibly be returned by the LDAP server. When a user binds to LDAP, the server returns *controls* with its response of success or failure. These controls contain a message describing the error or the information that is returned with the response. Though the controls are the same across LDAP servers, the messages can be different. The properties described here contain snippets of words from those messages and work with Red Hat's Fedora Directory Server. If you are not using that server, the word snippets may not work with your LDAP server. If they don't, you can replace the values of these properties with phrases from your server's error messages. This enables Liferay to recognize them.
+Use the _Connection_ entry to manage error properties like _Error password age keywords_ where you can set a list of phrases from error messages which can possibly be returned by the LDAP server. When a user binds to LDAP, the server returns _controls_ with its response of success or failure. These controls contain a message describing the error or the information that is returned with the response. Though the controls are the same across LDAP servers, the messages can be different. The properties described here contain snippets of words from those messages and work with Red Hat's Fedora Directory Server. If you are not using that server, the word snippets may not work with your LDAP server. If they don't, you can replace the values of these properties with phrases from your server's error messages. This enables Liferay to recognize them.

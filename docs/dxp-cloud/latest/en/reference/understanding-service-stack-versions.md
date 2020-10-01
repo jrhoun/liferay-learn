@@ -43,9 +43,9 @@ For example, see this section of an `LCP.json` file for the `database` service:
 
 ```json
 {
-   "kind": "Deployment",
-   "id": "database",
-   "image": "liferaycloud/database:4.0.0",
+	"kind": "Deployment",
+	"id": "database",
+	"image": "liferaycloud/database:4.0.0"
 }
 ```
 
@@ -57,5 +57,5 @@ In this example, the `image` property's value has a name ending in `4.0.0`, indi
 
 ## Additional Information
 
-* [DXP Cloud Project Changes in Version 4](./dxp-cloud-project-changes-in-version-4.md)
-* [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+-   [DXP Cloud Project Changes in Version 4](./dxp-cloud-project-changes-in-version-4.md)
+-   [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)

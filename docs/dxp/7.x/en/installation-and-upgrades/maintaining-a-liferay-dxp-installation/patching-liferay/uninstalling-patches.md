@@ -2,8 +2,8 @@
 
 After you install a patch, you may determine that you're not ready for the patch and decide to restore your installation to a previous patch level. Here you'll learn how to:
 
-* Uninstall Patches
-* Revert (uninstall) all patches at once.
+-   Uninstall Patches
+-   Revert (uninstall) all patches at once.
 
 ## Uninstalling a Patch
 
@@ -37,6 +37,6 @@ Now you know how to restore your DXP installation by uninstalling and reverting 
 
 ## Additional Information
 
-* [Installing Patches](./installing-patches.md)
-* [Understanding Patch Types](./understanding-patch-types.md)
-* [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)
+-   [Installing Patches](./installing-patches.md)
+-   [Understanding Patch Types](./understanding-patch-types.md)
+-   [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)

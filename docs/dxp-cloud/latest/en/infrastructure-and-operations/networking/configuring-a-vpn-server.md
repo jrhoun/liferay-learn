@@ -65,6 +65,7 @@ To configure an IPsec test server:
     ipsec pki --self --ca --lifetime 3650 --in ~/pki/private/ca-key.pem \ --type rsa --dn "CN=VPN root CA" --outform pem > ~/pki/cacerts/ca-cert.pem
 
     ipsec pki --gen --type rsa --size 4096 --outform pem > ~/pki/private/server-key.pem
+    ```
 
 
     ipsec pki --pub --in ~/pki/private/server-key.pem --type rsa \
@@ -270,5 +271,5 @@ The OpenVPN server has been configured.
 
 ## Additional Information
 
-* [VPN Integration Overview](./vpn-integration-overview.md)
-* [Connecting a VPN Server to DXP Cloud](./connecting-a-vpn-server-to-dxp-cloud.md)
+-   [VPN Integration Overview](./vpn-integration-overview.md)
+-   [Connecting a VPN Server to DXP Cloud](./connecting-a-vpn-server-to-dxp-cloud.md)

@@ -47,4 +47,4 @@ The Account Group has been created and one account has been associated with this
 
 ## Additional Information
 
-* [Creating a New Account](./creating-a-new-account.md)
+-   [Creating a New Account](./creating-a-new-account.md)

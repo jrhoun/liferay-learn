@@ -4,16 +4,16 @@ Liferay uses a bundled instance of Elasticsearch to power search throughout the 
 
 Start Liferay DXP and begin exploring the out-of-the-box search functionality:
 
-* Full-text search features
-* Indexing of all content types (blogs, documents, web content, etc.)
-* Highly configurable search pages
-* A search bar embedded in the header of every page
-* Automatic index synchronization when new content is added, updated, or deleted
-* Search results filtered by roles and permissions
-* Search suggestions
-* Configure search results (e.g., filter and sort)
-* Faceted search
-* Enable or disable advanced search syntax (e.g., AND/OR/NOT, wildcards, etc.)
+-   Full-text search features
+-   Indexing of all content types (blogs, documents, web content, etc.)
+-   Highly configurable search pages
+-   A search bar embedded in the header of every page
+-   Automatic index synchronization when new content is added, updated, or deleted
+-   Search results filtered by roles and permissions
+-   Search suggestions
+-   Configure search results (e.g., filter and sort)
+-   Faceted search
+-   Enable or disable advanced search syntax (e.g., AND/OR/NOT, wildcards, etc.)
 
 ## Search Pages and Widgets
 
@@ -55,9 +55,9 @@ Custom code for search usually involves intervening in at least one of these sea
 
 The development functionality around Search can be broken into two categories:
 
-* Service Provider Interfaces (SPIs) are meant to be implemented. In the source code, these are found in modules ending in `-spi` (for example, the [`portal-search-spi` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-spi)).
+-   Service Provider Interfaces (SPIs) are meant to be implemented. In the source code, these are found in modules ending in `-spi` (for example, the [`portal-search-spi` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-spi)).
 
-* APIs contain methods you can call in your own code. In the source code, these are found in modules ending in `-api` (for example, the [`portal-search-api` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-api)).
+-   APIs contain methods you can call in your own code. In the source code, these are found in modules ending in `-api` (for example, the [`portal-search-api` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-api)).
 
 Further detail on the usage of these APIs and extension points is provided in the Developer Guide.
 
@@ -67,7 +67,7 @@ Search is a fundamental component of Liferay DXP. If you're testing out the buil
 
 Once a search engine holding your indexed data is freely communicating with Liferay DXP, you're ready to configure or customize the search experience.
 
-Sites often feature lots of content split over lots of asset types. Web content articles, documents and media files, and blogs entries are just a few examples. Most content types are *assets*.Under the hood, assets use the [Asset API](https://help.liferay.com/hc/en-us/sections/360004656831-Asset-Framework) and [indexing code](#custom-development-in-search). Any content that has these features can be searched in Liferay DXP's out-of-the-box search widgets. 
+Sites often feature lots of content split over lots of asset types. Web content articles, documents and media files, and blogs entries are just a few examples. Most content types are *assets*.Under the hood, assets use the [Asset API](https://help.liferay.com/hc/en-us/sections/360004656831-Asset-Framework) and [indexing code](#custom-development-in-search). Any content that has these features can be searched in Liferay DXP's out-of-the-box search widgets.
 
 ![The Type Facet configuration lists the searchable out-of-the-box asset types.](./search-overview/images/01.png)
 

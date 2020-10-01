@@ -31,13 +31,13 @@ Configure the store following these steps:
     ```
 
 1. Restart DXP.
-1. In the Control Panel, navigate to *Configuration* &rarr; *System Settings* &rarr; *File Storage*.
-1. In the *S3 Store* screen, configure the store:
+1. In the Control Panel, navigate to _Configuration_ &rarr; _System Settings_ &rarr; _File Storage_.
+1. In the _S3 Store_ screen, configure the store:
 
-    * **Bucket Name**: Your bucket's name.
-    * **Access Key**: Your AWS access key.
-    * **Secret Key**: Your secret key.
-    * **S3 Region**: The [geographic region](https://docs.aws.amazon.com/general/latest/gr/s3.html); the default is `us-east-1`.
+    - **Bucket Name**: Your bucket's name.
+    - **Access Key**: Your AWS access key.
+    - **Secret Key**: Your secret key.
+    - **S3 Region**: The [geographic region](https://docs.aws.amazon.com/general/latest/gr/s3.html); the default is `us-east-1`.
 
     ![Amazon S3 Store Configurations](./amazon-s3-store/images/01.png)
 
@@ -64,7 +64,7 @@ Consult the Amazon Simple Storage documentation for additional details on using 
 
 ## Additional Information
 
-* [Configuring File Storage](../configuring-file-storage.md)
-* [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)
-* [DBStore](./dbstore.md)
-* [File Store Migration](../file-store-migration.md)
+-   [Configuring File Storage](../configuring-file-storage.md)
+-   [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)
+-   [DBStore](./dbstore.md)
+-   [File Store Migration](../file-store-migration.md)

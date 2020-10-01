@@ -11,8 +11,8 @@ This article walks through the steps to deploy a sample module using a typical d
 
 In order to get started, you need the following:
 
-* A sample module
-* A configured DXP Cloud Git repository
+-   A sample module
+-   A configured DXP Cloud Git repository
 
 ### Setting Up the Git Repository
 
@@ -189,8 +189,8 @@ Once you have verified the deployment was successful, you have completed this tu
 
 ## Additional Information
 
-* [Command-Line Tool](../reference/command-line-tool.md)
-* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
-* [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
+-   [Command-Line Tool](../reference/command-line-tool.md)
+-   [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
+-   [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
+-   [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
+-   [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)

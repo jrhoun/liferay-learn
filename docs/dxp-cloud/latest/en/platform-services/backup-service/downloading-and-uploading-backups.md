@@ -6,17 +6,17 @@ Users can also download or upload environment backups using backup service APIs.
 
 ## Downloading Backups via the DXP Cloud Console
 
-Follow these steps to download a backup from the *Backups* page in your `prd` environment:
+Follow these steps to download a backup from the _Backups_ page in your `prd` environment:
 
-1. Click on the *Actions* button ( ⋮ ) for the backup you want to download.
+1. Click on the _Actions_ button ( ⋮ ) for the backup you want to download.
 
-1. Click on *Download*.
+1. Click on _Download_.
 
-   ![Figure 1: Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
+    ![Figure 1: Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
 
-1. Click on the *Database* or *Liferay* `.tgz` file to start downloading. Together, these zip archives comprise the environment backup.
+1. Click on the _Database_ or _Liferay_ `.tgz` file to start downloading. Together, these zip archives comprise the environment backup.
 
-   ![Figure 2: Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+    ![Figure 2: Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
 
 ```note::
    Only production environment administrators can download backups from the Backups page.
@@ -28,7 +28,7 @@ The backup service has APIs that you can use to download and upload backups. You
 
 ### Getting the Host Name
 
-To invoke the backup APIs, you need the backup service's host name. You can find this on the *Services* page.
+To invoke the backup APIs, you need the backup service's host name. You can find this on the _Services_ page.
 
 ![Figure 3: view the backup service's host name from the Services page.](./downloading-and-uploading-backups/images/03.png)
 
@@ -36,10 +36,10 @@ The backup service's host name is a combination of the service, project, and env
 
 Consider this example:
 
-* Service name: `backup`
-* Project name: `lfrjoebloggs`
-* Environment name: `prd`
-* Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
+-   Service name: `backup`
+-   Project name: `lfrjoebloggs`
+-   Environment name: `prd`
+-   Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
 
 ### Authentication
 
@@ -68,9 +68,9 @@ The API for downloading a database contains an endpoint that returns a `.tgz` fi
 
 #### Parameters
 
-Name | Type     | Required |
----- | -------- | -------- |
-`id` | `String` | Yes      |
+| Name | Type     | Required |
+| ---- | -------- | -------- |
+| `id` | `String` | Yes      |
 
 #### curl Example
 
@@ -87,9 +87,9 @@ The API for downloading a data volume contains an endpoint that returns a `.tgz`
 
 #### Parameters
 
-Name | Type     | Required |
----- | -------- | -------- |
-`id` | `String` | Yes      |
+| Name | Type     | Required |
+| ---- | -------- | -------- |
+| `id` | `String` | Yes      |
 
 #### curl Example
 
@@ -150,10 +150,10 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 
 **Parameters**
 
-Name       | Type   | Required |
----------- | ------ | -------- |
-`database` | `File` | Yes      |
-`volume`   | `File` | Yes      |
+| Name       | Type   | Required |
+| ---------- | ------ | -------- |
+| `database` | `File` | Yes      |
+| `volume`   | `File` | Yes      |
 
 **curl Example**
 
@@ -168,6 +168,6 @@ curl -X POST \
 
 ## Additional Information
 
-* [Backup Service Overview](./backup-service-overview.md)
-* [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
-* [Database Service (MySQL)](../database-service.md)
+-   [Backup Service Overview](./backup-service-overview.md)
+-   [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
+-   [Database Service (MySQL)](../database-service.md)

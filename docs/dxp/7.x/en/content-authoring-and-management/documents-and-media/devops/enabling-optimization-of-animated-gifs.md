@@ -13,7 +13,7 @@ Optimizing animated GIFs using Adaptive Media requires three steps: installing G
 1. Click _System Settings_.
 1. Click _Adaptive Media_.
 
-   ![Access the Adaptive Media system settings.](./enabling-optimization-of-animated-gifs/images/02.png)
+    ![Access the Adaptive Media system settings.](./enabling-optimization-of-animated-gifs/images/02.png)
 
 1. Click _Images_ in the left navigation under _System Scope_.
 1. Scroll down and and then click the box next to _Gifsicle Enabled_.
@@ -24,5 +24,5 @@ Optimizing animated GIFs using Adaptive Media requires three steps: installing G
 
 ## Additional Information
 
-* [How Adaptive Media Works](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
-* [Using Adapted Images in Site Content](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)
+-   [How Adaptive Media Works](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
+-   [Using Adapted Images in Site Content](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)

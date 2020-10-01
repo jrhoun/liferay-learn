@@ -8,11 +8,11 @@ Use a Jump to Page rule to navigate automatically to a specific page in the form
 
 In this example, there are three pages:
 
-* _First time camper?_: a required single selection field with two options: _Yes_ and _No_
-* A second form page called _New Camper Information_
-* A third form page called _Success_
+-   _First time camper?_: a required single selection field with two options: _Yes_ and _No_
+-   A second form page called _New Camper Information_
+-   A third form page called _Success_
 
-If the user selects *no* on the first page, the form skips the second page and proceeds to the _Success_ page.
+If the user selects _no_ on the first page, the form skips the second page and proceeds to the _Success_ page.
 
 ## Configuring the Jump to Page Action Rule
 
@@ -27,7 +27,7 @@ To configure the Jump to Page Rule:
 1. Select _Jump to Page_ from the _Do_ dropdown menu.
 1. Select the _Success_ page to bypass the _New Camper Information_ page.
 
-     ![Create the conditions and action.](./using-the-jump-to-page-rule/images/01.png)
+    ![Create the conditions and action.](./using-the-jump-to-page-rule/images/01.png)
 
 1. Click _Save_ when finished.
 
@@ -37,6 +37,6 @@ To configure the Jump to Page Rule:
 
 ## Additional Information
 
-* [Creating Forms](../../creating-forms.md)
-* [Form Rules](./form-rules-overview.md)
-* [Using the Show/Hide Rule](./using-the-show-hide-rule.md)
+-   [Creating Forms](../../creating-forms.md)
+-   [Form Rules](./form-rules-overview.md)
+-   [Using the Show/Hide Rule](./using-the-show-hide-rule.md)

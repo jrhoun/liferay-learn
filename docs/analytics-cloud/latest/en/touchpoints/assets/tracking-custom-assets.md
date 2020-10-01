@@ -34,32 +34,32 @@ For example, if you want to track a poll in a custom Polls app, you might use HT
 
 ```html
 <div>
-<h1> What's your favorite food? </h1>
-<form action="/submit.php">
-<div>
-  <input type="radio" id="sushi" name="food" value="Sushi"
-     checked>
-  <label for="sushi">Sushi</label>
-</div>
-<div>
-  <input type="radio" id="pizza" name="food" value="Pizza">
-  <label for="pizza">Pizza</label>
-</div>
-<input type="submit" value="Submit" />
-</form>
+	<h1>What's your favorite food?</h1>
+	<form action="/submit.php">
+		<div>
+			<input type="radio" id="sushi" name="food" value="Sushi" checked />
+			<label for="sushi">Sushi</label>
+		</div>
+		<div>
+			<input type="radio" id="pizza" name="food" value="Pizza" />
+			<label for="pizza">Pizza</label>
+		</div>
+		<input type="submit" value="Submit" />
+	</form>
 </div>
 ```
 
 To track this poll’s events, add the above attributes to the div:
 
 ```html
-<div data-analytics-asset-type="custom"
-  data-analytics-asset-id="favorite-food-poll"
-  data-analytics-asset-category="polls"
-  data-analytics-asset-title="What is your favorite food Poll">
-
-<h1> What's your favorite food? </h1>
-...
+<div
+	data-analytics-asset-type="custom"
+	data-analytics-asset-id="favorite-food-poll"
+	data-analytics-asset-category="polls"
+	data-analytics-asset-title="What is your favorite food Poll"
+>
+	<h1>What's your favorite food?</h1>
+	...
 </div>
 ```
 
@@ -78,14 +78,17 @@ data-analytics-asset-action="download"
 For example, here’s the above poll with a download link for a PDF file that contains the poll’s instructions:
 
 ```html
-<div data-analytics-asset-type="custom"
-  data-analytics-asset-id="favorite-food-poll"
-  data-analytics-asset-category="polls"
-  data-analytics-asset-title="What is your favorite food Poll">
+<div
+	data-analytics-asset-type="custom"
+	data-analytics-asset-id="favorite-food-poll"
+	data-analytics-asset-category="polls"
+	data-analytics-asset-title="What is your favorite food Poll"
+>
+	<a href="/poll-instructions.pdf" data-analytics-asset-action="download"
+		>Download the Poll Instructions
+	</a>
 
-<a href="/poll-instructions.pdf" data-analytics-asset-action="download">Download the Poll Instructions </a>
-
-<h1> What's your favorite food? </h1>
-...
+	<h1>What's your favorite food?</h1>
+	...
 </div>
 ```

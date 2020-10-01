@@ -16,15 +16,15 @@ The _Open_ tab displays all the orders that have not completed the checkout proc
 
 ![Orders menu - Open tab](./orders-menu-reference-guide/images/07.png)
 
-| Field | Description|
-| --- | --- |
-| Order ID | This is the Order ID. |
-| Account | This is the name of the account. |
-| Account Number | This is the generated account number. |
-| Channel | This is the name of the channel or storefront where the order was placed. |
-| Amount | This is the amount of the order. |
-| Create Date | This displays the date the order was created. |
-| Order Status | This is the status of the order. |
+| Field          | Description                                                               |
+| -------------- | ------------------------------------------------------------------------- |
+| Order ID       | This is the Order ID.                                                     |
+| Account        | This is the name of the account.                                          |
+| Account Number | This is the generated account number.                                     |
+| Channel        | This is the name of the channel or storefront where the order was placed. |
+| Amount         | This is the amount of the order.                                          |
+| Create Date    | This displays the date the order was created.                             |
+| Order Status   | This is the status of the order.                                          |
 
 ## Pending
 
@@ -34,10 +34,10 @@ The _Pending_ tab displays all orders that have completed the checkout process.
 
 There are three particular fields to note:
 
-| Field | Description|
-| --- | --- |
-| Order Date | This is the date the order was created. |
-| Order Status | This is the status of the order. |
+| Field                      | Description                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Order Date                 | This is the date the order was created.                                                                                      |
+| Order Status               | This is the status of the order.                                                                                             |
 | Acceptance Workflow Status | This displays the order's [buyer's acceptance workflow](../order-workflows/enabling-or-disabling-order-workflows.md) status. |
 
 ## Processing
@@ -60,9 +60,9 @@ When [delivery has been confirmed](../shipments/introduction-to-shipments.md), t
 
 Orders are managed on the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](./order-life-cycle.md).
 
-![Orders Menu Overview](./orders-menu-reference-guide/images/01.png "Orders Menu Overview")
+![Orders Menu Overview](./orders-menu-reference-guide/images/01.png 'Orders Menu Overview')
 
-Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
+Order information in the _Orders_ menu can also be presented to other users – particularly buyers – using the _Open Carts_ widget (for orders on the _Open_ tab) and the _Orders_ widget (for orders on the _Pending_ or _Transmitted_ tabs). See [Pending Orders](../../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
 
 ### Open
 
@@ -72,7 +72,7 @@ In this tab, the order activity is exclusively on the buyer's side. A new order 
    If *Approval Workflow* is enabled, orders remain in the *Open* tab until the workflow process has completed and the order is placed.
 ```
 
-![Open Tab](./orders-menu-reference-guide/images/02.png "Open Tab")
+![Open Tab](./orders-menu-reference-guide/images/02.png 'Open Tab')
 
 ### Pending
 
@@ -82,18 +82,18 @@ The _Pending_ tab serves as a holding place for orders – this is helpful for b
    If *Transmission Workflow* is enabled, orders remain in the *Pending* tab throughout the workflow process, even if the seller rejects an order, sending it back to the buyer.
 ```
 
-![Pending Tab](./orders-menu-reference-guide/images/03.png "Pending Tab")
+![Pending Tab](./orders-menu-reference-guide/images/03.png 'Pending Tab')
 
 ### Transmitted
 
 In this tab, the order activity is exclusively on the seller's side. The seller transmits a _Pending_ order by [changing the order status](./processing-an-order.md#commerce-20-and-below) (manually or via automation) from the “_To Transmit_” status to any other order status. At this point, the order moves to the _Transmitted_ tab and, if configured, is sent to an external system, such as Microsoft’s Dynamics GP, Oracle’s NetSuite, or SAP. The seller may then proceed with delivery of the ordered products to the buyer. Additional information may also be added to the order, such as an updated [order status](./order-management-statuses-reference-guide.md), [shipping information](../shipments/introduction-to-shipments.md) and estimated arrival time.
 
-![Transmitted Tab](./orders-menu-reference-guide/images/04.png "Transmitted Tab")
+![Transmitted Tab](./orders-menu-reference-guide/images/04.png 'Transmitted Tab')
 
 ## Additional Information
 
-* [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
-* [Processing an Order](./processing-an-order.md)
-* [Order Management Statuses Reference Guide](./order-management-statuses-reference-guide.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+-   [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
+-   [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
+-   [Processing an Order](./processing-an-order.md)
+-   [Order Management Statuses Reference Guide](./order-management-statuses-reference-guide.md)
+-   [Introduction to Shipments](../shipments/introduction-to-shipments.md)

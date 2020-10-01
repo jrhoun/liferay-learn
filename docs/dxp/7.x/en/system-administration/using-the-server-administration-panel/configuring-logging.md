@@ -16,13 +16,13 @@ To add a category,
 
 1. Open the Add Category form by clicking the Add button ![Add](../../images/icon-add.png).
 
-1. Fill out the form and click *Save*.
+1. Fill out the form and click _Save_.
 
 1. Click _Save_.
 
-*Logger Name*: A class deployed on the server, such as `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
+_Logger Name_: A class deployed on the server, such as `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
 
-*Log Level*: Choose the logging level you'd like to see: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+_Log Level_: Choose the logging level you'd like to see: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
 
 ![You can add your own deployed classes to the logging level categories.](./configuring-logging/images/01.png)
 

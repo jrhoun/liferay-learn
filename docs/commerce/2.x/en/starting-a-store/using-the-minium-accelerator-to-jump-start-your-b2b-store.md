@@ -10,7 +10,7 @@ This article serves as a walk-through for the main features of the Minium Accele
 
 ### Pages
 
-Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to *Site Menu → Build → Pages*.
+Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to _Site Menu → Build → Pages_.
 
 ![Minium Pages](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/01.png)
 
@@ -52,17 +52,17 @@ Minium makes it easy for buyers to search the catalog quickly. In addition to th
 
 Minium applies a number of other site configurations that are not set out-of-the-box for a blank site. The following table provides a list of notable additions or configurations that Minium makes to jump-start a B2B store:
 
-| Feature | Details |
-| --- | --- |
-| [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
-| [Site Type](../starting-a-store/sites-and-site-types.md) | B2B |
-| [Shipping Method Options](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
-| Channels | Minium Portal |
-| Countries | France, China, United States, and 245 more |
-| [Currencies](../store-administration/currencies/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
-| Default Image | &#10003; |
-| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
-| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
-| [Account Roles](../account-management/account-roles.md) | Buyer, Account Manager, Sales Agent
-| [Availability Estimates](../managing-a-catalog/managing-inventory/availability-estimates.md) | 3-5 days, 5-7 days, 7-14 days |
-| [Product Relation Type](../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |
+| Feature                                                                                                                             | Details                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md)                                                    | Italy, United States Northeast, United States Southwest |
+| [Site Type](../starting-a-store/sites-and-site-types.md)                                                                            | B2B                                                     |
+| [Shipping Method Options](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)              | Standard Delivery, Expedited Delivery                   |
+| Channels                                                                                                                            | Minium Portal                                           |
+| Countries                                                                                                                           | France, China, United States, and 245 more              |
+| [Currencies](../store-administration/currencies/adding-a-new-currency.md)                                                           | USD, AUD, GBP, and 7 more                               |
+| Default Image                                                                                                                       | &#10003;                                                |
+| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Dimensions                         | inches, millimeters, feet, meters                       |
+| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Weight                             | ounces, pounds, kilograms, grams                        |
+| [Account Roles](../account-management/account-roles.md)                                                                             | Buyer, Account Manager, Sales Agent                     |
+| [Availability Estimates](../managing-a-catalog/managing-inventory/availability-estimates.md)                                        | 3-5 days, 5-7 days, 7-14 days                           |
+| [Product Relation Type](../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell        |

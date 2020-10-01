@@ -18,5 +18,5 @@ DXP is now saving files to DBStore.
 
 ## Additional Information
 
-* [Configuring File Storage](../configuring-file-storage.md)
-* [File Store Migration](../file-store-migration.md)
+-   [Configuring File Storage](../configuring-file-storage.md)
+-   [File Store Migration](../file-store-migration.md)

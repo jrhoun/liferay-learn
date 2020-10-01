@@ -2,7 +2,7 @@
 
 Roles collect permissions, so when Users are given a Role, they inherit all Role's permissions.
 
-If you create a Role with permission to access something in the Control Panel, the *View Control Panel Menu* permission is automatically granted.
+If you create a Role with permission to access something in the Control Panel, the _View Control Panel Menu_ permission is automatically granted.
 
 To determine the permissions to carry out an action within Liferay DXP, iteration is necessary. Add one or two permissions, then test the Role to ensure the behavior you see is what you expected. As you create more Roles, you'll better understand how to combine permissions to accomplish a given task.
 
@@ -12,7 +12,7 @@ To determine the permissions to carry out an action within Liferay DXP, iteratio
 
 To define permissions for any Role in Liferay DXP,
 
-1. Go to the Control Panel and then click on *Users* &rarr; *Roles*.
+1. Go to the Control Panel and then click on _Users_ &rarr; _Roles_.
 
 1. Click on the Regular, Site, Organization, Account, or Asset Library Role, or [create a new one](./creating-and-managing-roles.md).
 
@@ -32,22 +32,22 @@ Of course, the bulk of the work is in choosing the permissions for the Role. Use
 
 In order to create a new role that can manage User Groups in a Virtual instance, the permissions for a User Group Manager Role must be defined so that assigned [Role Users](./assigning-users-to-roles.md) can act on all User Groups in a Virtual Instance:
 
-- Add Users to any User Group.
-- Remove Users from any User Group.
+-   Add Users to any User Group.
+-   Remove Users from any User Group.
 
 Once a Regular Role with the title _User Group Manager_ is created, go to its Define Permissions screen, then
 
-1. Drill down in the menu on the left to *Control Panel* &rarr; *Users* &rarr; *User Groups*.
+1. Drill down in the menu on the left to _Control Panel_ &rarr; _Users_ &rarr; _User Groups_.
 
-   Alternatively, filter the permissions menu by entering _user groups_ in the search bar.
+    Alternatively, filter the permissions menu by entering _user groups_ in the search bar.
 
-   ![Use the search bar to filter the list of permissions to the relevant ones.](./defining-role-permissions/images/01.png)
+    ![Use the search bar to filter the list of permissions to the relevant ones.](./defining-role-permissions/images/01.png)
 
-1. Under the *General Permissions* heading, flag *Access in Control Panel* and *View*. This lets user group managers access the User Groups Control Panel portlet and view existing User Groups.
+1. Under the _General Permissions_ heading, flag _Access in Control Panel_ and _View_. This lets user group managers access the User Groups Control Panel portlet and view existing User Groups.
 
-1. Since you want to enable User Group managers to view User Groups and assign members to them, also check the *Assign Members* and *View* permissions under the *Resource Permissions* &rarr; *User Group* heading.
+1. Since you want to enable User Group managers to view User Groups and assign members to them, also check the _Assign Members_ and _View_ permissions under the _Resource Permissions_ &rarr; _User Group_ heading.
 
-1. Click *Save*.
+1. Click _Save_.
 
 ![Users assigned to the User Group Manager Role can Add available Users to any User Group, as well as remove them.](./defining-role-permissions/images/02.png)
 
@@ -73,7 +73,7 @@ Don't limit yourself to just one category: when defining a custom Role you can m
 
 ![You can fine-tune Role permissions by changing the scope of the permissions.](./defining-role-permissions/images/03.png)
 
-You may find that a certain permission grants more or less access than what you expected---always test your permissions configurations! 
+You may find that a certain permission grants more or less access than what you expected---always test your permissions configurations!
 
 ## Troubleshooting: Site Roles May Require Global View Permissions
 
@@ -85,13 +85,13 @@ A Site Role cannot, by definition, define permissions to act on entities outside
 
 ## Delegating Social Activities Configuration
 
-There's a permission that allows Site administrators to delegate to other Users responsibility for configuring social activities. To add this permission to a Role, click *Actions* next to the desired Role and select *Define Permissions*. Find the *Site Administration* &rarr; *Configuration* &rarr; *Social Activity* permissions category. Flag all of the permissions and then click *Save*:
+There's a permission that allows Site administrators to delegate to other Users responsibility for configuring social activities. To add this permission to a Role, click _Actions_ next to the desired Role and select _Define Permissions_. Find the _Site Administration_ &rarr; _Configuration_ &rarr; _Social Activity_ permissions category. Flag all of the permissions and then click _Save_:
 
-- Access in Site Administration
-- Configuration
-- Permissions
-- Preferences
-- View
+-   Access in Site Administration
+-   Configuration
+-   Permissions
+-   Preferences
+-   View
 
 Once these permissions are granted, Role assignees can manage the site's Social Activities.
 

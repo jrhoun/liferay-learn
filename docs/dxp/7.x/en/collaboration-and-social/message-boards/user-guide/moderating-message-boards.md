@@ -83,4 +83,4 @@ The reply is now deleted.
 
 ## Additional Information
 
-* [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+-   [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

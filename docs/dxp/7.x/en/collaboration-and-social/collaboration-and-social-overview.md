@@ -4,11 +4,11 @@ Liferay DXP empowers users to build robust communities with flexible, social, an
 
 Out-of-the-box features include:
 
-* [Message Boards](#message-boards)
-* [Wiki](#wiki)
-* [Social Tools](#social-tools)
-* [Invitations](#invitations)
-* [Knowledge Base](#knowledge-base)
+-   [Message Boards](#message-boards)
+-   [Wiki](#wiki)
+-   [Social Tools](#social-tools)
+-   [Invitations](#invitations)
+-   [Knowledge Base](#knowledge-base)
 
 ## Message Boards
 
@@ -30,8 +30,8 @@ To begin creating a wiki, see the [Getting Started with Wikis](./wiki/user-guide
 
 The following social applications are included with Liferay DXP:
 
-* [Activities](./social-tools/user-guide/using-the-activities-widget.md)
-* [Contacts Center](./social-tools/user-guide/using-the-contacts-center-widget.md)
+-   [Activities](./social-tools/user-guide/using-the-activities-widget.md)
+-   [Contacts Center](./social-tools/user-guide/using-the-contacts-center-widget.md)
 
 These tools are building blocks for building an integrated, social experience for users. Activities provides a configurable feed of the actions users take on a site. Contacts Center allows users to search, view, and establish social relations with other users.
 

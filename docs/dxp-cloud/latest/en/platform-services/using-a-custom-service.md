@@ -16,7 +16,7 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
 
 1. Add a new directory for your service alongside the other service directories (e.g., `liferay` and `database`), with an `LCP.json` file in it:
 
-	```
+    ```
     ├── backup
     ├── ci
     ├── database
@@ -25,9 +25,9 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
     ├── webserver
     └── myCustomService
         └── LCP.json
-	```
+    ```
 
-	See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) for more information on adding configurations to this file.
+    See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) for more information on adding configurations to this file.
 
     ```warning::
         If you trigger a build with a new custom service, but do not have enough resources provisioned for the new service, then it may interfere with the resources allocated to your other services.
@@ -41,11 +41,11 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
 
     ```json
     {
-      "environments": {
-          "prd": {
-            "deploy": true
-          }
-      }
+    	"environments": {
+    		"prd": {
+    			"deploy": true
+    		}
+    	}
     }
     ```
 
@@ -53,17 +53,17 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
 
 1. Apply your Docker image to the new service. The method to use to add your Docker image depends on whether you are using an image uploaded to a public repository, or a local Dockerfile.
 
-    * **If you are using a Docker image from a public repository:** Add the name of your image to an `image` property within your `LCP.json`:
+    - **If you are using a Docker image from a public repository:** Add the name of your image to an `image` property within your `LCP.json`:
 
-      ```
-      "image": "mydockerimages/myservice:1.0.0"
-      ```
+        ```
+        "image": "mydockerimages/myservice:1.0.0"
+        ```
 
-    * **If you are using a local Dockerfile:** Add the Dockerfile into your custom service's directory. When your service is built, the Docker image from the Dockerfile will automatically be picked up as the image for the service.
+    - **If you are using a local Dockerfile:** Add the Dockerfile into your custom service's directory. When your service is built, the Docker image from the Dockerfile will automatically be picked up as the image for the service.
 
-      ```note::
-        The Dockerfile is automatically used as the image for your service. As a result, any "image" property in your LCP.json will be ignored.
-      ```
+        ```note::
+          The Dockerfile is automatically used as the image for your service. As a result, any "image" property in your LCP.json will be ignored.
+        ```
 
 1. Commit these changes to your branch in version control:
 
@@ -82,4 +82,4 @@ If you deploy this build to one of your environments (by clicking _Deploy Build 
 
 ## Additional Information
 
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)
+-   [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)

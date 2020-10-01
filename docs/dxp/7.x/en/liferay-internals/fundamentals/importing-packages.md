@@ -10,8 +10,8 @@ Import packages must sometimes be specified manually, but not always. Convenient
 
 There are two different package import scenarios:
 
-* [Automatic Package Imports](#automatic-package-imports)
-* [Manual Package Imports](#manual-package-imports)
+-   [Automatic Package Imports](#automatic-package-imports)
+-   [Manual Package Imports](#manual-package-imports)
 
 Read below to explore how package imports are specified in these scenarios.
 
@@ -40,18 +40,18 @@ Import-Package: com.liferay.portal.kernel.service;version="[4.3,5)"
 
 The build file specifies dependencies. Bnd examines the module classpath to import packages the module uses. The examination includes all classes found in the classpath---even those from embedded [third party library JARs](./configuring-dependencies/resolving-third-party-library-package-dependencies.md).
 
-```note::
+````note::
    For a plugin WAR project, Liferay's `WAB Generator <../../developing-applications/reference/deploying-wars-wab-generator.md>`_ detects packages used in the WAR's JSPs, descriptor files, and classes (in ``WEB-INF/classes`` and embedded JARs). Also the WAB Generator searches the ``web.xml``, ``liferay-web.xml``, ``portlet.xml``, ``liferay-portlet.xml``, and ``liferay-hook.xml`` descriptor files. It adds package imports for classes that are neither found in the plugin's ```WEB-INF/classes``` folder nor in its embedded JARs.
-```
+````
 
 ## Manual Package Imports
 
 If a module references a class in only the following places, you must manually add a package import.
 
-* Unrecognized descriptor file
-* Custom or unrecognized descriptor element or attribute
-* Reflection code
-* Classloader code
+-   Unrecognized descriptor file
+-   Custom or unrecognized descriptor element or attribute
+-   Reflection code
+-   Classloader code
 
 Here's how to manually import the package:
 
@@ -71,7 +71,7 @@ Import-Package: [... existing package list,][add the package here]
 
 ### Java API Packages
 
-Packages for Java APIs, such as Java Portlet, aren't [semantically versioned](./semantic-versioning.md) but have [Portable Java Contracts](https://www.osgi.org/portable-java-contract-definitions/). Each API's contract specifies the JSR it satisfies. Modules that use these APIs must specify requirements on the API contracts. The contract requirement defines the module's relationship with the imported API packages. If the system you're running does *not* provide the exact contract, the module does not resolve. Resolving a missing package is better than handling an incompatibility failure during execution.
+Packages for Java APIs, such as Java Portlet, aren't [semantically versioned](./semantic-versioning.md) but have [Portable Java Contracts](https://www.osgi.org/portable-java-contract-definitions/). Each API's contract specifies the JSR it satisfies. Modules that use these APIs must specify requirements on the API contracts. The contract requirement defines the module's relationship with the imported API packages. If the system you're running does _not_ provide the exact contract, the module does not resolve. Resolving a missing package is better than handling an incompatibility failure during execution.
 
 [Workspace](../../developing-applications/tooling/liferay-workspace.md)-based projects specify Portable Java Contracts automatically! For example, if your module uses the Java Portlet API and you compile against the Java Portlet 2.0 artifact, a contract requirement for the package is added to your module's manifest.
 
@@ -83,9 +83,9 @@ Congratulations! Now you can import all kinds of packages for your modules to us
 
 ## Additional Information
 
-* [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)
-* [Blade CLI](../../developing-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
-* [Liferay Developer Studio](../../developing-applications/tooling/developer-studio.md)
-* [Workspace](../../developing-applications/tooling/liferay-workspace.md)
-* [Semantic Versioning](./semantic-versioning.md)
-* [Deploying WARs \(WAB Generator\)](../../developing-applications/reference/deploying-wars-wab-generator.md)
+-   [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)
+-   [Blade CLI](../../developing-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
+-   [Liferay Developer Studio](../../developing-applications/tooling/developer-studio.md)
+-   [Workspace](../../developing-applications/tooling/liferay-workspace.md)
+-   [Semantic Versioning](./semantic-versioning.md)
+-   [Deploying WARs \(WAB Generator\)](../../developing-applications/reference/deploying-wars-wab-generator.md)

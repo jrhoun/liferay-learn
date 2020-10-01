@@ -2,15 +2,15 @@
 
 Liferay DXP's command-line interface (CLI) is a tool that helps you use and manage DXP Cloud services. The CLI can be used to create, manage, and scale applications. See the following actions:
 
-* [Installing the CLI](#installing-the-cli)
-* [Upgrading the CLI from v2 to v3](#uninstalling-version-2x)
-* [Changing the CLI Remote](#changing-the-cli-remote)
-* [Showing the Service Logs](#showing-the-service-logs)
-* [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
-* [Listing Projects or Services](#listing-projects-or-services)
-* [Restarting a Service](#restarting-a-service)
-* [Accessing a Service's Shell](#accessing-a-services-shell)
-* [Uninstalling the CLI](#uninstalling-the-cli)
+-   [Installing the CLI](#installing-the-cli)
+-   [Upgrading the CLI from v2 to v3](#uninstalling-version-2x)
+-   [Changing the CLI Remote](#changing-the-cli-remote)
+-   [Showing the Service Logs](#showing-the-service-logs)
+-   [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
+-   [Listing Projects or Services](#listing-projects-or-services)
+-   [Restarting a Service](#restarting-a-service)
+-   [Accessing a Service's Shell](#accessing-a-services-shell)
+-   [Uninstalling the CLI](#uninstalling-the-cli)
 
 ## Installing the CLI
 

@@ -4,15 +4,15 @@ Liferay DXP includes support for Google Analytics and Piwik for analyzing traffi
 
 ## Adding a New Analytics Service
 
-1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
-1. Select *Analytics* under the Platform heading.
-1. Enter the name of any additional service you want to add in the *Analytics* field provided.
+1. Open the Product Menu and go to _Control Panel_ &rarr; _Configuration_ &rarr; _Instance Settings_.
+1. Select _Analytics_ under the Platform heading.
+1. Enter the name of any additional service you want to add in the _Analytics_ field provided.
 
     ![You can enter additional analytics services through Instance Settings.](./adding-a-new-analytics-service/images/01.png)
 
 ## Adding the Tracking Code for your Analytics Service
 
-1. Once you have entered the name, open the Product Menu and go to the *Configuration* &rarr; *Site Settings* &rarr; *Advanced* &rarr; *Analytics* page for the Site where you wish to add analytics.
+1. Once you have entered the name, open the Product Menu and go to the _Configuration_ &rarr; _Site Settings_ &rarr; _Advanced_ &rarr; _Analytics_ page for the Site where you wish to add analytics.
 1. Copy the JavaScript tracking code provided by your analytics platform into the corresponding field for your service.
 
     ![The new analytics service appears under the Site's advanced configuration settings.](./adding-a-new-analytics-service/images/02.png)

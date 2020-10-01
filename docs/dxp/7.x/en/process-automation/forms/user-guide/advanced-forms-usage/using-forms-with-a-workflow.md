@@ -23,6 +23,6 @@ Once a Form Record has been approved, it appears in the same Form Entries menu w
 
 ## Additional Information
 
-* [Managing Form Entries](../managing-form-entries.md)
-* [Reviewing Assets](../../../workflow/user-guide/reviewing-assets.md)
-* [Using the Script Engine in Workflow](../../../workflow/developer-guide/using-the-script-engine-in-workflow.md)
+-   [Managing Form Entries](../managing-form-entries.md)
+-   [Reviewing Assets](../../../workflow/user-guide/reviewing-assets.md)
+-   [Using the Script Engine in Workflow](../../../workflow/developer-guide/using-the-script-engine-in-workflow.md)

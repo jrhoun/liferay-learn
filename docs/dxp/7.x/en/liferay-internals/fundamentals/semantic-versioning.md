@@ -10,9 +10,9 @@ MAJOR.MINOR.MICRO
 
 Certain events force each tier to increment:
 
-* *MAJOR:* an incompatible, API-breaking change is made
-* *MINOR:* a change that affects only providers of the API, or new backwards-compatible functionality is added
-* *MICRO:* a backwards-compatible bug fix is made
+-   _MAJOR:_ an incompatible, API-breaking change is made
+-   _MINOR:_ a change that affects only providers of the API, or new backwards-compatible functionality is added
+-   _MICRO:_ a backwards-compatible bug fix is made
 
 For more details on semantic versioning, see the official [Semantic Versioning](https://semver.org/) site and [OSGi Alliance's Semantic Versioning](http://www.osgi.org/wp-content/uploads/SemanticVersioning1.pdf) technical whitepaper.
 
@@ -22,7 +22,7 @@ Following Semantic Versioning is especially important because DXP is a modular p
 
 ## Baselining Your Project
 
-Following Semantic Versioning manually seems deceptively easy. There's a sad history of good-intentioned developers updating their projects' semantic versions manually, only to find out later they made a mistake. The truth is, it's hard to anticipate the ramifications of a simple update. To avoid this, you can *baseline* your project after it has been updated. This verifies that your project obeys the Semantic Versioning rules, and can catch API changes that are not always obvious to humans.
+Following Semantic Versioning manually seems deceptively easy. There's a sad history of good-intentioned developers updating their projects' semantic versions manually, only to find out later they made a mistake. The truth is, it's hard to anticipate the ramifications of a simple update. To avoid this, you can _baseline_ your project after it has been updated. This verifies that your project obeys the Semantic Versioning rules, and can catch API changes that are not always obvious to humans.
 You can use Liferay's Baseline Gradle plugin to provide baselining capabilities. Add it to your Gradle build configuration and execute the following command:
 
 ```bash
@@ -33,7 +33,7 @@ See [Baseline Gradle Plugin](../../developing-applications/tooling/other-tools/g
 
 When you run the `baseline` command, the plugin compares the public exported API of your new module with the latest released non-snapshot module. If there are any changes, it uses the OSGi Semantic Versioning rules to calculate the minimum new version. If your new module has a lower version, it throws errors.
 
-Don't rely solely on the tool. It's not smart enough to identify compatibility changes not represented in the signatures of Java classes or interfaces, or in API *use* changes (i.e., assumptions about method call order, or changes to input and/or output encoding). Baseline, as the name implies, does give you a certain measure of *baseline* comfort that a large class of compatibility issues won't sneak past you.
+Don't rely solely on the tool. It's not smart enough to identify compatibility changes not represented in the signatures of Java classes or interfaces, or in API _use_ changes (i.e., assumptions about method call order, or changes to input and/or output encoding). Baseline, as the name implies, does give you a certain measure of _baseline_ comfort that a large class of compatibility issues won't sneak past you.
 
 With baselining, your project's Semantic Versioning is as accurate as its API expresses.
 
@@ -41,8 +41,8 @@ With baselining, your project's Semantic Versioning is as accurate as its API ex
 
 There are two ways to track your project's artifact and dependency versions with Semantic Versioning:
 
-* Range of versions
-* Exact version (one-to-one)
+-   Range of versions
+-   Exact version (one-to-one)
 
 You should track a range of versions if you intend to build your project for multiple DXP versions and maintain maximum compatibility. In other words, if several package versions work for an app, you can configure the app to use any of them. What's more, Bnd automatically determines the semantically compatible range of each package a module depends on and records the range to the module's manifest.
 
@@ -80,6 +80,6 @@ You now know the pros and cons for tracking dependencies as a range and as an ex
 
 ## Additional Information
 
-* [Importing Packages](./importing-packages.md)
-* [Exporting Packages](./exporting-packages.md)
-* [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)
+-   [Importing Packages](./importing-packages.md)
+-   [Exporting Packages](./exporting-packages.md)
+-   [Configuring Dependencies](./configuring-dependencies/configuring-dependencies.md)

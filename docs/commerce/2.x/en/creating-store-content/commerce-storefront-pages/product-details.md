@@ -18,4 +18,4 @@ In this example, the _Product Publisher_ widget has been configured to display s
 
 ## Additional Information
 
-* [Related Products, Upsells, and Cross-Sells](../../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)
+-   [Related Products, Upsells, and Cross-Sells](../../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

@@ -4,11 +4,11 @@ Everything that is configurable in a DXP installation is configurable in a DXP D
 
 Here are the most common things to configure:
 
-* [JVM Options](#jvm-options)
-* [Portal Properties](#portal-properties)
-* [Image-defined Environment Variables](#image-defined-environment-variables)
-* [System Properties](#system-properties)
-* [System Settings](#system-settings)
+-   [JVM Options](#jvm-options)
+-   [Portal Properties](#portal-properties)
+-   [Image-defined Environment Variables](#image-defined-environment-variables)
+-   [System Properties](#system-properties)
+-   [System Settings](#system-settings)
 
 ```note::
    The configuration use cases that involve providing a file to the container are demonstrated here using `bind mounts <https://docs.docker.com/storage/bind-mounts/>`_. You can also use `volumes <https://docs.docker.com/storage/volumes/>`_ and in some cases, use a ``docker cp`` command. See `Providing File to the Container <./providing-files-to-the-container.md>`_ for more information.
@@ -79,12 +79,12 @@ The container uses your `setenv.sh` script's JVM options.
 
 DXP container [Portal Properties](../../reference/portal-properties.md) can be overridden in these two ways:
 
-* [Using Liferay Env Variables](#using-liferay-env-variables)
-* [Using a Portal Properties File](#using-a-portal-properties-file)
+-   [Using Liferay Env Variables](#using-liferay-env-variables)
+-   [Using a Portal Properties File](#using-a-portal-properties-file)
 
 ### Using Liferay Env Variables
 
-There's an *Env* variable for each [Portal Property](../../reference/portal-properties.md). Env properties override a DXP Docker container's Portal Properties.
+There's an _Env_ variable for each [Portal Property](../../reference/portal-properties.md). Env properties override a DXP Docker container's Portal Properties.
 
 1. In the [Portal Properties](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/portal.properties.html) online description, find the property you want to override.
 
@@ -232,9 +232,9 @@ DXP System Settings can be configured in the [Control Panel](../../../system-adm
 
 Modify the System Settings using one of these ways:
 
-* [Applying Configurations to a New Container](#applying-configurations-to-a-new-container)
-* [Applying Configuration Files at Run Time](#applying-configuration-files-at-run-time)
-* [Using the Control Panel](../../../system-administration/system-settings/system-settings.md)
+-   [Applying Configurations to a New Container](#applying-configurations-to-a-new-container)
+-   [Applying Configuration Files at Run Time](#applying-configuration-files-at-run-time)
+-   [Using the Control Panel](../../../system-administration/system-settings/system-settings.md)
 
 ### Applying Configurations to a New Container
 
@@ -278,8 +278,8 @@ Now you know how to configure a DXP container's JVM options, Portal Properties, 
 
 ## Additional Information
 
-* [DXP Docker Container Basics](./dxp-docker-container-basics.md)
-* [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
-* [Providing Files to the Container](./providing-files-to-the-container.md)
-* [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
-* [Patching DXP in Docker](./patching-dxp-in-docker.md)
+-   [DXP Docker Container Basics](./dxp-docker-container-basics.md)
+-   [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
+-   [Providing Files to the Container](./providing-files-to-the-container.md)
+-   [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
+-   [Patching DXP in Docker](./patching-dxp-in-docker.md)

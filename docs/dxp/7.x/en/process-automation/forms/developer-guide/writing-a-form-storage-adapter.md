@@ -58,25 +58,25 @@ To see how storage adapters work, deploy an example and then add some form data 
 
 1. Go to the Forms application in _Site Menu_ &rarr; _Content & Data_ &rarr; _Forms_.
 
-1. Click the *Add* button (![Add](./../../../images/icon-add.png)) to open the Form Builder.
+1. Click the _Add_ button (![Add](./../../../images/icon-add.png)) to open the Form Builder.
 
-1. In the Form Builder view, click the *Options* button (![Options](./../../../images/icon-options.png)) and open the *Settings* window.
+1. In the Form Builder view, click the _Options_ button (![Options](./../../../images/icon-options.png)) and open the _Settings_ window.
 
-1. Under *Select a Storage Type*, choose the JSON Wrapper type and click _Done_.
+1. Under _Select a Storage Type_, choose the JSON Wrapper type and click _Done_.
 
 1. Add a [Text Field](./../user-guide/creating-forms.md) to the form, publish the form, and submit it a few times.
 
 1. To verify the form data were persisted, go to the Form's Records:
 
-   From _Site Menu_ &rarr; _Content_ &rarr; _Forms_, click the Form's *Actions* button (![Actions](./../../../images/icon-actions.png)), then _View Entries_.
+    From _Site Menu_ &rarr; _Content_ &rarr; _Forms_, click the Form's _Actions_ button (![Actions](./../../../images/icon-actions.png)), then _View Entries_.
 
-   ![Verify that the form entries were added.](./writing-a-form-storage-adapter/images/02.png)
+    ![Verify that the form entries were added.](./writing-a-form-storage-adapter/images/02.png)
 
 1. Additionally, logging is provided in each CRUD method to demonstrate that the sample's methods are being invoked.
 
-   ```bash
-   2020-08-18 22:19:48.693 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:103] Acme storage adapter's save method was invoked
-   ```
+    ```bash
+    2020-08-18 22:19:48.693 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:103] Acme storage adapter's save method was invoked
+    ```
 
 ## Understand the Extension Point
 
@@ -164,31 +164,31 @@ This will be used to add some log messages each time one of the CRUD methods is 
 
 1. Set a private variable `_PATHNAME` so you can control where the files are stored. The path here points to the Liferay install location in the Docker container.
 
-   ```java
-   private static final String _PATHNAME = "/opt/liferay/form-records";
-   ```
+    ```java
+    private static final String _PATHNAME = "/opt/liferay/form-records";
+    ```
 
 1. Create a `_deleteFile` utility method (import the `java.io.File` class):
 
-   ```java
-   private void _deleteFile(long fileId) {
-       File file = new File(_PATHNAME + "/" + fileId);
+    ```java
+    private void _deleteFile(long fileId) {
+        File file = new File(_PATHNAME + "/" + fileId);
 
-       file.delete();
+        file.delete();
 
-       if (_log.isWarnEnabled()) {
-        _log.warn("Deleted file with the ID " + fileId);
-       }
-   }
-   ```
+        if (_log.isWarnEnabled()) {
+         _log.warn("Deleted file with the ID " + fileId);
+        }
+    }
+    ```
 
 1. Find the overridden `delete` method. Immediately before the `return` statement, add
 
-   ```java
-    long fileId = ddmStorageAdapterDeleteRequest.getPrimaryKey();
+    ```java
+     long fileId = ddmStorageAdapterDeleteRequest.getPrimaryKey();
 
-    _deleteFile(fileId);
-   ```
+     _deleteFile(fileId);
+    ```
 
 Now the code first deletes the file from the file system before it deletes the copy in the database.
 
@@ -198,30 +198,30 @@ You'll follow the same procedure for the `get` method: create a private utility 
 
 1. Add the `_getFile` utility method:
 
-   ```java
-	private void _getFile(long fileId) throws IOException {
-		try {
-			if (_log.isWarnEnabled()) {
-				_log.warn(
-					"Reading the file with the ID " + fileId + ": " +
-						FileUtil.read(_PATHNAME + "/" + fileId));
-			}
-		}
-		catch (IOException e) {
-			throw new IOException(e);
-		}
-	}
+    ```java
+    {
+    {
+    {
+    (
+    +
+    ;
+    }
+    }
+    {
+    ;
+    }
+    }
     ```
 
-   Import `com.liferay.portal.kernel.FileUtil` and `java.io.IOException`.
+    Import `com.liferay.portal.kernel.FileUtil` and `java.io.IOException`.
 
 1. In the overridden `get` method (inside the `try` block), insert the following immediately before the `return` statement, setting the `storageId` (retrieved by `ddmStorageAdapterGetRequest.getPrimaryKey()`) as the `fileId` and calling the `_getFile` utility method which prints the retrieved content to the Liferay log.
 
-   ```java
-   long fileId = ddmStorageAdapterGetRequest.getPrimaryKey();
+    ```java
+    long fileId = ddmStorageAdapterGetRequest.getPrimaryKey();
 
-   _getFile(fileId);
-   ```
+    _getFile(fileId);
+    ```
 
 ### Implement File Creation Logic
 
@@ -229,63 +229,63 @@ There are two types of save requests: 1) a new record is added or 2) an existing
 
 1. Create a `_saveFile` utility method:
 
-   ```java
-   private void _saveFile(long fileId, DDMFormValues formValues)
-       throws IOException {
+    ```java
+    private void _saveFile(long fileId, DDMFormValues formValues)
+        throws IOException {
 
-       try {
-           String serializedDDMFormValues = _serialize(formValues);
+        try {
+            String serializedDDMFormValues = _serialize(formValues);
 
-           File abstractFile = new File(String.valueOf(fileId));
+            File abstractFile = new File(String.valueOf(fileId));
 
-           FileUtil.write(
-               _PATHNAME, abstractFile.getName(), serializedDDMFormValues);
+            FileUtil.write(
+                _PATHNAME, abstractFile.getName(), serializedDDMFormValues);
 
-           if (_log.isWarnEnabled()) {
-               _log.warn("Saved a file with the ID" + fileId);
-           }
-       }
-       catch (IOException e) {
-           throw new IOException(e);
-       }
-   }
+            if (_log.isWarnEnabled()) {
+                _log.warn("Saved a file with the ID" + fileId);
+            }
+        }
+        catch (IOException e) {
+            throw new IOException(e);
+        }
+    }
     ```
 
-   Import `com.liferay.dynamic.data.mapping.storage.DDMFormValues`.
+    Import `com.liferay.dynamic.data.mapping.storage.DDMFormValues`.
 
 1. Create a `_serialize` utility method to convert the `DDMFormValues` object to JSON:
 
     ```java
-	private String _serialize(DDMFormValues ddmFormValues) {
-		DDMFormValuesSerializer ddmFormValuesSerializer =
-			_ddmFormValuesSerializerTracker.getDDMFormValuesSerializer("json");
+    private String _serialize(DDMFormValues ddmFormValues) {
+    	DDMFormValuesSerializer ddmFormValuesSerializer =
+    		_ddmFormValuesSerializerTracker.getDDMFormValuesSerializer("json");
 
-		DDMFormValuesSerializerSerializeRequest.Builder builder =
-			DDMFormValuesSerializerSerializeRequest.Builder.newBuilder(
-				ddmFormValues);
+    	DDMFormValuesSerializerSerializeRequest.Builder builder =
+    		DDMFormValuesSerializerSerializeRequest.Builder.newBuilder(
+    			ddmFormValues);
 
-		DDMFormValuesSerializerSerializeResponse
-			ddmFormValuesSerializerSerializeResponse =
-				ddmFormValuesSerializer.serialize(builder.build());
+    	DDMFormValuesSerializerSerializeResponse
+    		ddmFormValuesSerializerSerializeResponse =
+    			ddmFormValuesSerializer.serialize(builder.build());
 
-		return ddmFormValuesSerializerSerializeResponse.getContent();
-	}
+    	return ddmFormValuesSerializerSerializeResponse.getContent();
+    }
     ```
 
 1. Add this logic and the call to `_saveFile` to the `save` method by replacing the existing `return` statement:
 
-   ```java
-    DDMStorageAdapterSaveResponse jsonStorageAdapterSaveResponse =
-        _jsonStorageAdapter.save(ddmStorageAdapterSaveRequest);
+    ```java
+     DDMStorageAdapterSaveResponse jsonStorageAdapterSaveResponse =
+         _jsonStorageAdapter.save(ddmStorageAdapterSaveRequest);
 
-    long fileId = jsonStorageAdapterSaveResponse.getPrimaryKey();
+     long fileId = jsonStorageAdapterSaveResponse.getPrimaryKey();
 
-    _saveFile(fileId, ddmStorageAdapterSaveRequest.getDDMFormValues());
+     _saveFile(fileId, ddmStorageAdapterSaveRequest.getDDMFormValues());
 
-    return jsonStorageAdapterSaveResponse;
-   ```
+     return jsonStorageAdapterSaveResponse;
+    ```
 
-   The `_jsonStorageAdapter.save` call is made first, so that a Primary Key is created for a new form entry. This Primary Key is retrieved from the `Response` object to create the `fielId`.
+    The `_jsonStorageAdapter.save` call is made first, so that a Primary Key is created for a new form entry. This Primary Key is retrieved from the `Response` object to create the `fielId`.
 
 ## Deploy and Test the Storage Adapter
 
@@ -299,20 +299,20 @@ Now verify that it's working:
 
 1. Go to the Forms application in _Site Menu_ &rarr; _Content_ &rarr; _Forms_.
 
-1. Click the *Add* button ![Add](./../../../images/icon-add.png) to open the Form Builder.
+1. Click the _Add_ button ![Add](./../../../images/icon-add.png) to open the Form Builder.
 
-1. In the Form Builder view, click the *Options* button (![Options](./../../../images/icon-options.png)) and open the *Settings* window.
+1. In the Form Builder view, click the _Options_ button (![Options](./../../../images/icon-options.png)) and open the _Settings_ window.
 
-1. From the select list field called *Select a Storage Type*, choose the File System type and click _Done_.
+1. From the select list field called _Select a Storage Type_, choose the File System type and click _Done_.
 
 1. Add a [Text Field](./../user-guide/creating-forms.md) to the form, publish the form, and submit it a few times.
 
-1. To verify the form records were written to the container's file system, check the log. You'll see messages like: 
+1. To verify the form records were written to the container's file system, check the log. You'll see messages like:
 
-   ```bash
-   2020-08-18 22:19:48.693 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:103] Saved a file with the ID 36242
-   2020-08-18 22:19:48.716 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:122] Reading the file with the ID 36242: {"availableLanguageIds":["en_US"],"defaultLanguageId":"en_US","fieldValues":[{"instanceId":"62fQx5qI","name":"PetsFavoriteVehicle","value":{"en_US":"stretch limousine"}}]}
-   ```
+    ```bash
+    2020-08-18 22:19:48.693 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:103] Saved a file with the ID 36242
+    2020-08-18 22:19:48.716 WARN  [http-nio-8080-exec-2][R2F1DDMStorageAdapter:122] Reading the file with the ID 36242: {"availableLanguageIds":["en_US"],"defaultLanguageId":"en_US","fieldValues":[{"instanceId":"62fQx5qI","name":"PetsFavoriteVehicle","value":{"en_US":"stretch limousine"}}]}
+    ```
 
 ## Conclusion
 

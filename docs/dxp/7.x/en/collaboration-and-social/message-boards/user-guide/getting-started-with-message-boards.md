@@ -25,14 +25,14 @@ Site members are able to create forum posts using the _Message Boards_ widget. N
 
 Learn how to use the features of the Message Boards application:
 
-* [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md)
-* [Creating Threads](./creating-message-boards-threads.md)
-* [Subscribing to a Message Board](./subscribing-to-a-message-board.md)
-* [Moderating Message Boards](./moderating-message-boards.md)
-* [Configuring a Message Boards Mailing List](./configuring-a-message-boards-category-mailing-list.md)
-* [Advanced Topics: Understanding Message Boards Scope](./scoping-your-message-boards.md)
+-   [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md)
+-   [Creating Threads](./creating-message-boards-threads.md)
+-   [Subscribing to a Message Board](./subscribing-to-a-message-board.md)
+-   [Moderating Message Boards](./moderating-message-boards.md)
+-   [Configuring a Message Boards Mailing List](./configuring-a-message-boards-category-mailing-list.md)
+-   [Advanced Topics: Understanding Message Boards Scope](./scoping-your-message-boards.md)
 
 ### Reference
 
-* [Configuration Reference](./message-boards-configuration-reference.md)
-* [Permissions Reference](./message-boards-permissions-reference.md)
+-   [Configuration Reference](./message-boards-configuration-reference.md)
+-   [Permissions Reference](./message-boards-permissions-reference.md)

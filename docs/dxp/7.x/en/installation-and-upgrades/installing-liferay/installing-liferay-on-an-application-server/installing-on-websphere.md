@@ -18,9 +18,9 @@ For Liferay DXP to work correctly, WebSphere 9 (Fix Pack 11 is the latest) must 
 
 The following files are required to install Liferay DXP on the WebSphere application server and are available from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
-* DXP WAR file
-* Dependencies ZIP file
-* OSGi Dependencies ZIP file
+-   DXP WAR file
+-   Dependencies ZIP file
+-   OSGi Dependencies ZIP file
 
 See [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
@@ -43,28 +43,28 @@ Here are the basic steps for installing DXP on WebSphere:
 
 ### Creating a WebSphere Profile
 
-When the application server binaries have been installed, start the *Profile Management Tool* to create a profile appropriate for DXP.
+When the application server binaries have been installed, start the _Profile Management Tool_ to create a profile appropriate for DXP.
 
-1. Click *Create...*, choose *Application Server*, and then click *Next*.
-1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as the location of the profile and names of the profile, node and host, to assign specific ports, or to optionally choose whether to deploy the administrative console and sample application and also add web-server definitions for IBM HTTP Server. See the WebSphere documentation for more information about these options.
+1. Click _Create..._, choose _Application Server_, and then click _Next_.
+1. Click the _Advanced_ profile creation option and then click _Next_. Use the advanced profile to specify the values for settings such as the location of the profile and names of the profile, node and host, to assign specific ports, or to optionally choose whether to deploy the administrative console and sample application and also add web-server definitions for IBM HTTP Server. See the WebSphere documentation for more information about these options.
 
     ![Figure 1: Choose the Advanced profile option to specify your own settings.](./installing-on-websphere/images/01.png)
 
-1. Check the box *Deploy the administrative console*. This enables a web-based UI for working with the application server. Skip the default applications. (Install these only on a development machine.) Click *Next*.
+1. Check the box _Deploy the administrative console_. This enables a web-based UI for working with the application server. Skip the default applications. (Install these only on a development machine.) Click _Next_.
 1. Set the profile name and location. Specify a performance tuning settings appropriate for your environment.
 
     ```note::
        See the WebSphere documentation for more information about performance tuning settings. Click *Next*.
     ```
 
-1. Choose node, server, and host names for the server. These are specific to a user's environment. Click *Next*.
-1. Administrative security in WebSphere is a way to restrict who has access to the administrative tools. Administrators may want to have it enabled in the environment so that a user name and password are required to administer the WebSphere server. See WebSphere's documentation for more information. Click *Next*.
-1. Each profile needs a security certificate, which comes next in the wizard. If the certificates are not already generated, choose the option to generate a personal certificate and a signing certificate and click *Next*.
-1. Once the certificates are generated, set a password for the keystore. Click *Next*.
+1. Choose node, server, and host names for the server. These are specific to a user's environment. Click _Next_.
+1. Administrative security in WebSphere is a way to restrict who has access to the administrative tools. Administrators may want to have it enabled in the environment so that a user name and password are required to administer the WebSphere server. See WebSphere's documentation for more information. Click _Next_.
+1. Each profile needs a security certificate, which comes next in the wizard. If the certificates are not already generated, choose the option to generate a personal certificate and a signing certificate and click _Next_.
+1. Once the certificates are generated, set a password for the keystore. Click _Next_.
 1. Administrators can customize the ports this server profile uses. Be sure to choose ports that are open on the machine. When choosing ports, the wizard automatically detects existing WebSphere installations and if it finds activity, will increment ports by one.
-1. Choose whether to start this profile when the machine starts. Click *Next*.
-1. WebSphere ships with IBM HTTP Server. Choose whether you want a web server definition, so that this JVM receives requests forwarded from the HTTP server. See WebSphere's documentation for details on this. When finished, click *Next*.
-1. The wizard then displays a summary of what was selected, enabling administrators to keep their choices or go back and change something. When finished, click *Next*.
+1. Choose whether to start this profile when the machine starts. Click _Next_.
+1. WebSphere ships with IBM HTTP Server. Choose whether you want a web server definition, so that this JVM receives requests forwarded from the HTTP server. See WebSphere's documentation for details on this. When finished, click _Next_.
+1. The wizard then displays a summary of what was selected, enabling administrators to keep their choices or go back and change something. When finished, click _Next_.
 
 WebSphere then creates the profile and finishes with a message indicating that the profile was created successfully.
 
@@ -146,9 +146,9 @@ By this point, the following steps should be completed:
 
 DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's lib folder. You can download JDBC driver JARs for these databases:
 
-* [MariaDB](https://downloads.mariadb.org/)
-* [MySQL](http://dev.mysql.com/downloads/connector/j)
-* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
+-   [MariaDB](https://downloads.mariadb.org/)
+-   [MySQL](http://dev.mysql.com/downloads/connector/j)
+-   [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
 
 Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, do not use it for production DXP instances.
 
@@ -158,11 +158,11 @@ When you start Liferay DXP 7.3, it installs and starts a default [sidecar](../..
 
 1. Download the following archives:
 
-    * [Elasticsearch OSS No JDK 7.3](https://www.elastic.co/guide/en/elasticsearch/reference/7.3/release-notes-7.3.2.html) ([available here--7.3.2](https://www.elastic.co/downloads/past-releases/elasticsearch-oss-no-jdk-7-3-2))
-    * [ICU Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-icu.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-icu/analysis-icu-7.3.2.zip))
-    * [Japanese (kuromoji) Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-kuromoji.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-kuromoji/analysis-kuromoji-7.3.2.zip))
-    * [Smart Chinese Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-smartcn.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-smartcn/analysis-smartcn-7.3.2.zip))
-    * [Stempel Polish Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-stempel.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-stempel/analysis-stempel-7.3.2.zip))
+    - [Elasticsearch OSS No JDK 7.3](https://www.elastic.co/guide/en/elasticsearch/reference/7.3/release-notes-7.3.2.html) ([available here--7.3.2](https://www.elastic.co/downloads/past-releases/elasticsearch-oss-no-jdk-7-3-2))
+    - [ICU Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-icu.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-icu/analysis-icu-7.3.2.zip))
+    - [Japanese (kuromoji) Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-kuromoji.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-kuromoji/analysis-kuromoji-7.3.2.zip))
+    - [Smart Chinese Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-smartcn.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-smartcn/analysis-smartcn-7.3.2.zip))
+    - [Stempel Polish Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-stempel.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-stempel/analysis-stempel-7.3.2.zip))
 
 1. Copy the downloaded files into `[Liferay Home]`.
 
@@ -176,7 +176,7 @@ DXP's `portlet.jar` (version 3) is backwards-compatible with version 2.0. It is 
 
 1. Move DXP's `portlet.jar` from the `[Install Location]/WebSphere/AppServer/lib/ext` folder to the `app_shared_libraries` folder you created.
 
-1. Follow IBM's steps for [using a server-associated shared library](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver); make sure to choose *Classes loaded with local class loader first (parent_Last)* on step 4d.
+1. Follow IBM's steps for [using a server-associated shared library](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver); make sure to choose _Classes loaded with local class loader first (parent_Last)_ on step 4d.
 
 1. Save the configuration.
 
@@ -187,8 +187,8 @@ In addition to placing DXP's `portlet.jar` in a server-associated shared library
 1. Open the `[Install Location]/WebSphere/AppServer/configuration/config.ini` file.
 1. Find the property `com.ibm.CORBA,com.ibm`.
 1. Insert the property
-    `javax.portlet,javax.portlet.filter,javax.portlet.annotations`
-    after `com.ibm.CORBA` and before `com.ibm`.
+   `javax.portlet,javax.portlet.filter,javax.portlet.annotations`
+   after `com.ibm.CORBA` and before `com.ibm`.
 1. Save the file.
 
 ### Dependencies Checkpoint
@@ -217,28 +217,28 @@ If using WebSphere to manage the database connections, follow the instructions b
 
 1. Start WebSphere.
 1. Open the Administrative Console and log in.
-1. Click *Resources &rarr; JDBC Providers*.
-1. Select a scope and then click *New*.
-1. Select the database type, provider type, and implementation type. If selecting a predefined database, the wizard fills automatically in the name and description fields. If the desired database isn't listed, select *User-defined* from the *Database type* field and then fill in the *Implementation Class Name*. For example, if using MySQL, select *Database type* &rarr; *User-defined*, and then enter `com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource` in *Implementation Class Name*. Click *Next*.
-1. Clear any text in the class path settings. The necessary JARs have already been copied to a location on the server's class path. Click *Next*.
-1. Review the settings and click *Finish*. The final configuration should look like this:
+1. Click _Resources &rarr; JDBC Providers_.
+1. Select a scope and then click _New_.
+1. Select the database type, provider type, and implementation type. If selecting a predefined database, the wizard fills automatically in the name and description fields. If the desired database isn't listed, select _User-defined_ from the _Database type_ field and then fill in the _Implementation Class Name_. For example, if using MySQL, select _Database type_ &rarr; _User-defined_, and then enter `com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource` in _Implementation Class Name_. Click _Next_.
+1. Clear any text in the class path settings. The necessary JARs have already been copied to a location on the server's class path. Click _Next_.
+1. Review the settings and click _Finish_. The final configuration should look like this:
 
     ![Figure 4: Completed JDBC provider configurations.](./installing-on-websphere/images/04.png)
 
 1. Click the new provider configuration when it appears in the table.
-1. Click *Data Sources* under *Additional Properties*.
-1. Click *New*.
-1. Enter `liferaydatabasesource` in the *Data source name* field and `jdbc/LiferayPool` in the *JNDI name* field. Click *Next*.
-1. Click *Next* in the remaining screens of the wizard to accept the default values. Then review all the changes and click *Finish*.
-1. Click the data source when it appears in the table and then click *Custom Properties*.
-1. Click the *Show Filter Function* button. This is the second from last of the small icons under the *New* and *Delete* buttons.
-1. Enter *user* into the search terms and click *Go*.
+1. Click _Data Sources_ under _Additional Properties_.
+1. Click _New_.
+1. Enter `liferaydatabasesource` in the _Data source name_ field and `jdbc/LiferayPool` in the _JNDI name_ field. Click _Next_.
+1. Click _Next_ in the remaining screens of the wizard to accept the default values. Then review all the changes and click _Finish_.
+1. Click the data source when it appears in the table and then click _Custom Properties_.
+1. Click the _Show Filter Function_ button. This is the second from last of the small icons under the _New_ and _Delete_ buttons.
+1. Enter _user_ into the search terms and click _Go_.
 
     ![Figure 5: Modifying data source properties in WebSphere](././installing-on-websphere/images/05.png)
 
-1. Select the *user* property and give it the value of the user name to the database.
-1. Click *OK* and save to master configuration.
-1. Do another filter search for the *url* property. Give this property a value that points to the database. For example, a MySQL URL would look like this:
+1. Select the _user_ property and give it the value of the user name to the database.
+1. Click _OK_ and save to master configuration.
+1. Do another filter search for the _url_ property. Give this property a value that points to the database. For example, a MySQL URL would look like this:
 
     ```properties
     jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
@@ -248,10 +248,10 @@ If using WebSphere to manage the database connections, follow the instructions b
        For more example URLs, see the `jdbc.default.url` values in `Database Templates <../../reference/database-templates.md>`_.
     ```
 
-    Click *OK* and save to master configuration.
+    Click _OK_ and save to master configuration.
 
-1. Do another filter search for the *password* property. Enter the password for the user ID added earlier as the value for this property. Click *OK* and save to master configuration.
-1. Go back to the data source page by clicking it in the breadcrumb trail. Use the *Test Connection* button to validate configurations to this point.
+1. Do another filter search for the _password_ property. Enter the password for the user ID added earlier as the value for this property. Click _OK_ and save to master configuration.
+1. Go back to the data source page by clicking it in the breadcrumb trail. Use the _Test Connection_ button to validate configurations to this point.
 
 ## Mail Configuration
 
@@ -261,16 +261,16 @@ If you want to use WebSphere to manage the mail session, follow these steps:
 
 ### Creating a WebSphere-Managed Mail Session
 
-1. Click *Resources &rarr; Mail &rarr; Mail Providers*.
+1. Click _Resources &rarr; Mail &rarr; Mail Providers_.
 1. Click the Built-In Mail Provider for the node and server.
-1. Click *Mail Sessions* and then click the *New* button.
-1. Give the mail session a name of `liferaymail` and a JNDI name of `mail/MailSession`. Fill in the correct information for your mail server in the sections *Outgoing Mail Properties* and *Incoming Mail Properties*. Click *OK* and then save to the master configuration.
-1. Click the mail session when it appears in the table and select *Custom Properties* under the *Additional Properties* section. Set any other JavaMail properties required by the mail server, such as the protocol, ports, whether to use SSL, and so on.
-1. Click *Security &rarr; Global Security* and de-select *Use Java 2 security to restrict application access to local resources* if it is selected.
+1. Click _Mail Sessions_ and then click the _New_ button.
+1. Give the mail session a name of `liferaymail` and a JNDI name of `mail/MailSession`. Fill in the correct information for your mail server in the sections _Outgoing Mail Properties_ and _Incoming Mail Properties_. Click _OK_ and then save to the master configuration.
+1. Click the mail session when it appears in the table and select _Custom Properties_ under the _Additional Properties_ section. Set any other JavaMail properties required by the mail server, such as the protocol, ports, whether to use SSL, and so on.
+1. Click _Security &rarr; Global Security_ and de-select _Use Java 2 security to restrict application access to local resources_ if it is selected.
 
     ![Figure 6: Applying Java security in the Mail Session](./installing-on-websphere/images/06.png)
 
-1. Click *Apply*.
+1. Click _Apply_.
 
 Note that it might be necessary to retrieve a SSL certificate from mail server and add it to WebSphere's trust store. See WebSphere's documentation for instructions on this.
 
@@ -289,35 +289,35 @@ User 0 is not allowed to access URL http://localhost:9081/web/guest/home and por
 
 This occurs because DXP cannot use the HTTPS cookie when using HTTP. The end result is that new sessions are created on each page refresh. Follow these steps to resolve this issue in WebSphere:
 
-1. Click *Application Servers* &rarr; *server1* &rarr; *Session Management* &rarr; *Enable Cookies*.
-1. De-select *Restrict cookies to HTTPS sessions*.
-1. Click *Apply*.
-1. Click *Save*.
+1. Click _Application Servers_ &rarr; _server1_ &rarr; _Session Management_ &rarr; _Enable Cookies_.
+1. De-select _Restrict cookies to HTTPS sessions_.
+1. Click _Apply_.
+1. Click _Save_.
 
 ## Enable UTF-8
 
 If UTF-8 has not been enabled by adding the `-Dfile.encoding=UTF-8` property in the `server.xml`, administrators can also do so in the Administrative Console.
 
-1. Click *Application Servers* &rarr; *server1* &rarr; *Process definition*.
-1. Click *Java Virtual Machine* under *Additional Properties*.
-1. Enter `-Dfile.encoding=UTF-8` in the *Generic JVM arguments* field.
-1. Click *Apply* and then *Save* to master configuration.
+1. Click _Application Servers_ &rarr; _server1_ &rarr; _Process definition_.
+1. Click _Java Virtual Machine_ under _Additional Properties_.
+1. Enter `-Dfile.encoding=UTF-8` in the _Generic JVM arguments_ field.
+1. Click _Apply_ and then _Save_ to master configuration.
 
 Once the changes have been saved, DXP can parse special characters if there is localized content.
 
 ## Deploying the DXP `.war` File
 
-1. In WebSphere's administrative console, click *Applications* &rarr; *New Application* &rarr; *New Enterprise Application*.
-1. Browse to the DXP `.war` file, select it, and click *Next*.
-1. Leave *Fast Path* selected and click *Next*. Ensure that *Distribute Application* has been checked and click *Next* again.
-1. Choose the WebSphere runtimes and/or clusters where DXP is to be deployed. Click *Next*.
-1. Select the virtual host to deploy DXP on and click *Next*.
-1. Map DXP to the root context (`/`) and click *Next*.
-1. Select the desired *metadata-complete attribute* setting and click *Next*.
-1. Verify that the settings are correct and click *Finish*.
-1. When DXP has installed, click *Save to Master Configuration*.
+1. In WebSphere's administrative console, click _Applications_ &rarr; _New Application_ &rarr; _New Enterprise Application_.
+1. Browse to the DXP `.war` file, select it, and click _Next_.
+1. Leave _Fast Path_ selected and click _Next_. Ensure that _Distribute Application_ has been checked and click _Next_ again.
+1. Choose the WebSphere runtimes and/or clusters where DXP is to be deployed. Click _Next_.
+1. Select the virtual host to deploy DXP on and click _Next_.
+1. Map DXP to the root context (`/`) and click _Next_.
+1. Select the desired _metadata-complete attribute_ setting and click _Next_.
+1. Verify that the settings are correct and click _Finish_.
+1. When DXP has installed, click _Save to Master Configuration_.
 
-   ![Figure 7: Review the deployment options before deploying.](./installing-on-websphere/images/07.png)
+    ![Figure 7: Review the deployment options before deploying.](./installing-on-websphere/images/07.png)
 
 DXP has been installed. There are a few more required steps before starting DXP.
 
@@ -348,8 +348,8 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
     ```
 
 1. Start the application server.
-1. In the WebSphere administrative console, navigate to *Enterprise Applications*, select the DXP application, and click *Start*. While DXP is starting, WebSphere displays a spinning graphic.
-1. In DXP's setup wizard, select and configure the database type. Click *Finish*. DXP then creates the tables it needs in the database.
+1. In the WebSphere administrative console, navigate to _Enterprise Applications_, select the DXP application, and click _Start_. While DXP is starting, WebSphere displays a spinning graphic.
+1. In DXP's setup wizard, select and configure the database type. Click _Finish_. DXP then creates the tables it needs in the database.
 
 After deploying DXP, there may be excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust the app server's logging level or log filters to avoid excessive benign log messages.
 
@@ -365,8 +365,8 @@ After deploying DXP, there may be excessive warnings and log messages, such as t
 
 ## Next Steps
 
-* [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md)
-* [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md)
-* [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
-* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md)
+-   [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md)
+-   [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
+-   [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
+-   [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)

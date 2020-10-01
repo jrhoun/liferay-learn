@@ -4,13 +4,13 @@ The Liferay Support Team creates and releases fixes to issues discovered in DXP.
 
 Here's a sumamry of the DXP patch types and the Portal CE fix delivery method.
 
-| Patch Type | Purpose |
-| :--------- | :------ |
-| [Fix Packs](#fix-packs) | Resolve the most recent issues. |
-| [Security Fix Packs](#security-fix-packs) | Address the latest security issues immediately. |
-| [Hotfixes](#hotfixes) | Requested by customers to fix business critical DXP issues fast. |
-| [Service Packs](#service-packs) | Incorporate the latest Fix Pack and can include larger fixes that require more testing. |
-| [Rolling Releases](#rolling-releases) | Apply fixes to Portal CE based on the latest DXP Service Pack. |
+| Patch Type                                | Purpose                                                                                 |
+| :---------------------------------------- | :-------------------------------------------------------------------------------------- |
+| [Fix Packs](#fix-packs)                   | Resolve the most recent issues.                                                         |
+| [Security Fix Packs](#security-fix-packs) | Address the latest security issues immediately.                                         |
+| [Hotfixes](#hotfixes)                     | Requested by customers to fix business critical DXP issues fast.                        |
+| [Service Packs](#service-packs)           | Incorporate the latest Fix Pack and can include larger fixes that require more testing. |
+| [Rolling Releases](#rolling-releases)     | Apply fixes to Portal CE based on the latest DXP Service Pack.                          |
 
 ## Fix Packs
 
@@ -28,12 +28,12 @@ Security Fix Packs for intended for particular Fix Packs (base Fix Packs). Each 
 
 For example, the parts of file name `liferay-security-dxp-1-201902-1-7210.zip` represent these characteristics:
 
-* `liferay-security`: Security Fix Pack prefix.
-* `dxp-1`: Base Fix Pack.
-*  `2019`: Build year.
-* `02`: ID used by Liferay.
-* `1`: Counter used by Liferay.
-* `7210`: Build number. The one represents DXP 7.2.10.
+-   `liferay-security`: Security Fix Pack prefix.
+-   `dxp-1`: Base Fix Pack.
+-   `2019`: Build year.
+-   `02`: ID used by Liferay.
+-   `1`: Counter used by Liferay.
+-   `7210`: Build number. The one represents DXP 7.2.10.
 
 ```note::
    Security Fix Packs do not change your DXP installation's regular Fix Pack level.
@@ -65,31 +65,31 @@ Rolling Releases are based on DXP Service Packs and are typically available a fe
 
 The following table describes the testing applied to each patch type.
 
-| Patch Type     | Testing |
-| :------------- | :------ |
-| Hotfixes       | Automated regression testing similar to Fix Packs (see below), and the support engineer who fixes the reported issue tests it. |
-| Fix packs      | Automated regression testing and manual testing. |
-| Service packs  | Liferay runs test suites on the packaged Service Pack. |
-| Rolling Releases | Same testing as the corresponding DXP Service Pack, plus upgrade testing from the previous GA. |
+| Patch Type       | Testing                                                                                                                        |
+| :--------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| Hotfixes         | Automated regression testing similar to Fix Packs (see below), and the support engineer who fixes the reported issue tests it. |
+| Fix packs        | Automated regression testing and manual testing.                                                                               |
+| Service packs    | Liferay runs test suites on the packaged Service Pack.                                                                         |
+| Rolling Releases | Same testing as the corresponding DXP Service Pack, plus upgrade testing from the previous GA.                                 |
 
 ## Keeping Up With Patches
 
 [Liferay's Help Center \(help.liferay.com\)](https://help.liferay.com/hc) is your destination for patch information and more.
 
-* Announcements section: Links to the latest news on fix packs, security alerts, product releases, and system updates.
+-   Announcements section: Links to the latest news on fix packs, security alerts, product releases, and system updates.
 
-* *Subscribe* button: Signs you up for Liferay DXP release, patch, and system improvement emails.
+-   _Subscribe_ button: Signs you up for Liferay DXP release, patch, and system improvement emails.
 
-* [Downloads page](https://customer.liferay.com/downloads): provides access to
+-   [Downloads page](https://customer.liferay.com/downloads): provides access to
 
-    * Latest Release
-    * Fix Packs
-    * Service Pack Archives
-    * Security Fix Packs
-    * Patching Tool
-    * and more
+    -   Latest Release
+    -   Fix Packs
+    -   Service Pack Archives
+    -   Security Fix Packs
+    -   Patching Tool
+    -   and more
 
-* [Security page](https://help.liferay.com/hc/en-us/categories/360000892792-Security): Links to security-related overviews, advisories, and Fix Packs.
+-   [Security page](https://help.liferay.com/hc/en-us/categories/360000892792-Security): Links to security-related overviews, advisories, and Fix Packs.
 
 The Help Center is also a launching point for account support, support FAQs and more. Liferay is here to help!
 
@@ -99,6 +99,6 @@ Now that you know the patch types Liferay provides for delivering fixes, you can
 
 ## Additional Information
 
-* [Installing Patches](./installing-patches.md)
-* [Installing the Patching Tool](./installing-the-patching-tool.md)
-* [Upgrading to a New Liferay Portal CE Rolling Release](../../installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrading-to-a-new-liferay-portal-ce-rolling-release.md)
+-   [Installing Patches](./installing-patches.md)
+-   [Installing the Patching Tool](./installing-the-patching-tool.md)
+-   [Upgrading to a New Liferay Portal CE Rolling Release](../../installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrading-to-a-new-liferay-portal-ce-rolling-release.md)

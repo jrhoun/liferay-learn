@@ -33,4 +33,4 @@ If accessed in the [Form widget on a Liferay DXP page](../sharing-forms.md), the
 
 ## Additional Information
 
-* [Forms Field Types Reference](../forms-field-types-reference.md)
+-   [Forms Field Types Reference](../forms-field-types-reference.md)

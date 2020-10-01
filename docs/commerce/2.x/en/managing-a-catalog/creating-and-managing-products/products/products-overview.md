@@ -66,7 +66,7 @@ To create a BOM, see [Managing BOMs](./managing-boms.md)
 
 ## Additional Information
 
-* [Creating a Simple Product](../product-types/creating-a-simple-product.md)
-* [Creating a Grouped Product](../product-types/creating-a-grouped-product.md)
-* [Creating a Virtual Product](../product-types/creating-a-virtual-product.md)
-* [Low Stock Actions](../../managing-inventory/low-stock-action.md)
+-   [Creating a Simple Product](../product-types/creating-a-simple-product.md)
+-   [Creating a Grouped Product](../product-types/creating-a-grouped-product.md)
+-   [Creating a Virtual Product](../product-types/creating-a-virtual-product.md)
+-   [Low Stock Actions](../../managing-inventory/low-stock-action.md)

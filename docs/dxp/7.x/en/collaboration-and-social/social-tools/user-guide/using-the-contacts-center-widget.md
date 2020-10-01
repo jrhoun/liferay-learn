@@ -1,9 +1,9 @@
 # Using the Contacts Center Widget
 
- The _Contacts Center_ widget lets users form these connection types:
+The _Contacts Center_ widget lets users form these connection types:
 
-* Connection: A two-way relationship formed by a user accepting a connection request from another user. The Activities widget on each user’s private Dashboard displays the activities of the other user.
-* Following: A one-way relationship in which one user follows another user. The followed user’s activities appear in the Activities widget on the follower's private Dashboard.
+-   Connection: A two-way relationship formed by a user accepting a connection request from another user. The Activities widget on each user’s private Dashboard displays the activities of the other user.
+-   Following: A one-way relationship in which one user follows another user. The followed user’s activities appear in the Activities widget on the follower's private Dashboard.
 
 After the widget is deployed on a user's private Dashboard, users can form their own social connections.
 
@@ -74,4 +74,4 @@ Users can upload the `.vcf` file to their email and SMS system of their choice.
 
 ## Additional Information
 
-* [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+-   [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

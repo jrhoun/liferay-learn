@@ -4,13 +4,13 @@ If you're not sure what Organizations are or whether you need them, start [here]
 
 ## Adding Organizations
 
-1. Click *Users and Organizations* from Control Panel &rarr; Users.
-1. Go to the *Organizations* tab and click the Add button (![Add](../../images/icon-add.png)). Fill out the Name field at a minimum.
+1. Click _Users and Organizations_ from Control Panel &rarr; Users.
+1. Go to the _Organizations_ tab and click the Add button (![Add](../../images/icon-add.png)). Fill out the Name field at a minimum.
 
     ![Adding a new organization requires the Name field.](./creating-and-managing-organizations/images/01.png)
 
-1. If you're creating a child Organization, use the Parent Organization *Select* button to select an Organization in the system to be the direct parent. Click the *Remove* button to remove the currently configured parent.
-1. Click *Save* when finished filling out the Add Organization form.
+1. If you're creating a child Organization, use the Parent Organization _Select_ button to select an Organization in the system to be the direct parent. Click the _Remove_ button to remove the currently configured parent.
+1. Click _Save_ when finished filling out the Add Organization form.
 
 Once you submit the form, you see a success message, and a new form appears where you can enter additional information about the Organization. Organizations can have associated multiple email addresses, postal addresses, web sites, and phone numbers. You can use the Services link to indicate the operating hours of the Organization, if any.
 
@@ -28,9 +28,9 @@ Organization Administrators can't make these Role assignments and can't manage t
 
 1. Go to the Users and Organizations section of the Control Panel
 
-1. Click the *Organizations* tab. All active Organizations are listed.
+1. Click the _Organizations_ tab. All active Organizations are listed.
 
-1. Click the *Actions* button next to an Organization. This shows a list of actions you can perform on this Organization:
+1. Click the _Actions_ button next to an Organization. This shows a list of actions you can perform on this Organization:
 
 **Edit:** Specify details about the Organization, including addresses, phone numbers, and email addresses. You can also create a Site for the Organization.
 

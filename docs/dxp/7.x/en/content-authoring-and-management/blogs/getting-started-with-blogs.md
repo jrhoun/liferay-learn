@@ -22,13 +22,13 @@ Site members are able to create blog posts using the _Blogs_ widget. Note that t
 
 Learn how to use the features of the Blogs application:
 
-* [Adding Blog Entries](./adding-blog-entries.md)
-* [Managing Blog Entries](./managing-blog-entries.md)
-* [Displaying Blogs](./displaying-blogs.md)
-* [Configuring the Blogs App](./configuring-the-blogs-app.md)
-* [Highlighting Recent Bloggers](./highlighting-recent-bloggers.md)
+-   [Adding Blog Entries](./adding-blog-entries.md)
+-   [Managing Blog Entries](./managing-blog-entries.md)
+-   [Displaying Blogs](./displaying-blogs.md)
+-   [Configuring the Blogs App](./configuring-the-blogs-app.md)
+-   [Highlighting Recent Bloggers](./highlighting-recent-bloggers.md)
 
 ### Reference
 
-* [Blog Entry Editor Reference](./blog-entry-editor-reference.md)
-* [Blog Permissions Reference](./blog-permissions-reference.md)
+-   [Blog Entry Editor Reference](./blog-entry-editor-reference.md)
+-   [Blog Permissions Reference](./blog-permissions-reference.md)

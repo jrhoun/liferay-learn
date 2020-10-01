@@ -36,7 +36,7 @@ Users can add addresses to an account in the _Control Panel_.
 1. Check the _Default Billing_ box if this is the default billing address.
 1. Check the _Default Shipping_ box if this is the default shipping address.
 
-   ![Adding a New Address in the Control Panel](./adding-addresses-to-an-account/images/04.png)
+    ![Adding a New Address in the Control Panel](./adding-addresses-to-an-account/images/04.png)
 
 1. Click _Save_.
 
@@ -49,7 +49,7 @@ Users can add addresses to an account in the _Control Panel_.
 1. Check the _Default Billing_ box if this is the default billing address.
 1. Check the _Default Shipping_ box if this is the default shipping address.
 
-   ![Adding a New Address in the Control Panel](./adding-addresses-to-an-account/images/04.png)
+    ![Adding a New Address in the Control Panel](./adding-addresses-to-an-account/images/04.png)
 
 1. Click _Save_.
 

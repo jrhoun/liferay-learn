@@ -2,9 +2,9 @@
 
 Analytics Cloud does the following for pages:
 
-* Registers and tracks pages for analysis the first time the Analytics Cloud client detects a Page interaction.
-* Queries pages on a schedule for up-to-date data.
-* Reports on pages with the metrics described here.
+-   Registers and tracks pages for analysis the first time the Analytics Cloud client detects a Page interaction.
+-   Queries pages on a schedule for up-to-date data.
+-   Reports on pages with the metrics described here.
 
 ## Data Time Periods
 
@@ -28,11 +28,11 @@ Note that the first Sunday of the 90 day time period is not included.
 
 The Overview tab of a Page's metrics has several data presentations. The first chart, called Visitor Behavior, contains these metrics:
 
-* Average Engagement Score
-* Unique Visitors
-* Total Views
-* Bounce Rate
-* Average Time on Page
+-   Average Engagement Score
+-   Unique Visitors
+-   Total Views
+-   Bounce Rate
+-   Average Time on Page
 
 Select the time period for the data displayed. There are always two trend lines displayed: Selected Period and Previous Period. This facilitates comparisons between time periods.
 
@@ -44,9 +44,9 @@ So what are these metrics in the Visitor Behavior chart?
 
 Engagement, or average Page Engagement is an aggregation of metrics into one overall score. It incorporates these factors:
 
-* Depth of scroll on the Page
-* Number of clicks
-* Time spent on the Page
+-   Depth of scroll on the Page
+-   Number of clicks
+-   Time spent on the Page
 
 Use the engagement score as a high level view of the Page's overall performance, as compared with other Pages. It might not tell you specifically what's so effective (or weak) about a Page, but it can tell you if the Page is performing as desired over the selected time period.
 
@@ -80,11 +80,11 @@ This metric is calculated like this for each 24 hour period:
 
 The Audience report uses charts to present information about the audience interaction with the Page. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
-* Here are the charts in the Audience report:
+-   How many users are interacting with my content?
+-   Of these users, how many are known or anonymous?
+-   Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+-   Of the users in Segments, what are the top 15 segments?
+-   Here are the charts in the Audience report:
 
 **Unique Visitors:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center of the chart shows the total number of unique visitors. Tooltips on each chart section show the number of users for that section (e.g, the number of known or anonymous users).
 
@@ -116,10 +116,10 @@ View a list of the Assets on the Page by their number of Interactions over the s
 
 Depending on the Asset being viewed, a different Interaction metric is reported:
 
-* Blogs reports Views
-* Documents and Media reports Downloads
-* Forms reports Submissions
-* Web Content reports Views
+-   Blogs reports Views
+-   Documents and Media reports Downloads
+-   Forms reports Submissions
+-   Web Content reports Views
 
 ![Identify high performing assets on your site.](pages/images/06.png)
 

@@ -51,7 +51,7 @@ First, deploy an example to see how auto-deployable Fragments work:
     INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing marketing-fragments.zip
     ```
 
-1. Verify that the Fragment Collection is available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The Collection is listed with the other Collections.
+1. Verify that the Fragment Collection is available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; _Site Builder_ &rarr; _Page Fragments_. The Collection is listed with the other Collections.
 
 ![The Collection is available.](./auto-deploying-fragments/images/01.png)
 
@@ -71,8 +71,8 @@ The `liferay-deploy-fragments.json` file specifies the scope where you want to a
 
 ```json
 {
-    "companyWebId": "liferay.com",
-    "groupKey": "Guest"
+	"companyWebId": "liferay.com",
+	"groupKey": "Guest"
 }
 ```
 
@@ -80,7 +80,7 @@ Both keys in this JSON file are optional. You can make Fragments available syste
 
 ```json
 {
-    "companyWebId": "*"
+	"companyWebId": "*"
 }
 ```
 
@@ -97,11 +97,11 @@ Follow these steps to add a new Fragment to the Collection and redeploy:
 
 1. Copy the Collection `zip` file to the Docker container to automatically import the Fragments Collection:
 
-   ```bash
-   docker cp marketing-fragments.zip docker-container-name:/path/to/deploy/folder
-   ```
+    ```bash
+    docker cp marketing-fragments.zip docker-container-name:/path/to/deploy/folder
+    ```
 
-1. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The Collection includes the new Marketing Jumbotron Fragment.
+1. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; _Site Builder_ &rarr; _Page Fragments_. The Collection includes the new Marketing Jumbotron Fragment.
 
     ![The new Fragment is included in the auto-deployed Collection.](./auto-deploying-fragments/images/02.png)
 
@@ -109,5 +109,5 @@ Great! Now you know how to configure a Fragment Collection for automatic import.
 
 ## Related Information
 
-* [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
-* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+-   [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
+-   [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

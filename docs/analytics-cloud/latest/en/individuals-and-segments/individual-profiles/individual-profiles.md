@@ -8,17 +8,17 @@ Here's how to view Individual profiles:
 
 1. Select an Individual to view these things about the person:
 
-    * Activities on your sites
-    * Identity details and properties
-    * Topic interests
-    * Segment membership
+    - Activities on your sites
+    - Identity details and properties
+    - Topic interests
+    - Segment membership
 
 Each Individual profile has these tabs:
 
-* Overview
-* Details
-* Interests
-* Segments
+-   Overview
+-   Details
+-   Interests
+-   Segments
 
 Let's explore them to learn more about people you do business with.
 
@@ -28,7 +28,7 @@ The Overview tab shows the person's recent activities using a histogram of the c
 
 ![The Overview tab for Individuals.](individual-profiles/images/01.png)
 
-The Overview tab also gives you a glimpse of a person's profile data, topics of interest, and associated audience segments. Clicking the *View all* ... link for the Details, Interests, or Segments summary opens its respective tab.
+The Overview tab also gives you a glimpse of a person's profile data, topics of interest, and associated audience segments. Clicking the _View all_ ... link for the Details, Interests, or Segments summary opens its respective tab.
 
 Click on the Details tab to explore an Individual's details.
 

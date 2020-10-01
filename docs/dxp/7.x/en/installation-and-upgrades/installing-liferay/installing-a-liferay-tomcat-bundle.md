@@ -22,10 +22,10 @@ Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://
 
 3. Download a Tomcat Bundle:
 
-| File | Description |
-| :--- | :---------- |
-| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
-| Tomcat Bundle (`.7z`) | 7-Zipped bundle archive that installs on any OS |
+| File                      | Description                                     |
+| :------------------------ | :---------------------------------------------- |
+| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS  |
+| Tomcat Bundle (`.7z`)     | 7-Zipped bundle archive that installs on any OS |
 
 ## Install DXP
 
@@ -35,4 +35,4 @@ Congratulations! You've installed Liferay DXP. It's time to configure a database
 
 ## Next Steps
 
-* [Configuring a Database](./configuring-a-database.md)
+-   [Configuring a Database](./configuring-a-database.md)

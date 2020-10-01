@@ -6,22 +6,22 @@ A Display Page Template specifies the layout and formatting for your web content
 
 Follow these steps to create a Display Page Template:
 
-1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your site's menu.
-1. Click the *Display Page Templates* tab.
-1. Click the *Add* button (![Add](../../../../images/icon-add.png)).
-1. Give your Display Page Template a name and select a content type (Web Content articles, blogs, and documents are supported) and a Subtype if applicable, and click *Save*.
+1. Open the Product Menu and go to _Site Builder_ &rarr; _Pages_ under your site's menu.
+1. Click the _Display Page Templates_ tab.
+1. Click the _Add_ button (![Add](../../../../images/icon-add.png)).
+1. Give your Display Page Template a name and select a content type (Web Content articles, blogs, and documents are supported) and a Subtype if applicable, and click _Save_.
 
     ![Select an Asset type and Subtype.](./creating-a-display-page-template/images/02.png)
 
     ![The Display Page Template creation interface is the same as a standard Content Page.](./creating-a-display-page-template/images/03.png)
 
 1. Now on the edit page for the Display Page Template, build the page as you would [build any other Content Page](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md) using the available [Content Page elements](../../../creating-pages/building-and-managing-content-pages/content-pages-overview.md).
-1. Click on an editable field (text area for example) and click the *Map* button (![Map](../../../../images/icon-map.png)) in the dialog that appears.
+1. Click on an editable field (text area for example) and click the _Map_ button (![Map](../../../../images/icon-map.png)) in the dialog that appears.
 1. Select a field from the content type to [map](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md#mapping-content) the editable Page Fragment to. The mapped field highlights purple to indicate that it's mapped.
 
     ![Page Fragments that are mapped to the structure fields are highlighted purple.](./creating-a-display-page-template/images/04.png)
 
-1. Click *Publish* at the top of the page to save your work.
+1. Click _Publish_ at the top of the page to save your work.
 
     ```note::
        You can manage Display Page Templates through the Site Builder Menu Page Templates section. If you're viewing the content on the Display Page, you can also select the Pencil (Edit icon) from the Control Menu.

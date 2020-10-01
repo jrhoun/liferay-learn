@@ -6,13 +6,13 @@ Liferay DXP Cloud can alert system administrators of unexpected behaviors in a p
 
 Users can set [Alert Preferences](https://console.liferay.cloud/account/alerts-preferences) for all environments via the DXP Cloud Console.
 
-1. Click the *User Profile* icon at the top-right of the console navigation bar.
+1. Click the _User Profile_ icon at the top-right of the console navigation bar.
 
-1. Click on *Alerts Preferences*.
+1. Click on _Alerts Preferences_.
 
 1. Select the type of alerts you want to receive by clicking the checkbox for your preferred method of notification. To disable an alert, unselect the associated checkbox.
 
-1. Click *Save Alerts Preferences* when finished.
+1. Click _Save Alerts Preferences_ when finished.
 
 ![Real Time Alerts](./real-time-alerts/images/01.png)
 
@@ -24,26 +24,26 @@ View and manage alerts delivered to your console from the [Alerts page](https://
 
 The Alerts table lists the following alert information:
 
-* **Status**: This column indicates the alert's current state. Each alert is triggered by a specific event. If the event is still happening, its alert status is *Ongoing*. If the event is finished, the alert status is *Resolved*.
+-   **Status**: This column indicates the alert's current state. Each alert is triggered by a specific event. If the event is still happening, its alert status is _Ongoing_. If the event is finished, the alert status is _Resolved_.
 
-* **Started at**: This column indicates when the alert began.
+-   **Started at**: This column indicates when the alert began.
 
-* **Duration**: This column indicates how long the alert lasted.
+-   **Duration**: This column indicates how long the alert lasted.
 
 Filter and manage alerts using the buttons above the table:
 
-* **Unread alerts/All alerts**: View only unread alerts, or all alerts.
+-   **Unread alerts/All alerts**: View only unread alerts, or all alerts.
 
-* **All environments/other environments**: Filter alerts by environment.
+-   **All environments/other environments**: Filter alerts by environment.
 
-* **Mark all as read**: Mark all alerts as read.
+-   **Mark all as read**: Mark all alerts as read.
 
-* **Alerts Preferences**: Go to your alert preferences page.
+-   **Alerts Preferences**: Go to your alert preferences page.
 
 ![Real Time Alerts](./real-time-alerts/images/02.png)
 
 ## Additional Information
 
-* [Application Metrics](./application-metrics.md)
-* [Quotas](./quotas.md)
-* [Team Activities](./team-activities.md)
+-   [Application Metrics](./application-metrics.md)
+-   [Quotas](./quotas.md)
+-   [Team Activities](./team-activities.md)

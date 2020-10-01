@@ -28,10 +28,10 @@ If you're [upgrading to a new Liferay Docker image](../../installing-liferay/usi
 
 1. If your installation is a Liferay Tomcat Bundle, it includes the upgrade tool at `[Liferay Home]/tools/portal-tools-db-upgrade-client`. Otherwise download the tool and install it to that folder.
 
-| DXP Edition | Download Instructions |
-| :---------- | :-------------------- |
-| Liferay DXP (Subscription) | Go to the [*Downloads* page](https://customer.liferay.com/group/customer/downloads) and select the DXP version and the _Product/Service Packs_ file type. In the listing that appears, click _Download_ for the _Liferay DXP Upgrade Client_. |
-| Liferay Portal CE | Go to the [_Downloads_ page](https://www.liferay.com/downloads-community) and select _Download_ for _Liferay Portal Tools for 7.x_. |
+| DXP Edition                | Download Instructions                                                                                                                                                                                                                         |
+| :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Liferay DXP (Subscription) | Go to the [_Downloads_ page](https://customer.liferay.com/group/customer/downloads) and select the DXP version and the _Product/Service Packs_ file type. In the listing that appears, click _Download_ for the _Liferay DXP Upgrade Client_. |
+| Liferay Portal CE          | Go to the [_Downloads_ page](https://www.liferay.com/downloads-community) and select _Download_ for _Liferay Portal Tools for 7.x_.                                                                                                           |
 
 ## Running the Upgrade Tool
 
@@ -54,7 +54,7 @@ Here are steps for upgrading your database with the upgrade tool:
 
     The command above executes the upgrade tool with the same JVM options recommended for the application server. File encoding (`UTF-8`), time zone (`GMT`), country, language, and memory settings (`-Xmx value`) should all match your application server's settings. For databases with >= 10 GB of data, we recommend allocated additional memory over the 4 GB default. The `-l "[file]"` arguments direct upgrade tool log messages to the specified file.
 
-   If you haven't created [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration), the upgrade tool prompts you for configuration values, and shows default values in parentheses. Here's an example interaction:
+    If you haven't created [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration), the upgrade tool prompts you for configuration values, and shows default values in parentheses. Here's an example interaction:
 
     ```
     Please enter your application server (tomcat):
@@ -95,12 +95,12 @@ Now that the database upgrade is complete, test it.
 
 1. Copy and merge your custom [Liferay Home files](../../maintaining-a-liferay-dxp-installation/backing-up.md#liferay-home) and [application server files](../../maintaining-a-liferay-dxp-installation/backing-up.md#application-server) from your backup to the new installation. The files may include but are not limited to these:
 
-    * `/license/*`: Activation keys. (Subscription)
-    * `/log/*`: Log files.
-    * `/osgi/*.config`: OSGi configuration files.
-    * `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
-    * Application server files: Modified scripts and configuration files.
-    * `web.xml`: Portal web application descriptor.
+    - `/license/*`: Activation keys. (Subscription)
+    - `/log/*`: Log files.
+    - `/osgi/*.config`: OSGi configuration files.
+    - `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
+    - Application server files: Modified scripts and configuration files.
+    - `web.xml`: Portal web application descriptor.
 
 1. [Update the Portal properties](../configuration-and-infrastructure/migrating-configurations-and-properties.md#migrating-portal-properties) in your new installation.
 

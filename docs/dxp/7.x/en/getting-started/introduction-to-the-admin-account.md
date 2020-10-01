@@ -7,7 +7,7 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 1. Open a browser to `http://localhost:8080`.
 1. Click the _Sign In_ link.
 
-    ![Sign In Link](./introduction-to-the-admin-account/images/01.png "Sign In Link")
+    ![Sign In Link](./introduction-to-the-admin-account/images/01.png 'Sign In Link')
 
     ```note::
        If a Liferay DXP bundle is being used, you may be presented with the `Setup Wizard <../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md>`_. Follow the on-screen instructions to configure your Admin user.
@@ -15,8 +15,8 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
 1. Enter the default admin credentials to log in.
 
-    * Email address: `test@liferay.com`
-    * Password: `test`
+    - Email address: `test@liferay.com`
+    - Password: `test`
 
     ```warning::
        It is **highly** recommended that the default login credentials be updated when starting a new Liferay DXP installation.
@@ -29,17 +29,17 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 1. Click the _User Avatar_ and navigate to _Account Settings_ &rarr; _Password_.
 1. Enter your _Current Password_ and provide a new password.
 
-    ![Setting a Password](./introduction-to-the-admin-account/images/04.png "Setting a Password")
+    ![Setting a Password](./introduction-to-the-admin-account/images/04.png 'Setting a Password')
 
 ### Changing Account Information
 
 1. Click the _User Avatar_ &rarr; _Account Settings_.
 
-    ![Account Settings](./introduction-to-the-admin-account/images/02.png "Account Settings")
+    ![Account Settings](./introduction-to-the-admin-account/images/02.png 'Account Settings')
 
 1. In the _Information_ tab, change or add user information as needed.
 
-    ![Account Information](./introduction-to-the-admin-account/images/03.png "Account Information")
+    ![Account Information](./introduction-to-the-admin-account/images/03.png 'Account Information')
 
 ## Signing Out
 
@@ -47,7 +47,7 @@ To log out of your account:
 
 1. Click the _User Avatar_ &rarr; _Sign Out_.
 
-    ![Signing Out](./introduction-to-the-admin-account/images/05.png "Signing Out")
+    ![Signing Out](./introduction-to-the-admin-account/images/05.png 'Signing Out')
 
 ## Creating a New Admin User
 
@@ -56,8 +56,8 @@ Now that you know how to log in, we strongly recommend that you create a new adm
 To create a new admin account follow these steps:
 
 1. Create a new user. See [Adding Users](../users-and-permissions/users/adding-and-managing-users.md) to learn how.
-1. Click the *Roles* link in the left navigation pane (in the *Edit User* page's *General* tab).
-1. Click *Select* under Regular Roles. Select the Administrator role from the list (click *Choose*). The dialog box disappears and the Role is added to the list of Roles associated with your account.
+1. Click the _Roles_ link in the left navigation pane (in the _Edit User_ page's _General_ tab).
+1. Click _Select_ under Regular Roles. Select the Administrator role from the list (click _Choose_). The dialog box disappears and the Role is added to the list of Roles associated with your account.
 
 The user is now a portal administrator. Log out and then log back in with your new user account.
 

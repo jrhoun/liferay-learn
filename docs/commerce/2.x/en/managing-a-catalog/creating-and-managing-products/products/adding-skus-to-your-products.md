@@ -6,8 +6,8 @@ SKUs provide a convenient way to inventory and price multiple product variants. 
 
 In order to auto-generate SKUs, the following must be completed:
 
-* Product options templates have been created.
-* Product options have been applied to your product(s).
+-   Product options templates have been created.
+-   Product options have been applied to your product(s).
 
 See [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md) for more information.
 
@@ -50,4 +50,4 @@ The SKU has successfully been renamed.
 
 ## Additional Information
 
-* [Overriding Product Level Information](./overriding-product-level-information.md)
+-   [Overriding Product Level Information](./overriding-product-level-information.md)

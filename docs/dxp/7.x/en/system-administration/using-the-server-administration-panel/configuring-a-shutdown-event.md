@@ -24,7 +24,7 @@ Now configure the shutdown itself:
 
     `Maintenance Alert 4:48 PM EST The portal will shut down for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]`
 
-   In addition, this message is what Users see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
+    In addition, this message is what Users see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
 
 1. Click _Save_. The countdown to the shutdown event begins immediately.
 
@@ -44,7 +44,7 @@ At any time before the shutdown has occurred, you can cancel it.
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Server Administration, and click the _Shutdown_ tab.
 
-   If a shutdown event is scheduled, you can only do one thing: cancel it.
+    If a shutdown event is scheduled, you can only do one thing: cancel it.
 
 1. Click _Cancel Shutdown_.
 

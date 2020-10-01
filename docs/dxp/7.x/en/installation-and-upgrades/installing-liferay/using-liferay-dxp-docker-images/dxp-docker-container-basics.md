@@ -2,15 +2,15 @@
 
 Docker Hub hosts [Liferay DXP](https://hub.docker.com/r/liferay/dxp) and [Liferay Portal Community Edition (CE)](https://hub.docker.com/r/liferay/portal) Docker images, bundled with Tomcat on Linux. The Liferay Docker Hub pages provide image details and tags for the different releases.
 
-* [Liferay DXP Images](https://hub.docker.com/r/liferay/dxp)
-* [Liferay Portal CE Images](https://hub.docker.com/r/liferay/portal)
+-   [Liferay DXP Images](https://hub.docker.com/r/liferay/dxp)
+-   [Liferay Portal CE Images](https://hub.docker.com/r/liferay/portal)
 
 Here are the fundamentals for using the containers:
 
-* [Starting a Container for the First Time](#starting-a-container-for-the-first-time)
-* [Viewing Log Files](#viewing-log-files)
-* [Stopping a Container](#stopping-a-container)
-* [Restarting a Container](#restarting-a-container)
+-   [Starting a Container for the First Time](#starting-a-container-for-the-first-time)
+-   [Viewing Log Files](#viewing-log-files)
+-   [Stopping a Container](#stopping-a-container)
+-   [Restarting a Container](#restarting-a-container)
 
 These containers are standard Docker containers that can be started and stopped as such. The following examples use [Docker CLI (`docker`)](https://docs.docker.com/engine/reference/commandline/docker/), but you can use whatever Docker container tools you like.
 
@@ -52,11 +52,11 @@ DXP log messages and log files are available to view live and to copy to your ho
 
 The [`docker logs`](https://docs.docker.com/engine/reference/commandline/logs/) command prints container log messages.
 
-| Command | Result |
-| :------ | :----- |
-| `docker logs [container]` | Outputs all of the current log messages |
+| Command                      | Result                                               |
+| :--------------------------- | :--------------------------------------------------- |
+| `docker logs [container]`    | Outputs all of the current log messages              |
 | `docker logs -f [container]` | Streams new log messages, like `tail -f [file]` does |
-| `docker logs -t [container]` | Appends a time stamp to each log message |
+| `docker logs -t [container]` | Appends a time stamp to each log message             |
 
 ### `docker cp` command
 
@@ -70,10 +70,10 @@ docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 
 Here are two ways to stop the container.
 
-| Method | Pros | Cons |
-| :----- | :--- | :--- |
-| `docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh` | Allows DXP, Tomcat, and other apps to free resources. The container entry point runs any [post-shutdown scripts](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api). | |
-| `Ctrl-C` in the terminal session where you are running with the `-i` argument.<br><br>Note, this sends a [`SIGINT` or `SIGKILL` signal to the attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description). | Fastest method to stop the container. | DXP, Tomcat, and the container entry point stop immediately, without freeing resources. The entry point's [post-shutdown phase](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api) is skipped. Don't use this method in production environments |
+| Method                                                                                                                                                                                                                                                | Pros                                                                                                                                                                            | Cons                                                                                                                                                                                                                                                       |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh`                                                                                                                                                                                         | Allows DXP, Tomcat, and other apps to free resources. The container entry point runs any [post-shutdown scripts](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api). |                                                                                                                                                                                                                                                            |
+| `Ctrl-C` in the terminal session where you are running with the `-i` argument.<br><br>Note, this sends a [`SIGINT` or `SIGKILL` signal to the attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description). | Fastest method to stop the container.                                                                                                                                           | DXP, Tomcat, and the container entry point stop immediately, without freeing resources. The entry point's [post-shutdown phase](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api) is skipped. Don't use this method in production environments |
 
 ## Restarting a Container
 
@@ -93,8 +93,8 @@ Now you know the basics of starting, stopping, and monitoring a DXP container.
 
 If you want to know what the container entry point does and learn the container's API, see the [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md). If you want to start using the containers, exercise one of the following use cases:
 
-* [Configuring DXP Containers](./configuring-dxp-containers.md)
-* [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
-* [Patching DXP in Docker](./patching-dxp-in-docker.md)
-* [Providing Files to the Container](./providing-files-to-the-container.md)
-* [Upgrading to a New Docker Image](./upgrading-to-a-new-docker-image.md)
+-   [Configuring DXP Containers](./configuring-dxp-containers.md)
+-   [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
+-   [Patching DXP in Docker](./patching-dxp-in-docker.md)
+-   [Providing Files to the Container](./providing-files-to-the-container.md)
+-   [Upgrading to a New Docker Image](./upgrading-to-a-new-docker-image.md)

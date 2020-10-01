@@ -2,8 +2,8 @@
 
 There are two ways to share a form:
 
-* Placing the _Form_ widget on a site page and configuring the widget to display the particular form. This allows the form to be seen and submitted by any user who has access to the [site page](../../../site-building/creating-pages/understanding-pages/understanding-pages.md).
-* Sharing the dedicated form URL directly with users. This limits access to the form to only those users who have the direct link.
+-   Placing the _Form_ widget on a site page and configuring the widget to display the particular form. This allows the form to be seen and submitted by any user who has access to the [site page](../../../site-building/creating-pages/understanding-pages/understanding-pages.md).
+-   Sharing the dedicated form URL directly with users. This limits access to the form to only those users who have the direct link.
 
 ## Displaying a Form on a Site Page
 
@@ -39,4 +39,4 @@ Once you have the URL, embed the URL in an email or other notification types. Us
 
 ## What's Next
 
-* [Managing Form Entries](./managing-form-entries.md)
+-   [Managing Form Entries](./managing-form-entries.md)

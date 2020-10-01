@@ -4,17 +4,17 @@ Search terms can be suggested to users when their initial queries can be improve
 
 To configure the spell check settings:
 
-1. You must first reindex the spell check indexes. Go to *Control Panel* &rarr; *Configuration* &rarr; *Search*, and open the Index Actions screen.
+1. You must first reindex the spell check indexes. Go to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_, and open the Index Actions screen.
 
-    Click *Execute* next to *Reindex all spell check indexes*.
+    Click _Execute_ next to _Reindex all spell check indexes_.
 
-1. Add the *Suggestions* widget to the search page.
+1. Add the _Suggestions_ widget to the search page.
 
-1. Open the *Suggestions* widget configuration screen. Click the widget Options button (![Options](../../../images/icon-widget-options.png)) and select *Configuration*.
+1. Open the _Suggestions_ widget configuration screen. Click the widget Options button (![Options](../../../images/icon-widget-options.png)) and select _Configuration_.
 
     ![Configure the suggestion settings to allow for user input mistakes and help lead users to results.](./enabling-search-suggestions/images/01.png)
 
-1. Configure as desired and click *Save*.
+1. Configure as desired and click _Save_.
 
 ## Suggestions Configuration Reference
 

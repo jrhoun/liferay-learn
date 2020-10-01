@@ -2,6 +2,6 @@
 
 Coming soon!
 
-## Additional Information 
+## Additional Information
 
-* [Deprecations in Liferay DXP 7.2](./deprecations-in-liferay-dxp-7-2.md)
+-   [Deprecations in Liferay DXP 7.2](./deprecations-in-liferay-dxp-7-2.md)

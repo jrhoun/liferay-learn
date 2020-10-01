@@ -12,7 +12,7 @@ Configuration files use the `.config` property value format defined by the [Apac
 
 ## Creating Configuration Files
 
-System Settings provides an [*Export*](./system-settings.md#exporting-and-deploying-configurations) option that becomes available once you modify a configuration entry. Exporting is the best way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format, then modify or distribute as you have need. All available configuration keys and values are exported, even if only one value was changed.
+System Settings provides an [_Export_](./system-settings.md#exporting-and-deploying-configurations) option that becomes available once you modify a configuration entry. Exporting is the best way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format, then modify or distribute as you have need. All available configuration keys and values are exported, even if only one value was changed.
 
 You can export a single configuration entry or the entire set of modified configurations.
 
@@ -46,7 +46,7 @@ multiValueSetting=["Value 1","Value 2", ...]
 
 If you use a space character between values (after the comma), the property is ignored.
 
-Open the Web Content category in System Settings (under the Content section), and select *Web Content* for the virtual instance scope. You'll see multiple single value entries for *Characters Blacklist*:
+Open the Web Content category in System Settings (under the Content section), and select _Web Content_ for the virtual instance scope. You'll see multiple single value entries for _Characters Blacklist_:
 
 ![The Web Content System Settings entry has many Characters Blacklist fields.](./using-configuration-files/images/02.png)
 
@@ -58,7 +58,7 @@ charactersblacklist=["&","'","@","\\","]","}",":","\=",">","/","<","[","{","%","
 
 ### Escaping Characters
 
-Double quotes (`"`) and equals signs (`=`) must be *escaped* in `.config` files.  Escaping is using another character to denote that a character shouldn't be used in its normal way. Since double quotes and equals signs are already used in `.config` files, escaping them tells the system not to read them the normal way, but to pass them through as part of the value. Use a backslash to escape characters in the `.config` file:
+Double quotes (`"`) and equals signs (`=`) must be _escaped_ in `.config` files. Escaping is using another character to denote that a character shouldn't be used in its normal way. Since double quotes and equals signs are already used in `.config` files, escaping them tells the system not to read them the normal way, but to pass them through as part of the value. Use a backslash to escape characters in the `.config` file:
 
 ```properties
 charactersblacklist=["&","\"","\="]
@@ -76,7 +76,7 @@ If you don't escape spaces yourself, the system adds the backslash for you after
 
 ## Typed Values
 
-The `.config` file format supports specifying the type of a configuration value by inserting a special type marker character. Because the system already knows the correct type for each configuration property, the type characters are only useful for informational purposes. For example, a configuration with a boolean type has *B* just before the value to mark it as a boolean type:
+The `.config` file format supports specifying the type of a configuration value by inserting a special type marker character. Because the system already knows the correct type for each configuration property, the type characters are only useful for informational purposes. For example, a configuration with a boolean type has _B_ just before the value to mark it as a boolean type:
 
 ```properties
 addDefaultStructures=B"true"

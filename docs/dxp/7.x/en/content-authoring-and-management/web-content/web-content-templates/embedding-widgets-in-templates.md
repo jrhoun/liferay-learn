@@ -40,10 +40,10 @@ Below is an example of embedding a template in FreeMarker:
 <#include "${templatesPath}/[template-key]" />
 ```
 
-You can find the *Template Key* when editing a previously published template.
+You can find the _Template Key_ when editing a previously published template.
 
 ![You can find the Template Key when view the Edit page for a template.](./embedding-widgets-in-templates/images/04.png)
 
 ## Additional Information
 
-* [Embedding a Portlet by Portlet Name](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)
+-   [Embedding a Portlet by Portlet Name](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)

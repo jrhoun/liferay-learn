@@ -16,18 +16,18 @@ Once the Liferay Commerce's mail settings have been configured, navigate to the 
 
 There are ten events that can trigger email notifications. Use one of the corresponding out-of-the-box Notification Templates to create a standardized email notification.
 
-| Notification Type | Event |
-| --- | ---|
-| Order Placed | The store has received an order. |
-| Order Processing | The store has begun processing an order. |
-| Order Awaiting Shipment | The order is ready to be shipped. |
-| Order Partially Shipped | The customer is notified if the items are being shipped separately. |
-| Order Shipped | The order has been shipped. |
-| Order Completed | The order has been completed; delivery has been made. |
-| Subscription Renewed | The subscription (recurring order) has been renewed. |
-| Subscription Activated | The subscription has been activated. |
-| Subscription Suspended | The subscription has been suspending pending review or action by the store. |
-| Subscription Cancelled | The subscription has been cancelled. |
+| Notification Type       | Event                                                                       |
+| ----------------------- | --------------------------------------------------------------------------- |
+| Order Placed            | The store has received an order.                                            |
+| Order Processing        | The store has begun processing an order.                                    |
+| Order Awaiting Shipment | The order is ready to be shipped.                                           |
+| Order Partially Shipped | The customer is notified if the items are being shipped separately.         |
+| Order Shipped           | The order has been shipped.                                                 |
+| Order Completed         | The order has been completed; delivery has been made.                       |
+| Subscription Renewed    | The subscription (recurring order) has been renewed.                        |
+| Subscription Activated  | The subscription has been activated.                                        |
+| Subscription Suspended  | The subscription has been suspending pending review or action by the store. |
+| Subscription Cancelled  | The subscription has been cancelled.                                        |
 
 ![Available Notification Templates](./store-emails/images/01.png)
 
@@ -57,12 +57,12 @@ See the [Notification Template Variables Reference Guide](./notification-templat
 
 ## Viewing Order Communications History
 
-Email notifications related to an order are tracked and can be reviewed in the *Emails* tab when viewing an order. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_. Click on an Order ID then the _Email_ tab. See [Orders Information](../../orders-and-fulfillment/orders/order-information.md) to learn more.
+Email notifications related to an order are tracked and can be reviewed in the _Emails_ tab when viewing an order. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_. Click on an Order ID then the _Email_ tab. See [Orders Information](../../orders-and-fulfillment/orders/order-information.md) to learn more.
 
 ![Message Logs are in the Orders information.](./store-emails/images/04.png)
 
 ## Additional Information
 
-* [Using Notification Templates](./using-notification-templates.md)
-* [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md)
-* [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
+-   [Using Notification Templates](./using-notification-templates.md)
+-   [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md)
+-   [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)

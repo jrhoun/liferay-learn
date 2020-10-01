@@ -1,12 +1,12 @@
 # Setting Service Access Policies
 
-*Service Access Policies* define what services or service methods can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](./securing-web-services) (after IP permissions) for web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator (OAuth 2).
+_Service Access Policies_ define what services or service methods can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](./securing-web-services) (after IP permissions) for web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator (OAuth 2).
 
 Service Access Policies define a whitelist for methods exposed via web service invocation. You can use wildcards to define classes and methods that are whitelisted. Note that Service Access Policies respect the permissions system. If a policy grants a user access to a remote service, that user must still have the appropriate permissions to invoke that service.
 
 ## Default Service Access Policies
 
-To view and manage Service Access Policies, go to *Control Panel* &rarr; *Configuration* &rarr; *Service Access Policy*.
+To view and manage Service Access Policies, go to _Control Panel_ &rarr; _Configuration_ &rarr; _Service Access Policy_.
 
 ![Service Access Policies View](./setting-service-access-policies/images/01.png)
 
@@ -36,15 +36,15 @@ The default configuration makes available corresponding scopes that provide acce
 
 When creating or editing service access policies, keep these points in mind:
 
-* Service access policy names must be unique per portal instance.
-* Service access policy names can include only these allowed characters:
+-   Service access policy names must be unique per portal instance.
+-   Service access policy names can include only these allowed characters:
 
     ```
     0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#:@-./_
     ```
 
-* Service access policy titles can be localized; service access policy names cannot be localized.
-* Allowed service signatures must be entered one per line. Wildcards (`*`) are allowed for both class names and method names. The `#` symbol must be used to separate a class name from a method name.
+-   Service access policy titles can be localized; service access policy names cannot be localized.
+-   Allowed service signatures must be entered one per line. Wildcards (`*`) are allowed for both class names and method names. The `#` symbol must be used to separate a class name from a method name.
 
 For example, `com.liferay.portal.kernel.service.UserService` allows any method from the `UserService` class to be invoked. `com.liferay.document.library.kernel.service.DLAppService#get*` allows any method from the `DLAppService` that starts with `get` to be invoked.
 
@@ -59,21 +59,22 @@ com.liferay.document.library.kernel.service.DLAppService#get*
 
 To create a new Service Access Policy:
 
-1. Navigate to the *Configuration* &rarr; *Service Access Policy* section of the Control Panel.
-1. Click *Add* (![add](../../../images/icon-add.png)).
+1. Navigate to the _Configuration_ &rarr; _Service Access Policy_ section of the Control Panel.
+1. Click _Add_ (![add](../../../images/icon-add.png)).
 1. Give your policy a name.
-1. Flip the *Enabled* toggle to enable your policy.
-1. If you want the policy applied to unauthenticated requests as well as authenticated requests, flip the toggle labeled *Default*.
+1. Flip the _Enabled_ toggle to enable your policy.
+1. If you want the policy applied to unauthenticated requests as well as authenticated requests, flip the toggle labeled _Default_.
 1. Give your policy a localized title.
 1. Under _Allowed Service Signatures_, type the fully qualified name of a service class that's installed.
 1. Under Method Name, start typing a service method call.
     > **Note:** Code completion is available for both the `Service Class` and `Method Name` fields.
 1. To specify another service or method, click the plus icon to add another entry.
-1. When done, click *Save*.
+1. When done, click _Save_.
 
-> **Note:** If you know all the method signatures ahead of time, you can click *Switch to Advanced Mode* and enter them all in one field on separate lines.
+> **Note:** If you know all the method signatures ahead of time, you can click _Switch to Advanced Mode_ and enter them all in one field on separate lines.
 
 <!-- The following two paragraphs feel out of place; not sure where they should go. -->
+
 Liferay applications can declare their own default policies. This policy can then be changed or disabled by administrators. In this case, the plugin can still verify that the policy exists so there is no need to redefine or update it.
 
 By default, Liferay's tunneling servlet uses the `SYSTEM_USER_PASSWORD` service access policy. You can, however, create your own policy for the tunneling servlet and use the property `service.access.policy.name` for the `TunnelingServletAuthVerifier` to specify that your policy should be used instead.
@@ -82,23 +83,23 @@ By default, Liferay's tunneling servlet uses the `SYSTEM_USER_PASSWORD` service 
 
 Liferay's service access policy functionality is provided by the Service Access Policy module. This module includes the following important classes:
 
-* `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicy`: defines the public interface for `ServiceAccessPolicy`.
-* `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManager`: defines the public interface for retrieving instances of `ServiceAccessPolicy`.
-* `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManagerUtil`: bridges service access policy functionality to the parts of Liferay's core that have not yet been modularized.
-* `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyThreadLocal`: makes `ServiceAccessPolicy` instances active.
+-   `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicy`: defines the public interface for `ServiceAccessPolicy`.
+-   `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManager`: defines the public interface for retrieving instances of `ServiceAccessPolicy`.
+-   `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManagerUtil`: bridges service access policy functionality to the parts of Liferay's core that have not yet been modularized.
+-   `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyThreadLocal`: makes `ServiceAccessPolicy` instances active.
 
 Liferay's Service Access Policy module resides in the `modules/apps/service-access-policy` folder in the source code. When running, these three bundles provide the service access policy functionality (they're in the `[Liferay Home]/osgi/modules` folder):
 
-* `com.liferay.service.access.policy.api.jar`
-* `com.liferay.service.access.policy.service.jar`
-* `com.liferay.service.access.policy.web.jar`
+-   `com.liferay.service.access.policy.api.jar`
+-   `com.liferay.service.access.policy.service.jar`
+-   `com.liferay.service.access.policy.web.jar`
 
 These modules provide the service access policy management UI that's accessible from the Control Panel. They also provide the interface and default implementation for `ServiceAccessPolicy`.
 
 ## Configuring the Service Access Policy Module
 
 1. Navigate to _Control Panel_ &rarr; _System Settings_ &rarr; _API Authentication_.
-    ![Service Access Policy Module Location](./setting-service-access-policies/images/02.png)
+   ![Service Access Policy Module Location](./setting-service-access-policies/images/02.png)
 1. Click on the _Service Access Policies_ module in the Security section. Click on its name to edit it.
 1. The default service access policy configuration can be edited. You can also force a default policy to be applied even when no policies are applied by the `AuthVerifier`.
 

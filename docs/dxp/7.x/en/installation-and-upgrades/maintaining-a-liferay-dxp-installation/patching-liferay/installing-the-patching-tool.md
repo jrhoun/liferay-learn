@@ -31,6 +31,6 @@ The Patching Tool is ready to configure with your DXP installation.
 
 ## Additional Information
 
-* [Configuring the Patching Tool](./configuring-the-patching-tool.md)
-* [Installing Patches](./installing-patches.md)
-* [Custom Code and Patch Compatibility](./advanced-patching/custom-code-and-patch-compatibility.md)
+-   [Configuring the Patching Tool](./configuring-the-patching-tool.md)
+-   [Installing Patches](./installing-patches.md)
+-   [Custom Code and Patch Compatibility](./advanced-patching/custom-code-and-patch-compatibility.md)

@@ -19,14 +19,15 @@ Follow these steps to create a notification for a received order:
 1. Click the _Notification Templates_ sub-tab.
 1. Click the Add (![Add icon](../../images/icon-add.png)) button to create a new Notification Template.
 1. Enter the following:
-    * **Name**: New Orders
-    * **Description**: New orders template
-    * **Type**: Order Placed
-    * **Enabled**: Switch the Toggle to _YES_.
-    * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
-    * **From Name**: Name of the store or a customer service representative
-    * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Enter a message. You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
+
+    - **Name**: New Orders
+    - **Description**: New orders template
+    - **Type**: Order Placed
+    - **Enabled**: Switch the Toggle to _YES_.
+    - **From Address**: Your store's email address (for example: _orders@yourstore.com_)
+    - **From Name**: Name of the store or a customer service representative
+    - **Subject**: Email subject (for example: _Your order has been received._)
+    - **Body**: Enter a message. You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
     ![Adding a Notification Template in 2.1](./using-notification-templates/images/02.png)
 
@@ -46,9 +47,9 @@ You can use placeholder variables in the _Email Settings_ and _Email Body_ secti
 
 To define the recipient, sender address, and sender name, enter the following:
 
-* **to**: `[%ORDER_CREATOR%]`
-* **From Address**: orders@sahara.com
-* **From Name**: `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
+-   **to**: `[%ORDER_CREATOR%]`
+-   **From Address**: orders@sahara.com
+-   **From Name**: `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
 
 ![Using placeholder values in the emails.](./using-notification-templates/images/06.png)
 
@@ -58,18 +59,18 @@ If notifying more than one recipient, as noted above, you can a comma-delimited 
 
 To define the content of the notification, enter the following:
 
-* **Subject**: Order Received
-* **Body**:
+-   **Subject**: Order Received
+-   **Body**:
 
-  ```
-  Dear `[%ORDER_CREATOR%]`,
+    ```
+    Dear `[%ORDER_CREATOR%]`,
 
-  Your Order `[%ORDER_ID%]` has been received.
+    Your Order `[%ORDER_ID%]` has been received.
 
-  Regards,
+    Regards,
 
-  `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
-  ```
+    `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
+    ```
 
 ## Commerce 2.0 and Below
 
@@ -83,15 +84,16 @@ To create email notifications in Commerce 2.0 and below:
 1. Click the _Notification Templates_ sub-tab.
 1. Click the Add (![Add icon](../../images/icon-add.png)) button to create a new Notification Template.
 1. Enter the following:
-    * **Name**: New Orders
-    * **Description**: New orders template
-    * **Account Groups**: (leave blank or designate an **optional** account group)
-    * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
-    * **From Name**: Name of the store or a customer service representative
-    * **Type**: Order Placed
-    * **Enabled**: Switch the Toggle to _YES_
-    * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
+
+    - **Name**: New Orders
+    - **Description**: New orders template
+    - **Account Groups**: (leave blank or designate an **optional** account group)
+    - **From Address**: Your store's email address (for example: _orders@yourstore.com_)
+    - **From Name**: Name of the store or a customer service representative
+    - **Type**: Order Placed
+    - **Enabled**: Switch the Toggle to _YES_
+    - **Subject**: Email subject (for example: _Your order has been received._)
+    - **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
     ![Adding a Notification Template](./using-notification-templates/images/01.png)
 
@@ -101,5 +103,5 @@ The new Notification Template has been saved and your store will send an automat
 
 ## Additional Information
 
-* [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
-* [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md)
+-   [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
+-   [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md)

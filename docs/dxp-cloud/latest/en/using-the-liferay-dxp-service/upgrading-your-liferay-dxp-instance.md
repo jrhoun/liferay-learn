@@ -24,8 +24,8 @@ Review the following steps to perform a database upgrade:
 
 Before beginning the upgrade procedure, make sure you have the following prerequisites:
 
-* [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
-* [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
+-   [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
+-   [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
 
 ```important::
    Download a fresh bundle for the upgrade instead of reusing an old one. Otherwise, data from previous usage of the bundle may interfere with the data upgrade.
@@ -231,7 +231,7 @@ Follow these steps to restore a backup to your chosen environment:
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 
-Upgrading the liferay service requires a database upgrade and restoring the liferay service using the upgraded database. The process of restoring the upgraded database from backup requires some downtime and we recommend testing your upgrade on the DEV or UAT environments first. Zero downtime upgrades are possible using a DR environment. 
+Upgrading the liferay service requires a database upgrade and restoring the liferay service using the upgraded database. The process of restoring the upgraded database from backup requires some downtime and we recommend testing your upgrade on the DEV or UAT environments first. Zero downtime upgrades are possible using a DR environment.
 
 -->
 
@@ -241,5 +241,5 @@ Congratulations! You have upgraded your DXP database to the new version and depl
 
 Learn more about DXP upgrades:
 
-* [Liferay DXP Upgrade Overview](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.html)
-* [Using the Database Upgrade Tool](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)
+-   [Liferay DXP Upgrade Overview](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.html)
+-   [Using the Database Upgrade Tool](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)

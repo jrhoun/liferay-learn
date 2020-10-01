@@ -4,10 +4,10 @@ The Patching Tool can be adapted to any DXP installation. The tool's auto-discov
 
 **Outline:**
 
-* [Automatic Configuration Using `auto-discovery`](#automatic-configuration-using-auto-discovery)
-* [Testing the Configuration](#testing-the-configuration)
-* [Manual Configuration](#manual-configuration)
-* [Using Patching Profiles](#using-patching-profiles)
+-   [Automatic Configuration Using `auto-discovery`](#automatic-configuration-using-auto-discovery)
+-   [Testing the Configuration](#testing-the-configuration)
+-   [Manual Configuration](#manual-configuration)
+-   [Using Patching Profiles](#using-patching-profiles)
 
 ## Automatic Configuration Using `auto-discovery`
 
@@ -53,8 +53,8 @@ The configuration hasn't been saved. Please save this to the default.properties 
 
 Resolve the issue using one of these ways:
 
-* If the Liferay Home is in the Patching Tool's tree, create a `.liferay-home` file in the Liferay Home folder and re-run the `auto-discovery` command.
-* Specify the Liferay Home path in the `liferay.home` property in your properties file (e.g., `default.properties`).
+-   If the Liferay Home is in the Patching Tool's tree, create a `.liferay-home` file in the Liferay Home folder and re-run the `auto-discovery` command.
+-   Specify the Liferay Home path in the `liferay.home` property in your properties file (e.g., `default.properties`).
 
 ## Testing the Configuration
 
@@ -84,19 +84,19 @@ Edit the Patching Tool properties file. The `auto-discovery` command creates a `
 
 ### General Properties
 
-| Property | Description |
-| :------- | :---------- |
-| `global.lib.path` (`binary` mode only) | Specifies the location for storing `.jar` files on the global classpath. Hint: `portal-kernel.jar` is on the global classpath. |
-| `liferay.home` | Specifies the [Liferay Home](../../reference/liferay-home.md) folder, which is typically the parent folder to DXP's `osgi` and `tools` folders. |
-| `module.framework.core.path` | Path to DXP's `osgi/core` folder. |
-| `module.framework.marketplace.path` | Path to DXP's `osgi/marketplace` folder. |
-| `module.framework.modules.path` | Path to DXP's `osgi/modules` folder. |
-| `module.framework.portal.path` | Path to DXP's `osgi/portal` folder. |
-| `module.framework.static.path` | Path to DXP's `osgi/static` folder. |
-| `patches.folder` | Specifies where to store patches. The default location is `./patches`. |
-| `patching.mode` | Patches contain updated binary and source files. The mode determines which file type to apply.<br><br>* `binary` (the default): For updating your DXP installation.<br>* `source`: For updating source trees that extend DXP. |
-| `source.path` (`source` mode only) | Specifies the DXP source tree location. |
-| `war.path` | Specifies the path to your DXP web application (the path to its exploded folder structure or to its `.war` file). |
+| Property                               | Description                                                                                                                                                                                                                   |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `global.lib.path` (`binary` mode only) | Specifies the location for storing `.jar` files on the global classpath. Hint: `portal-kernel.jar` is on the global classpath.                                                                                                |
+| `liferay.home`                         | Specifies the [Liferay Home](../../reference/liferay-home.md) folder, which is typically the parent folder to DXP's `osgi` and `tools` folders.                                                                               |
+| `module.framework.core.path`           | Path to DXP's `osgi/core` folder.                                                                                                                                                                                             |
+| `module.framework.marketplace.path`    | Path to DXP's `osgi/marketplace` folder.                                                                                                                                                                                      |
+| `module.framework.modules.path`        | Path to DXP's `osgi/modules` folder.                                                                                                                                                                                          |
+| `module.framework.portal.path`         | Path to DXP's `osgi/portal` folder.                                                                                                                                                                                           |
+| `module.framework.static.path`         | Path to DXP's `osgi/static` folder.                                                                                                                                                                                           |
+| `patches.folder`                       | Specifies where to store patches. The default location is `./patches`.                                                                                                                                                        |
+| `patching.mode`                        | Patches contain updated binary and source files. The mode determines which file type to apply.<br><br>_ `binary` (the default): For updating your DXP installation.<br>_ `source`: For updating source trees that extend DXP. |
+| `source.path` (`source` mode only)     | Specifies the DXP source tree location.                                                                                                                                                                                       |
+| `war.path`                             | Specifies the path to your DXP web application (the path to its exploded folder structure or to its `.war` file).                                                                                                             |
 
 ### Proxy Settings
 
@@ -145,5 +145,5 @@ Once you've created a profile, you can use it in your Patching Tool commands. Fo
 
 ## Additional Information
 
-* [Installing Patches](./installing-patches.md)
-* [Installing the Patching Tool](./installing-the-patching-tool.md)
+-   [Installing Patches](./installing-patches.md)
+-   [Installing the Patching Tool](./installing-the-patching-tool.md)

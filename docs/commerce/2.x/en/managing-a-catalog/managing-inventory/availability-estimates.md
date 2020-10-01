@@ -12,8 +12,8 @@ To create an Availability Estimate:
 
 1. Click the (+) button to add a new estimate.
 1. Enter the following:
-    * Title: 15-21 days
-    * Priority: 4.0
+    - Title: 15-21 days
+    - Priority: 4.0
 1. Click _Save_.
 
 The new Availability Estimate has been added. Note that because the priority is set to _4.0_, this means this time period is displayed last in the menu.
@@ -30,8 +30,8 @@ To create an Availability Estimate:
 1. Click the _Availability Estimates_ tab.
 1. Click the (+) button to add a new estimate.
 1. Enter the following:
-    * Title: 15-21 days
-    * Priority: 4.0
+    - Title: 15-21 days
+    - Priority: 4.0
 1. Click _Save_.
 
 The new Availability Estimate has been added. Note that because the priority is set to _4.0_, this means this time period is displayed last in the menu.
@@ -44,5 +44,5 @@ When configuring the low stock threshold, this Availability Estimate option is d
 
 ## Additional Information
 
-* [Introduction to Managing Inventory](./introduction-to-managing-inventory.md)
-* [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
+-   [Introduction to Managing Inventory](./introduction-to-managing-inventory.md)
+-   [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)

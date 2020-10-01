@@ -6,11 +6,11 @@ When more than one Product Publisher widget is placed on a product detail page, 
 
 Note: If your site was built using an accelerator, then a number of product relation types are already in place. Here is a list of default Product Relations:
 
-* **Up-Sell**: Display products that are comparable to the featured product but have a higher sale value.
-* **Spare**: Display products that are spare parts or components for the featured product.
-* **Related**: A catch-all set.
-* **Accessories**: Display add-on products for use in conjunction with the featured products.
-* **Cross-Sell**: Display products complementary to the featured product.
+-   **Up-Sell**: Display products that are comparable to the featured product but have a higher sale value.
+-   **Spare**: Display products that are spare parts or components for the featured product.
+-   **Related**: A catch-all set.
+-   **Accessories**: Display add-on products for use in conjunction with the featured products.
+-   **Cross-Sell**: Display products complementary to the featured product.
 
 ![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
 
@@ -57,7 +57,7 @@ You can display product relations on a product display page by configuring a Pro
 1. Click _Brake Pads_ to view the Product Details.
 1. Scroll to the bottom of the page to view the related products listed in the _Product Publisher_ widget.
 
-   ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
+    ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
 
 1. Click the _3-dot_ icon (Options) → _Configuration_.
 1. Select _Product Relations related_ from the _Data Source_ dropdown menu.
@@ -113,7 +113,7 @@ You can display product relations on a product display page by configuring a Pro
 1. Click _Brake Pads_ to view the Product Details.
 1. Scroll to the bottom of the page to view the related products listed in the _Product Publisher_ widget.
 
-   ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
+    ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
 
 1. Click the _3-dot_ icon (Options) → _Configuration_.
 1. Select _Product Relations related_ from the _Data Source_ dropdown menu.

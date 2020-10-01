@@ -4,9 +4,9 @@ This tutorial will show you how to add a custom shipping engine by implementing 
 
 Shipping engines process shipping options to determine which of the available options will be shown to the user, for what price, and so on. Liferay Commerce provides three shipping engines out-of-the-box: a [flat rate engine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java), a [variable rate engine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/ByWeightCommerceShippingEngine.java), and the [FedEx engine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-shipping-engine-fedex/src/main/java/com/liferay/commerce/shipping/engine/fedex/internal/FedExCommerceShippingEngine.java).
 
->The FedEx shipping engine is only available for Commerce Enterprise Subscribers.
+> The FedEx shipping engine is only available for Commerce Enterprise Subscribers.
 
-![Out-of-the-box shipping methods](./implementing-a-new-shipping-engine/images/01.png "Out-of-the-box shipping methods")
+![Out-of-the-box shipping methods](./implementing-a-new-shipping-engine/images/01.png 'Out-of-the-box shipping methods')
 
 ## Overview
 
@@ -52,7 +52,7 @@ In this section, we will get an example shipping engine up and running on your i
 
 1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. The new shipping method ("Discounted Rate") representing our shipping engine will be present on this screen.
 
-![New shipping method](./implementing-a-new-shipping-engine/images/02.png "New shipping method")
+![New shipping method](./implementing-a-new-shipping-engine/images/02.png 'New shipping method')
 
 Congratulations, you've successfully built and deployed a new shipping engine that implements `CommerceShippingEngine`.
 
@@ -114,11 +114,11 @@ public String getName(Locale locale);
 
 The shipping engine is comprised of backend logic preparing the list of shipping options to be shown to the customer. This logic is best implemented by splitting it into multiple steps. Do the following:
 
-* [Implement getting the available shipping options.](#implement-getting-the-available-shipping-options)
-* [Implement address restriction checking.](#implement-address-restriction-checking)
-* [Implement a loop to process the options.](#implement-a-loop-to-process-the-options)
-* [Call processing logic from `getCommerceShippingOptions`.](#call-processing-logic-from-getcommerceshippingoptions)
-* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
+-   [Implement getting the available shipping options.](#implement-getting-the-available-shipping-options)
+-   [Implement address restriction checking.](#implement-address-restriction-checking)
+-   [Implement a loop to process the options.](#implement-a-loop-to-process-the-options)
+-   [Call processing logic from `getCommerceShippingOptions`.](#call-processing-logic-from-getcommerceshippingoptions)
+-   [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will follow the same steps.
 
@@ -256,5 +256,5 @@ Congratulations! You now know the basics for implementing the `CommerceShippingE
 
 ## Additional Information
 
-* [Applying Shipping Method Restrictions](../../store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Applying Shipping Method Restrictions](../../store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

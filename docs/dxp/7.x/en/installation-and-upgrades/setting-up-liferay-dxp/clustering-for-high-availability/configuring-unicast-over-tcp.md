@@ -4,9 +4,9 @@ If your network configuration or the geographical distance between cluster nodes
 
 **Contents:**
 
-* [Unicast Configurations](#unicast-configurations)
-* [Alternative Discovery Protocols](#alternative-discovery-protocols)
-* [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
+-   [Unicast Configurations](#unicast-configurations)
+-   [Alternative Discovery Protocols](#alternative-discovery-protocols)
+-   [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
 
 ## Unicast Configurations
 
@@ -22,10 +22,10 @@ Use the following steps to configure Unicast:
 
 1. Select a discovery protocol for the nodes to use to find each other. Here are the protocol choices:
 
-    * `TCPPing`
-    * `JDBCPing`
-    * `S3_Ping`
-    * `Rackspace_Ping`
+    - `TCPPing`
+    - `JDBCPing`
+    - `S3_Ping`
+    - `Rackspace_Ping`
 
     If you aren't sure which one to choose, use TCPPing. The rest of these steps use TCPPing. See [Alternative Discovery Protocols](#alternative-discovery-protocols) for more information on the others.
     <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
@@ -53,8 +53,8 @@ Use the following steps to configure Unicast:
 
     **Regarding Initial Hosts:**
 
-    * Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
-    * An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this:
+    - Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
+    - An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this:
 
         ```
         -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
@@ -77,7 +77,7 @@ Use the following steps to configure Unicast:
     cluster.link.channel.properties.transport.0=/jgroups/tcp.xml
     ```
 
-The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the `external_addr` TCP transport parameter must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
+The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if _(and only if)_ cluster nodes are deployed across multiple networks, then the `external_addr` TCP transport parameter must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
 
 ```note::
    The ``singleton_name`` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
@@ -138,8 +138,8 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
 1. Make a copy of the `tcp.xml` in the same location and rename both files, designating one for the control channel and the other for the transport channel. For example, you could use these file names:
 
-    * `tcp-control.xml`
-    * `tcp-transport.xml`
+    - `tcp-control.xml`
+    - `tcp-transport.xml`
 
 1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
@@ -204,5 +204,5 @@ If you have added entities that can be cached or you want to tune the cache conf
 
 ## Additional Information
 
-* [Configuring Cluster Link](./configuring-cluster-link.md)
-* [Clustering for High Availability](./clustering-for-high-availability.md)
+-   [Configuring Cluster Link](./configuring-cluster-link.md)
+-   [Clustering for High Availability](./clustering-for-high-availability.md)

@@ -92,5 +92,5 @@ Your `database` service is now updated with a new password, and your other servi
 
 ## Additional Information
 
-* [Database Service](./database-service.md)
-* [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+-   [Database Service](./database-service.md)
+-   [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)

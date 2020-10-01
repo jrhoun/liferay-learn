@@ -11,27 +11,28 @@ Follow these steps to add a Web Content Display widget to a page and configure i
     ![Add the Web Content Display app to a page to begin displaying your new web content article.](./web-content-display/images/01.png)
 
 1. [Open the Web Content Display widget's configuration menu](TODO:adding-widgets#configuration-menu).
-1. Click the *Select* button to select a piece of web content.
+1. Click the _Select_ button to select a piece of web content.
 1. Search for and click on the article that you want to display.
 1. [Configure the options](#web-content-display-configuration-options) you want to enable for the widget.
-1. Click *Save* to apply the changes, and close the configuration window.
+1. Click _Save_ to apply the changes, and close the configuration window.
 
 ## Web Content Display Configuration Options
 
 All features are implemented as simple selector buttons so you can enable or disable them as you need. These features are available:
 
-* **User Tools**
-  * *Translations:* Shows the available locales for your content. If you're working on the page for a particular language, you can select the translation of your content that goes with your locale.
-  
-  * *Print:* Opens a print dialog with a print-friendly version of the content.
-  
-  * *Download as PDF | DOC | ODT | TXT:* Downloads the web content in the selected format. These options are only available if [Open Office integration is enabled](../../../system-administration/system-settings/enabling-openoffice-libreoffice-integration.md).
+-   **User Tools**
 
-* **Content Metadata**
-  * *Related Assets*
-  * *Ratings*
-  * *Comments*
-  * *Comment Ratings*
+    -   _Translations:_ Shows the available locales for your content. If you're working on the page for a particular language, you can select the translation of your content that goes with your locale.
+
+    -   _Print:_ Opens a print dialog with a print-friendly version of the content.
+
+    -   _Download as PDF | DOC | ODT | TXT:_ Downloads the web content in the selected format. These options are only available if [Open Office integration is enabled](../../../system-administration/system-settings/enabling-openoffice-libreoffice-integration.md).
+
+-   **Content Metadata**
+    -   _Related Assets_
+    -   _Ratings_
+    -   _Comments_
+    -   _Comment Ratings_
 
 ![Publishing web content is a snap. At a minimum, you only have to select the content you wish to publish. You can also enable lots of optional features to let your users interact with your content.](./web-content-display/images/02.png)
 
@@ -39,10 +40,10 @@ All features are implemented as simple selector buttons so you can enable or dis
 
 By default, guests can't leave comments on web content. If you want to allow guests to comment on your web content article, follow these steps:
 
-1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
-1. Select *Guest* &rarr; *Define Permissions*.
-1. From the left menu, select *Site Administration* &rarr; *Content & Data* &rarr; *Web Content*.
-1. Navigate down to the Web Content Article heading and select the *Add Discussion* checkbox. Click *Save*.
+1. Open the Product Menu and go to _Control Panel_ &rarr; _Users_ &rarr; _Roles_.
+1. Select _Guest_ &rarr; _Define Permissions_.
+1. From the left menu, select _Site Administration_ &rarr; _Content & Data_ &rarr; _Web Content_.
+1. Navigate down to the Web Content Article heading and select the _Add Discussion_ checkbox. Click _Save_.
 
 Guests can now post comments on your web content article.
 
@@ -52,16 +53,16 @@ You can edit published content directly from the Web Content Display widget.
 
 1. Hover over the Web Content Display widget.
 1. Open the Actions Menu (![Options](../../../images/icon-app-options.png)) inside the widget container.
-1. Select *Edit Web Content* to launch the editor, or select *Edit Template* to launch the template editor for the web content article's template if it has one.
+1. Select _Edit Web Content_ to launch the editor, or select _Edit Template_ to launch the template editor for the web content article's template if it has one.
 
 ### Integrating Open Office with Your Web Content Display
 
-If you have [enabled OpenOffice/LibreOffice integration](../../../system-administration/system-settings/enabling-openoffice-libreoffice-integration.md) with your Liferay Portal instance, you can enable document conversion for your content. Then users can download your content in their format of choice. Enable the conversion options desired in the Web Content Display's configuration page under the *User Tools* list.
+If you have [enabled OpenOffice/LibreOffice integration](../../../system-administration/system-settings/enabling-openoffice-libreoffice-integration.md) with your Liferay Portal instance, you can enable document conversion for your content. Then users can download your content in their format of choice. Enable the conversion options desired in the Web Content Display's configuration page under the _User Tools_ list.
 
 ![Conversion options are listed for the assets.](./web-content-display/images/03.png)
 
 ## Related Information
 
-* [Content Authoring and Management](../../../content_authoring_and_management.md)
-* Displaying Content on Display Pages
-* Displaying Content with the Asset Publisher
+-   [Content Authoring and Management](../../../content_authoring_and_management.md)
+-   Displaying Content on Display Pages
+-   Displaying Content with the Asset Publisher

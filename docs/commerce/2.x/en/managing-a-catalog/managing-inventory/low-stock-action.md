@@ -8,17 +8,18 @@ To configure a low stock action:
 1. Click on a product (for example, _U-Joint_)
 1. Click the _Configurations_ sub-tab.
 1. Enter the following:
-    * **Inventory Engine**: Default
-    * **Availability Estimate**: 5-7 Days
-    * **Display Availability**: YES
-    * **Display Stock Quantity**: YES
-    * **Low Stock Threshold**: 5
-    * **Low Stock Action**: Set as Unpublished
-    * **Allow Back Orders**: Yes
-    * **Minimum Order Quantity**: 1
-    * **Maximum Order Quantity**: 5
-    * **Allowed Order Quantities**: 1
-    * **Multiple Order Quantity**: 1
+
+    - **Inventory Engine**: Default
+    - **Availability Estimate**: 5-7 Days
+    - **Display Availability**: YES
+    - **Display Stock Quantity**: YES
+    - **Low Stock Threshold**: 5
+    - **Low Stock Action**: Set as Unpublished
+    - **Allow Back Orders**: Yes
+    - **Minimum Order Quantity**: 1
+    - **Maximum Order Quantity**: 5
+    - **Allowed Order Quantities**: 1
+    - **Multiple Order Quantity**: 1
 
 1. Click _Publish_.
 
@@ -32,17 +33,18 @@ Access to the Products are found in the _Control Panel_. To configure a Low Stoc
 1. Click on a product (for example, _U-Joint_)
 1. Click the _Configurations_ sub-tab.
 1. Enter the following:
-    * **Inventory Engine**: Default
-    * **Availability Estimate**: 5-7 Days
-    * **Display Availability**: YES
-    * **Display Stock Quantity**: YES
-    * **Low Stock Threshold**: 5
-    * **Low Stock Action**: Set as Unpublished
-    * **Allow Back Orders**: Yes
-    * **Minimum Order Quantity**: 1
-    * **Maximum Order Quantity**: 5
-    * **Allowed Order Quantities**: 1
-    * **Multiple Order Quantity**: 1
+
+    - **Inventory Engine**: Default
+    - **Availability Estimate**: 5-7 Days
+    - **Display Availability**: YES
+    - **Display Stock Quantity**: YES
+    - **Low Stock Threshold**: 5
+    - **Low Stock Action**: Set as Unpublished
+    - **Allow Back Orders**: Yes
+    - **Minimum Order Quantity**: 1
+    - **Maximum Order Quantity**: 5
+    - **Allowed Order Quantities**: 1
+    - **Multiple Order Quantity**: 1
 
     ![Product Configuration for Low Stock Action](./low-stock-action/images/01.png)
 
@@ -52,5 +54,5 @@ The Low Stock Action for this product has been configured. In the future, should
 
 ## Additional Information
 
-* [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
-* [Implementing a Custom Low Stock Action](../../developer-guide/tutorials/implementing-a-custom-low-stock-activity.md)
+-   [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
+-   [Implementing a Custom Low Stock Action](../../developer-guide/tutorials/implementing-a-custom-low-stock-activity.md)

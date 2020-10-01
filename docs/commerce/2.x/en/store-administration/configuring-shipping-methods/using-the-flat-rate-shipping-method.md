@@ -22,9 +22,10 @@ To add a new Flat Rate Shipping Option:
 1. Click the _Shipping Options_ tab.
 1. Click the Add (![Add Icon](../../images/icon-add.png)) button to add a new Shipping option:
 1. Enter the following:
-    * **Name**: 7-Day Shipping
-    * **Amount**: 3.95
-    * **Priority**: 0.0
+
+    - **Name**: 7-Day Shipping
+    - **Amount**: 3.95
+    - **Priority**: 0.0
 
     ![Add a new shipping method option.](./using-the-flat-rate-shipping-method/images/04.png)
 
@@ -47,16 +48,16 @@ To add a new Flat Rate Shipping Option:
 1. Click the _Shipping Options_ tab. (If using the Minium accelerator, the _Standard Delivery_ and _Expedited Delivery_ are created by default.)
 1. Click the Add (![Add Icon](../../images/icon-add.png)) button to add a new Shipping option:
 1. Enter the following:
-    * **Name**: 7-Day Shipping
-    * **Amount**: 3.95
-    * **Priority**: 0.0
+    - **Name**: 7-Day Shipping
+    - **Amount**: 3.95
+    - **Priority**: 0.0
 1. Click _Save_.
 
 The new Shipping Option has been added and is available during the checkout process.
 
 ## Additional Information
 
-* [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
-* [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)
-* [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
-* [Implementing a New Shipping Engine](../../developer-guide/tutorials/implementing-a-new-shipping-engine.md)
+-   [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
+-   [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)
+-   [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
+-   [Implementing a New Shipping Engine](../../developer-guide/tutorials/implementing-a-new-shipping-engine.md)

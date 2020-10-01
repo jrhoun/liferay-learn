@@ -24,9 +24,9 @@ This consideration is not necessary for Solr, because no JVM level serialization
 
 As note above, a production environment's search engine should be clustered. This enables the search engine to handle the load and optimizes DXP's overall performance. Both Elasticsearch and Solr can be configured successfully on multiple nodes in the remote environment.
 
-* To configure a remote Elasticsearch server or cluster, see the [Installing Elasticsearch](https://help.liferay.com/hc/articles/360028711132-Installing-Elasticsearch) article.
+-   To configure a remote Elasticsearch server or cluster, see the [Installing Elasticsearch](https://help.liferay.com/hc/articles/360028711132-Installing-Elasticsearch) article.
 
-* To configure a remote Solr server or cluster, see the [Installing Solr](https://help.liferay.com/hc/articles/360032264052-Installing-Solr) article.
+-   To configure a remote Solr server or cluster, see the [Installing Solr](https://help.liferay.com/hc/articles/360032264052-Installing-Solr) article.
 
 ## Using Solr
 
@@ -34,46 +34,46 @@ There are some drawbacks to using Solr as the search engine. These limitations a
 
 ### End User Feature Limitations of Liferay's Solr Integration
 
-* [Liferay Commerce](https://help.liferay.com/hc/en-us/articles/360017869952)
-* [Workflow Metrics](https://help.liferay.com/hc/en-us/articles/360029042071-Workflow-Metrics-The-Service-Level-Agreement-SLA-)
-* [Custom Filter search widget](https://help.liferay.com/hc/en-us/articles/360028721272-Filtering-Search-Results-with-the-Custom-Filter-Widget)
-* [The Low Level Search Options widget](https://help.liferay.com/hc/en-us/articles/360032607571-Low-Level-Search-Options-Searching-Additional-or-Alternate-Indexes)
-* [Search Tuning: Customizing Search Results](https://help.liferay.com/hc/en-us/articles/360034473872-Search-Tuning-Customizing-Search-Results)
-* [Search Tuning: Synonyms](https://help.liferay.com/hc/articles/360034473852-Search-Tuning-Synonym-Sets)
+-   [Liferay Commerce](https://help.liferay.com/hc/en-us/articles/360017869952)
+-   [Workflow Metrics](https://help.liferay.com/hc/en-us/articles/360029042071-Workflow-Metrics-The-Service-Level-Agreement-SLA-)
+-   [Custom Filter search widget](https://help.liferay.com/hc/en-us/articles/360028721272-Filtering-Search-Results-with-the-Custom-Filter-Widget)
+-   [The Low Level Search Options widget](https://help.liferay.com/hc/en-us/articles/360032607571-Low-Level-Search-Options-Searching-Additional-or-Alternate-Indexes)
+-   [Search Tuning: Customizing Search Results](https://help.liferay.com/hc/en-us/articles/360034473872-Search-Tuning-Customizing-Search-Results)
+-   [Search Tuning: Synonyms](https://help.liferay.com/hc/articles/360034473852-Search-Tuning-Synonym-Sets)
 
 ### Developer Feature Limitations of Liferay's Solr Integration
 
 Implementation for the following APIs may be added in the future, but they are not currently supported by Liferay's Solr connector.
 
-* From Portal Core (Module: `portal-kernel`, Artifact:
+-   From Portal Core (Module: `portal-kernel`, Artifact:
     `com.liferay.portal.kernel`):
-  * `com.liferay.portal.kernel.search.generic.NestedQuery`
-  * `com.liferay.portal.kernel.search.filter`:
-    * `ComplexQueryPart`
-    * `GeoBoundingBoxFilter`
-    * `GeoDistanceFilter`
-    * `GeoDistanceRangeFilter`
-    * `GeoPolygonFilter`
-* From the Portal Search API (Module: `portal-search-api`, Artifact:
+    -   `com.liferay.portal.kernel.search.generic.NestedQuery`
+    -   `com.liferay.portal.kernel.search.filter`:
+        -   `ComplexQueryPart`
+        -   `GeoBoundingBoxFilter`
+        -   `GeoDistanceFilter`
+        -   `GeoDistanceRangeFilter`
+        -   `GeoPolygonFilter`
+-   From the Portal Search API (Module: `portal-search-api`, Artifact:
     `com.liferay.portal.search.api`):
-  * `com.liferay.portal.search.filter`:
-    * `ComplexQueryPart`
-    * `TermsSetFilter`
-  * `com.liferay.portal.search.geolocation.*`
-  * `com.liferay.portal.search.highlight.*`
-  * `com.liferay.portal.search.query.function.*`
-  * `com.liferay.portal.search.query.*`:
-  * `com.liferay.portal.search.script.*`
-  * `com.liferay.portal.search.significance.*`
-  * `com.liferay.portal.search.sort.*`: only `Sort`,`FieldSort`, and `ScoreSort` are supported
-* Portal Search Engine Adapter API (Module: `portal-search-engine-adapter-api`,
+    -   `com.liferay.portal.search.filter`:
+        -   `ComplexQueryPart`
+        -   `TermsSetFilter`
+    -   `com.liferay.portal.search.geolocation.*`
+    -   `com.liferay.portal.search.highlight.*`
+    -   `com.liferay.portal.search.query.function.*`
+    -   `com.liferay.portal.search.query.*`:
+    -   `com.liferay.portal.search.script.*`
+    -   `com.liferay.portal.search.significance.*`
+    -   `com.liferay.portal.search.sort.*`: only `Sort`,`FieldSort`, and `ScoreSort` are supported
+-   Portal Search Engine Adapter API (Module: `portal-search-engine-adapter-api`,
     Artifact: `com.liferay.portal.search.engine.adapter.api`)
-  * `com.liferay.portal.search.engine.adapter.cluster.*`
-  * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
-  * `com.liferay.portal.search.engine.adapter.index.*`: only `RefreshIndexRequest` is supported
-  * `com.liferay.portal.search.engine.adapter.search.*`:
-    * `MultisearchSearchRequest`
-    * `SuggestSearchRequest`
-  * `com.liferay.portal.search.engine.adapter.snapshot.*`
+    -   `com.liferay.portal.search.engine.adapter.cluster.*`
+    -   `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
+    -   `com.liferay.portal.search.engine.adapter.index.*`: only `RefreshIndexRequest` is supported
+    -   `com.liferay.portal.search.engine.adapter.search.*`:
+        -   `MultisearchSearchRequest`
+        -   `SuggestSearchRequest`
+    -   `com.liferay.portal.search.engine.adapter.snapshot.*`
 
 Liferay Commerce requires the `TermsSetFilter` implementation which is only available in the Elasticsearch connector.

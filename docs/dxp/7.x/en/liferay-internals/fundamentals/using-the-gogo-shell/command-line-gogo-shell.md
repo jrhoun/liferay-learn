@@ -50,7 +50,7 @@ You can execute commands in a `telnet` session:
    ``exit``
 
    ``shutdown``
- ```
+```
 
 ## Conclusion
 

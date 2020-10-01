@@ -12,15 +12,15 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
 
 1.  Download the patch to your `patching-tool/patches` folder---don't unzip the patch.
 
-    * Fix Packs and Service Packs are on the [Downloads](https://customer.liferay.com/downloads) page in the Help Center.
-    * Hotfixes are in [Help Center](https://help.liferay.com/hc) tickets
+    -   Fix Packs and Service Packs are on the [Downloads](https://customer.liferay.com/downloads) page in the Help Center.
+    -   Hotfixes are in [Help Center](https://help.liferay.com/hc) tickets
 
 1.  Shut down your application server.
 
     Reasons:
 
-    * On Windows systems, files in use are locked and can't be patched.
-    * On Unix-style systems, you can usually replace files that are running but the old ones reside in memory.
+    -   On Windows systems, files in use are locked and can't be patched.
+    -   On Unix-style systems, you can usually replace files that are running but the old ones reside in memory.
 
 1.  Install the patch by running the Patching Tool's `install` command from the `patching-tool` folder:
 
@@ -119,7 +119,7 @@ Congratulations! Your DXP instance is patched and running.
 
 ```note::
    If the patch doesn't install or if you're unable to resolve errors that occur, please open a `Help Center ticket <https://help.liferay.com/hc/>`_ and provide the full Patching Tool ``info`` output by running ``./patching-tool.sh info > output.txt`` and attaching the ``output.txt`` file to the ticket.
-````
+```
 
 ## Preparing to Patch DXP on an Application Server
 
@@ -134,14 +134,14 @@ If you installed DXP on an application server, you must first install and config
     ./patching-tool.sh auto-discovery
     ```
 
-1. Continue with the [Patching Steps](#basic-patching-steps) in the previous section.
+1.  Continue with the [Patching Steps](#basic-patching-steps) in the previous section.
 
 Now you know how to patch a DXP Bundle and a DXP application server installation.
 
 ## Additional Information
 
-* [Installing the Patching Tool](./installing-the-patching-tool.md)
-* [Configuring the Patching Tool](./configuring-the-patching-tool.md)
-* [Uninstalling Patches](./uninstalling-patches.md)
-* [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)
-* [Using Slim Bundles](./advanced-patching/using-slim-bundles.md)
+-   [Installing the Patching Tool](./installing-the-patching-tool.md)
+-   [Configuring the Patching Tool](./configuring-the-patching-tool.md)
+-   [Uninstalling Patches](./uninstalling-patches.md)
+-   [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)
+-   [Using Slim Bundles](./advanced-patching/using-slim-bundles.md)

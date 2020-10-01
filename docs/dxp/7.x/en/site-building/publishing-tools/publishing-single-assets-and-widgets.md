@@ -4,13 +4,13 @@ You can publish single assets and widgets when needed without going through the 
 
 ## Publishing Single Assets
 
-To publish assets in this way, Users must have the following permissions: *Export/Import Application Info* and *Publish Staging*. See [Managing Staging Permissions](./managing-staging-permissions.md) for more information.
+To publish assets in this way, Users must have the following permissions: _Export/Import Application Info_ and _Publish Staging_. See [Managing Staging Permissions](./managing-staging-permissions.md) for more information.
 
-1. Go to *Content & Data* in the *Product* menu and select the content or data type you want to publish.
+1. Go to _Content & Data_ in the _Product_ menu and select the content or data type you want to publish.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the asset you want to publish and select *Publish to Live*.
+1. Click on the _Actions_ button ( ![Actions button](./../../images/icon-actions.png) ) for the asset you want to publish and select _Publish to Live_.
 
-   ![Click on the Actions button for the asset you want to publish, and select Publish to Live.](./publishing-single-assets-and-widgets/images/01.png)
+    ![Click on the Actions button for the asset you want to publish, and select Publish to Live.](./publishing-single-assets-and-widgets/images/01.png)
 
 Once you confirm your publication, you're directed to a process page where you can see the status of your publication.
 
@@ -24,13 +24,13 @@ Similar to the standard publication process, single asset publications include a
 
 Although Staging is typically used to publish content, you can also publish widgets. For example, you can modify a widget's title and publish the change to Live. This is possible because widget configurations are always staged. To publish a widget that is on a Page, you must publish the Page first.
 
-After changing a widget, you can publish the widget by clicking on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the widget and selecting *Staging*.
+After changing a widget, you can publish the widget by clicking on the _Actions_ button ( ![Actions button](./../../images/icon-actions.png) ) for the widget and selecting _Staging_.
 
 ![Click on a widget's Action button, and select Staging.](./publishing-single-assets-and-widgets/images/04.png)
 
 ## Additional Information
 
-* [Staging Overview](./staging-overview.md)
-* [Managing Staging Permissions](./managing-staging-permissions.md)
-* [Page Versioning](./page-versioning.md)
-* [Staging UI Reference](./staging-ui-reference.md)
+-   [Staging Overview](./staging-overview.md)
+-   [Managing Staging Permissions](./managing-staging-permissions.md)
+-   [Page Versioning](./page-versioning.md)
+-   [Staging UI Reference](./staging-ui-reference.md)

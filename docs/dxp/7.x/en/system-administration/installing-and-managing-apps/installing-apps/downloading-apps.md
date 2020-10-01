@@ -54,4 +54,4 @@ The app downloads as an LPKG file. You can [install the app](./installing-apps.m
 
 ## Next Steps
 
-* [Installing Apps](./installing-apps.md)
+-   [Installing Apps](./installing-apps.md)

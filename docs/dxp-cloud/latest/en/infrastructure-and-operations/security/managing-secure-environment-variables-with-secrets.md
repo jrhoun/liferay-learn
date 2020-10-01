@@ -74,5 +74,5 @@ This is the page shown when a User (with the permission to view) clicks the _Vie
 
 ## Additional Information
 
-* [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md)
-* [Defining Environment Variables](../../reference/defining-environment-variables.md)
+-   [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md)
+-   [Defining Environment Variables](../../reference/defining-environment-variables.md)

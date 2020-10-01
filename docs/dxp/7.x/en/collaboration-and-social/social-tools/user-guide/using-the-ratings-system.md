@@ -6,19 +6,19 @@ Liferay DXP's asset framework <!-- TODO: Add link to asset framework article whe
 
 The following types of ratings are available out-of-the-box for compatible assets:
 
-* **Likes**: Content only has one button (with a heart icon) for users to "like" the content. The total number of likes is shown beside the heart button.
+-   **Likes**: Content only has one button (with a heart icon) for users to "like" the content. The total number of likes is shown beside the heart button.
 
     ![Users can give content likes with the Likes rating type.](./using-the-ratings-system/images/01.png)
 
-* **Stars**: Content is rated from 1 to 5 stars in a drop-down menu. The content's total star rating is shown to the side.
+-   **Stars**: Content is rated from 1 to 5 stars in a drop-down menu. The content's total star rating is shown to the side.
 
     ![Users can rate content from 1 to 5 stars with the Stars rating type.](./using-the-ratings-system/images/02.png)
 
-* **Stacked Stars**: Content is rated from 1 to 5 stars in a horizontal selection. The content's total star rating is shown above the user's selection. The only difference between this rating type and the standard Stars type is how it appears on the screen.
+-   **Stacked Stars**: Content is rated from 1 to 5 stars in a horizontal selection. The content's total star rating is shown above the user's selection. The only difference between this rating type and the standard Stars type is how it appears on the screen.
 
     ![Users can rate content from 1 to 5 stars with the Stacked Stars rating type, similarly to the standard Stars rating type.](./using-the-ratings-system/images/03.png)
 
-* **Thumbs**: Content is given either a "thumbs up" or "thumbs down" rating. The total number of thumbs up or down is shown beside each thumb button.
+-   **Thumbs**: Content is given either a "thumbs up" or "thumbs down" rating. The total number of thumbs up or down is shown beside each thumb button.
 
     ![Users can give content either a thumbs up or thumbs down with the Thumbs rating type.](./using-the-ratings-system/images/04.png)
 
@@ -28,11 +28,11 @@ Because the different types of configurable ratings (likes, stars, etc.) are pre
 
 The following table shows how ratings from each type can be converted to the other types:
 
-|  | **Converted to Likes** | **Converted to Stars** | **Converted to Thumbs Up/Down** |
-| --- | --- | --- | --- |
-| **Likes** | No change | 1 Like = 5 Star rating | 1 Like = 1 Thumbs Up |
-| **Stars** | 3-5 Stars = 1 Like; 1-2 Stars are omitted | No change | 3-5 Stars = 1 Thumbs Up; 1-2 Stars = 1 Thumbs Down |
-| **Thumbs** | 1 Thumbs Up = 1 Like; Thumbs Down are omitted | 1 Thumbs Up = 5 Star rating; 1 Thumbs Down = 1 Star rating | No change |
+|            | **Converted to Likes**                        | **Converted to Stars**                                     | **Converted to Thumbs Up/Down**                    |
+| ---------- | --------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
+| **Likes**  | No change                                     | 1 Like = 5 Star rating                                     | 1 Like = 1 Thumbs Up                               |
+| **Stars**  | 3-5 Stars = 1 Like; 1-2 Stars are omitted     | No change                                                  | 3-5 Stars = 1 Thumbs Up; 1-2 Stars = 1 Thumbs Down |
+| **Thumbs** | 1 Thumbs Up = 1 Like; Thumbs Down are omitted | 1 Thumbs Up = 5 Star rating; 1 Thumbs Down = 1 Star rating | No change                                          |
 
 ## Enabling Ratings for Your Content
 
@@ -56,4 +56,4 @@ From either of these settings menus, find the icon for the chosen asset type und
 
 ## Additional Information
 
-* [Using the Activities Widget](./using-the-activities-widget.md)
+-   [Using the Activities Widget](./using-the-activities-widget.md)

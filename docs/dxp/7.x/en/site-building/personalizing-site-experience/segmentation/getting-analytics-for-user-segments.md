@@ -16,7 +16,7 @@ Follow these steps to get Segment analytics:
       Only Segments that contain at least one member are synchronized with Liferay DXP. This means that empty Segments created with Analytics Cloud are unavailable to use on Liferay DXP.
     ```
 
-1. Once the Segment is synced, go to the *Segments* page.
+1. Once the Segment is synced, go to the _Segments_ page.
 1. Click on the new Segment to view and customize it.
 
 > Product image may differ slightly depending on your Liferay DXP version.
@@ -27,6 +27,6 @@ When you click on the Analytics Cloud Segment, you are directed to Analytics Clo
 
 ## Related Information
 
-* [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
-* [Creating User Segments](./creating-and-managing-user-segments.md)
-* [Content Set Personalization](../experience-personalization/content-set-personalization.md)
+-   [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
+-   [Creating User Segments](./creating-and-managing-user-segments.md)
+-   [Content Set Personalization](../experience-personalization/content-set-personalization.md)

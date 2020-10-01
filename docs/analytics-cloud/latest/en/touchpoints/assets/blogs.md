@@ -10,11 +10,11 @@ Analytics Cloud gives you important insights into how engaged readers are with y
 
 The Overview tab of an Asset's detail presents several data presentations. The first chart, called Visitor Behavior, contains five important metrics:
 
-* Total Views
-* Average Reading time
-* Total Shares
-* Total Comments
-* Average Rating
+-   Total Views
+-   Average Reading time
+-   Total Shares
+-   Total Comments
+-   Average Rating
 
 ![User engagement with blog entries can be viewed in a chart over time.](blogs/images/02.png)
 
@@ -42,10 +42,10 @@ Readers can rate blogs.. Whether the rating is a simple Thumb Up/Thumbs Down, or
 
 The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
+-   How many users are interacting with my content?
+-   Of these users, how many are known or anonymous?
+-   Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+-   Of the users in Segments, what are the top 15 segments?
 
 Here are the charts in the Audience report:
 

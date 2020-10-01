@@ -6,24 +6,24 @@ The deployment type of a service determines many different facets of how the ser
 
 The **Deployment** type features the following:
 
-* Network File System (NFS) is mounted onto a directory available to this service
-* Network identifiers are random (e.g., `liferay-89f9f559`, `liferay-d1267401`)
-* Deployment and scaling are unordered
-* Automated rolling updates are unordered
+-   Network File System (NFS) is mounted onto a directory available to this service
+-   Network identifiers are random (e.g., `liferay-89f9f559`, `liferay-d1267401`)
+-   Deployment and scaling are unordered
+-   Automated rolling updates are unordered
 
 Meanwhile, the **StatefulSet** type features the following:
 
-* Service is allocated a dedicated SSD
-* Network identifiers are stable and unique (e.g., `search-0`, `search-1`)
-* Deployment and scaling are ordered
-* Automated rolling updates are ordered
+-   Service is allocated a dedicated SSD
+-   Network identifiers are stable and unique (e.g., `search-0`, `search-1`)
+-   Deployment and scaling are ordered
+-   Automated rolling updates are ordered
 
 The following summarizes some distinguishing characteristics between the `Deployment` and `StatefulSet` types:
 
-| **Type** | **Purpose** | **Resource Usage and Startup Time** | **Dedicated SSD for Local Volumes** | **Access to NFS** | **Ordered Startup / Scaling** |
-| --- | --- | --- | :---: | :---: | :---: |
-| **Deployment** | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type | X | ✓ | X |
-| **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | X | ✓ |
+| **Type**        | **Purpose**                                | **Resource Usage and Startup Time**                                  | **Dedicated SSD for Local Volumes** | **Access to NFS** | **Ordered Startup / Scaling** |
+| --------------- | ------------------------------------------ | -------------------------------------------------------------------- | :---------------------------------: | :---------------: | :---------------------------: |
+| **Deployment**  | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type |                  X                  |         ✓         |               X               |
+| **StatefulSet** | Stateful applications                      | Consumes more resources and starts up slower than `Deployment` type  |                  ✓                  |         X         |               ✓               |
 
 In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared, persisted volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains improved file access performance by using a dedicated SSD.
 
@@ -39,13 +39,13 @@ The volumes stored in NFS are also available to all `Deployment` type services. 
 
 The following details how the services in DXP Cloud are pre-configured out-of-the-box:
 
-* The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in  NFS.
+-   The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in NFS.
 
-* The _Database_ and _Web Server_ services also use the **Deployment** type, so that they can remain lightweight and start up quickly.
+-   The _Database_ and _Web Server_ services also use the **Deployment** type, so that they can remain lightweight and start up quickly.
 
-* The _CI_ service uses the **StatefulSet** type, so that it can take advantage of the extra file access speed from having a dedicated SSD.
+-   The _CI_ service uses the **StatefulSet** type, so that it can take advantage of the extra file access speed from having a dedicated SSD.
 
-* The _Search_ service also uses the **StatefulSet** type, so that it can take advantage of extra speed for searches, and so that search indices stored on the SSD are not lost if the service restarts.
+-   The _Search_ service also uses the **StatefulSet** type, so that it can take advantage of extra speed for searches, and so that search indices stored on the SSD are not lost if the service restarts.
 
 ## Configuring Deployment Types
 
@@ -53,8 +53,8 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 
 ```json
 {
-    "id": "search",
-    "kind": "StatefulSet"
+	"id": "search",
+	"kind": "StatefulSet"
 }
 ```
 
@@ -64,5 +64,5 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 
 ## Additional Information
 
-* [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md)
-* [Understanding Deployment Strategies](./understanding-deployment-strategies.md)
+-   [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md)
+-   [Understanding Deployment Strategies](./understanding-deployment-strategies.md)

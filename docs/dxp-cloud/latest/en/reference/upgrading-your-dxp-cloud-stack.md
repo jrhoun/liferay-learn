@@ -127,10 +127,10 @@ Verify that the following properties are set up correctly for your project's int
 
 ```json
 {
-    "LCP_CI_SCM_PROVIDER": "github",
-    "LCP_CI_SCM_REPOSITORY_OWNER": "OWNER_NAME",
-    "LCP_CI_SCM_REPOSITORY_NAME": "PROJECT_NAME",
-    "LCP_CI_SCM_TOKEN": "AUTH_TOKEN",
+	"LCP_CI_SCM_PROVIDER": "github",
+	"LCP_CI_SCM_REPOSITORY_OWNER": "OWNER_NAME",
+	"LCP_CI_SCM_REPOSITORY_NAME": "PROJECT_NAME",
+	"LCP_CI_SCM_TOKEN": "AUTH_TOKEN"
 }
 ```
 
@@ -138,8 +138,8 @@ Since a default Jenkinsfile is [no longer required](./dxp-cloud-project-changes-
 
 ```json
 {
-    "LCP_CI_USE_DEFAULT_JENKINSFILE": "true",
-    "LCP_CI_SCM_JENKINSFILE_HOOKS_DIR": "ci/",
+	"LCP_CI_USE_DEFAULT_JENKINSFILE": "true",
+	"LCP_CI_SCM_JENKINSFILE_HOOKS_DIR": "ci/"
 }
 ```
 
@@ -151,8 +151,8 @@ If you are defining your own Jenkinsfile within your `ci` service directory to o
 
 ```json
 {
-    "LCP_CI_USE_DEFAULT_JENKINSFILE": "false",
-    "LCP_CI_SCM_JENKINSFILE_PATH": "ci/Jenkinsfile",
+	"LCP_CI_USE_DEFAULT_JENKINSFILE": "false",
+	"LCP_CI_SCM_JENKINSFILE_PATH": "ci/Jenkinsfile"
 }
 ```
 
@@ -164,4 +164,4 @@ You may then want to [deploy the new service versions](../build-and-deploy/walki
 
 ## Additional Information
 
-* [Understanding Service Stack Versions](./understanding-service-stack-versions.md)
+-   [Understanding Service Stack Versions](./understanding-service-stack-versions.md)

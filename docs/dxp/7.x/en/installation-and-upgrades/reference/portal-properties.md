@@ -1,6 +1,6 @@
 # Portal Properties
 
-Configuration options are specified using *Portal Properties*, sets of name/value pairs read from properties files and environment variables on server startup. [Default values](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) are specified in the `portal-impl.jar/portal.properties` file.
+Configuration options are specified using _Portal Properties_, sets of name/value pairs read from properties files and environment variables on server startup. [Default values](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) are specified in the `portal-impl.jar/portal.properties` file.
 
 Some properties can be changed through the user interface (UI), but others can only be changed in a properties file. These include connecting to a database, declaring the location of the [Liferay Home](./liferay-home.md) folder, and [changing how users authenticate](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) (by screen name instead of by email address).
 
@@ -12,15 +12,15 @@ By convention, `portal-ext.properties` should be created in your `[Liferay Home]
 
 Using a `portal-ext.properties` file to override default properties has these benefits:
 
-* You can copy the file to other Liferay DXP environments and server nodes.
-* You can store configurations in a version control system to simplify configuration management.
-* Setting properties in the file before initial startup is the quickest way to configure DXP.
+-   You can copy the file to other Liferay DXP environments and server nodes.
+-   You can store configurations in a version control system to simplify configuration management.
+-   Setting properties in the file before initial startup is the quickest way to configure DXP.
 
 **Contents:**
 
-* [Using Portal Properties](#using-portal-properties)
-* [Portal Property Priority](#portal-property-priority)
-* [Using System Settings and Configuration Files](#using-system-settings-and-configuration-files)
+-   [Using Portal Properties](#using-portal-properties)
+-   [Portal Property Priority](#portal-property-priority)
+-   [Using System Settings and Configuration Files](#using-system-settings-and-configuration-files)
 
 ```note::
    As of DXP 7.3, the per-virtual instance portal properties file feature has been removed. DXP no longer applies per-instance properties from files of the format ``portal-[companyId].properties``) to instances matching the company IDs.
@@ -79,11 +79,11 @@ A special property called `include-and-override` defines property override order
 
 1. There are three property sources:
 
-    * The `portal-impl.jar/portal.properties` file
-    * Extension properties files
-    * Liferay Docker Env variables
+    - The `portal-impl.jar/portal.properties` file
+    - Extension properties files
+    - Liferay Docker Env variables
 
-1. The last value defined for a *shared property* (a property defined multiple times) takes priority.
+1. The last value defined for a _shared property_ (a property defined multiple times) takes priority.
 
 1. Property sources are read in a [deterministic order](#configuration-processing).
 
@@ -186,12 +186,12 @@ Some properties can be set using [System Settings](../../system-administration/s
 
 Properties stored in the DXP database are prioritized over properties set in Portal Properties files.
 
-Go to *Control Panel* at *Configuration* &rarr; *System Settings* to find System Settings. System Settings can be exported as `.config` files to save in source control and use in distributed DXP installations. Portal properties set via System Settings and configuration files are stored in the database. Some properties are applied immediately while others require restarting the server.
+Go to _Control Panel_ at _Configuration_ &rarr; _System Settings_ to find System Settings. System Settings can be exported as `.config` files to save in source control and use in distributed DXP installations. Portal properties set via System Settings and configuration files are stored in the database. Some properties are applied immediately while others require restarting the server.
 
 ## Additional Information
 
-* [Portal Properties](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/portal.properties.html)
+-   [Portal Properties](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/portal.properties.html)
 
-* [System Settings](../../system-administration/system-settings/system-settings.md)
+-   [System Settings](../../system-administration/system-settings/system-settings.md)
 
-* [Understanding Configuration Files](../../system-administration/system-settings/using-configuration-files.md)
+-   [Understanding Configuration Files](../../system-administration/system-settings/using-configuration-files.md)

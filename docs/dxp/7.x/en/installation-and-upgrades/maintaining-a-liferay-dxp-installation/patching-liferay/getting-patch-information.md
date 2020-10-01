@@ -2,18 +2,18 @@
 
 Having patch level information at your finger tips facilitates maintaining your installation and getting help from Liferay Support. These two Patching Tool commands provide invaluable information:
 
-* [`info`](#using-the-info-command): Lists your DXP installation's product information, patches, Patching Tool version, and more.
-* [`support-info`](#including-support-info-in-support-tickets): Lists system information that's critical to reproducing issues.
+-   [`info`](#using-the-info-command): Lists your DXP installation's product information, patches, Patching Tool version, and more.
+-   [`support-info`](#including-support-info-in-support-tickets): Lists system information that's critical to reproducing issues.
 
 ## Using the `info` Command
 
 The Patching Tool's `info` command reports patch and DXP installation information that includes these details:
 
-* Service Pack version
-* Patching Tool version
-* Plugins detected
-* Patches Installed
-* Patches available (in your `patching-tool/patches/` folder)
+-   Service Pack version
+-   Patching Tool version
+-   Plugins detected
+-   Patches Installed
+-   Patches available (in your `patching-tool/patches/` folder)
 
 They clarify what you've installed and what's available to install.
 

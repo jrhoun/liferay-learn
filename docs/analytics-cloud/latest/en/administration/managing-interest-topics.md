@@ -18,4 +18,4 @@ To delete a keyword from the block list, click that keyword's trash icon (![Dele
 
 ## Additional Information
 
-* [Interests](../individuals-and-segments/interests.md)
+-   [Interests](../individuals-and-segments/interests.md)

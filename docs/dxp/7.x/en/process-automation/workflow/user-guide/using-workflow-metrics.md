@@ -20,22 +20,22 @@ To use _Workflow Metrics_, you must be using Elasticsearch to index your DXP dat
 1. Click on the title of the Process.
 1. If there's no SLA for the process, a warning message stating as much appears. Click the _Add a new SLA_ link from the warning to access the New SLA form directly.
 
-   Alternatively, click the Options (![Options](../../../images/icon-options.png)) menu and select _SLA Settings_.
+    Alternatively, click the Options (![Options](../../../images/icon-options.png)) menu and select _SLA Settings_.
 
-   ![Add SLAs to a workflow definition from the Metrics application.](./using-workflow-metrics/images/01.png)
+    ![Add SLAs to a workflow definition from the Metrics application.](./using-workflow-metrics/images/01.png)
 
 1. On the SLAs screen, click the _Add_ button (![Add](../../../images/icon-add.png)).
 1. In the New SLA form, give the SLA a Name and Description.
 1. Define the time frame for the SLA, specifying three things:
 
-    * **Start**: Enters Task: Review
-    * **Pause**: On Task: Update
-    * **Stop**: Process Ends: Approved
+    - **Start**: Enters Task: Review
+    - **Pause**: On Task: Update
+    - **Stop**: Process Ends: Approved
 
 1. Define the duration (i.e., the deadline) for the SLA. Fill out at least one of the two time boxes.
 
-    * **Days:** 1
-    * **Hours:** 00:00
+    - **Days:** 1
+    - **Hours:** 00:00
 
     ![SLA example](./using-workflow-metrics/images/03.png)
 
@@ -49,28 +49,28 @@ Any workflow task can be used as a start or end parameter for the SLA.
 
 When the item makes it to the event defined here, the SLA timer begins counting. Choose between these options:
 
-| Start Event | Description | Example Using the Single Approver Definition |
-| --- | --- | --- |
-| Process Begins | This corresponds to the start node. | Start the SLA timer when entering the _created_ node. |
-| Enters Task | The SLA clock begins when the workflow transitions to the task. | Start the SLA timer when entering the _Update_ Task. |
-| Leaves Task | The SLA clock begins when the workflow transitions out of the task. | Start the SLA timer when leaving the _Review_ Task. |
+| Start Event    | Description                                                         | Example Using the Single Approver Definition          |
+| -------------- | ------------------------------------------------------------------- | ----------------------------------------------------- |
+| Process Begins | This corresponds to the start node.                                 | Start the SLA timer when entering the _created_ node. |
+| Enters Task    | The SLA clock begins when the workflow transitions to the task.     | Start the SLA timer when entering the _Update_ Task.  |
+| Leaves Task    | The SLA clock begins when the workflow transitions out of the task. | Start the SLA timer when leaving the _Review_ Task.   |
 
 If the item makes it to the Stop event before the defined SLA duration (the deadline), it's _On Time_ according to the SLA. If it fails to make it to the Stop event in the specified duration, it's _Overdue_. When defining the tasks to act as the SLA's Stop Events, choose between these options:
 
-| Stop Event | Description | Example Using the Single Approver Definition |
-| --- | --- | --- |
-| Enters Task | The SLA clock stops when the workflow transitions to the task. | Stop the SLA timer when entering the _Update_ Task. |
-| Leaves Task | The SLA clock stops when the workflow transitions out of the task. | Stop the SLA timer when entering the _Review_ Task. |
-| Process Ends | This corresponds to the end node. | Stop the SLA timer when entering the _approved_ node. |
+| Stop Event   | Description                                                        | Example Using the Single Approver Definition          |
+| ------------ | ------------------------------------------------------------------ | ----------------------------------------------------- |
+| Enters Task  | The SLA clock stops when the workflow transitions to the task.     | Stop the SLA timer when entering the _Update_ Task.   |
+| Leaves Task  | The SLA clock stops when the workflow transitions out of the task. | Stop the SLA timer when entering the _Review_ Task.   |
+| Process Ends | This corresponds to the end node.                                  | Stop the SLA timer when entering the _approved_ node. |
 
 The Pause field defines an event in the workflow when time should stop counting. For the Single Approver workflow, you might choose to pause the SLA timer when the item is in the Update task. The SLA can be paused at any task that falls between the start node and the end node, and it is defined by setting the node(s) when the SLA should be paused. _The SLA timer is paused the entire time a workflow item is in the specified node_.
 
 ### Durations
 
-| Unit of Time | Instruction |
-| --- | --- |
-| Days | Enter a whole number for number of days. If there are partial days such as 36 hours, use in combination with the _Hours_ field; express it 1 Day and 12 Hours. |
-| Hours | Enter the number of hours and minutes. The values in the _Hours_ box must not exceed _23:59_; if the duration exceeds one day, use in combination with the _Days_ field. |
+| Unit of Time | Instruction                                                                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Days         | Enter a whole number for number of days. If there are partial days such as 36 hours, use in combination with the _Hours_ field; express it 1 Day and 12 Hours.           |
+| Hours        | Enter the number of hours and minutes. The values in the _Hours_ box must not exceed _23:59_; if the duration exceeds one day, use in combination with the _Days_ field. |
 
 ## Configuring the SLA Job Interval
 
@@ -84,24 +84,24 @@ Alternatively,
 
 1. Create a configuration file called
 
-   ```
-   com.liferay.portal.workflow.metrics.internal.configuration.WorkflowMetricsConfiguration.config
-   ```
+    ```
+    com.liferay.portal.workflow.metrics.internal.configuration.WorkflowMetricsConfiguration.config
+    ```
 
 2. Give it contents like these:
 
-   ```properties
-   checkSLAJobInterval="1"
-   ```
+    ```properties
+    checkSLAJobInterval="1"
+    ```
 
 3. Place it in `[Liferay Home]/osgi/configs`.
 
 Workflow Metrics data is read from the search engine to calculate metrics. When configuring the interval value, consider these competing performance concerns:
 
-- A long time between metrics recalculation events corresponds with more search documents being read during each recalculation.
-- A short time between metrics recalculation events corresponds with a higher frequency of read requests to the search engine.
+-   A long time between metrics recalculation events corresponds with more search documents being read during each recalculation.
+-   A short time between metrics recalculation events corresponds with a higher frequency of read requests to the search engine.
 
 ## Additional Information
 
-* [Creating Tasks in the Workflow Designer](https://help.liferay.com/hc/articles/360028821932-Creating-Tasks-in-the-Workflow-Designer)
-* [Workflow Task Nodes](https://help.liferay.com/hc/articles/360028834732-Workflow-Task-Nodes)
+-   [Creating Tasks in the Workflow Designer](https://help.liferay.com/hc/articles/360028821932-Creating-Tasks-in-the-Workflow-Designer)
+-   [Workflow Task Nodes](https://help.liferay.com/hc/articles/360028834732-Workflow-Task-Nodes)

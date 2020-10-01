@@ -6,9 +6,9 @@ Friendly URLs are used for both Public and Private Pages. The public Site base U
 
 To update your site's friendly URL, follow these steps:
 
-1. Open the Product Menu and go to *Site* &rarr; *Configuration* &rarr; *Settings*.
-1. Scroll down and expand the *Site URL* panel.
-1. Enter a new URL in the *Friendly URL* input and click *Save* to apply the changes.
+1. Open the Product Menu and go to _Site_ &rarr; _Configuration_ &rarr; _Settings_.
+1. Scroll down and expand the _Site URL_ panel.
+1. Enter a new URL in the _Friendly URL_ input and click _Save_ to apply the changes.
 
 ![You can configure a friendly URL for your Site.](./configuring-your-sites-friendly-url/images/01.png)
 
@@ -18,9 +18,9 @@ If you add a friendly URL for your Site's Home Page, follow the additional steps
 
 If you add a friendly URL for your instance's Home Page, you should update your instance's Home URL field so that page requests to `http://localhost:8080` redirect properly: <!-- What is a Home URL? Do I HAVE to do this? What does it impact? -->
 
-1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
-1. Select *Instance Configuration* under the Platform heading and click the *General* link.
-1. Under *Navigation*, enter your new friendly home URL into the *Home URL* field. For example, setting the friendly URL of your default Site to `/my-site` makes your Site's public Home Page's URL `https://localhost:8080/web/my-site/home`. So, you would enter `/web/my-site/home`.
+1. Open the Product Menu and go to _Control Panel_ &rarr; _Configuration_ &rarr; _Instance Settings_.
+1. Select _Instance Configuration_ under the Platform heading and click the _General_ link.
+1. Under _Navigation_, enter your new friendly home URL into the _Home URL_ field. For example, setting the friendly URL of your default Site to `/my-site` makes your Site's public Home Page's URL `https://localhost:8080/web/my-site/home`. So, you would enter `/web/my-site/home`.
 
 ![Enter the updated home URL to redirect to your new friendly URL.](./configuring-your-sites-friendly-url/images/02.png)
 

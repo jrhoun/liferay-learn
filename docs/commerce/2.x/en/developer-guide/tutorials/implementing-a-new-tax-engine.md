@@ -4,7 +4,7 @@ This tutorial will show you how to add a new tax engine by implementing the [Com
 
 A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
 
-![Out-of-the-box tax engines](./implementing-a-new-tax-engine/images/01.png "Out-of-the-box tax engines")
+![Out-of-the-box tax engines](./implementing-a-new-tax-engine/images/01.png 'Out-of-the-box tax engines')
 
 ## Overview
 
@@ -50,7 +50,7 @@ In this section, we will get an example tax engine up and running on your instan
 
 1. Verify that the example tax engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Taxes_ → _Tax Calculations_. The new tax engine ("Flat Tax") will be present in the list shown.
 
-![New tax engine](./implementing-a-new-tax-engine/images/02.png "New tax engine")
+![New tax engine](./implementing-a-new-tax-engine/images/02.png 'New tax engine')
 
 Congratulations, you've successfully built and deployed a new tax engine that implements `CommerceTaxEngine`.
 
@@ -103,8 +103,8 @@ public String getName(Locale locale);
 
 The tax engine is comprised of logic to perform the tax calculation. Do the following:
 
-* [Add business logic to `getCommerceTaxValue`.](#add-business-logic-to-getcommercetaxvalue)
-* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
+-   [Add business logic to `getCommerceTaxValue`.](#add-business-logic-to-getcommercetaxvalue)
+-   [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 #### Add Business Logic to `getCommerceTaxValue`
 
@@ -146,5 +146,5 @@ Congratulations! You now know the basics for implementing the `CommerceTaxEngine
 
 ## Additional Information
 
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Setting Tax Rate by Fixed Rate](../../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Setting Tax Rate by Fixed Rate](../../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)

@@ -2,10 +2,10 @@
 
 Discounts are created in the _Discounts_ menu in the _Global Applications_ &rarr; _Commerce_. Users can create multiple types of discounts and incentives, such as:
 
-* Reducing the price of specific products
-* Offering free shipping
-* Tailoring a discount for specific [Account Groups](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers
-* Schedule a promotion for a period of time
+-   Reducing the price of specific products
+-   Offering free shipping
+-   Tailoring a discount for specific [Account Groups](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers
+-   Schedule a promotion for a period of time
 
 ```tip::
    Discounts are not the same as a *Price List*. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_, `Creating a Price List <../managing-a-catalog/managing-price/creating-a-price-list.md>`_, and `Adding Tiered Pricing <../managing-a-catalog/managing-price/adding-tiered-pricing.md>`_.
@@ -19,14 +19,14 @@ Discounts are created in the _Discounts_ menu in the _Global Applications_ &rarr
 
 The following types of discounts are available:
 
-| Discount Type | Description |
-| --- | --- |
-| Categories | The discount is applied to all products tagged with a specific [Category](../managing-a-catalog/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md). |
-| Products | The discount is applied to a specific product or list of products.  |
-| Shipments | The discount is applied to the shipment costs, either by a percentage or flat sum. |
-| Subtotal | The order's subtotal is reduced, usually before taxes and other fees are applied. |
-| Total | The discount is applied to the entire total. |
-| Product Groups | The discount is applied to all products in the same Product Group. |
+| Discount Type  | Description                                                                                                                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Categories     | The discount is applied to all products tagged with a specific [Category](../managing-a-catalog/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md). |
+| Products       | The discount is applied to a specific product or list of products.                                                                                                                           |
+| Shipments      | The discount is applied to the shipment costs, either by a percentage or flat sum.                                                                                                           |
+| Subtotal       | The order's subtotal is reduced, usually before taxes and other fees are applied.                                                                                                            |
+| Total          | The discount is applied to the entire total.                                                                                                                                                 |
+| Product Groups | The discount is applied to all products in the same Product Group.                                                                                                                           |
 
 ![Select a Discount Type.](./introduction-to-discounts/images/01.png)
 
@@ -60,10 +60,10 @@ All discounts can be configured to have expiration dates to coincide with promot
 
 You can define rules that specify requirements to qualify for a discount. There are three types of rules:
 
-| Rule | Description |
-| --- | --- |
-| Cart Total | Cart subtotal must meet a minimum threshold to receive the discount. |
-| Has all of these products | Orders must include all specified products in order to receive the discount. |
+| Rule                      | Description                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------------------- |
+| Cart Total                | Cart subtotal must meet a minimum threshold to receive the discount.                                |
+| Has all of these products | Orders must include all specified products in order to receive the discount.                        |
 | Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. |
 
 The discount rules are added on the _Rules_ tab. Developers can also [implement new discount rules](../developer-guide/tutorials/adding-a-new-discount-rule-type.md).
@@ -78,4 +78,4 @@ After selecting the applicable products, customers will receive a discount for t
 
 ## What's Next
 
-* [Creating a Discount](./creating-a-discount.md)
+-   [Creating a Discount](./creating-a-discount.md)

@@ -6,15 +6,15 @@ Mentions are enabled by the _Mentions_ app. By default, the _Mentions_ app is en
 
 To access the global Mentions settings for your Virtual Instance:
 
-1. Open the *Menu* (![Menu](../../../images/icon-product-menu.png)).
+1. Open the _Menu_ (![Menu](../../../images/icon-product-menu.png)).
 1. Navigate to _Control Panel_ &rarr; _Configuration_.
 1. Click _Instance Settings_.
 1. Click _Community Tools_.
 
-   ![Community Tools](./configuring-mentions/images/01.png)
+    ![Community Tools](./configuring-mentions/images/01.png)
 
 1. Click _Mentions_ on the left menu.
-1. By default, all users are allowed to mention fellow site members and friends. To fine tune these options, select *Define Mentions Capability for Users* and specify the settings you want.
+1. By default, all users are allowed to mention fellow site members and friends. To fine tune these options, select _Define Mentions Capability for Users_ and specify the settings you want.
 
     ![You can enable or disable the Mentions feature for all of the Virtual Instance's sites.](./configuring-mentions/images/02.png)
 

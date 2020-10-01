@@ -2,9 +2,9 @@
 
 Follow these steps to create a Structure:
 
-1. Open the Product Menu and go to the Site Menu heading &rarr; *Content & Data* &rarr; *Web Content*.
-1. Select the *Structures* tab.
-1. Click the *Add button* (![Add Structure](../../../images/icon-add.png)) to create a new Structure.
+1. Open the Product Menu and go to the Site Menu heading &rarr; _Content & Data_ &rarr; _Web Content_.
+1. Select the _Structures_ tab.
+1. Click the _Add button_ (![Add Structure](../../../images/icon-add.png)) to create a new Structure.
 1. Enter the title of your new Structure and, optionally, choose its language.
 1. Drag and drop the [available fields](#structure-fields) onto the Structure and [configure their settings](./configuring-structure-fields.md#configurable-settings) to create the Structure.
 
@@ -12,8 +12,8 @@ Follow these steps to create a Structure:
        When you create or `edit a Structure <./configuring-structure-fields.md>`_, the *View* tab is selected by default. You can switch to the *Source* tab to view the Structure's raw XML and modify it directly.
     ```
 
-1. Optionally, add a *Description* for your Structure.
-1. Click *Save*.
+1. Optionally, add a _Description_ for your Structure.
+1. Click _Save_.
 
 ![When creating a new Structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
 
@@ -23,7 +23,7 @@ Follow these steps to create a Structure:
 
 ## Structure Fields
 
-You can place these fields on a Structure: 
+You can place these fields on a Structure:
 
 **Boolean:** A checkbox that stores either `true` (checked) or `false` (unchecked). For example, you can use this field to set a display rule for the Structure's content.
 
@@ -67,6 +67,6 @@ See [Editing and Configuring Structure Fields](./configuring-structure-fields.md
 
 ## Related Information
 
-* [Understanding Web Content Structures](./understanding-web-content-structures.md)
-* [Managing Structures](./managing-structures.md)
-* [Configuring Structure Fields](./configuring-structure-fields.md)
+-   [Understanding Web Content Structures](./understanding-web-content-structures.md)
+-   [Managing Structures](./managing-structures.md)
+-   [Configuring Structure Fields](./configuring-structure-fields.md)

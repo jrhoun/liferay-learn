@@ -1,9 +1,9 @@
 # React Component Utilities Reference
 
-Several useful tools are available to help you build high-performance components and applications in Liferay DXP using React: 
+Several useful tools are available to help you build high-performance components and applications in Liferay DXP using React:
 
-* [`frontend-js-react-web` module](#frontend-js-react-web-module)
-* [React Component Tag](#react-component-tag)
+-   [`frontend-js-react-web` module](#frontend-js-react-web-module)
+-   [React Component Tag](#react-component-tag)
 
 ## `frontend-js-react-web` Module
 
@@ -11,11 +11,7 @@ The `frontend-js-react-web` shared module provides a single common version of Re
 
 ```javascript
 import {render} from 'frontend-js-react-web';
-render(
-renderable,
-renderData,
-container
-);
+render(renderable, renderData, container);
 ```
 
 These parameters are required:
@@ -38,31 +34,30 @@ The `frontend-js-react-web` module also includes a set of common hooks that you 
 import {useIsMounted} from 'frontend-js-react-web';
 
 const InlineConfirm = props => {
-    const isMounted = useIsMounted();
+	const isMounted = useIsMounted();
 
-    const _handleConfirmButtonClick = () => {
-        props.onConfirmButtonClick().then(() => {
-            if (isMounted()) {
-                setPerformingAction(false);
-            }
-        });
-    };
+	const _handleConfirmButtonClick = () => {
+		props.onConfirmButtonClick().then(() => {
+			if (isMounted()) {
+				setPerformingAction(false);
+			}
+		});
+	};
 
-    return <button onClick={handleConfirmButtonClick} />;
-
+	return <button onClick={handleConfirmButtonClick} />;
 };
 ```
 
-`useEventListener` hook can be used for adding an event listener on mount and removing it on unmount. Here's an example: 
+`useEventListener` hook can be used for adding an event listener on mount and removing it on unmount. Here's an example:
 
 ```javascript
 import {useEventListener} from 'frontend-js-react-web';
 
 function OverlayContainer({root, allowEdit}) {
-    useEventListener('keydown', handleKeydown, true, document);
-    useEventListener('click', handleClick, false, document);
+	useEventListener('keydown', handleKeydown, true, document);
+	useEventListener('click', handleClick, false, document);
 
-    return <></>;
+	return <></>;
 }
 ```
 

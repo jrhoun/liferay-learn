@@ -4,9 +4,9 @@ File store options and configuration values changed in Liferay DXP 7.0. If you'r
 
 This table lists the required updates per Liferay version.
 
-| Current Liferay Version | Required Updates |
-| :---------------------- | :--------------- |
-| Liferay DXP 7.0 | 1. Migrate from CMIS Store and JCR Store. |
+| Current Liferay Version        | Required Updates                                                                                                                                |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Liferay DXP 7.0                | 1. Migrate from CMIS Store and JCR Store.                                                                                                       |
 | Liferay Portal 6.2 and earlier | 1. Update your store implementation class name.<br>2. Migrate from CMIS Store and JCR Store.<br>3. Configure the file store in System Settings. |
 
 The following sections explain how to update your file store.

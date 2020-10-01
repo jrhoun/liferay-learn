@@ -6,7 +6,7 @@ To create a document type:
 
 1. Open the _Product Menu_ (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the _Site Administration_ menu.
 1. Select the site where the form will be created.
-1. Click _Content & Data_  &rarr; _Documents and Media_.
+1. Click _Content & Data_ &rarr; _Documents and Media_.
 1. Click the _Document Types_ tab.
 1. Click the _Add button_ (![Add](../../../../images/icon-add.png)). The _New Document Type_ form appears.
 1. Enter a name.
@@ -33,4 +33,4 @@ When users create new files of the document type, they're presented with metadat
 
 ## Additional Information
 
-* [Setting and Defining Metadata](./setting-and-defining-metadata.md)
+-   [Setting and Defining Metadata](./setting-and-defining-metadata.md)

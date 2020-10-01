@@ -10,19 +10,19 @@ Liferay [patches](../../maintaining-a-liferay-dxp-installation/patching-liferay/
 
 Here are the DXP container patching topics:
 
-* [Using Fix Pack, Security Fix Pack, and Service Pack Images](#using-fix-pack-security-fix-pack-and-service-pack-images)
-* [Installing a Patch](#installing-a-patch)
-* [Reverting a Patch](#reverting-a-patch)
-* [Updating the Patching Tool](#updating-the-patching-tool)
-* [Upgrading the Database for a Patch](#upgrading-the-database-for-a-patch)
+-   [Using Fix Pack, Security Fix Pack, and Service Pack Images](#using-fix-pack-security-fix-pack-and-service-pack-images)
+-   [Installing a Patch](#installing-a-patch)
+-   [Reverting a Patch](#reverting-a-patch)
+-   [Updating the Patching Tool](#updating-the-patching-tool)
+-   [Upgrading the Database for a Patch](#upgrading-the-database-for-a-patch)
 
 ## Using Fix Pack, Security Fix Pack, and Service Pack Images
 
 Fix Pack, Security Fix Pack, and Service Pack images are based on [Slim Bundles](../..//maintaining-a-liferay-dxp-installation/patching-liferay/advanced-patching/using-slim-bundles.md). Slim Bundles start up faster and have a smaller footprint than regular [Liferay Tomcat bundles](../installing-a-liferay-tomcat-bundle.md). Only one patch, however, can be applied to a Slim Bundle. These images, therefore, have these patching limitations:
 
-* Fix Pack and Service Pack images can receive only one additional patch, such as a Hotfix or a Security Fix Pack.
+-   Fix Pack and Service Pack images can receive only one additional patch, such as a Hotfix or a Security Fix Pack.
 
-* Security Fix Pack images cannot be patched. They comprise a Fix Pack patched with a Security Fix Pack already.
+-   Security Fix Pack images cannot be patched. They comprise a Fix Pack patched with a Security Fix Pack already.
 
 Using a new Fix Pack, Security Fix Pack, or Service Pack image requires migrating to a container based on that image. Here is how to migrate from a DXP container to a new patch image.
 
@@ -42,7 +42,7 @@ Using a new Fix Pack, Security Fix Pack, or Service Pack image requires migratin
 
 1. Create a new container based on the image and that uses the artifacts and configuration files from your backup.
 
-   For example, you can put your artifacts and files in a local folder structure like this:
+    For example, you can put your artifacts and files in a local folder structure like this:
 
     ```
     [host folder]
@@ -100,9 +100,9 @@ Here are steps for installing a patch to a new container:
 
 1. [Download](https://customer.liferay.com/downloads) the patch and copy it to your `[host folder]/patching` folder. For example,
 
-   ```bash
-   cp ~/[patch file] [host folder]/patching
-   ```
+    ```bash
+    cp ~/[patch file] [host folder]/patching
+    ```
 
 1. Stop your current DXP container, if it's running.
 
@@ -174,8 +174,8 @@ After the database is upgraded, run your container that uses that database.
 
 ## Additional Information
 
-* [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
-* [DXP Docker Container Basics](./dxp-docker-container-basics.md)
-* [Providing Files to the Container](./providing-files-to-the-container.md)
-* [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
-* [Using the Database Upgrade Tool](../../upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)
+-   [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
+-   [DXP Docker Container Basics](./dxp-docker-container-basics.md)
+-   [Providing Files to the Container](./providing-files-to-the-container.md)
+-   [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
+-   [Using the Database Upgrade Tool](../../upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)

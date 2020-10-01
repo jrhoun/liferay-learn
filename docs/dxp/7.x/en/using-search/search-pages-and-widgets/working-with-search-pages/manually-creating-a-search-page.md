@@ -1,10 +1,12 @@
 # Manually Creating a Search Page
+
 <!-- Please consider renaming this article to "Creating a Search Page" instead. -->
+
 You can create and configure a search page for your Site if you choose not to base it on an existing search page template. This approach is preferable if you do not want to share common elements of your Site's search page with search pages on other Sites.
 
 These steps show you how to switch to a manually configured search experience in the default site.
 
-1. If using a site with an existing Search page, first delete the default search page. Navigate to the default site's menu and clicking *Site Builder* &rarr; *Pages*. Click the Search page's Actions menu icon (![Actions](../../../images/icon-actions.png)) and select *Delete*. Confirm deleting the page.
+1. If using a site with an existing Search page, first delete the default search page. Navigate to the default site's menu and clicking _Site Builder_ &rarr; _Pages_. Click the Search page's Actions menu icon (![Actions](../../../images/icon-actions.png)) and select _Delete_. Confirm deleting the page.
 
     Once deleted, the search bar is replaced by a warning message visible only to site administrators:
 
@@ -12,7 +14,7 @@ These steps show you how to switch to a manually configured search experience in
 
 1. Create a new page. Make it hidden or add it to the navigation (the default search page is hidden from the navigation).
 
-    If you want a pre-configured search page as a starting point, use the Search page template. Find the template in the Add Site Page form. It's under *Global Templates*.
+    If you want a pre-configured search page as a starting point, use the Search page template. Find the template in the Add Site Page form. It's under _Global Templates_.
 
     ![Use the Search page template to jump-start its creation.](./manually-creating-a-search-page/images/02.png)
 
@@ -22,8 +24,8 @@ These steps show you how to switch to a manually configured search experience in
 
     Click the Search Bar widget's Options menu (![Options](../../../images/icon-widget-options.png)).
 
-    Click *Configuration* and set the Destination Page to the search page's friendly URL.
+    Click _Configuration_ and set the Destination Page to the search page's friendly URL.
 
-    Click *Save*.
+    Click _Save_.
 
 Your search page is up and running.

@@ -43,7 +43,7 @@ Liferay DXP's [Personalization](./11-experience-personalization/01-personalizati
 
 There are many [settings](TODO) available to tweak the look, behavior, and functionality for your Site. [Sites and their Content can be easily localized](TODO) to multiple languages as needed.
 
-The look and feel of your site can be changed by using different themes. Themes can be downloaded and deployed from [Liferay Marketplace](TODO), or you can [create a theme yourself](TODO). Themes determine the overall look and look and feel for a Site and define the CSS, JavaScript, and HTML for the page (via FreeMarker templates).  FreeMarker combines standard HTML elements and provides the added benefit of variables, conditional statements, looping, and more. See [Developing Themes](TODO) for more information.
+The look and feel of your site can be changed by using different themes. Themes can be downloaded and deployed from [Liferay Marketplace](TODO), or you can [create a theme yourself](TODO). Themes determine the overall look and look and feel for a Site and define the CSS, JavaScript, and HTML for the page (via FreeMarker templates). FreeMarker combines standard HTML elements and provides the added benefit of variables, conditional statements, looping, and more. See [Developing Themes](TODO) for more information.
 
 <!-- Screenshot -->
 

@@ -4,21 +4,21 @@ If you have a [Salesforce data source](./individual-profiles/adding-a-salesforce
 
 To view account analytics, select Accounts from the left navigation panel. The accounts are displayed in a searchable table that lists the following data for each account:
 
-* Account Type
-* Individuals
-* Total Activities
-* 30-Day Engagement Score
+-   Account Type
+-   Individuals
+-   Total Activities
+-   30-Day Engagement Score
 
 ![The Accounts tab lists the Salesforce accounts imported in Analytics Cloud.](accounts/images/01.png)
 
 Click an account to view its information, which is organized into these tabs:
 
-* Overview
-* Activities
-* Interests
-* Segments
-* Individuals
-* Details
+-   Overview
+-   Activities
+-   Interests
+-   Segments
+-   Individuals
+-   Details
 
 The sections that follow describe each tab.
 
@@ -26,12 +26,12 @@ The sections that follow describe each tab.
 
 The Overview tab presents summaries of the account’s data. It displays these summaries via these panes:
 
-* Account Activities
-* Account Firmographics
-* Contact Information
-* Account Interest Topics
-* Known Individuals
-* Associated Segments
+-   Account Activities
+-   Account Firmographics
+-   Contact Information
+-   Account Interest Topics
+-   Known Individuals
+-   Associated Segments
 
 If more information is available for each tab, you can access it via its link. For example, a View All Activities link is at the bottom of the Account Activities pane. Clicking this link takes you to the Activities tab, which shows more detailed information about activities.
 
@@ -59,8 +59,8 @@ The Individuals tab shows information about the individuals in the account. For 
 
 The Details tab shows information about the account’s properties. The properties appear in a searchable table that shows each account property in Analytics Cloud and its value. The table also has columns for these values:
 
-* **Source Name:** The corresponding property name in the Salesforce data source. For example, the Analytics Cloud `accountId` property is `id` in Salesforce. Therefore, `id` appears in the Source Name column of the `accountId` row.
-* **Data Source:** The data source the property’s value originated from.
-* **Last Modified:** The date the property’s value was most recently changed.
+-   **Source Name:** The corresponding property name in the Salesforce data source. For example, the Analytics Cloud `accountId` property is `id` in Salesforce. Therefore, `id` appears in the Source Name column of the `accountId` row.
+-   **Data Source:** The data source the property’s value originated from.
+-   **Last Modified:** The date the property’s value was most recently changed.
 
 ![The Details tab contains a searchable table that shows the account’s properties and their values.](accounts/images/04.png)

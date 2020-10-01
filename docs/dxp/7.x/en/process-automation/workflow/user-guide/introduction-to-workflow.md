@@ -16,10 +16,10 @@ To learn more, see the [Activating Workflow](./activating-workflow.md) and [send
 
 Workflow allows users to build more complex workflows that can have multiple reviewers and approvers. Learn how to build an effective workflow:
 
-* [Crafting Review Processes in XML](https://help.liferay.com/hc/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions)
-* [Visually Designing Review Processes](https://help.liferay.com/hc/articles/360028821892-Workflow-Designer) (Subscriber)
-* [Uploading Workflow Definitions](./managing-workflows.md#uploading-a-new-workflow-definitions)
-* [Managing Workflow Definitions](./managing-workflows.md)
+-   [Crafting Review Processes in XML](https://help.liferay.com/hc/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions)
+-   [Visually Designing Review Processes](https://help.liferay.com/hc/articles/360028821892-Workflow-Designer) (Subscriber)
+-   [Uploading Workflow Definitions](./managing-workflows.md#uploading-a-new-workflow-definitions)
+-   [Managing Workflow Definitions](./managing-workflows.md)
 
 To start building your own workflows, see [Building Workflows](./building-workflows.md).
 
@@ -29,8 +29,8 @@ To start building your own workflows, see [Building Workflows](./building-workfl
 
 The _Metrics_ function can be used to measure Service Level Agreements (SLAs) performance in a workflow process. SLAs define the deadlines on a workflow process's events. They can be formally agreed-upon deadlines between you and your customers, or informally created to meet internal goals, tracking events such as:
 
-* Total time to resolution
-* Time to complete a specific workflow task
+-   Total time to resolution
+-   Time to complete a specific workflow task
 
 Once an SLA is set, workflow submissions that trigger the SLA timer are automatically reported on by the workflow metrics framework, and given the status _on time_ or _overdue_.
 
@@ -40,6 +40,6 @@ See the [Using Workflow Metrics](./using-workflow-metrics.md) article to learn h
 
 ## What's Next
 
-* [Activating Workflow](./activating-workflow.md)
-* [Managing Workflows](./managing-workflows.md)
-* [Building Workflows](./building-workflows.md)
+-   [Activating Workflow](./activating-workflow.md)
+-   [Managing Workflows](./managing-workflows.md)
+-   [Building Workflows](./building-workflows.md)

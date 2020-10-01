@@ -6,12 +6,12 @@ Note that like Analytics Cloud, Liferay DXP can contain Segments. Liferay DXP se
 
 Here's a comparison of Segments in Liferay DXP and Analytics Cloud.
 
-| Liferay DXP Segments | Analytics Cloud Segments |
-| --- | --- |
-| Based only on user data in DXP | Based on user data from multiple sources (e.g., DXP, Salesforce, CSV files, etc.) |
-| Created from session attribute and cookies | Created from user interests and historical behavior |
-| User identity comes from only one DXP site | User identity is resolved from multiple DXP sites |
-| Can't include anonymous users | Includes anonymous users |
-| Good for limited, short-term personalization | Good for expansive, long-term personalization |
+| Liferay DXP Segments                         | Analytics Cloud Segments                                                          |
+| -------------------------------------------- | --------------------------------------------------------------------------------- |
+| Based only on user data in DXP               | Based on user data from multiple sources (e.g., DXP, Salesforce, CSV files, etc.) |
+| Created from session attribute and cookies   | Created from user interests and historical behavior                               |
+| User identity comes from only one DXP site   | User identity is resolved from multiple DXP sites                                 |
+| Can't include anonymous users                | Includes anonymous users                                                          |
+| Good for limited, short-term personalization | Good for expansive, long-term personalization                                     |
 
 For information on using Analytics Cloud Segments in Liferay DXP, see [Using Analytics Cloud with User Segments](https://learn.liferay.com/dxp/7.x/en/site-building/personalizing-site-experience/segmentation/getting-analytics-for-user-segments.html). For information on personalization in Liferay DXP, see [Personalizing Experiences](https://learn.liferay.com/dxp/7.x/en/site-building/personalizing_site_experience.html#).

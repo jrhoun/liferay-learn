@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom exchange rate provider by implem
 
 An exchange rate provider uses a data source to perform the exchange calculation between currencies. Liferay Commerce provides one exchange rate provider out-of-the-box, [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
 
-![Out-of-the-box exchange rate provider](./implementing-an-exchange-rate-provider/images/01.png "Out-of-the-box exchange rate provider")
+![Out-of-the-box exchange rate provider](./implementing-an-exchange-rate-provider/images/01.png 'Out-of-the-box exchange rate provider')
 
 ## Overview
 
@@ -56,7 +56,7 @@ In this section, we will get an example exchange rate provider up and running on
 
 1. Verify that the example exchange rate provider was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Currencies_ → _Exchange Rate_. The new exchange rate provider ("Example") will be present under the _Exchange Rate Provider_ dropdown.
 
-![New exchange rate provider](./implementing-an-exchange-rate-provider/images/02.png "New exchange rate provider")
+![New exchange rate provider](./implementing-an-exchange-rate-provider/images/02.png 'New exchange rate provider')
 
 Congratulations, you've successfully built and deployed a new exchange rate provider that implements `ExchangeRateProvider`.
 
@@ -99,7 +99,7 @@ public BigDecimal getExchangeRate(
 
 The exchange rate provider is comprised of logic to calculate the exchange rates between two currencies. Do the following:
 
-* [Implement the exchange rate calculation logic.](#implement-the-exchange-rate-calculation-logic)
+-   [Implement the exchange rate calculation logic.](#implement-the-exchange-rate-calculation-logic)
 
 #### Implement the Exchange Rate Calculation Logic
 
@@ -140,5 +140,5 @@ Congratulations! You now know the basics for implementing the `ExchangeRateProvi
 
 ## Additional Information
 
-* [Adding a New Currency](../../store-administration/currencies/adding-a-new-currency.md)
-* [Managing Exchange Rates](../../store-administration/currencies/managing-exchange-rates.md)
+-   [Adding a New Currency](../../store-administration/currencies/adding-a-new-currency.md)
+-   [Managing Exchange Rates](../../store-administration/currencies/managing-exchange-rates.md)

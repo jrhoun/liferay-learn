@@ -1,4 +1,4 @@
-# Database Pruning for Faster Upgrades 
+# Database Pruning for Faster Upgrades
 
 The more data you have the longer your data upgrade takes. Unneeded site data is a common occurrence. Pruning the database of unneeded data improves upgrade process performance.
 
@@ -6,9 +6,9 @@ For example, sites may store many unused versions of Web Content articles or Doc
 
 Here are the database pruning topics:
 
-* Removing Duplicate Web Content Structure Field Names
-* Finding and Remove Unused Objects
-* Testing with a Copy of the Pruned Database
+-   Removing Duplicate Web Content Structure Field Names
+-   Finding and Remove Unused Objects
+-   Testing with a Copy of the Pruned Database
 
 ## Removing Duplicate Web Content Structure Field Names
 
@@ -61,9 +61,9 @@ imported "LIFERAY"."USER\_" 17.32 MB 62214 rows
 
 Several items stand out in the example database import:
 
-* The `JOURNALARTICLE` table makes up 98% of the database size.
-* There are many `RESOURCEPERMISSION` records.
-* There are many `PORTLETPREFERENCES` records.
+-   The `JOURNALARTICLE` table makes up 98% of the database size.
+-   There are many `RESOURCEPERMISSION` records.
+-   There are many `PORTLETPREFERENCES` records.
 
 Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)) to delete unneeded objects.
 
@@ -71,46 +71,48 @@ Search for unused objects associated with the tables that stand out and use Life
 
 Some specific object types should be checked for unused objects. Here are some reasons for checking them:
 
-* Removing them frees related unused objects for removal
-* They might be version objects that aren't worth keeping
+-   Removing them frees related unused objects for removal
+-   They might be version objects that aren't worth keeping
 
 Check these object types:
 
-* **Sites**: Remove sites you don't need. When you remove a site, this removes its related objects, including:
-  * Layouts
-  * Portlet preferences
-  * File entries (document library objects)
-  * Asset Entries
-  * Tags
-  * Vocabularies and categories
-  * Expando fields and their values
-  * `ResourcePermission` objects
-  * All other objects unique to the site
+-   **Sites**: Remove sites you don't need. When you remove a site, this removes its related objects, including:
 
-* **Instances**: Unused instances are rare, but since they are the highest object in the hierarchy, removing their objects can optimize upgrades considerably. Removing instances removes these objects associated with them:
-  * Sites (and all their related content)
-  * Users
-  * Roles
-  * Organizations
-  * Global `ResourcePermission` objects
+    -   Layouts
+    -   Portlet preferences
+    -   File entries (document library objects)
+    -   Asset Entries
+    -   Tags
+    -   Vocabularies and categories
+    -   Expando fields and their values
+    -   `ResourcePermission` objects
+    -   All other objects unique to the site
 
-* **Intermediate web content versions:** Liferay DXP generates a new web content version after any modification (including translations). Consider removing versions you don't need. This may free up significant space, especially if the removed versions have objects such as image files specific to those versions. For more details, see [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md).
+-   **Instances**: Unused instances are rare, but since they are the highest object in the hierarchy, removing their objects can optimize upgrades considerably. Removing instances removes these objects associated with them:
 
-* **Document versions**: As with Journal Articles, if you don't need intermediate document versions, delete them. This saves space both in the database and on the file system.
+    -   Sites (and all their related content)
+    -   Users
+    -   Roles
+    -   Organizations
+    -   Global `ResourcePermission` objects
 
-* **Layouts:** Layouts are site pages, and they affect upgrade performance because they relate to other entities such as portlet preferences, permissions, assets, ratings, and more. Remove unneeded layouts.
+-   **Intermediate web content versions:** Liferay DXP generates a new web content version after any modification (including translations). Consider removing versions you don't need. This may free up significant space, especially if the removed versions have objects such as image files specific to those versions. For more details, see [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md).
 
-* **Roles**: Remove any Roles you don't need. Deleting them also deletes
+-   **Document versions**: As with Journal Articles, if you don't need intermediate document versions, delete them. This saves space both in the database and on the file system.
+
+-   **Layouts:** Layouts are site pages, and they affect upgrade performance because they relate to other entities such as portlet preferences, permissions, assets, ratings, and more. Remove unneeded layouts.
+
+-   **Roles**: Remove any Roles you don't need. Deleting them also deletes
     related `ResourceBlockPermission` and `ResourcePermission` objects.
 
-* **Users:** Remove Users that are inactive and no longer needed.
+-   **Users:** Remove Users that are inactive and no longer needed.
 
-* **Vocabularies**: Remove any unused vocabularies. Note that removing a vocabulary also removes its categories.
+-   **Vocabularies**: Remove any unused vocabularies. Note that removing a vocabulary also removes its categories.
 
-* **Orphaned data**: Check for unused objects that are not connected to anything. Here are some examples:
-  * `DLFileEntries` with no file system data.
-  * `ResourcePermission` objects associated to a Role, Layout, User, portlet instance, etc. that no longer exists.
-  * `PortletPreference` objects associated with a portlet or layout that no longer exists. This is common in environments with many embedded portlets. These portlet instances have a different lifecycle and aren't deleted when the portlet is removed from a template.
+-   **Orphaned data**: Check for unused objects that are not connected to anything. Here are some examples:
+    -   `DLFileEntries` with no file system data.
+    -   `ResourcePermission` objects associated to a Role, Layout, User, portlet instance, etc. that no longer exists.
+    -   `PortletPreference` objects associated with a portlet or layout that no longer exists. This is common in environments with many embedded portlets. These portlet instances have a different lifecycle and aren't deleted when the portlet is removed from a template.
 
 To see an example of removing intermediate object versions, read [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md).
 
@@ -122,4 +124,4 @@ Find and resolve any issues related to the objects you removed. This is an impor
 
 ## Additional Information
 
-* [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md)
+-   [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md)
