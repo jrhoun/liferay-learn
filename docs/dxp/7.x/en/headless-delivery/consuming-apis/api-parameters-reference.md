@@ -13,7 +13,7 @@ This article documents the available parameters you can use when making Headless
 
 ## `fields`
 
-Reduces the amount of information included in each returned item – only the indicated fields are included. (See also [`restrictFields`](#restrictfields) for the opposite functionality.)
+Reduces the amount of information included in each returned item; only the indicated fields are included. (See also [`restrictFields`](#restrictfields) for the opposite functionality.)
 
 ### Example Request
 
@@ -53,7 +53,7 @@ query {
 ```
 
 ```note::
-The desired fields are always specified in GraphQL, so there's no specific "fields" or "restrictFields" parameter to pass.
+The desired fields are always specified in GraphQL, so there's no specific ``fields`` or ``restrictFields`` parameter to pass.
 ```
 </div>
 
@@ -325,7 +325,7 @@ query {
 
 ## `restrictFields`
 
-Reduces the amount of information included in each returned item – the indicated fields are excluded. (See also [`fields`](#fields) for the opposite functionality.)
+Reduces the amount of information included in each returned item-–-the indicated fields are excluded. (See also [`fields`](#fields) for the opposite functionality.)
 
 ### Example Request
 
@@ -382,7 +382,7 @@ query {
 ```
 
 ```note::
-The desired fields are always specified in GraphQL, so there's no specific "fields" or "restrictFields" parameter to pass.
+The desired fields are always specified in GraphQL, so there's no specific ``fields`` or ``restrictFields`` parameter to pass.
 ```
 </div>
 
