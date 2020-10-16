@@ -1,5 +1,5 @@
-Maintaining a Liferay DXP Installation
-======================================
+Maintaining a Liferay Installation
+==================================
 
 .. toctree::
    :maxdepth: 3
