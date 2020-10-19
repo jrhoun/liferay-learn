@@ -11,6 +11,9 @@ Elasticsearch
    elasticsearch/troubleshooting-elasticsearch-installation.md
    elasticsearch/exercise-installing-elasticsearch.md
    elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
+   elasticsearch/installing-the-elasticsearch-sidecar.md
+   elasticsearch/elasticsearch-connector-settings.md
+   elasticsearch/upgrading-elasticsearch.md
 
 Elasticsearch is the highly scalable, full-text search engine Liferay uses by default. Elasticsearch is bundled with Liferay for non-production purposes. In production, Liferay requires Elasticsearch running on separate remote server.
 
@@ -29,6 +32,8 @@ Installing
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/exercise-installing-elasticsearch`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/troubleshooting-elasticsearch-installation`
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch`
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-the-elasticsearch-sidecar`
 
 - `[Clustering Liferay]` `Add a Search Engine to a Liferay Cluster <../../installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server>`__
 
@@ -45,9 +50,9 @@ Securing
 Upgrading
 ~~~~~~~~~
 
-Coming Soon!
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch`
 
 Configuring
 ~~~~~~~~~~~
 
-Coming Soon!
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-settings`
