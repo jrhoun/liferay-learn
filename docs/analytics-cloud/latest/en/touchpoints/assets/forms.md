@@ -12,10 +12,10 @@ View the summary metrics for an Asset directly in the list, and click on an Asse
 
 As with all Asset types, the Visitors Behavior chart is at the top of its page and provides a line graph with several trend lines. Choose from four important metrics:
 
-* Total Submissions
-* Total Views
-* Abandonment rate
-* Average Completion Time
+-   Total Submissions
+-   Total Views
+-   Abandonment rate
+-   Average Completion Time
 
 ![Behavior is charted using a line graph to identify trends across a variety of metrics.](forms/images/02.png)
 
@@ -45,10 +45,10 @@ The time series metrics displayed in the Visitors Behavior chart are paramount t
 
 The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
+-   How many users are interacting with my content?
+-   Of these users, how many are known or anonymous?
+-   Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+-   Of the users in Segments, what are the top 15 segments?
 
 Here are the charts in the Audience report:
 
@@ -82,10 +82,10 @@ Field analysis appears as a bar graph. The height of the first bar shows the tot
 
 Field Analysis gives you these metrics on each form field:
 
-* Number of clicks into the field
-* Percentage of Users who abandoned the form at this field.
-* The time spent interacting with the field (includes abandonments)
-* The refill percent for the field. Out of the total number that filled out the field, this answers the question, "What percentage had to edit or enter new information into the field after moving on in the form?"
+-   Number of clicks into the field
+-   Percentage of Users who abandoned the form at this field.
+-   The time spent interacting with the field (includes abandonments)
+-   The refill percent for the field. Out of the total number that filled out the field, this answers the question, "What percentage had to edit or enter new information into the field after moving on in the form?"
 
 ![Field Analysis charts help to breakdown user interactions with specific elements on a form.](forms/images/06.png)
 

@@ -12,10 +12,10 @@ To create an Element Set:
 
 1. Open the _Product Menu_ (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the _Site Administration_ menu.
 1. Select the site where the form will be created.
-1. Click _Content & Data_  &rarr; _Forms_.
+1. Click _Content & Data_ &rarr; _Forms_.
 1. Click the _Element Sets_ tab.
 
-     ![Element Sets Tab](./reusing-sets-of-form-elements/images/01.png)
+    ![Element Sets Tab](./reusing-sets-of-form-elements/images/01.png)
 
 1. Click the _Add_ button (![Add](../../../../images/icon-add.png)).
 
@@ -56,4 +56,4 @@ To use an Element Set in a Form:
 
 ## Additional Information
 
-* [Creating Forms](../creating-forms.md)
+-   [Creating Forms](../creating-forms.md)

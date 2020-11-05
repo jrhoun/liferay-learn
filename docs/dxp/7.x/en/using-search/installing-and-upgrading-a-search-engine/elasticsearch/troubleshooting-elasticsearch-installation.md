@@ -18,7 +18,7 @@ In Liferay 7.3, the bundled Elasticsearch server (sidecar) runs on port `9201` b
 
 ## Cluster Sniffing (Additional Configurations)
 
-Elasticsearch clusters can have multiple node [types](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node).  [Cluster sniffing](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html), enabled by default in the Elasticsearch connector, looks for `data` nodes configured in the `transportAddresses` property. If none are available, the connector may throw a `NoNodeAvailableException` in the console log. If cluster sniffing is to remain enabled, avoid this error by configuring at least one `data` node's transport address to be "sniffable" at all times.
+Elasticsearch clusters can have multiple node [types](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node). [Cluster sniffing](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html), enabled by default in the Elasticsearch connector, looks for `data` nodes configured in the `transportAddresses` property. If none are available, the connector may throw a `NoNodeAvailableException` in the console log. If cluster sniffing is to remain enabled, avoid this error by configuring at least one `data` node's transport address to be "sniffable" at all times.
 
 To disable cluster sniffing, add `clientTransportSniff=false` to the `.config` file or unselect the Client Transport Sniff property in System Settings.
 
@@ -30,7 +30,7 @@ The Liferay DXP container must recognize the Elasticsearch IP to establish a con
 --add-host elasticsearch:[IP address]
 ```
 
-To obtain the IP addresses of all running containers, run 
+To obtain the IP addresses of all running containers, run
 
 ```bash
 docker network inspect bridge

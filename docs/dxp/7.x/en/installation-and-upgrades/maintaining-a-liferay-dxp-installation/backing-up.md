@@ -4,11 +4,11 @@ Once you have your DXP installation running, you should implement a comprehensiv
 
 When considering a back up plan for Liferay DXP, we recommend backing up the following areas:
 
-* [Liferay Home directory](#liferay-home)
-* [Application Server](#application-server)
-* [Database](#database)
-* [Search Indexes](#search-indexes)
-* [Source Code](#source-code)
+-   [Liferay Home directory](#liferay-home)
+-   [Application Server](#application-server)
+-   [Database](#database)
+-   [Search Indexes](#search-indexes)
+-   [Source Code](#source-code)
 
 ```note::
    DXP Cloud automates and simplifies the process of creating and managing backups of the Document Library and Liferay DXP database. Because DXP Cloud uses a Git-based DevOps pipeline, all configurations for Liferay are also automatically backed up as well. To learn more, see `DXP Cloud Backup Service <https://learn.liferay.com/dxp-cloud/latest/en/platform-services/backup-service/backup-service-overview.html>`_ for more information.
@@ -18,15 +18,15 @@ When considering a back up plan for Liferay DXP, we recommend backing up the fol
 
 The Liferay Home folder is important to back up because it contains the following files:
 
-* **Portal properties and system properties:** The Liferay Home folder stores DXP [portal properties files](../reference/portal-properties.md) (e.g., `portal-ext.properties`, `portal-setup-wizard.properties`, etc.) and DXP [system properties files](../reference/system-properties.md) (e.g., `system-ext.properties`).
+-   **Portal properties and system properties:** The Liferay Home folder stores DXP [portal properties files](../reference/portal-properties.md) (e.g., `portal-ext.properties`, `portal-setup-wizard.properties`, etc.) and DXP [system properties files](../reference/system-properties.md) (e.g., `system-ext.properties`).
 
-* **`/data` folder:** DXP stores configuration files, search indexes, and cache information in Liferay Home's `/data` folder. Assets uploaded to the [Documents and Media repository](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration) are also stored in the `/data` folder, if you're using the default storage configuration (File System store or the Advanced File System store).
+-   **`/data` folder:** DXP stores configuration files, search indexes, and cache information in Liferay Home's `/data` folder. Assets uploaded to the [Documents and Media repository](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration) are also stored in the `/data` folder, if you're using the default storage configuration (File System store or the Advanced File System store).
 
-* **`/license` folder (Subscription):** Holds the activation key for the Liferay Enterprise Subscription.
+-   **`/license` folder (Subscription):** Holds the activation key for the Liferay Enterprise Subscription.
 
-* **`/osgi` folder:** The files that comprise DXP's OSGi runtime are stored in Liferay Home's `/osgi` folder. It contains all of the app and module JAR files deployed to DXP. The `/osgi` folder also contains other required JAR files, [configuration files](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files), and log files.
+-   **`/osgi` folder:** The files that comprise DXP's OSGi runtime are stored in Liferay Home's `/osgi` folder. It contains all of the app and module JAR files deployed to DXP. The `/osgi` folder also contains other required JAR files, [configuration files](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files), and log files.
 
-* **`/logs` folder:** Contains DXP's log files. If a problem occurs on DXP, the log files provide information for determining what went wrong.
+-   **`/logs` folder:** Contains DXP's log files. If a problem occurs on DXP, the log files provide information for determining what went wrong.
 
 ```note::
    If you are using a Liferay Docker image and are using custom Liferay and application server configuration files via a bind mount, back up those files (e.g., files in your ``[host folder]/files`` folder).

@@ -20,9 +20,9 @@ Clicking on the the Start Free Trial button from the home screen will take your 
 
 **Data Center Location** allows you to select the location of your server, which will store all of your analytics and website visitors data. Currently, Liferay Analytics Cloud offers three data center locations.
 
-* North America - Oregon, USA
-* South America - São Paulo, Brazil
-* Europe - London, United Kingdom
+-   North America - Oregon, USA
+-   South America - São Paulo, Brazil
+-   Europe - London, United Kingdom
 
 We are also currently planning a new data center in Frankfurt, Germany.
 

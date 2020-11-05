@@ -55,7 +55,7 @@ The organization has been added to the account using the Control Panel.
 
 ## Additional Information
 
-* [Account Roles](../account-management/account-roles.md)
-* [Commerce Roles Permissions Reference](../account-management/commerce-roles-permissions-reference.md)
-* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
-* [Adding Users to Organizations](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/adding-users-to-organizations.html)
+-   [Account Roles](../account-management/account-roles.md)
+-   [Commerce Roles Permissions Reference](../account-management/commerce-roles-permissions-reference.md)
+-   [Introduction to Accounts](../account-management/introduction-to-accounts.md)
+-   [Adding Users to Organizations](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/adding-users-to-organizations.html)

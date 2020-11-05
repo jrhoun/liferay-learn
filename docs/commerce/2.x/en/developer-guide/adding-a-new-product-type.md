@@ -4,7 +4,7 @@ This tutorial will show you how to add a new product type by implementing three 
 
 Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out-of-the-box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
 
-![Out-of-the-box product types](./adding-a-new-product-type/images/01.png "Out-of-the-box product types")
+![Out-of-the-box product types](./adding-a-new-product-type/images/01.png 'Out-of-the-box product types')
 
 ## Overview
 
@@ -50,7 +50,7 @@ In this section, we will get an example product type up and running on your inst
 
 1. Verify that the example product type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, click on the (+) icon to add a new product. The new product type ("Example") will be present in the list of types to choose from.
 
-![New product type](./adding-a-new-product-type/images/02.png "New product type")
+![New product type](./adding-a-new-product-type/images/02.png 'New product type')
 
 Congratulations, you've successfully built and deployed a new product type that implements `CPType`.
 
@@ -60,12 +60,12 @@ Next, let's dive deeper to learn more.
 
 In this section, we will review the example we deployed. We will create two classes: a product type class and a screen navigation entry class for a custom screen. Walk through the following:
 
-* [Annotate the Product Type Class for OSGi Registration](#annotate-the-product-type-class-for-osgi-registration)
-* [Review the `CPType` Interface](#review-the-cptype-interface)
-* [Annotate the Screen Navigation Entry Class for OSGi Registration](#annotate-the-screen-navigation-entry-class-for-osgi-registration)
-* [Review the `ScreenNavigationCategory` Interface](#review-the-screennavigationcategory-interface)
-* [Review the `ScreenNavigationEntry` Interface](#review-the-screennavigationentry-interface)
-* [Complete the Product Type](#complete-the-product-type)
+-   [Annotate the Product Type Class for OSGi Registration](#annotate-the-product-type-class-for-osgi-registration)
+-   [Review the `CPType` Interface](#review-the-cptype-interface)
+-   [Annotate the Screen Navigation Entry Class for OSGi Registration](#annotate-the-screen-navigation-entry-class-for-osgi-registration)
+-   [Review the `ScreenNavigationCategory` Interface](#review-the-screennavigationcategory-interface)
+-   [Review the `ScreenNavigationEntry` Interface](#review-the-screennavigationentry-interface)
+-   [Complete the Product Type](#complete-the-product-type)
 
 ### Annotate the Product Type Class for OSGi Registration
 
@@ -189,12 +189,12 @@ void render(
 
 The product type is comprised of backend logic for deleting the product, logic to render the screen in the navigation menu, and the custom screen itself. Do the following:
 
-* [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
-* [Implement the `ScreenNavigationEntry`'s `render` method.](#implement-the-screennavigationentrys-render-method)
-* [Override the `ScreenNavigationEntry`'s `isVisible` method.](#override-the-screennavigationentrys-isvisible-method)
-* [Add the product type deletion logic to `deleteCPDefinition`.](#add-the-product-type-deletion-logic-to-deletecpdefinition)
-* [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
+-   [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
+-   [Implement the `ScreenNavigationEntry`'s `render` method.](#implement-the-screennavigationentrys-render-method)
+-   [Override the `ScreenNavigationEntry`'s `isVisible` method.](#override-the-screennavigationentrys-isvisible-method)
+-   [Add the product type deletion logic to `deleteCPDefinition`.](#add-the-product-type-deletion-logic-to-deletecpdefinition)
+-   [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
+-   [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
@@ -279,5 +279,5 @@ Congratulations! You now know the basics for implementing the `CPType` interface
 
 ## Additional Information
 
-* [Introduction to Product Types](../../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Introduction to Product Types](../../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

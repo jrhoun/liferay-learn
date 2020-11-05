@@ -12,5 +12,5 @@ Use Asset Libraries to improve content collaboration, simplify asset organizatio
 
 ## Additional Information
 
-* [Creating and Managing Asset Libraries](./creating-and-managing-asset-libraries.md)
-* [Asset Library Content](./asset-library-content.md)
+-   [Creating and Managing Asset Libraries](./creating-and-managing-asset-libraries.md)
+-   [Asset Library Content](./asset-library-content.md)

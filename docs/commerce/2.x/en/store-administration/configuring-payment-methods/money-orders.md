@@ -21,7 +21,7 @@ Your store may now accept Money Orders as a form of payment.
 
 **Note 1**: You can display your store's notes about money orders in different languages.
 
-1. To enter your note in a different language, click on the _en-US_ icon. This displays a drop-down menu with multiple languages.  
+1. To enter your note in a different language, click on the _en-US_ icon. This displays a drop-down menu with multiple languages.
 1. Click the country flag for the language (for example, Germany).
 1. Enter the translated text.
 1. Click _Save_.

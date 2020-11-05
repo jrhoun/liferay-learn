@@ -88,6 +88,6 @@ The channel is created and associated with the selected site. Products may now b
 
 ## Additional Information
 
-* [Introduction to Channels](./introduction-to-channels.md)
-* [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
-* [Channels Reference Guide](./channels-reference-guide.md)
+-   [Introduction to Channels](./introduction-to-channels.md)
+-   [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
+-   [Channels Reference Guide](./channels-reference-guide.md)

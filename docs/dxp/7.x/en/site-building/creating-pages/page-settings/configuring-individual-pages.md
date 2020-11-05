@@ -2,18 +2,18 @@
 
 You can configure individual Site pages to meet your needs. All changes made in this way are scoped to the selected page.
 
-To configure a page, open the *Product Menu* and go to *Site Builder* &rarr; *Pages*. Then click the *Actions* button (![Actions button](../../../images/icon-staging-bar-options.png)) for the page you want to customize and select *Configure*.
+To configure a page, open the _Product Menu_ and go to _Site Builder_ &rarr; _Pages_. Then click the _Actions_ button (![Actions button](../../../images/icon-staging-bar-options.png)) for the page you want to customize and select _Configure_.
 
 ![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
 
-Alternatively, you can access individual page settings by navigating to the page you want to customize and clicking the *Configure Page* button ( ![Configure Page Button](./../../../images/icon-cog.png) ) at the top right of the *Application Bar*.
+Alternatively, you can access individual page settings by navigating to the page you want to customize and clicking the _Configure Page_ button ( ![Configure Page Button](./../../../images/icon-cog.png) ) at the top right of the _Application Bar_.
 
 These settings are organized into the following tabs:
 
-* [General](#general)
-* [SEO](#seo)
-* [Open Graph](#open-graph)
-* [Custom Meta Tags](#custom-meta-tags)
+-   [General](#general)
+-   [SEO](#seo)
+-   [Open Graph](#open-graph)
+-   [Custom Meta Tags](#custom-meta-tags)
 
 ```note::
    Many of these settings can be localized to provide translations based on a user's locale. See `Introduction to Localization <../../../installation-and-upgrades/setting-up-liferay-dxp/initial-instance-localization.md>`_ and `Modifying Localizable Site Fields <../../site-settings/configuring-site-languages/modifying-localizable-site-fields.md>`_ or more information.
@@ -25,7 +25,7 @@ Here you can configure the basic information and design of a page, including its
 
 ### Name and Friendly URL
 
-In the *Name* field, you can set a page's title, which is used for Site navigation and the browser's title bar. You can also use the *Friendly URL* field to set a new URL for a page or click the *Restore* icon ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md)
+In the _Name_ field, you can set a page's title, which is used for Site navigation and the browser's title bar. You can also use the _Friendly URL_ field to set a new URL for a page or click the _Restore_ icon ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md)
 
 ![Use the Name field to set a page's title.](./configuring-individual-pages/images/02.png)
 ![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
@@ -42,13 +42,13 @@ You can determine if a page is hidden from Navigation Menu widgets configured to
 
 ### Page Layout
 
-For basic Widget Pages, you can select a layout template that defines row and column containers for widgets. If you create a Widget Page using a global template (e.g., blog, wiki, search), you can determine whether the page *Inherits Changes* made to the global template.
+For basic Widget Pages, you can select a layout template that defines row and column containers for widgets. If you create a Widget Page using a global template (e.g., blog, wiki, search), you can determine whether the page _Inherits Changes_ made to the global template.
 
 ![Select a layout template that defines row and column containers for widgets.](./configuring-individual-pages/images/05.png)
 
 ### Categorization
 
-Here you can categorize page content using *Topics* and *Tags*. These tools help organize pages so people can more easily find your Site's content through search and navigation. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags_and_categories.html).
+Here you can categorize page content using _Topics_ and _Tags_. These tools help organize pages so people can more easily find your Site's content through search and navigation. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags_and_categories.html).
 
 ![Categorize page content using Topics and Tags.](./configuring-individual-pages/images/06.png)
 
@@ -82,7 +82,7 @@ Here you can access additional settings to customize your page's content and fea
 
 **Icon**: Choose an icon to display along with a page's name in the Site's navigation menus.
 
-**JavaScript**: Add JavaScript code to a page. Any added code is executed at the bottom of the page. You can also access this editor in a page set's *Configuration* page.
+**JavaScript**: Add JavaScript code to a page. Any added code is executed at the bottom of the page. You can also access this editor in a page set's _Configuration_ page.
 
 ![Add JavaScript code to a page using the provided editor.](./configuring-individual-pages/images/10.png)
 
@@ -94,13 +94,13 @@ Here you can access additional settings to customize your page's content and fea
 
 ![Determine whether a page uses the page set's rules for mobile devices, or is uniquely configured.](./configuring-individual-pages/images/11.png)
 
-**Customization Settings**: You can determine whether a Widget Page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Personalizing Pages]() for more information.
+**Customization Settings**: You can determine whether a Widget Page's columns are _Customizable_ for users. If customization is enabled, specify the columns users can customize. See [Personalizing Pages]() for more information.
 
 ![Determine whether users can customize a Widget Page.](./configuring-individual-pages/images/12.png)
 
-**Custom Fields**: You can view and configure the *Custom Fields* you've defined for Site pages. See [Custom Fields](../../../installation-and-upgrades/setting-up-liferay-dxp/custom-fields.md) for more information.
+**Custom Fields**: You can view and configure the _Custom Fields_ you've defined for Site pages. See [Custom Fields](../../../installation-and-upgrades/setting-up-liferay-dxp/custom-fields.md) for more information.
 
-**Embedded Widgets**: In the *Embedded Widgets* section, you can access widgets you've embedded in a page using [Web Content Templates](), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes]().
+**Embedded Widgets**: In the _Embedded Widgets_ section, you can access widgets you've embedded in a page using [Web Content Templates](), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes]().
 
 ```note::
    The *Custom Fields* and *Embedded Widget* sections only appear once you've created custom fields and embedded widgets in a page.
@@ -108,11 +108,11 @@ Here you can access additional settings to customize your page's content and fea
 
 ## SEO
 
-Search engine optimization (SEO) refers to the methods used to improve your page's ranking in search engine results pages (SERP). The *SEO* tab provides easy access to settings you can use to optimize your page's content. See [Search Engine Optimization]() for more information about the following settings. <!--Rename current placeholder, "SEO Optimization," to "Search Engine Optimization".-->
+Search engine optimization (SEO) refers to the methods used to improve your page's ranking in search engine results pages (SERP). The _SEO_ tab provides easy access to settings you can use to optimize your page's content. See [Search Engine Optimization]() for more information about the following settings. <!--Rename current placeholder, "SEO Optimization," to "Search Engine Optimization".-->
 
 ### HTML Title
 
-In the *HTML Title* section, you can set a page's title `<meta>` tag. This title is used by search engines to rank your page and serves as the page's heading in search engine results, though without replacing a page's [Name](#name-and-friendly-url).
+In the _HTML Title_ section, you can set a page's title `<meta>` tag. This title is used by search engines to rank your page and serves as the page's heading in search engine results, though without replacing a page's [Name](#name-and-friendly-url).
 
 ![Use the Title field to set a page's title meta tag.](./configuring-individual-pages/images/13.png)
 
@@ -132,7 +132,7 @@ Here you can define a page's description `<meta>` tag. This description is used 
 
 ### Custom Canonical URL
 
-Here you can set a custom URL to use instead of the URL set in your *System* or *Instance* settings.
+Here you can set a custom URL to use instead of the URL set in your _System_ or _Instance_ settings.
 
 ![Set a custom URL that is used instead of the URL set in your System or Instance settings.](./configuring-individual-pages/images/15.png)
 
@@ -174,13 +174,13 @@ Here you can set a page's priority from 0.0 to 1.0. This informs search engines 
 
 ### Change Frequency
 
-In the *Change Frequency* section, you can indicate how frequently a page is updated for search engines and other tools crawling and indexing your site.
+In the _Change Frequency_ section, you can indicate how frequently a page is updated for search engines and other tools crawling and indexing your site.
 
 ![Indicate how frequently a page is updated.](./configuring-individual-pages/images/20.png)
 
 ## Open Graph
 
-[Open Graph](https://ogp.me/) is an Internet protocol that standardizes link summaries in application contexts that support this protocol, such as Facebook, Slack, and Twitter. In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define page metadata and create engaging representations of your content. See [Configuring Open Graph](./configuring-open-graph.md) for more information about the following settings.
+[Open Graph](https://ogp.me/) is an Internet protocol that standardizes link summaries in application contexts that support this protocol, such as Facebook, Slack, and Twitter. In the _Open Graph_ tab, you can use Open Graph `<meta>` tags to define page metadata and create engaging representations of your content. See [Configuring Open Graph](./configuring-open-graph.md) for more information about the following settings.
 
 ```note::
    Page values defined via the Open Graph tab override values defined elsewhere in your Liferay instance.
@@ -188,7 +188,7 @@ In the *Change Frequency* section, you can indicate how frequently a page is upd
 
 ### Image and Alt Description
 
-Here you can define the `og:image` and `og:image:alt` properties for a page. You can also localize an image's alt description via the *Language Flag* button. Open Graph properties defined here override values defined in a page's Site settings.
+Here you can define the `og:image` and `og:image:alt` properties for a page. You can also localize an image's alt description via the _Language Flag_ button. Open Graph properties defined here override values defined in a page's Site settings.
 
 ![Define the Open Graph Image and Image Alt Description properties for a page.](./configuring-individual-pages/images/21.png)
 
@@ -216,6 +216,6 @@ Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are 
 
 ## Additional Information
 
-* [Adding Pages to a Site](./../adding-pages/adding-a-page-to-a-site.md)
-* [Content Pages Overview](../building-and-managing-content-pages/content-pages-overview.md)
-* [Configuring Page Sets](./configuring-page-sets.md)
+-   [Adding Pages to a Site](./../adding-pages/adding-a-page-to-a-site.md)
+-   [Content Pages Overview](../building-and-managing-content-pages/content-pages-overview.md)
+-   [Configuring Page Sets](./configuring-page-sets.md)

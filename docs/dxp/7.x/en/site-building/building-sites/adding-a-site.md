@@ -2,7 +2,7 @@
 
 To add a new Site to your Liferay Portal instance:
 
-1. Open the [Global Menu](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and navigate to the Control Panel, and then select *Sites*.
+1. Open the [Global Menu](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and navigate to the Control Panel, and then select _Sites_.
 
     ![The Sites Control Panel location.](./adding-a-site/images/01.png)
 
@@ -16,7 +16,7 @@ To add a new Site to your Liferay Portal instance:
 
     ![The checkbox to populate the Site with private pages instead of public pages is only present for templates with pages.](./adding-a-site/images/02.png)
 
-1. Click *Save*.
+1. Click _Save_.
 
 ```tip::
    In order to view a newly created *blank site*, you must first create a page for it. See `Adding a Page to a Site <../creating-pages/adding-pages/adding-a-page-to-a-site.md>`_ for more information.
@@ -26,6 +26,6 @@ The new Site now selected in the Site Menu. See [Site Settings](../site_settings
 
 ## Related Information
 
-* [Introduction to Site Building](../introduction-to-site-building.md)
-* [Building Sites with Site Templates](./building-sites-with-site-templates.md)
-* [Adding Members to Sites](./site-membership/adding-members-to-sites.md)
+-   [Introduction to Site Building](../introduction-to-site-building.md)
+-   [Building Sites with Site Templates](./building-sites-with-site-templates.md)
+-   [Adding Members to Sites](./site-membership/adding-members-to-sites.md)

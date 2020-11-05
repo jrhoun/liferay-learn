@@ -1,6 +1,6 @@
 # Auto-scaling
 
-Liferay DXP Cloud's auto-scaling feature automatically creates and destroys instances of the DXP service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is *disabled* in every DXP Cloud account.
+Liferay DXP Cloud's auto-scaling feature automatically creates and destroys instances of the DXP service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is _disabled_ in every DXP Cloud account.
 
 Using this feature, a service can automatically increase (upscale) the number of Liferay DXP instances to a maximum of 10, or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
 
@@ -25,12 +25,12 @@ Set the `liferay` service's `LIFERAY_JAVA_OPTS` environment variable to allocate
 The recommended configuration is to set the `-Xms` flag using 25% of the available memory, and to set the `-Xmx` flag using 75% of the available memory. See the following table for reference on recommended values, for different levels of memory available to your `liferay` service:
 
 | **Available Memory** | **Recommended LIFERAY_JAVA_OPTS** |
-| --- | --- |
-| 8 GB | -Xms2048m -Xmx6144m |
-| 16 GB | -Xms4096m -Xmx12288m |
-| 24 GB | -Xms6144m -Xmx18432m |
-| 32 GB | -Xms8192m -Xmx24576m |
-| 64 GB | -Xms16384m -Xmx49152m |
+| -------------------- | --------------------------------- |
+| 8 GB                 | -Xms2048m -Xmx6144m               |
+| 16 GB                | -Xms4096m -Xmx12288m              |
+| 24 GB                | -Xms6144m -Xmx18432m              |
+| 32 GB                | -Xms8192m -Xmx24576m              |
+| 64 GB                | -Xms16384m -Xmx49152m             |
 
 ```note::
    The ``LIFERAY_JAVA_OPTS`` variable may sometimes be used with other flags, in addition to ``-Xms`` and ``-Xmx``. If other flags are present, then update the environment variable with the memory arguments without removing the others.
@@ -43,8 +43,8 @@ See [Defining Environment Variables](../reference/defining-environment-variables
 Follow these steps to enable or disable auto-scaling in the DXP Cloud Console:
 
 1. Navigate to the production environment.
-1. Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*.
-1. If auto-scaling is disabled, click *Enable Auto Scaling* to enable it. If auto-scaling is already enabled, click *Disable Auto Scaling* to disable it.
+1. Navigate to _Services_ &rarr; _Liferay_ &rarr; _Scale_.
+1. If auto-scaling is disabled, click _Enable Auto Scaling_ to enable it. If auto-scaling is already enabled, click _Disable Auto Scaling_ to disable it.
 
 With auto-scaling enabled, DXP Cloud monitors your service and scales it automatically according to predefined thresholds.
 
@@ -52,7 +52,7 @@ With auto-scaling enabled, DXP Cloud monitors your service and scales it automat
 
 ## Specifying Target Average Utilization
 
-System administrators can specify a *target average utilization*. This value is an average of memory and CPU usage across Liferay DXP services. That value threshold must be crossed before auto-scaling is triggered.
+System administrators can specify a _target average utilization_. This value is an average of memory and CPU usage across Liferay DXP services. That value threshold must be crossed before auto-scaling is triggered.
 
 For example, if three service instances utilize 70%, 90%, and 95% of memory, respectively, then the average memory utilization is 85%. If the target average
 utilization is set to 90, then no upscaling is needed; upscaling in this situation only occurs when the average memory utilization exceeds the target.

@@ -4,10 +4,10 @@
 
 You can see patch information at a glance, which helps maintain your installation and get help from Liferay Support. The Patching Tool's `info` command lists the following information:
 
-* Service Pack version
-* Patching Tool version
-* Patches Installed
-* Patches available (in your `patching-tool/patches/` folder)
+-   Service Pack version
+-   Patching Tool version
+-   Patches Installed
+-   Patches available (in your `patching-tool/patches/` folder)
 
 They clarify what you've installed and what's available to install.
 

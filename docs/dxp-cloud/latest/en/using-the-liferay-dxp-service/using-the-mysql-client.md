@@ -10,12 +10,12 @@ Viewing data in the database is sometimes necessary to troubleshoot an issue wit
 
 Before you can use the MySQL Client through the Liferay service, you must have your services upgraded to at least the following supported image versions:
 
-| **Service** | **Minimum Supported Image Version** |
-| --- | --- |
-| **Database** | liferaycloud/database:3.2.8 |
+| **Service**         | **Minimum Supported Image Version**             |
+| ------------------- | ----------------------------------------------- |
+| **Database**        | liferaycloud/database:3.2.8                     |
 | **DXP (using 7.0)** | liferaycloud/liferay-dxp:7.0.10-ga1-fp90-3.0.19 |
 | **DXP (using 7.1)** | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
-| **DXP (using 7.2)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19 |
+| **DXP (using 7.2)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
 
 ```warning::
    Upgrading your database image to a version that supports MySQL client will initialize the read-only user for the database. If you do not set a password for this user before upgrading, then it will use a default, and it cannot be changed later. See `Changing the Read-Only Database Password <#changing-the-read-only-database-password>`_ for more information.
@@ -27,7 +27,7 @@ Before you can use the MySQL Client through the Liferay service, you must have y
 
 1. Navigate to the correct environment, and click _Services_:
 
-   ![Navigate to Services to see all services for your environment.](./using-the-mysql-client/images/01.png)
+    ![Navigate to Services to see all services for your environment.](./using-the-mysql-client/images/01.png)
 
 1. Click on the **liferay** service.
 
@@ -45,7 +45,7 @@ Please refer to the official [MySQL Client documentation](https://dev.mysql.com/
 
 The default user can only perform read queries on the database, and cannot manipulate data. This prevents accidental modifications that may corrupt data for your services.
 
-However, if it is *critical* to be able to manipulate data in the database, you can login using the database credentials by typing this command into the shell (instead of only typing `mysql`):
+However, if it is _critical_ to be able to manipulate data in the database, you can login using the database credentials by typing this command into the shell (instead of only typing `mysql`):
 
 ```bash
 mysql -u <user_name> -p <database_name>
@@ -71,4 +71,4 @@ You can add this variable from within the _Environment Variables_ tab:
 
 ## Related Information
 
-* [Database Service](../platform-services/database-service/database-service.md)
+-   [Database Service](../platform-services/database-service/database-service.md)

@@ -4,33 +4,33 @@ Keeping track of activities within each project environment is essential. With L
 
 ## Types of Environment Activities
 
-Within each environment, activities are organized into two sections: *Builds and Deployments* and *General Activities*.
+Within each environment, activities are organized into two sections: _Builds and Deployments_ and _General Activities_.
 
 **Builds and Deployments**: This section lists all build, deployment, and CI-related activities in a project environment. Each entry includes a Build ID, start time, duration, and status (e.g., in process, successful, failed, interrupted).
 
 **General Activities**: This section lists automated service events and manual team member activities other than build, deployment, and CI activities. General activities include the following categories:
 
-* **Services Activities**: examples include when environment variables are updated, and when services are installed, restarted, or deleted.
-* **Settings Activities**: examples include when Support Access is disabled or enabled, and when environment Secrets are added, edited, or viewed by team members.
-* **Backup Activities**: examples include when automated or manual backups start, and whether they succeed.
-* **Scaling Activities**: examples include when auto-scaling is enabled or disabled, and when the Liferay service is scaled up or downscaled.
-* **Membership Activities**: examples include when environment invitations are sent, and when new members join the environment.
+-   **Services Activities**: examples include when environment variables are updated, and when services are installed, restarted, or deleted.
+-   **Settings Activities**: examples include when Support Access is disabled or enabled, and when environment Secrets are added, edited, or viewed by team members.
+-   **Backup Activities**: examples include when automated or manual backups start, and whether they succeed.
+-   **Scaling Activities**: examples include when auto-scaling is enabled or disabled, and when the Liferay service is scaled up or downscaled.
+-   **Membership Activities**: examples include when environment invitations are sent, and when new members join the environment.
 
 Both sections specify the acting team member and the time of the activity.
 
 ## Viewing Environment Activities
 
-You can view summaries of recent environment activities from the environment *Overview* page under *Activities*.
+You can view summaries of recent environment activities from the environment _Overview_ page under _Activities_.
 
-Toggle between activity types by clicking on the *Builds and Deployments* or *General* tabs.
+Toggle between activity types by clicking on the _Builds and Deployments_ or _General_ tabs.
 
 ![Figure 1: View environment activities from the Overview page.](./team-activities/images/01.png)
 
-View extended records of environment activities from the *Activities* page:
+View extended records of environment activities from the _Activities_ page:
 
 1. Navigate to a project environment.
 
-1. Click on *Activities* in the environment menu.
+1. Click on _Activities_ in the environment menu.
 
 This page lists all activities that have occurred on the DXP Cloud instance.
 
@@ -42,6 +42,6 @@ This page lists all activities that have occurred on the DXP Cloud instance.
 
 ## Additional Information
 
-* [Environment Teams and Roles](./environment-teams-and-roles.md)
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Log Management](../troubleshooting/log-management.md)
+-   [Environment Teams and Roles](./environment-teams-and-roles.md)
+-   [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+-   [Log Management](../troubleshooting/log-management.md)

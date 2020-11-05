@@ -85,5 +85,5 @@ To configure the Numeric field to accept only integers:
 
 ## Additional Information
 
-* [Validation Conditions Reference](./validation-conditions-reference.md)
-* [Creating Forms](../creating-forms.md)
+-   [Validation Conditions Reference](./validation-conditions-reference.md)
+-   [Creating Forms](../creating-forms.md)

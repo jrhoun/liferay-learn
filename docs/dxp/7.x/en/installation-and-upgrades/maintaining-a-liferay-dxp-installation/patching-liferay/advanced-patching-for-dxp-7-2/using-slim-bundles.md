@@ -14,9 +14,9 @@ Liferay DXP 7.2 Fix Packs and Service Packs are also released bundled with the T
 
 Without the patching files for the Slim Bundle's respective Fix Pack/Service Pack, Slim Bundles are limited to these Patching Tool commands:
 
-* [`auto-discovery`](../configuring-the-patching-tool.md)
-* [`info`](../getting-patch-information.md)
-* `setup`
+-   [`auto-discovery`](../configuring-the-patching-tool.md)
+-   [`info`](../getting-patch-information.md)
+-   `setup`
 
 Slim Bundles can still be patched, but require the extra step of restoring the patching files. Each patch's patching files for each patch are available on the [Help Center](https://customer.liferay.com/downloads).
 
@@ -30,7 +30,7 @@ liferay-patching-files-[separation-name].zip file into the 'patches'
 directory and run patching-tool setup.
 ```
 
-Here's how to restore the patching files: 
+Here's how to restore the patching files:
 
 1. Download the Patching Files from the [Help Center](https://customer.liferay.com/downloads). Navigate to the Fix Pack or Service Pack and download the Patching Files by selecting _Patching Files_ in the dropdown and clicking _Download_.
 
@@ -52,5 +52,5 @@ You have learned the benefits of using a Slim Bundle and you know how to patch i
 
 ## Additional Information
 
-* [Installing Patches](../installing-patches.md)
-* [Slimming Down Patched Installations](./slimming-down-patched-installations.md)
+-   [Installing Patches](../installing-patches.md)
+-   [Slimming Down Patched Installations](./slimming-down-patched-installations.md)

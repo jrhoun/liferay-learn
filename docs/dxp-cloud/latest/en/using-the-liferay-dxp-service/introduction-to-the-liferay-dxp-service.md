@@ -6,13 +6,13 @@ The Liferay DXP service is the heartbeat of any project. It runs the application
 
 The Liferay DXP service in DXP Cloud can be used in many of the same ways as an on-premise instance of Liferay DXP. However, there are also several differences in configuration and development workflow when working with an instance in DXP Cloud.
 
-* [Choosing a Version](#choosing-a-version)
-* [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
-* [Configuration](#configuration)
-* [Hot Deploy](#hot-deploy)
-* [Enabling Clustering](#enabling-clustering)
-* [Environment Variables](#environment-variables-reference)
-* [Running Scripts](#running-scripts)
+-   [Choosing a Version](#choosing-a-version)
+-   [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
+-   [Configuration](#configuration)
+-   [Hot Deploy](#hot-deploy)
+-   [Enabling Clustering](#enabling-clustering)
+-   [Environment Variables](#environment-variables-reference)
+-   [Running Scripts](#running-scripts)
 
 ## Choosing a Version
 
@@ -73,9 +73,9 @@ The source code for new additions can also be included in a CI build. When the b
 
 A CI build will compile source code within these folders:
 
-* The `liferay/modules` folder for new modules
-* The `liferay/themes` folder for custom themes
-* The `liferay/wars` folder for exploded WARs
+-   The `liferay/modules` folder for new modules
+-   The `liferay/themes` folder for custom themes
+-   The `liferay/wars` folder for exploded WARs
 
 ```note::
    Source code will only be included in a deployment if it is deployed from a build in CI.
@@ -193,15 +193,15 @@ liferay
 
 ## Environment Variables Reference
 
-Name                                  | Default Value | Description  |
-------------------------------------- | ------------- | ------------ |
-`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `true` | Whether to enable clustering and communication between nodes. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |  | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |  | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
-`LIFERAY_JAVA_OPTS` | | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options. |
+| Name                                   | Default Value | Description                                                                                                                                                                            |
+| -------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`  | `true`        | Whether to enable clustering and communication between nodes.                                                                                                                          |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account.                                                                                          |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`  |               | A string with 22 characters that you can find in your Dynatrace account at _Deploy Dynatrace_ &rarr; _Start installation_ &rarr; _Set up PaaS monitoring_ &rarr; _Installer Download_. |
+| `LIFERAY_JAVA_OPTS`                    |               | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options.                                                                                      |
 
 ## Additional Information
 
-* [Logging Into Your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
-* [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
-* [Walking through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+-   [Logging Into Your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
+-   [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
+-   [Walking through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)

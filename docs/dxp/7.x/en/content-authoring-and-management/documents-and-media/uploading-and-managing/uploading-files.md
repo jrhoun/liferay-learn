@@ -20,7 +20,7 @@ The quickest way to upload a file is on the _Documents and Media_ widget deploye
 
 1. Click _Publish_ when finished.
 
-When a file is published, it is uploaded to the Site. Clicking on the file itself generates a preview inside the widget. You can download the file or share the file's URL. Depending on whatever permissions the user has, they can also lock the file to prevent others from modifying the file.  
+When a file is published, it is uploaded to the Site. Clicking on the file itself generates a preview inside the widget. You can download the file or share the file's URL. Depending on whatever permissions the user has, they can also lock the file to prevent others from modifying the file.
 
 ## Uploading Multiple Files
 
@@ -39,6 +39,6 @@ The files are now published to the Site.
 
 ## Additional Information
 
-* [Creating Folders](./creating-folders.md)
-* [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
-* [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)
+-   [Creating Folders](./creating-folders.md)
+-   [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
+-   [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)

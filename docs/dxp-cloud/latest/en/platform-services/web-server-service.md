@@ -1,19 +1,19 @@
 # Web Server Service (Nginx)
 
-The Nginx web server functions as a gateway from the open internet to your DXP 
-Cloud services. It handles all traffic from your users and acts as a 
-high-performance web server. 
+The Nginx web server functions as a gateway from the open internet to your DXP
+Cloud services. It handles all traffic from your users and acts as a
+high-performance web server.
 
 ![Figure 1: The web server is one of several services available in DXP Cloud.](./web-server-service/images/01.png)
 
 ## Configurations
 
-Although DXP Cloud's services are fine-tuned to work well by default, you may 
-need to configure Nginx further. To do this, you can include any CONF file 
-inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is 
-automatically injected into your service and overwrites the default 
-configuration. Here's an example folder structure of such a file inside the 
-appropriate directory: 
+Although DXP Cloud's services are fine-tuned to work well by default, you may
+need to configure Nginx further. To do this, you can include any CONF file
+inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is
+automatically injected into your service and overwrites the default
+configuration. Here's an example folder structure of such a file inside the
+appropriate directory:
 
     webserver
     ├── configs
@@ -30,21 +30,21 @@ Files in `/webserver/configs/{ENV}/` will be copied as overrides into /etc/nginx
 
 ## Environment Variables
 
-This service has no environment variables specific to DXP Cloud. All environment 
-variables and other forms of configuration for Nginx are in the 
-[official Nginx documentation](https://docs.nginx.com/). 
-You can set such configurations and environment variables in the `configs/{ENV}/` 
-directory and `LCP.json`, respectively. 
+This service has no environment variables specific to DXP Cloud. All environment
+variables and other forms of configuration for Nginx are in the
+[official Nginx documentation](https://docs.nginx.com/).
+You can set such configurations and environment variables in the `configs/{ENV}/`
+directory and `LCP.json`, respectively.
 
 ## Scripts
 
-You can use scripts for more extensive customizations. However, use caution when 
-doing so. This is the most powerful way to customize the web server service and 
-can cause undesired side effects. 
+You can use scripts for more extensive customizations. However, use caution when
+doing so. This is the most powerful way to customize the web server service and
+can cause undesired side effects.
 
-Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your 
-service. For example, to include a script that removes all log files, you could 
-place it in this directory structure: 
+Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your
+service. For example, to include a script that removes all log files, you could
+place it in this directory structure:
 
     webserver
     ├── configs

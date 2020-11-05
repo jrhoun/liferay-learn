@@ -24,10 +24,10 @@ Next, set the Tax Rate by Category and by Address:
 1. Select the Tax Category (for example, _Holiday Special_).
 1. Enter the following:
 
-    * **Rate**: Your tax rate
-    * **Country**: Applicable country
-    * **Region**: Leave blank to apply to the whole country
-    * **Zip**: Leave blank to apply to the whole country
+    - **Rate**: Your tax rate
+    - **Country**: Applicable country
+    - **Region**: Leave blank to apply to the whole country
+    - **Zip**: Leave blank to apply to the whole country
 
     ![Activate tax calculations by address](./setting-tax-rate-by-address/images/04.png)
 
@@ -57,10 +57,10 @@ Next, set the Tax Rate by Category and by Address:
 1. Select the Tax Category (for example, _Holiday Special_).
 1. Enter the following:
 
-    * **Rate**: Your tax rate
-    * **Country**: Applicable country
-    * **Region**: Leave blank to apply to the whole country
-    * **Zip**: Leave blank to apply to the whole country
+    - **Rate**: Your tax rate
+    - **Country**: Applicable country
+    - **Region**: Leave blank to apply to the whole country
+    - **Zip**: Leave blank to apply to the whole country
 
     ![Activate tax calculations by address](./setting-tax-rate-by-address/images/04.png)
 
@@ -103,5 +103,5 @@ To designate a tax rate for a country, leave _Region_ and _Zip_ blank; to design
 
 If you assign multiple settings to a single tax category (but specify different geographical areas), the rate appropriate to the buyer’s location is used. If you assign both a by address rate and a fixed rate to a single tax category, both rates will be applied.
 
-* [Setting Tax Rates by Fixed Rate](../configuring-taxes/setting-tax-rate-by-fixed-rate.md)
-* [Creating Tax Categories](../configuring-taxes/creating-tax-categories.md)
+-   [Setting Tax Rates by Fixed Rate](../configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+-   [Creating Tax Categories](../configuring-taxes/creating-tax-categories.md)

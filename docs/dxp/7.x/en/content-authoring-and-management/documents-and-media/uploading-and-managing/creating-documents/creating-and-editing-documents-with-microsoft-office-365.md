@@ -10,9 +10,9 @@ The first time you create or edit a Documents and Media file via Office 365&trad
 
 Unlinking your account takes only three steps:
 
-1. Click on *your profile* &rarr; *Account Settings*.
-1. On the *General* tab, click *Apps*.
-1. Click *Revoke* next to OneDrive&trade;.
+1. Click on _your profile_ &rarr; _Account Settings_.
+1. On the _General_ tab, click _Apps_.
+1. Click _Revoke_ next to OneDrive&trade;.
 
     ![You can unlink your account from the portal.](./creating-and-editing-documents-with-microsoft-office-365/images/01.png)
 
@@ -20,18 +20,18 @@ OneDrive&trade; has been unlinked.
 
 ## Creating Files
 
-1. Open the *Menu* (![Product Menu](../../../../images/icon-menu.png)), click your Site's name, and navigate to *Content & Data* &rarr; *Documents and Media*.
-1. Click the *Add* icon (![Add](../../../../images/icon-add.png)) and select the type of Office 365&trade; document to add to the Document Library:
+1. Open the _Menu_ (![Product Menu](../../../../images/icon-menu.png)), click your Site's name, and navigate to _Content & Data_ &rarr; _Documents and Media_.
+1. Click the _Add_ icon (![Add](../../../../images/icon-add.png)) and select the type of Office 365&trade; document to add to the Document Library:
 
-    * Word&trade;
-    * Excel&trade;
-    * PowerPoint&trade;
+    - Word&trade;
+    - Excel&trade;
+    - PowerPoint&trade;
 
     When you select one of these options, a new window opens for you to enter the document's name.
 
     ![Select the type of document you want to create.](./creating-and-editing-documents-with-microsoft-office-365/images/02.png)
 
-1. Enter the document's name in the *Title* field, and click *Save*. When you click *Save*, DXP creates a temporary Documents and Media file and links it to the new Office 365&trade; file. Your browser then opens a new window with that Office 365&trade; file so you can create its content.
+1. Enter the document's name in the _Title_ field, and click _Save_. When you click _Save_, DXP creates a temporary Documents and Media file and links it to the new Office 365&trade; file. Your browser then opens a new window with that Office 365&trade; file so you can create its content.
 
     ![When you create a document, you must give it a name.](./creating-and-editing-documents-with-microsoft-office-365/images/03.png)
 
@@ -41,9 +41,9 @@ OneDrive&trade; has been unlinked.
 
     **Check in:** Saves the Office 365&trade; file to Documents and Media, then deletes the file from Office 365&trade;. The saved file's format depends on the document type you selected in step two above.
 
-    * Word: Microsoft Word&trade; (`.docx`)
-    * PowerPoint: Microsoft PowerPoint&trade; (`.pptx`)
-    * Excel: Microsoft Excel&trade; (`.xlsx`)
+    - Word: Microsoft Word&trade; (`.docx`)
+    - PowerPoint: Microsoft PowerPoint&trade; (`.pptx`)
+    - Excel: Microsoft Excel&trade; (`.xlsx`)
 
     **Cancel Checkout:** Deletes the Office 365&trade; file, discarding any changes.
 
@@ -51,15 +51,15 @@ OneDrive&trade; has been unlinked.
 
 You can use Office 365&trade; to edit the following types of Documents and Media files:
 
-* Text files (`.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, `.dotm`, `.html`, `.txt`, `.rtf`, `.odt`)
-* Presentation files (`.ppt`, `.pptx`, `.pptm`, `.pps`, `.ppsx`, `.ppsm`, `.pot`, `.potx`, `.potm`)
-* Spreadsheet files (`.xls`, `.xlsx`, `.xlsm`, `.xlt`, `.xltx`, `.xltm`, `.ods`, `.csv`, `.tsv`, `.txt`, `.tab`)
+-   Text files (`.doc`, `.docx`, `.docm`, `.dot`, `.dotx`, `.dotm`, `.html`, `.txt`, `.rtf`, `.odt`)
+-   Presentation files (`.ppt`, `.pptx`, `.pptm`, `.pps`, `.ppsx`, `.ppsm`, `.pot`, `.potx`, `.potm`)
+-   Spreadsheet files (`.xls`, `.xlsx`, `.xlsm`, `.xlt`, `.xltx`, `.xltm`, `.ods`, `.csv`, `.tsv`, `.txt`, `.tab`)
 
 Follow these steps to edit a Documents and Media file in Office 365&trade;:
 
 1. Navigate to the file in the Documents and Media Library.
 
-1. Click the file's Actions icon (![Actions](../../../../images/icon-actions.png)) and select *Edit in Office 365*. This automatically [checks out](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) the file, transfers its content to a new Office 365&trade; file, and redirects you to that file Office 365&trade;.
+1. Click the file's Actions icon (![Actions](../../../../images/icon-actions.png)) and select _Edit in Office 365_. This automatically [checks out](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) the file, transfers its content to a new Office 365&trade; file, and redirects you to that file Office 365&trade;.
 
 1. Edit the file in Office 365&trade;. The editing process is exactly the same as described above for creating files.
 
@@ -67,5 +67,5 @@ Follow these steps to edit a Documents and Media file in Office 365&trade;:
 
 ## Additional Information
 
-* [Enabling Document Creation and Editing with Microsoft Office 365](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
-* [Creating and Editing Documents with Google Drive](./creating-and-editing-documents-with-google-drive.md)
+-   [Enabling Document Creation and Editing with Microsoft Office 365](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
+-   [Creating and Editing Documents with Google Drive](./creating-and-editing-documents-with-google-drive.md)

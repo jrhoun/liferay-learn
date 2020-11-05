@@ -18,10 +18,10 @@ Here you'll learn the basic elements to secure Liferay DXP. This includes config
 
 Liferay DXP authentication is flexible. By default, users log into Liferay DXP by using the _Sign In_ widget, which uses the database to authenticate the user. By default, guests can use the Sign In widget to create accounts with default permissions. Nearly every element of the default authentication experience can be changed by an administrator. For example,
 
-* You can configure [Multi-Factor authentication](./multi-factor-authentication/using-multi-factor-authentication.md).
-* You can [use an SSO to manage](./configuring-sso/README.md) authentication.
-* Liferay can also be [integrated with LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) to validate users instead of using the portal database.
-* Guest account creation can be [turned off](./authentication-basics.md#disabling-guest-account-creation).
+-   You can configure [Multi-Factor authentication](./multi-factor-authentication/using-multi-factor-authentication.md).
+-   You can [use an SSO to manage](./configuring-sso/README.md) authentication.
+-   Liferay can also be [integrated with LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) to validate users instead of using the portal database.
+-   Guest account creation can be [turned off](./authentication-basics.md#disabling-guest-account-creation).
 
 To learn more, see [Authentication Basics](./authentication-basics.md).
 
@@ -33,9 +33,9 @@ Liferay DXP has a robust role-based access control (RBAC) system. Users can be a
 
 Liferay Web Services have a multi-layered and configurable approach to security and authorization:
 
-* [Service Access Policies](./securing-web-services/setting-service-access-policies.md) control access to remote APIs.
-* [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) verify provided credentials.
-* [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
+-   [Service Access Policies](./securing-web-services/setting-service-access-policies.md) control access to remote APIs.
+-   [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) verify provided credentials.
+-   [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
 
 See [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md) to learn more.
 
@@ -43,10 +43,10 @@ See [Introduction to Securing Web Services](./securing-web-services/introduction
 
 There are many ways to fine-tune or disable additional security features:
 
-* Configure Liferay Portal's HTTPS [web server](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Web%20Server) address.
-* Configure the list of allowed servers to which users can be [redirected](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Redirect).
-* Configure the list of [portlets](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Portlet) that can be accessed from any page.
-* Configure the file types allowed to be uploaded and downloaded.
+-   Configure Liferay Portal's HTTPS [web server](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Web%20Server) address.
+-   Configure the list of allowed servers to which users can be [redirected](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Redirect).
+-   Configure the list of [portlets](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Portlet) that can be accessed from any page.
+-   Configure the file types allowed to be uploaded and downloaded.
 
 These features can be configured using [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).
 
@@ -62,5 +62,5 @@ There are additional security plugins available from [Liferay Marketplace](https
 
 ## Next Steps
 
-* [Authentication Basics](./authentication-basics.md)
-* [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)
+-   [Authentication Basics](./authentication-basics.md)
+-   [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)

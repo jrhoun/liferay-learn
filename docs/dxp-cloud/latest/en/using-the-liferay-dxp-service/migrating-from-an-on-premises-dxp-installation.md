@@ -11,7 +11,7 @@ This article will walk you through the essential steps for migrating your existi
 
 The most important part of the process in migrating to DXP Cloud is importing the database and document library. Both the database and document library must be imported at the same time to ensure that the data and the records in the database remain synchronized.
 
-This step should be done when the database is not being updated in order to prevent losing data. This will normally require reserving a window to freeze the data for migration. 
+This step should be done when the database is not being updated in order to prevent losing data. This will normally require reserving a window to freeze the data for migration.
 
 ### Export a Database Dump
 

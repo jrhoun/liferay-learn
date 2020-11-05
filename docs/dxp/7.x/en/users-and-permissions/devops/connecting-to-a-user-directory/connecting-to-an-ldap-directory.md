@@ -6,15 +6,15 @@ Lightweight Directory Access Protocol (LDAP) servers are common user stores for 
 
 To access LDAP configuration settings at the Instance level,
 
-1. Navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings*
+1. Navigate to _Control Panel &rarr; Configuration_ &rarr; _Instance Settings_
 
     ![LDAP configurations are available at the instance level and at the System level.](./connecting-to-an-ldap-directory/images/01.png)
 
-1. Click *LDAP* &rarr; and click *Servers*
-1. Click the *Add* button to add an LDAP server connection.
+1. Click _LDAP_ &rarr; and click _Servers_
+1. Click the _Add_ button to add an LDAP server connection.
 1. Enter configuration values for your LDAP server. See the [configuration reference](#ldap-server-configuration-reference) for details.
 
-You may, however, need to customize the rest of the configuration, as it represents "best guesses" as to correct defaults. The default attribute mappings usually provide enough data to synchronize back to the Liferay database when a user attempts to log in. To test the connection to your LDAP server, click the *Test LDAP Connection* button.
+You may, however, need to customize the rest of the configuration, as it represents "best guesses" as to correct defaults. The default attribute mappings usually provide enough data to synchronize back to the Liferay database when a user attempts to log in. To test the connection to your LDAP server, click the _Test LDAP Connection_ button.
 
 If you have more than one LDAP server, you can arrange the servers by order of preference using the up/down arrows. Regardless of how many LDAP servers you add, each server has the same configuration options.
 
@@ -58,9 +58,9 @@ Before proceeding to fine tune Liferay's LDAP connections, ensure the following 
 
 1. The LDAP connection is enabled. Depending on your needs, LDAP authentication may be required so that only users who have been bound may log in.
 
-1. *Export/Import*: for users in a clustered environment, Enable Import/Export on Startup should be disabled so that there are no massive imports on every node upon start up.
+1. _Export/Import_: for users in a clustered environment, Enable Import/Export on Startup should be disabled so that there are no massive imports on every node upon start up.
 
-1. When adding the LDAP server, the *Server Name*, *Default Values*, *Connection* values are correct. It is always a good idea to click the *Test LDAP Connection* before saving.
+1. When adding the LDAP server, the _Server Name_, _Default Values_, _Connection_ values are correct. It is always a good idea to click the _Test LDAP Connection_ before saving.
 
 ## Using SSL to Connect to an LDAP Server
 
@@ -68,15 +68,15 @@ If you run your LDAP directory in SSL mode to encrypt credential information on 
 
 For example, if your LDAP directory is Microsoft Active Directory on Windows Server 2003, you'd share the certificate like this:
 
-1. Click *Start* &rarr; *Administrative Tools* &rarr; *Certificate Authority*.
+1. Click _Start_ &rarr; _Administrative Tools_ &rarr; _Certificate Authority_.
 
-1. Highlight the machine that is the certificate authority, right-click on it, and click *Properties*.
+1. Highlight the machine that is the certificate authority, right-click on it, and click _Properties_.
 
-1. From the General menu, click *View Certificate*.
+1. From the General menu, click _View Certificate_.
 
-1. Select the Details view, and click *Copy To File*. Use the resulting wizard to save the certificate as a file.
+1. Select the Details view, and click _Copy To File_. Use the resulting wizard to save the certificate as a file.
 
-1. Import the certificate into the *cacerts keystore* like this:
+1. Import the certificate into the _cacerts keystore_ like this:
 
     ```bash
     keytool -import -trustcacerts -keystore /some/path/java-8-jdk/jre/lib/security/cacerts -storepass changeit -noprompt -alias MyRootCA -file /some/path/MyRootCA.cer

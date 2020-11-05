@@ -8,15 +8,15 @@ Role creation and management is conducted in Control Panel &rarr; Users &rarr; R
 
 First, [determine the scope](./understanding-roles-and-permissions.md) of the Role you must create. Roles can be scoped globally (Regular Roles), to a specific Site (Site Roles), or to an Organization (Organization Roles).
 
-1. Click the tab for the proper Role scope, then click the *Add* (![Add](../../images/icon-add.png)) button. 
+1. Click the tab for the proper Role scope, then click the _Add_ (![Add](../../images/icon-add.png)) button.
 
-1. Enter a title and description. The title field is required but the description is optional. 
+1. Enter a title and description. The title field is required but the description is optional.
 
 1. Enter a Key, if desired. It's a required field, but one is created automatically based on the Title if you don't specify it manually.
 
-   The Key can be used to refer to the Role programmatically.
+    The Key can be used to refer to the Role programmatically.
 
-1. Click *Save*.
+1. Click _Save_.
 
 ![Creating a Role by filling out just one required field: Title.](./creating-and-managing-roles/images/02.png)
 
@@ -50,15 +50,15 @@ By default, every Role, at every scope, can be managed by the _Owner_ Regular Ro
 
 A Web Content Folder contains Web Content articles. The Web Content Folder is an asset container, and the Web Content Article is an asset. It's possible to give a Role permission to delete an asset container without giving the Role permission to delete individual assets. In that case, beware: if a Role assignee deletes an asset container with individual assets in it, the individual assets themselves are deleted as well.
 
-| Asset Container | Asset |
-| --------------------------- | ------- |
-| Web Content Folder          | Web Content Article |
-| Knowledge Base Folder       | Knowledge Base Article |
-| Message Boards Category     | Message Boards Thread |
-| Wiki Node                   | Wiki Page |
-| Documents and Media Folder  | Document |
-| Form                        | Form Record |
-| Dynamic Data List           | Dynamic Data List Records |
-| App Builder Object          | App Builder App |
+| Asset Container            | Asset                     |
+| -------------------------- | ------------------------- |
+| Web Content Folder         | Web Content Article       |
+| Knowledge Base Folder      | Knowledge Base Article    |
+| Message Boards Category    | Message Boards Thread     |
+| Wiki Node                  | Wiki Page                 |
+| Documents and Media Folder | Document                  |
+| Form                       | Form Record               |
+| Dynamic Data List          | Dynamic Data List Records |
+| App Builder Object         | App Builder App           |
 
 Besides Web Content Folders, examples of asset containers include Bookmarks Folders, Message Boards Categories, Wiki Nodes, and Documents and Media Folders.

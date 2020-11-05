@@ -6,10 +6,10 @@ Being _forgotten_ by software is removing the ability for even administrators to
 
 Conceptually, forgetting a User means two things, at a minimum:
 
-* Erasing the User's identifying information from the system. In Liferay DXP, this entails removing the User from database tables and search indexes.
-* Erasing or anonymizing content the User has interacted with so it cannot be tracked to a real person.
+-   Erasing the User's identifying information from the system. In Liferay DXP, this entails removing the User from database tables and search indexes.
+-   Erasing or anonymizing content the User has interacted with so it cannot be tracked to a real person.
 
-``` tip::
+```tip::
    `Isn't User deactivation and deletion enough?`
 
    Deleting removes the User from the table of Users in the database. The User's information, however, is preserved in other locations. In a standard User deletion scenario, all of a User's personally created content is still assigned to the User by the system's identifiers (User ID and User Name) and still appears in the UI next to the content. This unintentional preservation of user-identifying data is inadequate for satisfying some of the GDPR requirements and is the primary reason why the data erasure functionality was added.
@@ -21,15 +21,15 @@ User data deletion and anonymization both happen in the same place: the Personal
 
 1. Open the Applications Menu (![Applications Menu](../../images/icon-applications-menu.png)) and go to Control Panel &rarr; Users &rarr; Users and Organizations.
 
-1. Click the Actions button for a User (![Actions](../../images/icon-actions.png)) and select *Delete Personal Data*. If you have not deactivated the User, you are asked to do so.
+1. Click the Actions button for a User (![Actions](../../images/icon-actions.png)) and select _Delete Personal Data_. If you have not deactivated the User, you are asked to do so.
 
-   The User's Personal Data Erasure screen appears.
+    The User's Personal Data Erasure screen appears.
 
-You can browse all data the User has posted on the system. Click *Personal Site* to browse data from that Site.
+You can browse all data the User has posted on the system. Click _Personal Site_ to browse data from that Site.
 
 ![From here, you can browse all data the User posted on his or her personal Site.](./sanitizing-user-data/images/01.png)
 
-Click *Regular Sites* to browse data posted in regular Liferay Sites.
+Click _Regular Sites_ to browse data posted in regular Liferay Sites.
 
 ![Choose Regular Sites to browse all data posted by the User on administratively-created Sites.](./sanitizing-user-data/images/02.png)
 
@@ -37,21 +37,21 @@ To review the User's data, click the item. For example, Pepper seems to have pos
 
 ![Pepper's blog entry might need review.](./sanitizing-user-data/images/03.png)
 
-To review any entry, click it. You're brought to the application's edit mode (in this case, Blogs), where you can make any changes to the content that are necessary. 
+To review any entry, click it. You're brought to the application's edit mode (in this case, Blogs), where you can make any changes to the content that are necessary.
 
-To manage (anonymize or delete) all the items for an application at once, 
+To manage (anonymize or delete) all the items for an application at once,
 
 1. Click the Actions button (![Actions](../../images/icon-actions.png)) for the application.
 
-1. If you're sure all items for an application can be safely deleted, choose *Delete*. 
+1. If you're sure all items for an application can be safely deleted, choose _Delete_.
 
-1. If you're sure simple anonymization is good enough for all of an application's items, choose *Anonymize*.
+1. If you're sure simple anonymization is good enough for all of an application's items, choose _Anonymize_.
 
-Use the interface to browse through the Sites, applications, and data. 
+Use the interface to browse through the Sites, applications, and data.
 
 ## Delete the User
 
-Once all data is reviewed, deleted, edited, and/or anonymized as appropriate, delete the User. A dialog box pops up automatically when you're finished in the Personal Data Erasure screen. This step is simple: Click *OK*.
+Once all data is reviewed, deleted, edited, and/or anonymized as appropriate, delete the User. A dialog box pops up automatically when you're finished in the Personal Data Erasure screen. This step is simple: Click _OK_.
 
 ![To finish the data erasure process, delete the User.](./sanitizing-user-data/images/04.png)
 

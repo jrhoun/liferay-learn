@@ -12,27 +12,27 @@ To export user data,
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-1. Go to *Control Panel* &rarr; *Users* &rarr; *Users and Organizations*.
+1. Go to _Control Panel_ &rarr; _Users_ &rarr; _Users and Organizations_.
 
-1. Find the User and click the Actions button (![Actions](../../images/icon-actions.png)), then click *Export Personal Data*.
+1. Find the User and click the Actions button (![Actions](../../images/icon-actions.png)), then click _Export Personal Data_.
 
-   This opens the User's Export Personal Data screen.
+    This opens the User's Export Personal Data screen.
 
-1. If there are no existing export processes shown, click the *Add* button (![Add](../../images/icon-add.png)). The tool for exporting the User's data appears.
+1. If there are no existing export processes shown, click the _Add_ button (![Add](../../images/icon-add.png)). The tool for exporting the User's data appears.
 
-   ![The Export Personal Data tool lets you export all or some of the User's data.](./exporting-user-data/images/01.png)
+    ![The Export Personal Data tool lets you export all or some of the User's data.](./exporting-user-data/images/01.png)
 
-1. Most of the time you want to export all the available data. Click *Select Items*, and all applications containing User data are selected in the UI.
+1. Most of the time you want to export all the available data. Click _Select Items_, and all applications containing User data are selected in the UI.
 
-1. Click *Export*. You're taken back to the User's Export Personal Data screen, but now there's an export process in the list.
+1. Click _Export_. You're taken back to the User's Export Personal Data screen, but now there's an export process in the list.
 
-   ![Once User data is successfully exported, the export process appears in the User's Export Personal Data list.](./exporting-user-data/images/02.png)
+    ![Once User data is successfully exported, the export process appears in the User's Export Personal Data list.](./exporting-user-data/images/02.png)
 
-1. Download the data. Click the Actions button (![Actions](../../images/icon-actions.png)) for the process and select *Download*.
+1. Download the data. Click the Actions button (![Actions](../../images/icon-actions.png)) for the process and select _Download_.
 
 ## Examining Exported Data
 
-The exported data looks like this: 
+The exported data looks like this:
 
 ```xml
 <?xml version="1.0"?>

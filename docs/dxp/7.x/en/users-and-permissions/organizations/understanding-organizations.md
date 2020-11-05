@@ -19,13 +19,13 @@ This has great benefits. If, for example, a large company has modeled its organi
 
 ### Organization Administrators
 
-Organization administrators are *delegated* administrators. This means they get a piece of your portal---a piece you define---to take some of the load of administration off of your shoulders. Organization Administrators can do these things:
+Organization administrators are _delegated_ administrators. This means they get a piece of your portal---a piece you define---to take some of the load of administration off of your shoulders. Organization Administrators can do these things:
 
-* Manage all the Users in their Organization and in any child Organization.
-* Optionally, assign Users to their Organization (see the `Organizations` [section of the portal-ext.properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Organizations)).
-* Manage an Organization's Site, just like a Site Administrator.
+-   Manage all the Users in their Organization and in any child Organization.
+-   Optionally, assign Users to their Organization (see the `Organizations` [section of the portal-ext.properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Organizations)).
+-   Manage an Organization's Site, just like a Site Administrator.
 
-Organization administrators can't access the Control Panel by default. Instead, they can click the *My Organizations* link to gain access to any Organizations they manage.
+Organization administrators can't access the Control Panel by default. Instead, they can click the _My Organizations_ link to gain access to any Organizations they manage.
 
 ![Organization administrators can access their Organizations from their profile.](./understanding-organizations/images/03.png)
 
@@ -35,4 +35,4 @@ An Organization can have its own Site. Organization Sites are owned by Organizat
 
 ## Next Steps
 
-* [Creating and Managing Organizations](./creating-and-managing-organizations.md)
+-   [Creating and Managing Organizations](./creating-and-managing-organizations.md)

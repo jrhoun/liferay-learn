@@ -10,12 +10,12 @@ Administrators can configure the volumes for their services in DXP Cloud dependi
 
 ```json
 {
-    "id": "lfr",
-    "memory": 6144,
-    "cpu": 4,
-    "volumes": {
-        "data": "/liferay/opt/data"
-    }
+	"id": "lfr",
+	"memory": 6144,
+	"cpu": 4,
+	"volumes": {
+		"data": "/liferay/opt/data"
+	}
 }
 ```
 
@@ -32,9 +32,9 @@ To share a volume:
 1. Navigate to the `LCP.json` file in the Github repository for the service (`[ProjectID]/liferay/LCP.json`).
 
 1. Enter the following:
-     * service's ID
-     * location (absolute path) of the content to be shared
-     * the same volume key for the different services
+    - service's ID
+    - location (absolute path) of the content to be shared
+    - the same volume key for the different services
 
 In the following example, `service1` and `service2` will share files from `/documents/images` using a shared volume in NFS. This way, both services can access the files within the volume via the key and declared file paths.
 
@@ -42,10 +42,10 @@ The first service (`service1`) shares photos from `/documents/images`:
 
 ```json
 {
-  "id": "service1",
-  "volumes": {
-    "photos": "/documents/images"
-  }
+	"id": "service1",
+	"volumes": {
+		"photos": "/documents/images"
+	}
 }
 ```
 
@@ -53,10 +53,10 @@ The second service (`service2`) declares a volume in the same location, allowing
 
 ```json
 {
-  "id": "service2",
-  "volumes": {
-    "photos": "/documents/images"
-  }
+	"id": "service2",
+	"volumes": {
+		"photos": "/documents/images"
+	}
 }
 ```
 
@@ -68,6 +68,6 @@ Both services will be able to access the specified volume in NFS on the next dep
 
 ## Additional Information
 
-* [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
-* [Configuring via LCP.json](../reference/configuration-via-lcp-json.md)
-* [Understanding Deployment Types](./understanding-deployment-types.md)
+-   [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
+-   [Configuring via LCP.json](../reference/configuration-via-lcp-json.md)
+-   [Understanding Deployment Types](./understanding-deployment-types.md)

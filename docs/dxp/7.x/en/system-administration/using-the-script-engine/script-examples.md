@@ -44,7 +44,7 @@ This example retrieves user information from the database, modifies Users, and t
 
     The script sets each User's `agreedToTermsOfUse` field to `false`. It skips the default User as well as the default admin User that's currently signed in and running the script.
 
-1. Click *Execute*.
+1. Click _Execute_.
 
 1. Verify the script updated the records by running the first script again.
 
@@ -131,6 +131,6 @@ Congratulations! You've executed various scripts in the Script Console.
 
 ## Additional Information
 
-* [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
-* [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
-* [Using the Script Engine](./using-the-script-engine.md)
+-   [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
+-   [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
+-   [Using the Script Engine](./using-the-script-engine.md)

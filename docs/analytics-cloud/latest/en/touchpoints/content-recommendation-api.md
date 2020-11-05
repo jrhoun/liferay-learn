@@ -4,8 +4,8 @@ The Content Recommendation API in Liferay Analytics Cloud suggests content based
 
 The Content Recommendation API contains services that enable the following:
 
-* Discover similar tags (content) based on the current tags the user is browsing.
-* Discover tags based on the user's interest over time.
+-   Discover similar tags (content) based on the current tags the user is browsing.
+-   Discover tags based on the user's interest over time.
 
 ## Discover Similar Tags
 
@@ -31,21 +31,15 @@ For example, here's a JSON response that contains related terms:
 
 ```json
 {
-  "_embedded": {
-    "interest-terms": [
-      "jquery",
-      "html",
-      "sql",
-      "mysql",
-      "java"
-    ]
-  },
-  "page": {
-    "number": 0,
-    "size": 5,
-    "totalPages": 7,
-    "totalElements": 35
-  }
+	"_embedded": {
+		"interest-terms": ["jquery", "html", "sql", "mysql", "java"]
+	},
+	"page": {
+		"number": 0,
+		"size": 5,
+		"totalPages": 7,
+		"totalElements": 35
+	}
 }
 ```
 
@@ -77,63 +71,63 @@ And here's an example response in JSON:
 
 ```json
 {
-  "_embedded": {
-    "interest-topics": [
-      {
-        "terms": [
-          {
-            "weight": 0.0945945945945946,
-            "keyword": "javascript"
-          },
-          {
-            "weight": 0.08648648648648649,
-            "keyword": "jquery"
-          },
-          {
-            "weight": 0.07027027027027027,
-            "keyword": "html"
-          }
-        ],
-        "weight": 0.08653350323695352,
-        "id": 7
-      },
-      {
-        "terms": [
-          {
-            "weight": 0.1322314049586777,
-            "keyword": "php"
-          },
-          {
-            "weight": 0.06060606060606061,
-            "keyword": "sql"
-          },
-          {
-            "weight": 0.05509641873278237,
-            "keyword": "mysql"
-          }
-        ],
-        "weight": 0.08027610626914822,
-        "id": 1
-      },
-      {
-        "terms": [
-          {
-            "weight": 0.15204678362573099,
-            "keyword": "java"
-          },
-          {
-            "weight": 0.10526315789473684,
-            "keyword": "android"
-          },
-          {
-            "weight": 0.023391812865497075,
-            "keyword": "multithreading"
-          }
-        ],
-        "weight": 0.07511374008317741,
-        "id": 9
-      }
-    ]
-  }
+	"_embedded": {
+		"interest-topics": [
+			{
+				"terms": [
+					{
+						"weight": 0.0945945945945946,
+						"keyword": "javascript"
+					},
+					{
+						"weight": 0.08648648648648649,
+						"keyword": "jquery"
+					},
+					{
+						"weight": 0.07027027027027027,
+						"keyword": "html"
+					}
+				],
+				"weight": 0.08653350323695352,
+				"id": 7
+			},
+			{
+				"terms": [
+					{
+						"weight": 0.1322314049586777,
+						"keyword": "php"
+					},
+					{
+						"weight": 0.06060606060606061,
+						"keyword": "sql"
+					},
+					{
+						"weight": 0.05509641873278237,
+						"keyword": "mysql"
+					}
+				],
+				"weight": 0.08027610626914822,
+				"id": 1
+			},
+			{
+				"terms": [
+					{
+						"weight": 0.15204678362573099,
+						"keyword": "java"
+					},
+					{
+						"weight": 0.10526315789473684,
+						"keyword": "android"
+					},
+					{
+						"weight": 0.023391812865497075,
+						"keyword": "multithreading"
+					}
+				],
+				"weight": 0.07511374008317741,
+				"id": 9
+			}
+		]
+	}
 }
 ```

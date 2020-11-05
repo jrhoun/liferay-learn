@@ -4,37 +4,37 @@
 
 Some modules in the Adaptive Media app are mandatory and must be enabled for Adaptive Media to function, while others can be disabled. The Adaptive Media API modules, which export packages for the other modules to consume, are mandatory; disabling one also disables any other modules that depend on it. Here's a list of the Adaptive Media API modules:
 
-* Liferay Adaptive Media API
-* Liferay Adaptive Media Content Transformer API
-* Liferay Adaptive Media Image API
-* Liferay Adaptive Media Image Item Selector API
+-   Liferay Adaptive Media API
+-   Liferay Adaptive Media Content Transformer API
+-   Liferay Adaptive Media Image API
+-   Liferay Adaptive Media Image Item Selector API
 
 The Adaptive Media core modules are also mandatory, and must be enabled to ensure that Adaptive Media works as expected:
 
-* Liferay Adaptive Media Document Library
-* Liferay Adaptive Media Document Library Item Selector Web
-* Liferay Adaptive Media Document Library Web
-* Liferay Adaptive Media Image Content Transformer
-* Liferay Adaptive Media Image Implementation
-* Liferay Adaptive Media Image Item Selector Implementation
-* Liferay Adaptive Media Image JS Web
-* Liferay Adaptive Media Image Service
-* Liferay Adaptive Media Image Taglib
-* Liferay Adaptive Media Image Web
-* Liferay Adaptive Media Item Selector Upload Web
-* Liferay Adaptive Media Web
+-   Liferay Adaptive Media Document Library
+-   Liferay Adaptive Media Document Library Item Selector Web
+-   Liferay Adaptive Media Document Library Web
+-   Liferay Adaptive Media Image Content Transformer
+-   Liferay Adaptive Media Image Implementation
+-   Liferay Adaptive Media Image Item Selector Implementation
+-   Liferay Adaptive Media Image JS Web
+-   Liferay Adaptive Media Image Service
+-   Liferay Adaptive Media Image Taglib
+-   Liferay Adaptive Media Image Web
+-   Liferay Adaptive Media Item Selector Upload Web
+-   Liferay Adaptive Media Web
 
 The Adaptive Media Blogs modules, which ensure that images uploaded to blog entries can be processed and adapted, are optional. Here's a list of these modules:
 
-* Liferay Adaptive Media Blogs Editor Configuration
-* Liferay Adaptive Media Blogs Item Selector Web
-* Liferay Adaptive Media Blogs Web
-* Liferay Adaptive Media Blogs Web Fragment
+-   Liferay Adaptive Media Blogs Editor Configuration
+-   Liferay Adaptive Media Blogs Item Selector Web
+-   Liferay Adaptive Media Blogs Web
+-   Liferay Adaptive Media Blogs Web Fragment
 
 The Adaptive Media Journal modules are optional. These modules apply Adaptive Media to web content articles:
 
-* Liferay Adaptive Media Journal Editor Configuration
-* Liferay Adaptive Media Journal Web
+-   Liferay Adaptive Media Journal Editor Configuration
+-   Liferay Adaptive Media Journal Web
 
 There are two more optional modules included in Adaptive Media:
 

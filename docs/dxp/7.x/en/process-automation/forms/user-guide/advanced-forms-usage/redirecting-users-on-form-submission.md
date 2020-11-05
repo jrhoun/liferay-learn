@@ -4,7 +4,7 @@ By default, when a user submits a form response, they are directed to a [success
 
 Follow these steps to set up a redirect URL:
 
-1. Open the form's _Form Settings_ section by clicking the *Options* button (![Options](../../../../images/icon-options.png)).
+1. Open the form's _Form Settings_ section by clicking the _Options_ button (![Options](../../../../images/icon-options.png)).
 1. Click _Settings_.
 1. Enter the redirect URL in the _Redirect URL_ field.
 
@@ -14,4 +14,4 @@ Follow these steps to set up a redirect URL:
 
 ## Additional Information
 
-* [Creating Forms](../creating-forms.md)
+-   [Creating Forms](../creating-forms.md)

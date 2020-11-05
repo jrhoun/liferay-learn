@@ -5,19 +5,19 @@ These steps show how to personalize and manage Content Page user experiences bas
 ## Creating a New Content Page Experience
 
 1. Navigate to an existing Content Page or [create a new Content Page](../../creating-pages/building-and-managing-content-pages/building-content-pages.md).
-1. At the top of the page, for the *Experience* click on *Default* to open the experience selection dialog.
+1. At the top of the page, for the _Experience_ click on _Default_ to open the experience selection dialog.
 
     ![Click on the current experience to create a new one or select a different existing experience.](./content-page-personalization/images/01.png)
 
-1. Click on *New Experience*.
+1. Click on _New Experience_.
 1. Give it a name and select the User Segment for the audience you want to cater the experience to, or create a new User Segment if your target audience for the Experience is not yet represented by a User Segment.
 
     ![You can add a new Segment while creating a new Experience.](./content-page-personalization/images/02.png)
 
 1. Modify the page layout and content to display the information you want to show to the selected User Segment.
-1. Click *Publish*.
+1. Click _Publish_.
 
-The *Default* version of the page appears for everyone except for members of the selected User Segment, who are presented with a version of the site for their defined User Segment. The example in the figure below creates a new experience for a fictional *Premium Card Prospects* User Segment.
+The _Default_ version of the page appears for everyone except for members of the selected User Segment, who are presented with a version of the site for their defined User Segment. The example in the figure below creates a new experience for a fictional _Premium Card Prospects_ User Segment.
 
 ![Your final result for the card prospects might look something like this.](./content-page-personalization/images/03.png)
 
@@ -27,13 +27,13 @@ The *Default* version of the page appears for everyone except for members of the
 
 ## Managing Content Page Personalization
 
-When you edit a Content Page, you can click on the *Experience* to manage the options for that page.
+When you edit a Content Page, you can click on the _Experience_ to manage the options for that page.
 
 ![You can add, edit, delete, or change priority for Experiences.](./content-page-personalization/images/04.png)
 
-1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
-1. Click the *Actions* button ![Actions](../../../images/icon-actions.png) &rarr; *Edit* for any Content Page.
-1. Click on the *Default* Experience to manage experiences.
+1. Go to _Site Administration_ &rarr; _Site Builder_ &rarr; _Pages_.
+1. Click the _Actions_ button ![Actions](../../../images/icon-actions.png) &rarr; _Edit_ for any Content Page.
+1. Click on the _Default_ Experience to manage experiences.
 
 From here you have three options:
 
@@ -49,6 +49,6 @@ From here you have three options:
 
 ## Related Information
 
-* [Personalizing Collections](./personalizing-collection.md)
-* [Getting Analytics for User Segments](../segmentation/getting-analytics-for-user-segments.md)
-* [Creating User Segments](../segmentation/creating-and-managing-user-segments.md)
+-   [Personalizing Collections](./personalizing-collection.md)
+-   [Getting Analytics for User Segments](../segmentation/getting-analytics-for-user-segments.md)
+-   [Creating User Segments](../segmentation/creating-and-managing-user-segments.md)

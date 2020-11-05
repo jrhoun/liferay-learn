@@ -1,12 +1,12 @@
 # What's New in Liferay DXP 7.3
 
-The latest release of Liferay DXP has been improved across the board. From page building to design, from content authoring and publication management to search engine optimization and content performance, from the new App Builder to the API Explorer, you'll find a wide range of improvements to help you build your site, analyze your traffic, manage documents, or create the applications you need to be successful. 
+The latest release of Liferay DXP has been improved across the board. From page building to design, from content authoring and publication management to search engine optimization and content performance, from the new App Builder to the API Explorer, you'll find a wide range of improvements to help you build your site, analyze your traffic, manage documents, or create the applications you need to be successful.
 
 ## Page Building
 
 ### Master Pages
 
-[Master Pages](../site-building/creating-pages/defining-headers-and-footers/creating-a-master-page-template.md) define page areas that are consistent across several or even all pages across Sites. Most commonly, they're used to define headers, footers, and side bars. Prior to this feature, common page areas could only be defined within a theme. Now non-technical users can create their own master pages, use them across the Site, and change them at any time (having the changes automatically applied to all pages). 
+[Master Pages](../site-building/creating-pages/defining-headers-and-footers/creating-a-master-page-template.md) define page areas that are consistent across several or even all pages across Sites. Most commonly, they're used to define headers, footers, and side bars. Prior to this feature, common page areas could only be defined within a theme. Now non-technical users can create their own master pages, use them across the Site, and change them at any time (having the changes automatically applied to all pages).
 
 ### Undo and Redo
 
@@ -30,17 +30,17 @@ The responsive editor helps you fine tune the out-of-box responsive behavior. Yo
 
 ### General Performance Improvements
 
-The page editor was completely overhauled to utilize React in Liferay DXP 7.3. This has substantially increased the editor's performance, especially when working with larger pages. 
+The page editor was completely overhauled to utilize React in Liferay DXP 7.3. This has substantially increased the editor's performance, especially when working with larger pages.
 
 ### Visual Fragment Composition
 
 ![Visual Fragment Composition makes it easy to save and share Fragment compositions across pages.](./whats-new-73/images/04.gif)
 
-Page authors can now save their column compositions as reusable, sharable Fragments so they can be used on other pages. 
+Page authors can now save their column compositions as reusable, sharable Fragments so they can be used on other pages.
 
 ## Design and Theme Editor
 
-We took Themes to the next level by providing Master Pages, Templates, fragments and Stylebooks (see below) to override partially or completely the default theme look and feel. You can now use the classic Liferay theme as a base. 
+We took Themes to the next level by providing Master Pages, Templates, fragments and Stylebooks (see below) to override partially or completely the default theme look and feel. You can now use the classic Liferay theme as a base.
 
 ![Themes, Stylebooks, Fragments, Master Pages, Page Templates: they're now all integrated to help you provide great UIs for your content.](./whats-new-73/images/05.png)
 
@@ -52,15 +52,15 @@ A [Stylebook](../site-building/site-appearance/creating-a-style-book.md) is a gr
 
 ### Asset Libraries
 
-You can now create [dedicated libraries](../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) to organize and reuse your content. Asset libraries make it easier to reuse resources across different Sites. 
+You can now create [dedicated libraries](../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) to organize and reuse your content. Asset libraries make it easier to reuse resources across different Sites.
 
-Asset Libraries aren't limited to web content: you can share any asset type and connect them to the Sites where they're needed.While creating a page or writing a blog post, content authors can access the connected asset libraries and use images, documents or content stored in them. 
+Asset Libraries aren't limited to web content: you can share any asset type and connect them to the Sites where they're needed.While creating a page or writing a blog post, content authors can access the connected asset libraries and use images, documents or content stored in them.
 
 ![Asset Libraries are sharable across Sites and include any asset type.](./whats-new-73/images/06.png)
 
 ### Content Dashboard
 
-For those with large databases full of content that may be going unused, Liferay has created the Content Dashboard. This is a one-stop-place where content authors can access all the content, not just for a given Site, but for all the Sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need. 
+For those with large databases full of content that may be going unused, Liferay has created the Content Dashboard. This is a one-stop-place where content authors can access all the content, not just for a given Site, but for all the Sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need.
 
 You can access this content dashboard through Global Menu &rarr; Applications tab.
 
@@ -84,7 +84,7 @@ In 7.3 we've added a new configuration to vocabularies in order to set visibilit
 
 ### Dedicated translation experience for web content
 
-A new translation UI makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap. 
+A new translation UI makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap.
 
 ![The new translation UI makes the entire translation process painless.](./whats-new-73/images/10.png)
 
@@ -112,23 +112,23 @@ For links that do break, Liferay now keeps track of all 404 errors. You can use 
 
 ![404 reports help you find possible broken links.](./whats-new-73/images/14.png)
 
-### Friendly URL history 
+### Friendly URL history
 
 ![Friendly URL History shows all URLs ever used for any page.](./whats-new-73/images/15.png)
 
-Now you can easily check all [friendly URLs used in any page](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) for each language and manage them visually. You can "forget" URLs to be reused in other pages or restore old friendly URLs. 
+Now you can easily check all [friendly URLs used in any page](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) for each language and manage them visually. You can "forget" URLs to be reused in other pages or restore old friendly URLs.
 
 ## Content Performance
 
 > Subscription Required
 
-Now you can tell how many visitors completely read your content. Content performance analytics appear in context with content it relates to, to help content authors and marketers to build and assess a successful content strategy. 
+Now you can tell how many visitors completely read your content. Content performance analytics appear in context with content it relates to, to help content authors and marketers to build and assess a successful content strategy.
 
 ![Content Performance shows views versus reads, search engines' incoming traffic volume, and keyword reports by region.](./whats-new-73/images/16.gif)
 
 ## Questions app
 
-If you use your site to support products, the new Questions app can help your users find answers to the questions they have about your products. Taking advantage of Liferay's GraphQL APIs and Message Boards infrastructure, the questions app gets users the best answers through voting and marking the most valuable information. 
+If you use your site to support products, the new Questions app can help your users find answers to the questions they have about your products. Taking advantage of Liferay's GraphQL APIs and Message Boards infrastructure, the questions app gets users the best answers through voting and marking the most valuable information.
 
 ![Users can post a question and get answers quickly.](./whats-new-73/images/17.gif)
 
@@ -142,11 +142,11 @@ If you use your site to support products, the new Questions app can help your us
 
 ### Form View Rules and Field Sets
 
-App Builder provides a Rule Builder for defining dynamic form behaviors, like setting visibility of a field or using a predefined condition to enable or disable a field. 
+App Builder provides a Rule Builder for defining dynamic form behaviors, like setting visibility of a field or using a predefined condition to enable or disable a field.
 
 ![Form View Rules make it easy to control presentation of a form.](./whats-new-73/images/20.png)
 
-Fieldsets are fields grouped together, and App Builder's fieldsets make it easy to create, update and reuse them in different objects and forms views. This way, you don't have to recreate the same group of fields (e.g. address) over and over for each application. 
+Fieldsets are fields grouped together, and App Builder's fieldsets make it easy to create, update and reuse them in different objects and forms views. This way, you don't have to recreate the same group of fields (e.g. address) over and over for each application.
 
 ![Fieldsets group fields so they can be shared across forms.](./whats-new-73/images/21.png)
 
@@ -154,17 +154,17 @@ Fieldsets are fields grouped together, and App Builder's fieldsets make it easy 
 
 > Subscription Required
 
-App Builder contains a workflow process for approvals. You can define the stages of the process and specify what information should be requested and/or displayed in each step of the application. You can also make use of [Workflow Metrics](#workflow-metrics-improvements) to understand the performance and health of the App's processes. 
+App Builder contains a workflow process for approvals. You can define the stages of the process and specify what information should be requested and/or displayed in each step of the application. You can also make use of [Workflow Metrics](#workflow-metrics-improvements) to understand the performance and health of the App's processes.
 
 ![Process-Driven Apps](./whats-new-73/images/22.png)
 
 ### Localized Applications
 
-App Builder applications can also be localized in several different languages. The Form View Builder provides an interface for selecting and translating fields to the languages you want. 
+App Builder applications can also be localized in several different languages. The Form View Builder provides an interface for selecting and translating fields to the languages you want.
 
 ### Data Engine Improvements
 
-Under App Builder's hood, Data Engine was improved to augment the developer experience when using Data Engine to build applications: 
+Under App Builder's hood, Data Engine was improved to augment the developer experience when using Data Engine to build applications:
 
 -   Ability to create and reuse fieldsets.
 -   Search Data Record Collections.
@@ -184,7 +184,7 @@ Under App Builder's hood, Data Engine was improved to augment the developer expe
 
 ## Forms
 
-Since user-provided data is often collected using [web forms](../process-automation/forms/user-guide/introduction-to-forms.md), Liferay has provided a GUI and development tools to design forms that comply with GDPR requirements. 
+Since user-provided data is often collected using [web forms](../process-automation/forms/user-guide/introduction-to-forms.md), Liferay has provided a GUI and development tools to design forms that comply with GDPR requirements.
 
 ### Data Erasure (AKA GDPR Right to be Forgotten)
 
@@ -196,13 +196,13 @@ The right to data portability requires organizations to provide a machine-readab
 
 ### Forms Reports
 
-Liferay Forms now comes with a built-in summary report of the answers received, allowing you not only to see the data collected, but also an overall analysis of the answers. 
+Liferay Forms now comes with a built-in summary report of the answers received, allowing you not only to see the data collected, but also an overall analysis of the answers.
 
 ![Forms Reports now have a default, easy-to-read summary of answers.](./whats-new-73/images/23.png)
 
 ### Page Reorder
 
-It's now not only easier to create and manage multi-page Forms, but also to reorder pages of a Form. 
+It's now not only easier to create and manage multi-page Forms, but also to reorder pages of a Form.
 
 ![Page Reordering, an oft-requested feature, is now provided in Forms.](./whats-new-73/images/24.png)
 
@@ -222,19 +222,19 @@ To help you understand who are the best performers, there's a new card under the
 
 ### Performance by Step
 
-Identify where the bottlenecks of the process are by seeing how many SLA breaches occurred at each step and the step's average completion time. 
+Identify where the bottlenecks of the process are by seeing how many SLA breaches occurred at each step and the step's average completion time.
 
 ![Performance by Step shows you where the bottlenecks are.](./whats-new-73/images/27.png)
 
 ### Bulk Actions
 
-You can now bulk-transition and/or reassign instances while analyzing the process health and performance in the Workflow Metrics Reports. 
+You can now bulk-transition and/or reassign instances while analyzing the process health and performance in the Workflow Metrics Reports.
 
 ![Select multiple items to perform bulk actions on them.](./whats-new-73/images/28.png)
 
 ## Global Menu
 
-A new application drawer houses cross-site applications, such as workflow, forms and [Commerce](https://learn.liferay.com/commerce/2.x/en/index.html). 
+A new application drawer houses cross-site applications, such as workflow, forms and [Commerce](https://learn.liferay.com/commerce/2.x/en/index.html).
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 
@@ -244,13 +244,13 @@ A new application drawer houses cross-site applications, such as workflow, forms
 
 > Subscription Required
 
-[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) provides better security by requiring users to prove their identity in multiple ways, or _factors_. The basic user name/password combination is augmented with one or more further, configurable factors. These include the default One Time Password (OTP) and configurable IP address, time-based OTP, and because the system is extensible, any factor you wish to write. 
+[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) provides better security by requiring users to prove their identity in multiple ways, or _factors_. The basic user name/password combination is augmented with one or more further, configurable factors. These include the default One Time Password (OTP) and configurable IP address, time-based OTP, and because the system is extensible, any factor you wish to write.
 
 ### SAML configuration on instance level
 
-This change allows to configure [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/single-sign-on-with-saml.md) settings on instance level, including handling the certificates. 
+This change allows to configure [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/single-sign-on-with-saml.md) settings on instance level, including handling the certificates.
 
-A new SAML property was introduced: *Unknown users are strangers*. This property determines the behavior of SAML IdP connection when an End User is a stranger. The property defines if users that do not exist already in the portal database should be classified as strangers. Once classified, the portal instance's existing stranger handling policy determines if the user should be automatically provisioned using information available from the IdP's SAML assertion.
+A new SAML property was introduced: _Unknown users are strangers_. This property determines the behavior of SAML IdP connection when an End User is a stranger. The property defines if users that do not exist already in the portal database should be classified as strangers. Once classified, the portal instance's existing stranger handling policy determines if the user should be automatically provisioned using information available from the IdP's SAML assertion.
 
 ### OAuth 2 configuration on instance level
 
@@ -260,9 +260,9 @@ Expired authorizations can now be configured to be removed. After the expired au
 
 ### OpenId Connect configuration on instance level
 
-Each instance can now configure connections to different [OpenId Connect](../installation-and-upgrades/securing-liferay/configuring-sso/other-ssos/using-openid-connect.md) providers. 
+Each instance can now configure connections to different [OpenId Connect](../installation-and-upgrades/securing-liferay/configuring-sso/other-ssos/using-openid-connect.md) providers.
 
-A system-level OpenId Connect Provider is visible to all instances, acting like a default OpenId Connect Provider. 
+A system-level OpenId Connect Provider is visible to all instances, acting like a default OpenId Connect Provider.
 
 ### CORS configuration on instance level
 
@@ -288,7 +288,7 @@ Communication with Elasticsearch now uses the REST Client instead of the Transpo
 
 ### Widget Template Support
 
-The Search widgets now support Widget Templates. 
+The Search widgets now support Widget Templates.
 
 ## Developer Experience
 
@@ -296,7 +296,7 @@ The Search widgets now support Widget Templates.
 
 ![The API Explorer shows all available APIs in a Liferay DXP installation.](./whats-new-73/images/30.png)
 
-The [API explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) provides an interface for browsing and querying Liferay DXP's available APIs. You can explore all the REST applications and their endpoints. 
+The [API explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) provides an interface for browsing and querying Liferay DXP's available APIs. You can explore all the REST applications and their endpoints.
 
 ![You can query any of the APIs from the API Explorer.](./whats-new-73/images/31.png)
 
@@ -308,23 +308,23 @@ The OpenAPI validator informs you if the configuration file has errors, lets you
 
 ### Batch Operations
 
-Headless APIs now support batch operations. 
+Headless APIs now support batch operations.
 
 ### Manage all translations of localized content in a single request
 
-You can add, update, or retrieve translations in the headless APIs simultaneously. 
+You can add, update, or retrieve translations in the headless APIs simultaneously.
 
 ### Expose actions in Headless APIs
 
-Allowed user actions based on their permissions can now be retrieved in your queries. Now you can create apps with dynamic action menus, showing users only actions they can perform. 
+Allowed user actions based on their permissions can now be retrieved in your queries. Now you can create apps with dynamic action menus, showing users only actions they can perform.
 
 ### Exposing Metadata in Documents & Media APIs
 
-Documents and Media APIs now expose the whole set of metadata included in document types. 
+Documents and Media APIs now expose the whole set of metadata included in document types.
 
 ### Content Template API
 
-You can grab content templates through an API and render the content outside of Liferay if needed. 
+You can grab content templates through an API and render the content outside of Liferay if needed.
 
 ### Asset Libraries delivery APIs
 
@@ -332,20 +332,20 @@ You can access through the headless REST and GraphQL APIs the content and docume
 
 ### Headless APIs extensibility
 
-Headless APIs are extensible, making it easy to expose new properties or new components in the OOTB applications, deactivate endpoints, add contributions in GraphQL, and more. 
+Headless APIs are extensible, making it easy to expose new properties or new components in the OOTB applications, deactivate endpoints, add contributions in GraphQL, and more.
 
 ### Return facets in collections
 
 When using the headless APIs, you can now request the search facets when retrieving collections of elements (documents, structured contents, etc.). You can use these to build dynamic filters to show end-users.
 
-### React.js Facilities 
+### React.js Facilities
 
-Liferay has begun transitioning big portions of its internal UI to React. As a side effect of those changes, new utilities have been added that can make life easier for others following a similar path: 
+Liferay has begun transitioning big portions of its internal UI to React. As a side effect of those changes, new utilities have been added that can make life easier for others following a similar path:
 
-**ReactRenderer:** A low level Java primitive for rendering React components, simplifying the bootstrapping of a React component and generating the necessary JavaScript code for its initialization. 
+**ReactRenderer:** A low level Java primitive for rendering React components, simplifying the bootstrapping of a React component and generating the necessary JavaScript code for its initialization.
 
 **React:component:**  A high level JSP tag that can be combined with traditional `MVCPortlet` approaches to render and initialize complex React applications from traditional JSPs. This facilitates the progressive migration of complex JS applications and the adoption of more modern front-end workflows.
 
-### Upgrade Improvements 
+### Upgrade Improvements
 
-Many reliability improvements have been added to the [upgrade process](../installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.md). The upgrade process has been unified between Core and Modules. Auto upgrade behavior can be controlled by a new portal property: `upgrade.database.auto.run`. 
+Many reliability improvements have been added to the [upgrade process](../installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.md). The upgrade process has been unified between Core and Modules. Auto upgrade behavior can be controlled by a new portal property: `upgrade.database.auto.run`.

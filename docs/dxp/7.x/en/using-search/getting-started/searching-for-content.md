@@ -19,7 +19,7 @@ Using the default Liferay DXP setup, users can engage with search by entering se
 
 Liferay's search infrastructure supports full text search as implemented by its supported search engines ([Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) and [Solr](http://lucene.apache.org/solr/features.html)).
 
-Full text search compares all the words entered in a search query (for example, *space vacation*) to all the words in each indexed document. A search engine like Elasticsearch calculates relevance scores to ensure the best results are returned first<!--(like a Blogs Entry titled *Is a vacation in space right for you?*) and lots of matching results are returned (anything with either the word *vacation* or *space* is returned)-->.
+Full text search compares all the words entered in a search query (for example, _space vacation_) to all the words in each indexed document. A search engine like Elasticsearch calculates relevance scores to ensure the best results are returned first<!--(like a Blogs Entry titled *Is a vacation in space right for you?*) and lots of matching results are returned (anything with either the word *vacation* or *space* is returned)-->.
 
 In addition to full text search, advanced search syntax is supported. The underlying search engine determines the precise behavior, so consult the [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) or [Solr](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) documentation for the details.
 
@@ -33,7 +33,7 @@ What if users want their search terms (for example, _agile frameworks_) to produ
 
 ### Prefix Searching
 
-With prefix searching, searching for the term *instrument* returns documents not only containing the full word, but also variants with *instrument* as the prefix. For example, results with *instruments*, *instrumental*, and *instrumentation* are also returned.
+With prefix searching, searching for the term _instrument_ returns documents not only containing the full word, but also variants with _instrument_ as the prefix. For example, results with _instruments_, _instrumental_, and _instrumentation_ are also returned.
 
 ![Searching for "lever" also returns "leverage" and "leveraging".](./searching-for-content/images/03.png)
 
@@ -67,7 +67,7 @@ If you change the Keywords Parameter Name to _keyword_ it looks like this:
 http://localhost:8080/web/guest/search?keyword=data
 ```
 
-**Scope:** Choose between three options: This Site (default), Everything, and Let the User Choose. *This Site* means only the assets associated with the site where the search is executed are searched. Expand the scope of the search to all sites by selecting *Everything*. To let users choose which scope they want to search, select *Let the User Choose*.
+**Scope:** Choose between three options: This Site (default), Everything, and Let the User Choose. _This Site_ means only the assets associated with the site where the search is executed are searched. Expand the scope of the search to all sites by selecting _Everything_. To let users choose which scope they want to search, select _Let the User Choose_.
 
 ![Let the user choose which scope the search is executed for.](./searching-for-content/images/06.png)
 
@@ -89,4 +89,4 @@ http://localhost:8080/web/guest/search?q=data&target=this-site
 
 ## Additional Information
 
-* [Enabling Search Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)
+-   [Enabling Search Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)

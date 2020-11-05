@@ -2,10 +2,10 @@
 
 By default for demonstration purposes, Liferay DXP is configured to use an embedded HSQL database. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS, such as:
 
-* MySQL
-* MariaDB
-* Oracle
-* PostgreSQL
+-   MySQL
+-   MariaDB
+-   Oracle
+-   PostgreSQL
 
 ```note::
    The `Liferay DXP Compatibility Matrix <https://help.liferay.com/hc/en-us/articles/360049238151>`_ lists the supported databases and versions.
@@ -13,17 +13,17 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 Connecting Liferay DXP to a database requires:
 
-* [Database Configuration](#database-configuration)
-* [Installing a JDBC Connector](#installing-a-jdbc-connector)
-* [Configuring a Data Source](#configure-a-data-source)
+-   [Database Configuration](#database-configuration)
+-   [Installing a JDBC Connector](#installing-a-jdbc-connector)
+-   [Configuring a Data Source](#configure-a-data-source)
 
 ## Database Configuration
 
 Once you've selected a database, follow these steps to configure it:
 
-* [Create a Blank Database With UTF-8 Support](#creatre-a-blank-database-with-utf-8-support)
-* [Configure Database User Access](#configure-database-user-access)
-* [Configure the Query Result Sort Order (Optional)](#configure-the-query-result-sort-order-optional)
+-   [Create a Blank Database With UTF-8 Support](#creatre-a-blank-database-with-utf-8-support)
+-   [Configure Database User Access](#configure-database-user-access)
+-   [Configure the Query Result Sort Order (Optional)](#configure-the-query-result-sort-order-optional)
 
 ```important::
    Always consult the database vendor's documentation before modifying the database.
@@ -63,20 +63,20 @@ You've configured your database server, database, and database user. You're read
 
 ## Install a JDBC Connector
 
-Liferay DXP requires a JDBC connector for communicating with your database. 
+Liferay DXP requires a JDBC connector for communicating with your database.
 
 ### Open Source Databases
 
 The Liferay DXP bundle includes several open source JDBC connectors. Connector files are normally provided and installed to a global folder on the application server, such as `/lib/ext` on Tomcat or `/module` on JBoss EAP and WildFly.
 
-If you're connecting to a proprietary database, like Oracle or DB2, download the connector from the vendor and install it to a global folder on the applications server. 
+If you're connecting to a proprietary database, like Oracle or DB2, download the connector from the vendor and install it to a global folder on the applications server.
 
 **Proprietary Databases:**
 
-| Database | Connector | Vendor Site | Notes |
-| :------- | :-------- | :---------- | :---- |
-| DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
-| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
+| Database | Connector     | Vendor Site                                 | Notes                                                                                                                                                                                                                             |
+| :------- | :------------ | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DB2      | `db2jcc4.jar` | [IBM](https://www.ibm.com/)                 | The `dbc2jcc` connector has been deprecated after 3.72.                                                                                                                                                                           |
+| Oracle   | `ojdbc8.jar`  | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
 
 ## Configuring a Data Source
 

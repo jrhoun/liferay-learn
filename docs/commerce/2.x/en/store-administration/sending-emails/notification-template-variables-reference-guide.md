@@ -16,12 +16,12 @@ Once a template type has been selected, expand the _Definition of Terms_ dropdow
 
 The following variables are available to populate the Email Settings fields for the senders and addressees:
 
-| Variable | Description |
-| --- | --- |
-| [%ACCOUNT_ROLE_ORDER_MANAGER%] | Account Order Manager |
-| [%ORDER_CREATOR%] | The user that created the order |
-| [%ACCOUNT_ROLE_ADMINISTRATOR%] | Account Administrator |
-| [%USER_GROUP_NAME%] | User Group Name |
+| Variable                       | Description                     |
+| ------------------------------ | ------------------------------- |
+| [%ACCOUNT_ROLE_ORDER_MANAGER%] | Account Order Manager           |
+| [%ORDER_CREATOR%]              | The user that created the order |
+| [%ACCOUNT_ROLE_ADMINISTRATOR%] | Account Administrator           |
+| [%USER_GROUP_NAME%]            | User Group Name                 |
 
 ## Orders
 
@@ -29,12 +29,12 @@ The following variables are available to populate the Email Settings fields for 
 
 The following variables are available for Orders-type email notification templates:
 
-| Variable | Description |
-| --- | --- |
-| [%ORDER_ITEMS%] | A table with all the items included in the order |
-| [%ORDER_SHIPPING_ADDRESS%] | The order's shipping address  |
-| [%ORDER_BILLING_ADDRESS%] | The order's billing address |
-| [%ORDER_ID%] | The order ID |
+| Variable                   | Description                                      |
+| -------------------------- | ------------------------------------------------ |
+| [%ORDER_ITEMS%]            | A table with all the items included in the order |
+| [%ORDER_SHIPPING_ADDRESS%] | The order's shipping address                     |
+| [%ORDER_BILLING_ADDRESS%]  | The order's billing address                      |
+| [%ORDER_ID%]               | The order ID                                     |
 
 ## Subscription
 
@@ -42,10 +42,10 @@ The following variables are available for Orders-type email notification templat
 
 The following variables are available for Subscription-type email notification templates:
 
-| Variable | Description |
-| --- | --- |
+| Variable         | Description  |
+| ---------------- | ------------ |
 | [%PRODUCT_NAME%] | Product Name |
 
 ## Additional Information
 
-* [Using Notification Templates](./using-notification-templates.md)
+-   [Using Notification Templates](./using-notification-templates.md)

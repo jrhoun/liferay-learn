@@ -67,8 +67,8 @@ Once the Punch Out Access Token has been enabled, users can configure the Punch 
 1. Click _OAuth2_ under _Security_.
 1. Enter the following:
 
-    * **Access Token Duration**:
-    * **Access Token Size**:
+    - **Access Token Duration**:
+    - **Access Token Size**:
 
     ![Enable the Auto Login Access Token.](./liferay-commerce-connector-to-punchout2go/images/04.jpg)
 
@@ -84,15 +84,15 @@ As best practice, users should create a Role for vendors using Punch Out. To lea
 1. Click the _Site Roles_ tab.
 1. Click the _Add Site Role_ button.
 1. Enter the following:
-    * **Name**: Punch Out Vendor.
+    - **Name**: Punch Out Vendor.
 1. Click _Save_.
 1. Click _Define Permissions_.
 1. Expand the _Site Administration_ in the left menu.
 1. Navigate to _Applications_ &rarr; _Open Carts_.
 1. Check the following boxes (at the minimum):
 
-    * **Check Out Open Orders**
-    * **View Open Orders**
+    - **Check Out Open Orders**
+    - **View Open Orders**
 
     ![Punch Out Role Permissions](./liferay-commerce-connector-to-punchout2go/images/05.png)
 
@@ -108,6 +108,6 @@ The checkout process with the Connector to PunchOut2Go active occurs in the same
 
 ## Additional Information
 
-* [Deploying Liferay Commerce to an Existing Liferay Installation](../installation-and-upgrades/installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
-* [Activating Liferay Commerce Enterprise](../installation-and-upgrades/activating-liferay-commerce-enterprise.md)
-* [Liferay Commerce Connector to PunchOut2Go Reference Guide](./liferay-commerce-connector-to-punchout2go-reference-guide.md)
+-   [Deploying Liferay Commerce to an Existing Liferay Installation](../installation-and-upgrades/installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
+-   [Activating Liferay Commerce Enterprise](../installation-and-upgrades/activating-liferay-commerce-enterprise.md)
+-   [Liferay Commerce Connector to PunchOut2Go Reference Guide](./liferay-commerce-connector-to-punchout2go-reference-guide.md)

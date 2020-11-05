@@ -8,31 +8,31 @@ Site Templates define a preconfigured structure for a Site, which includes the p
 
 Three Site Templates are provided out-of-the-box:
 
-* **Blank Site:** Creates a Site that doesn't contain any pages or content.
+-   **Blank Site:** Creates a Site that doesn't contain any pages or content.
 
-* **Community Site:** Creates a preconfigured Site with the Message Boards, Search, Polls, Recent Content, Wiki, and navigation applications pre-deployed to Site pages.
+-   **Community Site:** Creates a preconfigured Site with the Message Boards, Search, Polls, Recent Content, Wiki, and navigation applications pre-deployed to Site pages.
 
-* **Intranet Site:** Creates a preconfigured Site for an intranet. The Home page displays the activities of the members of the Site, a language selector, and a list of the recent content created in the intranet on the home page. It also provides two additional pages for Documents and Media and external News obtained through public feeds.
+-   **Intranet Site:** Creates a preconfigured Site for an intranet. The Home page displays the activities of the members of the Site, a language selector, and a list of the recent content created in the intranet on the home page. It also provides two additional pages for Documents and Media and external News obtained through public feeds.
 
 ## Creating a Site from a Site Template
 
 To create a Site using a Site Template, follow these steps:
 
-1. Open the [Global Menu](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and go to *Control Panel* &rarr; *Sites*.
+1. Open the [Global Menu](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and go to _Control Panel_ &rarr; _Sites_.
 
     ![Navigating to the Control Panel to the Sites option.](./building-sites-with-site-templates/images/01.png)
 
-1. Click the *Add* icon (![Add Site](../../images/icon-add.png)) and select your Site Template from the menu.
+1. Click the _Add_ icon (![Add Site](../../images/icon-add.png)) and select your Site Template from the menu.
 
 1. Enter a name for the Site.
 
-    * Checking *Create default pages as private (available only to members).* will prevent guest users from viewing Site pages.
+    - Checking _Create default pages as private (available only to members)._ will prevent guest users from viewing Site pages.
 
-1. Click *Save*.
+1. Click _Save_.
 
 1. Configure your [Site settings](../site_settings.md).
 
-1. Open the *Pages* panel below the form.
+1. Open the _Pages_ panel below the form.
 
     ![The Site Configuration Pages drop down expanded to show Site Template options.](building-sites-with-site-templates/images/02.png)
 
@@ -40,11 +40,11 @@ To create a Site using a Site Template, follow these steps:
        *Enable propagation of changes from the Site Template* enables the Site to receive updates if the Site Template is modified. If changes are made directly to a Site created from a Site Template, the Site will no longer receive updates from the Site Template. See `Merging Site Template Changes <./merging-site-template-changes.md>`_ for more information.
     ```
 
-1. Click *Save* to create your Site.
+1. Click _Save_ to create your Site.
 
-1. Open the Global Menu ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and go to *Sites* under the *Control Panel* tab.
+1. Open the Global Menu ( ![Global Menu icon](../../images/icon-applications-menu.png) ) and go to _Sites_ under the _Control Panel_ tab.
 
-1. Click *Actions* ( ![Actions icon](../../images/icon-actions.png) ) beside your new Site and select *Go to Public Pages* or *Go to Private Pages* to view it.
+1. Click _Actions_ ( ![Actions icon](../../images/icon-actions.png) ) beside your new Site and select _Go to Public Pages_ or _Go to Private Pages_ to view it.
 
     ```tip::
        To view a newly created *blank site*, you must first create a page for it. See `Adding a Page to a Site <../creating-pages/adding-pages/adding-a-page-to-a-site.md>`_ for more information.
@@ -52,6 +52,6 @@ To create a Site using a Site Template, follow these steps:
 
 ## Related Information
 
-* [Introduction to Site Building](../introduction-to-site-building.md)
-* [Creating a Site Template](./building-sites-with-site-templates.md)
-* [Adding Members to Sites](./site-membership/adding-members-to-sites.md)
+-   [Introduction to Site Building](../introduction-to-site-building.md)
+-   [Creating a Site Template](./building-sites-with-site-templates.md)
+-   [Adding Members to Sites](./site-membership/adding-members-to-sites.md)

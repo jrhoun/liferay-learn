@@ -13,8 +13,8 @@ Subscriptions can be enabled for [Simple](../product-types/creating-a-simple-pro
 1. Create a [Simple Product](../product-types/creating-a-simple-product.md), if you don't already have one.
 1. Enter the following:
 
-    * **Catalog**: Sahara.com
-    * **Name**: Multi-Vitamins
+    - **Catalog**: Sahara.com
+    - **Name**: Multi-Vitamins
 
     ![Creating a simple product](./enabling-subscriptions-for-a-product/images/01.png)
 
@@ -64,5 +64,5 @@ If a product has Subscriptions enabled, users can view the payment and subscript
 
 ## Additional Information
 
-* [Managing Subscriptions](../../../orders-and-fulfillment/subscriptions/managing-subscriptions.md)
-* [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscriptions/subscription-administration-reference-guide.md)
+-   [Managing Subscriptions](../../../orders-and-fulfillment/subscriptions/managing-subscriptions.md)
+-   [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscriptions/subscription-administration-reference-guide.md)

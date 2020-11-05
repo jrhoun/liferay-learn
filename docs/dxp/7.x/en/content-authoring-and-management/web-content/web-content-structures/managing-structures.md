@@ -1,11 +1,11 @@
 # Managing Structures
 
-You can manage Structures from the Structures Page: 
+You can manage Structures from the Structures Page:
 
-1. Open the Product Menu and go to the Site Menu heading &rarr; *Content & Data* &rarr; *Web Content*.
-1. Select the *Structures* tab.
-1. Open the *Actions Menu* (![Action Menu](../../../images/icon-actions.png)) next to the Structure and select one of the [available actions](#available-actions).
-1. Click *Save* to apply your changes.
+1. Open the Product Menu and go to the Site Menu heading &rarr; _Content & Data_ &rarr; _Web Content_.
+1. Select the _Structures_ tab.
+1. Open the _Actions Menu_ (![Action Menu](../../../images/icon-actions.png)) next to the Structure and select one of the [available actions](#available-actions).
+1. Click _Save_ to apply your changes.
 
 ## Available Actions
 
@@ -15,7 +15,7 @@ You can perform these actions from the Structure's Actions Menu (![Action Menu](
 
 **Edit Default Values:** Opens a form to set default values for the Structure's fields. See [below](#editing-default-values) for more information.
 
-**Manage Templates:** Opens the *Templates* tab with a filtered set of Web Content Templates that use the Structure. From here you can manage (edit, copy, delete, and set permissions for) the Web Content Templates. See [Managing Templates](../web-content-templates/managing-templates.md) for more information.
+**Manage Templates:** Opens the _Templates_ tab with a filtered set of Web Content Templates that use the Structure. From here you can manage (edit, copy, delete, and set permissions for) the Web Content Templates. See [Managing Templates](../web-content-templates/managing-templates.md) for more information.
 
 **Permissions:** Opens the permissions configuration dialog for the Structure. See [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md) for more information.
 
@@ -27,14 +27,14 @@ You can perform these actions from the Structure's Actions Menu (![Action Menu](
 
 You can set the default values for a Structure's fields. For example, a Structure used for confidential memos may want to include the "confidential" tag for all the articles created with that Structure, or you may want to make the content of all confidential memos non-searchable. From the Structures Page, open the Actions Menu for the Structure:
 
-1. Choose *Edit Default Values*.
-1. In the *Structure Default Values* page, configure the default values for your fields.
+1. Choose _Edit Default Values_.
+1. In the _Structure Default Values_ page, configure the default values for your fields.
 
     ```tip::
       You can restore the original values of the Structure at any time by clicking the *Reset Values* button at the top.
     ```
 
-1. Click *Save* to apply the changes.
+1. Click _Save_ to apply the changes.
 
 ```tip::
    You can also use the *Predefined Value* setting for the structure field to set default values. For more information, see Editing and `Configuring Structures' Content <./configuring-structure-fields.md)>`_
@@ -44,10 +44,10 @@ You can set the default values for a Structure's fields. For example, a Structur
 
 You can copy an existing structure to create a new one. From the Structures Page, open the Actions Menu for the Structure and follow these steps:
 
-1. Choose *Copy*.
-1. Type a new *Name* for the Structure and, optionally, a new *Description*.
-1. Optionally check the *Copy Templates* box if you want to copy the Web Content Templates associated with the Structure. 
-1. Click *Copy*.
+1. Choose _Copy_.
+1. Type a new _Name_ for the Structure and, optionally, a new _Description_.
+1. Optionally check the _Copy Templates_ box if you want to copy the Web Content Templates associated with the Structure.
+1. Click _Copy_.
 
 ```tip::
    Liferay DXP generates a unique ID for the copied Structure. The new copy inherits all the attributes from the original Structure, including the name. To avoid confusing the copy with the original, use a different name for the copy.
@@ -55,6 +55,6 @@ You can copy an existing structure to create a new one. From the Structures Page
 
 ## Related Information
 
-* [Creating Structures](./creating-structures.md)
-* [Managing Structures](./managing-structures.md)
-* [Understanding Web Content Structures](./understanding-web-content-structures.md)
+-   [Creating Structures](./creating-structures.md)
+-   [Managing Structures](./managing-structures.md)
+-   [Understanding Web Content Structures](./understanding-web-content-structures.md)

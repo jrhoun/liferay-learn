@@ -8,11 +8,11 @@ All results from an A/B test running in Liferay DXP are tracked by Analytics Clo
 
 For a drafted A/B test, you can manage the following:
 
-* *Target:* the Experience and User Segment.
-* *Metric:* the goal to track (e.g., Bounce Rate or Click).
-* *Variants:* the Page Variants for users to interact with.
-* *Traffic Split:* the percentage of visitors that are randomly split between the Variants when visiting the Page.
-* *Confidence Level:* the accuracy of the test results.
+-   _Target:_ the Experience and User Segment.
+-   _Metric:_ the goal to track (e.g., Bounce Rate or Click).
+-   _Variants:_ the Page Variants for users to interact with.
+-   _Traffic Split:_ the percentage of visitors that are randomly split between the Variants when visiting the Page.
+-   _Confidence Level:_ the accuracy of the test results.
 
 ![The A/B testing setup process.](a-b-testing/images/02.png)
 
@@ -20,17 +20,17 @@ See Liferay DXP's A/B Testing documentation for more information on an A/B test'
 
 Once your A/B test is running, Analytics Cloud offers several reports to keep you up-to-date on your A/B test's progress:
 
-* *Summary*
-* *Variant Report*
-* *Test Sessions*
+-   _Summary_
+-   _Variant Report_
+-   _Test Sessions_
 
 ## Summary
 
 The Summary panel gives you an overview of your test. It provides you with information like
 
-* *percent completion*
-* *running time (in days)*
-* *total visitor sessions*
+-   _percent completion_
+-   _running time (in days)_
+-   _total visitor sessions_
 
 It also gives you a quick glance at your test metric and the best current performing Variant.
 
@@ -70,9 +70,9 @@ Next, you'll learn about an A/B test's statuses.
 
 An A/B test is always characterized with a status after it starts. These include
 
-* *Test is Running*
-* *Winner Declared*
-* *No Clear Winner*
+-   _Test is Running_
+-   _Winner Declared_
+-   _No Clear Winner_
 
 You'll explore each status next.
 
@@ -90,8 +90,8 @@ When a test is running, you can terminate it by selecting Terminate from the Sum
 
 Once your A/B test successfully finishes, a Variant is declared a winner. At this state, you can perform the following actions:
 
-* publish the winning Variant as your default experience.
-* complete the test without publishing any Variants.
+-   publish the winning Variant as your default experience.
+-   complete the test without publishing any Variants.
 
 ![](a-b-testing/images/08.png)
 

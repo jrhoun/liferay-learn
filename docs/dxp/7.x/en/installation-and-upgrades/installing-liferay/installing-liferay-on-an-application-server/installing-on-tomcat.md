@@ -12,9 +12,9 @@ The simplest and easiest way to accomplish this is by [downloading the Liferay D
 
 In addition to copying dependencies, scripts, and configurations from the Liferay Tomcat bundle files (or manually downloading and configuring), you must also download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
-* DXP WAR file
-* Dependencies ZIP file
-* OSGi Dependencies ZIP file
+-   DXP WAR file
+-   Dependencies ZIP file
+-   OSGi Dependencies ZIP file
 
 Liferay DXP requires a Java JDK 8 or 11.
 
@@ -30,20 +30,20 @@ Here are the basic steps for installing DXP on Tomcat:
 1. [Mail Configuration](#mail-configuration)
 1. [Deploying the DXP WAR](#deploying-DXP)
 
-The Tomcat server parent folder is [*Liferay Home*](../../reference/liferay-home.md). `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
+The Tomcat server parent folder is [_Liferay Home_](../../reference/liferay-home.md). `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
 
 ## Installing Dependencies
 
-DXP depends on many JARs included in DXP Tomcat bundle. Some of the bundle's JARs are not strictly required but can still be useful. If you're not using a Tomcat bundle, you'll use the Liferay JARs in the *Dependencies* archive and the *OSGi Dependencies* archive you downloaded and third-party JARs as described below.
+DXP depends on many JARs included in DXP Tomcat bundle. Some of the bundle's JARs are not strictly required but can still be useful. If you're not using a Tomcat bundle, you'll use the Liferay JARs in the _Dependencies_ archive and the _OSGi Dependencies_ archive you downloaded and third-party JARs as described below.
 
 1. Unzip the Dependencies ZIP file contents in the `$TOMCAT_HOME/lib/ext` folder (create this folder if it doesn't exist).
 1. Unzip the OSGi Dependencies ZIP file contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
 
 DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. You can download JDBC driver JARs for these databases:
 
-* [MariaDB](https://downloads.mariadb.org/)
-* [MySQL](http://dev.mysql.com/downloads/connector/j)
-* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
+-   [MariaDB](https://downloads.mariadb.org/)
+-   [MySQL](http://dev.mysql.com/downloads/connector/j)
+-   [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
 
 A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
 
@@ -51,13 +51,13 @@ A Hypersonic database is bundled with DXP and is useful for testing purposes. **
 
 Configuring Tomcat to run DXP includes:
 
-* Setting environment variables
-* Specifying a web application context for DXP
-* Setting properties and descriptors
+-   Setting environment variables
+-   Specifying a web application context for DXP
+-   Setting properties and descriptors
 
 Here are the steps:
 
-1. Copy the `setenv.bat`, `setenv.sh`,  `startup.bat`, `startup.sh`, `shutdown.bat`, and `shutdown.sh` files from a DXP bundle to the `$CATALINA_BASE/bin` folder. Otherwise, create the  `setenv.bat` and `setenv.sh` scripts.
+1. Copy the `setenv.bat`, `setenv.sh`, `startup.bat`, `startup.sh`, `shutdown.bat`, and `shutdown.sh` files from a DXP bundle to the `$CATALINA_BASE/bin` folder. Otherwise, create the `setenv.bat` and `setenv.sh` scripts.
 
     The scripts set JVM options for Catalina, which is Tomcat's servlet container. Among these options is the location of the Java runtime environment. If this environment is not available on the server globally, set its location in in these files so Tomcat can run. Do this by pointing the `JAVA_HOME` environment variable to a DXP-supported JRE:
 
@@ -130,7 +130,7 @@ Here are the steps:
     </Context>
     ```
 
-     Setting `crossContext="true"` lets multiple web applications use the same class loader. This configuration includes commented instructions and tags for configuring a JAAS realm, disabling persistent sessions, and disabling sessions entirely.
+    Setting `crossContext="true"` lets multiple web applications use the same class loader. This configuration includes commented instructions and tags for configuring a JAAS realm, disabling persistent sessions, and disabling sessions entirely.
 
 1. Provide Catalina access to the JARs in `$CATALINA_BASE/lib/ext` by opening your `$CATALINA_BASE/conf/catalina.properties` file and appending this value to the `common.loader` property:
 
@@ -214,10 +214,10 @@ Here are the steps:
 1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` declares the web application context.
 1. The `common.loader` property in `$CATALINA_BASE/conf/catalina.properties`grants Catalina access to the JARs in `$CATALINA_BASE/lib/ext`.
 1. `$CATALINA_BASE/conf/server.xml` sets UTF-8 encoding.
-1. `$CATALINA_BASE/conf/server.xml` does not declare any valve for writing host access logs. *(optional)*
+1. `$CATALINA_BASE/conf/server.xml` does not declare any valve for writing host access logs. _(optional)_
 1. `$CATALINA_HOME/conf/logging.properties` sets the desired log levels.
 1. `$CATALINA_HOME/conf/web.xml` sets the tag handler pool and sets Java 8 as the JSP compiler.
-1. `$CATALINA_HOME/conf/web.xml` specifies for the application server to refrain from looking for extra metadata. *(optional)*
+1. `$CATALINA_HOME/conf/web.xml` specifies for the application server to refrain from looking for extra metadata. _(optional)_
 1. The scripts in Tomcat's `bin` folders are executable.
 
 The application server is configured to run DXP.
@@ -318,8 +318,8 @@ Congratulations! You're running DXP on Tomcat.
 
 You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
-* [Accessing Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
-* [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
-* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+-   [Accessing Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
+-   [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
+-   [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
+-   [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)

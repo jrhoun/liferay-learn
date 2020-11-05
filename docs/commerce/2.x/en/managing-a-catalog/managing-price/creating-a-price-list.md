@@ -8,9 +8,9 @@ To create a new price list:
 1. Click the (![Add icon](../../images/icon-add.png)) button.
 1. Enter the following:
 
-    * **Name**: VIP Customers
-    * **Catalog**: Sahara.com
-    * **Currency**: USD
+    - **Name**: VIP Customers
+    - **Catalog**: Sahara.com
+    - **Currency**: USD
 
 1. Click _Submit_ when finished.
 
@@ -64,9 +64,9 @@ To add a new price modifier:
 1. Click the (![Add icon](../../images/icon-add.png)) button.
 1. Enter the following:
 
-    * **Name**: Brakes
-    * **Target**: Products
-    * **Modifier**: Fixed Amount
+    - **Name**: Brakes
+    - **Target**: Products
+    - **Modifier**: Fixed Amount
 
 1. Click _Submit_ when finished.
 
@@ -75,8 +75,8 @@ You can finish configuring the Price Modifier.
 1. Click the newly created Price Modifier.
 1. On the _Info_ tab, enter the following:
 
-    * **Amount**: 5.00 USD
-    * **Priority**: 1.0
+    - **Amount**: 5.00 USD
+    - **Priority**: 1.0
 
 1. Slide the _Active_ toggle to _YES_.
 
@@ -102,19 +102,19 @@ To add a price list:
 1. Navigate to the _Control Panel_ → _Commerce_ → _Price Lists_.
 1. Click the (![Add icon](../../images/icon-add.png)) button.
 1. Enter the following fields (example values shown below):
-    * **Catalog**: Sahara.com
-    * **Name**: VIP Customers
-    * **Store Currency**: USD
-    * **Priority**: 1.0
+    - **Catalog**: Sahara.com
+    - **Name**: VIP Customers
+    - **Store Currency**: USD
+    - **Priority**: 1.0
 1. Under _Account Groups_, click _Select_.
 1. Choose one or more Account Groups to have access to this price list (example account groups shown below):
-    * _General_
-    * _Auto Repair Shops_
+    - _General_
+    - _Auto Repair Shops_
 1. Click _Add_.
 1. Under _Accounts_, click _Select_.
 1. Choose one or more Accounts to have access to this price list (example accounts shown below):
-    * Mike’s Car Repair
-    * Fountain Valley Car Wash
+    - Mike’s Car Repair
+    - Fountain Valley Car Wash
 1. Click _Add_.
 1. Choose a Schedule for the price list. (Leave the _Never Expire_ checkbox checked in this example. Alternatively, you can set a date range for when the price list is active.)
 
@@ -126,7 +126,7 @@ The price list (_VIP Customers_ in this example) has been created and applied to
 
 ## Additional Information
 
-* [Creating a New Account Group](../../account-management/creating-a-new-account-group.md)
-* [Creating a New Account](../../account-management/creating-a-new-account.md)
-* [Adding Products to a Price List](./adding-products-to-a-price-list.md)
-* [Adding Tiered Pricing](./adding-tiered-pricing.md)
+-   [Creating a New Account Group](../../account-management/creating-a-new-account-group.md)
+-   [Creating a New Account](../../account-management/creating-a-new-account.md)
+-   [Adding Products to a Price List](./adding-products-to-a-price-list.md)
+-   [Adding Tiered Pricing](./adding-tiered-pricing.md)

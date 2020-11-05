@@ -1,7 +1,7 @@
 # Authenticating with CAS (Central Authentication Service)
 
 ```important::
-   CAS is deprecated as of Liferay DXP 7.2. Please use `SAML <./authenticating-with-saml/single-sign-on-with-saml.md>`_ instead. 
+   CAS is deprecated as of Liferay DXP 7.2. Please use `SAML <./authenticating-with-saml/single-sign-on-with-saml.md>`_ instead.
 ```
 
 CAS is a widely used open source single sign-on solution and was the first SSO product to be supported by Liferay DXP. Liferay DXP's CAS module includes the CAS client, so there's no need to install it separately.
@@ -44,13 +44,13 @@ If you are on a Windows system, replace `$JAVA_HOME` above with `%JAVA_HOME%`. O
 
 ## Configure Liferay DXP to use CAS
 
-Once your CAS server is up and running, configure Liferay DXP to use it. CAS configuration can be applied either at the system scope or at the scope of a portal instance. To configure the CAS SSO module at the system or instance scope, navigate to the Control Panel, click on *Configuration* &rarr; *System Settings* (or *Instance Settings*) &rarr; *Security* &rarr; *SSO*. The values configured in System Settings provide the default values for all portal instances. Enable CAS authentication and then modify the URL properties to point to your CAS server.
+Once your CAS server is up and running, configure Liferay DXP to use it. CAS configuration can be applied either at the system scope or at the scope of a portal instance. To configure the CAS SSO module at the system or instance scope, navigate to the Control Panel, click on _Configuration_ &rarr; _System Settings_ (or _Instance Settings_) &rarr; _Security_ &rarr; _SSO_. The values configured in System Settings provide the default values for all portal instances. Enable CAS authentication and then modify the URL properties to point to your CAS server.
 
 **Enabled:** Check this box to enable CAS single sign-on.
 
 **Import from LDAP:** A user may be authenticated from CAS and not yet exist in Liferay DXP. Select this to automatically import users from LDAP if they do not exist in Liferay DXP. For this to work, LDAP must be enabled.
 
-The rest of the settings are various URLs with defaults included. Change *localhost* in the default values to point to your CAS server. When you are finished, click *Save*. After this, when users click the *Sign In* link, they are directed to the CAS server to sign in to Liferay DXP.
+The rest of the settings are various URLs with defaults included. Change _localhost_ in the default values to point to your CAS server. When you are finished, click _Save_. After this, when users click the _Sign In_ link, they are directed to the CAS server to sign in to Liferay DXP.
 
 For some situations, it might be more convenient to specify the system configuration via files on the disk. To do so, create the following file:
 
@@ -60,15 +60,15 @@ For some situations, it might be more convenient to specify the system configura
 
 The format of this file is the same as any properties file. The key to use for each property that can be configured is shown below. Enter values in the same format as you would when initializing a Java primitive type with a literal value.
 
-| Property Label | Property Key | Description | Type |
-| ----- | ----- | ----- | ----- |
-| **Enabled** | `enabled` | Check this box to enable CAS SSO authentication. | `boolean` |
-| **Import from LDAP** | `importFromLDAP` | Users authenticated from CAS that do not exist in Liferay DXP are imported from LDAP. LDAP must be enabled separately. | `boolean` |
-| **Login URL** | `loginURL` | Set the CAS server login URL. | `String` |
-| **Logout on session expiration** | `logoutOnSessionExpiration` | If checked, browsers with expired sessions are redirected to the CAS logout URL. | `boolean` |
-| **Logout URL** | `logoutURL` | The CAS server logout URL. Set this if you want Liferay DXP's logout function to trigger a CAS logout | `String` |
-| **Server Name** | `serverName` | The name of the Liferay DXP instance (e.g., `liferay.com`). If the provided name includes the protocol (`https://`, for example) then this will be used together with the path `/c/portal/login` to construct the URL to which the CAS server will provide tickets. If no scheme is provided, the scheme normally used to access the Liferay DXP login page is used. | `String` |
-| **Server URL** | `serviceURL` | If provided, this is used as the URL to which the CAS server provides tickets. This overrides any URL constructed based on the Server Name as above. | `String` |
-| **No Such User Redirect URL** | `noSuchUserRedirectURL` | Set the URL to which to redirect the user if the user can authenticate with CAS but cannot be found in Liferay DXP. If import from LDAP is enabled, the user is redirected if the user could not be found or could not be imported from LDAP. | `String` |
+| Property Label                   | Property Key                | Description                                                                                                                                                                                                                                                                                                                                                          | Type      |
+| -------------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **Enabled**                      | `enabled`                   | Check this box to enable CAS SSO authentication.                                                                                                                                                                                                                                                                                                                     | `boolean` |
+| **Import from LDAP**             | `importFromLDAP`            | Users authenticated from CAS that do not exist in Liferay DXP are imported from LDAP. LDAP must be enabled separately.                                                                                                                                                                                                                                               | `boolean` |
+| **Login URL**                    | `loginURL`                  | Set the CAS server login URL.                                                                                                                                                                                                                                                                                                                                        | `String`  |
+| **Logout on session expiration** | `logoutOnSessionExpiration` | If checked, browsers with expired sessions are redirected to the CAS logout URL.                                                                                                                                                                                                                                                                                     | `boolean` |
+| **Logout URL**                   | `logoutURL`                 | The CAS server logout URL. Set this if you want Liferay DXP's logout function to trigger a CAS logout                                                                                                                                                                                                                                                                | `String`  |
+| **Server Name**                  | `serverName`                | The name of the Liferay DXP instance (e.g., `liferay.com`). If the provided name includes the protocol (`https://`, for example) then this will be used together with the path `/c/portal/login` to construct the URL to which the CAS server will provide tickets. If no scheme is provided, the scheme normally used to access the Liferay DXP login page is used. | `String`  |
+| **Server URL**                   | `serviceURL`                | If provided, this is used as the URL to which the CAS server provides tickets. This overrides any URL constructed based on the Server Name as above.                                                                                                                                                                                                                 | `String`  |
+| **No Such User Redirect URL**    | `noSuchUserRedirectURL`     | Set the URL to which to redirect the user if the user can authenticate with CAS but cannot be found in Liferay DXP. If import from LDAP is enabled, the user is redirected if the user could not be found or could not be imported from LDAP.                                                                                                                        | `String`  |
 
-To override system defaults for a particular portal instance, navigate to the Control Panel, click on *Configuration* &rarr; *Instance Settings*, click on *Authentication* on the right and then on *CAS* at the top.
+To override system defaults for a particular portal instance, navigate to the Control Panel, click on _Configuration_ &rarr; _Instance Settings_, click on _Authentication_ on the right and then on _CAS_ at the top.

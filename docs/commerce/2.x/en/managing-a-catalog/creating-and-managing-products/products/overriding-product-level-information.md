@@ -96,5 +96,5 @@ The SKU is now available on a subscription basis.
 
 ## Additional Information
 
-* [Specifications](./specifications.md)
-* [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
+-   [Specifications](./specifications.md)
+-   [Adding SKUs to Your Products](./adding-skus-to-your-products.md)

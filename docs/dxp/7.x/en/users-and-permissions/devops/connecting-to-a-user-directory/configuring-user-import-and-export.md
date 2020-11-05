@@ -22,11 +22,11 @@ If you want to search for only a subset of users or users that have different LD
 
 Next, you can define mappings from LDAP attributes to Liferay fields. Though LDAP user attributes may be different from LDAP server to LDAP server, there are five fields Liferay requires to be mapped for the user to be recognized:
 
-* *Screen Name* (e.g., `uid` or `cn`)
-* *Password* (e.g., `userPassword`)
-* *Email Address* (e.g., `mail` or `email`)
-* *First Name* (e.g., `name` or `givenName`)
-* *Last Name* (e.g., `sn`)
+-   _Screen Name_ (e.g., `uid` or `cn`)
+-   _Password_ (e.g., `userPassword`)
+-   _Email Address_ (e.g., `mail` or `email`)
+-   _First Name_ (e.g., `name` or `givenName`)
+-   _Last Name_ (e.g., `sn`)
 
 ```note::
    If you intend to create or import users with no email addresses, you must set ::users.email.address.required=false:: in ::portal-ext.properties::. With this set, Liferay auto-generates an email address combining the user ID plus the suffix defined in the property ::users.email.address.auto.suffix=::. Finally, make sure to set Liferay and LDAP authentication to something other than email address.
@@ -34,13 +34,13 @@ Next, you can define mappings from LDAP attributes to Liferay fields. Though LDA
 
 If you want to import LDAP groups as Liferay user groups, make sure you define a mapping for the Liferay group field so that membership information is preserved:
 
-* *Group* (e.g., *member*)
+-   _Group_ (e.g., _member_)
 
 The other LDAP user mapping fields are optional.
 
 The Control Panel provides default mappings for commonly used LDAP attributes. You can also add your own mappings.
 
-**Test LDAP Users:** Once you have your attribute mappings set up (see above), click the *Test LDAP Users* button and Liferay attempts to pull LDAP users and match them with their mappings as a preview.
+**Test LDAP Users:** Once you have your attribute mappings set up (see above), click the _Test LDAP Users_ button and Liferay attempts to pull LDAP users and match them with their mappings as a preview.
 
 ![You should see a list of users when you click the Test LDAP Users button.](./configuring-user-import-and-export/images/01.png)
 
@@ -54,13 +54,13 @@ This section contains settings for mapping LDAP groups to Liferay user groups.
 (objectClass=groupOfNames)
 ```
 
-Enter the LDAP group attributes you want retrieved for this mapping. The following attributes can be mapped. The *Group Name* and *User* fields are required, the *Description* is optional.
+Enter the LDAP group attributes you want retrieved for this mapping. The following attributes can be mapped. The _Group Name_ and _User_ fields are required, the _Description_ is optional.
 
-* *Group Name* (e.g., `cn` or `o`)
-* *Description* (e.g., `description`)
-* *User* (e.g., `member`)
+-   _Group Name_ (e.g., `cn` or `o`)
+-   _Description_ (e.g., `description`)
+-   _User_ (e.g., `member`)
 
-**Test LDAP Groups:** Click the *Test LDAP Groups* button to display a list of the groups returned by your search filter.
+**Test LDAP Groups:** Click the _Test LDAP Groups_ button to display a list of the groups returned by your search filter.
 
 ## Export
 
@@ -74,7 +74,7 @@ This section contains settings for exporting Liferay user data to LDAP.
 
 **Group Default Object Classes:** When a group is exported, the group is created with the listed default object classes. To find out what your default object classes are, use an LDAP browser tool such as [Apache Directory Studio](https://directory.apache.org/studio) to locate a group and view the Object Class attributes stored in LDAP for that group.
 
-When you've set all your options and tested your connection, click *Save*.
+When you've set all your options and tested your connection, click _Save_.
 
 ```note::
    If a user changes a value like a password in Liferay, that change is passed to the LDAP server, provided Liferay has enough schema access to make the change.

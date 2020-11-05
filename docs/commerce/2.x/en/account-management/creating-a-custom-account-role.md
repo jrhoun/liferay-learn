@@ -12,31 +12,31 @@ To add a new Commerce account role:
 1. Click the _Site Roles_ tab.
 1. Click the _Add Site Role_ button.
 1. Enter the following:
-    * **Name**: Customer Service Representative.
+    - **Name**: Customer Service Representative.
 1. Click _Save_.
 1. Click _Define Permissions_.
 1. Click _Site and Asset Library Administration_ to expand the dropdown menu.
 
     ![Commerce permission keys are located in the Applications section under Site and Asset Library Administration.](./creating-a-custom-account-role/images/05.png)
 
-    * All Commerce-specific permissions keys are located in the _Applications_ sub-menu:
-      * Accounts
-      * Cart
-      * Cart Summary
-      * Checkout
-      * Commerce Addresses
-      * Commerce BOM
-      * Commerce Categories Navigation
-      * Coupon Code Entry
-      * Dashboard Forecasts Chart
-      * Mini Cart
-      * Open Carts
-      * Option Facet
-      * Orders
-      * Shipments
-      * Specification Facet
-      * Wish List Contents
-      * Wish Lists
+    - All Commerce-specific permissions keys are located in the _Applications_ sub-menu:
+        - Accounts
+        - Cart
+        - Cart Summary
+        - Checkout
+        - Commerce Addresses
+        - Commerce BOM
+        - Commerce Categories Navigation
+        - Coupon Code Entry
+        - Dashboard Forecasts Chart
+        - Mini Cart
+        - Open Carts
+        - Option Facet
+        - Orders
+        - Shipments
+        - Specification Facet
+        - Wish List Contents
+        - Wish Lists
 
 1. Select the Commerce permissions from the _Site Administration_.
 
@@ -56,34 +56,34 @@ To add a new Commerce account role:
 1. Click the _Site Roles_ tab.
 1. Click the _Add Site Role_ button.
 1. Enter the following:
-    * **Name**: Customer Service Representative.
+    - **Name**: Customer Service Representative.
 1. Click _Save_.
 1. Click _Define Permissions_.
 1. Click _Site Administration_ to expand the dropdown menu.
 
     ![Blank Commerce Account Roles](./creating-a-custom-account-role/images/02.png)
 
-    * Commerce-specific permissions keys are located in two different places. In the _Commerce_ sub-menu, the following Commerce widgets' permissions keys are listed here:
-      * Wish Lists
-      * Settings
-    * The following Commerce widgets' permission keys are found in the _Applications_ sub-menu.
-      * Accounts
-      * Cart
-      * Cart Summary
-      * Checkout
-      * Commerce Addresses
-      * Commerce BOM
-      * Commerce Categories Navigation
-      * Coupon Code Entry
-      * Dashboard Forecasts Chart
-      * Mini Cart
-      * Open Carts
-      * Option Facet
-      * Orders
-      * Shipments
-      * Specification Facet
-      * Wish List Contents
-      * Wish Lists
+    - Commerce-specific permissions keys are located in two different places. In the _Commerce_ sub-menu, the following Commerce widgets' permissions keys are listed here:
+        - Wish Lists
+        - Settings
+    - The following Commerce widgets' permission keys are found in the _Applications_ sub-menu.
+        - Accounts
+        - Cart
+        - Cart Summary
+        - Checkout
+        - Commerce Addresses
+        - Commerce BOM
+        - Commerce Categories Navigation
+        - Coupon Code Entry
+        - Dashboard Forecasts Chart
+        - Mini Cart
+        - Open Carts
+        - Option Facet
+        - Orders
+        - Shipments
+        - Specification Facet
+        - Wish List Contents
+        - Wish Lists
 
 1. Select the Commerce permissions from the _Site Administration_.
 
@@ -97,4 +97,4 @@ Once the new role has been created, it will be listed in the _Site Roles_ menu i
 
 ## Additional Information
 
-* [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)
+-   [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)

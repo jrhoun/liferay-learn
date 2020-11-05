@@ -1,6 +1,6 @@
 # Installing on WebLogic
 
-If you are choosing to use WebLogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start or stop DXP quickly and can be converted to a cluster configuration. The instructions below describe installing DXP to a Managed Server.
+If you are choosing to use WebLogic as your application server, it is _highly recommended_ to install DXP to a WebLogic Managed server. A managed server can start or stop DXP quickly and can be converted to a cluster configuration. The instructions below describe installing DXP to a Managed Server.
 
 Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html).
 
@@ -8,9 +8,9 @@ Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
-* DXP WAR file
-* Dependencies ZIP file
-* OSGi Dependencies ZIP file
+-   DXP WAR file
+-   Dependencies ZIP file
+-   OSGi Dependencies ZIP file
 
 Installing Liferay DXP on WebLogic requires the following steps:
 
@@ -83,17 +83,17 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
     JAVA_PROPERTIES="-Dfile.encoding=UTF-8 ${JAVA_PROPERTIES} ${CLUSTER_PROPERTIES}"
     ```
 
-1. Ensure that the Node Manager sets DXP's memory requirements when starting the Managed Server. In the Admin Server's console UI, navigate to the Managed Server where DXP is to be deployed and select the *Server Start* tab. Enter the following parameters into the *Arguments* field:
+1. Ensure that the Node Manager sets DXP's memory requirements when starting the Managed Server. In the Admin Server's console UI, navigate to the Managed Server where DXP is to be deployed and select the _Server Start_ tab. Enter the following parameters into the _Arguments_ field:
 
     ```bash
     -Xmx2560m -Xms2560m -XX:MaxMetaspaceSize=512m
     ```
 
-1. Click *Save*.
+1. Click _Save_.
 
 ## Declare the Liferay Home Folder
 
-Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md) folder location.
+Before installing DXP, set your [_Liferay Home_](../../reference/liferay-home.md) folder location.
 
 1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).)
 
@@ -128,11 +128,11 @@ When you start Liferay DXP 7.3, it installs and starts a default [sidecar](../..
 
 1. Download the following archives:
 
-    * [Elasticsearch OSS No JDK 7.3](https://www.elastic.co/guide/en/elasticsearch/reference/7.3/release-notes-7.3.2.html) ([available here--7.3.2](https://www.elastic.co/downloads/past-releases/elasticsearch-oss-no-jdk-7-3-2))
-    * [ICU Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-icu.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-icu/analysis-icu-7.3.2.zip))
-    * [Japanese (kuromoji) Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-kuromoji.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-kuromoji/analysis-kuromoji-7.3.2.zip))
-    * [Smart Chinese Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-smartcn.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-smartcn/analysis-smartcn-7.3.2.zip))
-    * [Stempel Polish Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-stempel.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-stempel/analysis-stempel-7.3.2.zip))
+    - [Elasticsearch OSS No JDK 7.3](https://www.elastic.co/guide/en/elasticsearch/reference/7.3/release-notes-7.3.2.html) ([available here--7.3.2](https://www.elastic.co/downloads/past-releases/elasticsearch-oss-no-jdk-7-3-2))
+    - [ICU Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-icu.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-icu/analysis-icu-7.3.2.zip))
+    - [Japanese (kuromoji) Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-kuromoji.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-kuromoji/analysis-kuromoji-7.3.2.zip))
+    - [Smart Chinese Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-smartcn.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-smartcn/analysis-smartcn-7.3.2.zip))
+    - [Stempel Polish Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/7.3/analysis-stempel.html) ([download](https://artifacts.elastic.co/downloads/elasticsearch-plugins/analysis-stempel/analysis-stempel-7.3.2.zip))
 
 1. Copy the downloaded files into `[Liferay Home]`.
 
@@ -149,15 +149,15 @@ To configure DXP's built-in data source when you run DXP for the first time, use
 Otherwise, you can configure the data source in WebLogic:
 
 1. Log in to the AdminServer console.
-1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
-1. To create a new data source, click *New*.
-1. Enter the *Name* field with `Liferay Data Source` and the *JNDI Name* field with `jdbc/LiferayPool`.
-1. Select the database type and driver. For example, MySQL is *MySQL's Driver (Type 4) Versions:using com.mysql.cj.jdbc.Driver*.
-1. Click *Next* to continue.
-1. Accept the default settings on this page and click *Next* to move on.
+1. In the _Domain Structure_ tree, find the domain and navigate to _Services_ &rarr; _JDBC_ &rarr; _Data Sources_.
+1. To create a new data source, click _New_.
+1. Enter the _Name_ field with `Liferay Data Source` and the _JNDI Name_ field with `jdbc/LiferayPool`.
+1. Select the database type and driver. For example, MySQL is _MySQL's Driver (Type 4) Versions:using com.mysql.cj.jdbc.Driver_.
+1. Click _Next_ to continue.
+1. Accept the default settings on this page and click _Next_ to move on.
 1. Fill in the database information for the MySQL database.
-1. If using MySQL, add the text `?useUnicode=true&characterEncoding=UTF-8&\useFastDateParsing=false` to the URL line and test the connection. If it works, click *Next*.
-1. Select the target for the data source and click *Finish*.
+1. If using MySQL, add the text `?useUnicode=true&characterEncoding=UTF-8&\useFastDateParsing=false` to the URL line and test the connection. If it works, click _Next_.
+1. Select the target for the data source and click _Finish_.
 1. Connect DXP to the JDBC data source. In the `portal-ext.properties` file (see above), enter the following line:
 
     ```properties
@@ -169,12 +169,12 @@ Otherwise, you can configure the data source in WebLogic:
 You can connect Liferay DXP [to a mail server](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) using its built-in mail session. You can also use WebLogic's mail session:
 
 1. Start WebLogic and log in to the Admin Server's console.
-1. Select *Services* &rarr; *Mail Sessions* from the *Domain Structure* box on the left hand side of the Admin Server's console UI.
-1. Click *New* to begin creating a new mail session.
-1. Name the session *LiferayMail* and give it the JNDI name `mail/MailSession`.
-1. Enter the *Session Username*, *Session Password*, *Confirm Session Password*, and *JavaMail Properties* fields as necessary for the mail server. See the [WebLogic documentation](http://docs.oracle.com/middleware/1221/wls/FMWCH/pagehelp/Mailcreatemailsessiontitle.html) for more information on these fields.
-1. Click *Next*.
-1. Choose the Managed Server where DXP is to be installed on, and click *Finish*.
+1. Select _Services_ &rarr; _Mail Sessions_ from the _Domain Structure_ box on the left hand side of the Admin Server's console UI.
+1. Click _New_ to begin creating a new mail session.
+1. Name the session _LiferayMail_ and give it the JNDI name `mail/MailSession`.
+1. Enter the _Session Username_, _Session Password_, _Confirm Session Password_, and _JavaMail Properties_ fields as necessary for the mail server. See the [WebLogic documentation](http://docs.oracle.com/middleware/1221/wls/FMWCH/pagehelp/Mailcreatemailsessiontitle.html) for more information on these fields.
+1. Click _Next_.
+1. Choose the Managed Server where DXP is to be installed on, and click _Finish_.
 1. Shut down the Managed and Admin Servers.
 1. With the Managed and Admin servers shut down, add the following property to the `portal-ext.properties` file in Liferay Home:
 
@@ -191,14 +191,14 @@ The changes take effect upon restarting the Managed and Admin servers.
 Follow these steps to deploy the DXP WAR file:
 
 1. Verify that the designated Managed Server where you're deploying DXP is shut down.
-1. In the Admin Server's console UI, select *Deployments* from the *Domain Structure* box on the left hand side.
-1. Click *Install* to start a new deployment.
-1. Select the DXP WAR file or its expanded contents on the machine. Alternatively, upload the WAR file by clicking the *Upload your file(s)* link. Click *Next*.
-1. Select *Install this deployment as an application* and click *Next*.
-1. Select the designated Managed Server where you're deploying DXP and click *Next*.
-1. If the default name is appropriate for the installation, keep it. Otherwise, enter a different name and click *Next*.
-1. Click *Finish*.
-1. After the deployment finishes, click *Save* if the configuration is correct.
+1. In the Admin Server's console UI, select _Deployments_ from the _Domain Structure_ box on the left hand side.
+1. Click _Install_ to start a new deployment.
+1. Select the DXP WAR file or its expanded contents on the machine. Alternatively, upload the WAR file by clicking the _Upload your file(s)_ link. Click _Next_.
+1. Select _Install this deployment as an application_ and click _Next_.
+1. Select the designated Managed Server where you're deploying DXP and click _Next_.
+1. If the default name is appropriate for the installation, keep it. Otherwise, enter a different name and click _Next_.
+1. Click _Finish_.
+1. After the deployment finishes, click _Save_ if the configuration is correct.
 1. Start the Managed Server where you deployed DXP. DXP precompiles all the JSPs and then launches.
 
 If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md).
@@ -223,8 +223,8 @@ May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass pr
 
 You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
-* [Accessing EE Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
-* [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
-* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+-   [Accessing EE Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
+-   [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
+-   [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
+-   [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)

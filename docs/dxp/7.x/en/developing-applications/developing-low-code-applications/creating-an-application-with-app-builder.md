@@ -2,10 +2,10 @@
 
 To create applications based on a custom object: create the object, create at least one form view, create at least one table view, and deploy the application.
 
-* [Creating a Custom Object](#creating-a-custom-object)
-* [Creating Form Views](#creating-form-views)
-* [Creating Table Views](#creating-table-views)
-* [Deploying the Application](#deploying-the-application)
+-   [Creating a Custom Object](#creating-a-custom-object)
+-   [Creating Form Views](#creating-form-views)
+-   [Creating Table Views](#creating-table-views)
+-   [Deploying the Application](#deploying-the-application)
 
 Here we'll create two simple time off management applications with App Builder, backed by a custom object called Time Off Request. The first application will be a Time Off Requester widget that just shows an Add Request form. The application's users will fill out this form when they want to request time off. The second application is a Time Off Management application deployed to the Product Menu, where administrative Users can see and manage the Time Off Requests.
 
@@ -37,10 +37,10 @@ Create a Form View:
 
 1. Using the layout in the screenshot, add
 
-    * a required text field labeled _Name_
-    * a required date field labeled _From_
-    * a required date field labeled _To_
-    * an optional text field labeled _Comment_, which allows multiple lines
+    - a required text field labeled _Name_
+    - a required date field labeled _From_
+    - a required date field labeled _To_
+    - an optional text field labeled _Comment_, which allows multiple lines
 
 1. Save the form view.
 
@@ -110,7 +110,7 @@ The App Builder is designed to prevent data corruption or loss. Deleting, adding
 
 Deleting a field from an object that already has data records prevents the field from display in the UI, but doesn't delete the data. If you create a field with same name and type as a deleted field, the field's data will be restored for records that already hold its data.
 
-To remove a field from an existing object, hover over it in the object view and click the *x*. You'll be asked for confirmation and warned about data loss.
+To remove a field from an existing object, hover over it in the object view and click the _x_. You'll be asked for confirmation and warned about data loss.
 
 ![Deleting a field will cause data loss for existing records.](./creating-an-application-with-app-builder/images/06.png)
 
@@ -128,4 +128,4 @@ To edit a field, navigate to the form view where it exists and click the field i
 
 ## Related Information
 
-* [App Builder Overview](./app-builder-overview.md)
+-   [App Builder Overview](./app-builder-overview.md)

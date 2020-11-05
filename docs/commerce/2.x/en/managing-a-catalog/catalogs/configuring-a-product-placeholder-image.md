@@ -40,7 +40,7 @@ You can set a new placeholder image when creating a new catalog or replace an ex
 1. Drag & Drop to Upload a new placeholder image (or click _Select File_ and browse).
 1. Click _Add_ to upload the image.
 
-     ![Verify the image.](./configuring-a-product-placeholder-image/images/03.png)
+    ![Verify the image.](./configuring-a-product-placeholder-image/images/03.png)
 
 1. Click _Save_ when finished.
 
@@ -67,4 +67,4 @@ The new image has been applied to the entire instance.
 
 ## Additional Information
 
-* [Creating a New Catalog](./creating-a-new-catalog.md)
+-   [Creating a New Catalog](./creating-a-new-catalog.md)

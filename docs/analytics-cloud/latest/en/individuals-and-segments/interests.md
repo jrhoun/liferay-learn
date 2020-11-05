@@ -8,8 +8,8 @@ As an Individual interacts with the pages and assets, Analytics Cloud notes the 
 
 For example, say your site has pages that mention these topics:
 
-* Clothing
-* Sports
+-   Clothing
+-   Sports
 
 If an Individual named Michael frequents these pages, the Interest ranking for the clothing and sports topics is high. Here are a couple of different ways you could use this information:
 

@@ -38,15 +38,15 @@ Once you have assigned to task to yourself, you can approve or reject the submis
 
 1. Click the _Actions_ button (![Actions](../../../images/icon-actions.png)) and select _Approve_ or _Reject_.
 
-     ![Approve or reject the asset.](./reviewing-assets/images/06.png)
+    ![Approve or reject the asset.](./reviewing-assets/images/06.png)
 
 1. Enter an optional comment and click _Done_.
 
 Once a task is complete, one of several things happens:
 
-* If the submission is rejected, then the asset is not published. The asset exits the workflow process. On the User's _Notifications_, the original author is notified that the submission was rejected and needs to be modified before resubmitted. It is marked as _Update_ in _My Workflow Tasks_.
-* If there are more than one reviewers, the task is advanced to the next reviewer in the chain.
-* If the submission is approved and there is only one reviewer, then the task is moved to the _Completed_ section on the _Assigned to Me_ tab. The asset is published.
+-   If the submission is rejected, then the asset is not published. The asset exits the workflow process. On the User's _Notifications_, the original author is notified that the submission was rejected and needs to be modified before resubmitted. It is marked as _Update_ in _My Workflow Tasks_.
+-   If there are more than one reviewers, the task is advanced to the next reviewer in the chain.
+-   If the submission is approved and there is only one reviewer, then the task is moved to the _Completed_ section on the _Assigned to Me_ tab. The asset is published.
 
 ![The completed task is in Assigned to Me tab.](./reviewing-assets/images/07.png)
 
@@ -54,6 +54,6 @@ The approved asset (the Wiki Page) is now published in the widget.
 
 ## Additional Information
 
-* [Managing Notifications and Requests](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
-* [Workflow Task Nodes](https://help.liferay.com/hc/articles/360028834732-Workflow-Task-Nodes#assignments)
-* [Workflow Notifications](https://help.liferay.com/hc/articles/360028834772-Workflow-Notifications)
+-   [Managing Notifications and Requests](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+-   [Workflow Task Nodes](https://help.liferay.com/hc/articles/360028834732-Workflow-Task-Nodes#assignments)
+-   [Workflow Notifications](https://help.liferay.com/hc/articles/360028834772-Workflow-Notifications)

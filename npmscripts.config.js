@@ -1,4 +1,9 @@
-const CHECK_AND_FIX_GLOBS = ['/site/**/*.scss', '/site/**/*.js'];
+const CHECK_AND_FIX_GLOBS = [
+	'**/*.{md,yml}',
+	'/docs/**/*.{css,json}',
+	'/site/**/*.scss',
+	'/site/**/*.js',
+];
 
 module.exports = {
 	check: CHECK_AND_FIX_GLOBS,

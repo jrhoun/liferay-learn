@@ -12,22 +12,29 @@ When uploading images in a blog or web content, Adaptive Media works only with i
 
 For web content articles, Adaptive Media works only with images added from the file selector's _Documents and Media_ tab. Unlike blogs, Adaptive Media doesn't deliver adapted images for images added to web content articles via drag and drop.
 
-For both blog entries and media content articles, Adaptive Media doesn't work with images added from the file selector's *URL* tab. This is because the image is linked directly from the URL and therefore provides no image file for Adaptive Media to copy.
+For both blog entries and media content articles, Adaptive Media doesn't work with images added from the file selector's _URL_ tab. This is because the image is linked directly from the URL and therefore provides no image file for Adaptive Media to copy.
 
 Note that you can see the `<img>` tag and `data-fileentryid` attribute in the HTML of a blog entry or a web content article while you're writing it. When the content is displayed, the HTML is automatically replaced and looks similar to this:
 
 ```html
-    <picture>
+<picture>
+	<source
+		media="(max-width:850px)"
+		srcset="/o/adaptive-media/image/44147/med/photo.jpeg"
+	/>
 
-        <source media="(max-width:850px)" srcset="/o/adaptive-media/image/44147/med/photo.jpeg">
+	<source
+		media="(max-width:1200px) and (min-width:850px)"
+		srcset="/o/adaptive-media/image/44147/hd/photo.jpeg"
+	/>
 
-        <source media="(max-width:1200px) and (min-width:850px)" srcset="/o/adaptive-media/image/44147/hd/photo.jpeg">
+	<source
+		media="(max-width:2000px) and (min-width:1200px)"
+		srcset="/o/adaptive-media/image/44147/ultra-hd/photo.jpeg"
+	/>
 
-        <source media="(max-width:2000px) and (min-width:1200px)" srcset="/o/adaptive-media/image/44147/ultra-hd/photo.jpeg">
-
-        <img src="/documents/20140/0/photo.jpeg/1992-9143-85d2-f72ec1ff77a0">
-
-    </picture>
+	<img src="/documents/20140/0/photo.jpeg/1992-9143-85d2-f72ec1ff77a0" />
+</picture>
 ```
 
 This example uses three different images, each with a different resolution. A `source` tag defines each of these images. Also note the original image (`img`) is used as a fallback in case the adapted images aren't available.
@@ -45,7 +52,10 @@ To use adapted images in [structured web content](../../../web-content/user-guid
 This snippet includes the `data-fileentryid` attribute to ensure that Adaptive Media replaces the image with an adapted image. If you inspect the resulting web content's HTML in the editor's code view, you should see a tag like this:
 
 ```html
-    <img data-fileentryid="37308" src="/documents/20143/0/photo.jpeg/85140258-1c9d-89b8-4e45-d79d5e262318?t=1518425" />
+<img
+	data-fileentryid="37308"
+	src="/documents/20143/0/photo.jpeg/85140258-1c9d-89b8-4e45-d79d5e262318?t=1518425"
+/>
 ```
 
 Note the `<img>` tag with a `data-fileentryid` attribute. Adaptive Media uses the file entry ID to replace the `<img>` element automatically with a `<picture>` element that contains the available adapted images for each resolution (see the `<picture>` example above).
@@ -60,4 +70,4 @@ Adaptive Media doesn't regenerate adapted images during export/import or the pub
 
 ## Additional Information
 
-* [Adding Image Resolutions](./adding-image-resolutions.md)
+-   [Adding Image Resolutions](./adding-image-resolutions.md)

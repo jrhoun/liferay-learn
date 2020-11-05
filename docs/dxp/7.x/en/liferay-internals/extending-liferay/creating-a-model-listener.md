@@ -51,17 +51,17 @@ First, deploy an example model listener for the `JournalArticle` model on your i
 
 1. Verify that the example model listener was added by viewing the added log message. Open your browser to `https://localhost:8080` and navigate to the Site menu → _Content & Data_ → _Web Content_.
 
-   ![The web content administration page is your interface for creating web content.](./creating-a-model-listener/images/01.png)
+    ![The web content administration page is your interface for creating web content.](./creating-a-model-listener/images/01.png)
 
-   Click the add ![Add](../../images/icon-add.png) button, then click _Basic Web Content_ to add a new article. Fill out a title and some content; then click _Publish_. A warning message appears in the console:
+    Click the add ![Add](../../images/icon-add.png) button, then click _Basic Web Content_ to add a new article. Fill out a title and some content; then click _Publish_. A warning message appears in the console:
 
-   ```
-   2020-03-17 23:14:56.301 WARN  [http-nio-8080-exec-5][N4G6ModelListener:23] Added journal article 20478.
-   ```
+    ```
+    2020-03-17 23:14:56.301 WARN  [http-nio-8080-exec-5][N4G6ModelListener:23] Added journal article 20478.
+    ```
 
 Congratulations! You've successfully built and deployed a new model listener that implements `ModelListener`.
 
-As you can see, Model Listeners listen for an *event* on a particular *model*. For this listener, the event is `onAfterCreate`. When the content is created, the listener "hears" the event, and the action is fired when the event happens.
+As you can see, Model Listeners listen for an _event_ on a particular _model_. For this listener, the event is `onAfterCreate`. When the content is created, the listener "hears" the event, and the action is fired when the event happens.
 
 Now you'll modify the example to listen for a different event.
 
@@ -86,6 +86,7 @@ Now you'll modify the project so it operates on the `MBMessage` class and the `o
 1. Open the `N4G6ModelListener` class in your text editor or IDE.
 
 1. Find the class declaration:
+
     ```java
     @Component(immediate = true, service = ModelListener.class)
     public class N4G6ModelListener extends BaseModelListener<JournalArticle> {
@@ -95,12 +96,12 @@ Now you'll modify the project so it operates on the `MBMessage` class and the `o
 
 1. Modify the model class to `MBMessage`:
 
-   ```java
-   @Component(immediate = true, service = ModelListener.class)
-   public class N4G6ModelListener extends BaseModelListener<MBMessage> {
-   ```
+    ```java
+    @Component(immediate = true, service = ModelListener.class)
+    public class N4G6ModelListener extends BaseModelListener<MBMessage> {
+    ```
 
-   When this model listener is registered, it listens to events for the model defined. The model can be an out-of-the-box entity or a custom entity. Extending the `BaseModelListener` class gives a default, empty implementation for each of `ModelListener`'s methods, so your code stays clean and contains overrides for only the events you need.
+    When this model listener is registered, it listens to events for the model defined. The model can be an out-of-the-box entity or a custom entity. Extending the `BaseModelListener` class gives a default, empty implementation for each of `ModelListener`'s methods, so your code stays clean and contains overrides for only the events you need.
 
 ## Declare the Event
 
@@ -108,15 +109,15 @@ Next, override the implementation for the event you want:
 
 1. Find the `onAfterCreate` method:
 
-   ```java
-   public void onAfterCreate(JournalArticle model)
-   ```
+    ```java
+    public void onAfterCreate(JournalArticle model)
+    ```
 
 1. Change the method so it overrides `onBeforeRemove` and passes the `MBMessage` as a parameter:
 
-   ```java
-   public void onBeforeRemove(MBMessage model)
-   ```
+    ```java
+    public void onBeforeRemove(MBMessage model)
+    ```
 
 ## Implement Your Business Logic
 
@@ -124,19 +125,19 @@ Triggering a particular action is a typical reason to listen for a particular mo
 
 1. In your new `onBeforeRemove` method, replace the `if` statement with this one:
 
-   ```java
-   if (_log.isWarnEnabled()) {
-       _log.warn("Warning! Message " + model.getSubject() + " was just removed.");
-   }
-   ```
+    ```java
+    if (_log.isWarnEnabled()) {
+        _log.warn("Warning! Message " + model.getSubject() + " was just removed.");
+    }
+    ```
 
 1. Add the new import for `MBMessage` to your imports section at the top of the file:
 
-   ```java
-   import com.liferay.message.boards.model.MBMessage;
-   ```
+    ```java
+    import com.liferay.message.boards.model.MBMessage;
+    ```
 
-   Remove the unused import for `JournalArticle`.
+    Remove the unused import for `JournalArticle`.
 
 1. Save your new model listener.
 
@@ -150,21 +151,21 @@ You can build and deploy the model listener as you did above:
 
 Test your listener by adding and then deleting a message boards message:
 
-1. Go to *Product Menu* &rarr; *Content & Data* &rarr; *Message Boards*.
+1. Go to _Product Menu_ &rarr; _Content & Data_ &rarr; _Message Boards_.
 
-1. Click the add ![Add](../../images/icon-add.png) button, type a Subject and a Body, and click *Publish*.
+1. Click the add ![Add](../../images/icon-add.png) button, type a Subject and a Body, and click _Publish_.
 
-1. Click *Message Boards* from the menu again to see your message. Click the Action ![Action](../../images/icon-actions.png) button and choose *Move to Recycle Bin*. Notice that you don't see your message in the logs yet because the message has only been recycled.
+1. Click _Message Boards_ from the menu again to see your message. Click the Action ![Action](../../images/icon-actions.png) button and choose _Move to Recycle Bin_. Notice that you don't see your message in the logs yet because the message has only been recycled.
 
-1. Click *Recycle Bin* from the Product Menu, and you'll see your message.
+1. Click _Recycle Bin_ from the Product Menu, and you'll see your message.
 
-1. Click the Action ![Action](../../images/icon-actions.png) button and select *Delete*. Confirm the deletion.
+1. Click the Action ![Action](../../images/icon-actions.png) button and select _Delete_. Confirm the deletion.
 
 1. Check your log. Your message appears:
 
-   ```
-   2020-04-17 21:10:31.080 WARN  [http-nio-8080-exec-5][N4G6ModelListener:19] Warning! Message This is a Test Message was just removed.
-   ```
+    ```
+    2020-04-17 21:10:31.080 WARN  [http-nio-8080-exec-5][N4G6ModelListener:19] Warning! Message This is a Test Message was just removed.
+    ```
 
 ## Conclusion
 

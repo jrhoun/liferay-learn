@@ -2,30 +2,30 @@
 
 The Gogo shell provides a way to interact with the module framework. Among other things, you can
 
-* Dynamically install/uninstall bundles (modules)
-* Examine package dependencies
-* Examine extension points
-* List service references
+-   Dynamically install/uninstall bundles (modules)
+-   Examine package dependencies
+-   Examine extension points
+-   List service references
 
 The Control Panel is the safest, most secure way to access Gogo shell:
 
-1. Open the *Global Menu* (![icon](../../../images/icon-applications-menu.png)).
+1. Open the _Global Menu_ (![icon](../../../images/icon-applications-menu.png)).
 
-1. Select the *Control Panel* tab.
+1. Select the _Control Panel_ tab.
 
-1. Click *Gogo Shell* in the System section.
+1. Click _Gogo Shell_ in the System section.
 
-   The Gogo shell command screen appears.
+    The Gogo shell command screen appears.
 
-   ![Gogo shell in the Control Panel](./using-the-gogo-shell/images/02.png)
+    ![Gogo shell in the Control Panel](./using-the-gogo-shell/images/02.png)
 
     ```note::
        In DXP 7.2, open the Control Panel and navigate to *Configuration* &rarr; *Gogo Shell*
     ```
 
-1. Enter a Gogo shell command in the *g!* text field. For example, enter `lb | grep "Liferay Announcements API"` to list information about the Announcements API bundle.
+1. Enter a Gogo shell command in the _g!_ text field. For example, enter `lb | grep "Liferay Announcements API"` to list information about the Announcements API bundle.
 
-1. Click *Execute*.
+1. Click _Execute_.
 
     The command result output appears.
 

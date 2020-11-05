@@ -16,11 +16,11 @@ The Private Pages (Dashboard) of a User's Personal Site can be used to view pers
 
 To access your Personal Site pages, follow these steps:
 
-1. Open the Personal Menu icon and select either *My Profile* or *My Dashboard*.
+1. Open the Personal Menu icon and select either _My Profile_ or _My Dashboard_.
 
     ![You access your Personal Site pages from the Personal Menu.](./managing-personal-sites/images/03.png)
 
-1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu.
+1. Open the Product Menu and go to _Site Builder_ &rarr; _Pages_ under the Site Menu.
 1. Manage the pages as you would any other [Widget Page](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
 
     ```tip::
@@ -33,18 +33,18 @@ You can also add and define pages for a User's Personal Site via a User Group. S
 
 Permissions and Roles for personal sites follow the behavior shown below:
 
-* Users function as Site Administrators of their personal Sites; they can modify the pages and applications on their Personal Sites.
-* Administrators can customize the modifiable portions of personal Sites through Liferay Portal's permissions system by removing permissions from Roles (disallow all Users from modifying something by removing the relevant permission from the User Role).
+-   Users function as Site Administrators of their personal Sites; they can modify the pages and applications on their Personal Sites.
+-   Administrators can customize the modifiable portions of personal Sites through Liferay Portal's permissions system by removing permissions from Roles (disallow all Users from modifying something by removing the relevant permission from the User Role).
 
 ## Customizing Personal Sites with Portal Properties
 
 There are several portal properties you can add to [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) to customize the default pages of personal Sites. You can customize the names of the pages, the applications that appear on the pages, the themes and layout templates of pages, and more. Please refer to the [Default User Public Layouts](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts) and [Default User Private Layouts](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts) sections of the `portal.properties` file for details. Some of these properties are listed in the table below:
 
-| Functionality | Property |
-| --- | --- |
-| Disable personal Sites | `layout.user.public.layouts.enabled=false`
-| Disable Private Pages on personal Sites | `layout.user.private.layouts.enabled=false` |
-| Disable automatic creation of personal Sites | `layout.user.public.layouts.auto.create=false`
+| Functionality                                                 | Property                                        |
+| ------------------------------------------------------------- | ----------------------------------------------- |
+| Disable personal Sites                                        | `layout.user.public.layouts.enabled=false`      |
+| Disable Private Pages on personal Sites                       | `layout.user.private.layouts.enabled=false`     |
+| Disable automatic creation of personal Sites                  | `layout.user.public.layouts.auto.create=false`  |
 | Disable automatic creation of Private Pages on personal Sites | `layout.user.private.layouts.auto.create=false` |
 
 The Public and Private Page Sets of personal Sites are handled separately. You can leave one Page Set enabled while disabling the other. If you initially had user personal Sites enabled for your instance but then disabled them, existing personal Sites remain on your instance until the next time users sign in, at which point they're removed.

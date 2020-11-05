@@ -6,16 +6,16 @@ Liferay Commerce is a digital commerce platform built on Liferay DXP. This artic
 
 Liferay Commerce is bundled with Liferay Portal 7.3 GA6 and Liferay DXP GA1. For an optimal installation experience, please review the Compatibility Matrix and related installation material prior to getting started.
 
-* [Liferay DXP 7.3 and Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported technologies.
+-   [Liferay DXP 7.3 and Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported technologies.
 <!-- * See the [Liferay DXP 7.3 Deployment Checklist]() for information about Liferay DXP architecture and performance tuning guidelines. -->
 
 ## Starting with Liferay Commerce
 
 Liferay Commerce 3.0 is now bundled with Liferay Portal 7.3 CE GA6 and Liferay DXP 7.3 GA1. The Community Edition bundle requires no additional Commerce-specific installation steps and can be used immediately on startup. Liferay Commerce Enterprise 3.0 is bundled with Liferay DXP 7.3 DXP GA1 and requires a Liferay Commerce subscription. To get started, review the following options:
 
-| Installation Method | Purpose |
-| --- | --- |
-| [Docker image](https://learn.liferay.com/dxp/7.x/en/getting-started/starting-with-a-docker-image.html#get-started-with-liferay) | Getting started with a Docker image is the fastest way to begin touring Liferay Commerce |
+| Installation Method                                                                                                                 | Purpose                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [Docker image](https://learn.liferay.com/dxp/7.x/en/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)     | Getting started with a Docker image is the fastest way to begin touring Liferay Commerce                                    |
 | [Bundle](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | Liferay Commerce pre-bundled with an application server. The most common way to get started running a Liferay installation. |
 
 To use Liferay Commerce Enterprise 3.0, [deploy your activation key](./activating-liferay-commerce-enterprise.md) and execute a search reindex to populate the data.
@@ -24,8 +24,8 @@ To use Liferay Commerce Enterprise 3.0, [deploy your activation key](./activatin
 
 Periodic maintenance updates and product upgrades are available to ensure and enhance the quality of your experience with Liferay Commerce. See the following articles to learn more:
 
-* [Maintenance Versions](./maintenance-versions.md)
-* [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
+-   [Maintenance Versions](./maintenance-versions.md)
+-   [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
 
 ## Liferay Commerce 2.1 and Below
 
@@ -35,9 +35,9 @@ Previous releases of Liferay Commerce required additional installation steps tha
 
 Before installing Liferay Commerce 2.1 and below, review the system requirements and Liferay DXP deployment checklist that correspond to your installation version.
 
-* [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) for a list of supported technologies.
-* [Liferay DXP 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513)
-* [Liferay DXP 7.2 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.2+Deployment+Checklist.pdf/22dee290-6b06-0bdc-aa89-30bb88d1d42e?t=1566483298239)
+-   [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) for a list of supported technologies.
+-   [Liferay DXP 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513)
+-   [Liferay DXP 7.2 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.2+Deployment+Checklist.pdf/22dee290-6b06-0bdc-aa89-30bb88d1d42e?t=1566483298239)
 
 ### Installing Using a Docker Image
 
@@ -53,5 +53,5 @@ Install Liferay Commerce by deploying the `LPKG` file to your preexisting Lifera
 
 ## Additional Information
 
-* [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
-* [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
+-   [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
+-   [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)

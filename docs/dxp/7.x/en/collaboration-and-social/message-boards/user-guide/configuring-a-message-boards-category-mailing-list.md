@@ -23,16 +23,16 @@ To add a mailing list to a Message Boards Category:
 
 1. Enter the following:
 
-   * **Email address**: The dedicated email address or alias for this category (for example: replies@lunar-resort.com)
-   * **Protocol**: POP
-   * **Server Name**: The mail server’s host name
-   * **Server Port**: The port on which the mail service is running (110)
-   * **Use a Secure Network Connection**: Check if applicable
-   * **User Name**: info@lunar-resort.com
-   * **Password**: *****
-   * **Read Interval (Minutes)**: 5
-   * **Email Address (Outgoing)**: Use the same email if you want your users to reply to the categories using email
-   * **Use Custom Outgoing Server**: Leave blank if using a different mail server than the global default
+    - **Email address**: The dedicated email address or alias for this category (for example: replies@lunar-resort.com)
+    - **Protocol**: POP
+    - **Server Name**: The mail server’s host name
+    - **Server Port**: The port on which the mail service is running (110)
+    - **Use a Secure Network Connection**: Check if applicable
+    - **User Name**: info@lunar-resort.com
+    - **Password**: **\***
+    - **Read Interval (Minutes)**: 5
+    - **Email Address (Outgoing)**: Use the same email if you want your users to reply to the categories using email
+    - **Use Custom Outgoing Server**: Leave blank if using a different mail server than the global default
 
 1. Click _Save_.
 
@@ -44,5 +44,5 @@ The mailing list is now active for this category. Users who have subscribed to t
 
 ## Related Information
 
-* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)
-* [Creating Message Board Categories](./creating-message-boards-categories.md)
+-   [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)
+-   [Creating Message Board Categories](./creating-message-boards-categories.md)

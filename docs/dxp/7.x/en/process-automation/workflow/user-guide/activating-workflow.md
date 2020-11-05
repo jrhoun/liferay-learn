@@ -149,4 +149,4 @@ Page revisions now have to go through the workflow process.
 
 ## What's Next
 
-* [Reviewing Assets](./reviewing-assets.md)
+-   [Reviewing Assets](./reviewing-assets.md)

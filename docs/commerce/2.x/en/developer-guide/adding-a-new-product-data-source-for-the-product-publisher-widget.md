@@ -4,7 +4,7 @@ This tutorial will show you how to add a new product data source by implementing
 
 Product data sources provide unique ways to search for products that are related. Liferay Commerce provides several product data sources out-of-the-box, including ones that search [by product relations](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) and [by categories](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
 
-![Out-of-the-box product data sources](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/01.png "Out-of-the-box product data sources")
+![Out-of-the-box product data sources](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/01.png 'Out-of-the-box product data sources')
 
 ## Overview
 
@@ -50,7 +50,7 @@ In this section, we will get an example product data source up and running on yo
 
 1. Verify that the example product data source was added. Open your browser to `https://localhost:8080` and navigate to a page with a Product Publisher widget. Click _Configuration_ for the Product Publisher, then select _Data Source_ under the _Product Selection_ section. The new product data source ("Products Ending in the Same Word") will be present under the _Data Source_ dropdown below.
 
-![New product data source](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/02.png "New product data source")
+![New product data source](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/02.png 'New product data source')
 
 Congratulations, you've successfully built and deployed a new product data source that implements `CPDataSource`.
 
@@ -105,8 +105,8 @@ public CPDataSourceResult getResult(
 
 The product data source is comprised of logic to perform a search for related products. Do the following:
 
-* [Add the search logic to `getResult`.](#add-the-search-logic-to-getresult)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
+-   [Add the search logic to `getResult`.](#add-the-search-logic-to-getresult)
+-   [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Add the Search Logic to `getResult`
 
@@ -165,5 +165,5 @@ Congratulations! You now know the basics for implementing the `CPDataSource` int
 
 ## Additional Information
 
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Related Products, Up-Sells, and Cross-Sells](../../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Related Products, Up-Sells, and Cross-Sells](../../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

@@ -32,11 +32,11 @@ If your project is already updated to [version 4.x.x](../reference/understanding
 
 To extend the Default Jenkinsfile, you can add the following files to the `ci` folder in your project repository:
 
-- `Jenkinsfile-before-all`
-- `Jenkinsfile-before-cloud-build`
-- `Jenkinsfile-before-cloud-deploy`
-- `Jenkinsfile-after-all`
-- `Jenkinsfile-post-always`
+-   `Jenkinsfile-before-all`
+-   `Jenkinsfile-before-cloud-build`
+-   `Jenkinsfile-before-cloud-deploy`
+-   `Jenkinsfile-after-all`
+-   `Jenkinsfile-post-always`
 
 Here is a basic overview of the steps in the CI build process:
 
@@ -95,21 +95,21 @@ util.sendSlackMessage("About to create DXP Cloud build...")
 
 The following environment variables are only used in the default Jenkinsfile. To see what they do please refer to [Jenkins documentation regarding pipeline options](https://jenkins.io/doc/book/pipeline/syntax/#options).
 
-Name                                          | Default Value   | Description |
---------------------------------------------- | --------------- | ----------- |
-`LCP_CI_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable or disable the Default Jenkinsfile |
-`LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |                 | Comma-delimited list of hotfixes for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |
-`LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
-`LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
-`LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
-`LCP_CI_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
-`LCP_CI_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
+| Name                                  | Default Value | Description                                                                                                                                                              |
+| ------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `LCP_CI_USE_DEFAULT_JENKINSFILE`      | `false`       | Option to enable or disable the Default Jenkinsfile                                                                                                                      |
+| `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |               | Comma-delimited list of hotfixes for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |
+| `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`          | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline                                                                                 |
+| `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`          | Preserve stashes from completed builds, for use with stage restarting                                                                                                    |
+| `LCP_CI_BUILD_NUM_TO_KEEP`            | `10`          | Number of builds that will be stored                                                                                                                                     |
+| `LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`          | Number of days that builds will be stored                                                                                                                                |
+| `LCP_CI_ARTIFACT_NUM_TO_KEEP`         | `1`           | Number of artifacts that will be stored                                                                                                                                  |
+| `LCP_CI_ARTIFACT_DAYS_TO_KEEP`        | `-1`          | Number of days that artifacts that will be stored                                                                                                                        |
 
 ## Additional Information
 
-* [Logging into your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
-* [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)
-* [Configuring Your Bitbucket Repository](../getting-started/configuring-your-bitbucket-repository.md)
-* [DXP Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)
+-   [Logging into your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
+-   [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)
+-   [Configuring Your Bitbucket Repository](../getting-started/configuring-your-bitbucket-repository.md)
+-   [DXP Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)
 <!-- While Version 3 is still supported, because of the fact a large part of this article hinges on the project version, this link may be helpful. This link should likely be removed once version 3 is no longer supported. -->

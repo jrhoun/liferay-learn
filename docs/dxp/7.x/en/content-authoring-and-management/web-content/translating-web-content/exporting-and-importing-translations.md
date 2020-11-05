@@ -8,21 +8,21 @@ Exporting your web content to the XLIFF format is an alternative to manual trans
 
 ## Exporting Content for Translation
 
-1. Open the Product menu, and go to *Content & Data* &rarr; *Web Content*.
+1. Open the Product menu, and go to _Content & Data_ &rarr; _Web Content_.
 
-1. Click the *Actions* menu ( ![Actions button](../../../images/icon-actions.png) ) for the web content you want to translate and select *Export for Translation*. This opens a modal window that you can use to configure your export.
+1. Click the _Actions_ menu ( ![Actions button](../../../images/icon-actions.png) ) for the web content you want to translate and select _Export for Translation_. This opens a modal window that you can use to configure your export.
 
-   ![Click on the Actions menu for the web content you want to translate, and select Export for Translation.](./exporting-and-importing-translations/images/01.png)
+    ![Click on the Actions menu for the web content you want to translate, and select Export for Translation.](./exporting-and-importing-translations/images/01.png)
 
 1. Select the Export format (XLIFF 1.2 or XLIFF 2.0)
 
 1. Specify the web content's original language. This is used as a reference for the translation.
 
-1. Select the languages for translation using the checkboxes. 
+1. Select the languages for translation using the checkboxes.
 
-   ![Select the languages to which you want to translate the web content.](./exporting-and-importing-translations/images/02.png)
+    ![Select the languages to which you want to translate the web content.](./exporting-and-importing-translations/images/02.png)
 
-1. When finished, click *Export* to begin exporting for translation.
+1. When finished, click _Export_ to begin exporting for translation.
 
 Liferay generates a Zip archive for download that contains as many XLIFF files as languages you've selected for translation. These files can be used with compatible translation software to translate your web content.
 
@@ -30,15 +30,15 @@ Liferay generates a Zip archive for download that contains as many XLIFF files a
 
 Once your translations are ready, follow these steps to import them to your web content.
 
-1. Open the Product menu and go to *Content & Data* &rarr; *Web Content*.
+1. Open the Product menu and go to _Content & Data_ &rarr; _Web Content_.
 
-1. Click the *Actions* menu ( ![Actions button](../../../images/icon-actions.png) ) for the translated web content and select *Import Translation*.
+1. Click the _Actions_ menu ( ![Actions button](../../../images/icon-actions.png) ) for the translated web content and select _Import Translation_.
 
-   ![Click on the Actions menu for the translated web content, and select import translation.](./exporting-and-importing-translations/images/03.png)
+    ![Click on the Actions menu for the translated web content, and select import translation.](./exporting-and-importing-translations/images/03.png)
 
 1. Select the translation file you want to import and then publish your changes.
 
-   ![Select the translation file you want to import.](./exporting-and-importing-translations/images/04.png)
+    ![Select the translation file you want to import.](./exporting-and-importing-translations/images/04.png)
 
 When the import completes, the web content is updated with all changes included in the XLIFF file. If workflow is enabled, this change must be approved as with other content updates.
 
@@ -48,5 +48,5 @@ When the import completes, the web content is updated with all changes included 
 
 ## Additional Information
 
-* [Manually Translating Web Content](./manually-translating-web-content.md)
-* [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)
+-   [Manually Translating Web Content](./manually-translating-web-content.md)
+-   [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)

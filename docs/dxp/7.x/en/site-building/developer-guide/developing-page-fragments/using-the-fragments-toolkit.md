@@ -1,6 +1,6 @@
 # Using the Fragments Toolkit
 
-The Fragments Toolkit helps you package Fragments and Collections created using your own tools. Using it takes only three steps: 
+The Fragments Toolkit helps you package Fragments and Collections created using your own tools. Using it takes only three steps:
 
 1. [Import a Fragment Collection](#import-a-fragment-collection)
 1. [Add a New Collection and Fragment](#add-a-new-collection-and-fragment)
@@ -45,7 +45,7 @@ First, deploy an example to see what a Fragment Collection looks like:
     ? Group ID Liferay
     ```
 
-1. Verify that the Fragment Collection is available. Point your browser to `https://localhost:8080`, and under the Site Menu on the left side of the screen, go to *Design* &rarr; *Fragments*. The Collection appears in the Collection list.
+1. Verify that the Fragment Collection is available. Point your browser to `https://localhost:8080`, and under the Site Menu on the left side of the screen, go to _Design_ &rarr; _Fragments_. The Collection appears in the Collection list.
 
     ![The Collection is available.](./using-the-fragments-toolkit/images/01.png)
 
@@ -59,40 +59,40 @@ Great! You successfully deployed a zipped Fragment Collection created with the F
 
 The generated Fragment Collection has the project structure below. You can create this project structure manually and compress it into a ZIP file.
 
-* `collection.json`: a text file which describes your collection with the format `{"name":"collection name>","description":"collection description"}`.
+-   `collection.json`: a text file which describes your collection with the format `{"name":"collection name>","description":"collection description"}`.
 
-* `language.properties`: the language keys defined for the collection.
+-   `language.properties`: the language keys defined for the collection.
 
-    * `[fragment-name]/`: a folder containing all of the files for a Page Fragment.
+    -   `[fragment-name]/`: a folder containing all of the files for a Page Fragment.
 
-        * `fragment.json`: a text file that describes a Page Fragment with this format:
+        -   `fragment.json`: a text file that describes a Page Fragment with this format:
 
-          ```json
-          {
-              "cssPath": "styles.css",
-              "configurationPath": "configuration.json",
-              "htmlPath": "index.html",
-              "jsPath": "main.js",
-              "name": "fragment name",
-              "type": "fragment type",
-              "readyOnly": "false",
-              "cacheable": "false"
-           }
-           ```
+            ```json
+            {
+            	"cssPath": "styles.css",
+            	"configurationPath": "configuration.json",
+            	"htmlPath": "index.html",
+            	"jsPath": "main.js",
+            	"name": "fragment name",
+            	"type": "fragment type",
+            	"readyOnly": "false",
+            	"cacheable": "false"
+            }
+            ```
 
-          Update the `*Path` properties in your `fragment.json` file if you change the CSS, JavaScript, or HTML file names.
+            Update the `*Path` properties in your `fragment.json` file if you change the CSS, JavaScript, or HTML file names.
 
-        * `styles.css`: the CSS source for the Fragment
+        -   `styles.css`: the CSS source for the Fragment
 
-        * `index.html`: the HTML source for the Fragment
+        -   `index.html`: the HTML source for the Fragment
 
-        * `configuration.json`: a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
+        -   `configuration.json`: a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
 
-        * `main.js`: the JavaScript source for the Fragment
+        -   `main.js`: the JavaScript source for the Fragment
 
-        * `thumbnail.png`: the thumbnail that's displayed when the Fragment is in a list
+        -   `thumbnail.png`: the thumbnail that's displayed when the Fragment is in a list
 
-    * `resources/`: a folder containing any additional images or other external files needed for the Fragment. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
+    -   `resources/`: a folder containing any additional images or other external files needed for the Fragment. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
 ## Add a New Collection and Fragment
 
@@ -165,21 +165,26 @@ Follow these steps to add a new Fragment Collection containing a new Fragment:
 
     ```html
     <div class="marketing-jumbotron-fragment-01">
-      <div class="jumbotron">
-        <lfr-editable id="01-jumbotron-title" type="rich-text">
-          <h1 class="display-4">Editable Jumbotron headline</h1>
-        </lfr-editable>
-        <lfr-editable id="02-jumbotron-call" type="rich-text">
-          <p class="lead">Edit this text to call extra attention to featured content or information.</p>
-        </lfr-editable>
-        <hr class="my-4">
-        <lfr-editable id="03-jumbotron-more-info" type="rich-text">
-          <p>Edit this text to provide more information.</p>
-        </lfr-editable>
-        <lfr-editable id="04-jumbotron-link" type="link">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Editable link</a>
-        </lfr-editable>
-      </div>
+    	<div class="jumbotron">
+    		<lfr-editable id="01-jumbotron-title" type="rich-text">
+    			<h1 class="display-4">Editable Jumbotron headline</h1>
+    		</lfr-editable>
+    		<lfr-editable id="02-jumbotron-call" type="rich-text">
+    			<p class="lead">
+    				Edit this text to call extra attention to featured content
+    				or information.
+    			</p>
+    		</lfr-editable>
+    		<hr class="my-4" />
+    		<lfr-editable id="03-jumbotron-more-info" type="rich-text">
+    			<p>Edit this text to provide more information.</p>
+    		</lfr-editable>
+    		<lfr-editable id="04-jumbotron-link" type="link">
+    			<a class="btn btn-primary btn-lg" href="#" role="button"
+    				>Editable link</a
+    			>
+    		</lfr-editable>
+    	</div>
     </div>
     ```
 
@@ -207,7 +212,7 @@ You can import the updated Fragments as you did above:
     npm run import
     ```
 
-1. Verify that the new Fragment Collection is available. Point your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The new Collection appears in the Collection list.
+1. Verify that the new Fragment Collection is available. Point your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; _Site Builder_ &rarr; _Page Fragments_. The new Collection appears in the Collection list.
 
     ![The Collection is available.](./using-the-fragments-toolkit/images/02.png)
 
@@ -215,5 +220,5 @@ Great! Now you know how to use the Fragments Toolkit to create Collections and F
 
 ## Related Information
 
-* [Creating a Contributed Fragment Collection](./creating-a-contributed-fragment-collection.md)
-* [Developing Page Fragments with the Editor](./using-the-fragments-editor.md)
+-   [Creating a Contributed Fragment Collection](./creating-a-contributed-fragment-collection.md)
+-   [Developing Page Fragments with the Editor](./using-the-fragments-editor.md)

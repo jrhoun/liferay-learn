@@ -42,6 +42,6 @@ Once you have a widget template ready for a widget on one of your pages, follow 
 
 1. Click _Save._
 
-    <!-- screenshot -->
+ <!-- screenshot -->
 
 The widget has been modified to use a custom appearance. By using more advanced widget template scripts, you can further enhance the capabilities of your widgets.

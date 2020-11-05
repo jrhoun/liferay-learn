@@ -32,7 +32,7 @@ Three valuable reports on pending items are provided in the Dashboard: the Pendi
 
 ## Understanding Process Performance
 
-The *Performance* tab shows metrics for items that have completed the workflow process. The time period is configurable for each data presentation (with a default of 30 days).
+The _Performance_ tab shows metrics for items that have completed the workflow process. The time period is configurable for each data presentation (with a default of 30 days).
 
 **Completed Items:** See overview metrics of the SLA status for all completed items. Untracked items are included here as well.
 
@@ -112,7 +112,7 @@ To see the metrics for a single workflow process item, click the ID field while 
 
 ![Item Details include SLA status information and whether the item is Resolved or Open.](./workflow-metrics-reports/images/07.png)
 
-From here you can view detailed information about the asset and even click *Go to Submission Page*, which redirects you to the item's view in the Submissions section of the Control Panel.
+From here you can view detailed information about the asset and even click _Go to Submission Page_, which redirects you to the item's view in the Submissions section of the Control Panel.
 
 The top of the Item Detail view is important. It shows you the information about the due date for the item in the SLA, and its SLA completion status: _Open_ or _Resolved_.
 
@@ -128,7 +128,7 @@ A _Re-Index_ action in Liferay DXP completely deletes, then recreates, search in
 
 2. Now in the Workflow Index Actions screen, click _Reindex All_ for the Workflow Indexes entry.
 
-   This option acts on every index in the Workflow Metrics application. More granular options are available as well.
+    This option acts on every index in the Workflow Metrics application. More granular options are available as well.
 
 A re-index of Workflow Metrics is required when the [search engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md) is first configured and each time it's upgraded. A good rule of thumb is that Workflow Metrics should be re-indexed each time Liferay DXP's main search indexes are re-indexed.
 
@@ -136,5 +136,5 @@ From the overall metrics of a workflow process down to the details on a single i
 
 ## Additional Information
 
-* [Using Workflow Metrics](./using-workflow-metrics.md)
-* [Building Workflows](./building-workflows.md)
+-   [Using Workflow Metrics](./using-workflow-metrics.md)
+-   [Building Workflows](./building-workflows.md)

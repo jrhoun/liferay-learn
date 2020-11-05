@@ -12,7 +12,7 @@ Users can organize their documents using customizable document types and metadat
 
 ![You can create a customizable Document Type or Metadata Set.](./sharing-documents-and-media/images/01.png)
 
-<!-- Stopped reviewing here. -Rich --> 
+<!-- Stopped reviewing here. -Rich -->
 
 ## Integrations
 
@@ -41,7 +41,7 @@ See [Using the Media Gallery Widget](./publishing-and-sharing/publishing-documen
 
 ## Additional Information
 
-* [Documents and Media UI Reference](./documents-and-media-ui-reference.md)
-* [Creating Folders](./uploading-and-managing/creating-folders.md)
-* [Uploading Files](./uploading-and-managing/uploading-files.md)
-* [Configuring File Storage](../../system-administration/file-storage/configuring-file-storage.md)
+-   [Documents and Media UI Reference](./documents-and-media-ui-reference.md)
+-   [Creating Folders](./uploading-and-managing/creating-folders.md)
+-   [Uploading Files](./uploading-and-managing/uploading-files.md)
+-   [Configuring File Storage](../../system-administration/file-storage/configuring-file-storage.md)

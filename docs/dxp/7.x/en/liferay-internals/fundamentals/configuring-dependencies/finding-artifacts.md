@@ -1,12 +1,12 @@
 # Finding Artifacts
 
-To use external artifacts in your project, you must configure their dependencies in your `build.gradle` [Gradle](https://gradle.org/) script. 
+To use external artifacts in your project, you must configure their dependencies in your `build.gradle` [Gradle](https://gradle.org/) script.
 
 Before specifying an artifact as a dependency, you must first find its attributes. Artifacts have these attributes:
 
-* *Group ID*: Authoring organization
-* *Artifact ID*: Name/identifier
-* *Version*: Release number
+-   _Group ID_: Authoring organization
+-   _Artifact ID_: Name/identifier
+-   _Version_: Release number
 
 Here you'll learn how to find artifact attributes to specify dependencies.
 
@@ -23,17 +23,17 @@ Bundle-Version: [version]
    Artifacts in Liferay DXP fix packs override Liferay DXP installation artifacts. The ``binaries`` folder in a fixpack contains artifacts in subfolders. If your project requires an artifact provided by a fix pack, declare the version from the fixpack when declaring dependencies.
 ```
 
-Here's where to find core Liferay artifacts: 
+Here's where to find core Liferay artifacts:
 
-| File          | Group ID | Artifact ID | Version | Origin |
-| :------------ | :--------------- | :-------- | :--------- | :------ |
-| `portal-kernel.jar` | `com.liferay.portal` | `com.liferay.portal.kernel` | (see JAR's `MANIFEST.MF`) | fix pack ZIP, Liferay installation, or Liferay dependencies ZIP |
-| `portal-impl.jar` | `com.liferay.portal` | `com.liferay.portal.impl` | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war` |
-| `util-bridges.jar` | `com.liferay.portal` | `com.liferay.util.bridges` | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war` |
-| `util-java.jar` | `com.liferay.portal` | `com.liferay.util.java` | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war` |
-| `util-slf4j.jar` | `com.liferay.portal` | `com.liferay.util.slf4j` | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war` |
-| `util-taglibs.jar` | `com.liferay.portal` | `com.liferay.util.taglib` | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war` |
-| `com.liferay.*` JAR files | `com.liferay` | (see JAR's `MANIFEST.MF`) | (see JAR's `MANIFEST.MF`) | fix pack ZIP, Liferay installation, Liferay dependencies ZIP, or the OSGi ZIP |
+| File                      | Group ID             | Artifact ID                 | Version                   | Origin                                                                        |
+| :------------------------ | :------------------- | :-------------------------- | :------------------------ | :---------------------------------------------------------------------------- |
+| `portal-kernel.jar`       | `com.liferay.portal` | `com.liferay.portal.kernel` | (see JAR's `MANIFEST.MF`) | fix pack ZIP, Liferay installation, or Liferay dependencies ZIP               |
+| `portal-impl.jar`         | `com.liferay.portal` | `com.liferay.portal.impl`   | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war`                                                |
+| `util-bridges.jar`        | `com.liferay.portal` | `com.liferay.util.bridges`  | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war`                                                |
+| `util-java.jar`           | `com.liferay.portal` | `com.liferay.util.java`     | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war`                                                |
+| `util-slf4j.jar`          | `com.liferay.portal` | `com.liferay.util.slf4j`    | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war`                                                |
+| `util-taglibs.jar`        | `com.liferay.portal` | `com.liferay.util.taglib`   | (see JAR's `MANIFEST.MF`) | fix pack ZIP or Liferay `.war`                                                |
+| `com.liferay.*` JAR files | `com.liferay`        | (see JAR's `MANIFEST.MF`)   | (see JAR's `MANIFEST.MF`) | fix pack ZIP, Liferay installation, Liferay dependencies ZIP, or the OSGi ZIP |
 
 Next, you'll learn how to find Liferay app and independent module artifact attributes.
 
@@ -41,11 +41,11 @@ Next, you'll learn how to find Liferay app and independent module artifact attri
 
 For modules outside the core, you must still specify dependencies on the modules you need. There are three ways to find the dependencies you need:
 
-| Resource | Artifact Type |
-| :-------- | :-------------- |
-| [App Manager](#app-manager) | Deployed modules |
-| [Reference Docs](#reference-docs) | Liferay modules (per release) |
-| [Maven Central](#maven-central) | All artifact types: Liferay and third party, module and non-module |
+| Resource                          | Artifact Type                                                      |
+| :-------------------------------- | :----------------------------------------------------------------- |
+| [App Manager](#app-manager)       | Deployed modules                                                   |
+| [Reference Docs](#reference-docs) | Liferay modules (per release)                                      |
+| [Maven Central](#maven-central)   | All artifact types: Liferay and third party, module and non-module |
 
 ```important::
    ``com.liferay`` is the group ID for all of Liferay's apps and independent modules.
@@ -55,11 +55,11 @@ The App Manager provides the best information on deployed modules.
 
 ### App Manager
 
-[The App Manager](../../../system-administration/installing-and-managing-apps/managing-apps/using-the-app-manager.md) shows what's deployed on your Liferay instance. 
+[The App Manager](../../../system-administration/installing-and-managing-apps/managing-apps/using-the-app-manager.md) shows what's deployed on your Liferay instance.
 
-1. In Liferay, click the *Global Menu* (![Global Menu icon](./finding-artifacts/images/01.png)) and select the *Control Panel* tab. 
+1. In Liferay, click the _Global Menu_ (![Global Menu icon](./finding-artifacts/images/01.png)) and select the _Control Panel_ tab.
 
-1. In the System category, select *App Manager*. 
+1. In the System category, select _App Manager_.
 
 1. Search for the module by its display name, symbolic name, or related keywords. You can also browse for modules via the app listing. Whether browsing or searching, the App Manager shows each module's artifact ID and version number.
 
@@ -71,7 +71,7 @@ The App Manager aggregates independent modules in the Independent Modules catego
 
 If you don't know an independent module's group ID, use the [Felix Gogo Shell](./using-the-gogo-shell.md) to find it:
 
-1. In the Control Panel's System category, select *Gogo Shell*. Enter commands in the Gogo Shell command prompt.
+1. In the Control Panel's System category, select _Gogo Shell_. Enter commands in the Gogo Shell command prompt.
 
 1. Search for the module by its display name (e.g., `Apache Aries CDI`) or a keyword. In the results, note the module's number. You can use it in the next step. The example below shows the Liferay Announcements API module number `47`.
 
@@ -105,9 +105,9 @@ Follow these steps to find a Liferay app module's attributes in the Javadoc:
 
 1. Copy the class's package name.
 
-1. Navigate to the *Overview* page.
+1. Navigate to the _Overview_ page.
 
-1. On the *Overview* page, search for the package name you copied in step 2.
+1. On the _Overview_ page, search for the package name you copied in step 2.
 
 The heading above the package name shows the module's artifact ID, version number, and display name. Remember, the group ID for all app modules is `com.liferay`.
 
@@ -133,7 +133,7 @@ Now that you know the artifact's attributes, you can configure a dependency on i
 
 ## Additional Information
 
-* [Importing Packages](../importing-packages.md)
-* [Exporting Packages](../exporting-packages.md)
-* [Resolving Third Party Library Package Dependencies](./resolving-third-party-library-package-dependencies.md)
-* [Deploying WARs \(WAB Generator\)](../../../developing-applications/reference/deploying-wars-wab-generator.md)
+-   [Importing Packages](../importing-packages.md)
+-   [Exporting Packages](../exporting-packages.md)
+-   [Resolving Third Party Library Package Dependencies](./resolving-third-party-library-package-dependencies.md)
+-   [Deploying WARs \(WAB Generator\)](../../../developing-applications/reference/deploying-wars-wab-generator.md)

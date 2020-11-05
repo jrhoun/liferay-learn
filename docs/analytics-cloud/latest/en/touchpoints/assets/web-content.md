@@ -16,10 +16,10 @@ The number of views per day (or hour, if Yesterday or Last 24 Hours are selected
 
 The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
+-   How many users are interacting with my content?
+-   Of these users, how many are known or anonymous?
+-   Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+-   Of the users in Segments, what are the top 15 segments?
 
 Here are the charts in the Audience report:
 

@@ -8,16 +8,16 @@ Having a dedicated load balancer provides a myriad of enhanced features, such as
 
 ```json
 {
-  "id": "webserver",
-  "loadBalancer": {
-    "cdn": true,
-    "targetPort": 80,
-    "customDomains": ["acme.liferay.cloud"],
-    "ssl": {
-      "key": "...",
-      "crt": "..."
-    }
-  }
+	"id": "webserver",
+	"loadBalancer": {
+		"cdn": true,
+		"targetPort": 80,
+		"customDomains": ["acme.liferay.cloud"],
+		"ssl": {
+			"key": "...",
+			"crt": "..."
+		}
+	}
 }
 ```
 
@@ -45,14 +45,14 @@ You can set which internal port (`targetPort`) the load balancer's service endpo
 
 When you specify the load balancer attribute for a service, it adds a service endpoint named after this pattern:
 
-- `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
+-   `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
 
 Consider this example:
 
-- Service: webserver
-- Project: acme
-- Environment: prd
-- Service endpoint name: `webserver-acme-prd.lfr.cloud`
+-   Service: webserver
+-   Project: acme
+-   Environment: prd
+-   Service endpoint name: `webserver-acme-prd.lfr.cloud`
 
 These domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered by a wildcard certificate that will not display in the Network page's SSL certificates section.
 
@@ -129,10 +129,10 @@ The Network page shows any custom certificates, with a maximum of one per servic
 
 ## Environment Variables Reference
 
-| Name | Value | Description |
-| --- | --- | --- |
-| `cdn` | false | CDN is disabled by default; can be enabled by setting to `true` |
-| `customDomains` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one |
-| `targetPort` | 3000 | Port number for the load balancer |
-| `key` | | SSL certificate's key in Base64 format |
-| `crt` | | SSL certificate's crt in Base64 format |
+| Name            | Value                              | Description                                                     |
+| --------------- | ---------------------------------- | --------------------------------------------------------------- |
+| `cdn`           | false                              | CDN is disabled by default; can be enabled by setting to `true` |
+| `customDomains` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one               |
+| `targetPort`    | 3000                               | Port number for the load balancer                               |
+| `key`           |                                    | SSL certificate's key in Base64 format                          |
+| `crt`           |                                    | SSL certificate's crt in Base64 format                          |

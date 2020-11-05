@@ -22,15 +22,15 @@ Site members are now able to create and edit wiki pages. Note that there can be 
 
 Liferay DXP offers three additional widgets to be used in conjunction with the _Wiki_ widget which makes it easier to navigate to and view the other wiki pages on the same DXP instance. This is because the _Wiki_ widget displays only the _FrontPage_.
 
-* [Page Menu](./using-the-page-menu-widget.md)
-* [Tree Menu](./using-the-tree-menu-widget.md)
-* [Wiki Display](./using-the-wiki-display-widget.md)
+-   [Page Menu](./using-the-page-menu-widget.md)
+-   [Tree Menu](./using-the-tree-menu-widget.md)
+-   [Wiki Display](./using-the-wiki-display-widget.md)
 
 ## What's Next
 
 Learn about the features in the _Wiki_ widget:
 
-* [Creating Wiki Pages](./creating-wiki-pages.md)
-* [Creating a Wiki Node](./creating-a-node.md)
-* [Scoping Your Wikis](./scoping-your-wikis.md)
-* [Exporting and Importing a Wiki](./exporting-and-importing-a-wiki.md)
+-   [Creating Wiki Pages](./creating-wiki-pages.md)
+-   [Creating a Wiki Node](./creating-a-node.md)
+-   [Scoping Your Wikis](./scoping-your-wikis.md)
+-   [Exporting and Importing a Wiki](./exporting-and-importing-a-wiki.md)

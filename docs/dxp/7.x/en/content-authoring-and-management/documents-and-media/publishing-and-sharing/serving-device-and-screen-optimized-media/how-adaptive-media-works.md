@@ -20,5 +20,5 @@ If you have upgraded to the latest DXP version and were using a legacy version t
 
 ## Additional Information
 
-* [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
-* [Adaptive Media Modules Reference](../../developer-guide/adaptive-media-modules-reference.md)
+-   [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
+-   [Adaptive Media Modules Reference](../../developer-guide/adaptive-media-modules-reference.md)

@@ -13,9 +13,9 @@ Liferay DXP Users can upload and share any type of file via the Documents and Me
     Convert and generate previews for many types of documents.
 -->
 
-* [**ImageMagick:**](https://www.imagemagick.org/script/index.php) Generate higher-quality image previews for many types of images.
+-   [**ImageMagick:**](https://www.imagemagick.org/script/index.php) Generate higher-quality image previews for many types of images.
 
-* [**Xuggler:**](http://www.xuggle.com/xuggler/) Convert and generate previews for audio and video files.
+-   [**Xuggler:**](http://www.xuggle.com/xuggler/) Convert and generate previews for audio and video files.
 
 ![Enable ImageMagick, Ghostscript, and Xuggler from the External Services tab.](./configuring-external-services/images/01.png)
 
@@ -41,9 +41,9 @@ Once installed, enable ImageMagick in the Server Administration app's External S
 
 To enable ImageMagick from the Server Administration app's External Services tab,
 
-1. In the *Control Panel*, navigate to *Configuration* &rarr; *Server Administration*, then click the *External Services* tab.
+1. In the _Control Panel_, navigate to _Configuration_ &rarr; _Server Administration_, then click the _External Services_ tab.
 
-1. Expand the ImageMagick and Ghostscript section and select *Enabled*.
+1. Expand the ImageMagick and Ghostscript section and select _Enabled_.
 
 1. Verify that the paths to the ImageMagick and Ghostscript executables are correct.
 
@@ -64,17 +64,17 @@ imagemagick.global.search.path[windows]=C:\\Program Files\\ImageMagick
 
 To install and configure Xuggler,
 
-1. In the *Control Panel*, navigate to *Configuration* &rarr; *Server Administration*, then click the *External Services* tab.
+1. In the _Control Panel_, navigate to _Configuration_ &rarr; _Server Administration_, then click the _External Services_ tab.
 
-1. In the Xuggler section, select the Xuggler `.jar` file that matches your operating system. Then click *Install*.
+1. In the Xuggler section, select the Xuggler `.jar` file that matches your operating system. Then click _Install_.
 
 1. Shut down the application server. If you're enabling Xuggler with a Portal Properties file rather than in Server Administration, jump to the [Enabling Xuggler with a Portal Properties File](#enabling-xuggler-wtih-a-portal-properties-file) section. Otherwise, restart your application server now and then perform the next step.
 
-1. Finish by enabling Xuggler: go back to the External Services tab in Server Administration and select *Enabled*.
+1. Finish by enabling Xuggler: go back to the External Services tab in Server Administration and select _Enabled_.
 
-   ![Once Xuggler is installed and Liferay DXP is restarted, the Enable check box appears.](./configuring-external-services/images/02.png)
+    ![Once Xuggler is installed and Liferay DXP is restarted, the Enable check box appears.](./configuring-external-services/images/02.png)
 
-1. Click *Save*.
+1. Click _Save_.
 
 ### Enabling Xuggler with a Portal Properties File
 

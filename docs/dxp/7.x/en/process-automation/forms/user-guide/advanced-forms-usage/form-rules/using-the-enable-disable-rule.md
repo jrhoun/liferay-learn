@@ -4,8 +4,8 @@ An enable/disable Rule makes a field editable based on one or more conditions. T
 
 Continuing this example, assume a registration form with the following fields:
 
-* _Are you taking any medications?_: a required single selection field with two options: _Yes_ and _No_.
-* _List all medications_: a text field element.
+-   _Are you taking any medications?_: a required single selection field with two options: _Yes_ and _No_.
+-   _List all medications_: a text field element.
 
 Configure the Enable/Disable Rule:
 
@@ -30,10 +30,10 @@ If the respondents has answered YES, then they are able to edit the field.
 
 ## Additional Information
 
-* [Creating Forms](../../creating-forms.md)
-* [Form Rules Overview](./form-rules-overview.md)
-* [Using the Require Rule](./using-the-require-rule.md)
-* [Using the Enable Rule](./using-the-enable-disable-rule.md)
-* [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
-* [Using the Autofill Rule](./using-the-autofill-rule.md)
-* [Using the Calculate Rule](./using-the-calculate-rule.md)
+-   [Creating Forms](../../creating-forms.md)
+-   [Form Rules Overview](./form-rules-overview.md)
+-   [Using the Require Rule](./using-the-require-rule.md)
+-   [Using the Enable Rule](./using-the-enable-disable-rule.md)
+-   [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
+-   [Using the Autofill Rule](./using-the-autofill-rule.md)
+-   [Using the Calculate Rule](./using-the-calculate-rule.md)

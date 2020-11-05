@@ -8,15 +8,15 @@ liferay-npm-bundler's mechanism is inspired by webpack. Like webpack, the lifera
 
 Loaders are npm packages that in their main module export a function that receives source files and returns new or modified files, based on the loader's configuration. For example, the [babel-loader](https://github.com/liferay/liferay-js-toolkit/tree/master/packages/liferay-npm-bundler-loader-babel-loader) receives ES6+ JavaScript files, runs Babel on them, and returns transpiled ES5 files along with a generated source map. You can use this pattern to [create custom loaders](../developer/creating-custom-loaders-for-the-bundler.md). Here are some example loader functions:
 
-* Pass JavaScript files through Babel or TSC
-* Convert CSS files into JS modules that dynamically inject the CSS into the HTML page
-* Process CSS files with SASS
-* Create tools that generate code based on [Interface Description Language (IDL)](https://en.wikipedia.org/wiki/Interface_description_language) files
+-   Pass JavaScript files through Babel or TSC
+-   Convert CSS files into JS modules that dynamically inject the CSS into the HTML page
+-   Process CSS files with SASS
+-   Create tools that generate code based on [Interface Description Language (IDL)](https://en.wikipedia.org/wiki/Interface_description_language) files
 
-Loaders are configured via the project's `.npmbundlerrc` file. A loader's configuration is specified using two key options: 
+Loaders are configured via the project's `.npmbundlerrc` file. A loader's configuration is specified using two key options:
 
-* `sources`: the folders that contain the sources files to process
-* `rules`: the loaders, options---if applicable---and regular expressions that determine which files to process. 
+-   `sources`: the folders that contain the sources files to process
+-   `rules`: the loaders, options---if applicable---and regular expressions that determine which files to process.
 
 See [Understanding the `.npmbundlerrc`'s Structure](./npmbundlerrc-structure.md#package-processing-options) for more information on the configuration requirements and options.
 

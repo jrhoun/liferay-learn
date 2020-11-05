@@ -40,11 +40,11 @@ To change a folder's Document Type restrictions:
 
     ![Choose the Document Type](./creating-folders/images/04.png)
 
-1. Click *Save* when you're finished.
+1. Click _Save_ when you're finished.
 
 ## Additional Information
 
-* [Activating Workflow](../../../process-automation/workflow/user-guide/activating-workflow.md#documents-and-media-folders)
-* [Uploading Files](./uploading-files.md)
-* [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
-* [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)
+-   [Activating Workflow](../../../process-automation/workflow/user-guide/activating-workflow.md#documents-and-media-folders)
+-   [Uploading Files](./uploading-files.md)
+-   [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
+-   [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)

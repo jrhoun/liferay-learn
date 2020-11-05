@@ -46,11 +46,11 @@ In this section, we will get an example order validator up and running on your i
     STARTED com.acme.n9b2.impl_1.0.0
     ```
 
-1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md) for more information.
+1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over \$100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md) for more information.
 
     From the catalog, find the item with this price, then click "Add to Cart". Increase the quantity to 11 or more, then click the arrow to continue. The error message that appears shows that the custom order validator successfully rejected adding the item.
 
-    ![New order validation error message](./implementing-a-custom-order-validator/images/01.png "New order validation error message")
+    ![New order validation error message](./implementing-a-custom-order-validator/images/01.png 'New order validation error message')
 
 Congratulations, you've successfully built and deployed a new order validator that implements `CommerceOrderValidator`.
 
@@ -99,15 +99,16 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commer
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
 ```
+
 > This is the second validation method where we can add custom validation logic. This method is called for items already in the cart, whenever a customer proceeds to a new step in checkout.
 
 ### Complete the Order Validator
 
 The order validator is comprised of validation logic for both adding a product to the cart and proceeding to a new checkout step. Do the following:
 
-* [Add validation logic for adding a product to cart.](#add-validation-logic-for-adding-a-product-to-cart)
-* [Add validation logic for proceeding in checkout.](#add-validation-logic-for-proceeding-in-checkout)
-* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
+-   [Add validation logic for adding a product to cart.](#add-validation-logic-for-adding-a-product-to-cart)
+-   [Add validation logic for proceeding in checkout.](#add-validation-logic-for-proceeding-in-checkout)
+-   [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 The two `validate` methods are where we define the custom validation logic for our order validator. In our example, we will add logic to reject orders with more than ten of an item over a certain price.
 
@@ -140,7 +141,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> The main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the `CPInstance`, which contains information about the order the customer has added. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
+> The main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the `CPInstance`, which contains information about the order the customer has added. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG\$]/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 >
 > Note that it is best practice to include a localized message explaining why the validation failed for the main validation checks.
 
@@ -190,5 +191,5 @@ Congratulations! You now know the basics for implementing the `CommerceOrderVali
 
 ## Additional Information
 
-* [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

@@ -51,7 +51,7 @@ First, import an example to see how Fragment resources work:
     ? Group ID Liferay
     ```
 
-1. Verify that the Fragment Collection is available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The Collection appears with the other Collections and includes the resource in the *Resources* tab.
+1. Verify that the Fragment Collection is available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; _Site Builder_ &rarr; _Page Fragments_. The Collection appears with the other Collections and includes the resource in the _Resources_ tab.
 
     ![The Collection is available along with the included resource.](./auto-deploying-fragments/images/01.png)
 
@@ -59,11 +59,11 @@ First, import an example to see how Fragment resources work:
 
 The image resource is included in the project's `/resources` folder:
 
-* `Collection-project-folder`
-  * `src/collection-name`
-    * `collection.json`: a text file which describes your collection with the format `{"name":"collection name>","description":"collection description"}`.
-    * `[fragment-name]/`: a folder containing all of the files for a Page Fragment.
-    * `resources/`
+-   `Collection-project-folder`
+    -   `src/collection-name`
+        -   `collection.json`: a text file which describes your collection with the format `{"name":"collection name>","description":"collection description"}`.
+        -   `[fragment-name]/`: a folder containing all of the files for a Page Fragment.
+        -   `resources/`
 
 ```tip::
   Alternatively, you can upload the image through the *Resources* tab in the `Fragments Editor <./using-the-fragments-editor.md>`_.
@@ -72,7 +72,7 @@ The image resource is included in the project's `/resources` folder:
 The image is referenced in the HTML with the syntax `[resources:image-name.extension]`. The example has the configuration below:
 
 ```html
-<img src="[resources:card-topper-01.png]" class="card-img-top">
+<img src="[resources:card-topper-01.png]" class="card-img-top" />
 ```
 
 ```note::
@@ -91,7 +91,7 @@ Now that you know how resources are included and referenced, you can include a n
 1. Update the `/liferay-i6r3/fragment-resources/src/resources-marketing-collection/resource-marketing-card/index.html` file to use the new image resource:
 
     ```html
-    <img src="[resources:card-topper-02.png]" class="card-img-top">
+    <img src="[resources:card-topper-02.png]" class="card-img-top" />
     ```
 
 1. Import the Fragment Collection in the Docker container as you did above:
@@ -104,7 +104,7 @@ Now that you know how resources are included and referenced, you can include a n
     npm run import
     ```
 
-1. Verify that the Fragment Collection resource is available. Open your browser to `https://localhost:8080`, and open the Product Menu and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The new resource is included with the Collection.
+1. Verify that the Fragment Collection resource is available. Open your browser to `https://localhost:8080`, and open the Product Menu and go to Site &rarr; _Site Builder_ &rarr; _Page Fragments_. The new resource is included with the Collection.
 
 ![Any Fragment from the Fragment Collection has access to the uploaded resources.](./including-default-resources-with-fragments/images/02.png)
 
@@ -112,6 +112,6 @@ Great! Now you know how to include image resources with your Fragment Collection
 
 ## Related Information
 
-* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
-* [Auto-deploying Fragments](./auto-deploying-fragments.md)
-* [Developing Page Fragments with the Fragments Editor](./using-the-fragments-editor.md)
+-   [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+-   [Auto-deploying Fragments](./auto-deploying-fragments.md)
+-   [Developing Page Fragments with the Fragments Editor](./using-the-fragments-editor.md)

@@ -1,6 +1,6 @@
 # Understanding DXP Cloud Environments
 
-A DXP Cloud project can have multiple environments, each for a different purpose (e.g., development, staging, production, etc.). Each environment has a unique name that is the project ID plus the environment ID. For example, the staging and production environments for a project named *acme* can be named *acme-uat* and *acme-prd*, respectively.
+A DXP Cloud project can have multiple environments, each for a different purpose (e.g., development, staging, production, etc.). Each environment has a unique name that is the project ID plus the environment ID. For example, the staging and production environments for a project named _acme_ can be named _acme-uat_ and _acme-prd_, respectively.
 
 ```warning::
    Once an environment name and location have been chosen, it's not possible to rename or change to a different location automatically. If you need to perform such actions, please contact support.
@@ -24,19 +24,19 @@ Here's a [list of the DXP Cloud regions](https://help.liferay.com/hc/en-us/artic
 
 The environment type is a classification that distinguishes an environment configuration. There are two environment types:
 
-* Production
-* Non-production
+-   Production
+-   Non-production
 
 Besides having different prices and computing power, these environment types differ in how their backup and database services function.
 
 **Production**
 
-* Backup: Data can be backed up and restored into any environment.
-* Database: Data is replicated in multiple availability zones and contains enhanced IOPS.
+-   Backup: Data can be backed up and restored into any environment.
+-   Database: Data is replicated in multiple availability zones and contains enhanced IOPS.
 
 **Non-production**
 
-* Backup: Data can only be restored to these environments.
-* Database: Data is present in a single availability zone and contains regular IOPS.
+-   Backup: Data can only be restored to these environments.
+-   Database: Data is present in a single availability zone and contains regular IOPS.
 
 ![Figure 3: Your environment's type appears in Settings.](./understanding-dxp-cloud-environments/images/03.png)

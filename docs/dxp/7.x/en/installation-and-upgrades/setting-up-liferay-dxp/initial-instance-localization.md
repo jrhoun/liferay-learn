@@ -2,17 +2,17 @@
 
 Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over 40 translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users. As you set up DXP, you can configure the virtual instance default language and time zone using these interfaces:
 
-* [Portal Properties](#portal-properties): Specify defaults in a properties file before starting the application server.
-* [Setup Wizard](#setup-wizard): Set defaults via a UI as a part of launching DXP.
-* [Control Panel](#control-panel): Modify defaults via a UI after launching the DXP instance.
+-   [Portal Properties](#portal-properties): Specify defaults in a properties file before starting the application server.
+-   [Setup Wizard](#setup-wizard): Set defaults via a UI as a part of launching DXP.
+-   [Control Panel](#control-panel): Modify defaults via a UI after launching the DXP instance.
 
 ## Portal Properties
 
 If you want to configure the default virtual instance's localization before starting DXP, use a [`portal-ext.properties` file](../reference/portal-properties.md).
 
-| **Portal Property** | **Description** |
-| :------------------ | :-------------- |
-| `company.default.locale` | Set it to any available locale, defined for the [`locales`](https://docs.liferay.com/ce/portal/7.3-ga2/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) portal property. |
+| **Portal Property**         | **Description**                                                                                                                                                                                |
+| :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `company.default.locale`    | Set it to any available locale, defined for the [`locales`](https://docs.liferay.com/ce/portal/7.3-ga2/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) portal property.   |
 | `company.default.time.zone` | Set it to any of the time zones defined in the [`time.zones`](https://docs.liferay.com/ce/portal/7.3-ga2/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) portal property. |
 
 For example,
@@ -44,6 +44,6 @@ You have configured your DXP instance's default language and time zone. If want 
 
 ## Additional Information
 
-* [Configuring a Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)
-* [Overriding Global Language Keys](https://help.liferay.com/hc/en-us/articles/360029122551-Overriding-Global-Language-Keys)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application)
+-   [Configuring a Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)
+-   [Overriding Global Language Keys](https://help.liferay.com/hc/en-us/articles/360029122551-Overriding-Global-Language-Keys)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application)

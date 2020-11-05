@@ -63,5 +63,5 @@ The product will be visible only in the selected Channels.
 
 ## Additional Information
 
-* [Introduction to Channels](./introduction-to-channels.md)
-* [Managing Channels](./managing-channels.md)
+-   [Introduction to Channels](./introduction-to-channels.md)
+-   [Managing Channels](./managing-channels.md)

@@ -10,8 +10,8 @@ Subscribers can use redundant VPN tunnels by mapping their connections between t
 
 The client to site VPN feature supports the following protocols:
 
-* IPsec (IKEv2)
-* OpenVPN
+-   IPsec (IKEv2)
+-   OpenVPN
 
 Subscribers can choose one of the protocols (IPSec or OpenVPN) to perform the connection from DXP Cloud console settings page for the desired environment. Any number of forwarding ports can be configured for the connection in the console UI. See [Connecting a VPN Server to DXP Cloud](./connecting-a-vpn-server-to-dxp-cloud.md) for more information.
 
@@ -23,9 +23,9 @@ In this use case, assume there is a DXP Portal instance running inside DXP Cloud
 
 Note the following:
 
-* The Hello World service on `192.168.100.30:8080` running inside the customer's internal network is accessible from the DXP Portal service via the server address `vpn:33000`.
-* The client-to-server connection is made through the customer's VPN server running on `18.188.145.101:500`.
-* The port forwarding rule exposes the local port **33000** which maps to the application running on `192.168.100.30:8080`.
+-   The Hello World service on `192.168.100.30:8080` running inside the customer's internal network is accessible from the DXP Portal service via the server address `vpn:33000`.
+-   The client-to-server connection is made through the customer's VPN server running on `18.188.145.101:500`.
+-   The port forwarding rule exposes the local port **33000** which maps to the application running on `192.168.100.30:8080`.
 
 After the connection and port forwarding rule are configured, requests to the Hello World service can be made from any DXP Cloud service.
 
@@ -47,4 +47,4 @@ Liferay DXP Cloud offers optional Private Clusters which isolate each subscriber
 
 ## What's Next
 
-* [Configuring a Client-to-Site VPN example](./configuring-a-vpn-server.md)
+-   [Configuring a Client-to-Site VPN example](./configuring-a-vpn-server.md)

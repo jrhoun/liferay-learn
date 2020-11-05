@@ -1,11 +1,11 @@
 # Site Settings UI Reference
 
-To view a Site's settings, open the Site Menu and go to *Configuration* &rarr; *Settings*, where you'll see the following tabs:
+To view a Site's settings, open the Site Menu and go to _Configuration_ &rarr; _Settings_, where you'll see the following tabs:
 
-* [General](#general)
-* [Social](#social)
-* [Language](#language)
-* [Advanced](#advanced)
+-   [General](#general)
+-   [Social](#social)
+-   [Language](#language)
+-   [Advanced](#advanced)
 
 ![Site Settings are organized into four tabs.](./site-settings-ui-reference/images/01.png)
 
@@ -21,13 +21,13 @@ General settings range from core configuration, like a Site's Membership Type, t
 
 **Site ID**: A unique number automatically generated for a Site at its creation. This ID is permanent and cannot be changed.
 
-**Name**: Set a Site's title using the *Name* field. This title is displayed in the browser's title bar as well as the header for each Site page. You can also localize a Site's name via the *Language Flag* button.
+**Name**: Set a Site's title using the _Name_ field. This title is displayed in the browser's title bar as well as the header for each Site page. You can also localize a Site's name via the _Language Flag_ button.
 
-**Description**: Use the *Description* field to explain a Site's purpose. You can also localize a Site's description via the *Language Flag* button.
+**Description**: Use the _Description_ field to explain a Site's purpose. You can also localize a Site's description via the _Language Flag_ button.
 
-**Active**: Determine whether a Site is *Active* or *Inactive*. While inactive, a site is inaccessible to users, though it can be reactivated if desired.
+**Active**: Determine whether a Site is _Active_ or _Inactive_. While inactive, a site is inaccessible to users, though it can be reactivated if desired.
 
-**Membership Type**: A *Membership Type* determines how restrictive a Site's membership is. See [Changing Site Membership Types](./site-users/changing-site-membership-type.md) for more information.
+**Membership Type**: A _Membership Type_ determines how restrictive a Site's membership is. See [Changing Site Membership Types](./site-users/changing-site-membership-type.md) for more information.
 
 **Allow Manual Membership Management**: Determine whether to allow members to be manually added or removed from a Site. If your Site's membership is handled automatically by a membership policy, you can disable this setting. See [Managing Membership Policies for Sites](./site-users/changing-site-membership-type.md) for more information.
 
@@ -39,7 +39,7 @@ General settings range from core configuration, like a Site's Membership Type, t
 
 ### Pages
 
-Here you can view a Site's Public and Private pages, if any exist. If they don't exist, a *Site Templates* selector appears for creating pages with a template.
+Here you can view a Site's Public and Private pages, if any exist. If they don't exist, a _Site Templates_ selector appears for creating pages with a template.
 
 ![In the Pages section, you can view a Site's public and private pages.](./site-settings-ui-reference/images/03.png)
 
@@ -49,7 +49,7 @@ Here you can view and configure any custom fields you've defined for your pages.
 
 ### Categorization
 
-Here you can categorize Site content using *Topics* and *Tags*. These tools help organize sites so users can more easily find your site's content via search and navigation widgets. See [Organizing Content with Tags and Categories](../../content-authoring-and-management/index.html#tags-and-categories) for more information.
+Here you can categorize Site content using _Topics_ and _Tags_. These tools help organize sites so users can more easily find your site's content via search and navigation widgets. See [Organizing Content with Tags and Categories](../../content-authoring-and-management/index.html#tags-and-categories) for more information.
 
 ![You can categorize Site content using Topics and Tags.](./site-settings-ui-reference/images/04.png)
 
@@ -57,19 +57,19 @@ Here you can categorize Site content using *Topics* and *Tags*. These tools help
 
 **Friendly URL**: Set a custom URL for both public and private Site pages. See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
 
-**Public and Private Virtual Host**: Set public and private *Virtual Hosts* to map to a Site's public and private pages. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information.
+**Public and Private Virtual Host**: Set public and private _Virtual Hosts_ to map to a Site's public and private pages. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information.
 
 ![In the Site URL section, you can configure your Site's Friendly URL, as well as Virtual Hosts for your public and private pages.](./site-settings-ui-reference/images/05.png)
 
 ### Documents and Media
 
-You can enable *Directory Indexing* for a Site. When enabled, a User with view permission can browse the Site's document library files and folders.
+You can enable _Directory Indexing_ for a Site. When enabled, a User with view permission can browse the Site's document library files and folders.
 
 ![You can determine whether to enable Directory Indexing for a Site.](./site-settings-ui-reference/images/06.png)
 
 ### Site Template
 
-If you created your Site using a *Site Template*, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Building Sites from Templates](../building-sites/building-sites-with-site-templates.md) for more information about Site templates and how to create your own.
+If you created your Site using a _Site Template_, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Building Sites from Templates](../building-sites/building-sites-with-site-templates.md) for more information about Site templates and how to create your own.
 
 ![View your page's selected template.](./site-settings-ui-reference/images/07.png)
 
@@ -77,19 +77,19 @@ If you created your Site using a *Site Template*, it's displayed here, along wit
 
 **Enable Open Graph**: Determine whether to embed [Open Graph](https://ogp.me/) `<meta>` tags in the `<head>` of your Site's pages. These tags define page metadata to create engaging representations of your Site's content when shared in applications that support the Open Graph protocol, such as Facebook, Slack, and Twitter.
 
-**Open Graph Image**: Use the *Image* and *Alt Description* fields to define the default `og:image` and `og:image:alt` properties used for Site pages. You can also localize the image's alt description via the *Language Flag* button. See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
+**Open Graph Image**: Use the _Image_ and _Alt Description_ fields to define the default `og:image` and `og:image:alt` properties used for Site pages. You can also localize the image's alt description via the _Language Flag_ button. See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
 
 ![You can enable or disable Open Graph, define image meta tags, and see an image preview.](./site-settings-ui-reference/images/08.png)
 
 ### Sharing
 
-Here you can enable or disable document sharing between Site Users. When enabled, Users can share items with other users. See [Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) for more information. 
+Here you can enable or disable document sharing between Site Users. When enabled, Users can share items with other users. See [Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) for more information.
 
 ![You can enable or disable document sharing between Site Users.](./site-settings-ui-reference/images/10.png)
 
 ### Asset Auto Tagging
 
-Here you can enable or disable asset auto tagging for a Site. When enabled, assets are auto tagged by the providers configured at instance level. See [Asset Auto Tagging](../../content-authoring-and-management/web-content/auto_tagging.md) for more information. 
+Here you can enable or disable asset auto tagging for a Site. When enabled, assets are auto tagged by the providers configured at instance level. See [Asset Auto Tagging](../../content-authoring-and-management/web-content/auto_tagging.md) for more information.
 
 ![You can enable or disable asset auto tagging for a Site.](./site-settings-ui-reference/images/09.png)
 
@@ -147,6 +147,6 @@ Here you can enable the Recycle Bin and specify the number of minutes an asset r
 
 ### Content Sharing
 
-Here you can determine whether child Sites can display content from this Site, including structures, templates, categories, widget templates, and more. Disabling this option immediately revokes content sharing from all child Sites. See [Managing Content Sharing Across Sites](./site-content-configurations/managing-content-sharing-globally.md) for more information. 
+Here you can determine whether child Sites can display content from this Site, including structures, templates, categories, widget templates, and more. Disabling this option immediately revokes content sharing from all child Sites. See [Managing Content Sharing Across Sites](./site-content-configurations/managing-content-sharing-globally.md) for more information.
 
 ![You can determine whether child Sites can display content from this Site.](./site-settings-ui-reference/images/18.png)

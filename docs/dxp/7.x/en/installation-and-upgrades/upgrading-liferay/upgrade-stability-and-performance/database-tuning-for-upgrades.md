@@ -8,13 +8,13 @@ The tips given in this article worked well in test runs on specific versions of 
 
 Many more update statements are executed during data upgrade than in production. As such, here are some ways to tune your database for database upgrades:
 
-* Deactivate data integrity measures that impact performance. Restore to a backup if failures occur.
+-   Deactivate data integrity measures that impact performance. Restore to a backup if failures occur.
 
-* Disable or minimize transaction logging, because it is insignificant for data upgrades.
+-   Disable or minimize transaction logging, because it is insignificant for data upgrades.
 
-* Make commit-related transaction I/O operations asynchronous.
+-   Make commit-related transaction I/O operations asynchronous.
 
-* Increase the interval to flush commits to disk.
+-   Increase the interval to flush commits to disk.
 
 ```warning::
    Some database properties and configurations are global and affect schemas in the same database.

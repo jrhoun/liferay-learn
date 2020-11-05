@@ -4,14 +4,14 @@ Several changes are made between version 3.x and 4.x of the DXP Cloud stack, inc
 
 **Contents:**
 
-* [Changes to Docker Image Definitions](#changes-to-docker-image-definitions)
-* [Project Organization Changes](#project-organization-changes)
-* [Liferay Service Changes](#liferay-service-changes)
-* [Search Service Changes](#search-service-changes)
-* [CI Service Changes](#ci-service-changes)
-* [Webserver Service Changes](#webserver-service-changes)
-* [Backup Service Changes](#backup-service-changes)
-* [Known Limitations](#known-limitations)
+-   [Changes to Docker Image Definitions](#changes-to-docker-image-definitions)
+-   [Project Organization Changes](#project-organization-changes)
+-   [Liferay Service Changes](#liferay-service-changes)
+-   [Search Service Changes](#search-service-changes)
+-   [CI Service Changes](#ci-service-changes)
+-   [Webserver Service Changes](#webserver-service-changes)
+-   [Backup Service Changes](#backup-service-changes)
+-   [Known Limitations](#known-limitations)
 
 ## Changes to Docker Image Definitions
 
@@ -33,14 +33,14 @@ All configurations within the `liferay` service now belong in an environment-spe
 
 The following table summarizes the new organization of your `liferay` service configurations:
 
-| **Files** | **Location in 3.x** | **Location in 4.x** |
-| --- | --- | --- |
-| Files for deployment | lcp/liferay/deploy/{ENV}/ | liferay/configs/{ENV}/deploy/ |
-| OSGi configuration files (.cfg or .config) | lcp/liferay/config/{ENV}/ | liferay/configs/{ENV}/osgi/configs/ |
-| Other configuration overrides | lcp/liferay/config/{ENV}/ | liferay/configs/{ENV}/ |
-| Custom shell scripts | lcp/liferay/script/{ENV}/ | liferay/configs/{ENV}/scripts/ |
-| Hotfixes and patching tools | lcp/liferay/hotfix/{ENV}/ | liferay/configs/{ENV}/patching/ |
-| Licenses | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/ |
+| **Files**                                  | **Location in 3.x**        | **Location in 4.x**                 |
+| ------------------------------------------ | -------------------------- | ----------------------------------- |
+| Files for deployment                       | lcp/liferay/deploy/{ENV}/  | liferay/configs/{ENV}/deploy/       |
+| OSGi configuration files (.cfg or .config) | lcp/liferay/config/{ENV}/  | liferay/configs/{ENV}/osgi/configs/ |
+| Other configuration overrides              | lcp/liferay/config/{ENV}/  | liferay/configs/{ENV}/              |
+| Custom shell scripts                       | lcp/liferay/script/{ENV}/  | liferay/configs/{ENV}/scripts/      |
+| Hotfixes and patching tools                | lcp/liferay/hotfix/{ENV}/  | liferay/configs/{ENV}/patching/     |
+| Licenses                                   | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/           |
 
 ```note::
    Files within the ``configs/{ENV}/`` directory will be copied as overrides into the ``LIFERAY_HOME`` directory in the Liferay container in DXP Cloud.
@@ -56,10 +56,10 @@ Scripts placed in `liferay/configs/{ENV}/scripts/` will now be run as the `lifer
 
 All configurations within the `search` service now belong in an environment-specific `configs` directory. See the following table for the new organization of your `search` service configuration:
 
-| **Files** | **Location in 3.x** | **Location in 4.x** |
-| --- | --- | --- |
-| Elasticsearch configurations | lcp/search/config/{ENV}/ | search/configs/{ENV}/config/ |
-| Custom shell scripts | lcp/search/script/{ENV}/ | search/configs/{ENV}/scripts/ |
+| **Files**                           | **Location in 3.x**       | **Location in 4.x**           |
+| ----------------------------------- | ------------------------- | ----------------------------- |
+| Elasticsearch configurations        | lcp/search/config/{ENV}/  | search/configs/{ENV}/config/  |
+| Custom shell scripts                | lcp/search/script/{ENV}/  | search/configs/{ENV}/scripts/ |
 | Elasticsearch license (.json) files | lcp/search/license/{ENV}/ | search/configs/{ENV}/license/ |
 
 ```note::
@@ -101,11 +101,11 @@ All configurations within the `webserver` service now belong in an environment-s
 
 See the following table for the new organization of your `webserver` service configuration:
 
-| **File** | **Location in 3.x** | **Location in 4.x** |
-| --- | --- | --- |
-| Webserver configurations | lcp/webserver/config/{ENV}/ | webserver/configs/{ENV}/conf.d/ |
-| Custom scripts | lcp/webserver/script/{ENV}/ | webserver/configs/{ENV}/scripts/ |
-| Static content | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/ |
+| **File**                 | **Location in 3.x**         | **Location in 4.x**              |
+| ------------------------ | --------------------------- | -------------------------------- |
+| Webserver configurations | lcp/webserver/config/{ENV}/ | webserver/configs/{ENV}/conf.d/  |
+| Custom scripts           | lcp/webserver/script/{ENV}/ | webserver/configs/{ENV}/scripts/ |
+| Static content           | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/  |
 
 ```note::
    Files in ``/webserver/configs/{ENV}/`` will be copied as overrides into ``/etc/nginx/`` in the webserver container in DXP Cloud. Files in ``/webserver/configs/{ENV}/public/`` will be copied as overrides into ``var/www/html/``.
@@ -139,8 +139,8 @@ location /static/ {
 
 All configurations within the `backup` service now belong in an environment-specific `configs` directory. This mainly pertains to custom SQL scripts:
 
-| **File** | **Location in 3.x** | **Location in 4.x** |
-| --- | --- | --- |
+| **File**           | **Location in 3.x**      | **Location in 4.x**           |
+| ------------------ | ------------------------ | ----------------------------- |
 | Custom SQL scripts | lcp/backup/script/{ENV}/ | backup/configs/{ENV}/scripts/ |
 
 ## Known Limitations
@@ -151,4 +151,4 @@ You can test changes in a local environment, and then migrate them to DXP Cloud.
 
 ## Additional Information
 
-* [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+-   [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)

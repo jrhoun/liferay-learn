@@ -6,8 +6,8 @@ The location of a Role's assignment UI corresponds with the [Role's scope](./und
 
 Globally scoped regular roles are available for configuration in the DXP [Control Panel](../../getting-started/navigating-dxp.md#control-panel).
 
-| Permission Scope | Available Assignments |
-| ---------------- | --------- |
+| Permission Scope                         | Available Assignments                                                             |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
 | Throughout the Virtual Instance (global) | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
 
 You can assign Users to a Regular Role in the Assignees tab of the Add/Edit Role form.
@@ -18,9 +18,9 @@ You can assign Users to a Regular Role in the Assignees tab of the Add/Edit Role
 
 1. Click the Add button ![Add](../../images/icon-add.png).
 
-1. Select the assignees and click *Add*.
+1. Select the assignees and click _Add_.
 
-   If assigning a group, all Users assigned to that group inherit the Role.
+    If assigning a group, all Users assigned to that group inherit the Role.
 
 ![You can assign a Regular Role to an entire Organization of Users.](./assigning-users-to-roles/images/05.png)
 
@@ -28,8 +28,8 @@ You can assign Users to a Regular Role in the Assignees tab of the Add/Edit Role
 
 You can assign Users to a Site Role in the Memberships section of a Site's People sub-menu.
 
-| Permission Scope | Available Assignments |
-| ---------------- | --------- |
+| Permission Scope | Available Assignments                                                        |
+| ---------------- | ---------------------------------------------------------------------------- |
 | A single Site    | User Groups <br />Organizations <br />Segments <br />Individual Site Members |
 
 1. Go to Site Menu &rarr; People &rarr; Memberships.
@@ -38,11 +38,11 @@ You can assign Users to a Site Role in the Memberships section of a Site's Peopl
 
 1. Click the Actions button ![Add](../../images/icon-actions.png) &rarr; Assign Roles.
 
-1. Choose the Roles to assign and click *Done*.
+1. Choose the Roles to assign and click _Done_.
 
-   If assigning a group, all Users assigned to that group inherit the Role.
+    If assigning a group, all Users assigned to that group inherit the Role.
 
-![Assign a Site Role within the Site Menu's People &rarr; Memberships section.](./assigning-users-to-roles/images/01.png)
+![Assign a Site Role within the Site Menu's People → Memberships section.](./assigning-users-to-roles/images/01.png)
 
 ```note::
    As of Liferay CE 7.3.1 GA2 and Liferay DXP 7.2 SP3+, you can assign Site Roles to `User Segments <../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md>`__. See `Assigning Roles to User Segments <./assigning-roles-to-user-segments.md>`_ for more details.
@@ -52,9 +52,9 @@ You can assign Users to a Site Role in the Memberships section of a Site's Peopl
 
 You can assign Users to a Organization Role in the Organizations tab of the Users and Organizations Control Panel section.
 
-| Permission Scope | Available Assignments |
-| ---------------- | --------- |
-| A single Organization | Individual Users |
+| Permission Scope      | Available Assignments |
+| --------------------- | --------------------- |
+| A single Organization | Individual Users      |
 
 1. Go to Control Panel &rarr; Users &rarr; Users and Organizations, and click on the _Organizations_ tab.
 
@@ -72,8 +72,8 @@ You can assign Users to a Organization Role in the Organizations tab of the User
 
 Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu.
 
-| Permission Scope | Available Assignments |
-| ---------------- | --------- |
+| Permission Scope       | Available Assignments                                   |
+| ---------------------- | ------------------------------------------------------- |
 | A single Asset Library | Organizations <br />User Groups <br /> Individual Users |
 
 1. Go to the [Asset Library](../../site-building/understanding-asset-libraries.md) Menu &rarr; People &rarr; Memberships.
@@ -82,11 +82,11 @@ Making Role assignments for Asset Libraries is nearly identical to making assign
 
 1. Click the Actions button ![Add](../../images/icon-actions.png) &rarr; Assign Roles.
 
-1. Choose the Roles to assign and click *Done*.
+1. Choose the Roles to assign and click _Done_.
 
-   If assigning a group, all Users assigned to that group inherit the Role.
+    If assigning a group, all Users assigned to that group inherit the Role.
 
-![Assign a Asset Library Role within the Asset Library Menu's People &rarr; Memberships section.](./assigning-users-to-roles/images/03.png)
+![Assign a Asset Library Role within the Asset Library Menu's People → Memberships section.](./assigning-users-to-roles/images/03.png)
 
 <!--
 ## Account Roles
@@ -114,9 +114,9 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 By default, new Users receive only the Users Role, but you can manage the default Role associations to add new Roles or remove the User assignment.
 
-| Permission Scope | Available Assignments |
-| ---------------- | --------- |
-| Throughout the Virtual Instance (global) | All new Users |
+| Permission Scope                         | Available Assignments |
+| ---------------------------------------- | --------------------- |
+| Throughout the Virtual Instance (global) | All new Users         |
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Instance Settings.
 

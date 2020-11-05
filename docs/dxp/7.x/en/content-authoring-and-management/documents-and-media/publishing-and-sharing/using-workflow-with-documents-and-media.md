@@ -46,5 +46,5 @@ Users can also _disable_ workflow for specific folders (or sub-folders) even if 
 
 ## Additional Information
 
-* [Activating Workflow](../../../process-automation/workflow/user-guide/activating-workflow.md)
-* [Documents and Media UI Reference](../documents-and-media-ui-reference.md)
+-   [Activating Workflow](../../../process-automation/workflow/user-guide/activating-workflow.md)
+-   [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

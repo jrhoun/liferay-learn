@@ -6,7 +6,7 @@ The _Entries_ tab is selected by default, which lists the site's blog entries. U
 
 ## Finding and Arranging Blog Entries
 
-The Management Bar also contains tools that help you locate and arrange blog entries. The most prominent of these tools is the *Search* bar, where you can find files by keywords.
+The Management Bar also contains tools that help you locate and arrange blog entries. The most prominent of these tools is the _Search_ bar, where you can find files by keywords.
 
 To the left of the Search bar, the Sort button (![Sort](../../images/icon-sort.png)) arranges entries in ascending or descending order.
 
@@ -14,21 +14,21 @@ Click _Filter and Order_ to sort entries using these criteria:
 
 ![Filter and Order menu](./managing-blog-entries/images/02.png)
 
-| Filter | Description |
-| --- | --- |
-| All | Shows all of the site's entries.|
-| Mine | Shows only the current user's entries. |
-| Display Date | Orders the entries by display date. |
+| Filter       | Description                            |
+| ------------ | -------------------------------------- |
+| All          | Shows all of the site's entries.       |
+| Mine         | Shows only the current user's entries. |
+| Display Date | Orders the entries by display date.    |
 
 ### View Types
 
-The _View Types_ button is to the left of the _Add_ button. Users can choose how to display the blog entries in the Blogs app. The_ View Types_ button's icon depends on the selected view type:
+The _View Types_ button is to the left of the _Add_ button. Users can choose how to display the blog entries in the Blogs app. The* View Types* button's icon depends on the selected view type:
 
-| View Type | Description |
-| --- | --- |
-| Cards | Shows a card-like rendering of the blog entry, with the author's profile picture. Each card also contains the entry's timestamp, title, [workflow](../../process-automation/workflow/user-guide/introduction-to-workflow.md)) status (e.g., Approved, Draft, etc.), and an Actions menu. |
-| List | Shows the same information as the Cards view type, in a list with the author's profile picture instead of the blog entry's cover image. |
-| Table | Shows the same information as the other view types, in a list with no file renderings. |
+| View Type | Description                                                                                                                                                                                                                                                                              |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cards     | Shows a card-like rendering of the blog entry, with the author's profile picture. Each card also contains the entry's timestamp, title, [workflow](../../process-automation/workflow/user-guide/introduction-to-workflow.md)) status (e.g., Approved, Draft, etc.), and an Actions menu. |
+| List      | Shows the same information as the Cards view type, in a list with the author's profile picture instead of the blog entry's cover image.                                                                                                                                                  |
+| Table     | Shows the same information as the other view types, in a list with no file renderings.                                                                                                                                                                                                   |
 
 ![See the different View Types in the Site Administration Blogs Menu](./managing-blog-entries/images/03.png)
 

@@ -64,7 +64,7 @@ If the data is cached, a second load of the select list field is much faster, si
 
 ### Timeout
 
-Enter the time (in ms) to wait for a response to the REST call before aborting the request. 
+Enter the time (in ms) to wait for a response to the REST call before aborting the request.
 
 ### Inputs
 
@@ -89,5 +89,5 @@ If using the `restcountries.eu` data provider, the name of the country appears f
 
 ## What's Next
 
-* [Using Data Providers to Populate Form Options](./using-data-providers-to-populate-form-options.md)
-* [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)
+-   [Using Data Providers to Populate Form Options](./using-data-providers-to-populate-form-options.md)
+-   [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)

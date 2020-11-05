@@ -6,8 +6,8 @@ Although Portal includes default Master Page Templates that you can use to defin
 
 Follow these steps to create a Master Page Template:
 
-1. Open Product Menu and go to Site &rarr; *Site Builder* &rarr; *Page Templates*.
-1. Under the *Masters* tab, click the add button to create a new Master Page Template.
+1. Open Product Menu and go to Site &rarr; _Site Builder_ &rarr; _Page Templates_.
+1. Under the _Masters_ tab, click the add button to create a new Master Page Template.
 
     ![Create a Master Page Template under the Masters tab.](./creating-a-master-page-template/images/01.png)
 
@@ -19,14 +19,14 @@ Follow these steps to create a Master Page Template:
 
     ![You can move the Drop Zone to control where users can add Page Fragments.](./creating-a-master-page-template/images/03.png)
 
-1. Optionally specify which Page Fragments can be added to the Drop Zone by clicking the *Configure Allowed Fragments* button. Check the boxes for the Page Fragments you want to allow. Check the box for *Allow New Fragments* to allow new Page Fragments to be added to the Drop Zone. click *Save* to apply the changes.
+1. Optionally specify which Page Fragments can be added to the Drop Zone by clicking the _Configure Allowed Fragments_ button. Check the boxes for the Page Fragments you want to allow. Check the box for _Allow New Fragments_ to allow new Page Fragments to be added to the Drop Zone. click _Save_ to apply the changes.
 
     ![Check and uncheck Fragments from the Allowed Fragments dialog to specify whether they can be added to a page that uses this Master Page Template.](./creating-a-master-page-template/images/04.png)
 
-1. You can revert any action using the *Undo* (![Preview](../../../images/icon-undo.png)) or *Redo* (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the *History* (![Preview](../../../images/icon-time.png)) button.
+1. You can revert any action using the _Undo_ (![Preview](../../../images/icon-undo.png)) or _Redo_ (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the _History_ (![Preview](../../../images/icon-time.png)) button.
 
-1. To preview your Content Page, click the *Preview* button (![Preview](../../../images/icon-preview.png)).
-1. Click *Publish* to create the Master Page Template.
+1. To preview your Content Page, click the _Preview_ button (![Preview](../../../images/icon-preview.png)).
+1. Click _Publish_ to create the Master Page Template.
 
 ```note::
   If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See `Changing a Master Page Template's Theme <./managing-master-pages.md#changing-a-master-page-template-s-theme>`_ for more information.

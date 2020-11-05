@@ -28,7 +28,7 @@ To learn more about using Document Types, see [Defining Document Types](./upload
 
 Metadata Sets are groups of fields that can be added to Document Types.
 
-Metadata Sets can be grouped in a hierarchy and can become the foundation of another metadata set (an *extension*). A child metadata set is displayed on the same level as the parent.
+Metadata Sets can be grouped in a hierarchy and can become the foundation of another metadata set (an _extension_). A child metadata set is displayed on the same level as the parent.
 
 ![The Metadata Set Tab contains all Metadata Sets.](./documents-and-media-ui-reference/images/03.png)
 
@@ -96,5 +96,5 @@ If an existing document has been updated, this is the email notification sent to
 
 ## Additional Information
 
-* [Sharing Documents and Media](./sharing-documents-and-media.md)
-* [Importing/Exporting Sites and Contents](../../site-building/building-sites/importing-exporting-pages-and-content.md)
+-   [Sharing Documents and Media](./sharing-documents-and-media.md)
+-   [Importing/Exporting Sites and Contents](../../site-building/building-sites/importing-exporting-pages-and-content.md)

@@ -2,9 +2,9 @@
 
 This article outlines the path developers will take to develop for and deploy to a DXP Cloud project. The development process with DXP Cloud follows three stages:
 
-* [Develop and Configure](#develop-and-configure)
-* [Build and Test](#build-and-test)
-* [Deploy](#deploy)
+-   [Develop and Configure](#develop-and-configure)
+-   [Build and Test](#build-and-test)
+-   [Deploy](#deploy)
 
 ## Develop and Configure
 
@@ -12,19 +12,19 @@ Although there are multiple paths for deploying to an environment, all paths beg
 
 The repository provides the following:
 
-* Workspace for building Liferay DXP modules, themes, and extensions. 
-* Shared version control for configuration and customizations of DXP Cloud services. 
-* Single source of truth for DXP Cloud project deployments. 
+-   Workspace for building Liferay DXP modules, themes, and extensions.
+-   Shared version control for configuration and customizations of DXP Cloud services.
+-   Single source of truth for DXP Cloud project deployments.
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services. See [Deployment](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#deployment-customization-patching-and-licensing) for more information.
 
 ### Code Additions
 
-The source for new code additions must be added to folders in the repository's `liferay/` directory: 
+The source for new code additions must be added to folders in the repository's `liferay/` directory:
 
-* The `modules` folder for new modules
-* The `themes` folder for custom themes
-* The `wars` folder for exploded WARs 
+-   The `modules` folder for new modules
+-   The `themes` folder for custom themes
+-   The `wars` folder for exploded WARs
 
 When the build is deployed, code changes in any of these locations are automatically compiled and added to the Liferay DXP service.
 
@@ -34,7 +34,7 @@ When the build is deployed, code changes in any of these locations are automatic
 
 ### Compiled Additions
 
-You can add compiled files (e.g., pre-built JARs or LPKGs) to a `liferay/configs/{ENV}/deploy/` folder. When the build is deployed to an environment, these files are copied to the corresponding folder within `$LIFERAY_HOME` (depending on the file type). For example, adding a JAR file to `liferay/configs/common/deploy/` will result in the file being copied to `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to. 
+You can add compiled files (e.g., pre-built JARs or LPKGs) to a `liferay/configs/{ENV}/deploy/` folder. When the build is deployed to an environment, these files are copied to the corresponding folder within `$LIFERAY_HOME` (depending on the file type). For example, adding a JAR file to `liferay/configs/common/deploy/` will result in the file being copied to `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to.
 
 ```note::
    If you are using version 3.x.x services, then these additions are instead added to the appropriate ``lcp/liferay/deploy/{ENV}`` folder. See `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for more information on checking the version.
@@ -68,7 +68,7 @@ Committed changes to the repository will automatically trigger a new build in CI
 
 ## Additional Information
 
-* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
-* [Using the Command Line Interface](../reference/command-line-tool.md)
-* [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+-   [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
+-   [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
+-   [Using the Command Line Interface](../reference/command-line-tool.md)
+-   [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)

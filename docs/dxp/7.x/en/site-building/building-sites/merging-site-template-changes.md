@@ -1,19 +1,19 @@
 # Merging Site Template and Site Changes
 
-Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on *are not propagated* to the Site.
+Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on _are not propagated_ to the Site.
 
 ## Relinking Site to the Site Template
 
 If you want to propagate changes from the Site Template to the Site after they've become unlinked, not to worry. You can relink the Site to the Site Template. Follow these steps:
 
 1. Click the Information icon (![Information](../../images/icon-control-menu-information.png)) that appears in the Control Menu to bring up the Information dialog.
-1. Click the *Reset Changes* link in the Information dialog to merge any updates from the Site Template.
+1. Click the _Reset Changes_ link in the Information dialog to merge any updates from the Site Template.
 
     ```warning::
      Resetting changes **reverts any changes made to the page** since the Site and Site Template became unlinked. This can result in changes being unintentionally lost. Proceed with caution.
     ```
 
-If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button from each page manually.
+If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the _Reset Changes_ button from each page manually.
 
 ![You can click the Information icon to view important information about your Site Template.](./merging-site-template-changes/images/01.png)
 
@@ -34,8 +34,8 @@ Site Administrators can also add data to Site Template applications. For example
 In some cases, merging Site Template and Site changes fails. For example, if pages from a Site Template can't be propagated because their friendly URLs are in conflict, Liferay DXP stops the merge after several unsuccessful attempts. To resolve this, follow these steps:
 
 1. Note the indicated merge fail and fix your merge conflicts.
-2. After you've resolved the conflicts, open the Product Menu and go to *Configuration* &rarr; *Site Settings* under the Site Menu.
-3. Click the *Reset and Propagate* button to reset the merge fail count and attempts to propagate your site's changes again.
+2. After you've resolved the conflicts, open the Product Menu and go to _Configuration_ &rarr; _Site Settings_ under the Site Menu.
+3. Click the _Reset and Propagate_ button to reset the merge fail count and attempts to propagate your site's changes again.
 
 ```note::
   This process can also be done with Page Template merging, which follows similar steps.
@@ -45,6 +45,6 @@ In some cases, merging Site Template and Site changes fails. For example, if pag
 
 ## Related Information
 
-* [Building Sites with Site Templates](./building-sites-with-site-templates.md)
-* [Sharing Site Templates](./sharing-site-templates.md)
-* [Site Hierarchies](./site-hierarchies.md)
+-   [Building Sites with Site Templates](./building-sites-with-site-templates.md)
+-   [Sharing Site Templates](./sharing-site-templates.md)
+-   [Site Hierarchies](./site-hierarchies.md)

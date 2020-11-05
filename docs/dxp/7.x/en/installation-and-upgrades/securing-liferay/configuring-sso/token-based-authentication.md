@@ -2,18 +2,18 @@
 
 Token-based SSO authentication was introduced in Liferay Portal 7.0 to standardize support for Shibboleth, SiteMinder, Oracle OAM, and any SSO product that works by propagating a token via one of the following mechanisms:
 
-* HTTP request parameter
-* HTTP request header
-* HTTP cookie
-* Session attribute
+-   HTTP request parameter
+-   HTTP request header
+-   HTTP cookie
+-   Session attribute
 
 Since these providers have a built-in web server module that reads and sets these parameters, headers, cookies, or attributes, you should use the Token SSO configuration.
 
 The authentication token contains the User's screen name or email address, whichever has been configured to use for the particular company (portal instance). Liferay Portal supports three authentication methods:
 
-* By email address
-* By screen name
-* By user ID
+-   By email address
+-   By screen name
+-   By user ID
 
 Token-based authentication only supports email address and screen name. If user ID is configured when a token-based authentication is attempted, the `TokenAutoLogin` class logs this warning:
 
@@ -25,22 +25,22 @@ Furthermore, you must use a security mechanism external to Liferay Portal, such 
 
 ## Configuring Token Based Authentication
 
-Token-based authentication is disabled by default. To manage token-based SSO authentication, navigate to Control Panel &rarr; *System Settings*, &rarr; *Security* &rarr; *SSO*.
+Token-based authentication is disabled by default. To manage token-based SSO authentication, navigate to Control Panel &rarr; _System Settings_, &rarr; _Security_ &rarr; _SSO_.
 
 ![SSO configurations are located in the security section of System Settings.](token-based-authentication/images/01.png)
 
 Here are the configuration options for the Token-Based SSO module:
 
-| Configuration | Description |
-| --- | --- |
-| **Enabled** | Check this box to enable token-based SSO authentication. |
-| **Import from LDAP** | Check this box to import users automatically from LDAP if they don't exist. |
-| **User token name** | Set equal to the name of the token. This is retrieved from the specified location. (Example: `SM_USER`) |
-| **Token location** | Set this to the type of user token: HTTP request parameter, HTTP request header, HTTP cookie, Session attribute  |
-| **Authentication cookies** | Set this to the cookie names that must be removed after logout. (Example: `SMIDENTITY`, `SMSESSION`)  |
-| **Logout redirect URL** | When user logs out of Liferay Portal, the user is redirected to this URL.  |
+| Configuration              | Description                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Enabled**                | Check this box to enable token-based SSO authentication.                                                        |
+| **Import from LDAP**       | Check this box to import users automatically from LDAP if they don't exist.                                     |
+| **User token name**        | Set equal to the name of the token. This is retrieved from the specified location. (Example: `SM_USER`)         |
+| **Token location**         | Set this to the type of user token: HTTP request parameter, HTTP request header, HTTP cookie, Session attribute |
+| **Authentication cookies** | Set this to the cookie names that must be removed after logout. (Example: `SMIDENTITY`, `SMSESSION`)            |
+| **Logout redirect URL**    | When user logs out of Liferay Portal, the user is redirected to this URL.                                       |
 
-Remember to click *Save* to activate Token Based SSO.
+Remember to click _Save_ to activate Token Based SSO.
 
 ## Required SiteMinder Configuration
 

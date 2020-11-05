@@ -4,27 +4,27 @@ This is a chronological list of changes that break existing functionality, APIs,
 
 Here are some of the types of changes documented in this file:
 
-* Functionality that is removed or replaced.
+-   Functionality that is removed or replaced.
 
-* API incompatibilities: Changes to public Java or JavaScript APIs.
+-   API incompatibilities: Changes to public Java or JavaScript APIs.
 
-* Changes to context variables available to templates.
+-   Changes to context variables available to templates.
 
-* Changes in CSS classes available to Liferay themes and portlets.
+-   Changes in CSS classes available to Liferay themes and portlets.
 
-* Configuration changes: Changes in configuration files, like `com.liferay.commerce.*.cfg`, etc.
+-   Configuration changes: Changes in configuration files, like `com.liferay.commerce.*.cfg`, etc.
 
-* Execution requirements: Java version, J2EE Version, browser versions, etc.
+-   Execution requirements: Java version, J2EE Version, browser versions, etc.
 
-* Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
+-   Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
 
-* Recommendations: For example, recommending using a newly introduced API that replaces an old API, in spite of the old API being kept in Liferay Portal for backwards compatibility.
+-   Recommendations: For example, recommending using a newly introduced API that replaces an old API, in spite of the old API being kept in Liferay Portal for backwards compatibility.
 
 ## Changes to the Commerce Menu
 
-* **Date:** Sept. 3, 2020
+-   **Date:** Sept. 3, 2020
 
-* **JIRA Ticket:** [COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
+-   **JIRA Ticket:** [COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
 
 ### What changed?
 
@@ -44,17 +44,17 @@ The menu change was made to keep the navigation scope in the header bar while re
 
 ## Files Moved
 
-* **Date:** Aug. 20, 2020
+-   **Date:** Aug. 20, 2020
 
-* **JIRA Ticket:** [COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
+-   **JIRA Ticket:** [COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
 
 ### What changed?
 
 The following files are moved:
 
-* `com.liferay.commerce.pricing.web.servlet.taglib.ui.CommerceDiscountScreenNavigationConstants`
+-   `com.liferay.commerce.pricing.web.servlet.taglib.ui.CommerceDiscountScreenNavigationConstants`
 
-* `com.liferay.commerce.pricing.web.servlet.taglib.ui.CommercePricingClassScreenNavigationConstants`
+-   `com.liferay.commerce.pricing.web.servlet.taglib.ui.CommercePricingClassScreenNavigationConstants`
 
 ### Who is affected?
 
@@ -66,9 +66,9 @@ Replace old references to these files with their new paths.
 
 The files are now located in these paths:
 
-* `com.liferay.commerce.pricing.web.internal.constants.CommerceDiscountScreenNavigationConstants`
+-   `com.liferay.commerce.pricing.web.internal.constants.CommerceDiscountScreenNavigationConstants`
 
-* `com.liferay.commerce.pricing.web.internal.constants.CommercePricingClassScreenNavigationConstants`
+-   `com.liferay.commerce.pricing.web.internal.constants.CommercePricingClassScreenNavigationConstants`
 
 ### Why was this change made?
 
@@ -76,23 +76,23 @@ These files were moved to follow Liferay's coding convention.
 
 ## Destination Names Changed
 
-* **Date:** Sept. 10, 2020
+-   **Date:** Sept. 10, 2020
 
-* **JIRA Ticket:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+-   **JIRA Ticket:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### What changed?
 
 The prefix `commerce_` has been added to the Commerce destinations defined in `com.liferay.commerce.constants.CommerceDestinationNames`:
 
-* `liferay/commerce_order_status`
+-   `liferay/commerce_order_status`
 
-* `liferay/commerce_payment_status`
+-   `liferay/commerce_payment_status`
 
-* `liferay/commerce_shipment_status`
+-   `liferay/commerce_shipment_status`
 
-* `liferay/commerce_stock_quantity`
+-   `liferay/commerce_stock_quantity`
 
-* `liferay/commerce_subscription_status`
+-   `liferay/commerce_subscription_status`
 
 ### Who is affected?
 

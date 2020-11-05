@@ -12,24 +12,24 @@ Liferay's tools and instructions facilitate upgrading DXP and Portal CE environm
 
 Before starting your upgrade, consider what may be involved. The upgrade topics fall into these categories:
 
-* [Preparation and Planning](#preparation-and-planning)
-* [Updating Custom Plugin Code](#updating-custom-plugin-code)
-* [Migrating Configurations and Infrastructure](#migrating-and-updating-configurations-and-infrastructure)
-* [Improving Upgrade Performance](#improving-upgrade-performance)
-* [Executing the Database Upgrade](#executing-the-database-upgrade)
+-   [Preparation and Planning](#preparation-and-planning)
+-   [Updating Custom Plugin Code](#updating-custom-plugin-code)
+-   [Migrating Configurations and Infrastructure](#migrating-and-updating-configurations-and-infrastructure)
+-   [Improving Upgrade Performance](#improving-upgrade-performance)
+-   [Executing the Database Upgrade](#executing-the-database-upgrade)
 
 ## Preparation and Planning
 
-Preparation and planning may be of little consequence for small, casual installations but is *mandatory* for large enterprise-level installations.
+Preparation and planning may be of little consequence for small, casual installations but is _mandatory_ for large enterprise-level installations.
 
 ### Review Available Upgrade Paths
 
 Look up your current Liferay DXP/Portal version in this table to determine your installation upgrade path.
 
-| Upgrade Path                            | Description |
-| --------------------------------------- | ----------- |
-| Liferay DXP/Portal 6.2+ &rarr; DXP 7.3      |             |
-| Liferay Portal 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.3 | Support life ended for Liferay Portal 6.1 |
+| Upgrade Path                                                                  | Description                                                  |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Liferay DXP/Portal 6.2+ &rarr; DXP 7.3                                        |                                                              |
+| Liferay Portal 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.3                     | Support life ended for Liferay Portal 6.1                    |
 | Liferay Portal 5.x and 6.0.x &rarr; Liferay Portal 6.2 &rarr; Liferay DXP 7.3 | Support life ended for Liferay Portal 5.0, 5.1, 5.2, and 6.0 |
 
 If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Portal 6.2 upgrade instructions](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay) first.
@@ -38,8 +38,8 @@ If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Porta
 
 Features and configuration defaults may change in new versions of Liferay. See the reference section or the following articles for the most recent deprecations and changes to features and to settings:
 
-* [Maintenance Mode and Deprecations](../reference/maintenance-mode-and-deprecations-in-7-3.md)
-* [Default Setting Changes](../reference/default-setting-changes-in-7-3.md)
+-   [Maintenance Mode and Deprecations](../reference/maintenance-mode-and-deprecations-in-7-3.md)
+-   [Default Setting Changes](../reference/default-setting-changes-in-7-3.md)
 
 ### Request an Upgrade Patch (Subscription)
 
@@ -87,9 +87,9 @@ Adjusting your database for upgrade operations (more data writes than in product
 
 There are two ways to upgrade your Liferay database:
 
-* [Upgrade via Docker](./upgrading-via-docker.md) involves passing an auto upgrade parameter to the command for starting a Docker image. The image updates the database and then starts up using the upgraded database.
+-   [Upgrade via Docker](./upgrading-via-docker.md) involves passing an auto upgrade parameter to the command for starting a Docker image. The image updates the database and then starts up using the upgraded database.
 
-* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md). The Upgrade Tool is a client program for updating the Liferay database while it's detached from any Liferay instance. It facilitates focusing on the upgrade process, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) for upgrade operations, and [pruning unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) to quicken the database upgrade.
+-   [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md). The Upgrade Tool is a client program for updating the Liferay database while it's detached from any Liferay instance. It facilitates focusing on the upgrade process, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) for upgrade operations, and [pruning unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) to quicken the database upgrade.
 
 ## Conclusion
 
@@ -97,10 +97,10 @@ Once you complete the tasks outlined above, your upgrade is complete. But before
 
 Now that you're familiar with the upgrade components, you can upgrade your Liferay instance. Make sure to do preliminary tasks on your current installation, before upgrading the database. It's common to upgrade custom plugin code and execute the database upgrade in parallel. Since, database upgrade is a popular task to start first, here are links to the two methods:
 
-* [Upgrading Via Docker](./upgrading-via-docker.md)
-* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md)
+-   [Upgrading Via Docker](./upgrading-via-docker.md)
+-   [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md)
 
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:
 
-* [Upgrading a Sharded Environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md)
-* [Maintaining Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+-   [Upgrading a Sharded Environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md)
+-   [Maintaining Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

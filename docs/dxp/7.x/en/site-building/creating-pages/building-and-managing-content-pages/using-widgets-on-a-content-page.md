@@ -1,6 +1,6 @@
 # Using Widgets on a Content Page
 
-The Widgets section functions just like the [*Add* menu on a Widget Page](../using-widget-pages/adding-widgets-to-a-page.md). The full list of available widgets appears, and you can add them to the page. The main difference is that only the main configuration options for Widgets are available on Content Pages.
+The Widgets section functions just like the [_Add_ menu on a Widget Page](../using-widget-pages/adding-widgets-to-a-page.md). The full list of available widgets appears, and you can add them to the page. The main difference is that only the main configuration options for Widgets are available on Content Pages.
 
 ## Adding Widgets on Content Pages
 
@@ -16,11 +16,11 @@ A widget can be a wiki display or a dynamic publishing tool like the Asset Publi
 Follow these steps to configure a Widget on a Content Page:
 
 1. Hover over the widget.
-1. Open the Options Menu (![Options Menu](../../../images/icon-app-options.png)) and select *Configuration*. From here you have several options, depending on the widget.
+1. Open the Options Menu (![Options Menu](../../../images/icon-app-options.png)) and select _Configuration_. From here you have several options, depending on the widget.
 
     ![You can configure widgets on Content Pages through their Options Menu.](./using-widgets-on-a-content-page/images/01.png)
 
-1. Click *Save* to apply the changes.
+1. Click _Save_ to apply the changes.
 
 ```note::
   Since Liferay Portal CE 7.3 GA2, you also configure permissions for the widget by selecting *Permissions* from the widget's Options Menu.
@@ -31,9 +31,9 @@ Follow these steps to configure a Widget on a Content Page:
 Since Liferay Portal CE 7.3 GA2, you can configure permissions for widgets from a Content Page. Follow these steps to configure Widget permissions on a Content Page:
 
 1. Hover over the widget.
-1. Open the Options Menu (![Options Menu](../../../images/icon-app-options.png)) and select *Permissions*.
+1. Open the Options Menu (![Options Menu](../../../images/icon-app-options.png)) and select _Permissions_.
 1. Check/uncheck the permissions for the Roles in the new window that appears.
-1. Click *Save* to apply the changes.
+1. Click _Save_ to apply the changes.
 
 ![You can configure widget permissions on Content Pages through their Options Menu.](./using-widgets-on-a-content-page/images/02.png)
 
@@ -45,7 +45,7 @@ Since Liferay Portal CE 7.3 GA2, you can configure permissions for widgets from 
 
 Although you can still access basic configuration options and permissions for widgets on Content Pages, there are still some options that are only available on Widget Pages:
 
-* *Nested applications*: Widgets within widgets are only supported on Widget Pages.
-* *Widget Look & Feel*: On Widget Pages you can access the Look and Feel menu through the  widget's Configuration Menu, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the Theme or by using Fragments.
-* *Configuration Templates*: Configuration Templates that save the widget's configuration settings to a template are only available on Widget Pages.
-* *Export/Import*: You can only export/import application data for widgets on Widget Pages.
+-   _Nested applications_: Widgets within widgets are only supported on Widget Pages.
+-   _Widget Look & Feel_: On Widget Pages you can access the Look and Feel menu through the widget's Configuration Menu, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the Theme or by using Fragments.
+-   _Configuration Templates_: Configuration Templates that save the widget's configuration settings to a template are only available on Widget Pages.
+-   _Export/Import_: You can only export/import application data for widgets on Widget Pages.

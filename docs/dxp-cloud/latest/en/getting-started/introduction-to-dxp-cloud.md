@@ -4,9 +4,9 @@ Liferay DXP Cloud is a secure and reliable enterprise cloud platform that provid
 
 Worry less and build more with a platform that provides:
 
-* [Standards Compliant Security, Automated Backups, and Flexible Governance](#standards-compliant-security-automated-backups-and-flexible-governance)
-* [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
-* [Real Time Alerts](#real-time-alerts)
+-   [Standards Compliant Security, Automated Backups, and Flexible Governance](#standards-compliant-security-automated-backups-and-flexible-governance)
+-   [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
+-   [Real Time Alerts](#real-time-alerts)
 
 All of which is designed, built, and supported by a dedicated team of Liferay professionals with over a decade of experience running business-critical solutions on Liferay DXP.
 
@@ -14,9 +14,9 @@ DXP Cloud accelerates application development and deployment by providing a comp
 
 Every DXP Cloud project comes with:
 
-* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-ci-cd)
-* [Application Development Tools](#application-development-tools)
-* [Insightful Monitoring](#insightful-monitoring)
+-   [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-ci-cd)
+-   [Application Development Tools](#application-development-tools)
+-   [Insightful Monitoring](#insightful-monitoring)
 
 ## Standards Compliant Security, Automated Backups, and Flexible Governance
 
@@ -66,7 +66,7 @@ DXP Cloud delivers [application metrics](../manage-and-optimize/application-metr
 
 ## Next Steps
 
-* [Development Requirements](./development-requirements.md)
-* [Configuring Your Github Repository](./configuring-your-github-repository.md)
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [DXP Cloud Deployment Walk Through](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+-   [Development Requirements](./development-requirements.md)
+-   [Configuring Your Github Repository](./configuring-your-github-repository.md)
+-   [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+-   [DXP Cloud Deployment Walk Through](../build-and-deploy/walking-through-the-deployment-life-cycle.md)

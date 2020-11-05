@@ -10,9 +10,9 @@ Liferay Workspace is a set of folders on your machine where you store projects a
 
 1. Run this command:
 
-   ```bash
-   blade init -v 7.3 [workspace name]
-   ```
+    ```bash
+    blade init -v 7.3 [workspace name]
+    ```
 
 <!-- Let's ask the blade team to add some sort of success message to this command. Also - when I ran this to test (it was my first time) I thought that the brackets were required - but I ended up creating a workspace with brackets in the folder path. would it be clearer to say `blade init -v 7.3 your-workspace-name` ? -->
 
@@ -46,21 +46,21 @@ Liferay maintains a GitHub repository of [sample projects](https://github.com/li
 
 1. Find the sample project you want:
 
-   ```bash
-   blade samples
-   ```
+    ```bash
+    blade samples
+    ```
 
 1. Say you want a working example of a [model listener](../../../liferay-internals/extending-liferay/creating-a-model-listener.md). Type this command:
 
-   ```bash
-   blade samples model-listener
-   ```
+    ```bash
+    blade samples model-listener
+    ```
 
 1. If you want a specific version of the sample, you can pass in a version:
 
-   ```bash
-   blade samples -v 7.1 model-listener
-   ```
+    ```bash
+    blade samples -v 7.1 model-listener
+    ```
 
 ## Converting Legacy Plugins SDK Projects
 
@@ -70,20 +70,20 @@ If you have Liferay projects prior to version 7.0, they are in a Plugins SDK. To
 
 1. From within the Liferay Workspace, execute this command:
 
-   ```bash
-   blade convert -s [path to old Plugins SDK] -a
-   ```
+    ```bash
+    blade convert -s [path to old Plugins SDK] -a
+    ```
 
-   This converts all projects in the Plugins SDK to Workspace projects.
+    This converts all projects in the Plugins SDK to Workspace projects.
 
 1. If you want to convert only a single project, use this command instead:
 
-   ```bash
-   blade convert -s [path to old Plugins SDK] [name of Plugins SDK project to convert]
-   ```
+    ```bash
+    blade convert -s [path to old Plugins SDK] [name of Plugins SDK project to convert]
+    ```
 
-- When converting a project containing Service Builder services, Blade CLI creates separate API and service OSGi modules. The portlet remains a WAR and moves into the `wars` folder.
-- Themes are converted to leverage NodeJS like Liferay 7.x themes. To convert a Java-based theme, add the `-t` option, which uses the Theme Builder Gradle plugin instead.
+-   When converting a project containing Service Builder services, Blade CLI creates separate API and service OSGi modules. The portlet remains a WAR and moves into the `wars` folder.
+-   Themes are converted to leverage NodeJS like Liferay 7.x themes. To convert a Java-based theme, add the `-t` option, which uses the Theme Builder Gradle plugin instead.
 
 ## Related Topics
 

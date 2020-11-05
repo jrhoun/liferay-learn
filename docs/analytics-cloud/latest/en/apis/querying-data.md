@@ -10,29 +10,29 @@ The following response should be returned:
 
 ```json
 {
-   "_links":{
-      "accounts":{
-         "href": "https://analytics.liferay.com/api/reports/accounts"
-      },
-      "individuals":{
-         "href": "https://analytics.liferay.com/api/reports/individuals"
-      },
-      "pages":{
-         "href": "https://analytics.liferay.com/api/reports/pages"
-      },
-      "segments":{
-         "href": "https://analytics.liferay.com/api/reports/segments"
-      }
-   }
+	"_links": {
+		"accounts": {
+			"href": "https://analytics.liferay.com/api/reports/accounts"
+		},
+		"individuals": {
+			"href": "https://analytics.liferay.com/api/reports/individuals"
+		},
+		"pages": {
+			"href": "https://analytics.liferay.com/api/reports/pages"
+		},
+		"segments": {
+			"href": "https://analytics.liferay.com/api/reports/segments"
+		}
+	}
 }
 ```
 
 From here you can call different APIs to get data for accounts, individuals, pages, and segments.
 
-All the server responses to the analytics data follow the same data structure. The response is a paged results of entities computed by Liferay Analytics Cloud. By default, each page will contain 20 elements and it can be navigated by replacing the page query parameter. Total shows the total number of available elements. Below you can see  response format:
+All the server responses to the analytics data follow the same data structure. The response is a paged results of entities computed by Liferay Analytics Cloud. By default, each page will contain 20 elements and it can be navigated by replacing the page query parameter. Total shows the total number of available elements. Below you can see response format:
 
 ```json
-{"results":[],"total":0}
+{"results": [], "total": 0}
 ```
 
 ## Accessing Accounts Data
@@ -45,7 +45,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ### Parameters
 
-* `page` (Integer): results page number
+-   `page` (Integer): results page number
 
 ## Accessing Individuals Data
 
@@ -57,8 +57,8 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ### Parameters
 
-* `page` Integer: results page number
-* `query` String: keywords to be matched with the individuals demographics information  
+-   `page` Integer: results page number
+-   `query` String: keywords to be matched with the individuals demographics information
 
 ## Individual Activities
 
@@ -87,11 +87,11 @@ The structure of each activity is described below
 
 ### Properties
 
-* `ownerId` (String): Owner of the activity, equivalent to the individual ID.
-* `startTime` (Date): Date timestamp of when the activity occurred.
-* `applicationId` (String): Id of the application that triggered the event.
-* `eventId` (String): ID of the analytics events performed by the individual; event ID represent an action performed by the individual.
-* `eventProperties` (Object): Metadata information about the event, varies according to the eventId;
+-   `ownerId` (String): Owner of the activity, equivalent to the individual ID.
+-   `startTime` (Date): Date timestamp of when the activity occurred.
+-   `applicationId` (String): Id of the application that triggered the event.
+-   `eventId` (String): ID of the analytics events performed by the individual; event ID represent an action performed by the individual.
+-   `eventProperties` (Object): Metadata information about the event, varies according to the eventId;
 
 ## Individual Interests
 
@@ -103,22 +103,22 @@ Returns the list of individuals' interests, the structure of each interest is de
 
 ```json
 {
-   "score":0.6908830400645879,
-   "ownerId":"385450976494153117",
-   "dateRecorded":null,
-   "id":"389978452012791133",
-   "name":"Digital Experience Software Tailored"
+	"score": 0.6908830400645879,
+	"ownerId": "385450976494153117",
+	"dateRecorded": null,
+	"id": "389978452012791133",
+	"name": "Digital Experience Software Tailored"
 }
 ```
 
 ### Properties
 
-* `score` (Number): Numerical representation of how interest the individual is in that particular topic; ranges from 0 to 1.
-* `ownerId` (String): Owner of the activity, equivalent to the individual ID.
-* `dateRecorded` (Date): Date timestamp of when the interest was calculated.
-* `applicationId` (String): Id of the application that triggered the event.
-* `id` (String): Unique identifier of the interest.
-* `name` (String): Name of the interest.
+-   `score` (Number): Numerical representation of how interest the individual is in that particular topic; ranges from 0 to 1.
+-   `ownerId` (String): Owner of the activity, equivalent to the individual ID.
+-   `dateRecorded` (Date): Date timestamp of when the interest was calculated.
+-   `applicationId` (String): Id of the application that triggered the event.
+-   `id` (String): Unique identifier of the interest.
+-   `name` (String): Name of the interest.
 
 ## Individual Segments
 
@@ -153,13 +153,13 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Page data can be retrieved by the following command:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages
 ```
 
 ### Properties
 
-* `page` (Integer): results page number.
-* `keywords` (String): keywords to be matched with the pages title or url information.
-* `rangeKey` (Integer): range to be used to group data. Possible values are 0 ( data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days.
-* `sortMetric` (String): defined what metric to sort the results, default to viewsMetrics; possible values are ctrMetric, engagementMetric, timeOnPageMetric, exitRateMetric, ctpMetric, sessionsMetric, avgTimeOnPageMetric, bounceMetric, maxScrollDepthMetric, visitorsMetric, viewsMetric, bounceRateMetric, indirectAccessMetric, entrancesMetric, directAccessMetric
-* `sortOrder` (String), possible values are *asc* or *desc*. Orders the results according to the sortMetric in ascending or descending order. Default is desc.
+-   `page` (Integer): results page number.
+-   `keywords` (String): keywords to be matched with the pages title or url information.
+-   `rangeKey` (Integer): range to be used to group data. Possible values are 0 ( data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days.
+-   `sortMetric` (String): defined what metric to sort the results, default to viewsMetrics; possible values are ctrMetric, engagementMetric, timeOnPageMetric, exitRateMetric, ctpMetric, sessionsMetric, avgTimeOnPageMetric, bounceMetric, maxScrollDepthMetric, visitorsMetric, viewsMetric, bounceRateMetric, indirectAccessMetric, entrancesMetric, directAccessMetric
+-   `sortOrder` (String), possible values are _asc_ or _desc_. Orders the results according to the sortMetric in ascending or descending order. Default is desc.

@@ -6,14 +6,14 @@ The Recycle Bin stores content and assets that have been flagged for deletion, b
 
 To enable or disable the Recycle Bin for a particular site, follow these steps:
 
-1. Open the Product Menu and go to *Configuration* &rarr; *Settings* (previously *Site Settings*).
-1. Select the *Advanced* tab and scroll down to the *Recycle Bin* sub-heading and expand it.
-1. Toggle the *Enable Recycle Bin* option from *YES* to *NO* to enable/disable the Recycle Bin for the Site.
-1. Optionally provide a value (in minutes) in the *Trash Entries Max Age* input to specify how long the recycled assets should remain in the Recycle Bin before they are permanently deleted.
+1. Open the Product Menu and go to _Configuration_ &rarr; _Settings_ (previously _Site Settings_).
+1. Select the _Advanced_ tab and scroll down to the _Recycle Bin_ sub-heading and expand it.
+1. Toggle the _Enable Recycle Bin_ option from _YES_ to _NO_ to enable/disable the Recycle Bin for the Site.
+1. Optionally provide a value (in minutes) in the _Trash Entries Max Age_ input to specify how long the recycled assets should remain in the Recycle Bin before they are permanently deleted.
 
     ![You can configure the Recycle Bin for the Site from the Site's Advanced settings.](./configuring-the-asset-recycle-bin-for-sites/images/01.png)
 
-1. Scroll down and click *Save* to apply the changes.
+1. Scroll down and click _Save_ to apply the changes.
 
 Your configuration is saved.
 
@@ -23,5 +23,5 @@ Your configuration is saved.
 
 ## Additional Information
 
-* [Introduction to the Recycle Bin](../../../content-authoring-and-management/recycle-bin/user-guide/introduction-to-the-recycle-bin.md)
-* [Configuring the Recycle Bin](../../../content-authoring-and-management/recycle-bin/user-guide/configuring-the-recycle-bin.md)
+-   [Introduction to the Recycle Bin](../../../content-authoring-and-management/recycle-bin/user-guide/introduction-to-the-recycle-bin.md)
+-   [Configuring the Recycle Bin](../../../content-authoring-and-management/recycle-bin/user-guide/configuring-the-recycle-bin.md)

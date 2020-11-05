@@ -2,11 +2,11 @@
 
 Internet users are increasingly and justifiably concerned about how their personal data is processed by the systems they use. Liferay is aware of the need for functionality to address User data management. [Deleting User data](./sanitizing-user-data.md#the-personal-data-erasure-screen) is the safest way to honor _right to be forgotten_ requests.
 
-When User data must be preserved, automatic anonymization of the data is in order. Users being anonymized must have their identifiers (for example, User ID and User Name) removed from content they've interacted with. Since portal content usually requires this information for its applications to work properly, the User's identifiers must be replaced by something, or someone. That someone is *Anonymous Anonymous*. This deactivated User becomes the User whose identifiers are assigned to anonymized content. This identity swap is an important step in the anonymization process, but additional manual intervention may be necessary to truly achieve anonymization.
+When User data must be preserved, automatic anonymization of the data is in order. Users being anonymized must have their identifiers (for example, User ID and User Name) removed from content they've interacted with. Since portal content usually requires this information for its applications to work properly, the User's identifiers must be replaced by something, or someone. That someone is _Anonymous Anonymous_. This deactivated User becomes the User whose identifiers are assigned to anonymized content. This identity swap is an important step in the anonymization process, but additional manual intervention may be necessary to truly achieve anonymization.
 
 ![Anonymized content is presented with the User Anonymous Anonymous's identifying information.](./configuring-the-anonymous-user/images/01.png)
 
-The easiest way to set up a new User as the Anonymous User is to edit an existing Anonymous User configuration, passing in a different User ID. 
+The easiest way to set up a new User as the Anonymous User is to edit an existing Anonymous User configuration, passing in a different User ID.
 
 To edit an existing configuration,
 
@@ -14,9 +14,9 @@ To edit an existing configuration,
 
 1. Edit the existing configuration, providing a different User ID.
 
-   Get the User ID from Control Panel &rarr; Users &rarr; Users and Organizations. Click on the User and find the User ID in the User Display Data section of the Edit User screen.
+    Get the User ID from Control Panel &rarr; Users &rarr; Users and Organizations. Click on the User and find the User ID in the User Display Data section of the Edit User screen.
 
-1. Click *Update*.
+1. Click _Update_.
 
 To create a brand new Anonymous User, first [create the User](../users/adding-and-managing-users.md) to use for data anonymization, then follow the same steps described above.
 

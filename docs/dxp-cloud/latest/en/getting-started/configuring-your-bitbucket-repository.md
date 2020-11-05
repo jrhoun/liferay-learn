@@ -59,7 +59,7 @@ Follow these steps to transfer the provisioned GitHub repository to your own Bit
 
 1. Clone the provisioned GitHub repository locally:
 
-    ```git clone git@github.com:dxpcloud/example.git```
+    `git clone git@github.com:dxpcloud/example.git`
 
     ```note::
        If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
@@ -67,11 +67,11 @@ Follow these steps to transfer the provisioned GitHub repository to your own Bit
 
 1. Add a new Git remote and point to Bitbucket:
 
-    ```git remote add bitbucket git@bitbucket.org:example/example.git```
+    `git remote add bitbucket git@bitbucket.org:example/example.git`
 
 1. Push the cloned repository to the new remote repository:
 
-    ```git push bitbucket master```
+    `git push bitbucket master`
 
 If you need help creating, cloning, and pushing repositories, see [Bitbucket's documentation](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html).
 
@@ -93,8 +93,8 @@ Perform the following steps to generate an app password:
 
 1. Grant the app the following permissions:
 
-    * `Pull request - read, write` (this should also flag Repositories - read, write)
-    * `Webhooks -  read, write`
+    - `Pull request - read, write` (this should also flag Repositories - read, write)
+    - `Webhooks - read, write`
 
 1. Click _Create_.
 
@@ -114,13 +114,13 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 1. Configure the following environment variables:
 
-| Name | Value |
-| ---  | ---   |
-| `LCP_CI_SCM_PROVIDER` | bitbucket  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
-| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
-| `LCP_CI_SCM_TOKEN` | [app_password] |
-| `LCP_CI_SCM_USERNAME` | [auth_username] |
+| Name                          | Value           |
+| ----------------------------- | --------------- |
+| `LCP_CI_SCM_PROVIDER`         | bitbucket       |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]    |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]     |
+| `LCP_CI_SCM_TOKEN`            | [app_password]  |
+| `LCP_CI_SCM_USERNAME`         | [auth_username] |
 
 Define `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket).
 
@@ -168,5 +168,5 @@ Verify that new pull requests trigger Jenkins builds:
 
 ## Additional Information
 
-* [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
-* [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
+-   [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
+-   [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)

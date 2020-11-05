@@ -15,8 +15,8 @@ To add a product attachment:
 1. Select an existing file or upload a new file.
 1. Enter the following:
 
-    * **Title**: Product Attachment 1
-    * **Priority**: 1.0
+    - **Title**: Product Attachment 1
+    - **Priority**: 1.0
 
 1. Select any applicable product variant (SKU).
 
@@ -41,8 +41,8 @@ Customers can download the product attachment when browsing products in a catalo
 1. Select an existing file or upload a new file.
 1. Enter the following:
 
-    * **Title**: Product Attachment 1
-    * **Priority**: 1.0
+    - **Title**: Product Attachment 1
+    - **Priority**: 1.0
 
 1. Select any applicable product variant (SKU).
 
@@ -69,13 +69,13 @@ To add a product attachment:
 1. Select an existing file or upload a new file.
 1. Enter the following:
 
-    * **Title**: Product Attachment 1
-    * **Priority**: 1.0
+    - **Title**: Product Attachment 1
+    - **Priority**: 1.0
 
 1. Select any applicable product options.
 1. Click _Publish_ when finished.
 
 ## Additional Information
 
-* [Product Images](./product-images.md)
-* [Specifications](./specifications.md)
+-   [Product Images](./product-images.md)
+-   [Specifications](./specifications.md)

@@ -8,9 +8,9 @@ Since [issue #303](https://github.com/liferay/liferay-js-toolkit/issues/303), tw
 
     ```json
     {
-      "scripts":{
-        "build": "babel --source-maps -d build src && liferay-npm-bundler"
-      }
+    	"scripts": {
+    		"build": "babel --source-maps -d build src && liferay-npm-bundler"
+    	}
     }
     ```
 
@@ -18,31 +18,31 @@ Since [issue #303](https://github.com/liferay/liferay-js-toolkit/issues/303), tw
 
     ```json
     {
-      "scripts":{
-        "build": "liferay-npm-bundler"
-      }
+    	"scripts": {
+    		"build": "liferay-npm-bundler"
+    	}
     }
     ```
 
-1. Define the rules for the bundler to use (e.g. running babel to transpile files) in the project's `.npmbundlerrc` file. The example configuration below defines rules for using the `babel-loader` to transpile JavaScript files. See the [Default Loaders reference](../default-bundler-loaders.md) for the full list of default loaders. Follow the steps in [Creating Custom Loaders for the Bundler](../../developer/creating-custom-loaders-for-the-bundler.md) <!-- TODO: Fix link --> to create a custom loader. The liferay-npm-bundler processes the `*.js` files in  `/src/` with babel and writes the results in the default `/build/` folder:
+1. Define the rules for the bundler to use (e.g. running babel to transpile files) in the project's `.npmbundlerrc` file. The example configuration below defines rules for using the `babel-loader` to transpile JavaScript files. See the [Default Loaders reference](../default-bundler-loaders.md) for the full list of default loaders. Follow the steps in [Creating Custom Loaders for the Bundler](../../developer/creating-custom-loaders-for-the-bundler.md) <!-- TODO: Fix link --> to create a custom loader. The liferay-npm-bundler processes the `*.js` files in `/src/` with babel and writes the results in the default `/build/` folder:
 
     ```json
     {
-      "sources": ["src"],
-      "rules": [
-        {
-          "test": "\\.js$",
-          "exclude": "node_modules",
-          "use": [
-            {
-              "loader": "babel-loader",
-              "options": {
-                "presets": ["env"]
-              }
-            }
-          ]
-        }
-      ]
+    	"sources": ["src"],
+    	"rules": [
+    		{
+    			"test": "\\.js$",
+    			"exclude": "node_modules",
+    			"use": [
+    				{
+    					"loader": "babel-loader",
+    					"options": {
+    						"presets": ["env"]
+    					}
+    				}
+    			]
+    		}
+    	]
     }
     ```
 
@@ -52,5 +52,5 @@ Since [issue #303](https://github.com/liferay/liferay-js-toolkit/issues/303), tw
 
 ## Related Information
 
-* [Default liferay-npm-bundler Loaders](../default-bundler-loaders.md)
-* [Understanding liferay-npm-bundler's Loaders](../understanding-bundler-loaders.md)
+-   [Default liferay-npm-bundler Loaders](../default-bundler-loaders.md)
+-   [Understanding liferay-npm-bundler's Loaders](../understanding-bundler-loaders.md)

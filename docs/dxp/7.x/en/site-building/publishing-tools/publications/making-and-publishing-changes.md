@@ -1,28 +1,28 @@
 # Making and Publishing Changes
 
-The Publications tool provides a convenient way to manage version publishing for your DXP instance. With it, your team can create multiple *publications* that group changes together into parallel blocks that can be published together when ready.
+The Publications tool provides a convenient way to manage version publishing for your DXP instance. With it, your team can create multiple _publications_ that group changes together into parallel blocks that can be published together when ready.
 
 To enhance your publishing experience, learn how to make and publish changes to your instance using Publications.
 
-* [Creating a Publication for Your Changes](#creating-a-publication-for-your-changes)
-* [Making Changes on a Single Publication](#making-changes-on-a-single-publication)
-* [Making Changes on Parallel Publications](#making-changes-on-parallel-publications)
-* [Reviewing Publication Changes](#reviewing-publication-changes)
-* [Publishing Your Changes](#publishing-your-changes)
+-   [Creating a Publication for Your Changes](#creating-a-publication-for-your-changes)
+-   [Making Changes on a Single Publication](#making-changes-on-a-single-publication)
+-   [Making Changes on Parallel Publications](#making-changes-on-parallel-publications)
+-   [Reviewing Publication Changes](#reviewing-publication-changes)
+-   [Publishing Your Changes](#publishing-your-changes)
 
 ## Creating a Publication for Your Changes
 
-If you haven't already created a publication to track your changes, click on *Create New Publication* in the Publications bar drop-down menu.
+If you haven't already created a publication to track your changes, click on _Create New Publication_ in the Publications bar drop-down menu.
 
 ![click on Create New Publication in the Publications bar drop-down menu.](./making-and-publishing-changes/images/01.png)
 
-This redirects you to the *Create New Publication* Page, where you can set the name and description for your new publication. See [Creating and Managing Publications](./creating-and-managing-publications.md) for more information.
+This redirects you to the _Create New Publication_ Page, where you can set the name and description for your new publication. See [Creating and Managing Publications](./creating-and-managing-publications.md) for more information.
 
 ## Making Changes on a Single Publication
 
 Before making changes to your instance, ensure you're working on the correct publication and not on production or a different publication. You can confirm this via the Publications bar, which displays the current publication name.
 
-If you're not working on the desired publication, click *Select a Publication* and choose the correct one.
+If you're not working on the desired publication, click _Select a Publication_ and choose the correct one.
 
 ![Click on Select a Publication and choose which publication you want to work on.](./making-and-publishing-changes/images/02.png)
 
@@ -32,7 +32,7 @@ With Publications, multiple Users can make changes to the same publication and p
 
 ### Adding and Editing Assets
 
-When you add, edit, or remove assets in a publication, your changes are only visible via the publication in which they're made and the publication's *Review Changes* page. They cannot be seen by Users in production or another publication. Each application controls what parts of an asset are trackable by publications.
+When you add, edit, or remove assets in a publication, your changes are only visible via the publication in which they're made and the publication's _Review Changes_ page. They cannot be seen by Users in production or another publication. Each application controls what parts of an asset are trackable by publications.
 
 ### Displaying Assets
 
@@ -58,27 +58,27 @@ When production is directly updated, these changes are not tracked as part of yo
 
 ## Reviewing Publication Changes
 
-Before Publishing, review your publication's tracked changes. You can do this by selecting *Review Changes* in the Publications bar drop-down menu.
+Before Publishing, review your publication's tracked changes. You can do this by selecting _Review Changes_ in the Publications bar drop-down menu.
 
 ![Click on Review Changes in the Publications bar drop-down menu.](./making-and-publishing-changes/images/03.png)
 
-Alternatively, you can review any publication's tracked changes in the *Ongoing* tab of the Publications overview Page. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the Publication you want to review and select *Review Changes* to see all changes included in the selected publication.
+Alternatively, you can review any publication's tracked changes in the _Ongoing_ tab of the Publications overview Page. Click on the _Actions_ button ( ![Actions button](../../../images/icon-actions.png) ) for the Publication you want to review and select _Review Changes_ to see all changes included in the selected publication.
 
 ### Simple and Advanced Change Summaries
 
-By default, DXP displays a simple summary of the publication's tracked changes, but you can set the toggle switch to *Show all Items* to view all processes related to your changes.
+By default, DXP displays a simple summary of the publication's tracked changes, but you can set the toggle switch to _Show all Items_ to view all processes related to your changes.
 
-Click on an individual change to see further details, including all processes connected to the change if *Show All Items* is enabled. You can click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to either *Edit* or *Discard* it.
+Click on an individual change to see further details, including all processes connected to the change if _Show All Items_ is enabled. You can click on the _Actions_ button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to either _Edit_ or _Discard_ it.
 
 ### Display Styles
 
-Here, you can also switch between two display styles: *Changes* and *Context*.
+Here, you can also switch between two display styles: _Changes_ and _Context_.
 
-* **Changes**: This displays all tracked changes in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
+-   **Changes**: This displays all tracked changes in a list that you can order by _Change Type_, _Modified Date_, _Site_, _Title_, or _User_.
 
     ![View tracked changes in a list.](./making-and-publishing-changes/images/04.png)
 
-* **Context**: This displays all changes in a tree, where every change can be seen in its relative context.
+-   **Context**: This displays all changes in a tree, where every change can be seen in its relative context.
 
     ![View tracked changes in context.](./making-and-publishing-changes/images/05.png)
 
@@ -86,27 +86,27 @@ Here, you can also switch between two display styles: *Changes* and *Context*.
 
 When you're finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication cannot be edited, and no further changes can be added to it. This maintains a clear audit trail to be able to roll back only the latest changes when needed.
 
-However, you can easily *revert* a publication via the *History* tab of the Publications Page. From here, you can review changes included in a publication and create a new publication that already contains changes that undo those made by your selected publication. See [Reverting Changes](./reverting-changes.md) for more information.
+However, you can easily _revert_ a publication via the _History_ tab of the Publications Page. From here, you can review changes included in a publication and create a new publication that already contains changes that undo those made by your selected publication. See [Reverting Changes](./reverting-changes.md) for more information.
 
 ### Publishing Now
 
-To publish your changes immediately, ensure you're on the publication you want to publish to production. Then, click on *Publish* in the *Publications* bar drop-down menu.
+To publish your changes immediately, ensure you're on the publication you want to publish to production. Then, click on _Publish_ in the _Publications_ bar drop-down menu.
 
 ![Click on Publish in the Publications bar drop-down menu.](./making-and-publishing-changes/images/06.png)
 
-Alternatively, you can publish a publication by going to its *Changes* page and clicking on *Publish*.
+Alternatively, you can publish a publication by going to its _Changes_ page and clicking on _Publish_.
 
 DXP performs conflict detection to see if there are any conflicting changes. If there are any conflicts detected, DXP notifies you of all automatically resolved conflicts and whether any require manual resolution. You cannot move forward with publishing until all conflicts are resolved. See [Resolving Conflicts](./resolving-conflicts.md) for more information about this process.
 
-Once all conflicts are resolved, you can click on *Publish* to make your changes live on production. Clicking *Publish* also redirects you to the *History* tab of the Publications page, where you can see publication details, including its date, publisher, and status. Here, you can also revert changes. See [Reverting Changes](./reverting-changes.md) for more information.
+Once all conflicts are resolved, you can click on _Publish_ to make your changes live on production. Clicking _Publish_ also redirects you to the _History_ tab of the Publications page, where you can see publication details, including its date, publisher, and status. Here, you can also revert changes. See [Reverting Changes](./reverting-changes.md) for more information.
 
 ### Scheduling for Later
 
-To publish your changes at a later time, ensure you're on the publication you want to publish to production. Then, click on *Schedule* in the *Publications* bar drop-down menu.
+To publish your changes at a later time, ensure you're on the publication you want to publish to production. Then, click on _Schedule_ in the _Publications_ bar drop-down menu.
 
 ![Click on Schedule in the Publications bar drop-down menu.](./making-and-publishing-changes/images/07.png)
 
-Alternatively, you can publish by going to a publication's *Changes* page and clicking on *Schedule*.
+Alternatively, you can publish by going to a publication's _Changes_ page and clicking on _Schedule_.
 
 DXP performs a preliminary conflict detection to see if there are any existing conflicts. If there are no conflicts or all conflicts have been resolved, you can set a date and time for publishing your changes.
 
@@ -116,6 +116,6 @@ At the time of the publication, DXP performs a second conflict detection to ensu
 
 ## Additional Information
 
-* [Publications Overview](./publications-overview.md)
-* [Enabling Publications](./enabling-publications.md)
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
+-   [Publications Overview](./publications-overview.md)
+-   [Enabling Publications](./enabling-publications.md)
+-   [Creating and Managing Publications](./creating-and-managing-publications.md)

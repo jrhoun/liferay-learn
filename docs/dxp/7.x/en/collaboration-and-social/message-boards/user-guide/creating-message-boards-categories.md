@@ -14,8 +14,8 @@ The most common way to add a new category is by directly using the the _Message 
 1. Enter a description.
 1. Select the category's _Display Style_. This controls how threads in the category appear. By default, you can choose these display styles:
 
-    * **Default:** Classic display style for general purpose discussions.
-    * **Question:** Threads appear in a question and answer style.
+    - **Default:** Classic display style for general purpose discussions.
+    - **Question:** Threads appear in a question and answer style.
 
     ![Select a Display Style](./creating-message-boards-categories/images/04.png)
 
@@ -83,4 +83,4 @@ Once you have created categories and a few subcategories, you can learn how to c
 
 ## Additional Information
 
-* [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
+-   [Message Boards Configuration Reference](./message-boards-configuration-reference.md)

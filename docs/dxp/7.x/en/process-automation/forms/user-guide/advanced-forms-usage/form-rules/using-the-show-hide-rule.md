@@ -4,8 +4,8 @@ Users can use a _Show_ action show a field if a condition is met. Otherwise, thi
 
 This example uses [a camp registration form](../../creating-forms.md) with two text fields:
 
-* _I am 18 Years Old or Older_: a required single selection field with two options: _Yes_ and _No_.
-* _Legal Guardian Email Address_: a text field that accepts valid email addresses.
+-   _I am 18 Years Old or Older_: a required single selection field with two options: _Yes_ and _No_.
+-   _Legal Guardian Email Address_: a text field that accepts valid email addresses.
 
 ## Configuring the Show Action Rule
 
@@ -24,16 +24,16 @@ To configure a Show-Hide action rule:
 1. Select _Legal Guardian Email Address_ from the second Options dropdown menu.
 1. Click _Save_ when finished.
 
-     ![Once a rule is saved, it is displayed so that you can easily understand what it does.](./using-the-show-hide-rule/images/02.png)
+    ![Once a rule is saved, it is displayed so that you can easily understand what it does.](./using-the-show-hide-rule/images/02.png)
 
-Now the *Legal Guardian Email Address* field appears only if the user selects *No* in the *I am 18 years old or older* field.
+Now the _Legal Guardian Email Address_ field appears only if the user selects _No_ in the _I am 18 years old or older_ field.
 
 ## Additional Information
 
-* [Creating Forms](../../creating-forms.md)
-* [Form Rules Overview](./form-rules-overview.md)
-* [Using the Require Rule](./using-the-require-rule.md)
-* [Using the Enable Rule](./using-the-enable-disable-rule.md)
-* [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
-* [Using the Autofill Rule](./using-the-autofill-rule.md)
-* [Using the Calculate Rule](./using-the-calculate-rule.md)
+-   [Creating Forms](../../creating-forms.md)
+-   [Form Rules Overview](./form-rules-overview.md)
+-   [Using the Require Rule](./using-the-require-rule.md)
+-   [Using the Enable Rule](./using-the-enable-disable-rule.md)
+-   [Using the Jump to Page Rule](./using-the-jump-to-page-rule.md)
+-   [Using the Autofill Rule](./using-the-autofill-rule.md)
+-   [Using the Calculate Rule](./using-the-calculate-rule.md)

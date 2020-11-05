@@ -28,10 +28,10 @@ To remove a filter, click the x next to the filter name.
 
 Pages have Assets on them. If a Page containing the Analytics Cloud client is reported in the Path diagram, a Show Top 5 Assets link is displayed. Clicking it opens a drop-down list. Up to the top five assets on the Page is displayed, as determined by interaction with the Assets. Each Asset uses the most appropriate interaction metric available:
 
-* Forms uses Submissions
-* Blogs uses Views
-* Documents and Media uses Downloads
-* Web Content uses Views
+-   Forms uses Submissions
+-   Blogs uses Views
+-   Documents and Media uses Downloads
+-   Web Content uses Views
 
 ![The top 5 assets are listed for each page.](paths/images/03.png)
 

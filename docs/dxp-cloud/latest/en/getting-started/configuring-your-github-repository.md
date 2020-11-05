@@ -22,27 +22,27 @@ If you need help creating, cloning, and pushing GitHub repositories, see [GitHub
 
 Now you must integrate your new repository with the Jenkins service in DXP Cloud. Set up a webhook in GitHub that pushes to the Jenkins service:
 
-1. In GitHub, go to your repository's *Settings* page and select *Webhooks*.
+1. In GitHub, go to your repository's _Settings_ page and select _Webhooks_.
 
-1. Click *Add Webhook*. This opens the *Add webhook* form.
+1. Click _Add Webhook_. This opens the _Add webhook_ form.
 
-1. In the *Payload URL* field, add the domain of your DXP Cloud `infra` environment's Jenkins service. For example, the URL of the `infra` environment's `ci` service for a project named `acme` is `https://ci-acme-infra.lfr.cloud/github-webhook/`. Note that the relative path `github-webhook` is required to integrate with the Jenkins GitHub plugin.
+1. In the _Payload URL_ field, add the domain of your DXP Cloud `infra` environment's Jenkins service. For example, the URL of the `infra` environment's `ci` service for a project named `acme` is `https://ci-acme-infra.lfr.cloud/github-webhook/`. Note that the relative path `github-webhook` is required to integrate with the Jenkins GitHub plugin.
 
-1. In the *Content type* selector menu, select *application/json*.
+1. In the _Content type_ selector menu, select _application/json_.
 
-1. Leave the *Secret* field blank and ensure that *Enable SSL verification* is selected.
+1. Leave the _Secret_ field blank and ensure that _Enable SSL verification_ is selected.
 
     ![Figure 1: Specify the payload URL and content type, and enable SSL verification.](./configuring-your-github-repository/images/webhook-1.png)
 
-1. Under *Which events would you like to trigger this webhook?*, select *Let me select individual events*. A list of events then appears.
+1. Under _Which events would you like to trigger this webhook?_, select _Let me select individual events_. A list of events then appears.
 
-1. Select *Pushes* and *Pull Requests* from the list of events.
+1. Select _Pushes_ and _Pull Requests_ from the list of events.
 
     ![Figure 2: You need to select individual events for this webhook.](./configuring-your-github-repository/images/webhook-2.png)
 
     ![Figure 3: Select Pushes, and Pull Requests.](./configuring-your-github-repository/images/webhook-3.png)
 
-1. Make sure *Active* is selected, then click *Add webhook*.
+1. Make sure _Active_ is selected, then click _Add webhook_.
 
     ![Figure 4: Set the webhook to Active and finish creating it.](./configuring-your-github-repository/images/webhook-4.png)
 
@@ -52,16 +52,16 @@ Lastly, set environment variables in the Jenkins service to point to your new re
 
 1. Log in to the DXP Cloud Console and navigate to your Jenkins service in the `infra` environment.
 
-1. Navigate to the *Environment Variables* tab.
+1. Navigate to the _Environment Variables_ tab.
 
 1. Configure the following environment variables:
 
-| Name | Value |
-| ---  | ---   |
-| `LCP_CI_SCM_PROVIDER` | github  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
-| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
-| `LCP_CI_SCM_TOKEN` | [access_token] |
+| Name                          | Value          |
+| ----------------------------- | -------------- |
+| `LCP_CI_SCM_PROVIDER`         | github         |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
 
 For the `LCP_CI_SCM_TOKEN` value, use the personal access token you created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
 
@@ -111,5 +111,5 @@ Verify that new pull requests trigger Jenkins builds:
 
 ## Additional Information
 
-* [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
-* [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
+-   [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
+-   [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)

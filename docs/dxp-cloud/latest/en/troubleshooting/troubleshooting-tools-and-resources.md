@@ -2,16 +2,16 @@
 
 The ability to quickly diagnose and resolve technical issues is vital. Familiarize yourself with the available tools and resources for troubleshooting problems in your Liferay DXP Cloud projects:
 
-* [Application Metrics](#application-metrics)
-* [Real-Time Alerts](#real-time-alerts)
-* [Environment Activities](#environment-activities)
-* [Environment Logs](#environment-service-logs)
-* [Shell Access](#shell-access)
-* [Self-Healing](#self-healing)
-* [Disaster Recovery](#disaster-recovery)
-* [Liferay Cloud Platform Status](#liferay-cloud-platform-status)
-* [Support Access](#support-access)
-* [Help Center](#help-center)
+-   [Application Metrics](#application-metrics)
+-   [Real-Time Alerts](#real-time-alerts)
+-   [Environment Activities](#environment-activities)
+-   [Environment Logs](#environment-service-logs)
+-   [Shell Access](#shell-access)
+-   [Self-Healing](#self-healing)
+-   [Disaster Recovery](#disaster-recovery)
+-   [Liferay Cloud Platform Status](#liferay-cloud-platform-status)
+-   [Support Access](#support-access)
+-   [Help Center](#help-center)
 
 With these tools and resources, you can track project activities, configure services, resolve technical issues, and more.
 
@@ -43,7 +43,7 @@ See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more info
 
 ## Environment Activities
 
-Users can monitor environment activities via the DXP Cloud console, where they are sorted into two sections: *Builds and Deployments* and *General Activities*.
+Users can monitor environment activities via the DXP Cloud console, where they are sorted into two sections: _Builds and Deployments_ and _General Activities_.
 
 View the status of builds, deployments, service activities, and more to help troubleshoot environment issues.
 
@@ -57,9 +57,9 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Application, status, and build logs are provided for each DXP Cloud Service:
 
-* **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
-* **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
-* **Build Logs**: These logs list build information generated as the application boots up.
+-   **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+-   **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
+-   **Build Logs**: These logs list build information generated as the application boots up.
 
 ![Figure 4: View logs via the Logs page in the DXP Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
@@ -81,8 +81,8 @@ The self-healing functionality of DXP Cloud detects if a service or application 
 
 DXP Cloud offers two probes used in conjunction to manage applications:
 
-* **Liveness Probe**: This probe indicates whether the service is running.
-* **Readiness Probe**: This probe indicates whether the service is ready to receive requests.
+-   **Liveness Probe**: This probe indicates whether the service is running.
+-   **Readiness Probe**: This probe indicates whether the service is ready to receive requests.
 
 See [Self-Healing](./self-healing.md) for more information about configuring each probe.
 
@@ -102,7 +102,7 @@ When troubleshooting technical issues, be sure to check that all Cloud Platform 
 
 Users can view the status of Liferay Cloud Platform systems, planned maintenance windows, and incident history from the [Liferay Cloud Platform](https://status.liferay.cloud/) status page.
 
-To receive notifications of changes in the Cloud Platform's status, click on *Subscribe to Updates*, and select your preferred method of notification.
+To receive notifications of changes in the Cloud Platform's status, click on _Subscribe to Updates_, and select your preferred method of notification.
 
 ![Figure 6: View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/images/06.png)
 
@@ -112,7 +112,7 @@ See [Liferay Cloud Platform Status](./liferay-cloud-platform-status) for more in
 
 Support Access is an optional environment setting that expedites troubleshooting by giving Liferay engineers direct access to a DXP Cloud project environment.
 
-By default, Support Access is enabled in each project environment, though administrators can disable it from the *Settings* page.
+By default, Support Access is enabled in each project environment, though administrators can disable it from the _Settings_ page.
 
 ![Figure 07: Environment administrators can enable or disable Support Access in the Settings page](./troubleshooting-tools-and-resources/images/07.png)
 
@@ -138,7 +138,7 @@ When submitting a ticket, please provide information regarding the build images 
 
 ## Additional Information
 
-* [DXP Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Liferay DXP Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
-* [Liferay DXP Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
-* [Support Access](./support-access.md)
+-   [DXP Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
+-   [Liferay DXP Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
+-   [Liferay DXP Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
+-   [Support Access](./support-access.md)

@@ -6,11 +6,11 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Liferay DXP Cloud provides three types of logs for environment services:
 
-* **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
+-   **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
 
-* **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster. Examples of status information include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
+-   **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster. Examples of status information include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
 
-* **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+-   **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
 
 ## Accessing Logs via the DXP Cloud Console
 
@@ -18,15 +18,15 @@ Follow these steps to access environment service logs via the DXP Cloud console:
 
 1. Navigate to a project environment.
 
-1. Click on *Logs* in the environment menu.
+1. Click on _Logs_ in the environment menu.
 
 View application, status, and build logs across all environment services, or filter results using the drop-down menus.
 
-To download logs, click the *Download Logs* button.
+To download logs, click the _Download Logs_ button.
 
 ![Figure 1: View environment logs form the Logs page.](./log-management/images/01.png)
 
-Individual service logs are also available under the *Logs* tab in each service's dedicated page.
+Individual service logs are also available under the _Logs_ tab in each service's dedicated page.
 
 ![Figure 2: Access and download individual service logs under the Logs tab in each service's dedicated page.](./log-management/images/02.png)
 
@@ -54,6 +54,6 @@ lcp log -p <environment-id> -s <service-id>
 
 ## Additional Information
 
-* [Shell Access](./shell-access.md)
-* [Disaster Recovery Overview](./disaster-recovery-overview.md)
-* [Configuring Cross-Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md)
+-   [Shell Access](./shell-access.md)
+-   [Disaster Recovery Overview](./disaster-recovery-overview.md)
+-   [Configuring Cross-Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md)

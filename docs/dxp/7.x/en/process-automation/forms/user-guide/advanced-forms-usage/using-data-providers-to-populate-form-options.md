@@ -8,7 +8,7 @@ One example is to populate a Select field for a user's "Country" when collecting
 
 [Create a form](../creating-forms.md) that includes the following:
 
-* **Country**: a Single Select field.
+-   **Country**: a Single Select field.
 
 Next, use the `get-countries` JSON web service (there are two---use either one).
 
@@ -49,14 +49,14 @@ To add a _Countries of the World_ Data Provider:
 1. Click the Add button (![Add](../../../../images/icon-add.png)).
 1. Enter the following:
 
-    * **Name**: Countries of the World
-    * **URL**: `http://localhost:8080/api/jsonws/country/get-countries/`
-    * **User Name**: `adminuser@liferay.com`
-    * **Password**: adminuserpass
-    * **Timeout**: 1000
-    * **Outputs Label**: Country Name
-    * **Outputs Path**: `$..nameCurrentValue`
-    * **Outputs Type**: List
+    - **Name**: Countries of the World
+    - **URL**: `http://localhost:8080/api/jsonws/country/get-countries/`
+    - **User Name**: `adminuser@liferay.com`
+    - **Password**: adminuserpass
+    - **Timeout**: 1000
+    - **Outputs Label**: Country Name
+    - **Outputs Path**: `$..nameCurrentValue`
+    - **Outputs Type**: List
 
     ![Enter the values.](./using-a-data-provider-to-populate-form-options/images/04.png)
 
@@ -73,14 +73,15 @@ The above example is simple which uses only an Output to populate a _Select from
 For example, to apply a region (for example, Americas, Europe, or Oceania) filter for the countries of the world:
 
 1. Enter the following:
-   * **Name**: `restcountries`
-   * **URL**: `https://restcountries.eu/rest/v2/region/{region}?fields=name`(using a different REST provider)
-   * **Input Label**: Region
-   * **Parameter**: Region
-   * **Input Type**: Text
-   * **Outputs Label**: Countries of the World with Regions
-   * **Outputs Path**: `*$..name*`
-   * **Output Type**: List
+
+    - **Name**: `restcountries`
+    - **URL**: `https://restcountries.eu/rest/v2/region/{region}?fields=name`(using a different REST provider)
+    - **Input Label**: Region
+    - **Parameter**: Region
+    - **Input Type**: Text
+    - **Outputs Label**: Countries of the World with Regions
+    - **Outputs Path**: `*$..name*`
+    - **Output Type**: List
 
     To understand more about these values, read the [Data Provider documentation](../data-providers-overview.md).
 
@@ -131,4 +132,4 @@ The console now sends warning messages whenever there are errors in the Data Pro
 
 ## Additional Information
 
-* [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)
+-   [Using the Autofill Rule](./form-rules/using-the-autofill-rule.md)

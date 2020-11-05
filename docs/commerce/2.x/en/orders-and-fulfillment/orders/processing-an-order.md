@@ -23,9 +23,9 @@ The order has been accepted and can be processed.
 
 After the order has been accepted, there are three options:
 
-* **Cancel**: The order is cancelled and is moved automatically on the Orders menu from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
-* **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
-* **Create Shipment**: The order is ready to be [shipped](../shipments/introduction-to-shipments.md).
+-   **Cancel**: The order is cancelled and is moved automatically on the Orders menu from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
+-   **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
+-   **Create Shipment**: The order is ready to be [shipped](../shipments/introduction-to-shipments.md).
 
 ![Cancel, Hold, or Create Shipment](./processing-an-order/images/04.png)
 
@@ -69,9 +69,9 @@ The order has been accepted and can be processed.
 
 After the order has been accepted, there are three options:
 
-* **Cancel**: The order is cancelled and is moved automatically on the Orders menu from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
-* **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
-* **Create Shipment**: The order is ready to be [shipped](../shipments/introduction-to-shipments.md).
+-   **Cancel**: The order is cancelled and is moved automatically on the Orders menu from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
+-   **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
+-   **Create Shipment**: The order is ready to be [shipped](../shipments/introduction-to-shipments.md).
 
 ![Cancel, Hold, or Create Shipment](./processing-an-order/images/04.png)
 
@@ -108,7 +108,7 @@ To process an order:
 1. Click on the _Overview_ tab.
 1. Click _Edit Order Status_.
 
-     ![Click on the Pending Tab to process an order.](./processing-an-order/images/06.png)
+    ![Click on the Pending Tab to process an order.](./processing-an-order/images/06.png)
 
 1. Select _Transmitted_ from the Order Status dropdown menu.
 1. Click _Save_ when finished.
@@ -119,8 +119,8 @@ See the [Creating a New Shipment on Liferay Commerce 2.0 and Below](../shipments
 
 ## Additional Information
 
-* [Introduction to Orders Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
-* [Managing Subscriptions](../subscriptions/managing-subscriptions.md)
-* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
-* [Inventory Administration Reference Guide](../../managing-a-catalog/managing-inventory/inventory-administration-reference-guide.md)
+-   [Introduction to Orders Workflows](../order-workflows/introduction-to-order-workflows.md)
+-   [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
+-   [Managing Subscriptions](../subscriptions/managing-subscriptions.md)
+-   [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+-   [Inventory Administration Reference Guide](../../managing-a-catalog/managing-inventory/inventory-administration-reference-guide.md)

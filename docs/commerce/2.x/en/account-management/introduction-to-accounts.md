@@ -4,11 +4,11 @@ In Liferay Commerce, accounts store information about customers and are used to 
 
 ## Account Types
 
-* **Business Accounts**: For the _B2B_ site type, an individual customer _must_ be assigned to a _Business_ account in order to make a purchase. Multiple users may be associated with a single business account and these users can be assigned unique [Account Roles](../account-management/account-roles.md).
+-   **Business Accounts**: For the _B2B_ site type, an individual customer _must_ be assigned to a _Business_ account in order to make a purchase. Multiple users may be associated with a single business account and these users can be assigned unique [Account Roles](../account-management/account-roles.md).
 
-* **Personal Accounts**: For the _B2C_ site type, individual authenticated customers will automatically be associated with a _Personal_ account and be able to make purchases.
+-   **Personal Accounts**: For the _B2C_ site type, individual authenticated customers will automatically be associated with a _Personal_ account and be able to make purchases.
 
-  >**Note**: Liferay User Account Profile information is only imported at the time of Personal Account creation, further updates to a Liferay User Account Profile are not propagated to the Personal Account.
+    > **Note**: Liferay User Account Profile information is only imported at the time of Personal Account creation, further updates to a Liferay User Account Profile are not propagated to the Personal Account.
 
 ## Managing and Empowering Accounts
 
@@ -34,13 +34,13 @@ Finally, individual users associated with a given Business Account may be given 
 
 See the following articles to learn more about common Account Management actions:
 
-* [Creating a New Account](../account-management/creating-a-new-account.md)
-* [Inviting Users to an Account](../account-management/inviting-users-to-an-account.md)
-* [Assigning Account Roles](../account-management/assigning-account-roles.md)
-* [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md)
-* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
+-   [Creating a New Account](../account-management/creating-a-new-account.md)
+-   [Inviting Users to an Account](../account-management/inviting-users-to-an-account.md)
+-   [Assigning Account Roles](../account-management/assigning-account-roles.md)
+-   [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md)
+-   [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
 
 ## Additional Information
 
-* [Sites and Site Types](../starting-a-store/sites-and-site-types.md)
-* [Account Roles](../account-management/account-roles.md)
+-   [Sites and Site Types](../starting-a-store/sites-and-site-types.md)
+-   [Account Roles](../account-management/account-roles.md)

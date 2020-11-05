@@ -22,6 +22,6 @@ Only administrators can update a Page's permission.
 
 ## Additional Information
 
-* [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-* [Assigning Users to Roles](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
-* [Configuring Page Sets](./configuring-page-sets.md)
+-   [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+-   [Assigning Users to Roles](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
+-   [Configuring Page Sets](./configuring-page-sets.md)

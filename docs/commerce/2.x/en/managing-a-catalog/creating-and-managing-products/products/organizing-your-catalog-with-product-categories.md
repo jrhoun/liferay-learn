@@ -62,4 +62,4 @@ Repeat as necessary for all other products that might fall under this category.
 
 ## Additional Information
 
-* [Creating a New Product Category](./creating-a-new-product-category.md)
+-   [Creating a New Product Category](./creating-a-new-product-category.md)

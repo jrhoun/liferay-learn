@@ -1,6 +1,6 @@
 # Blue-Green Deployments
 
-Blue-green is a deployment technique in which you duplicate your production environment (the *blue* environment) and modify the duplicate (the *green* environment) with software and data changes. When you've successfully tested the green environment, you cut users over from the blue environment to the green environment. Blue-green eliminates system down time.
+Blue-green is a deployment technique in which you duplicate your production environment (the _blue_ environment) and modify the duplicate (the _green_ environment) with software and data changes. When you've successfully tested the green environment, you cut users over from the blue environment to the green environment. Blue-green eliminates system down time.
 
 Data changes and data schema changes require special attention. Custom plugin/module data schema changes that break compatibility with existing code must be introduced over several releases in which the data is transitioned and maintained in old and new columns until the old columns are unnecessary.
 
@@ -16,11 +16,11 @@ Data and schema changes require these steps:
 
 For more information, refer to these blue-green deployment articles:
 
-* [BlueGreenDeployment](http://martinfowler.com/bliki/BlueGreenDeployment.html)
-* [Implementing Blue-Green Deployments with AWS](https://www.thoughtworks.com/insights/blog/implementing-blue-green-deployments-aws)
+-   [BlueGreenDeployment](http://martinfowler.com/bliki/BlueGreenDeployment.html)
+-   [Implementing Blue-Green Deployments with AWS](https://www.thoughtworks.com/insights/blog/implementing-blue-green-deployments-aws)
 
 ## Related Topics
 
-* [Rolling Restarts](./rolling-restarts.md)
-* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
-* [Patching](../patching-liferay/patching-liferay.md)
+-   [Rolling Restarts](./rolling-restarts.md)
+-   [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Patching](../patching-liferay/patching-liferay.md)

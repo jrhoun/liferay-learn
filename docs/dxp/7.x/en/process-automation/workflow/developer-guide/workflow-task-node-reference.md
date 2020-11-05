@@ -1,8 +1,8 @@
 # Workflow Task Node Reference
 
-As the name implies, tasks are the part of the workflow where *work* is done. Tasks must be assigned to Users, who review the submitted asset and decide if an asset from the workflow is acceptable for publication or needs more work.
+As the name implies, tasks are the part of the workflow where _work_ is done. Tasks must be assigned to Users, who review the submitted asset and decide if an asset from the workflow is acceptable for publication or needs more work.
 
-Unlike other workflow nodes, task nodes have Assignments, because a User is expected to *do something* (often approve or reject the submitted asset) when a workflow process enters the task node.
+Unlike other workflow nodes, task nodes have Assignments, because a User is expected to _do something_ (often approve or reject the submitted asset) when a workflow process enters the task node.
 
 Commonly, task nodes contain task timers, assignments, actions (which can include notifications and scripts), and transitions. Notifications and actions are not limited to task nodes, but task nodes and their assignments deserve their own article (this one).
 
@@ -61,11 +61,11 @@ These have a name and a [script](./using-the-script-engine-in-workflow.md) and a
 
 Workflow tasks are completed by a User. Assignments make sure the right users can access the tasks. You can choose how you want to configure your assignments. Assignments can be added to
 
-* Specific Roles
-* Multiple Roles of a Role type (Organization, Site, or regular Role types)
-* Asset creator
-* Resource actions
-* Specific Users
+-   Specific Roles
+-   Multiple Roles of a Role type (Organization, Site, or regular Role types)
+-   Asset creator
+-   Resource actions
+-   Specific Users
 
 Additionally, you can write a script to define the assignment. For an example, see the [single-approver-definition-scripted-assignment.xml](../user-guide/workflow-designer-overview/workflow-processes/single-approver-definition-scripted-assignment.xml).
 
@@ -135,15 +135,15 @@ The above assignment specifies that only the User with the user ID of 20156 may 
 </assignments>
 ```
 
-The above assignment assigns the task to the *Administrator* Role, then checks whether the *group* of the asset is an Organization. If it is, the *Organization Content Reviewer* role is assigned to it. If it's not, the task is assigned to the *Site Content Reviewer* Role.
+The above assignment assigns the task to the _Administrator_ Role, then checks whether the _group_ of the asset is an Organization. If it is, the _Organization Content Reviewer_ role is assigned to it. If it's not, the task is assigned to the _Site Content Reviewer_ Role.
 
 Note the `roles = new ArrayList<Role>();` line above. In a scripted assignment, the `roles` variable is where you specify any Roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the Administrator Role is added to the assignment.
 
 ## Resource Action Assignments
 
-Users can assign a task to a resource action such as an *Update* action. If your workflow definition specifies the UPDATE action in an assignment, then anyone who has permission to update the type of asset being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
+Users can assign a task to a resource action such as an _Update_ action. If your workflow definition specifies the UPDATE action in an assignment, then anyone who has permission to update the type of asset being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
 
-*Resource actions* are operations performed by Users on an application or entity. For example, a User might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the User can update the resource. If you're uncertain about what resource actions are, refer to the developer tutorial on the [permission system](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for a more detailed explanation.
+_Resource actions_ are operations performed by Users on an application or entity. For example, a User might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the User can update the resource. If you're uncertain about what resource actions are, refer to the developer tutorial on the [permission system](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for a more detailed explanation.
 
 To find all the resource actions that have been created, you need access to the Roles Admin application in the Control Panel (in other words, you need permission for the VIEW action on the Roles resource).
 
@@ -162,19 +162,19 @@ Here's what the assignment's XML looks like:
 </assignments>
 ```
 
-Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, Message Boards Messages) are notified of the task and can assign it to themselves (if the notification is set to Task Assignees). Specifically, Users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
+Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, Message Boards Messages) are notified of the task and can assign it to themselves (if the notification is set to Task Assignees). Specifically, Users see the tasks in their _My Workflow Tasks_ application under the tab _Assigned to My Roles_.
 
 Use all upper case letters for resource action names. Here are some common resource actions:
 
-* UPDATE
-* ADD
-* DELETE
-* VIEW
-* PERMISSIONS
-* SUBSCRIBE
-* ADD_DISCUSSION
+-   UPDATE
+-   ADD
+-   DELETE
+-   VIEW
+-   PERMISSIONS
+-   SUBSCRIBE
+-   ADD_DISCUSSION
 
-Determine the probable resource action name from the permissions screen for a resource. For example, in Message Boards, one of the permissions displayed on that screen is *Add Discussion*. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
+Determine the probable resource action name from the permissions screen for a resource. For example, in Message Boards, one of the permissions displayed on that screen is _Add Discussion_. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
 
 ## Task Timers
 
@@ -233,5 +233,5 @@ Like `<action>` elements, `<timer-action>` elements can contain scripts. See [Us
 
 ## Additional Information
 
-* [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
-* [Workflow Definition Node Reference](./workflow-definition-node-reference.md)
+-   [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
+-   [Workflow Definition Node Reference](./workflow-definition-node-reference.md)

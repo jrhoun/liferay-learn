@@ -21,12 +21,12 @@ The number of nodes for your clustering environment is determined by the `scale`
 
 ```json
 {
-  "kind": "Deployment",
-  "id": "liferay",
-  "image": "liferaycloud/liferay-dxp:7.2-4.0.1",
-  "memory": 8192,
-  "cpu": 8,
-  "scale": 1,
+	"kind": "Deployment",
+	"id": "liferay",
+	"image": "liferaycloud/liferay-dxp:7.2-4.0.1",
+	"memory": 8192,
+	"cpu": 8,
+	"scale": 1
 }
 ```
 
@@ -69,6 +69,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 ## Additional Information
 
-* [Auto-scaling](../manage-and-optimize/auto-scaling.md)
-* [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
-* [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
+-   [Auto-scaling](../manage-and-optimize/auto-scaling.md)
+-   [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
+-   [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

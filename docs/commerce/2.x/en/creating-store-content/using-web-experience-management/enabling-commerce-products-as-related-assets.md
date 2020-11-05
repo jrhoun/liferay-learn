@@ -32,11 +32,11 @@ Because Commerce Products are stored globally (that is, available on all Liferay
 1. Click _Select_.
 1. Click _Commerce Product_.
 
-     ![Select Commerce Product in the Related Assets section.](./enabling-commerce-products-as-related-assets/images/01.png)
+    ![Select Commerce Product in the Related Assets section.](./enabling-commerce-products-as-related-assets/images/01.png)
 
 1. Click _Filter and Order_ then _Global_.
 
-     ![Select the Global filter to view Commerce products.](./enabling-commerce-products-as-related-assets/images/02.png)
+    ![Select the Global filter to view Commerce products.](./enabling-commerce-products-as-related-assets/images/02.png)
 
 1. Click the product.
 
@@ -44,5 +44,5 @@ Commerce Products are now available as Related Assets.
 
 ## Additional Information
 
-* [Defining Content Relationships](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [Adding a Basic Web Content Article](https://learn.liferay.com/dxp/7.x/en/content-authoring-and-management/web-content/user-guide/web-content-articles/adding-a-basic-web-content-article.html)
+-   [Defining Content Relationships](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
+-   [Adding a Basic Web Content Article](https://learn.liferay.com/dxp/7.x/en/content-authoring-and-management/web-content/user-guide/web-content-articles/adding-a-basic-web-content-article.html)

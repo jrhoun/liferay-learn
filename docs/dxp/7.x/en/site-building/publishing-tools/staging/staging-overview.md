@@ -1,15 +1,15 @@
 # Staging Overview
 
-You can use Liferay DXP's *Staging* tool to make changes to your Site behind the scenes in a *Staging environment* and then publish your changes to a local or remote *Live environment*, while the Live environment handles incoming User traffic.
+You can use Liferay DXP's _Staging_ tool to make changes to your Site behind the scenes in a _Staging environment_ and then publish your changes to a local or remote _Live environment_, while the Live environment handles incoming User traffic.
 
 As part of Staging configuration, determine whether to host your environments on the same server or separate servers connected by a network. You can also enable Page versioning and customize which Site content and application data is staged.
 
-* [Configuration Options](#staging-configuration-options)
-* [Understanding the Publication Process](#understanding-the-publication-process)
+-   [Configuration Options](#staging-configuration-options)
+-   [Understanding the Publication Process](#understanding-the-publication-process)
 
 ## Configuration Options
 
-There are two options for configuring Staging on your Site: *Local Live Staging* and *Remote Live Staging*.
+There are two options for configuring Staging on your Site: _Local Live Staging_ and _Remote Live Staging_.
 
 **Local Live Staging**: You can host both your Staging and Live environments on the same Liferay server. When enabled, Liferay DXP creates a local clone of your Site that serves as the Staging environment, while your original DXP instance becomes your Live environment.
 
@@ -19,7 +19,7 @@ While both options use the same interface for managing and publishing staged Pag
 
 ### Page Versioning
 
-As part of Staging, you can enable the *Page versioning* feature. With this, you and your team can simultaneously develop and work in variations of both your Private and Public Pages. You can see the complete history of Page versions and revert Pages to an earlier version if needed. See [Page Versioning](./page-versioning.md) to learn how to create and manage variations and [Managing Staging Permissions](./managing-staging-permissions.md) to learn about managing permissions for each variation.
+As part of Staging, you can enable the _Page versioning_ feature. With this, you and your team can simultaneously develop and work in variations of both your Private and Public Pages. You can see the complete history of Page versions and revert Pages to an earlier version if needed. See [Page Versioning](./page-versioning.md) to learn how to create and manage variations and [Managing Staging Permissions](./managing-staging-permissions.md) to learn about managing permissions for each variation.
 
 ```note::
    Page versioning is only supported for Widget Pages.
@@ -37,7 +37,7 @@ Understanding this process can improve efficiency and help you plan ahead to ach
 
 ## Additional Information
 
-* [Understanding the Publication Process](./understanding-the-publication-process.md)
-* [Configuring Local Live Staging](./configuring-local-live-staging.md)
-* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
-* [Staging UI Reference](./staging-ui-reference.md)
+-   [Understanding the Publication Process](./understanding-the-publication-process.md)
+-   [Configuring Local Live Staging](./configuring-local-live-staging.md)
+-   [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
+-   [Staging UI Reference](./staging-ui-reference.md)

@@ -8,11 +8,12 @@ Product Categories are used to organize your products. These groupings allow mul
 1. Once on the _Global_ site, click _Categorization_ → _Categories_.
 1. Click the (![Add icon](../../../images/icon-add.png)) button to create a Vocabulary first.
 1. Enter the following:
-    * **Name**: Cosmetics
-    * **Description**: All Cosmetics
-    * **Allow Multiple Categories**: Yes
-    * **Choose Asset Type**: Commerce Product
-    * **Required**: Yes
+
+    - **Name**: Cosmetics
+    - **Description**: All Cosmetics
+    - **Allow Multiple Categories**: Yes
+    - **Choose Asset Type**: Commerce Product
+    - **Required**: Yes
 
         ![Creating a vocabulary](./creating-a-new-product-category/images/01.png)
 
@@ -20,13 +21,13 @@ Product Categories are used to organize your products. These groupings allow mul
 
 The new Vocabulary has been created and Categories can now be added.
 
-| Field | Description |
-| --- | ---|
-| Name | Name of the Vocabulary |
-| Description | Description of the Vocabulary |
-| Allow Multiple Categories | Toggle to allow one-to-one or one-to-many relationship |
-| Choose Asset Type | List of all Asset Types in Liferay DXP which includes Commerce Product |
-| Required | Toggle to control whether all Commerce Products must have an associated Category |
+| Field                     | Description                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Name                      | Name of the Vocabulary                                                           |
+| Description               | Description of the Vocabulary                                                    |
+| Allow Multiple Categories | Toggle to allow one-to-one or one-to-many relationship                           |
+| Choose Asset Type         | List of all Asset Types in Liferay DXP which includes Commerce Product           |
+| Required                  | Toggle to control whether all Commerce Products must have an associated Category |
 
 ## Creating a Product Category
 
@@ -37,8 +38,9 @@ To create a Category:
 1. Click the Vocabulary where the Categories are to be added. To continue the previous example, click _Cosmetics_.
 1. Click the (![Add icon](../../../images/icon-add.png)) button to add a new Category.
 1. Enter the following:
-    * **Name**: Hair Products
-    * **Description**: All hair products
+
+    - **Name**: Hair Products
+    - **Description**: All hair products
 
     ![Creating a category](./creating-a-new-product-category/images/02.png)
 
@@ -70,11 +72,12 @@ To configure the Product Category's Hierarchy:
 1. Once on the _Global_ site, click _Categorization_ → _Categories_.
 1. Click the (+) button to create a Vocabulary first.
 1. Enter the following:
-    * **Name**: Cosmetics
-    * **Description**: All Cosmetics
-    * **Allow Multiple Categories**: Yes
-    * **Choose Asset Type**: Commerce Product
-    * **Required**: Yes
+
+    - **Name**: Cosmetics
+    - **Description**: All Cosmetics
+    - **Allow Multiple Categories**: Yes
+    - **Choose Asset Type**: Commerce Product
+    - **Required**: Yes
 
         ![Creating a vocabulary](./creating-a-new-product-category/images/01.png)
 
@@ -82,13 +85,13 @@ To configure the Product Category's Hierarchy:
 
 The new Vocabulary has been created and Categories can now be added.
 
-| Field | Description |
-| --- | ---|
-| Name | Name of the Vocabulary |
-| Description | Description of the Vocabulary |
-| Allow Multiple Categories | Toggle to allow one-to-one or one-to-many relationship |
-| Choose Asset Type | List of all Asset Types in Liferay DXP which includes Commerce Product |
-| Required | Toggle to control whether all Commerce Products must have an associated Category |
+| Field                     | Description                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Name                      | Name of the Vocabulary                                                           |
+| Description               | Description of the Vocabulary                                                    |
+| Allow Multiple Categories | Toggle to allow one-to-one or one-to-many relationship                           |
+| Choose Asset Type         | List of all Asset Types in Liferay DXP which includes Commerce Product           |
+| Required                  | Toggle to control whether all Commerce Products must have an associated Category |
 
 ### Creating a Category
 
@@ -99,8 +102,9 @@ To create a Category:
 1. Click the Vocabulary where the Categories are to be added. To continue the previous example, click _Cosmetics_.
 1. Click the (+) button to add a new Category.
 1. Enter the following:
-    * **Name**: Hair Products
-    * **Description**: All hair products
+
+    - **Name**: Hair Products
+    - **Description**: All hair products
 
     ![Creating a category](./creating-a-new-product-category/images/02.png)
 
@@ -126,4 +130,4 @@ To configure the Product Category's Hierarchy:
 
 ## What's Next
 
-* [Organizing Your Catalog with Product Categories](./organizing-your-catalog-with-product-categories.md)
+-   [Organizing Your Catalog with Product Categories](./organizing-your-catalog-with-product-categories.md)

@@ -8,10 +8,10 @@ The Marketplace plugin makes the Marketplace available in the Control Panel. The
 
 **Contents:**
 
-* [Visiting the Marketplace](#visiting-the-marketplace)
-* [Browsing Apps](#browsing-apps)
-* [Purchasing an App](#purchasing-an-app)
-* [Appendix: Installing the Marketplace Plugin](#appendix-installing-the-marketplace-plugin)
+-   [Visiting the Marketplace](#visiting-the-marketplace)
+-   [Browsing Apps](#browsing-apps)
+-   [Purchasing an App](#purchasing-an-app)
+-   [Appendix: Installing the Marketplace Plugin](#appendix-installing-the-marketplace-plugin)
 
 ## Visiting the Marketplace
 
@@ -21,7 +21,7 @@ Here's how to enter the Marketplace from within DXP:
 
 1. Sign in with your liferay.com account.
 
-``` important::
+```important::
    Purchasing apps requires that you have a `liferay.com <https://www.liferay.com>`_ account and agree to the Marketplace Terms of Use.
 ```
 
@@ -31,17 +31,17 @@ The Marketplace appears. It's time to check out some apps.
 
 Marketplace provides a familiar app store experience. Apps are in the center of the page, in the following sections:
 
-* _Featured Apps:_ Liferay features a different set of apps each month.
+-   _Featured Apps:_ Liferay features a different set of apps each month.
 
-* _New and Interesting:_ The latest apps added to Marketplace.
+-   _New and Interesting:_ The latest apps added to Marketplace.
 
-* _Most Viewed in the Past Month:_ The top 5 most viewed apps in the last month.
+-   _Most Viewed in the Past Month:_ The top 5 most viewed apps in the last month.
 
-* _Liferay Subscription Apps:_ Apps available to enterprise subscribers only.
+-   _Liferay Subscription Apps:_ Apps available to enterprise subscribers only.
 
-* _Templates and Themes:_ Apps for organizing site content and changing your site's look and feel.
+-   _Templates and Themes:_ Apps for organizing site content and changing your site's look and feel.
 
-* And app categories: _Communication_, _Productivity_, _Security_, and more.
+-   And app categories: _Communication_, _Productivity_, _Security_, and more.
 
 Each section's _See All_ link lists all the apps for that section.
 
@@ -49,10 +49,10 @@ Each section's _See All_ link lists all the apps for that section.
 
 At the top of the page, you can search Marketplace in these ways:
 
-* Keywords
-* Category
-* Liferay (DXP) version
-* Price (free or paid)
+-   Keywords
+-   Category
+-   Liferay (DXP) version
+-   Price (free or paid)
 
 At the bottom of the page, _Weekly Stats_ lists the newest apps and latest updated apps, and shows a trend chart for app downloads and views.
 
@@ -86,7 +86,7 @@ The app downloads and installs to Liferay DXP automatically. Congratulations! Yo
 
 If you installed DXP on an application server, you must install the Marketplace plugin to access the Marketplace via the Control Panel.
 
-``` note::
+```note::
    If you are using the DXP Tomcat bundle, then the Marketplace plugin is pre-installed in your bundle.
 ```
 
@@ -100,6 +100,6 @@ The Marketplace is now available to use in the Control Panel.
 
 ## Additional information
 
-* [Installing Apps](../installing-apps/installing-apps.md)
-* [Renewing Apps](../managing-apps/renewing-apps.md)
-* [Liferay Marketplace Developer Portal](https://marketplace.liferay.dev/)
+-   [Installing Apps](../installing-apps/installing-apps.md)
+-   [Renewing Apps](../managing-apps/renewing-apps.md)
+-   [Liferay Marketplace Developer Portal](https://marketplace.liferay.dev/)

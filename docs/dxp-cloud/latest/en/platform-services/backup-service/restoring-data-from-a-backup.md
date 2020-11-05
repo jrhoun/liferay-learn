@@ -16,31 +16,31 @@ Follow these steps to restore an environment from a backup:
 
 1. Navigate to your project's `prd` environment.
 
-1. Click on *Backups* in the environment menu.
+1. Click on _Backups_ in the environment menu.
 
-1. Click on the *Actions* button ( ⋮ ) for the backup you want to use to restore a project environment.
+1. Click on the _Actions_ button ( ⋮ ) for the backup you want to use to restore a project environment.
 
-1. Click on *Restore to...*
+1. Click on _Restore to..._
 
-   ![Figure 1: Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
+    ![Figure 1: Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
 
-1. Click the drop-down *Environment* menu, and select the environment you want to restore.
+1. Click the drop-down _Environment_ menu, and select the environment you want to restore.
 
-   ![Figure 2: Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
+    ![Figure 2: Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
 
-   ```note::
-      Production environment administrators can only restore environments to which they have access.
-   ```
+    ```note::
+       Production environment administrators can only restore environments to which they have access.
+    ```
 
-1. Click all *checkboxes* that appear below. You must check these boxes to enable the button to initiate the restore.
+1. Click all _checkboxes_ that appear below. You must check these boxes to enable the button to initiate the restore.
 
-1. Click on *Restore to Environment* to start the restore process.
+1. Click on _Restore to Environment_ to start the restore process.
 
-   ![Figure 3: Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
+    ![Figure 3: Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
 
 During the restore process, the target environment's services will restart.
 
-You can track the status of the restore in the backup service's *Logs* and the *General* section of the Activities page.
+You can track the status of the restore in the backup service's _Logs_ and the _General_ section of the Activities page.
 
 ## Applying Custom SQL Scripts with a Data Restore
 
@@ -54,8 +54,8 @@ You can also use custom SQL scripts to perform additional updates to your databa
 
 The following formats are supported for SQL scripts:
 
-* `.sql` is used for individual scripts.
-* `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
+-   `.sql` is used for individual scripts.
+-   `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
 
 Note that scripts are run in alphanumerical order when they are executed. SQL scripts must also reference the exact database to run on (for example, with `USE lportal;` or `lportal.User_`).
 
@@ -82,6 +82,6 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 ## Additional Information
 
-* [Backup Service](./backup-service-overview.md)
-* [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
-* [Database Service (MySQL)](../database-service/database-service.md)
+-   [Backup Service](./backup-service-overview.md)
+-   [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
+-   [Database Service (MySQL)](../database-service/database-service.md)

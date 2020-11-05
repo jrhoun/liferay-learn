@@ -14,11 +14,12 @@ To enter a new dimension measurement unit (for example, centimeters):
 1. Click _Measurement Units_
 1. Click the (+) button to add a new dimension.
 1. Enter the following:
-    * **Name**: centimeters
-    * **Key**: cm
-    * **Primary**: _No_
-    * **Ratio to inches**: 2.54
-    * **Priority**: 4.0
+
+    - **Name**: centimeters
+    - **Key**: cm
+    - **Primary**: _No_
+    - **Ratio to inches**: 2.54
+    - **Priority**: 4.0
 
     ![Adding a measurement unit](./measurement-units/images/01.png)
 

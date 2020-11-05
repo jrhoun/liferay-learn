@@ -6,11 +6,11 @@ Liferay DXP requires Java JDK 8 or 11. See [the compatibility matrix](https://he
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
-* DXP WAR file
-* Dependencies ZIP file
-* OSGi Dependencies ZIP file
+-   DXP WAR file
+-   Dependencies ZIP file
+-   OSGi Dependencies ZIP file
 
-Note that [*Liferay Home*](../../reference/liferay-home.md) is the folder containing the JBoss server folder. After installing and deploying DXP, the Liferay Home folder contains the JBoss server folder as well as `data`, `deploy`, `logs`, and `osgi` folders. `$JBOSS_HOME` refers to the JBoss server folder. This folder is usually named `jboss-eap-[version]`.
+Note that [_Liferay Home_](../../reference/liferay-home.md) is the folder containing the JBoss server folder. After installing and deploying DXP, the Liferay Home folder contains the JBoss server folder as well as `data`, `deploy`, `logs`, and `osgi` folders. `$JBOSS_HOME` refers to the JBoss server folder. This folder is usually named `jboss-eap-[version]`.
 
 Installing DXP on JBoss EAP takes the following steps:
 
@@ -57,11 +57,11 @@ Installing DXP on JBoss EAP takes the following steps:
     </module>
     ```
 
-   Replace `[place your database vendor's jar here]` with the driver JAR for your database.
+    Replace `[place your database vendor's jar here]` with the driver JAR for your database.
 
 1. Create an `osgi` folder in the [Liferay Home](../../reference/liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
-   The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
+    The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
 
 **Checkpoint:**
 
@@ -71,7 +71,7 @@ Installing DXP on JBoss EAP takes the following steps:
 
 ### Running DXP on JBoss EAP in Standalone Mode vs. Domain Mode
 
-JBoss EAP can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes).
+JBoss EAP can be launched in either _standalone_ mode or _domain_ mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a _domain_. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes).
 
 DXP supports JBoss EAP when it runs in standalone mode but not when it runs in domain mode. DXP's auto-deploy does not work with a managed deployment, since JBoss manages the content of a managed deployment by copying files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from working as intended. For example, JSP hooks don't work on JBoss EAP running in managed domain mode, since DXP's JSP override mechanism relies on the application server. Since JSP hooks and Ext plugins are deprecated, however, you may not be using them.
 
@@ -85,9 +85,9 @@ The command line interface is recommended for domain mode deployments.
 
 Configuring JBoss to run DXP includes these things:
 
-* Setting environment variables
-* Setting properties and descriptors
-* Removing unnecessary configurations
+-   Setting environment variables
+-   Setting properties and descriptors
+-   Removing unnecessary configurations
 
 Make the following modifications to `$JBOSS_HOME/standalone/configuration/standalone.xml`:
 
@@ -164,10 +164,10 @@ Next, configure the JVM and startup scripts.
 
 In the `$JBOSS_HOME/bin/` folder, modify the standalone domain's configuration script file `standalone.conf` (`standalone.conf.bat` on Windows):
 
-* Set the file encoding to `UTF-8`
-* Set the user time zone to `GMT`
-* Set the preferred protocol stack
-* Increase the default amount of memory available.
+-   Set the file encoding to `UTF-8`
+-   Set the user time zone to `GMT`
+-   Set the preferred protocol stack
+-   Increase the default amount of memory available.
 
 ```important::
    For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
@@ -192,7 +192,7 @@ Make the following edits as applicable to the respective operating system:
 **Unix:**
 
 1. Below the `if [ "x$JAVA_OPTS" = "x" ];` statement, replace this `JAVA_OPTS`
-    statement:
+   statement:
 
     ```bash
     JAVA_OPTS="-Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=2560m -Djava.net.preferIPv4Stack=true"
@@ -222,7 +222,7 @@ Make the following edits as applicable to the respective operating system:
 
 1. Navigate to the `$JBOSS_HOME/modules/com/liferay/portal/main/module.xml` file and insert the following dependency within the `<dependencies>` element:
 
-     `<module name="ibm.jdk" />`
+    `<module name="ibm.jdk" />`
 
 1. Navigate to the `$JBOSS_HOME/modules/system/layers/base/sun/jdk/main/module.xml` file and insert the following path names inside the `<paths>...</paths>` element:
 
@@ -314,7 +314,7 @@ As with database configuration, the easiest way to configure mail is to let DXP 
 If you want to manage the mail session with JBoss, follow these steps:
 
 1. Specify the mail subsystem in the
-    `$JBOSS_HOME/standalone/configuration/standalone.xml` file like this:
+   `$JBOSS_HOME/standalone/configuration/standalone.xml` file like this:
 
     ```xml
     <subsystem xmlns="urn:jboss:domain:mail:3.0">

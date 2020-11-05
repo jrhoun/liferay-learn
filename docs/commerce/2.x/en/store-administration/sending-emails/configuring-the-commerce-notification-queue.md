@@ -13,4 +13,4 @@ To change the _Check_ and _Delete_ intervals:
 
 ## Additional Information
 
-* [Using Notification Templates](./using-notification-templates.md)
+-   [Using Notification Templates](./using-notification-templates.md)

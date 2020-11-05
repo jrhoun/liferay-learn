@@ -42,7 +42,7 @@ To use geolocation in your Dynamic Data Lists, you must first create a data defi
 
 1. Click the _Add_ (![add](../../images/icon-add.png)) button to create a new data definition.
 1. Enter a name, optional description, and parent data definition if you have one.
-1. Scroll down and add a *Geolocation* field to the data definition, along with any other fields you wish to add.
+1. Scroll down and add a _Geolocation_ field to the data definition, along with any other fields you wish to add.
 
     ![Create a new Definition.](./geolocating-assets/images/05.png)
 
@@ -80,7 +80,7 @@ Follow the steps below:
     ![Navigate to the Metadata Sets tab in DM](./geolocating-assets/images/07.png)
 
 1. Click the _Add_ (![add](../../images/icon-add.png)) button and enter a name, optional description, and Parent Metadata Set if you have one.
-1. Scroll down and add a *Geolocation* field, along with any additional fields you wish to have.
+1. Scroll down and add a _Geolocation_ field, along with any additional fields you wish to have.
 
     ![Drag and drop the Geolocation field along with other fields to create your Metadata Set.](./geolocating-assets/images/08.png)
 
@@ -103,7 +103,7 @@ Follow the steps below:
 
 1. If you are using a Metadata Set, scroll down to the Additional Metadata Fields heading, click the _Select Metadata Set_ button.
 1. Choose your Metadata Set with the geolocation metadata.
-1. Click  *Save*.
+1. Click _Save_.
 
 ### Adding Geolocation to a Document
 
@@ -115,7 +115,7 @@ Follow the steps below:
 
 1. Click the _Add_ button (![add](../../images/icon-add.png)) and select your newly created document type.
 
-   ![Navigate to the Documents and Media tab in DM.](./geolocating-assets/images/12.png)
+    ![Navigate to the Documents and Media tab in DM.](./geolocating-assets/images/12.png)
 
 1. Fill out the information for the document and your location is automatically obtained from the browser and added to your document.
 
@@ -129,7 +129,7 @@ Once your assets are geolocation enabled, you can use the [Asset Publisher](../.
 
 ## Additional Information
 
-* [Configuring Asset Auto Tagging](./auto-tagging/configuring-asset-auto-tagging.md)
-* [Tagging Content](./tagging-content.md)
-* [Defining Document Types](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md)
-* [Using Metadata Sets](../documents-and-media/uploading-and-managing/managing-metadata/using-metadata-sets.md)
+-   [Configuring Asset Auto Tagging](./auto-tagging/configuring-asset-auto-tagging.md)
+-   [Tagging Content](./tagging-content.md)
+-   [Defining Document Types](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md)
+-   [Using Metadata Sets](../documents-and-media/uploading-and-managing/managing-metadata/using-metadata-sets.md)

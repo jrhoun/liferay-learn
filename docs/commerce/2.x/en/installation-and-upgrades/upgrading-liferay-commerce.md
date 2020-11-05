@@ -30,8 +30,8 @@ After upgrading to DXP 7.3, execute a full search reindex.
 
 When upgrading to Commerce 2.1.x, users have two options:
 
-* Upgrade DXP and Commerce
-* Upgrade just Commerce
+-   Upgrade DXP and Commerce
+-   Upgrade just Commerce
 
 ### Upgrading Both DXP and Commerce
 
@@ -45,8 +45,8 @@ Alternately, administrators can chose to upgrade just Liferay Commerce.
 
 Liferay Commerce provides a seamless upgrade process to the latest version. Users can perform either one of the following:
 
-* From 1.1.x to 2.1.x
-* From 2.0.x to 2.1.x
+-   From 1.1.x to 2.1.x
+-   From 2.0.x to 2.1.x
 
 ```tip::
    Upgrading from 1.1.x to 2.1.x does **not** require an incremental upgrade to 2.0.x.
@@ -67,8 +67,9 @@ To verify Fix Pack installation do the following:
 1. Navigate to the `${liferay.home}/patching-tool` folder.
 
 1. Verify that the fix pack has been applied by executing the following:
-    * Linux/Unix: `./patching-tool.sh info`
-    * Windows: `patching-tool info`
+
+    - Linux/Unix: `./patching-tool.sh info`
+    - Windows: `patching-tool info`
 
     ```
     Detailed patch list:
@@ -82,8 +83,8 @@ Fix Packs are cumulative in nature and include all previously release fix packs.
 
 1. Download the latest Liferay Commerce.
 
-    * Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-    * Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
+    - Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
+    - Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html).
 
@@ -155,5 +156,5 @@ Once reindexing is complete, the upgraded Liferay Commerce instance is ready for
 
 ## Additional Information
 
-* [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html)
-* [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
+-   [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html)
+-   [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

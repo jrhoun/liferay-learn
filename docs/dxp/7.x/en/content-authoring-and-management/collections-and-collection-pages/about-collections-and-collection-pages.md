@@ -8,17 +8,17 @@ Collections are sets of content items that you can use to group and filter infor
 
 There are two types of Collections in Liferay:
 
-- **Manual Collection**
+-   **Manual Collection**
 
     You select and maintain the items that are part of the Collection manually. The items in a Manual Collection do not change automatically.
 
-    For example, you create a Manual Collection named *Promotions*, which includes several promotional web content on your public website. After you select the items in the Collection, you must add new promotional content manually to keep the Collection up-to-date.
+    For example, you create a Manual Collection named _Promotions_, which includes several promotional web content on your public website. After you select the items in the Collection, you must add new promotional content manually to keep the Collection up-to-date.
 
-- **Dynamic Collection**
+-   **Dynamic Collection**
 
     You define the type of items in the collection, along with criteria for these items. The Collection's items can change based on the criteria you define. A Dynamic Collection is useful when you want to make sure the content is up-to-date with new items matching the criteria.
 
-    For example, for your Kitchenware Store, you create a Collection including all blog posts with the *porcelain* tag (this tag represents your criteria). The Dynamic Collection includes all the new blog posts with the *porcelain* tag automatically.
+    For example, for your Kitchenware Store, you create a Collection including all blog posts with the _porcelain_ tag (this tag represents your criteria). The Dynamic Collection includes all the new blog posts with the _porcelain_ tag automatically.
 
 For information about how to create Manual or Dynamic Collections, see [Creating Collections](./creating-collections.md).
 
@@ -40,7 +40,7 @@ For more information, see [Displaying Collection](./displaying-collections.md).
 
 You can associate a Liferay Segment with your Collection to display different Collection items based on the [Segment configuration](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md).
 
-Consider the following example. You want to increase sales in your Kitchenware Store by offering exclusive promotions to registered users. You create a Collection including promotions for registered users and news about your products. You want everyone to see the news about your products, but you want to restrict the promotions to registered users. You can create a new Segment for registered users and link the Segment to a new *Personalized Variation* that filters the promotional content.
+Consider the following example. You want to increase sales in your Kitchenware Store by offering exclusive promotions to registered users. You create a Collection including promotions for registered users and news about your products. You want everyone to see the news about your products, but you want to restrict the promotions to registered users. You can create a new Segment for registered users and link the Segment to a new _Personalized Variation_ that filters the promotional content.
 
 For information, read [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md).
 
@@ -74,6 +74,6 @@ You may have already gone through a great deal of work to create a perfect, cura
 
 ## Related Information
 
-- [Creating Collections](./creating-collections.md)
-- [Displaying Collections and Collection Pages](./displaying-collections-and-collection-pages.md)
-- [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+-   [Creating Collections](./creating-collections.md)
+-   [Displaying Collections and Collection Pages](./displaying-collections-and-collection-pages.md)
+-   [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

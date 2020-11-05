@@ -26,7 +26,7 @@ You may have tried to update Blade CLI by downloading a newer installer and inst
 
 Using an administrative account, navigate to your `[global folder]/jpm4j` folder and delete these two files:
 
-- `/bin/blade`
-- `/commands/blade`
+-   `/bin/blade`
+-   `/commands/blade`
 
 Now the newer installation in your user home folder is recognized and available in your CLI.

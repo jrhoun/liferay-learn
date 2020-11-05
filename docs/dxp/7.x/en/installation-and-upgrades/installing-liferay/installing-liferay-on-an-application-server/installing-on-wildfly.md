@@ -6,15 +6,15 @@ Liferay DXP requires Java JDK 8 or 11. See [the compatibility matrix](https://he
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community). Administrators must download the following:
 
-* DXP WAR file
-* Dependencies ZIP file
-* OSGi Dependencies ZIP file
+-   DXP WAR file
+-   Dependencies ZIP file
+-   OSGi Dependencies ZIP file
 
-Before proceeding, you should understand the difference between [*Liferay Home*](../../reference/liferay-home.md) and `$WILDFLY_HOME` because they are referenced below as shorthand:
+Before proceeding, you should understand the difference between [_Liferay Home_](../../reference/liferay-home.md) and `$WILDFLY_HOME` because they are referenced below as shorthand:
 
-* `Liferay.home` is the folder containing the WildFly server folder. After installing and deploying DXP, the Liferay Home folder contains the WildFly server folder as well as `data`, `deploy`, `logs`, and `osgi` folders.
+-   `Liferay.home` is the folder containing the WildFly server folder. After installing and deploying DXP, the Liferay Home folder contains the WildFly server folder as well as `data`, `deploy`, `logs`, and `osgi` folders.
 
-* `$WILDFLY_HOME` refers to the WildFly server folder. It is usually named `wildfly-[version]`.
+-   `$WILDFLY_HOME` refers to the WildFly server folder. It is usually named `wildfly-[version]`.
 
 Installing Liferay DXP on WildFly requires the following steps:
 
@@ -76,7 +76,7 @@ Installing Liferay DXP on WildFly requires the following steps:
 
 ### Running DXP on WildFly in Standalone Mode vs. Domain Mode
 
-WildFly can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [WildFly Admin Guide](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes).
+WildFly can be launched in either _standalone_ mode or _domain_ mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a _domain_. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [WildFly Admin Guide](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes).
 DXP fully supports WildFly in standalone mode but not in domain mode.
 
 Administrators can run DXP on WildFly in domain mode, but this method is not fully supported. In particular, DXP's auto-deploy does not work with a managed deployment, since WildFly manages the content of a managed deployment by copying files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from working as intended. For example, JSP hooks don't work on WildFly running in managed domain mode, since DXP's JSP override mechanism relies on the application server. Since JSP hooks and Ext plugins are deprecated, however, you may not be using them.
@@ -91,9 +91,9 @@ The command line interface is recommended for domain mode deployments.
 
 Configuring WildFly to run DXP includes these things:
 
-* Setting environment variables
-* Setting properties and descriptors
-* Removing unnecessary configurations
+-   Setting environment variables
+-   Setting properties and descriptors
+-   Removing unnecessary configurations
 
 Make the following modifications to `$WILDFLY_HOME/standalone/configuration/standalone.xml`:
 
@@ -164,10 +164,10 @@ Next, configure the JVM and startup scripts:
 
 In the `$WILDFLY_HOME/bin/` folder, open the standalone domain's configuration script file `standalone.conf` (`standalone.conf.bat` on Windows):
 
-* Set the file encoding to `UTF-8`
-* Set the user time zone to `GMT`
-* Set the preferred protocol stack
-* Increase the default amount of memory available.
+-   Set the file encoding to `UTF-8`
+-   Set the user time zone to `GMT`
+-   Set the preferred protocol stack
+-   Increase the default amount of memory available.
 
 ```important::
    For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
@@ -362,8 +362,8 @@ current AST contains: [ES3 keywords as identifiers, getters, reserved words as p
 
 You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
-* [Accessing EE Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
-* [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
-* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+-   [Accessing EE Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
+-   [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
+-   [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
+-   [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)

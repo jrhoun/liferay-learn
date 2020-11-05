@@ -22,9 +22,9 @@ To add an inventory item:
 1. Click the (![Add Icon](../../images/icon-add.png)) icon.
 1. Enter the following:
 
-    * **SKU**: CHINAWARE-GRAY
-    * **Warehouse**: United States - Southwest
-    * **Quantity**: 120
+    - **SKU**: CHINAWARE-GRAY
+    - **Warehouse**: United States - Southwest
+    - **Quantity**: 120
 
     ![Add a new inventory item.](./using-the-inventory-management-system/images/01.png)
 
@@ -42,8 +42,8 @@ To set a safety stock quantity:
 1. Click the 3-dot icon (![Actions](../../images/icon-actions.png)) &rarr; _Edit_ next to the warehouse.
 1. Enter the following:
 
-   * **Quantity on Hand**: 40 (leave as-is)
-   * **Safety Stock Quantity**: 5
+    - **Quantity on Hand**: 40 (leave as-is)
+    - **Safety Stock Quantity**: 5
 
     ![Set a safety stock quantity.](./using-the-inventory-management-system/images/02.png)
 
@@ -72,9 +72,9 @@ Store managers can enter incoming stock quantities and the expected delivery day
 1. Click the (![Add Icon](../../images/icon-add.png)) icon.
 1. Enter the following:
 
-    * **Quantity**: 20
-    * **Destination**: Choose a warehouse (United States Northeast)
-    * **Expected Delivery Date**: Choose a future date (7/01/2020)
+    - **Quantity**: 20
+    - **Destination**: Choose a warehouse (United States Northeast)
+    - **Expected Delivery Date**: Choose a future date (7/01/2020)
 
     ![Add incoming stock.](./using-the-inventory-management-system/images/04.png)
 
@@ -88,17 +88,17 @@ Once the incoming quantity has been added, this is updated on the _Overview_ tab
 
 The Changelog tracks the following events:
 
-* When an order is placed, the quantities are booked (allocated) to fulfill the order.
-* When a shipment is created, the previously booked quantity is committed; the inventory is updated by removing the amount previously booked.
-* When a quantity is added to the inventory
-* When a quantity is moved between warehouses.
-* When a shipment is cancelled, the previously allocated quantities need to be returned.
-* Any update action to an inventory item.
+-   When an order is placed, the quantities are booked (allocated) to fulfill the order.
+-   When a shipment is created, the previously booked quantity is committed; the inventory is updated by removing the amount previously booked.
+-   When a quantity is added to the inventory
+-   When a quantity is moved between warehouses.
+-   When a shipment is cancelled, the previously allocated quantities need to be returned.
+-   Any update action to an inventory item.
 
 ![Changelog tracks changes.](./using-the-inventory-management-system/images/07.png)
 
 ## Additional Information
 
-* [Inventory Management Reference Guide](./inventory-management-reference-guide.md)
-* [Warehouse Reference Guide](./warehouse-reference-guide.md)
-* [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)
+-   [Inventory Management Reference Guide](./inventory-management-reference-guide.md)
+-   [Warehouse Reference Guide](./warehouse-reference-guide.md)
+-   [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)

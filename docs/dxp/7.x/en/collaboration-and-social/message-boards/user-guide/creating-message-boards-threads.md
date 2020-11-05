@@ -23,7 +23,7 @@ To create a new thread:
 Users can attach files to forum posts.
 
 1. To add attachments, expand the _Attachments_ section.
-1. Drag and drop a file to upload or use the *Select Files* button to navigate to the file's location.
+1. Drag and drop a file to upload or use the _Select Files_ button to navigate to the file's location.
 
     ![Figure 2. Uploading an attachment](./creating-message-boards-threads/images/03.png)
 
@@ -48,7 +48,7 @@ A Message Boards thread can be prioritized as _Urgent_, _Sticky_, or _Announceme
 
 1. Expand the _More Settings_ section.
 
-    <!-- Broken Image Link ![Figure 4. Setting a thread priority](./creating-message-boards-threads/images/07.png) -->
+ <!-- Broken Image Link ![Figure 4. Setting a thread priority](./creating-message-boards-threads/images/07.png) -->
 
 1. Select the thread's priority.
 1. Click _Publish_.
@@ -92,9 +92,10 @@ In addition to replying to a message, you can rate it or flag it as objectionabl
 
 ## Additional Information
 
-* [Creating Message Boards Categories](./creating-message-boards-categories.md)
+-   [Creating Message Boards Categories](./creating-message-boards-categories.md)
 
 <!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
 -->
-* [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
+
+-   [Message Boards Configuration Reference](./message-boards-configuration-reference.md)

@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom product content renderer by impl
 
 A product content renderer provides a style of displaying product details for a specific [product type](../../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md), in a variety of widgets that can display products. Liferay Commerce provides product content renderers for each out-of-the-box product type, such as [SimpleCPContentRenderer](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java) for Simple products.
 
-![Out-of-the-box product content renderers](./implementing-a-custom-product-content-renderer/images/01.png "Out-of-the-box product content renderers")
+![Out-of-the-box product content renderers](./implementing-a-custom-product-content-renderer/images/01.png 'Out-of-the-box product content renderers')
 
 ## Overview
 
@@ -52,7 +52,7 @@ In this section, we will get an example product content renderer up and running 
 
     Under the _Custom Renderer_ section, select _Simple_. Below the _Simple Commerce Product Type Renderer Key_ dropdown, the new renderer ("Example") will be present.
 
-![New product content renderer](./implementing-a-custom-product-content-renderer/images/02.png "New product content renderer")
+![New product content renderer](./implementing-a-custom-product-content-renderer/images/02.png 'New product content renderer')
 
 Congratulations, you've successfully built and deployed a new custom product content renderer that implements `CPContentRenderer`.
 
@@ -117,10 +117,10 @@ public void render(
 
 The product content renderer is comprised of a custom view that we define and render. Do the following:
 
-* [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
-* [Implement the `render` method.](#implement-the-render-method)
-* [Add a JSP for the custom view.](#add-a-jsp-for-the-custom-view)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
+-   [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
+-   [Implement the `render` method.](#implement-the-render-method)
+-   [Add a JSP for the custom view.](#add-a-jsp-for-the-custom-view)
+-   [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
@@ -207,5 +207,5 @@ Congratulations! You now know the basics for implementing the `CPContentRenderer
 
 ## Additional Information
 
-* [Introduction to Product Types](../../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Introduction to Product Types](../../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

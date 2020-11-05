@@ -14,7 +14,7 @@ To create a new Community Site, follow these steps:
 
 1. Select the _Community Site_ Template. The Site Template you choose determines what default pages and applications the new Site is populated with.
 
-   ![Select a Site Template.](./creating-your-first-site/images/02.png)
+    ![Select a Site Template.](./creating-your-first-site/images/02.png)
 
 1. Enter a name for the Site.
 

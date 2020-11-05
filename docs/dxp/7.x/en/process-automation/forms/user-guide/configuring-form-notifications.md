@@ -5,7 +5,7 @@ You can configure the Forms app to send a notification email each time a form en
 To configure Form email notifications:
 
 1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu. Select the site that the form is associated with.
-1. Click _Content & Data_  &rarr; _Forms_.
+1. Click _Content & Data_ &rarr; _Forms_.
 1. Select a form (for example, _Guest Survey Form_).
 1. Open the form's _Form Settings_ section by clicking the _Options_ button (![Options](../../../images/icon-options.png)) and selecting _Settings_.
 
@@ -30,5 +30,5 @@ To configure Form email notifications:
 
 ## Additional Information
 
-* [Using Forms with a Workflow](./advanced-forms-usage/using-forms-with-a-workflow.md)
-* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)
+-   [Using Forms with a Workflow](./advanced-forms-usage/using-forms-with-a-workflow.md)
+-   [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)

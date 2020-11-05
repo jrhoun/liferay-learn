@@ -12,8 +12,8 @@ A patched installation is large because the patch files (files used for meta dat
 
 Here are the installation slimming topics:
 
-* [Separating Patch Files from the Installation](#separating-patch-files-from-the-installation)
-* [Restoring Separated Patch Files](#restoring-separated-patch-files)
+-   [Separating Patch Files from the Installation](#separating-patch-files-from-the-installation)
+-   [Restoring Separated Patch Files](#restoring-separated-patch-files)
 
 ## Separating Patch Files from the Installation
 
@@ -27,9 +27,9 @@ The command moves the patch files from the patch file default location into a `l
 
 **WARNING:** If DXP is separated from its patches in this way, only the following Patching Tool commands can be used:
 
-* `auto-discovery`
-* `info`
-* `setup`
+-   `auto-discovery`
+-   `info`
+-   `setup`
 
 All other commands return this:
 
@@ -57,7 +57,7 @@ You now know how to store patch files so that your DXP installation doesn't take
 
 ## Additional Information
 
-* [Installing Patches](../installing-patches.md)
-* [Installing the Patching Tool](../installing-the-patching-tool.md)
-* [Configuring the Patching Tool](../configuring-the-patching-tool.md)
-* [Using Slim Bundles](./using-slim-bundles.md)
+-   [Installing Patches](../installing-patches.md)
+-   [Installing the Patching Tool](../installing-the-patching-tool.md)
+-   [Configuring the Patching Tool](../configuring-the-patching-tool.md)
+-   [Using Slim Bundles](./using-slim-bundles.md)

@@ -6,9 +6,9 @@ Auto tagging is only available for text-based documents, text-based web content,
 
 Text Auto Tagging is disabled by default. You must [enable Auto Tagging](./configuring-asset-auto-tagging.md) in DXP and then enable a text auto tagging provider. Finally, you must choose the asset to auto-tag. There are two text auto-tagging providers available for DXP:
 
-* **Google Cloud Natural Language Text Auto Tagging**: Uses the [Google Cloud Natural Language API](https://cloud.google.com/natural-language/) to analyze and automatically tag content.
+-   **Google Cloud Natural Language Text Auto Tagging**: Uses the [Google Cloud Natural Language API](https://cloud.google.com/natural-language/) to analyze and automatically tag content.
 
-* **OpenNLP Text Auto Tagging**: Uses the open source [Apache OpenNLP](https://opennlp.apache.org/) library to analyze and automatically tag portal content. Three models are used: location name finder, organization finder, and person name finder.
+-   **OpenNLP Text Auto Tagging**: Uses the open source [Apache OpenNLP](https://opennlp.apache.org/) library to analyze and automatically tag portal content. Three models are used: location name finder, organization finder, and person name finder.
 
 ```tip::
    Use this provider with caution because its accuracy may be limited.
@@ -19,11 +19,11 @@ Text Auto Tagging is disabled by default. You must [enable Auto Tagging](./confi
 1. Click the _Global Menu_ &rarr; _Control Panel_
 1. Click _System Settings_.
 
-   ![Navigate to the System Settings.](./auto-tagging-assets/images/01.png)
+    ![Navigate to the System Settings.](./auto-tagging-assets/images/01.png)
 
 1. Click _Assets_ under _Content and Data_.
 
-   ![Click on Assets.](./auto-tagging-assets/images/02.png)
+    ![Click on Assets.](./auto-tagging-assets/images/02.png)
 
 1. Under _VIRTUAL INSTANCE SCOPE_, click _Google Cloud Natural Language Text Auto Tagging_.
 1. Fill out the form.
@@ -31,7 +31,7 @@ Text Auto Tagging is disabled by default. You must [enable Auto Tagging](./confi
 
 The form asks for this information:
 
- **API Key:** The API key to use for the Google Cloud Natural Language API. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
+**API Key:** The API key to use for the Google Cloud Natural Language API. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
 
 **Classification Endpoint Enabled:** Whether to enable auto tagging of text using the Google Cloud Natural Language API Classification endpoint.
 
@@ -72,4 +72,4 @@ If there are multiple virtual instances on the server, you can override these se
 
 ## Additional Information
 
-* [Auto Tagging Images](./auto-tagging-images.md)
+-   [Auto Tagging Images](./auto-tagging-images.md)

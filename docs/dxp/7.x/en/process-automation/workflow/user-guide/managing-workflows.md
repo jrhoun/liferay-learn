@@ -50,22 +50,22 @@ Changes to Workflow Definitions are tracked in the _Details_ and _Revision Histo
 
 To view the workflow definition details and the revision history:
 
-1. Click the *Information* button (![Information](../../../images/icon-information.png))
-1. Next to a previous version on the _Revision History_ tab, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select either *Preview* or *Restore*.
+1. Click the _Information_ button (![Information](../../../images/icon-information.png))
+1. Next to a previous version on the _Revision History_ tab, click the _Actions_ button (![Actions](../../../images/icon-actions.png)) and select either _Preview_ or _Restore_.
 
     ![View and restore prior versions of a workflow.](./managing-workflows/images/02.png)
 
-1. When you click *Restore* and see the success message, the prior version is the current version of the workflow. You can now edit the restored version of the workflow.
-1. If edits are necessary, edit and click *Update*. This creates another version of the workflow.
+1. When you click _Restore_ and see the success message, the prior version is the current version of the workflow. You can now edit the restored version of the workflow.
+1. If edits are necessary, edit and click _Update_. This creates another version of the workflow.
 
 ## Deleting a Workflow Definition
 
 There are two statuses for a workflow:
 
-* **Published:** Validation is complete, and the workflow can be assigned to assets.
-* **Unpublished:** Validation is not performed on the unpublished workflow, and it cannot be assigned to assets until it is published.
+-   **Published:** Validation is complete, and the workflow can be assigned to assets.
+-   **Unpublished:** Validation is not performed on the unpublished workflow, and it cannot be assigned to assets until it is published.
 
-Only *Unpublished* workflows can be deleted.
+Only _Unpublished_ workflows can be deleted.
 
 _Published_ workflow definitions cannot be deleted if they are current associated with an asset type. Users have to first deactivate the workflow process and then place the workflow in the _Unpublished_ status.
 
@@ -87,5 +87,5 @@ In the _System Settings_, you can enable or disable permissions for Regular Admi
 
 ## Additional Information
 
-* [Introduction to Crafting XML Workflow Definitions](https://help.liferay.com/hc/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions)
-* [Workflow Designer (Subscription)](https://help.liferay.com/hc/articles/360028821892-Workflow-Designer)
+-   [Introduction to Crafting XML Workflow Definitions](https://help.liferay.com/hc/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions)
+-   [Workflow Designer (Subscription)](https://help.liferay.com/hc/articles/360028821892-Workflow-Designer)

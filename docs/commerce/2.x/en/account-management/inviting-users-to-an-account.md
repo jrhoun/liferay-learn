@@ -6,12 +6,12 @@ This article documents how to invite users to an account. Corporate accounts can
 
 The _Members_ tab is where administrators can add additional users to an account. By default, accounts have one account administrator that is assigned during initial creation.
 
-   ![Account Management Widget's Members Tab](./inviting-users-to-an-account/images/01.png)
+![Account Management Widget's Members Tab](./inviting-users-to-an-account/images/01.png)
 
 1. Click _Invite User_.
 1. Enter a valid email address or existing user (for example, Mike Smith)
 
-   ![Inviting a User to the Account](./inviting-users-to-an-account/images/02.png)
+    ![Inviting a User to the Account](./inviting-users-to-an-account/images/02.png)
 
 1. Click _Invite User_.
 
@@ -46,8 +46,8 @@ The users have been added to the account.
 
 ## Additional Information
 
-* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
-* [Managing Users and Accounts](../README.md)
-* [Creating a New Account](../account-management/creating-a-new-account.md)
-* [Assigning Account Roles](../account-management/assigning-account-roles.md)
-* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
+-   [Introduction to Accounts](../account-management/introduction-to-accounts.md)
+-   [Managing Users and Accounts](../README.md)
+-   [Creating a New Account](../account-management/creating-a-new-account.md)
+-   [Assigning Account Roles](../account-management/assigning-account-roles.md)
+-   [Creating a New Account Group](../account-management/creating-a-new-account-group.md)

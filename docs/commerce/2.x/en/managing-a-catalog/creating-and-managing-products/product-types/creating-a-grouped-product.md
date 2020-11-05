@@ -7,9 +7,9 @@ A Grouped Product in Liferay Commerce is two or more products from the catalog t
 Before creating a Grouped Product, ensure that the following conditions have been met:
 
 1. The individual products to be sold as a Grouped Product have been created in the catalog.
-    * All SKUs have been generated.
-    * All prices have been set.
-    * The products can be both simple and virtual.
+    - All SKUs have been generated.
+    - All prices have been set.
+    - The products can be both simple and virtual.
 1. The individual products have sufficient quantities in the inventory.
 
 ## Create a Grouped Product
@@ -17,11 +17,11 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click the Add (![Add icon](../../../images/icon-add.png)) button then _Grouped_.
 1. Enter the following:
-    * **Catalog**: Sahara.com
-    * **Name**: Brakes Set Combo Kit
-    * **Short Description**: Brakes Set Combo Kit
-    * **Friendly URL**: (auto-generated)
-    * **Meta Title**: Brakes Set Combo Kit
+    - **Catalog**: Sahara.com
+    - **Name**: Brakes Set Combo Kit
+    - **Short Description**: Brakes Set Combo Kit
+    - **Friendly URL**: (auto-generated)
+    - **Meta Title**: Brakes Set Combo Kit
 1. Click _Publish_.
 
 Once the Grouped Product entity has been initially created, store administrators will need to associate the individual products to the grouped product entry.
@@ -30,7 +30,7 @@ Once the Grouped Product entity has been initially created, store administrators
 
 1. Click the _Grouped_ sub-tab.
 
-   ![Grouped Sub-Tab](./creating-a-grouped-product/images/01.png)
+    ![Grouped Sub-Tab](./creating-a-grouped-product/images/01.png)
 
 1. Click the (![Add icon](../../../images/icon-add.png)) button to add a Grouped Entry.
 1. Select the following products: _Brake Fluid_, _Brake Pads_, and _Brake Rotors_.
@@ -75,9 +75,10 @@ To set product prices and quantities for a Grouped product:
 1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _Brakes Set Combo Kit_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.
 1. Enter the following:
-    * **Price**: 89.99
-    * **Promo Price**: 0.00
-    * **Cost**: 0.00
+
+    - **Price**: 89.99
+    - **Promo Price**: 0.00
+    - **Cost**: 0.00
 
         ![Grouped Product Pricing](./creating-a-grouped-product/images/06.png)
 
@@ -110,6 +111,6 @@ The new Grouped Product appears in the catalog. As long as each individual produ
 
 ## Additional Information
 
-* [Introduction to Product Types](./introduction-to-product-types.md)
-* [Creating a Simple Product](./creating-a-simple-product.md)
-* [Creating a Virtual Product](./creating-a-virtual-product.md)
+-   [Introduction to Product Types](./introduction-to-product-types.md)
+-   [Creating a Simple Product](./creating-a-simple-product.md)
+-   [Creating a Virtual Product](./creating-a-virtual-product.md)

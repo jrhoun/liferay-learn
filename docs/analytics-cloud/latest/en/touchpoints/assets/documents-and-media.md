@@ -8,10 +8,10 @@ Documents and Media files are assets you want site users to look at or download.
 
 The Overview tab of an Asset's detail presents several data presentations. The first chart, called Visitor Behavior, contains four important metrics:
 
-* Total Downloads
-* Total Previews
-* Total Comments
-* Average Rating
+-   Total Downloads
+-   Total Previews
+-   Total Comments
+-   Average Rating
 
 ![User engagement with blog entries can be viewed in a chart over time.](documents-and-media/images/02.png)
 
@@ -35,10 +35,10 @@ Ratings can be enabled on Documents and Media. Whether the rating is a simple Th
 
 The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
+-   How many users are interacting with my content?
+-   Of these users, how many are known or anonymous?
+-   Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+-   Of the users in Segments, what are the top 15 segments?
 
 Here are the charts in the Audience report:
 

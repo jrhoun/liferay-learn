@@ -4,14 +4,14 @@ With Custom Filters, you can contribute queries to the main search query, filter
 
 ![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)
 
-There are many use cases satisfied by incorporating Custom Filters into your search page. 
+There are many use cases satisfied by incorporating Custom Filters into your search page.
 
 For now, consider these basic usages:
 
-| Use Case | `Configuration` _(Value)_ |
-| -----------| ----------- |
-| **User Title Filter:** End Users directly manipulate the filter key to refine results to the one they were looking for, using the Title |`Filter Field` _(title\_en\_US)_ <br /> `Filter Value` _(podcast)_ <br /> `Filter Query Type` _(Match)_ <br /> `Occur Type` _(must_not)_|
-| **Hard-Coded Filtering:** An administrative User configures the Search Page with filters that are invisible and unchangeable for end Users | ***Add to the above configuration*** <br /> `Invisible` _(True--checked)_ <br /> `Immutable` _(True--checked)_|
+| Use Case                                                                                                                                   | `Configuration` _(Value)_                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **User Title Filter:** End Users directly manipulate the filter key to refine results to the one they were looking for, using the Title    | `Filter Field` _(title_en_US)_ <br /> `Filter Value` _(podcast)_ <br /> `Filter Query Type` _(Match)_ <br /> `Occur Type` _(must_not)_ |
+| **Hard-Coded Filtering:** An administrative User configures the Search Page with filters that are invisible and unchangeable for end Users | **_Add to the above configuration_** <br /> `Invisible` _(True--checked)_ <br /> `Immutable` _(True--checked)_                         |
 
 Custom filters can do so many things, it's impossible to list them all. What follows is a widget configuration tour.
 
@@ -31,12 +31,13 @@ To begin filtering search results, open the widget's Options Menu (![Options](..
 
 **Filter Field (text):** Most often, filters operate on a specific field. Set the name of the indexed field to be filtered (for example, `title`). You won't need this if the Filter Query Type is set to a type that doesn't require a field, such as _Regexp_.
 
-The Query String and Script queries do not require a Filter Field to be set.  All other queries require at least one field. 
+The Query String and Script queries do not require a Filter Field to be set. All other queries require at least one field.
+
 <!--Note: Multi Match and Simple Query String take an array of fields according to the Elasticsearch docs, but our config doesn't seem to support it. -->
 
 To find the fields present in the Liferay DXP index, use [the Field Mappings UI in the Control Panel](#finding-fields).
 
-**Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) query. 
+**Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) query.
 
 **Filter Query Type (select list):** Select the query type to filter results by. Available types include Bool, Exists, Fuzzy, Match, Match Phrase, Match Phrase Prefix, Multi Match, Prefix, Query String, Regexp, Script, Simple Query String, Term, Wildcard.
 
@@ -44,9 +45,9 @@ To learn more about these queries, visit the [Elasticsearch documentation](https
 
 **Occur (select list):** Set the occurrence type for the query being contributed to the search. Options include Filter, must, must_not, and should.
 
-To understand each type, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html). 
+To understand each type, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html).
 
-**Query Name (text):** Set the name of the contributed query. This is unnecessary unless this filter acts as a parent query to another filter that contributes child clauses; in that case set this filter's Query Name as the child filter's Parent Query Name.  This parent/child behavior is only available for filters of type Bool.
+**Query Name (text):** Set the name of the contributed query. This is unnecessary unless this filter acts as a parent query to another filter that contributes child clauses; in that case set this filter's Query Name as the child filter's Parent Query Name. This parent/child behavior is only available for filters of type Bool.
 
 **Parent Query Name (text):** When contributing a child clause to a Bool query, set this to match the Query
 Name configured in the parent Custom Filter widget. Otherwise, leave it blank.
@@ -73,6 +74,6 @@ Values in this field typically match the name of an application-defined index.
 
 ## Finding Fields
 
-To find the fields you can filter by in the Custom Filter widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the [`properties`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) section of the mapping.
+To find the fields you can filter by in the Custom Filter widget, Users with the proper permissions can navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_. From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the [`properties`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) section of the mapping.
 
 ![Browse the field mappings to find Liferay DXP's indexed fields.](./filtering-search-results/images/04.png)

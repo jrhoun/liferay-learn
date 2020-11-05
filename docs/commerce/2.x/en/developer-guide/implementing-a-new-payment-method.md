@@ -4,7 +4,7 @@ This tutorial will show you how to add a new payment method by implementing the 
 
 Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out-of-the-box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
 
-![Out-of-the-box payment methods](./implementing-a-new-payment-method/images/01.png "Out-of-the-box payment methods")
+![Out-of-the-box payment methods](./implementing-a-new-payment-method/images/01.png 'Out-of-the-box payment methods')
 
 ## Overview
 
@@ -50,7 +50,7 @@ In this section, we will get an example payment method up and running on your in
 
 1. Verify that the example payment method was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Payment Methods_.
 
-   ![New payment method](./implementing-a-new-payment-method/images/02.png "New payment method")
+    ![New payment method](./implementing-a-new-payment-method/images/02.png 'New payment method')
 
 Congratulations, you've successfully built and deployed a new payment method that implements `CommercePaymentMethod`.
 
@@ -73,7 +73,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 	public static final String KEY = "Example";
 ```
 
->It is important to provide a distinct key for the payment method so that Liferay Commerce can distinguish our new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
+> It is important to provide a distinct key for the payment method so that Liferay Commerce can distinguish our new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
 
 ### Review the `CommercePaymentMethod` Interface
 
@@ -89,7 +89,7 @@ Implement the following methods:
 	public String getKey();
 ```
 
->This provides a unique identifier for the payment method in the payment method registry. The key can be used to fetch the payment method from the registry. Reusing a key that is already in use will override the existing associated payment method.
+> This provides a unique identifier for the payment method in the payment method registry. The key can be used to fetch the payment method from the registry. Reusing a key that is already in use will override the existing associated payment method.
 
 ```java
 	public String getName(Locale locale);
@@ -101,7 +101,7 @@ Implement the following methods:
 	public int getPaymentType();
 ```
 
->This identifies how the payment engine will use a given payment method.
+> This identifies how the payment engine will use a given payment method.
 >
 > We use the value `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` to inform the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out-of-the-box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`.
 
@@ -115,10 +115,10 @@ Implement the following methods:
 
 The payment method is comprised of backend logic for processing and completing payments, as well as many more optional custom behaviors. Do the following:
 
-* [Implement payment processing logic.](#implement-payment-processing-logic)
-* [Implement payment completion logic.](#implement-payment-completion-logic)
-* [Implement optional methods.](#implement-optional-methods)
-* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
+-   [Implement payment processing logic.](#implement-payment-processing-logic)
+-   [Implement payment completion logic.](#implement-payment-completion-logic)
+-   [Implement optional methods.](#implement-optional-methods)
+-   [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 #### Implement Payment Processing Logic
 
@@ -129,7 +129,7 @@ public boolean isProcessPaymentEnabled() {
 }
 ```
 
->This method must return true for the payment method to process payments. This informs the payment engine what functionality is supported by our payment method.
+> This method must return true for the payment method to process payments. This informs the payment engine what functionality is supported by our payment method.
 
 ```java
 @Override
@@ -144,7 +144,7 @@ public CommercePaymentResult processPayment(
 }
 ```
 
->Implement custom payment logic in this method. The `CommercePaymentResult` should store information relevant to the processing of a payment. See [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) for more information.
+> Implement custom payment logic in this method. The `CommercePaymentResult` should store information relevant to the processing of a payment. See [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) for more information.
 
 #### Implement Payment Completion Logic
 
@@ -155,7 +155,7 @@ public boolean isCompleteEnabled() {
 }
 ```
 
->This must return true for the payment method to complete payments. This informs the payment engine what functionality is supported by our payment method.
+> This must return true for the payment method to complete payments. This informs the payment engine what functionality is supported by our payment method.
 
 ```java
 @Override
@@ -170,7 +170,7 @@ public CommercePaymentResult completePayment(
 }
 ```
 
->Implement custom payment completion logic in this method.  `CommercePaymentResult` is a container that stores information relevant to the completion of a payment process. See [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) for more information.
+> Implement custom payment completion logic in this method. `CommercePaymentResult` is a container that stores information relevant to the completion of a payment process. See [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) for more information.
 
 #### Implement Optional Methods
 
@@ -197,4 +197,4 @@ Congratulations! You now know the basics for implementing the `CommercePaymentMe
 
 ## Additional Information
 
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

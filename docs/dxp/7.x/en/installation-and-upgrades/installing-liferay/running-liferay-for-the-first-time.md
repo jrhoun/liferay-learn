@@ -18,11 +18,11 @@ Once you've [installed Liferay DXP](./installing-a-liferay-tomcat-bundle.md#inst
 
     ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-for-the-first-time/images/01.png)
 
-2. Set your portal's *Name*, *Default Language* and *Time Zone*.
+2. Set your portal's _Name_, _Default Language_ and _Time Zone_.
 
-3. Set the *Administrator User* first name, last name, and email address.
+3. Set the _Administrator User_ first name, last name, and email address.
 
-4. In the *Database* section, click *Change* to display the database form.
+4. In the _Database_ section, click _Change_ to display the database form.
 
     ```warning::
        DO NOT use HSQL in production-grade Liferay DXP instances.
@@ -32,16 +32,16 @@ Once you've [installed Liferay DXP](./installing-a-liferay-tomcat-bundle.md#inst
 
 5. Specify your database.
 
-| Field | Description |
-| --- | --- |
-| *Database Type* | Select the database type to connect to |
-| *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
-| *User Name* | Database user name |
-| *Password* | Database user password |
+| Field           | Description                                                           |
+| --------------- | --------------------------------------------------------------------- |
+| _Database Type_ | Select the database type to connect to                                |
+| _JDBC URL_      | Update the path to the database that you have created for Liferay DXP |
+| _User Name_     | Database user name                                                    |
+| _Password_      | Database user password                                                |
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6\. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6\. Regarding _Sample Data_: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. Click *Finish Configuration*.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. Click _Finish Configuration_.
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../reference/liferay-home.md).
 
@@ -75,8 +75,8 @@ Congratulations! You have launched your on premises Liferay DXP instance.
 
 You can [sign in as your administrator user](../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Installing and Managing Apps](../../system-administration/installing-and-managing-apps/getting-started/installing-and-managing-apps.md)
-* [Accessing Plugins During a Trial Period](../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
-* [Installing a Search Engine](../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
-* [Securing Liferay DXP](../securing-liferay/introduction-to-securing-liferay.md)
-* [Clustering for High Availability](../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
+-   [Installing and Managing Apps](../../system-administration/installing-and-managing-apps/getting-started/installing-and-managing-apps.md)
+-   [Accessing Plugins During a Trial Period](../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
+-   [Installing a Search Engine](../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md)
+-   [Securing Liferay DXP](../securing-liferay/introduction-to-securing-liferay.md)
+-   [Clustering for High Availability](../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)

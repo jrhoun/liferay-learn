@@ -2,8 +2,8 @@
 
 The Page Fragment editor's interface is organized into two tabs:
 
-* [Code Editor](#code-editor)
-* [Configuration](#configuration)
+-   [Code Editor](#code-editor)
+-   [Configuration](#configuration)
 
 The sections below cover how to use these portions of the interface. See [Developing Page Fragments](../../developing-page-fragments/developing-fragments-intro.md) to learn how to develop Page Fragments.
 

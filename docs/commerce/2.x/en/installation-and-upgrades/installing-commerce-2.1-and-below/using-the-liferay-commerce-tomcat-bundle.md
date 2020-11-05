@@ -8,14 +8,15 @@ To use the Liferay Commerce bundle, follow these steps:
 
 1. Get the Liferay Commerce Tomcat Bundle
 
-    * (Subscribers) [Enterprise Downloads](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)
-    * [Community Download Page](https://www.liferay.com/downloads-community)
+    - (Subscribers) [Enterprise Downloads](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)
+    - [Community Download Page](https://www.liferay.com/downloads-community)
 
 1. Unzip the bundle to the target location.
 
 1. Start the Tomcat bundle
-    * Navigate to `$CATALINA_HOME/bin`.
-    * Execute `./catalina.sh run`. For *Windows* users, run: `catalina run`
+
+    - Navigate to `$CATALINA_HOME/bin`.
+    - Execute `./catalina.sh run`. For _Windows_ users, run: `catalina run`
 
     ```tip::
        Wait until you see ``org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds``
@@ -27,6 +28,6 @@ To use the Liferay Commerce bundle, follow these steps:
 
 ## Additional Information
 
-* [Installation Overview](./installation-overview.md)
-* [Installing Liferay DXP](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
-* [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)
+-   [Installation Overview](./installation-overview.md)
+-   [Installing Liferay DXP](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
+-   [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)

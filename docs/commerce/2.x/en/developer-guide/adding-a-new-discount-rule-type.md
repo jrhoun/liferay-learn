@@ -4,7 +4,7 @@ You can add a new discount rule type by implementing two interfaces: [CommerceDi
 
 Discount rule types define conditions for evaluating when discounts are applied to an order. Liferay Commerce provides three discount rule types out-of-the-box: [AddedAllCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-discount-rule-added-all/src/main/java/com/liferay/commerce/discount/rule/added/all/internal/AddedAllCommerceDiscountRuleTypeImpl.java), [AddedAnyCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-discount-rule-added-any/src/main/java/com/liferay/commerce/discount/rule/added/any/internal/AddedAnyCommerceDiscountRuleTypeImpl.java), and [CartTotalCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/[$LIFERAY_LEARN_COMMERCE_GIT_TAG$]/commerce-discount-rule-cart-total/src/main/java/com/liferay/commerce/discount/rule/cart/total/internal/CartTotalCommerceDiscountRuleTypeImpl.java).
 
-![Out-of-the-box discount rule types](./adding-a-new-discount-rule-type/images/01.png "Out-of-the-box discount rule types")
+![Out-of-the-box discount rule types](./adding-a-new-discount-rule-type/images/01.png 'Out-of-the-box discount rule types')
 
 ## Overview
 
@@ -52,7 +52,7 @@ First, you must deploy an example discount rule type on your instance of Liferay
 
     From there, click the (+) icon to add a new discount rule. The new discount rule type ("Has a minimum number of products") is present under the _Type_ dropdown.
 
-![New discount rule type](./adding-a-new-discount-rule-type/images/02.png "New discount rule type")
+![New discount rule type](./adding-a-new-discount-rule-type/images/02.png 'New discount rule type')
 
 Congratulations, you've successfully built and deployed a new discount rule type that implements `CommerceDiscountRuleType`.
 
@@ -60,13 +60,13 @@ Next, you'll dive deeper to learn more.
 
 ## Walk Through the Example
 
-Now it's time to review the example you deployed. There are two classes: a discount rule type class and a JSP contributor for a custom UI input. Follow these steps: 
+Now it's time to review the example you deployed. There are two classes: a discount rule type class and a JSP contributor for a custom UI input. Follow these steps:
 
-* [Annotate the Discount Rule Type Class for OSGi Registration](#annotate-the-discount-rule-type-class-for-osgi-registration)
-* [Review the `CommerceDiscountRuleType` Interface](#review-the-commercediscountruletype-interface)
-* [Annotate the JSP Contributor Class for OSGi Registration](#annotate-the-jsp-contributor-class-for-osgi-registration)
-* [Review the `CommerceDiscountRuleTypeJSPContributor` Interface](#review-the-commercediscountruletypejspcontributor-interface)
-* [Complete the Discount Rule Type](#complete-the-discount-rule-type)
+-   [Annotate the Discount Rule Type Class for OSGi Registration](#annotate-the-discount-rule-type-class-for-osgi-registration)
+-   [Review the `CommerceDiscountRuleType` Interface](#review-the-commercediscountruletype-interface)
+-   [Annotate the JSP Contributor Class for OSGi Registration](#annotate-the-jsp-contributor-class-for-osgi-registration)
+-   [Review the `CommerceDiscountRuleTypeJSPContributor` Interface](#review-the-commercediscountruletypejspcontributor-interface)
+-   [Complete the Discount Rule Type](#complete-the-discount-rule-type)
 
 ### Annotate the Discount Rule Type Class for OSGi Registration
 
@@ -144,17 +144,17 @@ public void render(
 
 ### Complete the Discount Rule Type
 
-The discount rule type is comprised of back-end logic for evaluating when to apply a discount rule to an order, logic to render UI inputs for the discount rule type, and the custom UI inputs themselves. Follow these steps: 
+The discount rule type is comprised of back-end logic for evaluating when to apply a discount rule to an order, logic to render UI inputs for the discount rule type, and the custom UI inputs themselves. Follow these steps:
 
-* [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
-* [Implement the `CommerceDiscountRuleTypeJSPContributor`'s `render` method.](#implement-the-commercediscountruletypejspcontributors-render-method)
-* [Add the evaluation logic to `evaluate`.](#add-the-evaluation-logic-to-evaluate)
-* [Add a JSP to render the custom UI input.](#add-a-jsp-to-render-the-custom-ui-input)
-* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
+-   [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
+-   [Implement the `CommerceDiscountRuleTypeJSPContributor`'s `render` method.](#implement-the-commercediscountruletypejspcontributors-render-method)
+-   [Add the evaluation logic to `evaluate`.](#add-the-evaluation-logic-to-evaluate)
+-   [Add a JSP to render the custom UI input.](#add-a-jsp-to-render-the-custom-ui-input)
+-   [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
-Define the `ServletContext` in the JSP contributor class using the bundle's symbolic name so it can find the JSP: 
+Define the `ServletContext` in the JSP contributor class using the bundle's symbolic name so it can find the JSP:
 
 ```java
 @Reference(target = "(osgi.web.symbolicname=com.acme.m6a8.web)")
@@ -251,6 +251,6 @@ Congratulations! You now know the basics for implementing the `CommerceDiscountR
 
 ## Additional Information
 
-* [Creating a Discount](../../promoting-products/creating-a-discount.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Using AUI Taglibs](https://help.liferay.com/hc/en-us/articles/360020189212-Using-AUI-Taglibs)
+-   [Creating a Discount](../../promoting-products/creating-a-discount.md)
+-   [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+-   [Using AUI Taglibs](https://help.liferay.com/hc/en-us/articles/360020189212-Using-AUI-Taglibs)

@@ -4,17 +4,17 @@ When you're done using an obsolete Liferay app or capability, you can remove its
 
 Here's how to clean up obsolete data:
 
-1. In the *Control Panel*, navigate to *System Settings* &rarr; *Upgrades* (in the *Platform* category) &rarr; *Data Cleanup*. The Data Cleanup screen appears.
+1. In the _Control Panel_, navigate to _System Settings_ &rarr; _Upgrades_ (in the _Platform_ category) &rarr; _Data Cleanup_. The Data Cleanup screen appears.
 
     ![Data Cleanup provides an interface for removing data from obsolete Liferay applications.](./data-cleanup/images/01.png)
 
-1. Select the modules you want to clean up and click *Save*.
+1. Select the modules you want to clean up and click _Save_.
 
     ```note::
        To save the cleanup settings to a `configuration file <../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md>`_, click the *Actions* menu and select *Export*.
     ```
 
-   The data cleanup executes.
+    The data cleanup executes.
 
 1. Disable data cleanup by unchecking every module in the Data Cleanup screen or by setting the module cleanup keys `false` in a `com.liferay.data.cleanup.internal.configuration.DataCleanupConfiguration.config` [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md).
 
@@ -26,7 +26,7 @@ Your server is unburdened of obsolete data.
 
 ## Additional Information
 
-* [Using Configuration Files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)
-* [Upgrading Via Docker](../upgrade-basics/upgrading-via-docker.md)
-* [Providing Files to the Container](../../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md)
-* [Using the Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md)
+-   [Using Configuration Files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)
+-   [Upgrading Via Docker](../upgrade-basics/upgrading-via-docker.md)
+-   [Providing Files to the Container](../../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md)
+-   [Using the Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md)

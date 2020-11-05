@@ -30,8 +30,8 @@ Follow these steps to blacklist an app, module, and plugin:
 
 The blacklist can also be exported from the Control Panel to an OSGi configuration (`.config`) file. Modifying the file and deploying it to DXP has these additional effects:
 
-* Persists the changes across DXP server startups
-* Propagates the changes from a local cluster node to all the other nodes.
+-   Persists the changes across DXP server startups
+-   Propagates the changes from a local cluster node to all the other nodes.
 
 Use these steps to blacklist using a configuration file:
 
@@ -51,11 +51,11 @@ Use these steps to blacklist using a configuration file:
 
 ### Blacklist Bundle Symbolic Names
 
-| Type       | Bundle Symbolic Name |
-| ---------- | --------------|
-| LPKG       | LPKG file name without the `.lpkg` extension |
-| Bundle/Module JAR | `Bundle-SymbolicName` in `bnd.bnd` or `MANIFEST.MF` file |
-| WAR        | Servlet context name in `liferay-plugin-package.properties` file or the WAR file name (minus `.war`), if there is no servlet context name property |
+| Type              | Bundle Symbolic Name                                                                                                                               |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LPKG              | LPKG file name without the `.lpkg` extension                                                                                                       |
+| Bundle/Module JAR | `Bundle-SymbolicName` in `bnd.bnd` or `MANIFEST.MF` file                                                                                           |
+| WAR               | Servlet context name in `liferay-plugin-package.properties` file or the WAR file name (minus `.war`), if there is no servlet context name property |
 
 ## Reinstalling Blacklisted Items
 
@@ -67,8 +67,8 @@ To reinstall blacklisted items, follow these steps:
 
 To reinstall _all_ the blacklisted items execute one of these options:
 
-* Remove the configuration file.
-* Uninstall the module `com.liferay.portal.bundle.blacklist` using the [Application Manager](./using-the-app-manager.md) or [Felix Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell/using-the-gogo-shell.md).
+-   Remove the configuration file.
+-   Uninstall the module `com.liferay.portal.bundle.blacklist` using the [Application Manager](./using-the-app-manager.md) or [Felix Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell/using-the-gogo-shell.md).
 
 ```tip::
    To temporarily reinstall an item that's been blacklisted, you can remove its symbolic name from the Bundle Blacklist module in *System Settings* and click the *Update* button. If you're using a blacklist config file (in the ``[Liferay Home]/osgi/configs`` folder) and want the item to install on subsequent server startup, make sure to remove the item's symbolic name from the file.
@@ -80,7 +80,7 @@ Congratulations! Now you can manage multiple app, module, and plugin installatio
 
 ## Additional Information
 
-* [Managing Apps](./using-the-app-manager.md)
-* [Using the Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell/using-the-gogo-shell.md)
-* [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
-* [Configuring Portlets, Themes, and Layout Templates](./configuring-portlets-themes-and-layout-templates.md)
+-   [Managing Apps](./using-the-app-manager.md)
+-   [Using the Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell/using-the-gogo-shell.md)
+-   [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
+-   [Configuring Portlets, Themes, and Layout Templates](./configuring-portlets-themes-and-layout-templates.md)

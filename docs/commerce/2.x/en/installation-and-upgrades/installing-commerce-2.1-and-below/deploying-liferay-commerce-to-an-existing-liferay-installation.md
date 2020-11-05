@@ -5,9 +5,10 @@ This article documents how to deploy Liferay Commerce to an existing Liferay DXP
 To begin using Liferay Commerce:
 
 1. Download the latest Liferay Commerce `LPKG`.
-    * Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-      * Subscribers also need an order number or activation key for Liferay Commerce. See [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391).
-    * The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community).
+
+    - Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
+        - Subscribers also need an order number or activation key for Liferay Commerce. See [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391).
+    - The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community).
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
 
@@ -46,6 +47,6 @@ Liferay Commerce has been deployed and is ready for use. Store administrators ca
 
 Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
 
-* [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)
-* [Installation Overview](./installation-overview.md)
-* [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md)
+-   [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)
+-   [Installation Overview](./installation-overview.md)
+-   [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md)

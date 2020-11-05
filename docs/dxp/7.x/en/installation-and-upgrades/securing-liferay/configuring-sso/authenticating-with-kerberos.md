@@ -8,7 +8,7 @@ Note that this configuration is preferred above [NTLM](https://portal.liferay.de
 
 While it's beyond the scope of this article to explain how to set up Kerberos and Active Directory on a Windows&trade; server, we can describe the minimum prerequisites for setting up Liferay authentication:
 
-1. A Windows&trade; server with Active Directory and DNS set up so the AD server and Liferay DXP can resolve each other on the network. In other words, they must be able to ping each other *by name*.
+1. A Windows&trade; server with Active Directory and DNS set up so the AD server and Liferay DXP can resolve each other on the network. In other words, they must be able to ping each other _by name_.
 
 1. An administrative user in AD Liferay DXP can use to bind to AD.
 
@@ -133,19 +133,19 @@ The last line is commented out based on user preference. If you want the domain 
 
 1. Connect Liferay DXP to AD over LDAP by going to Configuration &rarr; Instance Settings &rarr; Authentication &rarr; LDAP and adding an LDAP server. Provide the information appropriate to your installation:
 
-   | Configuration | Description |
-   | --- | --- |
-   | **Base Provider URL** | Your AD server on the proper port. |
-   | **Base DN** | Your domain configuration. The example above might be `DC=INTDOMAIN.DC=LOCAL`. |
-   | **Principal/Credentials** | Supply the credentials for the user exported to the keytab file. |
-   | **Authentication Search Filter** | Supply the appropriate search filter to return user objects. For example, `(&(objectCategory=person)(sAMAccountName=*))` |
-   | **UUID** | Supply what uniquely identifies a user, such as `sAMAccountName`. |
-   | **Screen Name** | Supply the field that should be mapped to Liferay DXP's screen name field, such as `sAMAccountName`. |
-   | **Password** | Supply the field that contains the user's password, such as `userPassword`. |
+    | Configuration                    | Description                                                                                                              |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+    | **Base Provider URL**            | Your AD server on the proper port.                                                                                       |
+    | **Base DN**                      | Your domain configuration. The example above might be `DC=INTDOMAIN.DC=LOCAL`.                                           |
+    | **Principal/Credentials**        | Supply the credentials for the user exported to the keytab file.                                                         |
+    | **Authentication Search Filter** | Supply the appropriate search filter to return user objects. For example, `(&(objectCategory=person)(sAMAccountName=*))` |
+    | **UUID**                         | Supply what uniquely identifies a user, such as `sAMAccountName`.                                                        |
+    | **Screen Name**                  | Supply the field that should be mapped to Liferay DXP's screen name field, such as `sAMAccountName`.                     |
+    | **Password**                     | Supply the field that contains the user's password, such as `userPassword`.                                              |
 
 1. Test the connection, save, and enable the configuration.
 
-1. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches *exactly* the token you configured in your web server. Click the *Enabled* and *Import from LDAP* boxes and click *Save*.
+1. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches _exactly_ the token you configured in your web server. Click the _Enabled_ and _Import from LDAP_ boxes and click _Save_.
 
     ![Enabling SSO in the Instance Settings menu.](authenticating-with-kerberos/images/02.png)
 
@@ -163,8 +163,8 @@ You must do two things: make your computer log into the domain and configure you
 
 1. Firefox can be configured by typing `about:config` in its address bar. Search for the below two preferences and add the Liferay DXP server's URL as the value for both:
 
-   * `network.negotiate-auth.delegation-uris`
-   * `network.negotiate-auth.trusted-uris`
+    - `network.negotiate-auth.delegation-uris`
+    - `network.negotiate-auth.trusted-uris`
 
 After configuring these things, test your configuration by accessing Liferay DXP through the web server's URL. Since you are already logged into your client machine, you should be automatically logged into Liferay DXP without a user/password prompt.
 

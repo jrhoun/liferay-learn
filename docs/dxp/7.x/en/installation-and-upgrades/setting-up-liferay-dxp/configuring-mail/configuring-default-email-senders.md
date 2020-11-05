@@ -6,22 +6,22 @@ By default, emails sent by Liferay DXP use the name and email address as the def
 
 To change the default email sender, follow these steps:
 
-1. Open the *Product Menu* and navigate to the *Control Panel* → *Configuration* → *Instance Settings*.
+1. Open the _Product Menu_ and navigate to the _Control Panel_ → _Configuration_ → _Instance Settings_.
 
     ![Locating the Email configuration option in the Instance Settings menu.](./configuring-default-email-senders/images/01.png)
 
-1. Click *Email*.
+1. Click _Email_.
 
-1. Click *Email Sender*.
+1. Click _Email Sender_.
 
 1. Enter your values for the following fields:
 
-    * Name
-    * Address
+    - Name
+    - Address
 
     ![Changing the default email sender name and email address.](./configuring-default-email-senders/images/02.png)
 
-1. Click *Save*.
+1. Click _Save_.
 
 ### Using Portal Properties to Configure the Default Email Sender
 
@@ -45,18 +45,19 @@ announcements.email.to.address=noreply@domain.invalid
 
 The following emails are blacklisted by default and cannot be used in any DXP installation:
 
-* `noreply@liferay.com`
-* `test@liferay.com`
-* `noreply@domain.invalid`
-* `test@domain.invalid`
+-   `noreply@liferay.com`
+-   `test@liferay.com`
+-   `noreply@domain.invalid`
+-   `test@domain.invalid`
 
 Attempts to use the above emails result in a logged `WARN` trace:
 
 ```bash
 Email xxx will be ignored because it is included in mail.send.blacklist
 ```
+
 ## Additional Information
 
-* [Connecting to a Mail Server](./connecting-to-a-mail-server.md)
-* [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
-* [Portal Properties](../../reference/portal-properties.md)
+-   [Connecting to a Mail Server](./connecting-to-a-mail-server.md)
+-   [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
+-   [Portal Properties](../../reference/portal-properties.md)

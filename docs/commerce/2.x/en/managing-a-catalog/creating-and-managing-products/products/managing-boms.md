@@ -32,12 +32,12 @@ Once the image has been uploaded, map the parts to the products in the catalog.
 
 1. Enter the following:
 
-    * **Number**: 1 (numeric ordering of the mapped product list)
-    * **Product**: MIN59999 (the product name or SKU)
+    - **Number**: 1 (numeric ordering of the mapped product list)
+    - **Product**: MIN59999 (the product name or SKU)
 
-      ```tip::
-         Text auto-complete will show suggestions as you type in the name of a product.
-      ```
+        ```tip::
+           Text auto-complete will show suggestions as you type in the name of a product.
+        ```
 
     ![Begin associating products in the BOM diagram.](./managing-boms/images/04.png)
 
@@ -69,7 +69,7 @@ To add a folder:
 
 1. Click Add (![Add Icon](../../../images/icon-add.png)) then _Add Folder_.
 1. Enter the following:
-    * **Name**: Folder name (Car parts)
+    - **Name**: Folder name (Car parts)
 1. Click _Save_.
 
 ## Commerce 2.1 and Below
@@ -102,12 +102,12 @@ To add a new BOM diagram:
 
 1. Enter the following:
 
-    * **Number**: 1 (numeric ordering of the mapped product list)
-    * **Product**: MIN59999 (the product name or SKU)
+    - **Number**: 1 (numeric ordering of the mapped product list)
+    - **Product**: MIN59999 (the product name or SKU)
 
-      ```tip::
-         Text auto-complete will show suggestions as you type in the name of a product.
-      ```
+        ```tip::
+           Text auto-complete will show suggestions as you type in the name of a product.
+        ```
 
     ![Begin associating products in the BOM diagram.](./managing-boms/images/04.png)
 
@@ -139,11 +139,11 @@ To add a folder:
 
 1. Click Add (![Add Icon](../../../images/icon-add.png)) then _Add Folder_.
 1. Enter the following:
-    * **Name**: Folder name (Car parts)
+    - **Name**: Folder name (Car parts)
 1. Click _Save_.
 
 ## Additional Information
 
-* [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
-* [Adding a Page to a Site](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [Adding Widgets to a Page](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+-   [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
+-   [Adding a Page to a Site](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
+-   [Adding Widgets to a Page](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)

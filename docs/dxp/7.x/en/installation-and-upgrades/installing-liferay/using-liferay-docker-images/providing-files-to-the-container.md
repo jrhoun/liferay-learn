@@ -2,19 +2,19 @@
 
 The Liferay container uses the files you provide to execute the following use cases:
 
-* Configure Liferay with `.properties` Files and `.config` files
-* Configure Tomcat
-* Deploy apps and other artifacts
-* Update the Patching Tool
-* Patch DXP
-* Run scripts
+-   Configure Liferay with `.properties` Files and `.config` files
+-   Configure Tomcat
+-   Deploy apps and other artifacts
+-   Update the Patching Tool
+-   Patch DXP
+-   Run scripts
 
 All of the use cases can be triggered on container creation when the container finds files in specific folders within key container folders.
 
 **Key Container Folders:**
 
-* `/mnt/liferay`
-* `/user/local/liferay/scripts`
+-   `/mnt/liferay`
+-   `/user/local/liferay/scripts`
 
 The [Container Lifecycle and API](./container-lifecycle-and-api.md) specifies the scanned subfolders, the phases in which the container scans them, and the actions taken on their files.
 
@@ -22,9 +22,9 @@ You can provide files to the container in several ways.
 
 **Ways to Provide Files:**
 
-* [Bind mounts](https://docs.docker.com/storage/bind-mounts/)
-* [Volumes](https://docs.docker.com/storage/volumes/)
-* [Using `docker cp`](https://docs.docker.com/engine/reference/commandline/cp/)
+-   [Bind mounts](https://docs.docker.com/storage/bind-mounts/)
+-   [Volumes](https://docs.docker.com/storage/volumes/)
+-   [Using `docker cp`](https://docs.docker.com/engine/reference/commandline/cp/)
 
 All of the use cases, except for deploying artifacts and using `.config` files, require making files available on container creation. Bind mounts and volumes accomplish this. Deploying artifacts and applying `.config` files can be accomplished on container creation using bind mounts and volumes, or at run time using `docker cp`.
 
@@ -44,13 +44,13 @@ The bind mount source can be any folder path or file path in the host. The bind 
 
 The container scans these folders.
 
-* `/mnt/liferay/deploy`
-* `/mnt/liferay/files` (all files and subfolders are scanned)
-* `/mnt/liferay/patching`
-* `/mnt/liferay/scripts`
-* `/usr/local/liferay/scripts/post-shutdown`
-* `/usr/local/liferay/scripts/pre-configure`
-* `/usr/local/liferay/scripts/pre-startup`
+-   `/mnt/liferay/deploy`
+-   `/mnt/liferay/files` (all files and subfolders are scanned)
+-   `/mnt/liferay/patching`
+-   `/mnt/liferay/scripts`
+-   `/usr/local/liferay/scripts/post-shutdown`
+-   `/usr/local/liferay/scripts/pre-configure`
+-   `/usr/local/liferay/scripts/pre-startup`
 
 Please see the [API](./container-lifecycle-and-api.md#api) for the actions and use cases associated with each folder.
 
@@ -58,19 +58,19 @@ Please see the [API](./container-lifecycle-and-api.md#api) for the actions and u
 
 You can organize Liferay container bind mounts in several different ways:
 
-* Bind to one or both of the key folders: `/mnt/liferay` and `/usr/local/liferay/scripts`
-* Bind to their subfolders
-* Bind to a mix of subfolders and files
+-   Bind to one or both of the key folders: `/mnt/liferay` and `/usr/local/liferay/scripts`
+-   Bind to their subfolders
+-   Bind to a mix of subfolders and files
 
 The table below shows some example bind mount methods and describes their pros and cons.
 
 ### Example Bind Mounts
 
-| Method | Example | Pros | Cons |
-| :----- | :------ | :------- | :---------- |
-| Mount to `/mnt/liferay` | `-v [host-path]:/mnt/liferay` | Centralizes the input files. | Input files must be organized in subfolders that the container expects (see the locations listed [above](#scanned-container-folders)). |
-| Mount to `/mnt/liferay` subfolders separately | `-v [host-path]/[folder-1]:/mnt/liferay/deploy -v [host-path]/[folder-2]:/mnt/liferay/files`<br><br><br>Note: `[host-path]` can be the same path or different paths. | Flexibility to use input file groups in different locations on the host. | More host file locations to manage. |
-| Mount to individual files | `-v [host path]/setenv.sh:/mnt/liferay/files/tomcat/bin/setenv.sh` | Input files are clearly visible in the `docker run` command. | Lengthy docker run commands. Even more host file locations to manage. |
+| Method                                        | Example                                                                                                                                                              | Pros                                                                     | Cons                                                                                                                                   |
+| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| Mount to `/mnt/liferay`                       | `-v [host-path]:/mnt/liferay`                                                                                                                                        | Centralizes the input files.                                             | Input files must be organized in subfolders that the container expects (see the locations listed [above](#scanned-container-folders)). |
+| Mount to `/mnt/liferay` subfolders separately | `-v [host-path]/[folder-1]:/mnt/liferay/deploy -v [host-path]/[folder-2]:/mnt/liferay/files`<br><br><br>Note: `[host-path]` can be the same path or different paths. | Flexibility to use input file groups in different locations on the host. | More host file locations to manage.                                                                                                    |
+| Mount to individual files                     | `-v [host path]/setenv.sh:/mnt/liferay/files/tomcat/bin/setenv.sh`                                                                                                   | Input files are clearly visible in the `docker run` command.             | Lengthy docker run commands. Even more host file locations to manage.                                                                  |
 
 The most general way to provide files to the container's [configuration phase](./container-lifecycle-and-api.md#lifecycle) is to bind mount a host folder to the container's `/mnt/liferay` folder.
 
@@ -106,6 +106,7 @@ Hre are the steps:
     ```note::
        You don't have to create all of the subfolders, just the ones you're populating.
     ```
+
 1. Populate the subfolders with files for the container to act on.
 
     For example, you could [add a `portal-ext.properties` file](./configuring-containers.md#portal-properties) to configure DXP and [add a Security Fix Pack](./patching-dxp-in-docker.md) to install.
@@ -142,6 +143,6 @@ Note, applying a `.config` file requires copying it to the container's `/opt/lif
 
 Now you know how to provide files to the container using bind mounts and `docker cp` commands. Please see the [Container Lifecycle and API](./container-lifecycle-and-api.md) for more details. For use case details, please see these articles:
 
-* [Configuring Containers](./configuring-containers.md)
-* [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
-* [Patching DXP in Docker](./patching-dxp-in-docker.md)
+-   [Configuring Containers](./configuring-containers.md)
+-   [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
+-   [Patching DXP in Docker](./patching-dxp-in-docker.md)

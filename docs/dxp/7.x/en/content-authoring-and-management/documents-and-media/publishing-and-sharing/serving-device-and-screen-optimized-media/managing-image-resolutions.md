@@ -43,7 +43,7 @@ The Image Resolution has been deleted.
    Image resolutions and their identifiers can't be updated if the resolution has been used to adapt images. This prevents inconsistencies in generated images.
 ```
 
-Therefore, editing an image resolution is only possible if Adaptive Media hasn't yet generated adapted images for it. If you must change the values of a resolution that already has adapted images, you must delete that resolution and create a new one with the new values. 
+Therefore, editing an image resolution is only possible if Adaptive Media hasn't yet generated adapted images for it. If you must change the values of a resolution that already has adapted images, you must delete that resolution and create a new one with the new values.
 
 ## Generating Missing Adapted Images
 
@@ -53,8 +53,8 @@ If Adaptive Media hasn't generated all the images you need (for example, if new 
 
 To manually generate missing adapted images,
 
-1. For a single resolution, select *Adapt Remaining* from the resolution's Actions menu (![Actions](../../../../images/icon-actions.png)).
-1. For all resolutions at once, select *Adapt All Images* from the Actions menu in the Control Menu at the top of the page.
+1. For a single resolution, select _Adapt Remaining_ from the resolution's Actions menu (![Actions](../../../../images/icon-actions.png)).
+1. For all resolutions at once, select _Adapt All Images_ from the Actions menu in the Control Menu at the top of the page.
 
 ## The Recycle Bin and Adapted Images
 
@@ -66,6 +66,6 @@ If the original image is restored from the Recycle Bin, the adapted images are a
 
 ## Additional Information
 
-* [Adding Image Resolutions](./adding-image-resolutions.md)
-* [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
-* [Migrating Documents and Media Thumbnails](./migrating-documents-and-media-thumbnails.md)
+-   [Adding Image Resolutions](./adding-image-resolutions.md)
+-   [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
+-   [Migrating Documents and Media Thumbnails](./migrating-documents-and-media-thumbnails.md)

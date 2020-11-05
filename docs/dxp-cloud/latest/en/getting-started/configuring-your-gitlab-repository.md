@@ -57,7 +57,7 @@ Follow these steps to transfer the provisioned GitHub repository to your own Git
 
 1. Clone the provisioned GitHub repository locally:
 
-    ```git clone git@github.com:dxpcloud/example.git```
+    `git clone git@github.com:dxpcloud/example.git`
 
     ```note::
        If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
@@ -65,11 +65,11 @@ Follow these steps to transfer the provisioned GitHub repository to your own Git
 
 1. Add a new Git remote and point to GitLab:
 
-    ```git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git```
+    `git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git`
 
 1. Push the cloned repository to the new remote repository:
 
-    ```git push gitlab master```
+    `git push gitlab master`
 
 If you need help creating, cloning, and pushing repositories, see [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
@@ -85,9 +85,9 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Configure the access token to have the following permissions:
 
-    * api
-    * read_repository
-    * write_repository
+    - api
+    - read_repository
+    - write_repository
 
 1. Click _Create personal access token_.
 
@@ -103,12 +103,12 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 1. Configure the following environment variables:
 
-| Name | Value |
-| ---  | ---   |
-| `LCP_CI_SCM_PROVIDER` | gitlab  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
-| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
-| `LCP_CI_SCM_TOKEN` | [access_token] |
+| Name                          | Value          |
+| ----------------------------- | -------------- |
+| `LCP_CI_SCM_PROVIDER`         | gitlab         |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
 
 After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository trigger builds.
 
@@ -174,5 +174,5 @@ Verify that new merge requests trigger Jenkins builds:
 
 ## Additional Information
 
-* [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
-* [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
+-   [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
+-   [Configuring Your GitHub Repository](./configuring-your-github-repository.md)

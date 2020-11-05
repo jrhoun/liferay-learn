@@ -2,11 +2,11 @@
 
 This article documents the available headers you can use when making Headless API requests:
 
-* [`Accept`](#accept)
-* [`Accept-Language`](#accept-language)
-* [`Authorization`](#authorization)
-* [`Content-Type`](#content-type)
-* [`Cookie`](#cookie)
+-   [`Accept`](#accept)
+-   [`Accept-Language`](#accept-language)
+-   [`Authorization`](#authorization)
+-   [`Content-Type`](#content-type)
+-   [`Cookie`](#cookie)
 
 ## `Accept`
 
@@ -14,8 +14,8 @@ Indicates what format the response content should take. Defaults to `json`.
 
 ### Valid Options
 
-* `json`
-* `xml`
+-   `json`
+-   `xml`
 
 ### Example
 
@@ -25,7 +25,7 @@ curl --header 'Accept: application/xml' 'example.com/o/headless-admin-user/v1.0/
 
 ## `Accept-Language`
 
-For resources containing content translated into multiple languages, indicates the language for the returned response content. 
+For resources containing content translated into multiple languages, indicates the language for the returned response content.
 
 ### Valid Options
 
@@ -43,8 +43,8 @@ Identifies which User is making the request, using DXP's Authentication framewor
 
 ### Valid Options
 
-* `Basic` + Base64-encoded credentials
-* `Bearer` + OAuth token
+-   `Basic` + Base64-encoded credentials
+-   `Bearer` + OAuth token
 
 ### Example
 
@@ -58,7 +58,7 @@ Allows uploading binary data.
 
 ### Valid Options
 
-* `multipart/form-data`
+-   `multipart/form-data`
 
 ### Example
 
@@ -72,7 +72,7 @@ Identifies the User making the request, using DXP's Authentication framework. (S
 
 ### Valid Options
 
-* `JSESSIONID`
+-   `JSESSIONID`
 
 ### Example
 
@@ -86,8 +86,8 @@ Indicates that the server should return the requested content in all available l
 
 ### Valid Options
 
-* `true`
-* `false`
+-   `true`
+-   `false`
 
 ### Example
 

@@ -6,16 +6,16 @@ Your application server's prescribed script is the safest place to add/modify sy
 
 DXP uses the [`portal-impl.jar/system.properties`](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/system.properties.html) file, however, as a convenience to set required properties. The `system.properties` file can be extended or overridden using a `system-ext.properties` file. System properties files are loaded by the [Portal application class loader](../../liferay-internals/customizing-the-core/reference/portal-application-classloaders.md) after application server startup. Here are some functionalities that DXP configures using system properties:
 
-* File encoding
-* Logging
-* Default XML parser configuration
-* JAXB context factory
-* Enabling JRuby native extensions
+-   File encoding
+-   Logging
+-   Default XML parser configuration
+-   JAXB context factory
+-   Enabling JRuby native extensions
 
 DXP uses System Properties files in these ways:
 
-* DXP _extends_ properties using new properties in `system.properties` (and in `system-ext.properties`), unless the system property `system.properties.set` is `false`
-* DXP _overrides_ properties using new values in `system.properties` (and in `system-ext.properties`), unless the system property `system.properties.set.override` is `false`.
+-   DXP _extends_ properties using new properties in `system.properties` (and in `system-ext.properties`), unless the system property `system.properties.set` is `false`
+-   DXP _overrides_ properties using new values in `system.properties` (and in `system-ext.properties`), unless the system property `system.properties.set.override` is `false`.
 
 ```warning::
    Setting or reseting system properties after application server startup has risks:
@@ -26,8 +26,8 @@ DXP uses System Properties files in these ways:
 
 Here both ways of specifying system properties are demonstrated:
 
-* [Setting System Properties Directly](#setting-system-properties-directly)
-* [Using a `system-ext.properties` File](#using-a-system-ext-properties-file)
+-   [Setting System Properties Directly](#setting-system-properties-directly)
+-   [Using a `system-ext.properties` File](#using-a-system-ext-properties-file)
 
 ## Setting System Properties Directly
 
@@ -73,4 +73,4 @@ Liferay DXP handles system properties in a flexible way, leaving you free to con
 
 ## Additional Information
 
-* [Portal Properties](./portal-properties.md)
+-   [Portal Properties](./portal-properties.md)

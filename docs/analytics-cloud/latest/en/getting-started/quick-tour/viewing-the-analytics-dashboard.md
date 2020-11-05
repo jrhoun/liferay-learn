@@ -20,10 +20,10 @@ See [Managing Users](../../administration/managing-users.md) to learn more about
 
 Most of the important settings are configured when you created the workspace. However there are other settings worth reviewing for your workspace.
 
-* Data Definitions
-* Data Control and Privacy
-* APIs
-* Workspace Usage Monitoring
-* Workspace Settings
+-   Data Definitions
+-   Data Control and Privacy
+-   APIs
+-   Workspace Usage Monitoring
+-   Workspace Settings
 
 To see more about your workspace settings, see [Managing Your Analytics Project](../../administration/managing-projects.md).

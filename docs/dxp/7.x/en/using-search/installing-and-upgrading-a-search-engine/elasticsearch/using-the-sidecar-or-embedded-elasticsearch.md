@@ -4,28 +4,28 @@ The Liferay Tomcat bundles installed via a ZIP file or Docker image include an E
 
 The Elasticsearch server is accessible at these URLs:
 
-* <http://localhost:9201> on Liferay 7.3
-* <http://localhost:9200> on Liferay 7.2
+-   <http://localhost:9201> on Liferay 7.3
+-   <http://localhost:9200> on Liferay 7.2
 
 Here's example sidecar server output:
 
 ```json
 {
-  "name" : "liferay",
-  "cluster_name" : "LiferayElasticsearchCluster",
-  "cluster_uuid" : "pb71L4whRS-PxTHgGdGM-Q",
-  "version" : {
-    "number" : "7.3.0",
-    "build_flavor" : "unknown",
-    "build_type" : "unknown",
-    "build_hash" : "de777fa",
-    "build_date" : "2019-07-24T18:30:11.767338Z",
-    "build_snapshot" : false,
-    "lucene_version" : "8.1.0",
-    "minimum_wire_compatibility_version" : "6.8.0",
-    "minimum_index_compatibility_version" : "6.0.0-beta1"
-  },
-  "tagline" : "You Know, for Search"
+	"name": "liferay",
+	"cluster_name": "LiferayElasticsearchCluster",
+	"cluster_uuid": "pb71L4whRS-PxTHgGdGM-Q",
+	"version": {
+		"number": "7.3.0",
+		"build_flavor": "unknown",
+		"build_type": "unknown",
+		"build_hash": "de777fa",
+		"build_date": "2019-07-24T18:30:11.767338Z",
+		"build_snapshot": false,
+		"lucene_version": "8.1.0",
+		"minimum_wire_compatibility_version": "6.8.0",
+		"minimum_index_compatibility_version": "6.0.0-beta1"
+	},
+	"tagline": "You Know, for Search"
 }
 ```
 
@@ -45,29 +45,30 @@ You wouldn't run an embedded database like HSQL in production, and you shouldn't
 
 Here are common uses for the default Elasticsearch server (sidecar and embedded):
 
-* Testing your custom [search and indexing code](../../developer-guide/search-and-indexing.md)
-* Developing search queries by running queries directly on Elasticsearch through Kibana
-* Testing the [search tuning](../../search_administration_and_tuning.md) functionality
-* Exploring and configuring the [search widgets](../../search_pages_and_widgets.md)
+-   Testing your custom [search and indexing code](../../developer-guide/search-and-indexing.md)
+-   Developing search queries by running queries directly on Elasticsearch through Kibana
+-   Testing the [search tuning](../../search_administration_and_tuning.md) functionality
+-   Exploring and configuring the [search widgets](../../search_pages_and_widgets.md)
 
 ## App Server Differences
 
 While an Elasticsearch sidecar server is bundled with Liferay DXP 7.3 and Liferay Portal CE 7.3 GA4+ Tomcat bundles and Docker images, there are some key differences if you're installing the Liferay WAR onto any supported application server.
 
-| Liferay DXP Flavor       | Default Elasticsearch | Pre-Installed | Requires Manual Intervention |
-| ------------------------ | ------------------- | ------------- | ---------------------------- |
-| Tomcat bundle: 7.3 GA4+  | Sidecar             | &#10004;      | &#10008;                     |
-| Tomcat: 7.3 GA4+         | Sidecar             | &#10008;      | &#10008; (auto-downloaded)   |
-| Docker tag:    7.3 GA4+  | Sidecar             | &#10004;      | &#10008;                     |
-| JBoss: 7.3 GA4+          | Sidecar             | &#10008;      | &#10008; (auto-downloaded)   |
-| Wildfly: 7.3 GA4+        | Sidecar             | &#10008;      | &#10008; (auto-downloaded)   |
-| WebSphere: 7.3 GA4+      | Sidecar             | &#10008;      | &#10004;                     |
-| Weblogic: 7.3 GA4+       | Sidecar             | &#10008;      | &#10004;                     |
-| _All flavors: 7.2/7.3 GA3-_ | _Embedded_       | &#10004;      | &#10008;                     |
+| Liferay DXP Flavor          | Default Elasticsearch | Pre-Installed | Requires Manual Intervention |
+| --------------------------- | --------------------- | ------------- | ---------------------------- |
+| Tomcat bundle: 7.3 GA4+     | Sidecar               | &#10004;      | &#10008;                     |
+| Tomcat: 7.3 GA4+            | Sidecar               | &#10008;      | &#10008; (auto-downloaded)   |
+| Docker tag: 7.3 GA4+        | Sidecar               | &#10004;      | &#10008;                     |
+| JBoss: 7.3 GA4+             | Sidecar               | &#10008;      | &#10008; (auto-downloaded)   |
+| Wildfly: 7.3 GA4+           | Sidecar               | &#10008;      | &#10008; (auto-downloaded)   |
+| WebSphere: 7.3 GA4+         | Sidecar               | &#10008;      | &#10004;                     |
+| Weblogic: 7.3 GA4+          | Sidecar               | &#10008;      | &#10004;                     |
+| _All flavors: 7.2/7.3 GA3-_ | _Embedded_            | &#10004;      | &#10008;                     |
 
 If you downloaded a bundle for an application server besides Tomcat, when you start the server an Elasticsearch distribution is downloaded on-the-fly and started as a sidecar server.
 
 Installation instructions for Liferay DXP 7.3 on the [WebSphere](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md) and [Weblogic](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md) application servers include directions for manually providing the Elasticsearch archives required for the sidecar server to be initialized.
+
 <!-- ongoing work, LRDOCS-8008 -->
 
 ```important::
@@ -78,9 +79,9 @@ Installation instructions for Liferay DXP 7.3 on the [WebSphere](../../../instal
 
 Here's a comparison between the embedded and sidecar Elasticsearch servers.
 
-| EMBEDDED           | SIDECAR           |
-| ------------------ | ----------------- |
-| Runs at <http://localhost:9200> | Runs at <http://localhost:9201> |
-| Pre-Installed on all Liferay distributions  | Not Always Pre-Installed  |
-| Not supported for production  | Not supported for production |
+| EMBEDDED                                     | SIDECAR                                                              |
+| -------------------------------------------- | -------------------------------------------------------------------- |
+| Runs at <http://localhost:9200>              | Runs at <http://localhost:9201>                                      |
+| Pre-Installed on all Liferay distributions   | Not Always Pre-Installed                                             |
+| Not supported for production                 | Not supported for production                                         |
 | No special steps required for any app server | [Some app servers](#app-server-differences) require additional steps |

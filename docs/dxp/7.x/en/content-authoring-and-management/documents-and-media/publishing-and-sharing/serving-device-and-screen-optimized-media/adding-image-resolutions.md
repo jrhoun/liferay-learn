@@ -11,14 +11,14 @@ Images uploaded before you create a resolution are _not_ affected and must be ad
 ## Adding a New Image Resolution
 
 1. Navigate to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Adaptive Media_.
-1. Click the *Add* icon (![Add new resolution](../../../../images/icon-add.png)) on the Adaptive Media configuration page and provide the information below. 
+1. Click the _Add_ icon (![Add new resolution](../../../../images/icon-add.png)) on the Adaptive Media configuration page and provide the information below.
 1. Click _Save_ when finished.
 
 **Name**: Enter a unique name. This can be updated if a custom `Identifier` is defined.
 
-**Max Width**: The generated image's maximum width. If a *Max Height* is given, this field is optional. This value must be at least `1`.
+**Max Width**: The generated image's maximum width. If a _Max Height_ is given, this field is optional. This value must be at least `1`.
 
-**Maximum Height**: The generated image's maximum height. If a *Max Width* is given, this field is optional. This value must be at least `1`.
+**Maximum Height**: The generated image's maximum height. If a _Max Width_ is given, this field is optional. This value must be at least `1`.
 
 **Add a resolution for high density displays (2x):** Defines a scaled up resolution for HIDPI displays. Selecting this option creates a new resolution double the size of the original with the same name and the suffix `-2x`. For example, if the original resolution is `400px` by `300px` (max width by max height), the high density resolution is `800px` by `600px`.
 
@@ -32,5 +32,5 @@ Images uploaded before you create a resolution are _not_ affected and must be ad
 
 ## Additional Information
 
-* [Managing Image Resolutions](./managing-image-resolutions.md)
-* [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
+-   [Managing Image Resolutions](./managing-image-resolutions.md)
+-   [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)

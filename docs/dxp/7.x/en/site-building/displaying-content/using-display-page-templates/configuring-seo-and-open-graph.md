@@ -2,14 +2,14 @@
 
 With Display Page Templates, you can create standard formats for displaying different content types, such as Web Content Articles, Documents, and Blog Entries. When configuring a template, you can define SEO and Open Graph fields that are dynamically filled for your displayed content.
 
-To create or configure these settings for an existing Display Page template, go to *Design* &rarr; *Page Templates* in the Site menu, and click on the *Display Page Templates* tab.
+To create or configure these settings for an existing Display Page template, go to _Design_ &rarr; _Page Templates_ in the Site menu, and click on the _Display Page Templates_ tab.
 
 ![Click on the Display Page Templates tab.](./configuring-seo-and-open-graph/images/01.png)
 
-Create a new template using the Add button (![Add button](../../../images/icon-add.png)), or edit an existing template by clicking on its *Actions* button (![Actions button](./../../../images/icon-actions.png)) and selecting *Configure*. Here, configuration options are organized into two tabs: *SEO* and *Open Graph*.
+Create a new template using the Add button (![Add button](../../../images/icon-add.png)), or edit an existing template by clicking on its _Actions_ button (![Actions button](./../../../images/icon-actions.png)) and selecting _Configure_. Here, configuration options are organized into two tabs: _SEO_ and _Open Graph_.
 
-* [Configuring SEO Settings](#configuring-seo-settings)
-* [Configuring Open Graph Settings](#configuring-open-graph-settings)
+-   [Configuring SEO Settings](#configuring-seo-settings)
+-   [Configuring Open Graph Settings](#configuring-open-graph-settings)
 
 ## Configuring SEO Settings
 
@@ -17,25 +17,25 @@ Search engine optimization (SEO) refers to the methods used to improve your Page
 
 ### HTML Title
 
-The *HTML Title* field defines a Display Page's `<title>` tag. This title is used by search engines to rank your Page and serves as the Page's heading in search engine results. By default, Display Page templates map this field to *Title*, but you can select any other Text field. The recommended length for an HTML title is under 60 characters.
+The _HTML Title_ field defines a Display Page's `<title>` tag. This title is used by search engines to rank your Page and serves as the Page's heading in search engine results. By default, Display Page templates map this field to _Title_, but you can select any other Text field. The recommended length for an HTML title is under 60 characters.
 
 ![The HTML Title field defines a Display Page's title meta tag](./configuring-seo-and-open-graph/images/02.png)
 
 ### Description
 
-The *Description* field defines a Display Page's description `<meta>` tag. This description is used by search engines to rank your Page and appears in search engine results as a preview of your Page. By default, Display Page templates map this field to *Description*, but you can select any other Text field. The recommended length for a Page's description is under 155 characters.
+The _Description_ field defines a Display Page's description `<meta>` tag. This description is used by search engines to rank your Page and appears in search engine results as a preview of your Page. By default, Display Page templates map this field to _Description_, but you can select any other Text field. The recommended length for a Page's description is under 155 characters.
 
 ![The Description field defines a Display Page's description meta tag.](./configuring-seo-and-open-graph/images/03.png)
 
 ### Robots
 
-The *Robots* field configures `robots.txt` rules for a Display Page. These rules provide instructions to search engines and other tools crawling and indexing your Site, defining what paths should or should not be crawled. Note that web crawlers may or may not obey instructions in `robots.txt`. You can also localize this field using the *Language Flag*.
+The _Robots_ field configures `robots.txt` rules for a Display Page. These rules provide instructions to search engines and other tools crawling and indexing your Site, defining what paths should or should not be crawled. Note that web crawlers may or may not obey instructions in `robots.txt`. You can also localize this field using the _Language Flag_.
 
 ![The Robots field configures robots.txt rules for a Display Page.](./configuring-seo-and-open-graph/images/04.png)
 
 ### Sitemap
 
-Determine whether to include a Display Page in your `sitemap.xml` file, as well as set its *Priority* and *Change Frequency*. These fields inform search engines whether to crawl and index the Display Page, how it should be prioritized relative to other Site Pages, and how frequently it is updated.
+Determine whether to include a Display Page in your `sitemap.xml` file, as well as set its _Priority_ and _Change Frequency_. These fields inform search engines whether to crawl and index the Display Page, how it should be prioritized relative to other Site Pages, and how frequently it is updated.
 
 ![Determine whether to include a Display Page in your sitemap.xml file, as well as set its Priority and Change Frequency.](./configuring-seo-and-open-graph/images/05.png)
 
@@ -49,19 +49,19 @@ Determine whether to include a Display Page in your `sitemap.xml` file, as well 
 
 ### Title
 
-The *Title* field defines a Display Page's `og:title` property, which defines the title displayed for your content in rich previews. By default, this field is mapped to *Title*, like the HTML title field for SEO. While you can select any other Text field, it's best practice to update SEO and Open Graph titles together.
+The _Title_ field defines a Display Page's `og:title` property, which defines the title displayed for your content in rich previews. By default, this field is mapped to _Title_, like the HTML title field for SEO. While you can select any other Text field, it's best practice to update SEO and Open Graph titles together.
 
 ![The Title field defines a Display Page's og:title property.](./configuring-seo-and-open-graph/images/06.png)
 
 ### Description
 
-The *Description* field defines a Display Page's `og:description` property, which determines the description displayed for your content in rich previews. By default, Display Page templates map this field to *Description*, like the description field for SEO. While you can select any other Text field, it's best practice to update SEO and Open Graph descriptions together.
+The _Description_ field defines a Display Page's `og:description` property, which determines the description displayed for your content in rich previews. By default, Display Page templates map this field to _Description_, like the description field for SEO. While you can select any other Text field, it's best practice to update SEO and Open Graph descriptions together.
 
 ![The Description field defines a Display Page's og:description property.](./configuring-seo-and-open-graph/images/07.png)
 
 ### Image
 
-The *Image* field defines a Display Page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
+The _Image_ field defines a Display Page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
 
 ```
 <meta property="og:image" content="http://example.com/ogp.jpg" />
@@ -77,7 +77,7 @@ By default, this field is unmapped in Display Page templates. This means the tem
 
 ### Image Alt Description
 
-The *Image Alt Description* field defines a Display Page's `og:image:alt` property, which determines the alt text read by screen readers for your displayed content's `og:image` property.
+The _Image Alt Description_ field defines a Display Page's `og:image:alt` property, which determines the alt text read by screen readers for your displayed content's `og:image` property.
 
 ```
 <meta property="og:image:alt" content="This is an example." />
@@ -89,5 +89,5 @@ By default, this field is unmapped in Display Page templates. This means the tem
 
 ## Additional Information
 
-* [Search Engine Optimization](./../../optimizing_sites.html#search-engine-optimization)
-* [Open Graph](./../../site-settings/configuring-open-graph.md)
+-   [Search Engine Optimization](./../../optimizing_sites.html#search-engine-optimization)
+-   [Open Graph](./../../site-settings/configuring-open-graph.md)

@@ -4,19 +4,20 @@ This document presents a chronological list of changes that break existing funct
 
 Here are some of the types of changes documented in this file:
 
-* Functionality that is removed or replaced
-* API incompatibilities: Changes to public Java or JavaScript APIs
-* Changes to context variables available to templates
-* Changes in CSS classes available to Liferay themes and portlets
-* Configuration changes: Changes in configuration files, like `portal.properties`, `system.properties`, etc.
-* Execution requirements: Java version, J2EE Version, browser versions, etc.
-* Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
+-   Functionality that is removed or replaced
+-   API incompatibilities: Changes to public Java or JavaScript APIs
+-   Changes to context variables available to templates
+-   Changes in CSS classes available to Liferay themes and portlets
+-   Configuration changes: Changes in configuration files, like `portal.properties`, `system.properties`, etc.
+-   Execution requirements: Java version, J2EE Version, browser versions, etc.
+-   Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
 
 ## Breaking Changes List
 
 ### Liferay FontAwesome Is No Longer Included by Default
-- **Date:** 2019-Aug-21
-- **JIRA Ticket:** [LPS-100021](https://issues.liferay.com/browse/LPS-100021)
+
+-   **Date:** 2019-Aug-21
+-   **JIRA Ticket:** [LPS-100021](https://issues.liferay.com/browse/LPS-100021)
 
 #### What changed?
 
@@ -52,11 +53,12 @@ During the 7.2 upgrade process, the theme upgrade assistant prompts developers t
 
 This change was made to save bandwidth and increase performance of your sites by not serving unnecessary files.
 
----------------------------------------
+---
 
 ### Removed liferay.frontend.ProgressBar
-- **Date:** 2019-Aug-28
-- **JIRA Ticket:** [LPS-100122](https://issues.liferay.com/browse/LPS-100122)
+
+-   **Date:** 2019-Aug-28
+-   **JIRA Ticket:** [LPS-100122](https://issues.liferay.com/browse/LPS-100122)
 
 #### What changed?
 
@@ -74,11 +76,12 @@ There's no direct replacement for the `liferay.frontend.ProgressBar` component. 
 
 The `liferay.frontend.ProgressBar` component was deprecated in 7.2 and is no longer used.
 
----------------------------------------
+---
 
 ### Removed liferay.frontend.Slider
-- **Date:** 2019-Oct-10
-- **JIRA Ticket:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
+
+-   **Date:** 2019-Oct-10
+-   **JIRA Ticket:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
 
 #### What changed?
 
@@ -96,11 +99,12 @@ There's no direct replacement for the `liferay.frontend.Slider` component. If yo
 
 The `liferay.frontend.Slider` component was deprecated in 7.2 and is no longer used.
 
----------------------------------------
+---
 
 ### Removed com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
-- **Date:** 2019-Oct-15
-- **JIRA Ticket:** [LPS-100144](https://issues.liferay.com/browse/LPS-100144)
+
+-   **Date:** 2019-Oct-15
+-   **JIRA Ticket:** [LPS-100144](https://issues.liferay.com/browse/LPS-100144)
 
 #### What changed?
 
@@ -118,11 +122,12 @@ There's no direct replacement for the removed class. If you have code that depen
 
 The `asset:asset-tags-selector` and its components have been migrated to React, making the old tag and its soy infrastructure unnecessary.
 
----------------------------------------
+---
 
 ### Removed Portal Property user.groups.copy.layouts.to.user.personal.site
-- **Date:** 2019-Dec-26
-- **JIRA Ticket:** [LPS-106339](https://issues.liferay.com/browse/LPS-106339)
+
+-   **Date:** 2019-Dec-26
+-   **JIRA Ticket:** [LPS-106339](https://issues.liferay.com/browse/LPS-106339)
 
 #### What changed?
 
@@ -140,11 +145,12 @@ There's no direct replacement for this property. If you depend on the behavior, 
 
 The behavior associated with this property has been deprecated since 6.2.
 
----------------------------------------
+---
 
 ### Removed Support for Auto Deploying EXT Plugins
-- **Date:** 2019-Dec-31
-- **JIRA Ticket:** [LPS-106008](https://issues.liferay.com/browse/LPS-106008)
+
+-   **Date:** 2019-Dec-31
+-   **JIRA Ticket:** [LPS-106008](https://issues.liferay.com/browse/LPS-106008)
 
 #### What changed?
 
@@ -162,11 +168,12 @@ There's no direct replacement for the removed feature. If you have an EXT plugin
 
 This feature has been deprecated since 7.1.
 
----------------------------------------
+---
 
 ### Replaced OSGi configuration Property autoUpgrade
-- **Date:** 2020-Jan-03
-- **JIRA Ticket:** [LPS-102842](https://issues.liferay.com/browse/LPS-102842)
+
+-   **Date:** 2020-Jan-03
+-   **JIRA Ticket:** [LPS-102842](https://issues.liferay.com/browse/LPS-102842)
 
 #### What changed?
 
@@ -186,11 +193,12 @@ This change doesn't affect your code.
 
 This change was made to unify the auto-upgrade feature between the Core and modules. The default value has also changed to avoid the execution of new upgrade processes on startup in production environments.
 
----------------------------------------
+---
 
 ### Removed Cache Bootstrap Feature
-- **Date:** 2020-Jan-8
-- **JIRA Ticket:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
+
+-   **Date:** 2020-Jan-8
+-   **JIRA Ticket:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### What changed?
 
@@ -212,11 +220,12 @@ There's no direct replacement for the removed feature. If you have code that dep
 
 This change was made to avoid security issues.
 
----------------------------------------
+---
 
 ### Removed liferay-frontend:cards-treeview Tag
-- **Date:** 2020-Jan-10
-- **JIRA Ticket:** [LPS-106899](https://issues.liferay.com/browse/LPS-106899)
+
+-   **Date:** 2020-Jan-10
+-   **JIRA Ticket:** [LPS-106899](https://issues.liferay.com/browse/LPS-106899)
 
 #### What changed?
 
@@ -234,11 +243,12 @@ There's no direct replacement for the removed feature. If you have code that dep
 
 This change was made because the tag was primarily used internally.
 
----------------------------------------
+---
 
 ### Removed liferay-frontend:contextual-sidebar Tag
-- **Date:** 2020-Jan-10
-- **JIRA Ticket:** [LPS-100146](https://issues.liferay.com/browse/LPS-100146)
+
+-   **Date:** 2020-Jan-10
+-   **JIRA Ticket:** [LPS-100146](https://issues.liferay.com/browse/LPS-100146)
 
 #### What changed?
 
@@ -256,11 +266,12 @@ There's no direct replacement for the removed feature. If you have code that dep
 
 This change was made because the tag was primarily used internally.
 
----------------------------------------
+---
 
 ### Changed Control Menu and Product Menu Positioning
-- **Date:** 2020-Feb-04
-- **JIRA Ticket:** [LPS-107487](https://issues.liferay.com/browse/LPS-107487)
+
+-   **Date:** 2020-Feb-04
+-   **JIRA Ticket:** [LPS-107487](https://issues.liferay.com/browse/LPS-107487)
 
 #### What changed?
 
@@ -268,9 +279,9 @@ The placement and structure of the Control and Product Menus has changed to addr
 
 These changes have been applied to the Control and Product menus:
 
-- The Product Menu has been moved outside of the Control Menu
-- The Control Menu now uses `position:sticky` to control its behaviour
-- Styles of the menus inside the Control Menu have been updated to account for the new sticky behaviour
+-   The Product Menu has been moved outside of the Control Menu
+-   The Control Menu now uses `position:sticky` to control its behaviour
+-   Styles of the menus inside the Control Menu have been updated to account for the new sticky behaviour
 
 #### Who is affected?
 
@@ -312,18 +323,19 @@ Developers with custom Sticky Bars included using the `*ControlMenuEntry` API ca
 
 Move the code that injects the menu to a `DynamicInclude` component and register it for the proper position:
 
-- Before the Control Menu: Use `com.liferay.product.navigation.taglib#/page.jsp#pre`
-- After the Control Menu: Use `com.liferay.product.navigation.taglib#/page.jsp#post`
+-   Before the Control Menu: Use `com.liferay.product.navigation.taglib#/page.jsp#pre`
+-   After the Control Menu: Use `com.liferay.product.navigation.taglib#/page.jsp#post`
 
 #### Why was this change made?
 
 This change was made to improve accessibility and simplify the required logic for positioning and controlling top-positioned menus. It provides a more correct and expected markup that avoids common visual glitches.
 
----------------------------------------
+---
 
 ### jQuery Is No Longer Included by Default
-- **Date:** 2020-Feb-04
-- **JIRA Ticket:** [LPS-95726](https://issues.liferay.com/browse/LPS-95726)
+
+-   **Date:** 2020-Feb-04
+-   **JIRA Ticket:** [LPS-95726](https://issues.liferay.com/browse/LPS-95726)
 
 #### What changed?
 
@@ -337,17 +349,18 @@ This affects any developer who used `AUI.$` or `window.$` in their custom script
 
 Use any of the strategies to add third party libraries to provide your own version of JQuery to use in your code.
 
-Additionally, as a temporary measure, you can bring back the old behaviour by setting the `Enable jQuery` property in *System Settings* &rarr; *Third Party* &rarr; *jQuery* to `true`.
+Additionally, as a temporary measure, you can bring back the old behaviour by setting the `Enable jQuery` property in _System Settings_ &rarr; _Third Party_ &rarr; _jQuery_ to `true`.
 
 #### Why was this change made?
 
 This change was made to avoid bundling and serving additional library code on every page that was mostly unused and redundant.
 
----------------------------------------
+---
 
 ### Server-side Parallel Rendering Is No Longer Supported
-- **Date:** 2020-Mar-16
-- **JIRA Ticket:** [LPS-110359](https://issues.liferay.com/browse/LPS-110359)
+
+-   **Date:** 2020-Mar-16
+-   **JIRA Ticket:** [LPS-110359](https://issues.liferay.com/browse/LPS-110359)
 
 #### What changed?
 
@@ -365,11 +378,12 @@ Remove any properties prefixed with `layout.parallel.render` from your propertie
 
 This feature has been deprecated.
 
----------------------------------------
+---
 
 ### Removed liferay-editor-image-uploader Plugin
-- **Date:** 2020-Mar-27
-- **JIRA Ticket:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
+
+-   **Date:** 2020-Mar-27
+-   **JIRA Ticket:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### What changed?
 
@@ -387,11 +401,12 @@ There's no direct replacement for the `liferay-editor-image-uploader` plugin. If
 
 This change enables image drag and drop handling in CKEditor and provides a common image uploader for both Alloy Editor and CKEditor.
 
----------------------------------------
+---
 
 ### TinyMCE Editor Is No Longer Bundled by Default
-- **Date:** 2020-Mar-27
-- **JIRA Ticket:** [LPS-110733](https://issues.liferay.com/browse/LPS-110733)
+
+-   **Date:** 2020-Mar-27
+-   **JIRA Ticket:** [LPS-110733](https://issues.liferay.com/browse/LPS-110733)
 
 ### What changed?
 
@@ -405,21 +420,22 @@ This affects anyone who uses TinyMCE.
 
 If you've configured Liferay Portal to use the TinyMCE, you can remove these configurations. If you still want to use TinyMCE, you must take these steps:
 
-- Keep your configurations.
-- Open https://repository.liferay.com/nexus/index.html in your browser.
-- Search for `com.liferay.frontend.editor.tinymce.web`.
-- Download a .jar file for the `com.liferay.frontend.editor.tinymce.web` module.
-- Deploy the .jar file you downloaded in your liferay-portal instalation.
+-   Keep your configurations.
+-   Open https://repository.liferay.com/nexus/index.html in your browser.
+-   Search for `com.liferay.frontend.editor.tinymce.web`.
+-   Download a .jar file for the `com.liferay.frontend.editor.tinymce.web` module.
+-   Deploy the .jar file you downloaded in your liferay-portal instalation.
 
 #### Why was this change made?
 
 This change was made to consolidate all our UX for writing Rich Text Content around a single Editor to provide a more cohesive and comprehensive experience.
 
----------------------------------------
+---
 
 ### Simple Editor Is No Longer Bundled by Default
-- **Date:** 2020-Mar-27
-- **JIRA Ticket:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
+
+-   **Date:** 2020-Mar-27
+-   **JIRA Ticket:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### What changed?
 
@@ -433,21 +449,22 @@ This affects anyone who uses the Liferay Front-end Editor Simple Web module.
 
 If you've configured Liferay Portal to use the Simple Editor, you can remove these configurations. If you still want to use the Simple Editor, you must take these steps:
 
-- Keep your configurations.
-- Open https://repository.liferay.com/nexus/index.html in your browser.
-- Search for `com.liferay.frontend.editor.simple.web`.
-- Download a .jar file for the `com.liferay.frontend.editor.simple.web` module.
-- Deploy the .jar file you downloaded in your liferay-portal installation.
+-   Keep your configurations.
+-   Open https://repository.liferay.com/nexus/index.html in your browser.
+-   Search for `com.liferay.frontend.editor.simple.web`.
+-   Download a .jar file for the `com.liferay.frontend.editor.simple.web` module.
+-   Deploy the .jar file you downloaded in your liferay-portal installation.
 
 #### Why was this change made?
 
 This change was made to consolidate all our UX for writing Rich Text Content around a single Editor to provide a more cohesive and comprehensive experience.
 
----------------------------------------
+---
 
 ### asset.vocabulary.default Now Holds a Language Key
-- **Date:** 2020-Apr-28
-- **JIRA Ticket:** [LPS-112334](https://issues.liferay.com/browse/LPS-112334)
+
+-   **Date:** 2020-Apr-28
+-   **JIRA Ticket:** [LPS-112334](https://issues.liferay.com/browse/LPS-112334)
 
 ### What changed?
 
@@ -465,11 +482,12 @@ There is no need to change the code if the property is not overwritten. If the p
 
 The change was made so users don't have to change the name for the default vocabulary in all languages.
 
----------------------------------------
+---
 
 ### Liferay.Poller Is No Longer Initialized by Default
-- **Date:** 2020-May-19
-- **JIRA Ticket:** [LPS-112942](https://issues.liferay.com/browse/LPS-112942)
+
+-   **Date:** 2020-May-19
+-   **JIRA Ticket:** [LPS-112942](https://issues.liferay.com/browse/LPS-112942)
 
 #### What changed?
 
@@ -503,11 +521,12 @@ There's no direct replacement for the `Liferay.Poller` utility. If you must init
 
 The `Liferay.Poller` component was only used in the Chat application, which is archived. Skipping initialization by default streamlines page loads for the common case.
 
----------------------------------------
+---
 
 ### ContentTransformerListener Is Disabled By Default
-- **Date:** 2020-May-25
-- **JIRA Ticket:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
+
+-   **Date:** 2020-May-25
+-   **JIRA Ticket:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### What changed?
 
@@ -519,17 +538,18 @@ This affects Liferay Portal installations using legacy web content features prov
 
 #### How should I update my code?
 
-There's no need to update your code. If you still want to use `ContentTransformerListener`, you can enable it in System Settings via the *Enable ContentTransformerListener* property under *Content & Data* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content*.
+There's no need to update your code. If you still want to use `ContentTransformerListener`, you can enable it in System Settings via the _Enable ContentTransformerListener_ property under _Content & Data_ &rarr; _Web Content_ &rarr; _Virtual Instance Scope_ &rarr; _Web Content_.
 
 #### Why was this change made?
 
 `ContentTransformerListener` was disabled to improve performance, due to its expensive string processing on article elements (calling `HtmlUtil.stripComments` and `HtmlUtil.stripHtml` on article fields).
 
----------------------------------------
+---
 
 ### Liferay.BrowserSelectors.run Is No Longer Called
-- **Date:** 2020-May-26
-- **JIRA Ticket:** [LPS-112983](https://issues.liferay.com/browse/LPS-112983)
+
+-   **Date:** 2020-May-26
+-   **JIRA Ticket:** [LPS-112983](https://issues.liferay.com/browse/LPS-112983)
 
 #### What changed?
 
@@ -539,38 +559,38 @@ The `Liferay.BrowserSelectors.run()` function is no longer called on pages, whic
 
 This affects any code that relies on these CSS classes in the `<html>` element:
 
-- `aol`
-- `camino`
-- `edgeHTML` or `edge`
-- `firefox`
-- `flock`
-- `gecko`
-- `icab`
-- `ie`, `ie6`, `ie7`, `ie9`, or `ie11`
-- `js`
-- `konqueror`
-- `mac`
-- `mozilla`
-- `netscape`
-- `opera`
-- `presto`
-- `safari`
-- `secure`
-- `touch`
-- `trident`
-- `webkit`
-- `win`
+-   `aol`
+-   `camino`
+-   `edgeHTML` or `edge`
+-   `firefox`
+-   `flock`
+-   `gecko`
+-   `icab`
+-   `ie`, `ie6`, `ie7`, `ie9`, or `ie11`
+-   `js`
+-   `konqueror`
+-   `mac`
+-   `mozilla`
+-   `netscape`
+-   `opera`
+-   `presto`
+-   `safari`
+-   `secure`
+-   `touch`
+-   `trident`
+-   `webkit`
+-   `win`
 
 #### How should I update my code?
 
 There's no direct replacement for the `Liferay.BrowserSelectors.run()` function, but you can adapt your CSS and JavaScript to target new classes on the `<body>` element instead. These classes are added to the `<body>` element to reflect the browser you're currently using:
 
-- `chrome`
-- `edge`
-- `firefox`
-- `ie`
-- `mobile`
-- `other`
+-   `chrome`
+-   `edge`
+-   `firefox`
+-   `ie`
+-   `mobile`
+-   `other`
 
 Alternatively, you can still invoke `Liferay.BrowserSelectors.run()` to apply the old classes to the `<html>` element with the code below:
 
@@ -584,19 +604,20 @@ Alternatively, you can still invoke `Liferay.BrowserSelectors.run()` to apply th
 
 The classes, some of which referred to outdated browsers, were being added to the top `<html>` element via legacy JavaScript that depended on Alloy UI. This change, which removes the outdated browser references, is now done on the server side, improving page loading times.
 
----------------------------------------
+---
 
 ### Remove Support for Blocking Cache
-- **Date:** 2020-Jun-17
-- **JIRA Ticket:** [LPS-115687](https://issues.liferay.com/browse/LPS-115687)
+
+-   **Date:** 2020-Jun-17
+-   **JIRA Ticket:** [LPS-115687](https://issues.liferay.com/browse/LPS-115687)
 
 #### What changed?
 
 Blocking cache support was removed. These properties can no longer be used to enable blocking cache:
 
-- `ehcache.blocking.cache.allowed`
-- `permissions.object.blocking.cache`
-- `value.object.entity.blocking.cache`
+-   `ehcache.blocking.cache.allowed`
+-   `permissions.object.blocking.cache`
+-   `value.object.entity.blocking.cache`
 
 #### Who is affected?
 
@@ -610,25 +631,26 @@ There's no direct replacement for the removed feature. If you have code that dep
 
 This change was made to improve performance because blocking caches should never be enabled.
 
----------------------------------------
+---
 
 ### Remove Support for Setting Cache Properties for Each Entity Model
-- **Date:** 2020-Jun-24
-- **JIRA Ticket:** [LPS-116049](https://issues.liferay.com/browse/LPS-116049)
+
+-   **Date:** 2020-Jun-24
+-   **JIRA Ticket:** [LPS-116049](https://issues.liferay.com/browse/LPS-116049)
 
 #### What changed?
 
 Support was removed for setting these cache properties for an entity:
 
-- `value.object.entity.cache.enabled*`
-- `value.object.finder.cache.enabled*`
-- `value.object.column.bitmask.enabled*`
+-   `value.object.entity.cache.enabled*`
+-   `value.object.finder.cache.enabled*`
+-   `value.object.column.bitmask.enabled*`
 
 For example, these properties are for entity `com.liferay.portal.kernel.model.User`:
 
-- `value.object.entity.cache.enabled.com.liferay.portal.kernel.model.User`
-- `value.object.finder.cache.enabled.com.liferay.portal.kernel.model.User`
-- `value.object.column.bitmask.enabled.com.liferay.portal.kernel.model.User`
+-   `value.object.entity.cache.enabled.com.liferay.portal.kernel.model.User`
+-   `value.object.finder.cache.enabled.com.liferay.portal.kernel.model.User`
+-   `value.object.column.bitmask.enabled.com.liferay.portal.kernel.model.User`
 
 #### Who is affected?
 
@@ -642,11 +664,12 @@ There's no direct replacement for the removed feature. You must remove these pro
 
 This change was made because these properties are not useful for an entity.
 
----------------------------------------
+---
 
 ### Dynamic Data Mapping fields in Elasticsearch have changed to a nested document
-- **Date:** 2020-Jul-27
-- **JIRA Ticket:** [LPS-103224](https://issues.liferay.com/browse/LPS-103224)
+
+-   **Date:** 2020-Jul-27
+-   **JIRA Ticket:** [LPS-103224](https://issues.liferay.com/browse/LPS-103224)
 
 #### What changed?
 
@@ -654,11 +677,11 @@ Dynamic Data Mapping fields in Elasticsearch that start with `ddm__keyword__` an
 
 The `ddmFieldArray` has several entries with following fields:
 
-- `ddmFieldName`: Contains the Dynamic Data Mapping structure field name. This name is generated using `DDMIndexer.encodeName` methods.
-- `ddmFieldValue*`: Contains the indexed data. The name of this field is generated using `DDMIndexer.getValueFieldName` and depends on the field's data type and language.
-- `ddmValueFieldName`: Contains the index field name where the indexed data is stored.
+-   `ddmFieldName`: Contains the Dynamic Data Mapping structure field name. This name is generated using `DDMIndexer.encodeName` methods.
+-   `ddmFieldValue*`: Contains the indexed data. The name of this field is generated using `DDMIndexer.getValueFieldName` and depends on the field's data type and language.
+-   `ddmValueFieldName`: Contains the index field name where the indexed data is stored.
 
- This change is not applied if you are using the Solr search engine.
+This change is not applied if you are using the Solr search engine.
 
 #### Who is affected?
 
@@ -672,30 +695,31 @@ There are some examples in Liferay code. For example, [DDMIndexerImpl](https://g
 
 You can also restore the legacy behavior from System Settings and continue using `ddm__keyword__*` and `ddm__text__*` fields.
 
-1. Go to *System Settings* &rarr; *Dynamic Data Mapping* &rarr; *Dynamic Data Mapping Indexer*.
-1. Select *Enable Legacy Dynamic Data Mapping Index Fields*.
+1. Go to _System Settings_ &rarr; _Dynamic Data Mapping_ &rarr; _Dynamic Data Mapping Indexer_.
+1. Select _Enable Legacy Dynamic Data Mapping Index Fields_.
 1. Execute a full reindex.
 
 #### Why was this change made?
 
-This change was made to avoid the *Limit of total fields has been exceeded* Elasticsearch error that occurs if you have too many Dynamic Data Mapping structures.
+This change was made to avoid the _Limit of total fields has been exceeded_ Elasticsearch error that occurs if you have too many Dynamic Data Mapping structures.
 
----------------------------------------
+---
 
 ### Removed classNameId related methods from DDM Persistence classes
-- **Date:** 2020-Aug-18
-- **JIRA Ticket:** [LPS-108525](https://issues.liferay.com/browse/LPS-108525)
+
+-   **Date:** 2020-Aug-18
+-   **JIRA Ticket:** [LPS-108525](https://issues.liferay.com/browse/LPS-108525)
 
 ### What changed?
 
 The `countByClassNameId`, `findByClassNameId`, and `removeByClassNameId` methods were removed from the following classes:
 
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructurePersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructurePersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkUtil`
 
 ### Who is affected
 
@@ -709,11 +733,12 @@ You can use the other finder and counter methods.
 
 These methods were removed as part of the solution for [LPS-108525](https://issues.liferay.com/browse/LPS-108525).
 
----------------------------------------
+---
 
 ### Removed com.liferay.dynamic.data.mapping.util.BaseDDMDisplay Method
-- **Date:** 2020-Aug-18
-- **JIRA Ticket:** [LPS-103549](https://issues.liferay.com/browse/LPS-103549)
+
+-   **Date:** 2020-Aug-18
+-   **JIRA Ticket:** [LPS-103549](https://issues.liferay.com/browse/LPS-103549)
 
 ### What changed?
 
@@ -731,11 +756,12 @@ You can use `isShowAddButton(Group scopeGroup)` method instead of this method.
 
 This method was removed as part of a clean up refactor.
 
----------------------------------------
+---
 
 ### Moving Lexicon icons path
-- **Date:** 2020-Aug-17
-- **JIRA Ticket:** [LPS-115812](https://issues.liferay.com/browse/LPS-115812)
+
+-   **Date:** 2020-Aug-17
+-   **JIRA Ticket:** [LPS-115812](https://issues.liferay.com/browse/LPS-115812)
 
 ### What changed?
 
@@ -753,4 +779,4 @@ Update the path to reference `clay` instead of `lexicon`
 
 This change was made to unify references to the icon sprite map.
 
----------------------------------------
+---

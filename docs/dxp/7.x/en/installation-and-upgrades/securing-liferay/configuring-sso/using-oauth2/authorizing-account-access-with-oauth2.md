@@ -6,8 +6,8 @@ Once you have an application registered, you can start authorizing users. To do 
 
 The most common OAuth flow is the Authorization Code flow, used for web applications. The URL for this requires the following request parameters:
 
-* `response_type`
-* `client_id`
+-   `response_type`
+-   `client_id`
 
 To construct a URL for this authorization, follow this pattern:
 
@@ -43,11 +43,11 @@ In the body of HTTP response to this request, you receive JSON like this:
 
 ```json
 {
-  "access_token": "[authorization server generated access token]",
-  "token_type": "Bearer",
-  "expires_in": 600,
-  "scope": "[the scopes that were authorized by the user]",
-  "refresh_token": "[authorization server generated refresh token]"
+	"access_token": "[authorization server generated access token]",
+	"token_type": "Bearer",
+	"expires_in": 600,
+	"scope": "[the scopes that were authorized by the user]",
+	"refresh_token": "[authorization server generated refresh token]"
 }
 ```
 
@@ -55,7 +55,7 @@ From this you should extract and persist the access token. If you intend to use 
 
 ## PKCE Extended Authorization Code Flow
 
-This flow is the same as above with the addition of the Proof Key for Code Exchange (PKCE). It requires another request parameter: `code_challenge`. This flow is for clients like smartphone applications that may not have sole access to the URL (and thus the request parameters) redirected to by the authorization server after the user authorization. It protects against a malicious application on the same system authorizing itself by reading the response code. To do this, the client application sends a *code challenge* with the authorization request: a string it has generated and which it only knows. To generate this string it must first create another secret string known as the *Code Verifier*, and then apply a transformation to it. After authorization, the code verifier is sent with the authorization code, validating the client.
+This flow is the same as above with the addition of the Proof Key for Code Exchange (PKCE). It requires another request parameter: `code_challenge`. This flow is for clients like smartphone applications that may not have sole access to the URL (and thus the request parameters) redirected to by the authorization server after the user authorization. It protects against a malicious application on the same system authorizing itself by reading the response code. To do this, the client application sends a _code challenge_ with the authorization request: a string it has generated and which it only knows. To generate this string it must first create another secret string known as the _Code Verifier_, and then apply a transformation to it. After authorization, the code verifier is sent with the authorization code, validating the client.
 
 For more detail on how to do this, please refer to the [PKCE specification](https://tools.ietf.org/html/rfc7636).
 
@@ -105,13 +105,13 @@ Once access is granted, users or administrators are free to revoke access whenev
 
 ![Figure 1: Users have complete control over what applications have access to their data in their account profiles.](./authorizing-account-access-with-oauth2/images/01.png)
 
-In their account areas, users can click *OAuth2 Connected Applications* and see a list of applications they've allowed to access their accounts. From here, they can revoke access by clicking the *Remove Access* item in the Action menu or the *Remove Access* button in the detail screen for the application.
+In their account areas, users can click _OAuth2 Connected Applications_ and see a list of applications they've allowed to access their accounts. From here, they can revoke access by clicking the _Remove Access_ item in the Action menu or the _Remove Access_ button in the detail screen for the application.
 
-Administrators can view the authorizations in the Authorizations tab of any app in *Control Panel* &rarr; *Configuration* &rarr; *OAuth2 Administration*.
+Administrators can view the authorizations in the Authorizations tab of any app in _Control Panel_ &rarr; _Configuration_ &rarr; _OAuth2 Administration_.
 
 ![Figure 2: All authorizations for an app appear in the Authorizations tab for the app.](./authorizing-account-access-with-oauth2/images/02.png)
 
-Clicking the *Revoke* button on any listed authorization revokes that application's access to that user's account.
+Clicking the _Revoke_ button on any listed authorization revokes that application's access to that user's account.
 
 ## Summary
 

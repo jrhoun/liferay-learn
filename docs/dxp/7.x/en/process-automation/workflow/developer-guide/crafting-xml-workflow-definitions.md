@@ -3,28 +3,28 @@
 All Workflow definitions in Liferay DXP are written in XML format. To craft your own workflow definition, remember that definitions should reflect real life approval processes.
 
 ```tip::
-   Subscribers using DXP can use a `graphical designer <../user-guide/workflow-designer/workflow-designer-overview.md>`_ to create workflows. If you've already begun crafting workflows in XML, you can upload them and continue in the GUI. 
+   Subscribers using DXP can use a `graphical designer <../user-guide/workflow-designer/workflow-designer-overview.md>`_ to create workflows. If you've already begun crafting workflows in XML, you can upload them and continue in the GUI.
 ```
 
-1. Open the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)). Under Workflow, select _Process Builder_. 
+1. Open the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)). Under Workflow, select _Process Builder_.
 
-1. To add a new Workflow definition click the ![add](../../../images/icon-add.png) icon. 
+1. To add a new Workflow definition click the ![add](../../../images/icon-add.png) icon.
 
-1. You can type your workflow definition into the editor or import one you've created locally. 
+1. You can type your workflow definition into the editor or import one you've created locally.
 
-Once you publish your workflow, it becomes available to be applied everywhere workflow can be enabled. 
+Once you publish your workflow, it becomes available to be applied everywhere workflow can be enabled.
 
 ## Existing Workflow Definitions
 
 Only one workflow definition is installed by default: Single Approver. Several more are embedded in the Liferay source code. These definitions provide good examples of all the features described here.
 
-* [Category Specific](../user-guide/workflow-designer-overview/workflow-processes/category-specific-definition.xml)
-* [Legal Marketing](../user-guide/workflow-designer-overview/workflow-processes/legal-marketing-definition.xml)
-* [Single Approver](../user-guide/workflow-designer-overview/workflow-processes/single-approver-definition.xml)
-* [Single Approver Scripted Assignment](../user-guide/workflow-designer-overview/workflow-processes/single-approver-definition-scripted-assignment.xml)
-Below you'll learn the basics by using the simplest workflow, Single Approver. The Single Approver workflow contains two required States: Start and End, which are named _created_ and _approved_. It also contains two Tasks: _review_ and _update_. These Tasks define _Actions_, such as _approve_, _reject_, and _resubmit_. 
+-   [Category Specific](../user-guide/workflow-designer-overview/workflow-processes/category-specific-definition.xml)
+-   [Legal Marketing](../user-guide/workflow-designer-overview/workflow-processes/legal-marketing-definition.xml)
+-   [Single Approver](../user-guide/workflow-designer-overview/workflow-processes/single-approver-definition.xml)
+-   [Single Approver Scripted Assignment](../user-guide/workflow-designer-overview/workflow-processes/single-approver-definition-scripted-assignment.xml)
+    Below you'll learn the basics by using the simplest workflow, Single Approver. The Single Approver workflow contains two required States: Start and End, which are named _created_ and _approved_. It also contains two Tasks: _review_ and _update_. These Tasks define _Actions_, such as _approve_, _reject_, and _resubmit_.
 
-When breaking down your workflow into its components, then, think about your States, Tasks, and Actions. Once you have them defined, you're ready to get to work. Now you're ready to put it all together by seeing how the Single Approver workflow works. 
+When breaking down your workflow into its components, then, think about your States, Tasks, and Actions. Once you have them defined, you're ready to get to work. Now you're ready to put it all together by seeing how the Single Approver workflow works.
 
 ## Schema
 
@@ -70,8 +70,8 @@ Each workflow definition begins and ends with a _State Node_. Create a _Start_ n
 
 In this example, the _Start_ node has the following properties:
 
-* It is the initial state. 
-* The node transitions to a [_Task_ node](./workflow-task-node-reference.md) called _review_.
+-   It is the initial state.
+-   The node transitions to a [_Task_ node](./workflow-task-node-reference.md) called _review_.
 
 The _End_ node looks like this:
 
@@ -96,7 +96,7 @@ The _End_ node looks like this:
 	</state>
 ```
 
-When the workflow transitions to the final state, the submission is approved. To keep the example simple, there are no notifications, but they could have been added. The end node has a [script](./using-the-script-engine-in-workflow.md) to set the workflow status to `approved`. 
+When the workflow transitions to the final state, the submission is approved. To keep the example simple, there are no notifications, but they could have been added. The end node has a [script](./using-the-script-engine-in-workflow.md) to set the workflow status to `approved`.
 
 See the [Workflow Definition Node Reference](./workflow-definition-node-reference) to learn more.
 
@@ -104,13 +104,13 @@ See the [Workflow Definition Node Reference](./workflow-definition-node-referenc
 
 Task nodes define what Users must do in the workflow process. Unlike other workflow nodes, task nodes have Assignments; you can assign the task to a User or a [Role](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md).
 
-Task nodes can contain task timers, actions (which can include notifications and scripts), and transitions. See the [Workflow Task Node Reference](./workflow-task-node-reference.md) to learn more. The Single Approver workflow contains two Tasks: _review_ and _update_. 
+Task nodes can contain task timers, actions (which can include notifications and scripts), and transitions. See the [Workflow Task Node Reference](./workflow-task-node-reference.md) to learn more. The Single Approver workflow contains two Tasks: _review_ and _update_.
 
 ### Creating a Review Task Node
 
-The review Task has two outcomes: reject or approve. This one includes a `<notification>` element that tells the reviewer when a submission is ready for review. If assigned to a User, that User must review the asset. If assigned to a Role, anyone with that Role can review the asset. 
+The review Task has two outcomes: reject or approve. This one includes a `<notification>` element that tells the reviewer when a submission is ready for review. If assigned to a User, that User must review the asset. If assigned to a Role, anyone with that Role can review the asset.
 
-There are two possible transitions: _approve_ and _reject_. When approved, workflow transitions to the end State, which was earlier called `approved`. When rejected, workflow translations to the update Task. 
+There are two possible transitions: _approve_ and _reject_. When approved, workflow transitions to the end State, which was earlier called `approved`. When rejected, workflow translations to the update Task.
 
 ```xml
     <task>
@@ -200,11 +200,11 @@ There are two possible transitions: _approve_ and _reject_. When approved, workf
     </task>
 ```
 
-The _Review_ Task node has been added and configured. Excellent! Now you have only the update Task left. 
+The _Review_ Task node has been added and configured. Excellent! Now you have only the update Task left.
 
 ### Creating an Update Task Node
 
-If a submission enters the _reject_ Transition in the Review Task, it comes to the update Task so it can be re-submitted for review. When the asset arrives here, the similarly named _reject_ Action runs and assigns the workflow status to `denied` and then `pending`. A notification is sent to the original author. The asset is also reassigned to the original author. From here, the original author can resubmit the asset, presumably after editing it to resolve whatever issues caused it to be rejected. 
+If a submission enters the _reject_ Transition in the Review Task, it comes to the update Task so it can be re-submitted for review. When the asset arrives here, the similarly named _reject_ Action runs and assigns the workflow status to `denied` and then `pending`. A notification is sent to the original author. The asset is also reassigned to the original author. From here, the original author can resubmit the asset, presumably after editing it to resolve whatever issues caused it to be rejected.
 
 ```xml
     <task>
@@ -250,19 +250,19 @@ If a submission enters the _reject_ Transition in the Review Task, it comes to t
 
 ## Conclusion
 
-Great! Now add the closing tag: 
+Great! Now add the closing tag:
 
 ```xml
 </workflow-definition>
 ```
 
-The Single Approver workflow is now complete. Now that you see how workflows are created, you can learn about all the other possible options, such as forks, joins, and conditions. Liferay's workflow system can implement any processes you need. 
+The Single Approver workflow is now complete. Now that you see how workflows are created, you can learn about all the other possible options, such as forks, joins, and conditions. Liferay's workflow system can implement any processes you need.
 
 ## Additional Information
 
-* [Workflow Definition Node Reference](./workflow-definition-node-reference.md)
-* [Workflow Task Node Reference](./workflow-task-node-reference.md)
-* [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
-* [Managing Workflows](../user-guide/managing-workflows.md)
-* [Workflow Designer Overview](../user-guide/workflow-designer-overview.md)
-* [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+-   [Workflow Definition Node Reference](./workflow-definition-node-reference.md)
+-   [Workflow Task Node Reference](./workflow-task-node-reference.md)
+-   [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
+-   [Managing Workflows](../user-guide/managing-workflows.md)
+-   [Workflow Designer Overview](../user-guide/workflow-designer-overview.md)
+-   [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

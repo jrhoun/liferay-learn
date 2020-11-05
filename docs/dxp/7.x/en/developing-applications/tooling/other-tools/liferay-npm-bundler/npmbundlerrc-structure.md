@@ -6,7 +6,7 @@ See the [default preset reference](./how-the-default-preset-configures-the-lifer
 
 ## The Structure
 
-The `.npmbundlerrc` file has four possible phase definitions: *copy-process*, *pre-process*, *post-process*, and *babel*. These phase definitions are explained in more detail below:
+The `.npmbundlerrc` file has four possible phase definitions: _copy-process_, _pre-process_, _post-process_, and _babel_. These phase definitions are explained in more detail below:
 
 **Copy-Process:** Defined with the `copy-plugins` property (only available for dependency packages). Specifies which files should be copied or excluded from each given package.
 
@@ -18,7 +18,7 @@ The `.npmbundlerrc` file has four possible phase definitions: *copy-process*, *p
   During this phase, Babel transforms package files (for example, to convert them to AMD format, if necessary), but doesn't transpile them. In theory, you could also transpile them by configuring the proper plugins. We recommend transpiling before running the bundler, to avoid mixing both unrelated processes.
 ```
 
-**Post-Process:** Defined with the `post-plugins` property. An alternative to using the *pre-process* phase, this specifies plugins to run after the Babel phase has completed.
+**Post-Process:** Defined with the `post-plugins` property. An alternative to using the _pre-process_ phase, this specifies plugins to run after the Babel phase has completed.
 
 Here's an example of a `.npmbundlerrc` configuration:
 
@@ -115,13 +115,13 @@ Below are the standard configuration options for the `.npmbundlerrc` file:
 
 ```json
 {
-  "config": {
-    "imports": {
-      "vuejs-provider": {
-        "vue": "^2.0.0"
-      }
-    }
-  }
+	"config": {
+		"imports": {
+			"vuejs-provider": {
+				"vue": "^2.0.0"
+			}
+		}
+	}
 }
 ```
 
@@ -141,17 +141,17 @@ Below are the standard configuration options for the `.npmbundlerrc` file:
 
 `"\"`: plugins' configuration for dependency packages.
 
-*(asterisk)*: Defines the default plugin configuration for all npm packages. It contains four values identified by a corresponding key. Keys `copy-plugins`, `plugins` and `post-plugins` identify arrays of `liferay-npm-bundler` plugins to apply in the copy, pre and post process steps. Key `.babelrc` identifies an object specifying the configuration to use in the Babel step and has the same structure of a standard `.babelrc` file.
+_(asterisk)_: Defines the default plugin configuration for all npm packages. It contains four values identified by a corresponding key. Keys `copy-plugins`, `plugins` and `post-plugins` identify arrays of `liferay-npm-bundler` plugins to apply in the copy, pre and post process steps. Key `.babelrc` identifies an object specifying the configuration to use in the Babel step and has the same structure of a standard `.babelrc` file.
 
 `exclude:` Defines glob expressions of files to exclude from bundling from all or specific packages. Each list is an array identified by one of the following keys: `*` (any package), `{package name}` (any version of the package), or `{package name}@{version}` (a specific version of a package). Below is an example configuration:
 
 ```json
 {
-  "exclude": {
-    "*": ["__tests__/**/*"],
-    "is-object": ["test/**/*"],
-    "is-array@1.0.1": ["test/**/*", "Makefile"]
-  }
+	"exclude": {
+		"*": ["__tests__/**/*"],
+		"is-object": ["test/**/*"],
+		"is-array@1.0.1": ["test/**/*", "Makefile"]
+	}
 }
 ```
 
@@ -159,7 +159,7 @@ Below are the standard configuration options for the `.npmbundlerrc` file:
 
 ```json
 {
-  "ignore": ["lib/legacy/**/*.js"]
+	"ignore": ["lib/legacy/**/*.js"]
 }
 ```
 
@@ -173,46 +173,46 @@ Below are the standard configuration options for the `.npmbundlerrc` file:
 
 `rules:` Defines rules to apply to the projects source files with the loader. Rules must have a `use` array property that defines the loader to use, which can be specified using a package name or an object with `loader` and `options` properties if applicable, and one or more of the properties below:
 
-* `test`: Defines a regular expression to filter files in the `sources` folders to determine whether to apply rules to them. The project-relative path of each eligible file is compared against the regular expression and files that match are processed by the loaders.
-* `exclude`: Refines the `test` expression by specifying files to exclude.
-* `include`: Refines the `test` expression by specifying files to include.
+-   `test`: Defines a regular expression to filter files in the `sources` folders to determine whether to apply rules to them. The project-relative path of each eligible file is compared against the regular expression and files that match are processed by the loaders.
+-   `exclude`: Refines the `test` expression by specifying files to exclude.
+-   `include`: Refines the `test` expression by specifying files to include.
 
 Here's an example configuration:
 
 ```json
 {
-  "rules": [
-    {
-      "test": "\\.js$",
-      "exclude": "node_modules",
-      "use": [
-        {
-          "loader": "babel-loader",
-          "options": {
-            "presets": ["env", "react"]
-          }
-        }
-      ]
-    },
-    {
-      "test": "\\.css$",
-      "use": ["style-loader"]
-    },
-    {
-      "test": "\\.json$",
-      "use": ["json-loader"]
-    }
-  ]
+	"rules": [
+		{
+			"test": "\\.js$",
+			"exclude": "node_modules",
+			"use": [
+				{
+					"loader": "babel-loader",
+					"options": {
+						"presets": ["env", "react"]
+					}
+				}
+			]
+		},
+		{
+			"test": "\\.css$",
+			"use": ["style-loader"]
+		},
+		{
+			"test": "\\.json$",
+			"use": ["json-loader"]
+		}
+	]
 }
 ```
 
 `sources:` Rules apply to files in these project folders. Folders can be nested (e.g. `/src/main/resources/`) and must be written using POSIX path separators (i.e. use `/` instead of `\` on Win32 systems). Note that rules are automatically applied to package dependency files of the project.
 
-Here's an example configuration: 
+Here's an example configuration:
 
 ```json
 {
-  "sources": ["src", "assets"]
+	"sources": ["src", "assets"]
 }
 ```
 
@@ -220,75 +220,75 @@ Here's an example configuration:
 
 Since version 2.2.0, the liferay-npm-bundler can create widget OSGi bundles for you. See [Creating and Bundling JavaScript Widgets with JavaScript Tooling](../liferay-js-generator.md) for complete instructions. Here are the configuration options for OSGi bundle creation:
 
-* **create-jar**: Creates an OSGi bundle when set to a truthy value. When set to `true`, all sub-options take default values. When an object is passed, each sub-option can be configured individually. Note that you can also pass this as a build flag: `$ liferay-npm-bundler --create-` or `$ liferay-npm-bundler -j`. The default value is `false`.
+-   **create-jar**: Creates an OSGi bundle when set to a truthy value. When set to `true`, all sub-options take default values. When an object is passed, each sub-option can be configured individually. Note that you can also pass this as a build flag: `$ liferay-npm-bundler --create-` or `$ liferay-npm-bundler -j`. The default value is `false`.
 
 ```json
 {
-  "create-jar": true
+	"create-jar": true
 }
 ```
 
-* **create-jar.auto-deploy-portlet**: This option is deprecated. Use the `create-jar.features.js-extender` option instead.
+-   **create-jar.auto-deploy-portlet**: This option is deprecated. Use the `create-jar.features.js-extender` option instead.
 
-* **create-jar.features.configuration**: Specifies the file describing the system (OSGi) and widget instance (widget preferences, as defined in the Portlet spec) configuration to use. (see [Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md) for more information on the required settings configuration). The default value is `features/configuration.json` if that file exists, otherwise the default is `undefined`.
+-   **create-jar.features.configuration**: Specifies the file describing the system (OSGi) and widget instance (widget preferences, as defined in the Portlet spec) configuration to use. (see [Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md) for more information on the required settings configuration). The default value is `features/configuration.json` if that file exists, otherwise the default is `undefined`.
 
 ```json
 {
-  "create-jar": {
-    "features": {
-      "configuration": "features/configuration.json"
-    }
-  }
+	"create-jar": {
+		"features": {
+			"configuration": "features/configuration.json"
+		}
+	}
 }
 ```
 
-* **create-jar.output-dir:** Specifies where to place the final JAR.
+-   **create-jar.output-dir:** Specifies where to place the final JAR.
 
 ```json
 {
-  "create-jar": {
-    "output-dir": "dist"
-  }
+	"create-jar": {
+		"output-dir": "dist"
+	}
 }
 ```
 
-* **create-jar.features.js-extender:** Controls whether to process the OSGi bundle with the JS Portlet Extender. You can also specify the minimum required version of the Extender to use for the bundle. This can be useful if you want to use advanced features in your bundle, but you want it to be deployable in older versions of the Extender. Pass the string `"any"` to let the bundle deploy in any version of the Extender. If `true`, the liferay-npm-bundler automatically determines the minimum version of the Extender required for the features used in the bundle. The default value is `true`. Here's an example configuration:
+-   **create-jar.features.js-extender:** Controls whether to process the OSGi bundle with the JS Portlet Extender. You can also specify the minimum required version of the Extender to use for the bundle. This can be useful if you want to use advanced features in your bundle, but you want it to be deployable in older versions of the Extender. Pass the string `"any"` to let the bundle deploy in any version of the Extender. If `true`, the liferay-npm-bundler automatically determines the minimum version of the Extender required for the features used in the bundle. The default value is `true`. Here's an example configuration:
 
 ```json
 {
-  "create-jar": {
-    "features": {
-      "js-extender": "1.1.0"
-    }
-  }
+	"create-jar": {
+		"features": {
+			"js-extender": "1.1.0"
+		}
+	}
 }
 ```
 
-* **create-jar.features.web-context:** Specifies the context path to use for publishing bundle's static resources. The default value is `/{project name}-{project version}`.
+-   **create-jar.features.web-context:** Specifies the context path to use for publishing bundle's static resources. The default value is `/{project name}-{project version}`.
 
 ```json
 {
-  "create-jar": {
-    "features": {
-      "web-context": "/my-project"
-    }
-  }
+	"create-jar": {
+		"features": {
+			"web-context": "/my-project"
+		}
+	}
 }
 ```
 
-* **create-jar.features.localization:** Specifies the L10N file to use for the bundle See [Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md) for more information on using localization in your widget. The default value is `features/localization/Language` if a properties file with that base name exists, otherwise the default is `undefined`.
+-   **create-jar.features.localization:** Specifies the L10N file to use for the bundle See [Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md) for more information on using localization in your widget. The default value is `features/localization/Language` if a properties file with that base name exists, otherwise the default is `undefined`.
 
 ```json
 {
-  "create-jar": {
-    "features": {
-      "localization": "features/localization/Language"
-    }
-  }
+	"create-jar": {
+		"features": {
+			"localization": "features/localization/Language"
+		}
+	}
 }
 ```
 
-* **create-jar.features.settings:** This option is deprecated. Use the `create-jar.features.configuration` option instead.
+-   **create-jar.features.settings:** This option is deprecated. Use the `create-jar.features.configuration` option instead.
 
 ```note::
   Plugins' configuration specifies the options for configuring plugins in all the possible phases, as well as the ``.babelrc`` file to use when running Babel (see `Babel's documentation <https://babeljs.io/docs/usage/babelrc/>`_ for more information on that file format).

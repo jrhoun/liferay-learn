@@ -18,6 +18,6 @@ Once the media files have been uploaded, clicking on a file automatically starts
 
 ## Additional Information
 
-* [Managing Folders](../../uploading-and-managing/creating-folders.md)
-* [Uploading Files](../../uploading-and-managing/uploading-files.md)
-* [Enabling Xuggler and ImageMagick for previews](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)
+-   [Managing Folders](../../uploading-and-managing/creating-folders.md)
+-   [Uploading Files](../../uploading-and-managing/uploading-files.md)
+-   [Enabling Xuggler and ImageMagick for previews](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)

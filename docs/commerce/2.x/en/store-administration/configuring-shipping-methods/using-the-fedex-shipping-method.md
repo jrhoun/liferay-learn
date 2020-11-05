@@ -30,15 +30,15 @@ To activate FedEx as a shipping method for your chosen channel:
 1. Switch the _Active_ toggle to _YES_.
 1. Click the _Configuration_ tab.
 1. Enter the following:
-    * **URL**
-    * **Key**
-    * **Password**
-    * **Account Number**
-    * **Meter Number**
+    - **URL**
+    - **Key**
+    - **Password**
+    - **Account Number**
+    - **Meter Number**
 1. Select the Dropoff Type.
 1. Check the appropriate checkboxes:
-    * **Use Residential Rates**
-    * **Use Discounted Rates**
+    - **Use Residential Rates**
+    - **Use Discounted Rates**
 1. Check the box for the _Service Type_.
 1. Enter the _Max Weight_ in both pounds and kilograms.
 1. Enter the _Max Size_ in both inches and centimeters.
@@ -55,11 +55,11 @@ To activate FedEx as a shipping method for your site:
 1. Click _FedEx_.
 1. Click the _Configurations_ tab.
 1. Enter the following:
-    * **URL**
-    * **Key**
-    * **Password**
-    * **Account Number**
-    * **Meter Number**
+    - **URL**
+    - **Key**
+    - **Password**
+    - **Account Number**
+    - **Meter Number**
 1. Select the Dropoff Type.
 1. Check any of the _Service Types_ options applicable to your business needs.
 1. Select the Packing Type.
@@ -75,8 +75,8 @@ The store is now configured to use FedEx as a shipping method. Note that the sto
 
 FedEx Web Services Developer Guide
 
-* [FedEx Web Services](https://www.fedex.com/en-us/developer/web-services.html)
+-   [FedEx Web Services](https://www.fedex.com/en-us/developer/web-services.html)
 
 To add other shipping methods in Liferay Commerce using extension points:
 
-* [Creating New Shipping Methods](https://help.liferay.com/hc/en-us/articles/360020751831)
+-   [Creating New Shipping Methods](https://help.liferay.com/hc/en-us/articles/360020751831)

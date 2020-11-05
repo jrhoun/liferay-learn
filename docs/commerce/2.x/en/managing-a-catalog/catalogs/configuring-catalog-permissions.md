@@ -16,9 +16,9 @@ To define catalog management permissions for an existing role:
 1. Click the (![Add icon](../../images/icon-add.png)) to add a new Regular Role.
 1. Enter the following:
 
-     * **Title**: Catalog Manager.
-     * **Description** This role manages catalogs.
-     * **Key**: (generated based on the title)
+    - **Title**: Catalog Manager.
+    - **Description** This role manages catalogs.
+    - **Key**: (generated based on the title)
 
 1. Click _Save_.
 1. Click _Define Permissions_.
@@ -57,5 +57,5 @@ The catalog's permissions are now configured.
 
 ## Additional Information
 
-* [Understanding Roles and Permissions](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
-* [Configuring Product Visibility Using Channels](../../starting-a-store/channels/configuring-product-visibility-using-channels.md)
+-   [Understanding Roles and Permissions](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+-   [Configuring Product Visibility Using Channels](../../starting-a-store/channels/configuring-product-visibility-using-channels.md)

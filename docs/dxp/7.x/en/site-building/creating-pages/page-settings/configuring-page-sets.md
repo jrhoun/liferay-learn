@@ -28,7 +28,7 @@ To change the current theme,
 
 1. Click _Save_ to apply the new Theme to the Page Set.
 
-You can enter custom CSS in the *CSS* section for modifying your theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./configuring-individual-pages.md#look-and-feel)).
+You can enter custom CSS in the _CSS_ section for modifying your theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./configuring-individual-pages.md#look-and-feel)).
 
 ### Logo
 
@@ -43,7 +43,7 @@ By default, the Liferay logo is used for your Site's pages. To use your own logo
       This option is enabled by default and can't be disabled if the *Allow Site Administrators to set their own logo* option is disabled in *Instance Settings*. Removing the Site name is not available for the default Liferay Site---you can configure this only for new Sites and User pages.
     ```
 
-1. Click *Save* to apply the changes.
+1. Click _Save_ to apply the changes.
 
 The Site's logo settings are now configured.
 
@@ -87,7 +87,7 @@ This generates a sitemap you can send to some search engines so they can crawl y
 
 ## Using the Page Tree Menu
 
-In Liferay DXP 7.3, you can access the same settings from the _Page Tree_ menu: 
+In Liferay DXP 7.3, you can access the same settings from the _Page Tree_ menu:
 
 1. Click the (![icon-page-tree](../../../images/icon-page-tree.png)) icon.
 1. Select _Public Pages_ or _Private Pages_ from the dropdown menu.
@@ -97,4 +97,4 @@ In Liferay DXP 7.3, you can access the same settings from the _Page Tree_ menu:
 
 ## Additional Information
 
-* [Configuring Individual Pages](./configuring-individual-pages.md)
+-   [Configuring Individual Pages](./configuring-individual-pages.md)

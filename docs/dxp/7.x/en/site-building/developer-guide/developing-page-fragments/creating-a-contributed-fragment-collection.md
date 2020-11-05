@@ -56,7 +56,7 @@ First, deploy an example to see what a contributed Fragment Collection looks lik
     INFO  [fileinstall-/opt/liferay/osgi/modules][BundleStartStopLogger:39] STARTED com.liferay.learn.fragments_1.0.0 [1121]
     ```
 
-1. Verify that the contributed Collection and Fragment are available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to *Site Builder* &rarr; *Page Fragments* under the Site Menu.
+1. Verify that the contributed Collection and Fragment are available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to _Site Builder_ &rarr; _Page Fragments_ under the Site Menu.
 
     ![The contributed Collection Fragment appears with the default Fragments.](./creating-a-contributed-fragment-collection/images/01.png)
 
@@ -97,9 +97,9 @@ private ServletContext _servletContext;
 
 The `bnd.bnd` file includes a few properties that must be defined for the Collection:
 
-* The `osgi.web.symbolicname` matches the `Bundle-SymbolicName` in the `bnd.bnd` file.
-* The `Web-ContextPath` Header indicates the module folder that contains the Collection, so the `ServletContext` is correctly generated.
-* The `-dsannotations-options` enables the Declarative Service annotations found in the class hierarchy of the Component class.
+-   The `osgi.web.symbolicname` matches the `Bundle-SymbolicName` in the `bnd.bnd` file.
+-   The `Web-ContextPath` Header indicates the module folder that contains the Collection, so the `ServletContext` is correctly generated.
+-   The `-dsannotations-options` enables the Declarative Service annotations found in the class hierarchy of the Component class.
 
 See the example project's [`bnd.bnd`](https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) for a reference of these values.
 
@@ -119,11 +119,8 @@ Follow these steps to add a new packaged Fragment to the contributed Fragment Co
 
     ```json
     {
-        "fragments": [
-            "marketing-card",
-            "marketing-jumbotron"
-        ],
-        "name": "Marketing Collection"
+    	"fragments": ["marketing-card", "marketing-jumbotron"],
+    	"name": "Marketing Collection"
     }
     ```
 
@@ -149,7 +146,7 @@ You can build and deploy the updated contributed Fragment Collection as you did 
       If testing on Windows, you may need to build the module first with `.\gradlew build` and then manually copy the JAR to `docker cp docker-container-name:/opt/liferay/osgi/modules` directly if deployment fails.
     ```
 
-1. Verify that the updated Fragment is included in the contributed Collection. Open your browser to `https://localhost:8080`, and open the Product Menu and go to *Site Builder* &rarr; *Page Fragments* under the Site Menu.
+1. Verify that the updated Fragment is included in the contributed Collection. Open your browser to `https://localhost:8080`, and open the Product Menu and go to _Site Builder_ &rarr; _Page Fragments_ under the Site Menu.
 
     ![The Custom Banner Fragment is included in the contributed Collection.](./creating-a-contributed-fragment-collection/images/02.png)
 
@@ -157,5 +154,5 @@ Congratulations! You now know how to create a contributed Fragment Collection, a
 
 ## Related Information
 
-* [Developing Page Fragments with the Fragments Toolkit](./using-the-fragments-toolkit.md)
-* [Developing Page Fragments with the Editor](./using-the-fragments-editor.md)
+-   [Developing Page Fragments with the Fragments Toolkit](./using-the-fragments-toolkit.md)
+-   [Developing Page Fragments with the Editor](./using-the-fragments-editor.md)

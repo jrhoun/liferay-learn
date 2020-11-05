@@ -3,6 +3,7 @@
 Settings for Liferay DXP's services and applications are applied at one of four levels, or _scopes_: System, Virtual Instance, Site, or Widget. Settings made in System Settings are set at a system-scoped level. For scopes labeled other than System, the System Settings values act as defaults. In other words, they identify where the system-wide configuration is overridden. True system-scoped configurations (those under a category's _System Scope_ heading) are not overridden anywhere.
 
 <!-- Ideally, I think it would be more helpful for the below image to be a diagram that represents the relationship scopes have to one another. -->
+
 ![Some System Settings categories hold entries of multiple scopes.](./understanding-configuration-scope/images/02.png)
 
 ## Scope Definitions
@@ -30,10 +31,10 @@ If a configuration changed in System Settings is also configurable at a differen
 For example, allowing comments is configurable for each Blogs widget.
 
 1. Set the default behavior at Control Panel &rarr; Configuration &rarr; System Settings &rarr; Blogs (in the Content and Data category).
-1. In the Blogs Entry under Widget Scope, disable the *Enable Comments* checkbox.
+1. In the Blogs Entry under Widget Scope, disable the _Enable Comments_ checkbox.
 1. Add a Blog Entry to a Site's Content & Data &rarr; Blogs application.
 1. Go to a public page and add the Blogs Widget to the page.
-1. Click the Options button (![Options](../../images/icon-app-options.png)) for the widget and select *Configuration*.
+1. Click the Options button (![Options](../../images/icon-app-options.png)) for the widget and select _Configuration_.
 
 You'll see the same Enable Comments checkbox, and its default is now false (unchecked). Checking the box in the Widget Configuration overrides the System Settings entry. Changing the System Settings configuration has no effect on this widget anymore.
 
@@ -41,4 +42,4 @@ You'll see the same Enable Comments checkbox, and its default is now false (unch
 
 ## System Settings and Instance Settings
 
-Instance Settings <!-- link to Instance Settings --> is similar to System Settings, but configures applications and services at the Virtual Instance scope. Like System Settings, the configuration entries in Instance Settings have a *Reset to Default Values* option. In Instance Settings, this removes the custom configuration you provided and makes the current value (whether default or custom) from the system scope the default at the virtual instance scope.
+Instance Settings <!-- link to Instance Settings --> is similar to System Settings, but configures applications and services at the Virtual Instance scope. Like System Settings, the configuration entries in Instance Settings have a _Reset to Default Values_ option. In Instance Settings, this removes the custom configuration you provided and makes the current value (whether default or custom) from the system scope the default at the virtual instance scope.

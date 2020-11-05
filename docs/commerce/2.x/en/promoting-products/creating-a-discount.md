@@ -22,9 +22,9 @@ In the Details section:
 
 1. Enter the following:
 
-    * **Amount**: 20%
-    * **Maximum Discount Amount**: 20.00
-    * **Level**: L1
+    - **Amount**: 20%
+    - **Maximum Discount Amount**: 20.00
+    - **Level**: L1
 
 1. Slide the _Active_ toggle to _YES_.
 
@@ -41,9 +41,9 @@ If using a coupon code,
 1. Wwitch the _Use Coupon Code_ toggle to _Yes_.
 1. Enter the following:
 
-    * **Coupon Code**: spring-sale
-    * **Maximum Total Uses**: 1
-    * **Maximum Uses Per Account**: 1
+    - **Coupon Code**: spring-sale
+    - **Maximum Total Uses**: 1
+    - **Maximum Uses Per Account**: 1
 
 1. Click _Publish_ when finished.
 
@@ -114,7 +114,7 @@ To create a discount:
 1. Select which [Account Groups](../account-management/creating-a-new-account-group.md) this discount applies to. In this example, _US East Coast_.
 1. If using a coupon code, switch the _Use Coupon Code_ toggle to _Yes_. Then enter a code in the _Couple Code_ field. Otherwise leave it as _NO_.
 1. If using a percentage, switch the _Use Percentage_ toggle to _Yes_.
-1. Enter the _Maximum Discount Amount_: $20.00
+1. Enter the _Maximum Discount Amount_: \$20.00
 1. Enter the [_Level_](./introduction-to-discounts.md#tiered-discounts): 20.00. This takes 20% off the subtotal.
 1. Switch the _Active_ toggle to _YES_.
 
@@ -139,7 +139,7 @@ In this example, a Discount Rule has been applied to this particular Discount. C
 
 ## Additional Information
 
-* [Introduction to Discounts](./introduction-to-discounts.md)
-* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
-* [Creating a Price List](../managing-a-catalog/managing-price/creating-a-price-list.md)
-* [Adding Tiered Pricing](../managing-a-catalog/managing-price/adding-tiered-pricing.md)
+-   [Introduction to Discounts](./introduction-to-discounts.md)
+-   [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
+-   [Creating a Price List](../managing-a-catalog/managing-price/creating-a-price-list.md)
+-   [Adding Tiered Pricing](../managing-a-catalog/managing-price/adding-tiered-pricing.md)

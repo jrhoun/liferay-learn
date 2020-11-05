@@ -8,7 +8,7 @@ This article documents how to deactivate a country in the Control Panel.
 1. Click _Countries_.
 1. Click on the country to be deactivated (Vietnam in this example).
 1. Switch the _Billing Allowed_ toggle to _No_.
-1. Switch the _Shipping Allowed_ toggle to _No_.  
+1. Switch the _Shipping Allowed_ toggle to _No_.
 
     ![Deactivating a country](./deactivating-a-country-for-billing-or-shipping/images/01.png)
 

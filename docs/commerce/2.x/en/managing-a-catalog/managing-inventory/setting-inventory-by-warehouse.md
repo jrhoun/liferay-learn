@@ -4,7 +4,7 @@ Stores with multiple warehouses can manage product inventory on a per warehouse 
 
 To set inventory by warehouse:
 
-1. Go to  _Global Applications_ → _Commerce_ → _Products_.
+1. Go to _Global Applications_ → _Commerce_ → _Products_.
 1. Click on a product (for example _U-Joint_).
 1. Click the _SKUs_ sub-tab.
 1. Click on the SKU ID (_MIN-55861_).
@@ -32,9 +32,9 @@ To transfer stock between warehouses:
 
 1. Enter the following:
 
-    * **Quantity**: 40
-    * **Source**: United States - Southwest
-    * **Destination**: United States - Northwest
+    - **Quantity**: 40
+    - **Source**: United States - Southwest
+    - **Destination**: United States - Northwest
 
     ![Designate the quantity, source, and destination.](./setting-inventory-by-warehouse/images/03.png)
 
@@ -76,9 +76,9 @@ To transfer stock between warehouses:
 
 1. Enter the following:
 
-    * **Quantity**: 40
-    * **Source**: United States - Southwest
-    * **Destination**: United States - Northwest
+    - **Quantity**: 40
+    - **Source**: United States - Southwest
+    - **Destination**: United States - Northwest
 
     ![Designate the quantity, source, and destination.](./setting-inventory-by-warehouse/images/03.png)
 
@@ -88,5 +88,5 @@ Inventory counts for each warehouse are now updated.
 
 ## Additional Information
 
-* [Adding A New Warehouse](./adding-a-new-warehouse.md)
-* [Inventory Management Reference Guide](./inventory-management-reference-guide.md)
+-   [Adding A New Warehouse](./adding-a-new-warehouse.md)
+-   [Inventory Management Reference Guide](./inventory-management-reference-guide.md)

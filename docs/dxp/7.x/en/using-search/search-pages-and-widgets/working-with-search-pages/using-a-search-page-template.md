@@ -8,17 +8,17 @@ The template can be used in two ways: to [manage search pages](#using-a-page-tem
 
 ## Using a Page Template to Manage Search Pages
 
-Managing Search Pages created using a Page Template can be done by enabling the *Inherit Changes* feature when configuring the Search page.
+Managing Search Pages created using a Page Template can be done by enabling the _Inherit Changes_ feature when configuring the Search page.
 
 To create a search page using a template and have it inherit changes made to the template, do the following:
 
 1. Navigate to your desired Site by using the [Site Menu](../../../getting-started/navigating-dxp.md#site-menu).
 
-1. Go to *Site Builder* &rarr; *Pages* under the Site Menu.
+1. Go to _Site Builder_ &rarr; _Pages_ under the Site Menu.
 
-1. On the Pages page, click the *Add* button (![Add](../../../images/icon-add.png)) to create a top-level page.
+1. On the Pages page, click the _Add_ button (![Add](../../../images/icon-add.png)) to create a top-level page.
 
-1. Select a Search page template. To use the default Search Page template, click on *Global Templates* &rarr; *Search*. Enter a name for your new search page and click *Save*.
+1. Select a Search page template. To use the default Search Page template, click on _Global Templates_ &rarr; _Search_. Enter a name for your new search page and click _Save_.
 
 1. Toggle the _Inherit Changes_ option within the page's configuration to enable inheriting changes.
 
@@ -42,11 +42,11 @@ To create a search page using a template that does not inherit further changes f
 
 1. Navigate to your desired Site by using the [Site Menu](../../../getting-started/navigating-dxp.md#site-menu).
 
-1. Go to *Site Builder* &rarr; *Pages* under the Site Menu.
+1. Go to _Site Builder_ &rarr; _Pages_ under the Site Menu.
 
-1. On the Pages page, click the *Add* button (![Add](../../../images/icon-add.png)) to create a top-level page.
+1. On the Pages page, click the _Add_ button (![Add](../../../images/icon-add.png)) to create a top-level page.
 
-1. Click a Search page template, to use the default Search Page template, click on *Global Templates* &rarr; *Search*. Enter a name for your new search page and click *Save*.
+1. Click a Search page template, to use the default Search Page template, click on _Global Templates_ &rarr; _Search_. Enter a name for your new search page and click _Save_.
 
 1. Leave the _Inherit Changes_ option unchecked in the page configuration.
 

@@ -2,8 +2,8 @@
 
 Publication is the process whereby your Site's Pages, content, and application configurations are transferred from Staging to Live. Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience.
 
-* [The Staging Process](#the-staging-process)
-* [Planning Ahead for Staging](#planning-ahead-for-staging)
+-   [The Staging Process](#the-staging-process)
+-   [Planning Ahead for Staging](#planning-ahead-for-staging)
 
 ## The Staging Process
 
@@ -51,5 +51,5 @@ For Staging, JVMs/networks should be configured with a minimum of 4GB of memory 
 
 ## Additional Information
 
-* [Configuring Local Live Staging](./configuring-local-live-staging.md)
-* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
+-   [Configuring Local Live Staging](./configuring-local-live-staging.md)
+-   [Configuring Remote Live Staging](./configuring-remote-live-staging.md)

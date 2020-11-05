@@ -10,11 +10,11 @@ The Personal Menu is the hub for information and activities for a User that is l
 
 Users can use the personal menu to:
 
-* [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
-* [See what sites they are members of](../site-building/building-sites/site-membership/adding-members-to-sites.md)
-* [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
-* [Sign out](./introduction-to-the-admin-account.md#signing-out)
-* And more...
+-   [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
+-   [See what sites they are members of](../site-building/building-sites/site-membership/adding-members-to-sites.md)
+-   [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
+-   [Sign out](./introduction-to-the-admin-account.md#signing-out)
+-   And more...
 
 ## Global Menu
 
@@ -34,9 +34,9 @@ The _Applications Menu_ contains a variety of links to manage many different app
 
 Here are some of the applications that can be managed from the _Applications Menu_:
 
-* [Collections](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) and the Content Dashboard
-* [Workflow](../process-automation/workflow/user-guide/introduction-to-workflow.md)
-* [App Builder](../developing-applications/developing-low-code-applications/app-builder-overview.md)
+-   [Collections](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) and the Content Dashboard
+-   [Workflow](../process-automation/workflow/user-guide/introduction-to-workflow.md)
+-   [App Builder](../developing-applications/developing-low-code-applications/app-builder-overview.md)
 
 ### Control Panel
 
@@ -46,11 +46,11 @@ The _Control Panel_ contains general administrative actions and configurations t
 
 The following common administrative activities can be done in the Control Panel:
 
-* [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
-* [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
-* [Create new Sites](../site-building/building-sites/adding-a-site.md)
-* Add new Custom Fields to applications on the site
-* And more...
+-   [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
+-   [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
+-   [Create new Sites](../site-building/building-sites/adding-a-site.md)
+-   Add new Custom Fields to applications on the site
+-   And more...
 
 ## Site Menu
 
@@ -64,11 +64,11 @@ The DXP _Site Menu_ on the left side of the screen contains actions, content, an
 
 The following common site building and management activities can be done in the _Site Menu_:
 
-* [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
-* [Creating Content](../content_authoring_and_management.html)
-* [Managing Site Memberships](../site-building/building-sites/site-membership/adding-members-to-sites.md)
-* [Configuring and Optimizing Site Behavior and Functionality](../site_building.html)
-* And more...
+-   [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
+-   [Creating Content](../content_authoring_and_management.html)
+-   [Managing Site Memberships](../site-building/building-sites/site-membership/adding-members-to-sites.md)
+-   [Configuring and Optimizing Site Behavior and Functionality](../site_building.html)
+-   And more...
 
 ## DXP 7.1 and 7.2
 

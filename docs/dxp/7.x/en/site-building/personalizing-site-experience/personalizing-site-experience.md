@@ -28,7 +28,7 @@ Once you've [created User Segments](./segmentation/creating-and-managing-user-se
 
 ### Content Pages
 
-Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../creating-pages/building-and-managing-content-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
+Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create _Experiences_ for any [Content Page](../creating-pages/building-and-managing-content-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
 
 ![You can create unique experiences for different segments of Users.](./personalizing-site-experience/images/02.png)
 
@@ -40,7 +40,7 @@ Content Sets <!-- Link to Content Sets documentation placeholder --> organize an
 
 ### Previewing User Experiences
 
-You can preview the different experiences that users can have on a page by clicking the *Simulation* button (![Simulation](../../images/icon-simulation.png)) at the top of the page and selecting a User Segment from the *Segments* selection to preview the page as a member of that User Segment.
+You can preview the different experiences that users can have on a page by clicking the _Simulation_ button (![Simulation](../../images/icon-simulation.png)) at the top of the page and selecting a User Segment from the _Segments_ selection to preview the page as a member of that User Segment.
 
 Viewing the perspective of a User Segment previews any personalizations for Content Pages or Content Sets for that User Segment.
 
@@ -48,5 +48,5 @@ Viewing the perspective of a User Segment previews any personalizations for Cont
 
 ## Next Steps
 
-* [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md)
-* [Content Page Personalization](./experience-personalization/content-page-personalization.md)
+-   [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md)
+-   [Content Page Personalization](./experience-personalization/content-page-personalization.md)

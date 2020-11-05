@@ -1,12 +1,12 @@
 # Using OpenID Connect
 
-OpenID Connect is a lightweight authentication layer that enables users to authenticate using accounts they have on other systems. It's built on top of the [OAuth 2.0](../using-oauth2/introduction-to-using-oauth2.md) authorization protocol. By using OpenID Connect, you *delegate* user authentication to other providers, making it easy for users with existing accounts to authenticate to your Liferay installation.
+OpenID Connect is a lightweight authentication layer that enables users to authenticate using accounts they have on other systems. It's built on top of the [OAuth 2.0](../using-oauth2/introduction-to-using-oauth2.md) authorization protocol. By using OpenID Connect, you _delegate_ user authentication to other providers, making it easy for users with existing accounts to authenticate to your Liferay installation.
 
 ```note::
    You can add multiple providers to your installation, but Liferay DXP can't be an OpenID Connect provider.
 ```
 
-OpenID Connect's token flow is similar to OAuth 2.0, because it's built on top of its functionality. OAuth 2.0 is only an authorization protocol, so it sends an *access token* that grants access to particular APIs. OpenID Connect adds to this an *identity token* that passes user information like _name_ and _email_, provided the user has authenticated and granted permission.
+OpenID Connect's token flow is similar to OAuth 2.0, because it's built on top of its functionality. OAuth 2.0 is only an authorization protocol, so it sends an _access token_ that grants access to particular APIs. OpenID Connect adds to this an _identity token_ that passes user information like _name_ and _email_, provided the user has authenticated and granted permission.
 
 ## Creating a Client in OpenID Connect Provider
 
@@ -14,7 +14,7 @@ To use OpenID Connect, you must first register it as a client in your provider. 
 
 1. Navigate to the provider's website and create a client.
 
-1. During the creation process, you must supply an *authorized redirect URL* that can process the tokens sent from the provider. Liferay DXP's URL is
+1. During the creation process, you must supply an _authorized redirect URL_ that can process the tokens sent from the provider. Liferay DXP's URL is
 
     ```
     https://[server.domain]/c/portal/login/openidconnect
@@ -26,13 +26,13 @@ Collect the information from the provider. You'll need it create the provider co
 
 ## Configuring an OpenID Connect Provider Connection
 
-Go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect Provider*** under the *System Scope*.
+Go to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Security_ &rarr; _SSO_ and select **_OpenID Connect Provider_** under the _System Scope_.
 
 ![Locating OpenID configurations in the System Settings menu.](using-openid-connect/images/01.png)
 
 Follow these steps:
 
-1. Add the provider by clicking the *Add* button.
+1. Add the provider by clicking the _Add_ button.
 
 1. Use the information you received from the provider to fill out the form.
 
@@ -62,11 +62,11 @@ Follow these steps:
 
 **Token Endpoint:** The provider's URL where tokens can be requested.
 
-**User Information Endpoint:** The OAuth 2.0 protected URL from which user information can be obtained. 
+**User Information Endpoint:** The OAuth 2.0 protected URL from which user information can be obtained.
 
 -->
 
-Once you've filled out the form, click *Save*, and you're ready to enable OpenID Connect authentication.
+Once you've filled out the form, click _Save_, and you're ready to enable OpenID Connect authentication.
 
 An exported configuration results in this System Settings configuration file:
 
@@ -78,11 +78,11 @@ where `[name]` is a descriptive, but unique name for example `provider1`.
 
 ## Enabling OpenID Connect Authentication
 
-1. Go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect*** under *Virtual Instance Scope*.
+1. Go to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Security_ &rarr; _SSO_ and select **_OpenID Connect_** under _Virtual Instance Scope_.
 
     ![Enabling OpenID Connect authentication in Instance Settings.](using-openid-connect/images/02.png)
 
-1. Click the *Enabled* check box, and then click *Save*.
+1. Click the _Enabled_ check box, and then click _Save_.
 
 An exported configuration results in this System Settings configuration file:
 
@@ -98,9 +98,8 @@ A new link appears in the Sign-In Portlet for signing in with OpenID Connect:
 
 1. From the Sign-In Portlet, click the OpenID Connect link at the bottom.
 
-1. Choose a provider and click *Sign In*.
+1. Choose a provider and click _Sign In_.
 
 1. This takes you to your provider's sign in page. Enter your credentials and log in.
 
 1. Upon successful authentication, you're redirected back to Liferay DXP in an authenticated state.
-

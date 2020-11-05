@@ -14,11 +14,11 @@ Liferay Commerce uses Liferay Sites in combination with Site Types. Site Types d
 
 The following site types are available:
 
-* **B2B**: A business-to-business site that requires business accounts. In order to make purchases, individual user accounts _must_ be associated with a business account. Using the _Minium_ accelerator will jump start a site using the B2B site type.
+-   **B2B**: A business-to-business site that requires business accounts. In order to make purchases, individual user accounts _must_ be associated with a business account. Using the _Minium_ accelerator will jump start a site using the B2B site type.
 
-* **B2C**: A business-to-consumer site that requires personal accounts. Any authenticated user may make a purchase. Using the _Speedwell_ accelerator (coming soon) will jump start a site using the B2C site type.
+-   **B2C**: A business-to-consumer site that requires personal accounts. Any authenticated user may make a purchase. Using the _Speedwell_ accelerator (coming soon) will jump start a site using the B2C site type.
 
-* **B2X**: A B2C-B2B site recognizes personal and business accounts. Users may be associated with business accounts, but may also make purchases individually.
+-   **B2X**: A B2C-B2B site recognizes personal and business accounts. Users may be associated with business accounts, but may also make purchases individually.
 
 ## Setting a Site Type
 
@@ -38,6 +38,6 @@ Changing a site's type also changes which accounts appear in its Accounts widget
 
 ## Additional Information
 
-* [Store Setup Overview](../starting-a-store/store-setup-overview.md)
-* [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)
-* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
+-   [Store Setup Overview](../starting-a-store/store-setup-overview.md)
+-   [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)
+-   [Introduction to Accounts](../account-management/introduction-to-accounts.md)

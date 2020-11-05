@@ -11,8 +11,8 @@ Only authenticated users with the [requisite permissions](./wiki-permissions.md)
 1. Click _Content & Data_ &rarr; _Wiki_.
 1. Click the _Add Wiki_ (![Add](../../../images/icon-add.png)) button.
 1. Enter the following:
-    * **Name**: New Node
-    * **Description**: This is a new node for DXP Guest wiki site.
+    - **Name**: New Node
+    - **Description**: This is a new node for DXP Guest wiki site.
 1. Click _Save_.
 
 A new Node has been created. You can create multiple nodes on the same site.
@@ -34,4 +34,4 @@ Once on the new node, click _This page is empty. Edit it to add some text._ to e
 
 ## Additional Information
 
-* [Creating Wiki Pages](./creating-wiki-pages.md)
+-   [Creating Wiki Pages](./creating-wiki-pages.md)

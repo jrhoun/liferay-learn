@@ -20,8 +20,8 @@ Mentioned users receive a site notification and an email informing them that the
 
 ![Mentioned users receive a notification whenever they are mentioned.](./mentioning-users/images/03.png)
 
-The notification and email indicate the author's name and content type, and contain links to the content. You can access your notifications by selecting *Notifications* from your user menu. See [Managing Notifications and Requests](./managing-notifications-and-requests.md)
+The notification and email indicate the author's name and content type, and contain links to the content. You can access your notifications by selecting _Notifications_ from your user menu. See [Managing Notifications and Requests](./managing-notifications-and-requests.md)
 
 ## Additional Information
 
-* [Configuring Mentions](./configuring-mentions.md)
+-   [Configuring Mentions](./configuring-mentions.md)

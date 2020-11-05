@@ -10,8 +10,9 @@ There are two ways to create an account: 1) using the _Account Management_ widge
     ![Add Account Button](./creating-a-new-account/images/01.png)
 
 1. Enter the following:
-    * **Account Name**: South Bay Auto Parts Distributors
-    * **Administrator's Email**: (Enter a valid email address or select from an existing one.)
+
+    - **Account Name**: South Bay Auto Parts Distributors
+    - **Administrator's Email**: (Enter a valid email address or select from an existing one.)
 
     ![Creating a New Account with the Widget](./creating-a-new-account/images/02.png)
 
@@ -30,10 +31,11 @@ Users who have administrative permissions for the store or installation may crea
 
 1. Click the (![Add icon](../images/icon-add.png)) button.
 1. Enter the following:
-    * **Name**: _your company name_ (Acme International)
-    * **Email**: _your company email_ (Acme1@acme.org)
-    * **Type**: _Business_
-    * **VAT Number**: _your VAT number*_
+
+    - **Name**: _your company name_ (Acme International)
+    - **Email**: _your company email_ (Acme1@acme.org)
+    - **Type**: _Business_
+    - **VAT Number**: _your VAT number\*_
 
     ![Creating a New Account in the Control Panel](./creating-a-new-account/images/03.png)
 
@@ -46,10 +48,11 @@ Users who have administrative permissions for the store or installation may crea
 1. Navigate to the _Control Panel_ → _Users_ → _Accounts_.
 1. Click the (![Add icon](../images/icon-add.png)) button to add a new account.
 1. Enter the following:
-    * **Name**: _your company name_ (Acme International)
-    * **Email**: _your company email_ (Acme1@acme.org)
-    * **Type**: _Business_
-    * **VAT Number**: _your VAT number*_
+
+    - **Name**: _your company name_ (Acme International)
+    - **Email**: _your company email_ (Acme1@acme.org)
+    - **Type**: _Business_
+    - **VAT Number**: _your VAT number\*_
 
     ![Creating a New Account in the Control Panel](./creating-a-new-account/images/03.png)
 
@@ -59,8 +62,8 @@ The new account has been created using the Control Panel. Click _Addresses_ to u
 
 ## Additional Information
 
-* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
-* [Assigning User Roles](../account-management/assigning-account-roles.md)
-* [Inviting Users to an Account](../account-management/inviting-users-to-an-account.md)
-* [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md)
-* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
+-   [Introduction to Accounts](../account-management/introduction-to-accounts.md)
+-   [Assigning User Roles](../account-management/assigning-account-roles.md)
+-   [Inviting Users to an Account](../account-management/inviting-users-to-an-account.md)
+-   [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md)
+-   [Creating a New Account Group](../account-management/creating-a-new-account-group.md)

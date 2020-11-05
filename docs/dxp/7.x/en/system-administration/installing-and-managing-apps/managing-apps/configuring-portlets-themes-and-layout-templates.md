@@ -1,4 +1,4 @@
-# Configuring Portlets, Themes,  and Layout Templates
+# Configuring Portlets, Themes, and Layout Templates
 
 The Components listing is the easiest way to configure [portlets](https://help.liferay.com/hc/articles/360029046351-Introduction-to-Portlets), [themes](https://help.liferay.com/hc/articles/360035581011-UI-Architecture#themes), and [layout templates](https://help.liferay.com/hc/articles/360028726612-Layout-Templates). In the Components UI, you can enable/disable them and configure permissions on them.
 
@@ -20,5 +20,5 @@ Congratulations! You can use the Components listing to examine and manage instal
 
 ## Additional Information
 
-* [Maintaining Clustered Installations](../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
-* [Blacklisting Apps](./blacklisting-apps.md)
+-   [Maintaining Clustered Installations](../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+-   [Blacklisting Apps](./blacklisting-apps.md)

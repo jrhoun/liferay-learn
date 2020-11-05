@@ -2,10 +2,10 @@
 
 By default for demonstration purposes, Liferay DXP is configured to use an embedded HSQL database. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS, such as:
 
-* MySQL
-* MariaDB
-* Oracle
-* PostgreSQL
+-   MySQL
+-   MariaDB
+-   Oracle
+-   PostgreSQL
 
 ```important::
    The `Liferay DXP Compatibility Matrix <https://help.liferay.com/hc/en-us/articles/360049238151>`_ lists the supported databases and versions.
@@ -29,10 +29,10 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 **Proprietary Databases:**
 
-| Database | Connector | Vendor Site | Notes |
-| :------- | :-------- | :---------- | :---- |
-| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
-| DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
+| Database | Connector     | Vendor Site                                 | Notes                                                                                                                                                                                                                             |
+| :------- | :------------ | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Oracle   | `ojdbc8.jar`  | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
+| DB2      | `db2jcc4.jar` | [IBM](https://www.ibm.com/)                 | The `dbc2jcc` connector has been deprecated after 3.72.                                                                                                                                                                           |
 
 Congratulations! You configured a database for Liferay DXP.
 
@@ -42,4 +42,4 @@ Congratulations! You configured a database for Liferay DXP.
 
 ## Next Steps
 
-* [Running Liferay for the First Time](./running-liferay-for-the-first-time.md)
+-   [Running Liferay for the First Time](./running-liferay-for-the-first-time.md)

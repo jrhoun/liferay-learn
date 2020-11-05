@@ -2,9 +2,9 @@
 
 _Node_ elements and their sub-elements are fundamental building blocks making up workflow definitions. Nodes often reflect the real life stages of the review process. This is a guide describing the different types of nodes and how to use them.
 
-* [State Nodes](#state-nodes)
-* [Condition Nodes](#condition-nodes)
-* [Forks and Joins](#forks-and-joins)
+-   [State Nodes](#state-nodes)
+-   [Condition Nodes](#condition-nodes)
+-   [Forks and Joins](#forks-and-joins)
 
 ## State Nodes
 
@@ -225,5 +225,5 @@ Here's the `content-review` task from the Category Specific Approval workflow, w
 
 ## Additional Information
 
-* [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
-* [Workflow Task Node Reference](./workflow-task-node-reference.md)
+-   [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
+-   [Workflow Task Node Reference](./workflow-task-node-reference.md)

@@ -2,11 +2,11 @@
 
 Getting started with Liferay DXP Cloud involves ensuring all accounts, environments, and services have been successfully provisioned and deployed in your instance. Begin with the following steps:
 
-- [Check Setup Emails](#check-setup-emails)
-- [Access the DXP Cloud Console](#access-the-dxp-cloud-console)
-- [Access the Provisioned Project Source Code](#access-the-provisioned-project-source-code)
-- [Log in to Your CI and DXP Services](#log-in-to-your-ci-and-dxp-services)
-- [Verify Setup](#verifying-setup)
+-   [Check Setup Emails](#check-setup-emails)
+-   [Access the DXP Cloud Console](#access-the-dxp-cloud-console)
+-   [Access the Provisioned Project Source Code](#access-the-provisioned-project-source-code)
+-   [Log in to Your CI and DXP Services](#log-in-to-your-ci-and-dxp-services)
+-   [Verify Setup](#verifying-setup)
 
 ## Check Setup Emails
 
@@ -56,7 +56,7 @@ See [Configuring Your GitHub Repository](./configuring-your-github-repository.md
 
 Log in to Jenkins (CI) and Liferay DXP to directly access their web interfaces.
 
-Both login credentials are provided in the initial onboarding email, but they are also listed under *Environment Variables* in the *ci* service page of the *infra* environment.
+Both login credentials are provided in the initial onboarding email, but they are also listed under _Environment Variables_ in the _ci_ service page of the _infra_ environment.
 
 See [Logging into Your DXP Cloud Services](./logging-into-your-dxp-cloud-services.md) for detailed instructions.
 
@@ -66,7 +66,7 @@ Before beginning deployment in Liferay DXP Cloud, verify that the correct enviro
 
 ### Verifying Environments
 
-Verify all purchased environments are listed in the DXP Cloud Console [home page](https://console.liferay.cloud/projects) under *Projects*.
+Verify all purchased environments are listed in the DXP Cloud Console [home page](https://console.liferay.cloud/projects) under _Projects_.
 
 ![Figure 3: See provisioned environments in the DXP Cloud Console.](./initial-setup-overview/images/03.png)
 
@@ -78,7 +78,7 @@ Verify that the location for each environment matches the location requested by 
 
 All environment locations are listed on the DXP Cloud Console [home page](https://console.liferay.cloud/projects).
 
-You can also view an environment's location by navigating to its *Overview* page or *Settings* page.
+You can also view an environment's location by navigating to its _Overview_ page or _Settings_ page.
 
 ![Figure 4: View the environment's location in the Overview page.](./initial-setup-overview/images/04.png)
 
@@ -88,9 +88,9 @@ If the environment location does not match the location requested by your team, 
 
 Verify the DXP Cloud stack services are properly deployed:
 
-1. Access the *dev* environment from the DXP Cloud Console.
+1. Access the _dev_ environment from the DXP Cloud Console.
 
-1. Navigate to the *Services* page.
+1. Navigate to the _Services_ page.
 
 ![Figure 5: View the status of DXP Cloud Stack services on the Services page.](./initial-setup-overview/images/05.png)
 
@@ -98,6 +98,6 @@ When properly deployed, the status of all 5 default Cloud Stack services should 
 
 ## Additional Information
 
-- [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
-- [Understanding DXP Cloud Environments](./understanding-dxp-cloud-environments.md)
-- [Logging into Your DXP Cloud Services](./logging-into-your-dxp-cloud-services.md)
+-   [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
+-   [Understanding DXP Cloud Environments](./understanding-dxp-cloud-environments.md)
+-   [Logging into Your DXP Cloud Services](./logging-into-your-dxp-cloud-services.md)

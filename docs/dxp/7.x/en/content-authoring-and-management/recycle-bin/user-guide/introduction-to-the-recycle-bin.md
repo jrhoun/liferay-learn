@@ -16,5 +16,5 @@ If the Recycle Bin is disabled on a site, assets that are deleted are permanentl
 
 ## What's Next
 
-* [Using the Recycle Bin](./using-the-recycle-bin.md)
-* [Configuring the Recycle Bin](./configuring-the-recycle-bin.md)
+-   [Using the Recycle Bin](./using-the-recycle-bin.md)
+-   [Configuring the Recycle Bin](./configuring-the-recycle-bin.md)

@@ -2,7 +2,7 @@
 
 The liferay-npm-bundler is a bundler (like [Webpack](https://webpack.github.io/) or [Browserify](http://browserify.org/)) that targets Liferay Portal as a platform and assumes you're using your npm packages from widgets (as opposed to typical web applications).
 
-The workflow for running npm packages inside widgets is slightly different from standard bundlers. Instead of bundling the JavaScript in a single file, you must *link* all packages together in the browser when the full web page is assembled. Widgets can then share common versions of modules rather than each loading its own copy. The liferay-npm-bundler handles this for you.
+The workflow for running npm packages inside widgets is slightly different from standard bundlers. Instead of bundling the JavaScript in a single file, you must _link_ all packages together in the browser when the full web page is assembled. Widgets can then share common versions of modules rather than each loading its own copy. The liferay-npm-bundler handles this for you.
 
 ```note::
    You can also find information for the liferay-npm-bundler in the `project's Wiki <https://github.com/liferay/liferay-npm-build-tools/wiki>`_.
@@ -28,7 +28,7 @@ The liferay-npm-bundler uses the process below to create the OSGi bundle:
 
 1. For each npm package dependency,
 
-    a. Copy the npm package to the output folder and prefix the bundle's name to it. Note that the bundler stores packages in a plain *bundle-name$package*@*version* format, rather than the standard node_modules tree format. To determine what is copied, the bundler invokes a plugin to filter the package file list.
+    a. Copy the npm package to the output folder and prefix the bundle's name to it. Note that the bundler stores packages in a plain _bundle-name\$package_@_version_ format, rather than the standard node_modules tree format. To determine what is copied, the bundler invokes a plugin to filter the package file list.
 
     b. Run rules on the package files.
 

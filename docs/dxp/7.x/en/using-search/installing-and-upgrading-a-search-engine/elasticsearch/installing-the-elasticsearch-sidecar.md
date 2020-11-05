@@ -1,3 +1,3 @@
-# Installing the Elasticsearch Sidecar 
+# Installing the Elasticsearch Sidecar
 
 Coming soon!

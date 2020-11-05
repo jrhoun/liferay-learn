@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"@liferay/npm-scripts": "^33.0.1"
+		"@liferay/npm-scripts": "^33.1.2"
 	},
 	"description": "Liferay Learn",
 	"license": "ISC",

@@ -11,54 +11,54 @@ Liferay DXP can be configured to use a mail server to send email notifications f
 Follow these steps to configure the mail session from the Control Panel:
 
 1. Sign in as the administrative User (the User specified on the [Basic Configuration page](../../../getting-started/using-the-setup-wizard.md)).
-1. Navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
+1. Navigate to _Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail_.
 1. Enter your values for the [following fields](#mail-configuration-reference):
 
-    * **Incoming POP Server:** pop.gmail.com
-    * **Incoming Port:** 465
-    * **Use a Secure Network Connection:** Flagged
-    * **User Name:** joe.bloggs
-    * **Password:** *****
-    * **Outgoing SMTP Server:** smtp.gmail.com
-    * **Outgoing Port:** 110
-    * **Use a Secure Network Connection:** Flagged
-    * **User Name:** joe.bloggs
-    * **Password:** *****
-    * **Manually specify additional JavaMail properties to override the above configuration:** If there are additional properties you need to specify, supply them here.
+    - **Incoming POP Server:** pop.gmail.com
+    - **Incoming Port:** 465
+    - **Use a Secure Network Connection:** Flagged
+    - **User Name:** joe.bloggs
+    - **Password:** **\***
+    - **Outgoing SMTP Server:** smtp.gmail.com
+    - **Outgoing Port:** 110
+    - **Use a Secure Network Connection:** Flagged
+    - **User Name:** joe.bloggs
+    - **Password:** **\***
+    - **Manually specify additional JavaMail properties to override the above configuration:** If there are additional properties you need to specify, supply them here.
 
-      ![Configuring a Mail Server](./connecting-to-a-mail-server/images/01.png)
+        ![Configuring a Mail Server](./connecting-to-a-mail-server/images/01.png)
 
-1. Click *Save*.
+1. Click _Save_.
 
 DXP connects to the mail session immediately.
 
-<!-- 
+<!--
 ## Validating Mail Configuration
 
 To validate that you configured the mail session correctly, do the following:
 
 1.
 1.
-1. 
+1.
 -->
 
 ## Mail Configuration Reference
 
-| Field | Description |
-| --- | --- |
-| Incoming POP Server | The hostname for a server running the Post Office Protocol. DXP checks this mailbox for incoming messages, such as message board replies. |
-| Incoming Port | The port on which the POP server is listening. |
-| Use a Secure Network Connection | The checkbox to enable whether to use an encrypted connection when connecting to the POP server. |
-| User Name | The user ID DXP uses to log into the POP server. |
-| Password | The password DXP uses to log into the POP server. |
-| Outgoing SMTP Server | The hostname for a server running the Simple Mail Transfer Protocol. DXP uses this server to send emails, such as password change emails and other notifications. |
-| Outgoing Port | The port on which the SMTP server is listening. |
-| Use a Secure Network Connection | Use an encrypted connection when connecting to the SMTP server. |
-| User Name | The user ID DXP uses to log into the SMTP server. |
-| Password | The password DXP uses to log into the SMTP server. |
-| Manually specify additional JavaMail properties to override the above configuration| This field is for any additional JavaMail settings. |
+| Field                                                                               | Description                                                                                                                                                       |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Incoming POP Server                                                                 | The hostname for a server running the Post Office Protocol. DXP checks this mailbox for incoming messages, such as message board replies.                         |
+| Incoming Port                                                                       | The port on which the POP server is listening.                                                                                                                    |
+| Use a Secure Network Connection                                                     | The checkbox to enable whether to use an encrypted connection when connecting to the POP server.                                                                  |
+| User Name                                                                           | The user ID DXP uses to log into the POP server.                                                                                                                  |
+| Password                                                                            | The password DXP uses to log into the POP server.                                                                                                                 |
+| Outgoing SMTP Server                                                                | The hostname for a server running the Simple Mail Transfer Protocol. DXP uses this server to send emails, such as password change emails and other notifications. |
+| Outgoing Port                                                                       | The port on which the SMTP server is listening.                                                                                                                   |
+| Use a Secure Network Connection                                                     | Use an encrypted connection when connecting to the SMTP server.                                                                                                   |
+| User Name                                                                           | The user ID DXP uses to log into the SMTP server.                                                                                                                 |
+| Password                                                                            | The password DXP uses to log into the SMTP server.                                                                                                                |
+| Manually specify additional JavaMail properties to override the above configuration | This field is for any additional JavaMail settings.                                                                                                               |
 
 ## Additional Information
 
-* [Configuring Default Email Senders](./configuring-default-email-senders.md)
-* [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
+-   [Configuring Default Email Senders](./configuring-default-email-senders.md)
+-   [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)

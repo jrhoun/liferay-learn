@@ -2,12 +2,12 @@
 
 Recycle Bin functionality is available for the following asset types:
 
-* Blogs
-* Bookmarks
-* Documents and Media
-* Message Boards (and attachments)
-* Web Content
-* Wiki (and attachments)
+-   Blogs
+-   Bookmarks
+-   Documents and Media
+-   Message Boards (and attachments)
+-   Web Content
+-   Wiki (and attachments)
 
 ![The Recycle Bin provides a seamless administrative experience for deleting and removing content.](./using-the-recycle-bin/images/01.png)
 
@@ -19,8 +19,8 @@ Recycle Bin functionality is available for the following asset types:
 
 1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu.
 1. Select the site.
-1. Click *Content & Data* &rarr; *Web Content*.
-1. Click the article's *Actions* button (![Actions](../../../images/icon-actions.png)) and click _Move to the Recycle Bin_. Note that the _Delete_ button is not listed.
+1. Click _Content & Data_ &rarr; _Web Content_.
+1. Click the article's _Actions_ button (![Actions](../../../images/icon-actions.png)) and click _Move to the Recycle Bin_. Note that the _Delete_ button is not listed.
 
     ![Moving the web content article to the recycle bin](./using-the-recycle-bin/images/02.png)
 
@@ -47,10 +47,10 @@ You can also drag and drop items into the Recycle Bin.
 1. Next to the asset to be restored, click the _Actions_ button.
 1. Click _Restore_.
 
-   ![In the Recycle Bin, you have the option of restoring or permanently deleting the content.](./using-the-recycle-bin/images/05.png)
+    ![In the Recycle Bin, you have the option of restoring or permanently deleting the content.](./using-the-recycle-bin/images/05.png)
 
 1. Navigate back to the Web Content screen and verify that your content is back to its original place.
 
 ## Deleting an Asset Permanently
 
-*Delete* within the Recycle Bin is the permanent delete button. Once you select this, your file cannot be retrieved and is gone forever. There is also an *Empty the Recycle Bin* option accessible from the (![Options](../../../images/icon-options.png)) button at the top of the Recycle Bin screen. This permanently deletes all the files from the Recycle Bin.
+_Delete_ within the Recycle Bin is the permanent delete button. Once you select this, your file cannot be retrieved and is gone forever. There is also an _Empty the Recycle Bin_ option accessible from the (![Options](../../../images/icon-options.png)) button at the top of the Recycle Bin screen. This permanently deletes all the files from the Recycle Bin.

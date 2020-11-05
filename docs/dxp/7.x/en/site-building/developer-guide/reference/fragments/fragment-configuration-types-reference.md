@@ -4,11 +4,11 @@ This reference list the available configuration types for Fragments. See [Adding
 
 There are five configurable Fragment types available to implement:
 
-* `checkbox`
-* `colorPalette`
-* `itemSelector` (Available Liferay DXP 7.3)
-* `select`
-* `text`
+-   `checkbox`
+-   `colorPalette`
+-   `itemSelector` (Available Liferay DXP 7.3)
+-   `select`
+-   `text`
 
 ```note::
   Configuration values inserted into the FreeMarker context honor the defined ``datatype`` value specified in the JSON file. For example, if the ``dataType`` is String, ``configuration.[name-value]?is_string`` is ``true``.
@@ -83,16 +83,20 @@ This configuration creates a selector that lets you select one existing piece of
 
 ```json
 {
-	"fieldSets": [{
-		"fields": [{
-			"label": "select-content",
-			"name": "itemSelector1",
-			"type": "itemSelector",
-			"typeOptions": {
-				"enableSelectTemplate": true
-			}
-		}]
-	}]
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"label": "select-content",
+					"name": "itemSelector1",
+					"type": "itemSelector",
+					"typeOptions": {
+						"enableSelectTemplate": true
+					}
+				}
+			]
+		}
+	]
 }
 ```
 
@@ -100,17 +104,21 @@ You can provide a more advanced configuration that lets authors select only a sp
 
 ```json
 {
-	"fieldSets": [{
-		"fields": [{
-			"label": "select-content",
-			"name": "itemSelector1",
-			"type": "itemSelector",
-			"typeOptions": {
-        "itemType" : "com.liferay.journal.model.JournalArticle",
-        "itemSubtype": "article-structure-key-15"
-			}
-		}]
-	}]
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"label": "select-content",
+					"name": "itemSelector1",
+					"type": "itemSelector",
+					"typeOptions": {
+						"itemType": "com.liferay.journal.model.JournalArticle",
+						"itemSubtype": "article-structure-key-15"
+					}
+				}
+			]
+		}
+	]
 }
 ```
 
@@ -118,18 +126,22 @@ This example specifies that only a document with the `img` or `jpg` MIME type th
 
 ```json
 {
-	"fieldSets": [{
-		"fields": [{
-			"label": "select-content",
-			"name": "itemSelector1",
-			"type": "itemSelector",
-			"typeOptions": {
-        "itemType" : "com.liferay.portal.kernel.repository.model.FileEntry",
-        "itemSubtype": "metadataset-structure-key-2",
-        "mimeTypes": ["img/jpg"]
-			}
-		}]
-	}]
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"label": "select-content",
+					"name": "itemSelector1",
+					"type": "itemSelector",
+					"typeOptions": {
+						"itemType": "com.liferay.portal.kernel.repository.model.FileEntry",
+						"itemSubtype": "metadataset-structure-key-2",
+						"mimeTypes": ["img/jpg"]
+					}
+				}
+			]
+		}
+	]
 }
 ```
 
@@ -137,16 +149,20 @@ This example specifies that only blog entries can be selected:
 
 ```json
 {
-	"fieldSets": [{
-		"fields": [{
-			"label": "select-content",
-			"name": "itemSelector1",
-			"type": "itemSelector",
-			"typeOptions": {
-        "itemType" : "com.liferay.blogs.model.BlogsEntry",
-			}
-		}]
-	}]
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"label": "select-content",
+					"name": "itemSelector1",
+					"type": "itemSelector",
+					"typeOptions": {
+						"itemType": "com.liferay.blogs.model.BlogsEntry"
+					}
+				}
+			]
+		}
+	]
 }
 ```
 
@@ -160,7 +176,7 @@ You can then render the content in your Fragment with this HTML snippet for the 
 </div>
 ```
 
-You can also access the Java object in your Fragment, if you need access to specific portions of the content, under the key `[name-of-field]Object` (`itemSelector1Object` 
+You can also access the Java object in your Fragment, if you need access to specific portions of the content, under the key `[name-of-field]Object` (`itemSelector1Object`
 in the example below). This example renders the title, description, and body of the web content article:
 
 ```markup

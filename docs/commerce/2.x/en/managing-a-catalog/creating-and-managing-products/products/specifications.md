@@ -4,11 +4,11 @@ A specification stores a single piece of product information. A product’s dime
 
 To organize specifications and make them easy to display and maintain, specification data is ordered into one of three components: groups, labels, and values.
 
-| Name | Description |
-| --- | --- |
+| Name                                         | Description                                                               |
+| -------------------------------------------- | ------------------------------------------------------------------------- |
 | [Specification Group](#specification-groups) | Specifications with common characteristics can be organized into a group. |
-| [Specification Label](#specification-labels) | Names a specification. |
-| [Specification Value](#specification-values) | Provides product-specific information. |
+| [Specification Label](#specification-labels) | Names a specification.                                                    |
+| [Specification Value](#specification-values) | Provides product-specific information.                                    |
 
 ## Specification Groups
 
@@ -20,12 +20,12 @@ To organize specifications and make them easy to display and maintain, specifica
 
 To add a new Specification Group, click the (+) button.
 
-| Field | Description |
-| --- | --- |
-| Title | Name of the Specification Group. |
-| Description | Explanation of what the specifications have in common |
-| Priority | Establishes the order to display the specification groups. Smaller numbers go first. |
-| Key | A unique identifier for referring to this group programmatically. |
+| Field       | Description                                                                          |
+| ----------- | ------------------------------------------------------------------------------------ |
+| Title       | Name of the Specification Group.                                                     |
+| Description | Explanation of what the specifications have in common                                |
+| Priority    | Establishes the order to display the specification groups. Smaller numbers go first. |
+| Key         | A unique identifier for referring to this group programmatically.                    |
 
 ![Adding a specification group](./specifications/images/02.png)
 
@@ -42,13 +42,13 @@ To create a specification label:
 
 To add a new Specification Group, click the (+) button.
 
-| Field | Description |
-| --- | --- |
-| Label | Name of the Label. |
-| Description | Explanation of the label. |
-| Use in Faceted Navigation | Toggle whether this label is used in faceted navigation. |
-| Default Specification Group | Dropdown menu for which group this label is to be associated. |
-| Key | A unique identifier for referring to this group programmatically. |
+| Field                       | Description                                                       |
+| --------------------------- | ----------------------------------------------------------------- |
+| Label                       | Name of the Label.                                                |
+| Description                 | Explanation of the label.                                         |
+| Use in Faceted Navigation   | Toggle whether this label is used in faceted navigation.          |
+| Default Specification Group | Dropdown menu for which group this label is to be associated.     |
+| Key                         | A unique identifier for referring to this group programmatically. |
 
 ![Adding a specification label](./specifications/images/04.png)
 
@@ -56,9 +56,9 @@ The label has been created, but assigning a value to it must be done on the prod
 
 ## Specification Values
 
- Specification values are more limited in scope than groups and labels. Groups and labels are scoped to the catalog, which means that once they are created, they can be assigned to any product in the catalog. Values, however, are scoped to the product, and have no impact anywhere but on the product to which they are assigned.
+Specification values are more limited in scope than groups and labels. Groups and labels are scoped to the catalog, which means that once they are created, they can be assigned to any product in the catalog. Values, however, are scoped to the product, and have no impact anywhere but on the product to which they are assigned.
 
- To create a specification label, you must first assign a label to a product.
+To create a specification label, you must first assign a label to a product.
 
 1. Navigate to the _Global Applications_ menu → _Commerce_ → _Products_.
 1. Click on a product (for example, _Torque Converter_. This sample product is added when using the Minium accelerator.)
@@ -78,10 +78,10 @@ Next, edit the label to give it a value.
 1. Click on the 3-dot icon next to the new label.
 1. Click _Edit_.
 
-|Field | Description |
-|----- | --------- |
-| Value | Short description of what the product is made of |
-| Group | Dropdown menu for which Specification Group. |
+| Field    | Description                                                                           |
+| -------- | ------------------------------------------------------------------------------------- |
+| Value    | Short description of what the product is made of                                      |
+| Group    | Dropdown menu for which Specification Group.                                          |
 | Priority | Establishes the order to display the specification groups. Smallest numbers go first. |
 
 ![Adding specification details](./specifications/images/06.png)

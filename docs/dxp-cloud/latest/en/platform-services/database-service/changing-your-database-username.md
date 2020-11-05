@@ -16,11 +16,11 @@ Follow these steps to retain the current username by adding it to the list of re
 
 1. Go to the dedicated database service page in the desired Project environment.
 
-1. Click on the *Environment Variables* tab.
+1. Click on the _Environment Variables_ tab.
 
-1. Enter `LCP_DATABASE_USER_WHITELIST` under *Regular variables*, and enter the username you want to retain as its *value*. You can enter multiple usernames by separating with with a space and/or comma.
+1. Enter `LCP_DATABASE_USER_WHITELIST` under _Regular variables_, and enter the username you want to retain as its _value_. You can enter multiple usernames by separating with with a space and/or comma.
 
-1. Click on *Save Changes*.
+1. Click on _Save Changes_.
 
 Once saved, the database service automatically restarts and adds the current credentials to the list of retained users. After the service has finished restarting, proceed to change the `lcp-secret-database-user` secret.
 
@@ -28,22 +28,22 @@ Once saved, the database service automatically restarts and adds the current cre
 
 Follow these steps to change your database username:
 
-1. Go to the desired Project environment, and click on *Settings* in the environment menu.
+1. Go to the desired Project environment, and click on _Settings_ in the environment menu.
 
-1. In the *Secrets* section, click on the *Actions* button for `lcp-secret-database-user`, and select *Edit*.
+1. In the _Secrets_ section, click on the _Actions_ button for `lcp-secret-database-user`, and select _Edit_.
 
-1. In the *Value* section, click on *Show* to reveal and enable editing for the secret's value. Then, set a new value.
+1. In the _Value_ section, click on _Show_ to reveal and enable editing for the secret's value. Then, set a new value.
 
-   You can optionally select which users can view the secret value, as well as which services use the secret.
+    You can optionally select which users can view the secret value, as well as which services use the secret.
 
-1. Use the *Publish secret* checkboxes to acknowledge the impact of your changes on connected services.
+1. Use the _Publish secret_ checkboxes to acknowledge the impact of your changes on connected services.
 
-1. Click on *Publish Changes*.
+1. Click on _Publish Changes_.
 
 Once published, all connected services restart and stop receiving requests for some minutes. They may also behave differently depending on the secret's usage. When the service starts up, the environment variables are read and the database user is updated.
 
 ## Additional Information
 
-* [Database Service](./database-service.md)
-* [Changing your Database Password](./changing-your-database-password.md)
-* [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+-   [Database Service](./database-service.md)
+-   [Changing your Database Password](./changing-your-database-password.md)
+-   [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)

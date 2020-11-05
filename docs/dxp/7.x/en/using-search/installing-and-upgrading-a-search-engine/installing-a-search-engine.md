@@ -12,9 +12,9 @@ When you start Liferay, a built-in Elasticsearch server (sidecar) starts simulta
 
 ## Java Requirements
 
-* Search engines require the `JAVA_HOME` environment variable. Set it on your search engine host.
+-   Search engines require the `JAVA_HOME` environment variable. Set it on your search engine host.
 
-* If you're using Liferay 7.2, Elasticsearch and Liferay must use the same Java version and distribution. Consult the [Elasticsearch compatibility matrix](https://www.elastic.co/support/matrix#matrix_jvm) and the [Liferay compatibility matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) to learn more about supported JDK distributions and versions. You can specify this in Elasticsearch:
+-   If you're using Liferay 7.2, Elasticsearch and Liferay must use the same Java version and distribution. Consult the [Elasticsearch compatibility matrix](https://www.elastic.co/support/matrix#matrix_jvm) and the [Liferay compatibility matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) to learn more about supported JDK distributions and versions. You can specify this in Elasticsearch:
 
     ```properties
     [Elasticsearch Home]/bin/elasticsearch.in.sh`: `JAVA_HOME=/path/to/java`
@@ -28,9 +28,9 @@ The same requirement doesn't apply to Solr either because the Solr connector als
 
 A production environment's search engine should be clustered for load management and optimal performance. Both Elasticsearch and Solr can be configured on multiple nodes in the remote environment.
 
-* To configure a remote Elasticsearch server or cluster, see [Getting Started with Elasticsearch](./elasticsearch/getting-started-with-elasticsearch.md).
+-   To configure a remote Elasticsearch server or cluster, see [Getting Started with Elasticsearch](./elasticsearch/getting-started-with-elasticsearch.md).
 
-* To configure a remote Solr server or cluster, see [Installing Solr](./solr/installing-solr.md).
+-   To configure a remote Solr server or cluster, see [Installing Solr](./solr/installing-solr.md).
 
 ## Selecting a Search Engine Vendor and Version
 
@@ -40,6 +40,6 @@ Elasticsearch is the recommended search engine for search and indexing with Life
    Always refer to the `compatibility matrix <https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix>`_ to find the exact versions supported.
 ```
 
-## What's Next 
+## What's Next
 
-[Installing Elasticsearch](./elasticsearch/getting-started-with-elasticsearch.md) is recommended. If you must use Solr (deprecated), see [Installing Solr](./solr/installing-solr/installing-solr.md). 
+[Installing Elasticsearch](./elasticsearch/getting-started-with-elasticsearch.md) is recommended. If you must use Solr (deprecated), see [Installing Solr](./solr/installing-solr/installing-solr.md).

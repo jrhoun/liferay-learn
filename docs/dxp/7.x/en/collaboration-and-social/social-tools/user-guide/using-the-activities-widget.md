@@ -4,7 +4,7 @@ The _Activities_ widget is used to track user activities on a site.
 
 ![Community Site Activities](./using-the-activities-widget/images/03.png)
 
-To begin using the _Activities widget:
+To begin using the \_Activities widget:
 
 1. Navigate to the site page where it is to be deployed (for example, the _Community Site_'s _Social_ page).
 1. Click the _Add_ button.
@@ -26,4 +26,4 @@ Lastly, click _RSS_ to subscribe to the user activities.
 
 ## Additional Information
 
-* [Using the Contacts Center Widget](./using-the-contacts-center-widget.md)
+-   [Using the Contacts Center Widget](./using-the-contacts-center-widget.md)

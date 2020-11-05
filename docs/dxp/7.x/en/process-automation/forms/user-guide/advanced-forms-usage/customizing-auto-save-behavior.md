@@ -15,4 +15,4 @@ To change the duration:
 
 ## Additional Information
 
-* [Creating Forms](../creating-forms.md)
+-   [Creating Forms](../creating-forms.md)

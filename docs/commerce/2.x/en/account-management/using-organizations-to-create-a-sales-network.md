@@ -7,6 +7,7 @@ The organizational structure of B2B sales networks can be mirrored in Liferay Co
 ```
 
 When Organizations are used along with assigning permissions to Organization Roles, Users assigned to an Organization automatically inherit the role-based permissions that were defined for that Organization.
+
 <!-- The following sentence is removed because I read it and I don't know what specifically it's telling someone - maybe: Organizations (and sub-organizations) can have accounts assigned to them - ensuring that members of an organization have access to the right accounts at the right time.
 
 For example, a B2B company can give everyone in their sales network access to the right Account information through their organizational membership.
@@ -44,8 +45,8 @@ Managing Roles and Permissions long-term can be easily accomplished within Lifer
 
 ## Additional Information
 
-* [Creating and Managing Organizations](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/creating-and-managing-organizations.html)
-* [Adding a New Organization Type](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/adding-a-new-organization-type.html)
-* [Managing Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
-* [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
-* [Adding Organizations to Accounts](./adding-organizations-to-accounts.md)
+-   [Creating and Managing Organizations](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/creating-and-managing-organizations.html)
+-   [Adding a New Organization Type](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/adding-a-new-organization-type.html)
+-   [Managing Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
+-   [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
+-   [Adding Organizations to Accounts](./adding-organizations-to-accounts.md)

@@ -20,13 +20,13 @@ Once the selected payment method is active, configure the payment method with yo
 
 Each details screen contains fields that determine how the payment method is rendered in the Checkout widget.
 
-|Field | Description |
-|----- | ----------- |
-|Name  | Name of the Payment Method |
-|Description | Short description of the payment method |
-|Icon| Upload a small image or logo to represent the payment method |
-|Priority | Determines the order in which the payment method is displayed in the checkout process; lower numbers are displayed higher |
-|Active | Switch the toggle to activate or deactivate a payment method |
+| Field       | Description                                                                                                               |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Name        | Name of the Payment Method                                                                                                |
+| Description | Short description of the payment method                                                                                   |
+| Icon        | Upload a small image or logo to represent the payment method                                                              |
+| Priority    | Determines the order in which the payment method is displayed in the checkout process; lower numbers are displayed higher |
+| Active      | Switch the toggle to activate or deactivate a payment method                                                              |
 
 ### Configuration Tab
 
@@ -34,10 +34,10 @@ The _Configuration_ tab for a payment method is where the store administrator co
 
 See the corresponding articles to learn how to activate each payment method:
 
-* [Authorize.net](./authorize.net.md)
-* [Mercanet](./mercanet.md)
-* [Money Orders](./money-orders.md)
-* [PayPal](./paypal.md)
+-   [Authorize.net](./authorize.net.md)
+-   [Mercanet](./mercanet.md)
+-   [Money Orders](./money-orders.md)
+-   [PayPal](./paypal.md)
 
 ## Commerce 2.0 and Below
 

@@ -2,9 +2,9 @@
 
 Files can be migrated from one file store type to another. Here are some migration scenarios:
 
-* Migrating from Simple File System Store to Advanced File System Store for improved performance and scalability.
-* Migrating from Simple, Advanced, or S3 to DBStore to avoid transaction rollback vulnerabilities.
-* Migrating from DBStore to Advanced File System Store to accommodate files larger than 1 gigabyte.
+-   Migrating from Simple File System Store to Advanced File System Store for improved performance and scalability.
+-   Migrating from Simple, Advanced, or S3 to DBStore to avoid transaction rollback vulnerabilities.
+-   Migrating from DBStore to Advanced File System Store to accommodate files larger than 1 gigabyte.
 
 The Data Migration utility in [Server Administration](../using-the-server-administration-panel/using-the-server-administration-panel.md) facilitates the migration.
 
@@ -16,8 +16,8 @@ The Data Migration utility in [Server Administration](../using-the-server-admini
 
 Here are the migration steps:
 
-1. Configure the new file store in *System Settings* &rarr; *File Storage*.
-1. In *Server Administration* &rarr; *Data Migration*, select the repository hook (store implementation class) and click *Execute*.
+1. Configure the new file store in _System Settings_ &rarr; _File Storage_.
+1. In _Server Administration_ &rarr; _Data Migration_, select the repository hook (store implementation class) and click _Execute_.
 
     ![Data Migration utility](./file-store-migration/images/01.png)
 
@@ -42,6 +42,6 @@ Your DXP instance is using the migrated files on the newly configured file store
 
 ## Additional Information
 
-* [Configuring File Storage](./configuring-file-storage.md)
-* [Amazon S3 Store](./other-file-store-types/amazon-s3-store.md)
-* [DBStore](./other-file-store-types/dbstore.md)
+-   [Configuring File Storage](./configuring-file-storage.md)
+-   [Amazon S3 Store](./other-file-store-types/amazon-s3-store.md)
+-   [DBStore](./other-file-store-types/dbstore.md)

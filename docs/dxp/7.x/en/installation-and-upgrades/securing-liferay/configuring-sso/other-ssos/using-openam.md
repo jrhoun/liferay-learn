@@ -1,7 +1,7 @@
 # Using OpenAM
 
 ```important::
-   OpenAM/OpenSSO is deprecated as of Liferay DXP 7.2. Please use `SAML <../authenticating-with-saml/single-sign-on-with-saml.md>`_ instead. 
+   OpenAM/OpenSSO is deprecated as of Liferay DXP 7.2. Please use `SAML <../authenticating-with-saml/single-sign-on-with-saml.md>`_ instead.
 ```
 
 OpenAM is an open source single sign-on solution from the codebase of Sun's System Access Manager product. You can use OpenAM to integrate Liferay DXP into an infrastructure that contains several different authentication schemes against different repositories of identities.
@@ -29,17 +29,17 @@ Once you have it installed, you must do two things:
 1. Create a Liferay DXP administrative user in OpenAM
 1. Enable OpenAM for authentication
 
-Users are mapped back and forth by screen names, so be sure to match the OpenAM's user ID to the screen name of your Liferay administrative user. For example, if the Liferay DXP administrative user has a screen name of *admin*, register the user in OpenAM with the ID of *admin* and the email address specified in the [`admin.email.from.address`](http://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Admin%20Portlet) [portal property](../../../reference/portal-properties.md). Once you have the user set up, log in to OpenAM using this user.
+Users are mapped back and forth by screen names, so be sure to match the OpenAM's user ID to the screen name of your Liferay administrative user. For example, if the Liferay DXP administrative user has a screen name of _admin_, register the user in OpenAM with the ID of _admin_ and the email address specified in the [`admin.email.from.address`](http://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Admin%20Portlet) [portal property](../../../reference/portal-properties.md). Once you have the user set up, log in to OpenAM using this user.
 
 1. In the same browser window, log in to Liferay DXP as the administrative user (using the previous admin email address).
 
-1. Go to the Control Panel and click *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO*. Then choose *OpenSSO* in the list on the left.
+1. Go to the Control Panel and click _Configuration_ &rarr; _Instance Settings_ &rarr; _Security_ &rarr; _SSO_. Then choose _OpenSSO_ in the list on the left.
 
     ![OpenSSO Configuration in Liferay must be enabled for the integration to work.](./using-openam/images/01.png)
 
-1. Modify the three URL fields (Login URL, Logout URL, and Service URL) so they point to your OpenAM server (in other words, only modify the host name portion of the URLs), check the *Enabled* box, and click *Save*.
+1. Modify the three URL fields (Login URL, Logout URL, and Service URL) so they point to your OpenAM server (in other words, only modify the host name portion of the URLs), check the _Enabled_ box, and click _Save_.
 
-Liferay DXP then redirects users to OpenAM when they request the `/c/portal/login` URL---for example, when they click on the *Sign In* link).
+Liferay DXP then redirects users to OpenAM when they request the `/c/portal/login` URL---for example, when they click on the _Sign In_ link).
 
 ## Configuring OpenAM at a Different Liferay Scope
 
@@ -49,19 +49,19 @@ To configure the OpenAM SSO module at the system scope:
 
 1. Navigate to the Control Panel
 
-1. Click on *Configuration* &rarr; *System Settings* &rarr; *Security* &rarr; *SSO* &rarr; *OpenSSO*. You'll see the settings below. The values configured here provide the default values for all portal instances. Enter them in the same format as you would when initializing a Java primitive type with a literal value.
+1. Click on _Configuration_ &rarr; _System Settings_ &rarr; _Security_ &rarr; _SSO_ &rarr; _OpenSSO_. You'll see the settings below. The values configured here provide the default values for all portal instances. Enter them in the same format as you would when initializing a Java primitive type with a literal value.
 
-| Property Label | Property Key | Description | Type |
-| ----- | ----- | ----- | ----- |
-| **Version** | `version` | OpenAM version to use (12 and below or 13) | `String` |
-| **Enabled** | `enabled` | Check this box to enable OpenAM authentication. Note that OpenAM works only if LDAP authentication is also enabled and Liferay DXP's authentication type is set to screen name. | `boolean`|
-| **Import from LDAP** | `importFromLDAP` | If this is checked, users authenticated from OpenAM that do not exist in Liferay DXP are imported from LDAP. LDAP must be enabled. | `boolean` |
-| **Login URL** | `loginURL` | The URL to the login page of the OpenAM server | `String` |
-| **Logout URL** | `logoutURL` | The URL to the logout page of the OpenAM server | `String`
-| **Service URL** | `serviceURL` | The URL by which OpenAM can be accessed to use the authenticated web services. If you are using OpenAM Express 8 or higher, you need to have the server running Java 6. | `String` |
-| **Screen Name Attribute** | `screenNameAttr` | The name of the attribute on the OpenAM representing the user's screen name | `String` |
-| **Email Address Attribute** | `emailAddressAttr` | The name of the attribute on the OpenAM representing the user's email address | `String` |
-| **First Name Attribute** | `firstNameAttr` | The name of the attribute on the OpenAM representing the user's first name | `String` |
-| **Last Name Attribute** | `lastNameAttr` | The name of the attribute on the OpenAM representing the user's last name | `String` |
+| Property Label              | Property Key       | Description                                                                                                                                                                     | Type      |
+| --------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **Version**                 | `version`          | OpenAM version to use (12 and below or 13)                                                                                                                                      | `String`  |
+| **Enabled**                 | `enabled`          | Check this box to enable OpenAM authentication. Note that OpenAM works only if LDAP authentication is also enabled and Liferay DXP's authentication type is set to screen name. | `boolean` |
+| **Import from LDAP**        | `importFromLDAP`   | If this is checked, users authenticated from OpenAM that do not exist in Liferay DXP are imported from LDAP. LDAP must be enabled.                                              | `boolean` |
+| **Login URL**               | `loginURL`         | The URL to the login page of the OpenAM server                                                                                                                                  | `String`  |
+| **Logout URL**              | `logoutURL`        | The URL to the logout page of the OpenAM server                                                                                                                                 | `String`  |
+| **Service URL**             | `serviceURL`       | The URL by which OpenAM can be accessed to use the authenticated web services. If you are using OpenAM Express 8 or higher, you need to have the server running Java 6.         | `String`  |
+| **Screen Name Attribute**   | `screenNameAttr`   | The name of the attribute on the OpenAM representing the user's screen name                                                                                                     | `String`  |
+| **Email Address Attribute** | `emailAddressAttr` | The name of the attribute on the OpenAM representing the user's email address                                                                                                   | `String`  |
+| **First Name Attribute**    | `firstNameAttr`    | The name of the attribute on the OpenAM representing the user's first name                                                                                                      | `String`  |
+| **Last Name Attribute**     | `lastNameAttr`     | The name of the attribute on the OpenAM representing the user's last name                                                                                                       | `String`  |
 
-To override these default settings for a particular portal instance, navigate to the Control Panel and click *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO*. Then choose *OpenSSO* in the list on the left.
+To override these default settings for a particular portal instance, navigate to the Control Panel and click _Configuration_ &rarr; _Instance Settings_ &rarr; _Security_ &rarr; _SSO_. Then choose _OpenSSO_ in the list on the left.

@@ -6,11 +6,11 @@ Pages on Liferay DXP are primarily used to display content and applications to u
 
 When adding Pages to a site, the pages are created as part of a Site's [Page Set](../page-settings/configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
 
-| Behavior | Public Pages | Private Pages |
-| --- | --- |---|
-| Visible to unauthenticated users | &#10004; |  |
-| Viewing requires Login and Site Membership |  | &#10004; |
-| Distinct URL pattern | &#10004; | &#10004; |
+| Behavior                                   | Public Pages | Private Pages |
+| ------------------------------------------ | ------------ | ------------- |
+| Visible to unauthenticated users           | &#10004;     |               |
+| Viewing requires Login and Site Membership |              | &#10004;      |
+| Distinct URL pattern                       | &#10004;     | &#10004;      |
 
 ## Page Types
 
@@ -30,9 +30,9 @@ Content Pages enable users to build professional pages that can be easily manage
 
 Using Content Pages allows access to additional powerful features and benefits:
 
-* [Personalized and Adaptive Site Experiences](../../personalizing-site-experience/README.md)
-* [A/B Testing](../../optimizing-sites/02-ab-testing/README.md)
-* Approachable Content and Site Building Experience
+-   [Personalized and Adaptive Site Experiences](../../personalizing-site-experience/README.md)
+-   [A/B Testing](../../optimizing-sites/02-ab-testing/README.md)
+-   Approachable Content and Site Building Experience
 
 To learn more about Content Pages see the [Content Page Overview](../building-and-managing-content-pages/content-pages-overview.md). To jump right into building one, see [Building Content Pages](../building-and-managing-content-pages/building-content-pages.md).
 
@@ -40,7 +40,7 @@ To learn more about Content Pages see the [Content Page Overview](../building-an
 
 <!-- Should there be an article that covers layouts and layout templates? -->
 
-A Widget Page is a page with a set layout that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
+A Widget Page is a page with a set layout that allows _widgets_ (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
 
 ![Widget Pages can provide a number of functions, such as a dedicated Wiki Page solution.](./understanding-pages/images/05.png)
 
@@ -48,15 +48,15 @@ A Widget Page is a page with a set layout that allows *widgets* (applications) t
 
 This table compares some of the distinctions between a Content Page and a Widget Page:
 
-| Feature |  Content Pages | Widget Pages |
-| --- | --- |---|
-| Ability to Add Widgets | &#10004; | &#10004; |
-| Personalized Site Experiences | &#10004; |  |
-| Access to A/B Testing | &#10004; |  |
-| Easy Layout and Content Editing | &#10004; |  |
-| Advanced Custom Layouts |  | &#10004; |
-| User-Customizable Columns |  | &#10004; |
-| Staging Page Variations |  | &#10004; |
+| Feature                         | Content Pages | Widget Pages |
+| ------------------------------- | ------------- | ------------ |
+| Ability to Add Widgets          | &#10004;      | &#10004;     |
+| Personalized Site Experiences   | &#10004;      |              |
+| Access to A/B Testing           | &#10004;      |              |
+| Easy Layout and Content Editing | &#10004;      |              |
+| Advanced Custom Layouts         |               | &#10004;     |
+| User-Customizable Columns       |               | &#10004;     |
+| Staging Page Variations         |               | &#10004;     |
 
 ### Other Page Types
 
@@ -64,18 +64,18 @@ There are several other page types that are available - each can help to satisfy
 
 ## Global Page Templates
 
-When adding a page, you also have the option to choose a Page Template. Page Templates are pre-set pages with applications already deployed to the page. By default, only *Global Templates* are available, but additional collections you create appear as an option as well.
+When adding a page, you also have the option to choose a Page Template. Page Templates are pre-set pages with applications already deployed to the page. By default, only _Global Templates_ are available, but additional collections you create appear as an option as well.
 
-| Global Page Template | Description |
-| --- | --- |
-| Blog | Creates a Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget. |
-| Search | Creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget. |
-| Wiki | Creates a Widget Page with a Wiki widget, a Categories Navigation widget, and a Tags Navigation widget. |
+| Global Page Template | Description                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------- |
+| Blog                 | Creates a Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget.            |
+| Search               | Creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget.   |
+| Wiki                 | Creates a Widget Page with a Wiki widget, a Categories Navigation widget, and a Tags Navigation widget. |
 
 Learn more about Page Templates:
 
-* Adding a Page Using a Page Template
-* [Creating a Page Template](../adding-pages/creating-a-page-template.md)
+-   Adding a Page Using a Page Template
+-   [Creating a Page Template](../adding-pages/creating-a-page-template.md)
 
 ## Child Pages and Page Hierarchy
 
@@ -89,6 +89,6 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 ## Related Information
 
-* [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
-* [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
-* [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)
+-   [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
+-   [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
+-   [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)

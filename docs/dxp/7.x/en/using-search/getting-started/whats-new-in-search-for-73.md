@@ -22,7 +22,7 @@ The Elasticsearch 7 connector bundled with DXP 7.3 uses [Elastic's Java REST Cli
 
 > Availability: Liferay 7.3 CE GA4+, Liferay DXP 7.3 GA1+
 
-The functionality of the _Liferay Enterprise Search Security_ (formerly _Liferay Connector to X-Pack Security_)  module is included in the _Liferay Connector to Elasticsearch 7_. All customers on CE/DXP 7.3 can connect securely to their Elasticsearch cluster without a [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) subscription.
+The functionality of the _Liferay Enterprise Search Security_ (formerly _Liferay Connector to X-Pack Security_) module is included in the _Liferay Connector to Elasticsearch 7_. All customers on CE/DXP 7.3 can connect securely to their Elasticsearch cluster without a [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) subscription.
 
 The [upgrade](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) guide contains information on moving the encryption configuration into the Elasticsearch 7 connector.
 
@@ -64,9 +64,9 @@ If upgrading to 7.3 from DXP 7.2 SP2 or earlier, the new DXP indexes are created
 
 View the status and health of Elasticsearch connections via the Control Panel's Search entry (found in the Configurations section). See
 
-- The health of each connected Elasticsearch cluster
-- The node names and versions within each cluster
-- The Elasticsearch client versions
+-   The health of each connected Elasticsearch cluster
+-   The node names and versions within each cluster
+-   The Elasticsearch client versions
 
 This replaces the information bar found on the top of the Index Actions page in prior versions.
 
@@ -82,7 +82,7 @@ The UID (or `id`) of index documents now has 1-to-1 parity with the database row
 
 > Availability: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
-The Search widgets now support [Widget Templates]( ./../../site-building/displaying-content/customizing-widgets/styling-widgets-with-widget-templates.md) (previously known as Application Display Templates) for customizing the visual look and feel of each widget using Freemarker or Velocity templates. For example, the Search Results widget can be configured to display a card layout, and an asset's properties like `author` or `modified date` can be shown or hidden. Some default templates are provided out of the box for each supported search widget.
+The Search widgets now support [Widget Templates](./../../site-building/displaying-content/customizing-widgets/styling-widgets-with-widget-templates.md) (previously known as Application Display Templates) for customizing the visual look and feel of each widget using Freemarker or Velocity templates. For example, the Search Results widget can be configured to display a card layout, and an asset's properties like `author` or `modified date` can be shown or hidden. Some default templates are provided out of the box for each supported search widget.
 
 ### Similar Results
 
@@ -92,7 +92,7 @@ The Search widgets now support [Widget Templates]( ./../../site-building/display
 
 The Similar Results widget displays a collection of assets similar to the main asset on a page. The widget determines the main asset display using the URL and leverages Elasticsearch's [more like this query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) to find additional assets. The main asset can be displayed using a display widget (like the Blogs widget) or the Asset Publisher.
 
-The first version of Similar Results supports Blogs, Message Boards, Documents, and Wikis. Support for additional asset types (both native and custom assets) is possible by implementing an [extension point](../developer-guide/writing-a-similar-results-contributor.md). The logic used to determine document similarity can be configured per Elasticsearch's More Like This [query parameters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). 
+The first version of Similar Results supports Blogs, Message Boards, Documents, and Wikis. Support for additional asset types (both native and custom assets) is possible by implementing an [extension point](../developer-guide/writing-a-similar-results-contributor.md). The logic used to determine document similarity can be configured per Elasticsearch's More Like This [query parameters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html).
 
 See [Similar Results](../search-pages-and-widgets/similar-results.md) for details.
 
@@ -132,10 +132,10 @@ The Cross-Cluster Replication application replicates Elasticsearch clusters acro
 
 Manually tuning search for optimal results is difficult. Optimizing your search algorithm for one specific query may unintentionally result in poorer results for hundreds of other queries.
 
-Learning to Rank (LTR) tackles this challenge by applying a machine learning (ML) model to improving search results. The model is trained by 
+Learning to Rank (LTR) tackles this challenge by applying a machine learning (ML) model to improving search results. The model is trained by
 
-- selecting "features" (a term for the search factors to consider when the model is trained---e.g., recency, geo-proximity, tags match)
-- providing judgment lists (also known as "ground truth") curated either manually (e.g. search experts grading results for a query) or semi-automatically (e.g. measuring user click rate for a query).
+-   selecting "features" (a term for the search factors to consider when the model is trained---e.g., recency, geo-proximity, tags match)
+-   providing judgment lists (also known as "ground truth") curated either manually (e.g. search experts grading results for a query) or semi-automatically (e.g. measuring user click rate for a query).
 
 Judgment lists are the source of truth that informs and guides the model training. When a user submits a search query, LTR takes the first _x_ number of results (by default the first 1,000 results) returned by the search engine, then re-scores and re-orders those results using the trained model before returning the list to the user.
 
@@ -143,12 +143,12 @@ Judgment lists are the source of truth that informs and guides the model trainin
 
 Though not explicitly linked to the Liferay CE/DXP 7.3 release, these apps were renamed to better reflect their functionality and to emphasize their identity as LES apps:
 
-| Functionality | Old App Name | New App Name |
-| ------------- | ------------ | ------------ |
-| Monitoring the Elasticsearch cluster | Liferay Connector to X-Pack Monitoring [Elastic Stack 6.x] | Liferay Enterprise Search Monitoring |
-| Securing the Elasticsearch cluster | Liferay Connector to X-Pack Security [Elastic Stack 6.x] | Liferay Enterprise Search Security |
-| Using machine learning to optimize the search algorithm | Liferay Connector to Elasticsearch Learning to Rank | Liferay Enterprise Search Learning to Rank |
-| Replicating indexes across remote data centers | NA (new app) | Liferay Enterprise Search Cross-Cluster Replication |
+| Functionality                                           | Old App Name                                               | New App Name                                        |
+| ------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- |
+| Monitoring the Elasticsearch cluster                    | Liferay Connector to X-Pack Monitoring [Elastic Stack 6.x] | Liferay Enterprise Search Monitoring                |
+| Securing the Elasticsearch cluster                      | Liferay Connector to X-Pack Security [Elastic Stack 6.x]   | Liferay Enterprise Search Security                  |
+| Using machine learning to optimize the search algorithm | Liferay Connector to Elasticsearch Learning to Rank        | Liferay Enterprise Search Learning to Rank          |
+| Replicating indexes across remote data centers          | NA (new app)                                               | Liferay Enterprise Search Cross-Cluster Replication |
 
 ## Development
 
@@ -158,9 +158,9 @@ Though not explicitly linked to the Liferay CE/DXP 7.3 release, these apps were 
 
 An Elasticsearch-version agnostic `IndexSettingsContributor` was added ([src code here)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_DXP_GIT_TAG$]/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java):
 
-* `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
-* `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
-* `com.liferay.portal.search.spi.settings.TypeMappingsHelper.java`
+-   `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
+-   `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
+-   `com.liferay.portal.search.spi.settings.TypeMappingsHelper.java`
 
 ### A Sidecar Elasticsearch 7 is Bundled
 

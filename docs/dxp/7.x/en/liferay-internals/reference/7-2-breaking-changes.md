@@ -4,20 +4,21 @@ This document presents a chronological list of changes that break existing funct
 
 Here are some of the types of changes documented in this file:
 
-* Functionality that is removed or replaced
-* API incompatibilities: Changes to public Java or JavaScript APIs
-* Changes to context variables available to templates
-* Changes in CSS classes available to Liferay themes and portlets
-* Configuration changes: Changes in configuration files, like `portal.properties`, `system.properties`, etc.
-* Execution requirements: Java version, J2EE Version, browser versions, etc.
-* Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
-* Recommendations: For example, recommending using a newly introduced API that replaces an old API, in spite of the old API being kept in Liferay Portal for backwards compatibility.
+-   Functionality that is removed or replaced
+-   API incompatibilities: Changes to public Java or JavaScript APIs
+-   Changes to context variables available to templates
+-   Changes in CSS classes available to Liferay themes and portlets
+-   Configuration changes: Changes in configuration files, like `portal.properties`, `system.properties`, etc.
+-   Execution requirements: Java version, J2EE Version, browser versions, etc.
+-   Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
+-   Recommendations: For example, recommending using a newly introduced API that replaces an old API, in spite of the old API being kept in Liferay Portal for backwards compatibility.
 
 ## Breaking Changes List
 
 ### Removed Support for JSP Templates in Themes
-- **Date:** 2018-Nov-14
-- **JIRA Ticket:** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
+
+-   **Date:** 2018-Nov-14
+-   **JIRA Ticket:** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
 
 #### What changed?
 
@@ -37,11 +38,12 @@ JSP is not a real template engine and is rarely used. FreeMarker is the recommen
 
 The removal of JSP templates allows for an increased focus on existing and new template engines.
 
----------------------------------------
+---
 
 ### Lodash Is No Longer Included by Default
-- **Date:** 2018-Nov-27
-- **JIRA Ticket:** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
+
+-   **Date:** 2018-Nov-27
+-   **JIRA Ticket:** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
 
 #### What changed?
 
@@ -55,17 +57,18 @@ This affects any developer who used the `AUI._` or `window._` variables in their
 
 You should provide your own Lodash version for your custom developments to use following any of the possible strategies to add third party libraries.
 
-As a temporary measure, you can bring back the old behavior by setting the *Enable Lodash* property in Liferay Portal's *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Third Party* &rarr; *Lodash* to `true`.
+As a temporary measure, you can bring back the old behavior by setting the _Enable Lodash_ property in Liferay Portal's _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Third Party_ &rarr; _Lodash_ to `true`.
 
 #### Why was this change made?
 
 This change was made to avoid bundling and serving additional library code on every page that was mostly unused and redundant.
 
----------------------------------------
+---
 
 ### Moved Two Staging Properties to OSGi Configuration
-- **Date:** 2018-Dec-12
-- **JIRA Ticket:** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
+
+-   **Date:** 2018-Dec-12
+-   **JIRA Ticket:** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
 
 #### What changed?
 
@@ -75,12 +78,12 @@ Two Staging properties have been moved from `portal.properties` to an OSGi confi
 
 This affects anyone using the following portal properties:
 
-- `staging.delete.temp.lar.on.failure`
-- `staging.delete.temp.lar.on.success`
+-   `staging.delete.temp.lar.on.failure`
+-   `staging.delete.temp.lar.on.success`
 
 #### How should I update my code?
 
-Instead of overriding the `portal.properties` file, you can manage the properties from Portal's configuration administrator. This can be accessed by navigating to Liferay Portal's *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Infrastructure* &rarr; *Export/Import* and editing the settings there.
+Instead of overriding the `portal.properties` file, you can manage the properties from Portal's configuration administrator. This can be accessed by navigating to Liferay Portal's _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Infrastructure_ &rarr; _Export/Import_ and editing the settings there.
 
 If you would like to include the new configuration in your application, follow the instructions for [making applications configurable](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable).
 
@@ -88,15 +91,16 @@ If you would like to include the new configuration in your application, follow t
 
 This change was made as part of the modularization efforts to ease portal configuration changes.
 
----------------------------------------
+---
 
 ### Remove Link Application URLs to Page Functionality
-- **Date:** 2018-Dec-14
-- **JIRA Ticket:** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
+
+-   **Date:** 2018-Dec-14
+-   **JIRA Ticket:** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
 
 #### What changed?
 
-The *Link Portlet URLs to Page* option in the Look and Feel portlet was marked as deprecated in Liferay Portal 7.1, allowing the user to show and hide the option through a configuration property. In Liferay Portal 7.2, this has been removed and can no longer be configured.
+The _Link Portlet URLs to Page_ option in the Look and Feel portlet was marked as deprecated in Liferay Portal 7.1, allowing the user to show and hide the option through a configuration property. In Liferay Portal 7.2, this has been removed and can no longer be configured.
 
 #### Who is affected?
 
@@ -110,11 +114,12 @@ You should update any portlets leveraging this feature, since any preconfigured 
 
 A limited number of portlets use this property; there are better ways to achieve the same results.
 
----------------------------------------
+---
 
 ### Moved TermsOfUseContentProvider out of kernel.util
-- **Date:** 2019-Jan-07
-- **JIRA Ticket:** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
+
+-   **Date:** 2019-Jan-07
+-   **JIRA Ticket:** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
 
 #### What changed?
 
@@ -142,11 +147,12 @@ If `com.liferay.portal.kernel.util.TermsOfUseContentProvider` is used, update th
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Removed HibernateConfigurationConverter and Converter
-- **Date:** 2019-Jan-07
-- **JIRA Ticket:** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
+
+-   **Date:** 2019-Jan-07
+-   **JIRA Ticket:** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
 
 #### What changed?
 
@@ -164,11 +170,12 @@ You should remove usages of `HibernateConfigurationConverter`. Make sure the gen
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Switched to Use JDK Function and Supplier
-- **Date:** 2019-Jan-08
-- **JIRA Ticket:** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
+
+-   **Date:** 2019-Jan-08
+-   **JIRA Ticket:** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
 
 #### What changed?
 
@@ -186,11 +193,12 @@ You should replace usages of `com.liferay.portal.kernel.util.Function` and `com.
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Deprecated com.liferay.portal.service.InvokableService Interface
-- **Date:** 2019-Jan-08
-- **JIRA Ticket:** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
+
+-   **Date:** 2019-Jan-08
+-   **JIRA Ticket:** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
 
 #### What changed?
 
@@ -208,11 +216,12 @@ You should remove usages of `InvokableService` and `InvokableLocalService`. Make
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Dropped Support of ServiceLoaderCondition
-- **Date:** 2019-Jan-08
-- **JIRA Ticket:** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
+
+-   **Date:** 2019-Jan-08
+-   **JIRA Ticket:** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
 
 #### What changed?
 
@@ -230,20 +239,21 @@ You should remove usages of `ServiceLoaderCondition`. Update usages of `load` me
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Switched to Use JDK Predicate
-- **Date:** 2019-Jan-14
-- **JIRA Ticket:** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
+
+-   **Date:** 2019-Jan-14
+-   **JIRA Ticket:** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
 
 #### What changed?
 
 The interface `com.liferay.portal.kernel.util.PredicateFilter` was removed and replaced with `java.util.function.Predicate`. As a result, the following implementations were removed:
 
-- `com.liferay.portal.kernel.util.AggregatePredicateFilter`
-- `com.liferay.portal.kernel.util.PrefixPredicateFilter`
-- `com.liferay.portal.kernel.portlet.JavaScriptPortletResourcePredicateFilter`
-- `com.liferay.dynamic.data.mapping.form.values.query.internal.model.DDMFormFieldValuePredicateFilter`
+-   `com.liferay.portal.kernel.util.AggregatePredicateFilter`
+-   `com.liferay.portal.kernel.util.PrefixPredicateFilter`
+-   `com.liferay.portal.kernel.portlet.JavaScriptPortletResourcePredicateFilter`
+-   `com.liferay.dynamic.data.mapping.form.values.query.internal.model.DDMFormFieldValuePredicateFilter`
 
 The `com.liferay.portal.kernel.util.ArrayUtil_IW` class was regenerated.
 
@@ -259,19 +269,20 @@ You should replace usages of `com.liferay.portal.kernel.util.PredicateFilter` wi
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Removed Unsafe Functional Interfaces in Package com.liferay.portal.kernel.util
-- **Date:** 2019-Jan-15
-- **JIRA Ticket:** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
+
+-   **Date:** 2019-Jan-15
+-   **JIRA Ticket:** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
 
 #### What changed?
 
 The `com.liferay.portal.osgi.util.test.OSGiServiceUtil` class was removed. Also, the following interfaces were removed from the `com.liferay.portal.kernel.util` package:
 
-- `UnsafeConsumer`
-- `UnsafeFunction`
-- `UnsafeRunnable`
+-   `UnsafeConsumer`
+-   `UnsafeFunction`
+-   `UnsafeRunnable`
 
 #### Who is affected?
 
@@ -285,11 +296,12 @@ The `com.liferay.portal.osgi.util.test.OSGiServiceUtil` class has been deprecate
 
 This is one of several steps to clean up kernel provider interfaces to reduce the chance of package version lock down.
 
----------------------------------------
+---
 
 ### Deprecated NTLM in Portal Distribution
-- **Date:** 2019-Jan-21
-- **JIRA Ticket:** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
+
+-   **Date:** 2019-Jan-21
+-   **JIRA Ticket:** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
 
 #### What changed?
 
@@ -307,11 +319,12 @@ If you want to continue using NTLM as an authentication system, you must downloa
 
 This change was made to avoid using an old proprietary solution (NTLM). Kerberos is now recommended, which is a standard protocol and a more secure method of authentication compared to NTLM.
 
----------------------------------------
+---
 
 ### Deprecated OpenID in Portal Distribution
-- **Date:** 2019-Jan-21
-- **JIRA Ticket:** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
+
+-   **Date:** 2019-Jan-21
+-   **JIRA Ticket:** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
 
 #### What changed?
 
@@ -329,11 +342,12 @@ If you want to continue using OpenID as an authentication system, you must downl
 
 This change was made to avoid using a deprecated solution (OpenID). OpenID Connect is now recommended, which is a more secure method of authentication since it runs on top of OAuth.
 
----------------------------------------
+---
 
 ### Deprecated Google SSO in Portal Distribution
-- **Date:** 2019-Jan-21
-- **JIRA Ticket:** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+
+-   **Date:** 2019-Jan-21
+-   **JIRA Ticket:** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
 
 #### What changed?
 
@@ -351,11 +365,12 @@ If you want to continue using Google SSO as an authentication system, you must d
 
 This change was made to avoid using an old solution for authentication (Google SSO). OpenID Connect is the recommended specification to use Google implementation for authentication.
 
----------------------------------------
+---
 
 ### Updated AlloyEditor v2.0 Includes New Major Version of React
-- **Date:** 2019-Feb-04
-- **JIRA Ticket:** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
+
+-   **Date:** 2019-Feb-04
+-   **JIRA Ticket:** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
 
 #### What changed?
 
@@ -371,19 +386,20 @@ This affects anyone who built their own buttons using `React.createClass`. The `
 
 You should update your code in one of two ways:
 
-- Port custom buttons from the `React.createClass` API to use the ES6 `class` API, as described in [the React documentation](https://reactjs.org/docs/react-component.html). For example, see the changes made in moving to an [ES6 class-based button](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) from [the previous `createClass`-based implementation](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx).
+-   Port custom buttons from the `React.createClass` API to use the ES6 `class` API, as described in [the React documentation](https://reactjs.org/docs/react-component.html). For example, see the changes made in moving to an [ES6 class-based button](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) from [the previous `createClass`-based implementation](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx).
 
-- Provide a compatibility adapter. The [create-react-class package](https://www.npmjs.com/package/create-react-class) (described [here](https://reactjs.org/docs/react-without-es6.html)) can be injected into the page to restore the `createClass` API.
+-   Provide a compatibility adapter. The [create-react-class package](https://www.npmjs.com/package/create-react-class) (described [here](https://reactjs.org/docs/react-without-es6.html)) can be injected into the page to restore the `createClass` API.
 
 #### Why was this change made?
 
 This change was made to use a newer major version of React, which brings performance and compatibility improvements and reduces the bundle size by removing deprecated APIs.
 
----------------------------------------
+---
 
 ### Deprecated dl.tabs.visible property
-- **Date:** 2019-Apr-10
-- **JIRA Ticket:** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
+
+-   **Date:** 2019-Apr-10
+-   **JIRA Ticket:** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
 
 #### What changed?
 
@@ -401,11 +417,12 @@ No code changes are necessary.
 
 Documents & Media has been reviewed from a UX perspective, and removing the navigation tabs in widget pages was part of a UI clean up process.
 
----------------------------------------
+---
 
 ### Move the User Menu out of the Product Menu
-- **Date:** 2019-Apr-19
-- **JIRA Ticket:** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
+
+-   **Date:** 2019-Apr-19
+-   **JIRA Ticket:** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
 
 #### What changed?
 
@@ -423,11 +440,12 @@ If you would like to keep your custom user menu entries and have them available 
 
 Product navigation has been reviewed from a UX perspective, and removing the User Menu from the Product Menu and splitting the menu to its own provides a better user experience.
 
----------------------------------------
+---
 
 ### Removed Hong Kong and Macau from the List of Countries
-- **Date:** 2019-Apr-26
-- **JIRA Ticket:** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
+
+-   **Date:** 2019-Apr-26
+-   **JIRA Ticket:** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
 
 #### What changed?
 
@@ -445,11 +463,12 @@ No code changes are necessary. However, if you have hardcoded the `countryId` of
 
 After the handover of Hong Kong in 1997 and of Macau in 1999, Hong Kong and Macau are now the special administrative regions of China.
 
----------------------------------------
+---
 
 ### JGroups Was Upgraded From 3.6.16 to 4.1.1
-- **Date:** 2019-Aug-15
-- **JIRA Ticket:** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
+
+-   **Date:** 2019-Aug-15
+-   **JIRA Ticket:** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
 
 #### What changed?
 
@@ -467,12 +486,13 @@ The `cluster.link.channel.properties.*` property in `portal.properties` no longe
 
 This upgrade was made to fix a security issue.
 
----------------------------------------
+---
 
 ### Liferay `AssetEntries_AssetCategories` Is No Longer Used
-- **Date:** 2019-Sep-11
-- **JIRA Tickets:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973),
-[LPS-76488](https://issues.liferay.com/browse/LPS-76488)
+
+-   **Date:** 2019-Sep-11
+-   **JIRA Tickets:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973),
+    [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
 
 #### What changed?
 
@@ -523,11 +543,12 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 This change was made due to changes resulting from [LPS-76488](https://issues.liferay.com/browse/LPS-76488), which let developers control the order of a list of assets for a given category.
 
----------------------------------------
+---
 
 ### Auto Tagging Must Be Reconfigured Manually
-- **Date: 2019-Oct-2**
-- **JIRA Ticket:** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
+
+-   **Date: 2019-Oct-2**
+-   **JIRA Ticket:** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
 
 #### What changed?
 
@@ -545,11 +566,12 @@ You must reconfigure Auto Tagging through System Settings (please see the [offic
 
 This change unifies the previously split configuration interfaces, improving the user experience.
 
----------------------------------------
+---
 
 ### Blogs Image Properties Were Moved to System Settings
-- **Date: 2019-Oct-2**
-- **JIRA Ticket:** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
+
+-   **Date: 2019-Oct-2**
+-   **JIRA Ticket:** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
 
 #### What changed?
 
@@ -561,17 +583,18 @@ This affects DXP 7.2 installations that are upgraded to SP1 and have custom valu
 
 #### How should I update my code?
 
-If you would like to keep your custom Blogs image property values, you must reconfigure them through the System Settings under *Configuration* &rarr; *Blogs* &rarr; *File Uploads*. Any code referencing the old properties must be updated to use the new configuration interfaces.
+If you would like to keep your custom Blogs image property values, you must reconfigure them through the System Settings under _Configuration_ &rarr; _Blogs_ &rarr; _File Uploads_. Any code referencing the old properties must be updated to use the new configuration interfaces.
 
 #### Why was this change made?
 
 This change was made so Blogs image properties can be configured without a restart.
 
----------------------------------------
+---
 
 ### Removed Cache Bootstrap Feature
-- **Date:** 2020-Jan-8
-- **JIRA Ticket:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
+
+-   **Date:** 2020-Jan-8
+-   **JIRA Ticket:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### What changed?
 
@@ -593,11 +616,12 @@ There's no direct replacement for the removed feature. If you have code that dep
 
 This change was made to avoid security issues.
 
----------------------------------------
+---
 
 ### ContentTransformerListener Is Disabled By Default
-- **Date:** 2020-May-25
-- **JIRA Ticket:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
+
+-   **Date:** 2020-May-25
+-   **JIRA Ticket:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### What changed?
 
@@ -621,11 +645,12 @@ There's no need to update your code. If you still want to use
 (calling `HtmlUtil.stripComments` and `HtmlUtil.stripHtml` on article fields).
 It was disabled to improve performance.
 
----------------------------------------
+---
 
 ### Replaced Method in DDMDataProvider
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -650,11 +675,12 @@ another one of type
 
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Removed Constructor in DDMDataProviderRequest
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -677,22 +703,23 @@ desired parameters instead of the constructor.
 
 This change is as part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Removed Methods in DDMDataProviderRequest
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
 These methods were removed from
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`:
 
-- `getDDMDataProviderContext`
-- `setDDMDataProviderContext`
-- `getHttpServletRequest`
-- `getParameter`
-- `queryString`
+-   `getDDMDataProviderContext`
+-   `setDDMDataProviderContext`
+-   `getHttpServletRequest`
+-   `getParameter`
+-   `queryString`
 
 #### Who is affected?
 
@@ -719,11 +746,12 @@ to add all necessary parameters.
 
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Replaced Method in DDMDataProviderRequest
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -742,11 +770,12 @@ Replace the usages of `getDDMDataProviderInstanceId` with `getDDMDataProviderId`
 
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Removed Methods in DDMDataProviderResponse
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -760,13 +789,13 @@ This affects anyone who used the removed methods.
 
 Use these updated methods in your code:
 
-- Use
-`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse.Builder`'s
-`withStatus` method, instead of calling the `error` method.
-- Replace the `of` method with the `Builder`'s `withStatus` and `withOutput`
-methods.
-- Replace `getDataMap` calls with an output addition using the `Builder`'s
-`withOutput` method, and get it through the method `getOutputOptional`.
+-   Use
+    `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse.Builder`'s
+    `withStatus` method, instead of calling the `error` method.
+-   Replace the `of` method with the `Builder`'s `withStatus` and `withOutput`
+    methods.
+-   Replace `getDataMap` calls with an output addition using the `Builder`'s
+    `withOutput` method, and get it through the method `getOutputOptional`.
 
 The method `withOutput` can be invoked as many times you need.
 
@@ -774,11 +803,12 @@ The method `withOutput` can be invoked as many times you need.
 
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Replaced Method in DDMDataProviderResponse
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -794,13 +824,15 @@ This affects anyone who used the replaced method.
 Use `getOutputOptional` instead of `get`.
 
 #### Why was this change made?
+
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### Replaced Enum in DDMDataProviderResponse
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -832,11 +864,12 @@ with
 
 This change is part of the Data Provider API Refactoring on [LPS-81563](https://issues.liferay.com/browse/LPS-81563).
 
----------------------------------------
+---
 
 ### DDMDataProviderResponseOutput Was Deleted
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -858,11 +891,12 @@ The class `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRespons
 was deleted without deprecation warning because it became unused after improvements
 were implemented on Data Provider code in [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
----------------------------------------
+---
 
 ### Removed Method in DDMDataProviderTracker
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### What changed?
 
@@ -893,11 +927,12 @@ Note that
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContextContributor`
 was removed in Liferay Portal 7.2.
 
----------------------------------------
+---
 
 ### Removed Inner Class in DDMExpressionException
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81609](https://issues.liferay.com/browse/LPS-81609)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81609](https://issues.liferay.com/browse/LPS-81609)
 
 #### What changed?
 
@@ -920,11 +955,12 @@ instead.
 
 This change is part of the Expression API Refactoring on [LPS-81609](https://issues.liferay.com/browse/LPS-81609)
 
----------------------------------------
+---
 
 ### Replaced method in DDMFormInstanceRecordLocalService
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
 
 #### What changed?
 
@@ -952,11 +988,12 @@ methods.
 
 This change is part of the Storage Adapter API Refactoring on [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
 
----------------------------------------
+---
 
 ### Removed Methods in DDMStructureService
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### What changed?
 
@@ -965,46 +1002,46 @@ The methods listed below were removed from these classes
 `com.liferay.dynamic.data.mapping.service.DDMStructureServiceUtil`, and
 `com.liferay.dynamic.data.mapping.service.DDMStructureServiceWrapper`:
 
-- `addStructure` (with the parameters `long userId`, `long groupId`,
-`long classNameId`, `Map<Locale, String> nameMap`,
-`Map<Locale, String> descriptionMap`,
-`com.liferay.dynamic.data.mapping.model.DDMForm ddmForm`,
-`com.liferay.dynamic.data.mapping.model.DDMFormLayout ddmFormLayout`,
-`String storageType`,
-`com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `addStructure` (with the parameters `long userId`, `long groupId`,
+    `long classNameId`, `Map<Locale, String> nameMap`,
+    `Map<Locale, String> descriptionMap`,
+    `com.liferay.dynamic.data.mapping.model.DDMForm ddmForm`,
+    `com.liferay.dynamic.data.mapping.model.DDMFormLayout ddmFormLayout`,
+    `String storageType`,
+    `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `addStructure` (with the parameters `long userId`, `long groupId`,
-`long classNameId`, `Map<Locale, String> nameMap`,
-`Map<Locale, String> descriptionMap`, `String xsd`,
-`com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `addStructure` (with the parameters `long userId`, `long groupId`,
+    `long classNameId`, `Map<Locale, String> nameMap`,
+    `Map<Locale, String> descriptionMap`, `String xsd`,
+    `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `addStructure` (with the parameters `long userId`, `long groupId`,
-`String parentStructureKey`, `long classNameId`, `String structureKey`,
-`Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
-`String xsd`, `String storageType`, `int type`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `addStructure` (with the parameters `long userId`, `long groupId`,
+    `String parentStructureKey`, `long classNameId`, `String structureKey`,
+    `Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
+    `String xsd`, `String storageType`, `int type`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `addStructure` (with the parameters `long groupId`, `long parentStructureId`,
-`long classNameId`, `String structureKey`, `Map<Locale, String> nameMap`,
-`Map<Locale, String> descriptionMap`, `String xsd`, `String storageType`,
-`int type`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `addStructure` (with the parameters `long groupId`, `long parentStructureId`,
+    `long classNameId`, `String structureKey`, `Map<Locale, String> nameMap`,
+    `Map<Locale, String> descriptionMap`, `String xsd`, `String storageType`,
+    `int type`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `addStructure` (with the parameters `long userId`, `long groupId`,
-`String parentStructureKey`, `long classNameId`, `String structureKey`,
-`Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
-`com.liferay.dynamic.data.mapping.model.DDMForm ddmForm`,
-`com.liferay.dynamic.data.mapping.model.DDMFormLayout ddmFormLayout`,
-`String storageType`, `int type`,
-`com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `addStructure` (with the parameters `long userId`, `long groupId`,
+    `String parentStructureKey`, `long classNameId`, `String structureKey`,
+    `Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
+    `com.liferay.dynamic.data.mapping.model.DDMForm ddmForm`,
+    `com.liferay.dynamic.data.mapping.model.DDMFormLayout ddmFormLayout`,
+    `String storageType`, `int type`,
+    `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `updateStructure` (with the parameters `long groupId`,
-`long parentStructureId`, `long classNameId`, `String structureKey`,
-`Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
-`String definition`,
-`com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `updateStructure` (with the parameters `long groupId`,
+    `long parentStructureId`, `long classNameId`, `String structureKey`,
+    `Map<Locale, String> nameMap`, `Map<Locale, String> descriptionMap`,
+    `String definition`,
+    `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
-- `updateStructure` (with the parameters `long structureId`,
-`long parentStructureId`, `Map<Locale, String> nameMap`,
-`Map<Locale, String> descriptionMap`, `String definition`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
+-   `updateStructure` (with the parameters `long structureId`,
+    `long parentStructureId`, `Map<Locale, String> nameMap`,
+    `Map<Locale, String> descriptionMap`, `String definition`, `com.liferay.portal.kernel.service.ServiceContext serviceContext`)
 
 #### Who is affected?
 
@@ -1018,32 +1055,33 @@ Replace the removed methods with one of the remaining `addStructure` and `update
 
 These methods were deprecated in Liferay Portal 7.0.
 
----------------------------------------
+---
 
 ### Removed Methods in Dynamic Data Mapping Persistence Classes
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### What changed?
 
 The methods `fetchByPrimaryKeys` and `getBadColumnNames` were removed from these
 classes:
 
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMContentPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstancePersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstancePersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceVersionPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStorageLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLayoutPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructurePersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureVersionPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplatePersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstanceLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordVersionPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkPersistence`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateVersionPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMContentPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstancePersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstancePersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceVersionPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStorageLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLayoutPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructurePersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureVersionPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplatePersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstanceLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordVersionPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateLinkPersistence`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateVersionPersistence`
 
 #### Who is affected?
 
@@ -1066,26 +1104,27 @@ and kept in the implementation class
 (e.g. `com.liferay.dynamic.data.mapping.service.persistence.impl.DDMContentPersistenceImpl`)
 when the classes were generated by Service Builder.
 
----------------------------------------
+---
 
 ### Removed Methods in Dynamic Data Mapping Util Classes
-- **Date:** 2020-Jul-14
-- **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+
+-   **Date:** 2020-Jul-14
+-   **JIRA Ticket:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### What changed?
 
 The method `getBadColumnNames` was removed from these classes:
 
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMContentUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstanceUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceVersionUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStorageLinkUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLayoutUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureVersionUtil`
-- `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMContentUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMDataProviderInstanceUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceRecordUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMFormInstanceVersionUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStorageLinkUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureLayoutUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMStructureVersionUtil`
+-   `com.liferay.dynamic.data.mapping.service.persistence.DDMTemplateUtil`
 
 #### Who is affected?
 
@@ -1104,4 +1143,4 @@ and kept in the persistence implementation
 (e.g. `com.liferay.dynamic.data.mapping.service.persistence.impl.DDMContentPersistenceImpl`)
 when the classes were generated by Service Builder.
 
----------------------------------------
+---

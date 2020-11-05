@@ -6,7 +6,7 @@ For example, you may need to connect your DXP Cloud services to directories or a
 
 ## Creating a VPN Configuration
 
-1. Go to your environment's *Settings* tab.
+1. Go to your environment's _Settings_ tab.
 
 1. Scroll down to the VPN section of the page and click _Create New VPN_.
 
@@ -14,9 +14,9 @@ For example, you may need to connect your DXP Cloud services to directories or a
 
 1. Select the connection protocol to use. Here are the supported protocols:
 
-    * [OpenVPN](https://openvpn.net)
+    - [OpenVPN](https://openvpn.net)
 
-    * [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
+    - [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
 
     ![Select the protocol to use to connect to a VPN.](./connecting-a-vpn-server-to-dxp-cloud/images/02.png)
 
@@ -24,25 +24,25 @@ For example, you may need to connect your DXP Cloud services to directories or a
 
 1. Fill in the VPN's required fields:
 
-    * **Server**: The server's IP address.
+    - **Server**: The server's IP address.
 
-    * **Port**: The VPN's local port number.
+    - **Port**: The VPN's local port number.
 
-    * **Account Name**: The administrator's email address.
+    - **Account Name**: The administrator's email address.
 
-    * **Password**: The administrator's password.
+    - **Password**: The administrator's password.
 
-    * **IKE Version**: The VPN's Internet Key Exchange version. This field only appears when _IPSec_ is selected as the protocol. The supported IKE versions are _IKEv2_ and _IKEv1-L2TP_.
+    - **IKE Version**: The VPN's Internet Key Exchange version. This field only appears when _IPSec_ is selected as the protocol. The supported IKE versions are _IKEv2_ and _IKEv1-L2TP_.
 
-    * **Certificate**: The certificate code.
+    - **Certificate**: The certificate code.
 
 1. Enter one or more port forwarding routes for your VPN connection. Fill in the required fields for each route:
 
-    * **Forwarded Port**: The port number within the DXP Cloud environment to forward.
+    - **Forwarded Port**: The port number within the DXP Cloud environment to forward.
 
-    * **Destination IP**: The IP address of the customer network interfacing with the VPN.
+    - **Destination IP**: The IP address of the customer network interfacing with the VPN.
 
-    * **Destination Port**: The port of the customer network interfacing with the VPN.
+    - **Destination Port**: The port of the customer network interfacing with the VPN.
 
     ![Add one or more port forwarding routes before creating the VPN connection.](./connecting-a-vpn-server-to-dxp-cloud/images/03.png)
 
@@ -50,7 +50,7 @@ For example, you may need to connect your DXP Cloud services to directories or a
        Add more port forwarding routes by clicking the + icon on the right side. Remove added routes by clicking the Trash icon to the side of the existing route.
     ```
 
-1. Click *Create VPN*.
+1. Click _Create VPN_.
 
 The VPN configuration has been created. However, the VPN is not connected until you manually connect it from the VPN details page.
 
@@ -96,5 +96,5 @@ To edit the configuration, go to the environment's details page, and then _Edit.
 
 ## Additional Information
 
-* [VPN Integration Overview](./vpn-integration-overview.md)
-* [Configuring a VPN Server](./configuring-a-vpn-server.md)
+-   [VPN Integration Overview](./vpn-integration-overview.md)
+-   [Configuring a VPN Server](./configuring-a-vpn-server.md)

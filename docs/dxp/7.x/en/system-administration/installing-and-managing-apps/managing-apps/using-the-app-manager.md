@@ -12,16 +12,16 @@ The _Filter and Order_ menu filters items and orders them by category, status, o
 
 Each item listed in the table contains the item's description, version, and status. Here are the statuses:
 
-* _Installed:_ The item is installed to DXP.
-* _Resolved:_ The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
-* _Active:_ The item is running on DXP.
+-   _Installed:_ The item is installed to DXP.
+-   _Resolved:_ The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
+-   _Active:_ The item is running on DXP.
 
 Clicking each item's Actions button (![Actions](./using-the-app-manager/images/02.png)) brings up a menu in which you can activate, deactivate, or uninstall that item.
 
 To view an item's contents, click its name in the table.
 
-* If you click an app, the app's modules are listed.
-* If you click a module, the module's OSGi components and portlets are listed.
+-   If you click an app, the app's modules are listed.
+-   If you click a module, the module's OSGi components and portlets are listed.
 
 The component/portlet level is the farthest you can go without getting into the source code. At any level in the App Manager, there's a link trail above the listing that shows the item's hierarchical context.
 
@@ -55,6 +55,6 @@ Congratulations! You can use the App Manager to examine and manage application d
 
 ## Additional Information
 
-* [Blacklisting Apps](./blacklisting-apps.md)
-* [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
-* [Maintaining a Clustered Installation](../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+-   [Blacklisting Apps](./blacklisting-apps.md)
+-   [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
+-   [Maintaining a Clustered Installation](../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

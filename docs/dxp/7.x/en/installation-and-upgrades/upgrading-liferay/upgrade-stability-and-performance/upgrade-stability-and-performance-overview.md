@@ -2,11 +2,11 @@
 
 When you upgrade a DXP instance for a production release, the data upgrades must be done correctly and swiftly. Here are some ways to help assure success:
 
-* Create a test environment that uses copies of your database and installation 
-* Prune unnecessary database data to improve performance
-* Tune the database for upgrade operations
-* Upgrade the database and troubleshoot upgrade issues
-* Test the upgraded database with DXP
+-   Create a test environment that uses copies of your database and installation
+-   Prune unnecessary database data to improve performance
+-   Tune the database for upgrade operations
+-   Upgrade the database and troubleshoot upgrade issues
+-   Test the upgraded database with DXP
 
 ## Creating a Test Environment
 
@@ -30,6 +30,6 @@ Lastly, take time to test your DXP instance with your upgraded database.
 
 After you've upgraded your DXP instance successfully, you can orchestrate releasing it to production.
 
-## Additional Information 
+## Additional Information
 
-* [Updating Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+-   [Updating Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

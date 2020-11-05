@@ -2,7 +2,7 @@
 
 Enabling Cluster Link activates distributed caching. The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Ehcache).
 
-By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a *remove* message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache *miss*; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache *miss*. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
+By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a _remove_ message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache _miss_; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache _miss_. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
 
 ![Liferay DXP's cache algorithm is extremely efficient.](./configuring-cluster-link/images/01.png)
 
@@ -10,9 +10,9 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 **Contents:**
 
-* [Enabling Cluster Link](#enabling-cluster-link)
-* [Configuring Cluster Link](#configuring-cluster-link)
-* [Conclusion](#conclusion)
+-   [Enabling Cluster Link](#enabling-cluster-link)
+-   [Configuring Cluster Link](#configuring-cluster-link)
+-   [Conclusion](#conclusion)
 
 ## Enabling Cluster Link
 
@@ -34,16 +34,16 @@ Set it to connect to some other host that's contactable by your server. By defau
 
 Cluster Link depends on [JGroups](http://www.jgroups.org) and provides an API for nodes to communicate. It can:
 
-* Send messages to all nodes in a cluster
-* Send messages to a specific node
-* Invoke methods and retrieve values from all, some, or specific nodes
-* Detect membership and notify when nodes join or leave
+-   Send messages to all nodes in a cluster
+-   Send messages to a specific node
+-   Invoke methods and retrieve values from all, some, or specific nodes
+-   Detect membership and notify when nodes join or leave
 
 Cluster Link contains an enhanced algorithm that provides one-to-many type communication between the nodes. This is implemented by default with JGroups's UDP multicast, but unicast and TCP are also available.
 
 ## Configuring Cluster Link
 
-When you enable Cluster Link, DXP's default clustering configuration is enabled. This configuration defines *IP multicast over UDP*. If you cannot use multicast for your own nodes (for example, because they are separated geographically or by a firewall), then you can instead configure a unicast implementation. See [Configuring Unicast Over TCP](./configuring-unicast-over-tcp.md) for more information.
+When you enable Cluster Link, DXP's default clustering configuration is enabled. This configuration defines _IP multicast over UDP_. If you cannot use multicast for your own nodes (for example, because they are separated geographically or by a firewall), then you can instead configure a unicast implementation. See [Configuring Unicast Over TCP](./configuring-unicast-over-tcp.md) for more information.
 
 ### Using Multicast Over UDP
 
@@ -85,7 +85,7 @@ Your network configuration may preclude the use of multicast over TCP, see [Conf
 
 ## Conclusion
 
-Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`):
+Once you've configured your cluster, you can start it. A log file message shows your cluster's name (e.g., `cluster=liferay-channel-control`):
 
 ```bash
 -------------------------------------------------------------------
@@ -101,5 +101,5 @@ It's best to test your DXP cluster under load and investigate optimizing your sy
 
 ## Additional Information
 
-* [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md)
-* [Clustering for High Availability](./clustering-for-high-availability.md)
+-   [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md)
+-   [Clustering for High Availability](./clustering-for-high-availability.md)

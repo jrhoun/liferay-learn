@@ -4,13 +4,13 @@ Search results should be easy to navigate, sort, and filter. To achieve that, yo
 
 Multiple factors affect search results:
 
-* How assets are indexed
-* The search widgets used
-* Whether results are post-processed
+-   How assets are indexed
+-   The search widgets used
+-   Whether results are post-processed
 
 ![The goal of search: return the perfect results to Users searching for content in your site.](./search-results/images/01.png)
 
-Developers of content types (_assets_ in Liferay DXP) control much about how the asset's information is indexed and how its information is searched and returned in the search results. For further control, an *Indexer Post Processor* can modify an asset's indexing behavior and how search queries are constructed to look up the assets.
+Developers of content types (_assets_ in Liferay DXP) control much about how the asset's information is indexed and how its information is searched and returned in the search results. For further control, an _Indexer Post Processor_ can modify an asset's indexing behavior and how search queries are constructed to look up the assets.
 
 Keep in mind though, almost everything you do when [configuring search](../../search_administration_and_tuning.md) has an impact on search results, particularly [Synonym Sets](../../search_administration_and_tuning.md) and [Result Rankings](../../search_administration_and_tuning.md).
 
@@ -18,7 +18,7 @@ The concepts below are essential to understand before you begin changing any set
 
 ## Filtering Results with Facets
 
-Results are filtered using *facets*. Most users have encountered similar filtering capabilities in other applications, particularly during commerce activities. Users enter a search term, are presented with a list of results, and selecting search facets refines the results. You can think of a facet as a bucket of results with a shared characteristics.
+Results are filtered using _facets_. Most users have encountered similar filtering capabilities in other applications, particularly during commerce activities. Users enter a search term, are presented with a list of results, and selecting search facets refines the results. You can think of a facet as a bucket of results with a shared characteristics.
 
 ![The Type facet is one of the facets provided out of the box.](./search-results/images/02.png)
 
@@ -26,14 +26,14 @@ Facets are configurable. Read about configuring facets<!-- Future link to facets
 
 ## Search Results Relevance
 
-The search engine processes and orders results by *relevance*. Relevance is a score calculated by the search engine. The score is calculated by [algorithms provided by the search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro).
+The search engine processes and orders results by _relevance_. Relevance is a score calculated by the search engine. The score is calculated by [algorithms provided by the search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro).
 
 Results relevance is configurable:
 
-* [Search Tuning is a brute-force way to customize rankings](../../search_administration_and_tuning.md).
-* [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.md)
-* [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search_administration_and_tuning.md)
-* [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
+-   [Search Tuning is a brute-force way to customize rankings](../../search_administration_and_tuning.md).
+-   [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.md)
+-   [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search_administration_and_tuning.md)
+-   [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
 
 ## Permissions and Search Results
 
@@ -41,15 +41,15 @@ Search results don't appear for Users lacking View permission <!-- link placehol
 
 There are two rounds of permissions checks:
 
-* _Pre-filtering_ happens in the search engine's index. It's faster than checking database permissions information, but occasionally the search index can have stale permissions information.
+-   _Pre-filtering_ happens in the search engine's index. It's faster than checking database permissions information, but occasionally the search index can have stale permissions information.
 
-* _Post-filtering_ happens on the results prior to display, to ensure the search engine's index has correct, up-to-date permissions information.
+-   _Post-filtering_ happens on the results prior to display, to ensure the search engine's index has correct, up-to-date permissions information.
 
 ### Pre-filtering
 
 Pre-filtering adds filter clauses to the search query, so searches contain results the current User can view.
 
-You can configure pre-filtering at *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Search* &rarr; *Permission Checker* by controlling the number of search clauses added to queries:
+You can configure pre-filtering at _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Search_ &rarr; _Permission Checker_ by controlling the number of search clauses added to queries:
 
 **Permissions Term Limit:** Limits the number of permission search clauses added to the search query before this level of permission checking is aborted. Permission checking then relies solely on the final permission filtering described below.
 
@@ -57,9 +57,9 @@ The only reason to limit permissions terms is performance. Users with administra
 
 ### Post-filtering
 
-Post-filtering happens prior to presenting results in the UI. For example, if a User searches for *liferay*, the search engine returns all relevant forum posts. As the Search Results iterates through this list, it performs one last permission check of each post to ensure the User can view the post and its categories. If a User doesn't have permission to view the post, it isn't displayed in the list of search results.
+Post-filtering happens prior to presenting results in the UI. For example, if a User searches for _liferay_, the search engine returns all relevant forum posts. As the Search Results iterates through this list, it performs one last permission check of each post to ensure the User can view the post and its categories. If a User doesn't have permission to view the post, it isn't displayed in the list of search results.
 
-Post-filtering is configurable at *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Search* &rarr; *Default Search Result Permission Filter*. It includes two settings:
+Post-filtering is configurable at _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_ &rarr; _Search_ &rarr; _Default Search Result Permission Filter_. It includes two settings:
 
 **Permission Filtered Search Result Accurate Count Threshold:** Specify the maximum number of search results to permissions-filter before results are counted. A higher threshold increases count accuracy, but decreases performance. Since results in the currently displayed page are always checked, any value below the search results pagination delta effectively disables this behavior.
 
@@ -73,7 +73,7 @@ In the staged version of the Site, all content---live or staged---is searchable.
 
 ## Result Summaries
 
-A result summary condenses information from the original asset into an abstract. Asset developers choose what fields are included in the summary. A common summary includes a *title* and some of the *content*, with title displayed first. The asset type always appears on the second line, followed by a snippet of content matching the search term. Assets without content fields, like Documents and Media documents, display the description instead.
+A result summary condenses information from the original asset into an abstract. Asset developers choose what fields are included in the summary. A common summary includes a _title_ and some of the _content_, with title displayed first. The asset type always appears on the second line, followed by a snippet of content matching the search term. Assets without content fields, like Documents and Media documents, display the description instead.
 
 Users are different. Only the User's full name and the asset type (User) appear in User result summaries:
 
