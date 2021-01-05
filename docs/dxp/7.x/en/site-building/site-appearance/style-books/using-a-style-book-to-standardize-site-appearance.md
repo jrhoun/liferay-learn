@@ -10,9 +10,9 @@ If you do not choose a specific Style Book for a page, the page uses the Style B
 
 Follow these steps to set any page's Style Book: 
 
-1. Click the Edit icon (![Edit icon](../../images/icon-edit.png)) near the top of the page.
+1. Click the Edit icon (![Edit icon](../../../images/icon-edit.png)) near the top of the page.
 
-1. Click the icon (![Page Design Options](../../images/icon-format.png)) on the right side of the screen to open the *Page Design Options* menu.
+1. Click the icon (![Page Design Options](../../../images/icon-format.png)) on the right side of the screen to open the *Page Design Options* menu.
 
 1. Click to open the *Style Book* tab.
 
@@ -28,7 +28,7 @@ The page is published using the new Style Book.
 
 1. Navigate to the *Site Menu* &rarr; *Style Books*.
 
-1. Click the Add icon (![Add icon](../../images/icon-add.png)) near the top of the page.
+1. Click the Add icon (![Add icon](../../../images/icon-add.png)) near the top of the page.
 
 1. Enter a name for the Style Book and click *Save*.
 
@@ -42,7 +42,7 @@ The page is published using the new Style Book.
 
 The Style Book can now be selected as an option for any page when editing.
 
-To make this Style Book the new default for your Site, open the Actions menu (![Actions icon](../../images/icon-actions.png)) beside the newly created Style Book and click *Mark as Default*.
+To make this Style Book the new default for your Site, open the Actions menu (![Actions icon](../../../images/icon-actions.png)) beside the newly created Style Book and click *Mark as Default*.
 
 ## Default Classic Theme Categories
 
