@@ -18,7 +18,7 @@ In order to reactivate Liferay Commerce Enterprise, remove any expired keys from
 
 * [Updating Your License in a Bundle](#updating-your-license-in-a-bundle)
 * [Updating Your License in a Docker Container](#updating-your-license-in-a-docker-container)
-<!-- * [Updating Your License in a DXP Cloud Project](#updating-your-license-in-a-dxp-cloud-project) -->
+* [Updating Your License in a DXP Cloud Project](#updating-your-license-in-a-dxp-cloud-project)
 
 ## Updating Your License in a Bundle
 
@@ -70,7 +70,9 @@ Follow these steps to update your Liferay Commerce license in a Docker Container
    INFO  [fileinstall-directory-watcher][LicenseManager:?] License registered for Commerce Subscription Development
    ```
 
-<!--## Updating Your License in a DXP Cloud Project-->
+## Updating Your License in a DXP Cloud Project
+
+After the initial deployment of your Commerce activation key, the DXP Cloud team manages all keys and licenses for your Liferay service. This includes the removal of expired keys and licenses, as well as the deployment of new activation keys.
 
 ## Additional Information
 

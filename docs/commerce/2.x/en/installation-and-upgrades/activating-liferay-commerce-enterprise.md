@@ -68,7 +68,7 @@ Follow these steps to deploy the key to a Docker container using the `docker cp`
 
 ## Deploying to DXP Cloud
 
-If you've purchased Commerce through a DXP Cloud contract, then the DXP Cloud team manages your activation key through the cloud infrastructure, and there is no need for you to manually deploy<!--or manage?--> the key for yourself. However, if you've added Commerce to an existing DXP Cloud project without going through the DXP Cloud team, then you'll need to manually deploy<!--and manage?--> the licence yourself.
+If you've purchased Commerce through a DXP Cloud contract, then the DXP Cloud team manages your activation key through the cloud infrastructure, and you do not need to manually deploy it. However, if you've added Commerce to an existing DXP Cloud project without going through the DXP Cloud team, then you'll need to manually deploy the key yourself. The DXP Cloud team manages all keys and licenses for after initial deployment, whether they have been purchased through a DXP Cloud contract or not.
 
 Follow the steps to deploy a Commerce activation key to your Liferay service:
 
