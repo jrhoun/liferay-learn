@@ -1,0 +1,127 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					icon: '#getting-started-logo',
+					sectionName: 'Getting Started',
+					sectionURL: 'getting-started/quick-tour/welcome-to-analytics-cloud.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Signing Up For a New Workspace',
+							url: 'getting-started/quick-tour/signing-up-for-a-new-workspace.html'
+						},
+						{
+							name: 'Managing Data Sources',
+							url: 'getting-started/connecting-data-sources/managing-data-sources.html'
+						},
+						{
+							name: 'Connecting Liferay DXP Sites to Analytics Cloud',
+							url: 'getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html'
+						}
+					]
+				},
+				{
+					icon: '#system-administration-logo',
+					sectionName: 'Touchpoints',
+					sectionURL: 'touchpoints/touchpoints.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Pages',
+							url: 'touchpoints/pages/pages.html'
+						},
+						{
+							name: 'Paths',
+							url: 'touchpoints/pages/paths.html'
+						},
+						{
+							name: 'Assets',
+							url: 'touchpoints/assets/assets.html'
+						},
+					]
+				},
+				{
+					icon: '#users-and-permissions-logo',
+					sectionName: 'Individuals and Segments',
+					sectionURL: 'individuals-and-segments/individuals-and-segments.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Individual Profiles',
+							url: 'individuals-and-segments/individual-profiles/individual-profiles.html'
+						},
+						{
+							name: 'Segments',
+							url: 'individuals-and-segments/segments/segments.html'
+						},
+						{
+							name: 'Interests',
+							url: 'individuals-and-segments/interests.html'
+						},
+					]
+				},
+				{
+					icon: '#developing-applications-logo',
+					sectionName: 'APIs',
+					sectionURL: 'apis/apis.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Authentication',
+							url: 'apis/authentication.html'
+						},
+						{
+							name: 'Querying Data',
+							url: 'apis/querying-data.html'
+						},
+						{
+							name: 'Exporting Data',
+							url: 'apis/exporting-data.html'
+						},
+					]
+				},
+				{
+					icon: '#installation-and-upgrades-logo',
+					sectionName: 'Administration',
+					sectionURL: 'administration/managing-projects.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Managing Users',
+							url: 'administration/managing-users.html'
+						},
+						{
+							name: 'Tracking Usage',
+							url: 'administration/tracking-usage.html'
+						},
+						{
+							name: 'Managing Interest Topics',
+							url: 'administration/managing-interest-topics.html'
+						},
+					]
+				},
+				{
+					icon: '#building-solutions-on-dxp-logo',
+					sectionName: 'Troubleshooting',
+					sectionURL: 'troubleshooting.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Connecting Data Sources',
+							url: 'troubleshooting/connecting-data-sources.html'
+						},
+						{
+							name: 'Activation',
+							url: 'troubleshooting/activation.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>

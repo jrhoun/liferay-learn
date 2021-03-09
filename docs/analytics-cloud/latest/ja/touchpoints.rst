@@ -1,0 +1,31 @@
+タッチポイント
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   touchpoints/touchpoints.md
+   touchpoints/pages.rst
+   touchpoints/assets.rst
+   touchpoints/a-b-testing.md
+   touchpoints/content-recommendation-api.md
+
+-  :doc:`/touchpoints/touchpoints`
+-  :doc:`/touchpoints/a-b-testing`
+-  :doc:`/touchpoints/content-recommendation-api`
+
+ページ
+-----
+
+-  :doc:`/touchpoints/pages/pages`
+-  :doc:`/touchpoints/pages/paths`
+
+アセット
+------
+
+-  :doc:`/touchpoints/assets/assets`
+-  :doc:`/touchpoints/assets/web-content`
+-  :doc:`/touchpoints/assets/blogs`
+-  :doc:`/touchpoints/assets/forms`
+-  :doc:`/touchpoints/assets/documents-and-media`
+-  :doc:`/touchpoints/assets/tracking-custom-assets`
