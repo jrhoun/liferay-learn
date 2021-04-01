@@ -44,7 +44,7 @@ OAuthを使用してデータソース接続を実装しているユーザーは
 
 2.  トークン文字列を *Analytics Cloud Token* フィールドに貼り付けます。
 
-3.  *Connect*をクリックします。 正常に接続するために、DXPサーバーがAnalytics Cloudサーバーへのアウトバウンドインターネットアクセスを持っていることを確認してください。 DXP がファイアウォールの後ろにある場合は、トラブルシューティングガイド [](../../troubleshooting/connecting-data-sources.md)を参照してください。
+3.  *Connect*をクリックします。 正常に接続するために、DXPサーバーがAnalytics Cloudサーバーへのアウトバウンドインターネットアクセスを持っていることを確認してください。 DXP がファイアウォールの後ろにある場合は、 [トラブルシューティングガイド](../../troubleshooting/connecting-data-sources.md)を参照してください。
 
 4.  成功したメッセージが表示されます： *Analytics Cloud Workspace Connected*.
 
@@ -93,7 +93,7 @@ OAuthを使用してデータソース接続を実装しているユーザーは
 <!-- end list -->
 
 ``` note::
-   データの同期に時間がかかります。 トラブルシューティングを行い、Analytics Cloudにデータが正しく同期されていることを確認するには、`データソースの接続 <.../.../troubleshooting/connecting-data-sources.md>`_を参照してください。
+   データの同期に時間がかかります。 トラブルシューティングを行い、Analytics Cloudにデータが正しく同期されていることを確認するには、 `データソースの接続 <.../.../troubleshooting/connecting-data-sources.md>`_ を参照してください。
 ```
 
 これでDXPデータソースのトークン接続にアップグレードできました。
