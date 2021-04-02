@@ -68,12 +68,10 @@ function configure_env {
 
 	check_utils 7z pip3
 
-	pip install 'sphinx==3.3.1' --force-reinstall
-
 	pip_install \
 		nodeenv recommonmark wheel \
 		\
-		sphinx-copybutton sphinx-intl sphinx-markdown-tables sphinx-notfound-page
+		sphinx sphinx-copybutton sphinx-intl sphinx-markdown-tables sphinx-notfound-page
 
 	if [ "${1}" == "prod" ]
 	then
