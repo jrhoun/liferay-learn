@@ -8,13 +8,13 @@ The Dashboard is also the starting point for a variety of workspace management a
 
 ## Connecting a DXP Site to Analytics Cloud
 
-The first task for a new workspace is to connect it to a Data Source. Analytics Cloud is built to use Liferay DXP Sites as a key data source. See [Connecting Liferay DXP Sites to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) to learn more. You can also bring in data from [CSV files](../../people/individuals/adding-a-csv-data-source.md) and [Salesforce](../../people/individuals/adding-a-salesforce-data-source.md) to supplement your existing user data.
+The first task for a new workspace is to connect it to a Data Source. Analytics Cloud is built to use Liferay DXP Sites as a key data source. See [Connecting Liferay DXP Sites to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) to learn more. You can also bring in data from [CSV files](../people/individuals/adding-a-csv-data-source.md) and [Salesforce](../people/individuals/adding-a-salesforce-data-source.md) to supplement your existing user data.
 
 ## Inviting Others to Your Workspace
 
 As a workspace owner or admin, you can invite your colleagues to the workspace. Invited users can be configured to help setup and configure data sources, create segments, or simply view analytics reports.
 
-See [Managing Users](../../workspace-settings/managing-users.md) to learn more about adding users to your workspace.
+See [Managing Users](../workspace-settings/managing-users.md) to learn more about adding users to your workspace.
 
 ## Configure Settings for Your Workspace
 
@@ -26,4 +26,4 @@ Most of the important settings are configured when you created the workspace. Ho
 * Workspace Usage Monitoring
 * Workspace Settings
 
-You will begin to see analytics data once your workspace is connected. For example, view Site specific analytics on the [Sites dashboard](../../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../../workspace-settings/managing-workspaces.md). 
+You will begin to see analytics data once your workspace is connected. For example, view Site specific analytics on the [Sites dashboard](../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../workspace-settings/managing-workspaces.md). 
