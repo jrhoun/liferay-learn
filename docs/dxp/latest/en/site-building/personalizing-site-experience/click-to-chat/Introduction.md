@@ -7,7 +7,7 @@ This feature gives easier access to communiation between you and your clients. H
 
 To enable Click To Chat go to *Instance Settings*.
 
-1. Open the Global Menu on the top right corner ( ![Global menu](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20click%20to%20chat-001.png) );
+1. Open the Global Menu on the top right corner ( ![](liferay-learn/docs/dxp/latest/en/images/icon-applications-menu.png) );
 1. Click *Instance Settings* in the Control Panel;
     ![Instance Settings](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-002.png)
 1. Now go to Click To Chat under Content and Data;
