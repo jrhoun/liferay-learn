@@ -5,7 +5,7 @@
 
 1. Copy the content of the Embed Web Widget, and in an editor of your preference copy only the part after the Key. (Without the quote marks).
 
-![](RackMultipart20210422-4-wmmy7p_html_8656d605b10d033f.png)
+![Embed Web Widget](https://github.com/Fabiomorais87/liferay-learn/blob/0af9688d7203ce1b11ddab3a99ea7237dd98982e/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Zendesk/Icon-Zendesk-036.png)
 
 See the example:
 
