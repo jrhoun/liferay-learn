@@ -18,13 +18,20 @@ To enable Click To Chat go to *Instance Settings*.
     ![Site Settings Strategy](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-005.png)
 
 
+**Always Inherit**: Click To Chat always inherits this configuration completely ignoring Site Settings.
 
-1. Choose one among the available Chat Provider options;
+**Always Override**: 
+Click To Chat always overrides Instance Settings, applying configuration from Site Settings instead.
+
+**Inherit or Override**: 
+Click to Chat inherits configuration from Instance Settings, unless something else is configured on Site Settings then it is overriden. 
+
+6. Choose one among the available Chat Provider options;
 
 ![Chat provider options](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20chat-006.png)
 
-1. Input the Account ID from the selected Chat Provider on the Chat Provider Account ID field. Information on how to get this from each Chat Provider available is found in the next sections;
+7. Input the Account ID from the selected Chat Provider on the Chat Provider Account ID field. Information on how to get this from each Chat Provider available is found in the next sections;
 
 -  The Guest Users Allowed toggle button tells Click To Chat if users that are not logged in have access to the feature on your website;
 
-1. Once finished, click *save*, then Click To Chat is set up.
+8. Once finished, click *save*, then Click To Chat is set up.
