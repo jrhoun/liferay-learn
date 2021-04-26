@@ -18,13 +18,6 @@ To enable Click To Chat go to *Instance Settings*.
     ![Site Settings Strategy](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-005.png)
 
 
-**Always Inherit**: Click To Chat always inherits this configuration completely ignoring Site Settings.
-
-**Always Override**: 
-Click To Chat always overrides Instance Settings, applying configuration from Site Settings instead.
-
-**Inherit or Override**: 
-Click to Chat inherits configuration from Instance Settings, unless something else is configured on Site Settings then it is overriden. 
 
 1. Choose one among the available Chat Provider options;
 
