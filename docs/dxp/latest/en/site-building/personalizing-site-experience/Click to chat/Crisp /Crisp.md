@@ -1,9 +1,13 @@
 # Crisp
 
-Once in the Crisp account dashboard, **click on the gear icon** on the side navigation bar. ![](RackMultipart20210426-4-vbaxpw_html_1f5b4710585f6b2b.png)
+1. Once in the *Crisp* account dashboard, click on the *gear icon* on the side navigation bar. 
+![Dashboard](https://github.com/Fabiomorais87/liferay-learn/blob/3e514ce061a49025e3e2f6babad36d49c29b28d4/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Crisp%20/Icon-Crisp-010.png)
 
-Now, in the settings menu, **click on &quot;Website Settings&quot;** and choose which website you want to connect to, then click &quot;Settings&quot;.
+1. In the settings menu, click on *Website Settings* and choose which website you want to connect to, then click on *Settings*.
+![Website settings](https://github.com/Fabiomorais87/liferay-learn/blob/3e514ce061a49025e3e2f6babad36d49c29b28d4/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Crisp%20/Icon-Crisp-011.png)
 
-Now, in this final step, **expand &quot;Setup instructions&quot; and you shall see your Website ID.** This is your Chat Provider Account ID for Crisp, now you can copy it to your Portal Instance Click to Chat Settings. ![](RackMultipart20210426-4-vbaxpw_html_b530dee613f2dd6c.png)
+1. In this final step, expand *Setup instructions* and you shall see your Website ID. This is your Chat Provider Account ID for Crisp, now copy it to your Portal Instance Click to Chat Settings. 
 
-![](RackMultipart20210426-4-vbaxpw_html_77b9e9ff4052d1b1.png)
+![Website ID](https://github.com/Fabiomorais87/liferay-learn/blob/3e514ce061a49025e3e2f6babad36d49c29b28d4/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Crisp%20/Icon-Crisp-012.png)
+
+
