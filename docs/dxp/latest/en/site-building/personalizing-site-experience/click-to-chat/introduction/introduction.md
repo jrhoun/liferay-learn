@@ -7,15 +7,15 @@ This feature gives easier access to communiation between you and your clients. H
 
 To enable Click To Chat go to *Instance Settings*.
 
-1. Open the Global Menu on the top right corner ( ![](liferay-learn/docs/dxp/latest/en/images/icon-applications-menu.png) );
+1. Open the Global Menu on the top right corner ( ![](./images/01.png) );
 1. Click *Instance Settings* in the Control Panel;
-    ![Instance Settings](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-002.png)
+    ![Instance Settings](./images/02.png)
 1. Now go to Click To Chat under Content and Data;
-    ![Click To Chat under Content and Data](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-003.png)
+    ![Click To Chat under Content and Data](./images/03.png)
 1. This is Click To Chat's configuration screen, click the *Enable Click to Chat* switch to turn it on;
-    ![Click to chat enable switch](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20chat-004.png)
+    ![Click to chat enable switch](./images/04.png)
 1. Select the proper Site Settings Strategy: 
-    ![Site Settings Strategy](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20Chat-005.png)
+        ![Site Settings Strategy](./images/05.png)
 
 
 **Always Inherit**: Click To Chat always inherits this configuration completely ignoring Site Settings.
@@ -28,7 +28,7 @@ Click to Chat inherits configuration from Instance Settings, unless something el
 
 6. Choose one among the available Chat Provider options;
 
-![Chat provider options](https://github.com/Fabiomorais87/liferay-learn/blob/48dd0069c672d7ad799357ec4f42f88755580636/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Enabling%20Click%20to%20chat/Icon-Enabling%20Click%20to%20chat-006.png)
+![Chat provider options](./images/06.png)
 
 7. Input the Account ID from the selected Chat Provider on the Chat Provider Account ID field. Information on how to get this from each Chat Provider available is found in the next sections;
 
