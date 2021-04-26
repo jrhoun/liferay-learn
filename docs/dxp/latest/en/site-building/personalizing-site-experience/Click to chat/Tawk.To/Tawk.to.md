@@ -12,5 +12,5 @@
 
 1. Last step is to copy all after the Chat on the Direct Chat Link section as you see above.
 
-    ![Copy the chat link](https://github.com/Fabiomorais87/liferay-learn/blob/c7a54f7c2bf146d620107b7ef2e9575b67083af6/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Tawk.To/Icon-Tawk.To-028.png)
+    ![Copy the chat link](https://github.com/Fabiomorais87/liferay-learn/blob/b0f227de3c96ec3c18f73d84974b01b5b82f3641/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Tawk.To/Icon-Tawk.To-029.png)
 
