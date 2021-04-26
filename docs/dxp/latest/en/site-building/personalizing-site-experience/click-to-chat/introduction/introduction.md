@@ -7,7 +7,7 @@ This feature gives easier access to communiation between you and your clients. H
 
 To enable Click To Chat go to *Instance Settings*.
 
-1. Open the Global Menu on the top right corner ( ![](./images/01.png) );
+1. Open the Global Menu on the top right corner ( ![](./images/icon-applications-menu.png) );
 1. Click *Instance Settings* in the Control Panel;
     ![Instance Settings](./images/02.png)
 1. Now go to Click To Chat under Content and Data;
