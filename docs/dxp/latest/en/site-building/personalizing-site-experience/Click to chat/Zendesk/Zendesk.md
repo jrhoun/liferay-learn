@@ -9,4 +9,4 @@
 
 See the example:
 
-![](RackMultipart20210422-4-wmmy7p_html_4628d019a421fb66.png)
+![Example](https://github.com/Fabiomorais87/liferay-learn/blob/a00ec1d11ec8db5366f841cf0f4d03ef1dc6e884/docs/dxp/latest/en/site-building/personalizing-site-experience/Click%20to%20chat/Zendesk/Icon-Zendesk-037.png)
