@@ -94,7 +94,8 @@ The `R1S1SimilarResultsContributor` implements the `SimilarResultsContributor` i
 
 ```java
 @Component(service = SimilarResultsContributor.class)
-public class R1S1SimilarResultsContributor implements SimilarResultsContributor {
+public class R1S1SimilarResultsContributor 
+        implements SimilarResultsContributor {
 ```
 
 The `service` component property registers your implementation as a `SimilarResultsContributor` service.
@@ -104,7 +105,8 @@ The `service` component property registers your implementation as a `SimilarResu
 Implement the three methods from the interface.
 
 ```java
-public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
+public void detectRoute(
+        RouteBuilder routeBuilder, RouteHelper routeHelper) {
 ```
 
 Implement `detectRoute` to provide a distinctive portion of your entity's URL pattern, so that the Similar Results widget can detect if your contributor should be invoked. The URL pattern is added as an attribute of the `RouteBuilder` object. The `RouteHelper` is useful for retrieving the whole URL String for parsing.
@@ -115,15 +117,15 @@ Implement `detectRoute` to provide a distinctive portion of your entity's URL pa
 
 ```java
 public void resolveCriteria(
-    CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper);
+        CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper) {
 ```
 
 Implement `resolveCriteria` to use the main entity on the page to look up the corresponding search engine document. This will be invoked if the route detected indicates that your contributor is the appropriate one.
 
 ```java
 public void writeDestination(
-    DestinationBuilder destinationBuilder,
-    DestinationHelper destinationHelper);
+        DestinationBuilder destinationBuilder,
+        DestinationHelper destinationHelper) {
 ```
 
 Implement `writeDestination` to update the main asset when a User clicks a link in the similar results widget.
@@ -135,27 +137,27 @@ Implement `writeDestination` to update the main asset when a User clicks a link 
 ```java
 @Override
 public void detectRoute(
-    RouteBuilder routeBuilder, RouteHelper routeHelper) {
+        RouteBuilder routeBuilder, RouteHelper routeHelper) {
 
-    String[] pathParts = StringUtil.split(
-        _http.getPath(routeHelper.getURLString()),
-        Portal.FRIENDLY_URL_SEPARATOR);
+        String[] pathParts = StringUtil.split(
+                _http.getPath(routeHelper.getURLString()),
+                Portal.FRIENDLY_URL_SEPARATOR);
 
-    String[] parameters = StringUtil.split(
-        pathParts[pathParts.length - 1], CharPool.FORWARD_SLASH);
+        String[] parameters = StringUtil.split(
+                 pathParts[pathParts.length - 1], CharPool.FORWARD_SLASH);
 
-    if (!parameters[0].matches("knowledge_base")) {
-        throw new RuntimeException(
-            "Knowledge base article was not detected");
-    }
+        if (!parameters[0].matches("knowledge_base")) {
+                throw new RuntimeException(
+                        "Knowledge base article was not detected");
+        }
 
-    routeBuilder.addAttribute("urlTitle", parameters[1]);
+        routeBuilder.addAttribute("urlTitle", parameters[1]);
 }
 ```
 
 Implement `detectRoute` to inject logic checking for a distinctive portion of your entity's URL pattern. The Similar results widget uses this check to find the correct `SimilarResultsContributor`. If your entity's display URL is detected, add at least one attribute to the URL route for use later. Here we're checking for `"knowledge_base"` in the Friendly URL, and adding `"urlTitle"` as an attribute to the `RouteBuilder` passed in the method signature if it's detected.
 
-The `routeHelper.getUrlString` call is important, as it can be used to retrieve the relative URL of the detected asset within the virtual instance. For example,
+The `routeHelper.getURLString` call is important, as it can be used to retrieve the relative URL of the detected asset within the virtual instance. For example,
 
 ```sh
 /web/guest/page-title/-/knowledge_base/kb-article-url-title
@@ -168,34 +170,34 @@ The ID being added as an attribute to the `RouteBuilder` is used to fetch the en
 ```java
 @Override
 public void resolveCriteria(
-    CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper) {
+        CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper) {
 
-    String urlTitle = (String)criteriaHelper.getRouteParameter("urlTitle");
+        String urlTitle = (String)criteriaHelper.getRouteParameter("urlTitle");
 
-    KBArticle kbArticle = _kbArticleLocalService.fetchKBArticleByUrlTitle(
-        criteriaHelper.getGroupId(),
-        KBFolderConstants.DEFAULT_PARENT_FOLDER_ID, urlTitle);
+        KBArticle kbArticle = _kbArticleLocalService.fetchKBArticleByUrlTitle(
+                criteriaHelper.getGroupId(),
+                KBFolderConstants.DEFAULT_PARENT_FOLDER_ID, urlTitle);
 
-    if (kbArticle == null) {
-        return;
-    }
+        if (kbArticle == null) {
+                return;
+        }
 
-    AssetEntry assetEntry = _assetEntryLocalService.fetchEntry(
-        criteriaHelper.getGroupId(), kbArticle.getUuid());
+        AssetEntry assetEntry = _assetEntryLocalService.fetchEntry(
+                criteriaHelper.getGroupId(), kbArticle.getUuid());
 
-    if (assetEntry == null) {
-        return;
-    }
+        if (assetEntry == null) {
+                return;
+        }
 
-    String uidField = String.valueOf(kbArticle.getPrimaryKeyObj());
+        String uidField = String.valueOf(kbArticle.getPrimaryKeyObj());
 
-    if (ReleaseInfo.getBuildNumber() ==
-            ReleaseInfo.RELEASE_7_2_10_BUILD_NUMBER) {
+        if (ReleaseInfo.getBuildNumber() ==
+                ReleaseInfo.RELEASE_7_2_10_BUILD_NUMBER) {
 
-        uidField = String.valueOf(kbArticle.getResourcePrimKey());
-    }
+            uidField = String.valueOf(kbArticle.getResourcePrimKey());
+        }
 
-    criteriaBuilder.uid(Field.getUID(assetEntry.getClassName(), uidField));
+        criteriaBuilder.uid(Field.getUID(assetEntry.getClassName(), uidField));
 }
 ```
 
@@ -212,17 +214,17 @@ Now that matching documents can be found, write the destination URL so the simil
 ```java
 @Override
 public void writeDestination(
-    DestinationBuilder destinationBuilder,
-    DestinationHelper destinationHelper) {
+        DestinationBuilder destinationBuilder,
+        DestinationHelper destinationHelper) {
 
-    String urlTitle = (String)destinationHelper.getRouteParameter(
-        "urlTitle");
+        String urlTitle = (String)destinationHelper.getRouteParameter(
+                "urlTitle");
 
-    AssetRenderer<?> assetRenderer = destinationHelper.getAssetRenderer();
+        AssetRenderer<?> assetRenderer = destinationHelper.getAssetRenderer();
 
-    KBArticle kbArticle = (KBArticle)assetRenderer.getAssetObject();
+        KBArticle kbArticle = (KBArticle)assetRenderer.getAssetObject();
 
-    destinationBuilder.replace(urlTitle, kbArticle.getUrlTitle());
+        destinationBuilder.replace(urlTitle, kbArticle.getUrlTitle());
 }
 ```
 
