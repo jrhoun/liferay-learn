@@ -14,9 +14,7 @@
 
 ## Getting the Hubspot API Token
 
-Coming soon!
 
-<!-- @Fabio: Commented out until we know what a user is supposed to do with this API token.
 
 While logged in to your Hubspot account:
 
@@ -24,10 +22,21 @@ While logged in to your Hubspot account:
 
     ![Settings](./hubspot/images/02.png)
 
-1. Click on *Integrations* &rarr; *API Key* on the left side of the page.
+2. Click on *Integrations* &rarr; *API Key* on the left side of the page.
 
     ![Api Key](./hubspot/images/03.png)
 
-1. Click *Show* to reveal your API token key.
+3. During your first acess you need to activate the API Key. Click *Actions* &rarr; *Generate*
 
-    ![Show Api Key](./hubspot/images/04.png) -->
+    ![Active API Key](./hubspot/images/04.png)
+   
+
+    3.1 If you are not able to see your API Key, click *Show* to reveal it.
+
+    ![Show API Key](./hubspot/images/05.png) 
+
+4. Your account ID is **ID Tolken/API Key**. 
+
+    ![Account ID](./hubspot/images/06.png)
+   
+5. Use this Account ID to [enable automated live chat integration](../enabling-automated-live-chat-systems.md) with your Liferay instance. 
