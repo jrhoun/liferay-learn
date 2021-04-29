@@ -110,7 +110,10 @@ public String getLabel(Locale locale);
 > This returns a text label that describes the product type. See the implementation in [C1N4CPType.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/commerce/product/type/C1N4CPType.java) for a reference in retrieving the label with a language key.
 
 ```java
-public String getName();
+@Override
+	public String getName() {
+		return "c1n4";
+	}
 ```
 
 > This returns the name of our product type. This name may be a language key that corresponds to the name that will appear in the UI.
