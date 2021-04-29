@@ -89,9 +89,7 @@ public ServletContext getServletContext() {
 The `ServletContext` points to the bundle's symbolic name so it can find the Fragment resources:
 
 ```java
-@Reference(
-  target = "(osgi.web.symbolicname=com.liferay.learn.fragments)"
-)
+@Reference(target = "(osgi.web.symbolicname=com.acme.l3m9.impl)")
 private ServletContext _servletContext;
 ```
 
