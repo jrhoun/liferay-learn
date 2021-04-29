@@ -1,5 +1,5 @@
 
-# Enabling Automated Live Chat Systems
+# Click To Chat 
 
 This feature gives easier access to communiation between you and your clients. Here you learn how to access and use *Click To Chat*.
 
