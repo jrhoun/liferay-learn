@@ -95,7 +95,10 @@ public class C1N4CPType implements CPType {
 Implement the following methods of `CPType` in the product type class:
 
 ```java
-public void deleteCPDefinition(long cpDefinitionId) throws PortalException;
+@Override
+	public void deleteCPDefinition(long cpDefinitionId) {
+	}
+
 ```
 
 > This method is where any custom deletion logic for the product type will be added.
