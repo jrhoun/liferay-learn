@@ -94,7 +94,10 @@ public void execute(CPInstance cpInstance) throws PortalException;
 > This method will be where the business logic is implemented for the custom activity.
 
 ```java
-public String getKey();
+@Override
+	public String getKey() {
+		return "j1e4";
+	}
 ```
 
 > This provides a unique identifier for the low stock activity in the low stock activity registry. The key can be used to fetch the low stock activity from the registry.
