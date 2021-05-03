@@ -83,7 +83,12 @@ public class J6X8CommerceShippingEngine implements CommerceShippingEngine {
 Implement the following methods:
 
 ```java
-public String getCommerceShippingOptionLabel(String name, Locale locale);
+@Override
+	public String getCommerceShippingOptionLabel(String name, Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
+
+		return LanguageUtil.get(resourceBundle, name);
 ```
 
 > This method returns a text label used for shipping options. See the implementation in [J6X8CommerceShippingEngine.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/implementing-a-new-shipping-engine/resources/liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java) for a reference in retrieving the description with a language key.
@@ -100,13 +105,23 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 > This will be where we add the business logic for our custom shipping engine. It must fetch a list of available options, then perform the processing necessary to present them to the customer.
 
 ```java
-public String getDescription(Locale locale);
+@Override
+	public String getDescription(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
+
+		return LanguageUtil.get(resourceBundle, "ship-for-a-discounted-price");
 ```
 
 > This returns a brief description of our shipping engine. It works similarly to the `getCommerceShippingOptionLabel` method.
 
 ```java
-public String getName(Locale locale);
+@Override
+	public String getName(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
+
+		return LanguageUtil.get(resourceBundle, "discounted-rate");
 ```
 
 > This returns the name of our shipping engine to display in the UI. It also works similarly to the `getCommerceShippingOptionLabel` and `getDescription` methods.
