@@ -154,8 +154,7 @@ Your consumer module depends on the API. In your `build.gradle` file, add the AP
 ```groovy
 dependencies {
 	compileOnly group: "com.liferay.portal", name: "release.portal.api"
-	compileOnly project(":j1h1-api")
-}
+	}
 ```
 
 The `release.portal.api` artifact provides the Liferay, Bnd, and OSGi services that the module needs from current Liferay product release. The `liferay.workspace.product` in the `[project root]/gradle.properties` file specifies the release.

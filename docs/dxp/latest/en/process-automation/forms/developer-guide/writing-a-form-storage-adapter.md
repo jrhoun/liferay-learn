@@ -103,8 +103,8 @@ The `service` component property registers your implementation as a `DDMStorageA
 The property `ddm.storage.adapter.type` provides an identifier so that your service is registered as a unique `DDMStorageAdapter` implementation. Other services can now reference it like this:
 
 ```java
-@Reference(target = "(ddm.storage.adapter.type=r2f1-ddm-storage-adapter)")
-private DDMStorageAdapter jsonWrapperDDMStorageAdapter;
+@Reference(target = "(ddm.storage.adapter.type=json)")
+private DDMStorageAdapter _jsonStorageAdapter;
 ```
 
 ### Understand the DDMStorageAdapter Interface
@@ -114,19 +114,19 @@ The interface requires three methods to handle CRUD operations on form records: 
 ```java
 public DDMStorageAdapterDeleteResponse delete(
         DDMStorageAdapterDeleteRequest ddmStorageAdapterDeleteRequest)
-    throws StorageException;
+    throws StorageException {
 ```
 
 ```java
 public DDMStorageAdapterGetResponse get(
         DDMStorageAdapterGetRequest ddmStorageAdapterGetRequest)
-    throws StorageException;
+    throws StorageException {
 ```
 
 ```java
 public DDMStorageAdapterSaveResponse save(
         DDMStorageAdapterSaveRequest ddmStorageAdapterSaveRequest)
-    throws StorageException;
+    throws StorageException {
 ```
 
 Each method must return a _DDMStorageAdapter[[Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java)]Response_ object, constructed using a static inner `Builder` class's `newBuilder` method.

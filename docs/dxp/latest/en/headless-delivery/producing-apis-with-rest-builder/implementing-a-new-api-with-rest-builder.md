@@ -124,7 +124,7 @@ apiPackagePath: "com.acme.headless.r3b2"
 application:
     baseURI: "/headless-r3b2"
     className: "HeadlessR3B2Application"
-    name: "Liferay.Headless.R3B2"
+    name: "Acme.Headless.R3B2"
 author: "Jonah the son of Amittai"
 clientDir: "../headless-r3b2-client/src/main/java"
 testDir: "../headless-r3b2-test/src/testIntegration/java"
@@ -139,7 +139,7 @@ The first section to add is the information block:
 ```yaml
 info:
     description:
-        "API to return a Foo."
+        ""
     license:
         name: "Apache 2.0"
         url: "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -277,7 +277,7 @@ The implementation class (`[SchemaName]ResourceImpl`) is located beside the base
 
 ```java
 	@Override
-	public Foo getFoo(Integer fooId) {
+	public Foo getFoo(Long fooId) {
 		return _foos.get(fooId);
 	}
 ```

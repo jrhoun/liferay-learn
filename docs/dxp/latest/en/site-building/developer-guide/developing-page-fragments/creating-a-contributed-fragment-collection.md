@@ -71,28 +71,27 @@ The Fragment Collection contributor overrides two methods in the `*FragmentColle
 The `getFragmentCollectionKey()` method returns the key/name of the Fragment Collection where these fragments are contributed:
 
 ```java
-@Override
-public String getFragmentCollectionKey() {
-    return "l3m9";
-}
+  @Override
+	public String getFragmentCollectionKey() {
+		return "l3m9";
+	}
 ```
 
 The `getServletContext()` method returns the servlet context for the contributed Fragment Collection module:
 
 ```java
-@Override
-public ServletContext getServletContext() {
-    return _servletContext;
-}
+  @Override
+	public ServletContext getServletContext() {
+		return _servletContext;
+	}
 ```
 
 The `ServletContext` points to the bundle's symbolic name so it can find the Fragment resources:
 
 ```java
-@Reference(
-  target = "(osgi.web.symbolicname=com.liferay.learn.fragments)"
-)
-private ServletContext _servletContext;
+  @Reference(target = "(osgi.web.symbolicname=com.acme.l3m9.impl)")
+	private ServletContext _servletContext;
+
 ```
 
 The `bnd.bnd` file includes a few properties that must be defined for the Collection:

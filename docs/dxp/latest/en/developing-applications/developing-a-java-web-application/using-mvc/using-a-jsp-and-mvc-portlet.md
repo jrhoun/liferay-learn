@@ -69,11 +69,11 @@ In the module's `src/main/resources/META-INF/resources` folder, create a JSP fil
 
 ```javascript
 <p>
-	<b>Hello W3E7</b>
+	<h1>Hello W3E7.</h1>
 </p>
 ```
 
-The markup above displays "Hello W3E7" in bold.
+The markup above displays "Hello W3E7." in bold.
 
 ### Create an MVCPortlet
 
