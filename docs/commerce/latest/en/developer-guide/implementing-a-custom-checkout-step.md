@@ -86,15 +86,18 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 Implement the following methods in addition to extending the base class:
 
 ```java
-public String getName();
+@Override
+	public String getName() {
+		return "n8n6-commerce-checkout-step";
 ```
 
 > This method returns the name of our checkout step. This name may be a [language key](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application) that corresponds to the name that will appear in the UI.
 
 ```java
-public void processAction(
-        ActionRequest actionRequest, ActionResponse actionResponse)
-    throws Exception;
+@Override
+	public void processAction(
+			ActionRequest actionRequest, ActionResponse actionResponse)
+		throws Exception {
 ```
 
 > The `processAction` method may be used to implement business logic with the information passed through the `ActionRequest` if backend processing is required.
