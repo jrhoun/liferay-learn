@@ -82,7 +82,9 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 Implement the following methods:
 
 ```java
-public String getKey();
+@Override
+	public String getKey() {
+		return "n9b2";
 ```
 
 > This method provides a unique identifier for the order validator in the order validator registry. The key can be used to fetch the validator from the registry. Reusing a key that is already in use will override the existing associated validator.
