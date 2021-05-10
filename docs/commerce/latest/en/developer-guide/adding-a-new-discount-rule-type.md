@@ -102,13 +102,19 @@ public boolean evaluate(
 > This method is where you implement the business logic for evaluating when the discount rule is applied.
 
 ```java
-public String getKey();
+@Override
+	public String getKey() {
+		return "m6a8";
 ```
 
 > This provides a unique identifier for the discount rule type in the discount rule type registry. The key can be used to fetch the new type from the registry.
 
 ```java
-public String getLabel(Locale locale);
+@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
+
 ```
 
 > This returns a text label that describes how the discount rule is applied. See the implementation in [M6A8CommerceDiscountRuleTypeImpl.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleTypeImpl.java) for a reference in retrieving the label with a language key.
