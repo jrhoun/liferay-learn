@@ -87,13 +87,19 @@ public CommerceTaxValue getCommerceTaxValue(
 > This method will be where the business logic is implemented for our tax engine. See [CommerceTaxValue](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) for more information.
 
 ```java
-public String getDescription(Locale locale);
+@Override
+	public String getDescription(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/implementing-a-new-tax-engine/resources/liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
 
 ```java
-public String getName(Locale locale);
+@Override
+	public String getName(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns the name of our tax engine. It works similarly to the `getDescription` method.
