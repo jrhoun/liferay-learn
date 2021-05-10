@@ -92,13 +92,18 @@ public class Q4F7CPContentRenderer implements CPContentRenderer {
 Implement the following methods:
 
 ```java
-public String getKey();
+@Override
+	public String getKey() {
+		return "q4f7";
 ```
 
 > This method provides a unique identifier for the product content renderer in the product content renderer registry. The key can be used to fetch the renderer from the registry. Reusing a key that is already in use will override the existing associated renderer.
 
 ```java
-public String getLabel(Locale locale);
+@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns a text label that describes the product content renderer. See the implementation in [Q4F7CPContentRenderer.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/src/main/java/com/acme/q4f7/web/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java) for a reference in retrieving the label with a language key.
