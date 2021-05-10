@@ -94,13 +94,18 @@ public void execute(CPInstance cpInstance) throws PortalException;
 > This method will be where the business logic is implemented for the custom activity.
 
 ```java
-public String getKey();
+@Override
+	public String getKey() {
+		return "j1e4";
 ```
 
 > This provides a unique identifier for the low stock activity in the low stock activity registry. The key can be used to fetch the low stock activity from the registry.
 
 ```java
-public String getLabel(Locale locale);
+@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns a text label that describes the low stock activity. See the implementation in [J1E4CommerceLowStockActivity.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/implementing-a-custom-low-stock-activity/resources/liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java) for a reference in retrieving the label with a language key.
