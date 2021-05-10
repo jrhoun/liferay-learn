@@ -81,25 +81,35 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 Implement the following methods:
 
 ```java
-	public String getDescription(Locale locale);
+	@Override
+	public String getDescription(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This populates the "Description" column in the _Payment Methods_ administration page. See the implementation in [B1C3CommercePaymentMethod.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java) for a reference in retrieving the description with a language key.
 
 ```java
-	public String getKey();
+	@Override
+	public String getKey() {
+		return "b1c3";
 ```
 
 >This provides a unique identifier for the payment method in the payment method registry. The key can be used to fetch the payment method from the registry. Reusing a key that is already in use will override the existing associated payment method.
 
 ```java
-	public String getName(Locale locale);
+	@Override
+	public String getName(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This populates the "Name" column in the _Payment Methods_ administration page. It works similarly to the `getDescription` method.
 
 ```java
-	public int getPaymentType();
+	@Override
+	public int getPaymentType() {
+		return CommercePaymentConstants.COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE;
 ```
 
 >This identifies how the payment engine will use a given payment method.
@@ -107,7 +117,9 @@ Implement the following methods:
 > We use the value `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` to inform the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out-of-the-box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`.
 
 ```java
-	public String getServletPath();
+	@Override
+	public String getServletPath() {
+		return null;
 ```
 
 > A servlet may be required to enable proper interfacing with an external payment provider for online payment methods. Since no servlet path is required for an offline payment method, `getServletPath` must return `null`.
@@ -125,8 +137,8 @@ The payment method is comprised of backend logic for processing and completing p
 
 ```java
 @Override
-public boolean isProcessPaymentEnabled() {
-	return true;
+	public boolean isProcessPaymentEnabled() {
+		return true;
 }
 ```
 
