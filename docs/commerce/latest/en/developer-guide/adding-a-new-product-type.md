@@ -101,13 +101,18 @@ public void deleteCPDefinition(long cpDefinitionId) throws PortalException;
 > This method is where any custom deletion logic for the product type will be added.
 
 ```java
-public String getLabel(Locale locale);
+@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns a text label that describes the product type. See the implementation in [C1N4CPType.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/commerce/product/type/C1N4CPType.java) for a reference in retrieving the label with a language key.
 
 ```java
-public String getName();
+@Override
+	public String getName() {
+		return "c1n4";
 ```
 
 > This returns the name of our product type. This name may be a language key that corresponds to the name that will appear in the UI.
@@ -137,19 +142,26 @@ public class C1N4ScreenNavigationEntry
 Implement the following methods in the screen navigation entry class:
 
 ```java
-public String getCategoryKey();
+@Override
+	public String getCategoryKey() {
+		return "c1n4";
 ```
 
 > This returns a unique identifier for the category used for the screen navigation entry.
 
 ```java
-public String getLabel(Locale locale);
+@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 ```
 
 > This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4ScreenNavigationEntry.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/frontend/taglib/servlet/taglib/C1N4ScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
 
 ```java
-public String getScreenNavigationKey();
+@Override
+	public String getScreenNavigationKey() {
+		return "cp.definition.general";
 ```
 
 > This returns a key to indicate where our screen should appear in Liferay. Return the string value `"cp.definition.general"` so it properly appears among the other screens for products.
@@ -159,19 +171,25 @@ public String getScreenNavigationKey();
 Continue to build on the screen navigation entry class with the following methods:
 
 ```java
-String getCategoryKey();
+@Override
+	public String getCategoryKey() {
+		return "c1n4";
 ```
 
 > This returns a unique identifier for the screen navigation category used by our screen.
 
 ```java
-String getEntryKey();
+@Override
+	public String getEntryKey() {
+		return "c1n4";
 ```
 
 > This returns a unique identifier for the screen navigation entry. It returns the same value as `getCategoryKey`.
 
 ```java
-String getScreenNavigationKey();
+@Override
+	public String getScreenNavigationKey() {
+		return "cp.definition.general";
 ```
 
 > This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning the string value `"cp.definition.general"`.
