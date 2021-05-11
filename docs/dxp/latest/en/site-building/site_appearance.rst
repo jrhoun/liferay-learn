@@ -2,15 +2,15 @@ Site Appearance
 ===============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
-   site-appearance/using-a-style-book-to-standardize-site-appearance.md
-   site-appearance/developer_guide.rst
+   site-appearance/site-appearance.md
+   creating-pages/defining-headers-and-footers/master-page-templates.md
+   site-appearance/themes.rst
+   site-appearance/style_books.rst
 
--  :doc:`/site-building/site-appearance/using-a-style-book-to-standardize-site-appearance`
+.. raw:: html
+   :file: ../landingpage_template.html
 
-Developer Guide
----------------
-
--  :doc:`/site-building/site-appearance/developer-guide/style-book-token-definitions`
--  :doc:`/site-building/site-appearance/developer-guide/adding-a-new-token-set-for-your-style-book`
+.. raw:: html
+   :file: site-appearance/landing.html
