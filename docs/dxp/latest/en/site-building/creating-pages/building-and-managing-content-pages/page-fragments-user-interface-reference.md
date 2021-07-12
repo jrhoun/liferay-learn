@@ -10,7 +10,7 @@ To access available Fragments, go to a Content Page, and click on the *Edit* ico
 - [Using Featured Content Components](#featured-content)
 - [Using Footers](#footers)
 - [Using Navigation Bars](#navigation-bars)
-- [Localizing the Fragment Configuration](#localizing-the-fragment-configuration)
+- [Using Menu Displays](#menu-display)
 
 ## Adding Fragments
 
@@ -23,6 +23,10 @@ Once added, you can change its placement at any time. You can also view its plac
 ## Configuring Fragments
 
 Liferay DXP provides options for configuring individual Fragments as well as their sub-elements. These options can vary, though some are common to all. You can view available configuration options in the *Selection* panel (![Selection](../../../images/icon-pages-tree.png)) of the Sidebar Menu. Click on a Fragment or element and select which options you'd like to configure from the available tabs.
+
+```note::
+   You can also localize some Fragment settings for the target audience's language. To learn more, see `Localizing the Fragment Configuration <../../displaying-content/using-fragments/localizing-the-fragment-configuration.md>`_.
+```
 
 ### General
 
@@ -75,6 +79,42 @@ Use *button* Fragments to add link elements to a Content Page. As part of config
 Use *card* Fragments to add an image with title, paragraph, and link elements to a Content Page.
 
 ![Add an image with title, paragraph, and link elements to a Content Page.](./page-fragments-user-interface-reference/images/04.png)
+
+### Dropdown
+
+> Available: Liferay DXP 7.4+.
+
+This Fragment defines a drop zone where you can add other Fragments and create advanced drop-down menus (A). For example, you can drag-and-drop a Card Fragment on the Dropdown Fragment's drop zone so the Card content appears when the user clicks or hovers over the Dropdown.
+
+![The Dropdown Fragment defines a drop zone where you can add other fragments.](./page-fragments-user-interface-reference/images/01.png)
+
+In this table you can see a description of the Dropdown Fragment General options (B):
+
+| Option | Description |
+| --- | --- |
+| *Type* | Controls the Dropdown Fragment style. |
+| *Size* | Sets the Dropdown Fragment size. |
+| *Panel Type* | Defines the drop zone size:</br><ul><li>*Regular:* Standard drop zone size.</li><li>*Full Width:* The drop zone size corresponds to the Module's width containing the Fragment.</li><li>*Mega Menu:* The drop zone size corresponds to the Page's width.</li></ul> |
+| *Display on Hover* | When you check this option, the Dropdown Fragment opens on mouse-over. |
+| *Keep Panel Open in Edit Mode* | Check this option to keep the drop-zone open while you edit the Dropdown Fragment content. |
+
+![You can define the drop zone size in the Dropdown panel using the Panel Type options.](./page-fragments-user-interface-reference/images/18.png)
+
+```tip::
+   Place the Dropdown Fragment inside a Grid Fragment to observe the differences between the *Full Width* and *Mega Menu* panel types.
+```
+
+### External Video
+
+> Available: Liferay DXP 7.4+.
+
+Use the *External Video* Fragment to embed additional video sources in your Content Page. You can use a valid URL or videos in [Documents and Media](../../../content-authoring-and-management/documents-and-media.html). The supported sources include YouTube, Facebook, Twitch, Vimeo, and videos stored in Documents and Media.
+
+![The External Video Fragment supports video sources in a valid video URL and Documents and Media](./page-fragments-user-interface-reference/images/16.gif)
+
+```note::
+   The External Video Fragment does not support video controls for autoplay, loop, or mute. If you don't need these controls in the Content Page, use the External Video Fragment. If you need to provide these controls, use the `Video URL Fragment <#video-url>`_ instead.
+```
 
 ### Heading
 
@@ -129,18 +169,6 @@ Use the *tabs* Fragment to add multiple tabs with individual drop zones for widg
 Use the *Video URL* Fragment to embed videos in your Content Page. To select a video, enter a valid URL, either to YouTube or a video file. As part of the Fragment configuration, you can set the video to autoplay, loop, or mute. You can also choose to hide the video controls.
 
 ![The Video URL Fragment supports any valid URL and provides video controls.](./page-fragments-user-interface-reference/images/17.png)
-
-### External Video
-
-> Available: Liferay DXP 7.4+.
-
-Use the *External Video* Fragment to embed additional video sources in your Content Page. You can use a valid URL or videos in [Documents and Media](../../../content-authoring-and-management/documents-and-media.html). The supported sources include YouTube, Facebook, Twitch, Vimeo, and videos stored in Documents and Media.
-
-![The External Video Fragment supports video sources in a valid video URL and Documents and Media](./page-fragments-user-interface-reference/images/16.gif)
-
-```note::
-   The External Video Fragment does not support video controls for autoplay, loop, or mute. If you don't need these controls in the Content Page, use the External Video Fragment. If you need to provide these controls, use the `Video URL Fragment <#video-url>`_ instead.
-```
 
 ## Content Display
 
@@ -202,39 +230,17 @@ Use *Navigation Bar* Fragments to add a custom header to [Master Page Templates]
 
 ![Add a custom header to Master Page Templates for Content Page.](./page-fragments-user-interface-reference/images/14.png)
 
-## Localizing the Fragment Configuration
+## Menu Display
 
-> Available: Liferay DXP 7.4+
+> Available: Liferay DXP 7.4+.
 
-You can localize the following Fragment settings for the target audience's language:
+Using the Menu Display Fragment, you can create a navigation menu anywhere in your Content Page. This navigation menu is based on your Site's Public or Private Pages hierarchy, or any other hierarchy you define using Liferay DXP  [Navigation Menus](../../site-navigation/using-navigation-menus.md). To learn more about how to configure the Menu Display Fragment for your Site navigation, read [Managing Site Navigation](../../site-navigation/managing-site-navigation.md).
 
-- [Image Description (*alt text*)](#localizing-alternative-text-for-images)
-- [Editable URLs](#localizing-editable-urls)
-
-Additionally, you can change the Fragment configuration fields depending on the Page's target language using the `localizable` attribute. For more information, read the [Fragment Specific Tags and Attributes Reference](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
-
-### Localizing Alternative Text for Images
-
-You can add localization in different languages for the image description (also known as *alternative text* or *alt text*) in built-in and custom Fragments. When you change the target language for your Content Page using the language selector in the editor toolbar (A), you can edit the *Image Description* adapting the text for the target language (B).
-
-![You can localize the Image Description in the Content Page editor](./page-fragments-user-interface-reference/images/15.png)
-
-```tip::
-    The flag icon next to the Image Description indicates the field as localizable.
-```
-
-If the Image Description doesn't have a translation, the description shows the default Content Page language.
-
-### Localizing Editable URLs
-
-When you localize a URL or link in your Content Page, you can redirect to different URLs and content, based on the target language. When you change the target language for your Content Page using the language selector in the editor toolbar (A), you can update the *URL* to the link of your choice (B).
-
-![You can localize the link in the Content Page editor.](./page-fragments-user-interface-reference/images/16.png)
-
-You can localize links you enter manually and links from a content field. If the link doesn't have a translation, the active URL is the one for the default Content Page language.
+![The Menu Display Fragment is available under the Fragments and Widget section of your Content Page.](./page-fragments-user-interface-reference/images/15.png)
 
 ## Additional Information
 
 - [Content Pages Overview](./content-pages-overview.md)
 - [Content Page Editor User Interface Reference](./content-page-editor-user-interface-reference.md)
 - [Using Page Fragments](../../displaying-content/using-fragments/using-page-fragments.md)
+- [Managing Site Navigation](../../site-navigation/managing-site-navigation.md)
